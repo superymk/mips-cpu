@@ -1,0 +1,18 @@
+% This disassembly will cut a single instruction into 
+  various parts.%
+
+subdesign InstDisassembly
+(
+INST[31..0] : input;
+OP[5..0],RS[4..0],RT[4..0],RD[4..0],SA[4..0],FUNC[5..0],IMM[15..0],TARGET[25..0] : output;
+)
+begin
+   OP[]=INST[31..26];
+   RS[]=INST[25..21];
+   RT[]=INST[20..16];
+   RD[]=INST[15..11];
+   SA[]=INST[10..6];
+   FUNC[]=INST[5..0];
+   IMM[]=INST[15..0];
+   TARGET[]=INST[25..0];
+end;

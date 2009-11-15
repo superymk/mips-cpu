@@ -1,0 +1,15 @@
+%mux4x32: multiplexer, 4 inputs (A0 - A3), 32 bits for each input.%
+
+subdesign mux4x32bit
+(
+A0[31..0], A1[31..0], A2[31..0], A3[31..0], S[1..0] : input;
+Y[31..0] : output;
+)
+begin
+case s[] is
+  when B"00" => Y[] = A0[];
+  when B"01" => Y[] = A1[];
+  when B"10" => Y[] = A2[];
+  when B"11" => Y[] = A3[];
+end case;
+end;

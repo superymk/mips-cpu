@@ -1,0 +1,10 @@
+%32-bits zero recognizor%
+
+subdesign IsZero32
+(
+S[31..0] : input;
+ZERO: output;
+)
+begin
+if S[31..0] == h"00000000" then ZERO = B"1"; else ZERO = B"0"; end if;
+end;

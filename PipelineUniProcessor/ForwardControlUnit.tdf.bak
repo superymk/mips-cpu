@@ -1,0 +1,37 @@
+% detect harzard of situation 1~3 
+1 : add $1, $2, $3
+     or $5, $1, $6 RAW
+2 : add $1, $2, $3
+     or $7, $1, $8
+    sub $5, $1, $6
+notice the example in 2 :
+    add $1, $2, $2
+    add $3, $1, $3 <-- value of $1 used in 2nd command
+    add $4, $1, $5 RAW <-- value of $1 used in 3rd command
+3 : lw $2, 20
+    nop
+    nop
+    and $3, $2, $1 RAW
+%
+
+subdesign forwardunit
+(
+MemRd[4..0], RS[4..0], RT[4..0], ExRd[4..0], MemWriteReg, ExeWriteReg, MemMemToReg : input;
+FORWARDA[1..0], FORWARDB[1..0] : output;
+)
+begin
+   defaults
+      FORWARDA[] = b"00"; FORWARDB[] = b"00";
+   end defaults;
+   
+   % situation 1 %
+   % Add (ExRd[] != b"00000") for performance consideration, ignore r0. The same below.% 
+   if (ExeWriteReg & (ExRd[] != b"00000") & (ExRd[] == RS[])) then FORWARDA[] = b"01"; end if;
+   if (ExeWriteReg & (ExRd[] != b"00000") & (ExRd[] == RT[])) then FORWARDB[] = b"01"; end if;
+   % situation 2 %
+   if (MemWriteReg & !MemMemToReg & (MemRd[] != b"00000") & (ExRd[] != RS[]) & (MemRd[4..0] == RS[])) then FORWARDA[] = b"10"; end if;
+   if (MemWriteReg & !MemMemToReg & (MemRd[] != b"00000") & (ExRd[] != RT[]) & (MemRd[4..0] == RT[])) then FORWARDB[] = b"10"; end if;
+   % situation 3 %
+   if (MemWriteReg &  MemMemToReg & (MemRd[] != b"00000") & (ExRd[] != RS[]) & (MemRd[4..0] == RS[])) then FORWARDA[] = b"11"; end if;
+   if (MemWriteReg &  MemMemToReg & (MemRd[] != b"00000") & (ExRd[] != RT[]) & (MemRd[4..0] == RT[])) then FORWARDB[] = b"11"; end if;
+end;

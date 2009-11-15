@@ -1,0 +1,6 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="PipelineUniProcessor">
+		<CBX_INST_ENTRY INSTANCE_NAME="|InstMem|InstMemCore:inst|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_aor1.tdf"/>
+	</PROJECT>
+</LOG_ROOT>

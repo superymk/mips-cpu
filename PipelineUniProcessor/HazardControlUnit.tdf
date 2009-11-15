@@ -1,0 +1,14 @@
+% detect the hazard of situation4 
+  e.g : lw $2,20  add $1, $2, $3 %
+
+subdesign HazardControlUnit
+(
+IfIdRs[4..0], IfIdRt[4..0], IdExRt[4..0], IdExMemRead : input;
+WPCIR, STALL : output;
+)
+begin
+   if (IdExMemRead == 1 & ((IdExRt[4..0] == IfIdRs[4..0]) # (IdExRt[4..0] == IfIdRt[4..0])))
+      then WPCIR = gnd; STALL = vcc;
+      else WPCIR = vcc; STALL = gnd;
+   end if;
+end;

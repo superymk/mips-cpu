@@ -1,0 +1,2158 @@
+// Copyright (C) 1991-2009 Altera Corporation
+// Your use of Altera Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Altera Program License 
+// Subscription Agreement, Altera MegaCore Function License 
+// Agreement, or other applicable license agreement, including, 
+// without limitation, that your use is for the sole purpose of 
+// programming logic devices manufactured by Altera and sold by 
+// Altera or its authorized distributors.  Please refer to the 
+// applicable agreement for further details.
+
+
+// 
+// Device: Altera EP3SL340F1760I4 Package FBGA1760
+// 
+
+//
+// This file contains Slow Corner delays for the design using part EP3SL340F1760I4,
+// with speed grade 4, core voltage 1.1V, and temperature -40 Celsius
+//
+
+// 
+// This SDF file should be used for PrimeTime (Verilog) only
+// 
+
+(DELAYFILE
+  (SDFVERSION "2.1")
+  (DESIGN "InstMem")
+  (DATE "11/04/2009 18:44:09")
+  (VENDOR "Altera")
+  (PROGRAM "Quartus II")
+  (VERSION "Version 9.0 Build 132 02/25/2009 SJ Full Version")
+  (DIVIDER .)
+  (TIMESCALE 1 ps)
+
+  (CELL
+    (CELLTYPE "stratixiii_io_ibuf")
+    (INSTANCE CLK\~input)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH i o (773:776:776) (577:580:580))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "stratixiii_io_obuf")
+    (INSTANCE MEMINST\[31\]\~output)
+    (DELAY
+      (ABSOLUTE
+        (PORT i (1981:2085:2085) (1822:1918:1918))
+        (IOPATH i o (2310:2473:2473) (2282:2446:2446))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "stratixiii_io_obuf")
+    (INSTANCE MEMINST\[30\]\~output)
+    (DELAY
+      (ABSOLUTE
+        (PORT i (2762:2907:2907) (2328:2450:2450))
+        (IOPATH i o (2414:2607:2607) (2397:2591:2591))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "stratixiii_io_obuf")
+    (INSTANCE MEMINST\[29\]\~output)
+    (DELAY
+      (ABSOLUTE
+        (PORT i (2058:2166:2166) (1835:1931:1931))
+        (IOPATH i o (2323:2486:2486) (2294:2458:2458))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "stratixiii_io_obuf")
+    (INSTANCE MEMINST\[28\]\~output)
+    (DELAY
+      (ABSOLUTE
+        (PORT i (2334:2456:2456) (1925:2025:2025))
+        (IOPATH i o (2434:2627:2627) (2417:2611:2611))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "stratixiii_io_obuf")
+    (INSTANCE MEMINST\[27\]\~output)
+    (DELAY
+      (ABSOLUTE
+        (PORT i (2191:2306:2306) (1876:1974:1974))
+        (IOPATH i o (2424:2617:2617) (2407:2601:2601))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "stratixiii_io_obuf")
+    (INSTANCE MEMINST\[26\]\~output)
+    (DELAY
+      (ABSOLUTE
+        (PORT i (7500:7892:7892) (6767:7121:7121))
+        (IOPATH i o (2310:2473:2473) (2282:2446:2446))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "stratixiii_io_obuf")
+    (INSTANCE MEMINST\[25\]\~output)
+    (DELAY
+      (ABSOLUTE
+        (PORT i (7776:8183:8183) (7112:7484:7484))
+        (IOPATH i o (2313:2476:2476) (2284:2448:2448))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "stratixiii_io_obuf")
+    (INSTANCE MEMINST\[24\]\~output)
+    (DELAY
+      (ABSOLUTE
+        (PORT i (3076:3237:3237) (2596:2732:2732))
+        (IOPATH i o (2424:2617:2617) (2407:2601:2601))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "stratixiii_io_obuf")
+    (INSTANCE MEMINST\[23\]\~output)
+    (DELAY
+      (ABSOLUTE
+        (PORT i (2272:2391:2391) (1944:2046:2046))
+        (IOPATH i o (2445:2638:2638) (2407:2601:2601))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "stratixiii_io_obuf")
+    (INSTANCE MEMINST\[22\]\~output)
+    (DELAY
+      (ABSOLUTE
+        (PORT i (1429:1503:1503) (1356:1427:1427))
+        (IOPATH i o (2310:2473:2473) (2282:2446:2446))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "stratixiii_io_obuf")
+    (INSTANCE MEMINST\[21\]\~output)
+    (DELAY
+      (ABSOLUTE
+        (PORT i (1648:1734:1734) (1509:1588:1588))
+        (IOPATH i o (2313:2476:2476) (2284:2448:2448))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "stratixiii_io_obuf")
+    (INSTANCE MEMINST\[20\]\~output)
+    (DELAY
+      (ABSOLUTE
+        (PORT i (2369:2493:2493) (2058:2165:2165))
+        (IOPATH i o (2425:2618:2618) (2387:2581:2581))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "stratixiii_io_obuf")
+    (INSTANCE MEMINST\[19\]\~output)
+    (DELAY
+      (ABSOLUTE
+        (PORT i (3111:3274:3274) (2683:2823:2823))
+        (IOPATH i o (2445:2638:2638) (2407:2601:2601))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "stratixiii_io_obuf")
+    (INSTANCE MEMINST\[18\]\~output)
+    (DELAY
+      (ABSOLUTE
+        (PORT i (8073:8495:8495) (7333:7717:7717))
+        (IOPATH i o (2323:2486:2486) (2294:2458:2458))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "stratixiii_io_obuf")
+    (INSTANCE MEMINST\[17\]\~output)
+    (DELAY
+      (ABSOLUTE
+        (PORT i (2176:2290:2290) (1853:1950:1950))
+        (IOPATH i o (2424:2617:2617) (2407:2601:2601))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "stratixiii_io_obuf")
+    (INSTANCE MEMINST\[16\]\~output)
+    (DELAY
+      (ABSOLUTE
+        (PORT i (8098:8521:8521) (7412:7800:7800))
+        (IOPATH i o (2323:2486:2486) (2294:2458:2458))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "stratixiii_io_obuf")
+    (INSTANCE MEMINST\[15\]\~output)
+    (DELAY
+      (ABSOLUTE
+        (PORT i (2065:2173:2173) (1750:1841:1841))
+        (IOPATH i o (2444:2637:2637) (2427:2621:2621))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "stratixiii_io_obuf")
+    (INSTANCE MEMINST\[14\]\~output)
+    (DELAY
+      (ABSOLUTE
+        (PORT i (2377:2501:2501) (2051:2158:2158))
+        (IOPATH i o (2445:2638:2638) (2407:2601:2601))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "stratixiii_io_obuf")
+    (INSTANCE MEMINST\[13\]\~output)
+    (DELAY
+      (ABSOLUTE
+        (PORT i (2831:2980:2980) (2365:2489:2489))
+        (IOPATH i o (2435:2628:2628) (2397:2591:2591))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "stratixiii_io_obuf")
+    (INSTANCE MEMINST\[12\]\~output)
+    (DELAY
+      (ABSOLUTE
+        (PORT i (3164:3330:3330) (2635:2773:2773))
+        (IOPATH i o (2425:2618:2618) (2387:2581:2581))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "stratixiii_io_obuf")
+    (INSTANCE MEMINST\[11\]\~output)
+    (DELAY
+      (ABSOLUTE
+        (PORT i (1460:1536:1536) (1368:1440:1440))
+        (IOPATH i o (2310:2473:2473) (2282:2446:2446))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "stratixiii_io_obuf")
+    (INSTANCE MEMINST\[10\]\~output)
+    (DELAY
+      (ABSOLUTE
+        (PORT i (2642:2780:2780) (2292:2412:2412))
+        (IOPATH i o (2434:2627:2627) (2417:2611:2611))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "stratixiii_io_obuf")
+    (INSTANCE MEMINST\[9\]\~output)
+    (DELAY
+      (ABSOLUTE
+        (PORT i (6450:6788:6788) (5685:5982:5982))
+        (IOPATH i o (2424:2617:2617) (2407:2601:2601))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "stratixiii_io_obuf")
+    (INSTANCE MEMINST\[8\]\~output)
+    (DELAY
+      (ABSOLUTE
+        (PORT i (1999:2103:2103) (1835:1931:1931))
+        (IOPATH i o (2313:2476:2476) (2284:2448:2448))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "stratixiii_io_obuf")
+    (INSTANCE MEMINST\[7\]\~output)
+    (DELAY
+      (ABSOLUTE
+        (PORT i (2131:2243:2243) (1957:2059:2059))
+        (IOPATH i o (2263:2426:2426) (2234:2398:2398))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "stratixiii_io_obuf")
+    (INSTANCE MEMINST\[6\]\~output)
+    (DELAY
+      (ABSOLUTE
+        (PORT i (1963:2066:2066) (1853:1950:1950))
+        (IOPATH i o (2280:2443:2443) (2254:2418:2418))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "stratixiii_io_obuf")
+    (INSTANCE MEMINST\[5\]\~output)
+    (DELAY
+      (ABSOLUTE
+        (PORT i (2368:2492:2492) (2098:2208:2208))
+        (IOPATH i o (2415:2608:2608) (2377:2571:2571))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "stratixiii_io_obuf")
+    (INSTANCE MEMINST\[4\]\~output)
+    (DELAY
+      (ABSOLUTE
+        (PORT i (2439:2567:2567) (2038:2145:2145))
+        (IOPATH i o (2444:2637:2637) (2427:2621:2621))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "stratixiii_io_obuf")
+    (INSTANCE MEMINST\[3\]\~output)
+    (DELAY
+      (ABSOLUTE
+        (PORT i (3814:4014:4014) (3384:3562:3562))
+        (IOPATH i o (2280:2443:2443) (2254:2418:2418))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "stratixiii_io_obuf")
+    (INSTANCE MEMINST\[2\]\~output)
+    (DELAY
+      (ABSOLUTE
+        (PORT i (3862:4064:4064) (3351:3527:3527))
+        (IOPATH i o (2372:2535:2535) (2368:2532:2532))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "stratixiii_io_obuf")
+    (INSTANCE MEMINST\[1\]\~output)
+    (DELAY
+      (ABSOLUTE
+        (PORT i (1491:1569:1569) (1353:1423:1423))
+        (IOPATH i o (2323:2486:2486) (2294:2458:2458))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "stratixiii_io_obuf")
+    (INSTANCE MEMINST\[0\]\~output)
+    (DELAY
+      (ABSOLUTE
+        (PORT i (6404:6739:6739) (5678:5975:5975))
+        (IOPATH i o (2283:2446:2446) (2254:2418:2418))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "AND1")
+    (INSTANCE CLK\~inputclkctrl.and_inst)
+    (DELAY
+      (ABSOLUTE
+        (PORT IN1 (399:409:409) (420:430:430))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "stratixiii_io_ibuf")
+    (INSTANCE PC\[0\]\~input)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH i o (646:646:646) (447:447:447))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "stratixiii_io_ibuf")
+    (INSTANCE PC\[1\]\~input)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH i o (656:656:656) (457:457:457))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "stratixiii_io_ibuf")
+    (INSTANCE PC\[2\]\~input)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH i o (719:722:722) (531:534:534))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "stratixiii_io_ibuf")
+    (INSTANCE PC\[3\]\~input)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH i o (626:626:626) (427:427:427))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "stratixiii_io_ibuf")
+    (INSTANCE PC\[4\]\~input)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH i o (758:761:761) (562:564:564))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "affc1")
+    (INSTANCE inst\|altsyncram_component\|auto_generated\|ram_block1a0.ram_portadatain_reg_0)
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (2378:2572:2572) (2327:2468:2468))
+        (PORT ena (680:728:728) (623:616:616))
+        (PORT datain (1126:1193:1193) (989:1047:1047))
+      )
+    )
+    (TIMINGCHECK
+      (SETUPHOLD ena (posedge clk) (71:71:71) (58:58:58))
+      (SETUPHOLD datain (posedge clk) (71:71:71) (58:58:58))
+      (PERIOD clk (2531:2531:2531))
+      (WIDTH (posedge clk) (1100:1100:1100))
+      (WIDTH (negedge clk) (690:690:690))
+      (WIDTH ena (45:45:45))
+    )
+  )
+  (CELL
+    (CELLTYPE "affc1")
+    (INSTANCE inst\|altsyncram_component\|auto_generated\|ram_block1a0.ram_portadatain_reg_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (2378:2572:2572) (2327:2468:2468))
+        (PORT ena (680:728:728) (623:616:616))
+        (PORT datain (1124:1191:1191) (970:1027:1027))
+      )
+    )
+    (TIMINGCHECK
+      (SETUPHOLD ena (posedge clk) (71:71:71) (58:58:58))
+      (SETUPHOLD datain (posedge clk) (71:71:71) (58:58:58))
+      (PERIOD clk (2531:2531:2531))
+      (WIDTH (posedge clk) (1100:1100:1100))
+      (WIDTH (negedge clk) (690:690:690))
+      (WIDTH ena (45:45:45))
+    )
+  )
+  (CELL
+    (CELLTYPE "affc1")
+    (INSTANCE inst\|altsyncram_component\|auto_generated\|ram_block1a0.ram_portadatain_reg_2)
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (2378:2572:2572) (2327:2468:2468))
+        (PORT ena (680:728:728) (623:616:616))
+        (PORT datain (1126:1193:1193) (989:1047:1047))
+      )
+    )
+    (TIMINGCHECK
+      (SETUPHOLD ena (posedge clk) (71:71:71) (58:58:58))
+      (SETUPHOLD datain (posedge clk) (71:71:71) (58:58:58))
+      (PERIOD clk (2531:2531:2531))
+      (WIDTH (posedge clk) (1100:1100:1100))
+      (WIDTH (negedge clk) (690:690:690))
+      (WIDTH ena (45:45:45))
+    )
+  )
+  (CELL
+    (CELLTYPE "affc1")
+    (INSTANCE inst\|altsyncram_component\|auto_generated\|ram_block1a0.ram_portadatain_reg_3)
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (2378:2572:2572) (2327:2468:2468))
+        (PORT ena (680:728:728) (623:616:616))
+        (PORT datain (1124:1191:1191) (970:1027:1027))
+      )
+    )
+    (TIMINGCHECK
+      (SETUPHOLD ena (posedge clk) (71:71:71) (58:58:58))
+      (SETUPHOLD datain (posedge clk) (71:71:71) (58:58:58))
+      (PERIOD clk (2531:2531:2531))
+      (WIDTH (posedge clk) (1100:1100:1100))
+      (WIDTH (negedge clk) (690:690:690))
+      (WIDTH ena (45:45:45))
+    )
+  )
+  (CELL
+    (CELLTYPE "affc1")
+    (INSTANCE inst\|altsyncram_component\|auto_generated\|ram_block1a0.ram_portadatain_reg_4)
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (2378:2572:2572) (2327:2468:2468))
+        (PORT ena (680:728:728) (623:616:616))
+        (PORT datain (1126:1193:1193) (989:1047:1047))
+      )
+    )
+    (TIMINGCHECK
+      (SETUPHOLD ena (posedge clk) (71:71:71) (58:58:58))
+      (SETUPHOLD datain (posedge clk) (71:71:71) (58:58:58))
+      (PERIOD clk (2531:2531:2531))
+      (WIDTH (posedge clk) (1100:1100:1100))
+      (WIDTH (negedge clk) (690:690:690))
+      (WIDTH ena (45:45:45))
+    )
+  )
+  (CELL
+    (CELLTYPE "affc1")
+    (INSTANCE inst\|altsyncram_component\|auto_generated\|ram_block1a0.ram_portadatain_reg_5)
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (2378:2572:2572) (2327:2468:2468))
+        (PORT ena (680:728:728) (623:616:616))
+        (PORT datain (1124:1191:1191) (970:1027:1027))
+      )
+    )
+    (TIMINGCHECK
+      (SETUPHOLD ena (posedge clk) (71:71:71) (58:58:58))
+      (SETUPHOLD datain (posedge clk) (71:71:71) (58:58:58))
+      (PERIOD clk (2531:2531:2531))
+      (WIDTH (posedge clk) (1100:1100:1100))
+      (WIDTH (negedge clk) (690:690:690))
+      (WIDTH ena (45:45:45))
+    )
+  )
+  (CELL
+    (CELLTYPE "affc1")
+    (INSTANCE inst\|altsyncram_component\|auto_generated\|ram_block1a0.ram_portadatain_reg_6)
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (2378:2572:2572) (2327:2468:2468))
+        (PORT ena (680:728:728) (623:616:616))
+        (PORT datain (1126:1193:1193) (989:1047:1047))
+      )
+    )
+    (TIMINGCHECK
+      (SETUPHOLD ena (posedge clk) (71:71:71) (58:58:58))
+      (SETUPHOLD datain (posedge clk) (71:71:71) (58:58:58))
+      (PERIOD clk (2531:2531:2531))
+      (WIDTH (posedge clk) (1100:1100:1100))
+      (WIDTH (negedge clk) (690:690:690))
+      (WIDTH ena (45:45:45))
+    )
+  )
+  (CELL
+    (CELLTYPE "affc1")
+    (INSTANCE inst\|altsyncram_component\|auto_generated\|ram_block1a0.ram_portadatain_reg_7)
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (2378:2572:2572) (2327:2468:2468))
+        (PORT ena (680:728:728) (623:616:616))
+        (PORT datain (1124:1191:1191) (970:1027:1027))
+      )
+    )
+    (TIMINGCHECK
+      (SETUPHOLD ena (posedge clk) (71:71:71) (58:58:58))
+      (SETUPHOLD datain (posedge clk) (71:71:71) (58:58:58))
+      (PERIOD clk (2531:2531:2531))
+      (WIDTH (posedge clk) (1100:1100:1100))
+      (WIDTH (negedge clk) (690:690:690))
+      (WIDTH ena (45:45:45))
+    )
+  )
+  (CELL
+    (CELLTYPE "affc1")
+    (INSTANCE inst\|altsyncram_component\|auto_generated\|ram_block1a0.ram_portadatain_reg_8)
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (2378:2572:2572) (2327:2468:2468))
+        (PORT ena (680:728:728) (623:616:616))
+        (PORT datain (1126:1193:1193) (989:1047:1047))
+      )
+    )
+    (TIMINGCHECK
+      (SETUPHOLD ena (posedge clk) (71:71:71) (58:58:58))
+      (SETUPHOLD datain (posedge clk) (71:71:71) (58:58:58))
+      (PERIOD clk (2531:2531:2531))
+      (WIDTH (posedge clk) (1100:1100:1100))
+      (WIDTH (negedge clk) (690:690:690))
+      (WIDTH ena (45:45:45))
+    )
+  )
+  (CELL
+    (CELLTYPE "affc1")
+    (INSTANCE inst\|altsyncram_component\|auto_generated\|ram_block1a0.ram_portadatain_reg_9)
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (2378:2572:2572) (2327:2468:2468))
+        (PORT ena (680:728:728) (623:616:616))
+        (PORT datain (1126:1193:1193) (989:1047:1047))
+      )
+    )
+    (TIMINGCHECK
+      (SETUPHOLD ena (posedge clk) (71:71:71) (58:58:58))
+      (SETUPHOLD datain (posedge clk) (71:71:71) (58:58:58))
+      (PERIOD clk (2531:2531:2531))
+      (WIDTH (posedge clk) (1100:1100:1100))
+      (WIDTH (negedge clk) (690:690:690))
+      (WIDTH ena (45:45:45))
+    )
+  )
+  (CELL
+    (CELLTYPE "affc1")
+    (INSTANCE inst\|altsyncram_component\|auto_generated\|ram_block1a0.ram_portadatain_reg_10)
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (2378:2572:2572) (2327:2468:2468))
+        (PORT ena (680:728:728) (623:616:616))
+        (PORT datain (1124:1191:1191) (970:1027:1027))
+      )
+    )
+    (TIMINGCHECK
+      (SETUPHOLD ena (posedge clk) (71:71:71) (58:58:58))
+      (SETUPHOLD datain (posedge clk) (71:71:71) (58:58:58))
+      (PERIOD clk (2531:2531:2531))
+      (WIDTH (posedge clk) (1100:1100:1100))
+      (WIDTH (negedge clk) (690:690:690))
+      (WIDTH ena (45:45:45))
+    )
+  )
+  (CELL
+    (CELLTYPE "affc1")
+    (INSTANCE inst\|altsyncram_component\|auto_generated\|ram_block1a0.ram_portadatain_reg_11)
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (2378:2572:2572) (2327:2468:2468))
+        (PORT ena (680:728:728) (623:616:616))
+        (PORT datain (1126:1193:1193) (989:1047:1047))
+      )
+    )
+    (TIMINGCHECK
+      (SETUPHOLD ena (posedge clk) (71:71:71) (58:58:58))
+      (SETUPHOLD datain (posedge clk) (71:71:71) (58:58:58))
+      (PERIOD clk (2531:2531:2531))
+      (WIDTH (posedge clk) (1100:1100:1100))
+      (WIDTH (negedge clk) (690:690:690))
+      (WIDTH ena (45:45:45))
+    )
+  )
+  (CELL
+    (CELLTYPE "affc1")
+    (INSTANCE inst\|altsyncram_component\|auto_generated\|ram_block1a0.ram_portadatain_reg_12)
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (2378:2572:2572) (2327:2468:2468))
+        (PORT ena (680:728:728) (623:616:616))
+        (PORT datain (1124:1191:1191) (970:1027:1027))
+      )
+    )
+    (TIMINGCHECK
+      (SETUPHOLD ena (posedge clk) (71:71:71) (58:58:58))
+      (SETUPHOLD datain (posedge clk) (71:71:71) (58:58:58))
+      (PERIOD clk (2531:2531:2531))
+      (WIDTH (posedge clk) (1100:1100:1100))
+      (WIDTH (negedge clk) (690:690:690))
+      (WIDTH ena (45:45:45))
+    )
+  )
+  (CELL
+    (CELLTYPE "affc1")
+    (INSTANCE inst\|altsyncram_component\|auto_generated\|ram_block1a0.ram_portadatain_reg_13)
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (2378:2572:2572) (2327:2468:2468))
+        (PORT ena (680:728:728) (623:616:616))
+        (PORT datain (1126:1193:1193) (989:1047:1047))
+      )
+    )
+    (TIMINGCHECK
+      (SETUPHOLD ena (posedge clk) (71:71:71) (58:58:58))
+      (SETUPHOLD datain (posedge clk) (71:71:71) (58:58:58))
+      (PERIOD clk (2531:2531:2531))
+      (WIDTH (posedge clk) (1100:1100:1100))
+      (WIDTH (negedge clk) (690:690:690))
+      (WIDTH ena (45:45:45))
+    )
+  )
+  (CELL
+    (CELLTYPE "affc1")
+    (INSTANCE inst\|altsyncram_component\|auto_generated\|ram_block1a0.ram_portadatain_reg_14)
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (2378:2572:2572) (2327:2468:2468))
+        (PORT ena (680:728:728) (623:616:616))
+        (PORT datain (1124:1191:1191) (970:1027:1027))
+      )
+    )
+    (TIMINGCHECK
+      (SETUPHOLD ena (posedge clk) (71:71:71) (58:58:58))
+      (SETUPHOLD datain (posedge clk) (71:71:71) (58:58:58))
+      (PERIOD clk (2531:2531:2531))
+      (WIDTH (posedge clk) (1100:1100:1100))
+      (WIDTH (negedge clk) (690:690:690))
+      (WIDTH ena (45:45:45))
+    )
+  )
+  (CELL
+    (CELLTYPE "affc1")
+    (INSTANCE inst\|altsyncram_component\|auto_generated\|ram_block1a0.ram_portadatain_reg_15)
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (2378:2572:2572) (2327:2468:2468))
+        (PORT ena (680:728:728) (623:616:616))
+        (PORT datain (1126:1193:1193) (989:1047:1047))
+      )
+    )
+    (TIMINGCHECK
+      (SETUPHOLD ena (posedge clk) (71:71:71) (58:58:58))
+      (SETUPHOLD datain (posedge clk) (71:71:71) (58:58:58))
+      (PERIOD clk (2531:2531:2531))
+      (WIDTH (posedge clk) (1100:1100:1100))
+      (WIDTH (negedge clk) (690:690:690))
+      (WIDTH ena (45:45:45))
+    )
+  )
+  (CELL
+    (CELLTYPE "affc1")
+    (INSTANCE inst\|altsyncram_component\|auto_generated\|ram_block1a0.ram_portadatain_reg_16)
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (2378:2572:2572) (2327:2468:2468))
+        (PORT ena (680:728:728) (623:616:616))
+        (PORT datain (1124:1191:1191) (970:1027:1027))
+      )
+    )
+    (TIMINGCHECK
+      (SETUPHOLD ena (posedge clk) (71:71:71) (58:58:58))
+      (SETUPHOLD datain (posedge clk) (71:71:71) (58:58:58))
+      (PERIOD clk (2531:2531:2531))
+      (WIDTH (posedge clk) (1100:1100:1100))
+      (WIDTH (negedge clk) (690:690:690))
+      (WIDTH ena (45:45:45))
+    )
+  )
+  (CELL
+    (CELLTYPE "affc1")
+    (INSTANCE inst\|altsyncram_component\|auto_generated\|ram_block1a0.ram_portadatain_reg_17)
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (2378:2572:2572) (2327:2468:2468))
+        (PORT ena (680:728:728) (623:616:616))
+        (PORT datain (1126:1193:1193) (989:1047:1047))
+      )
+    )
+    (TIMINGCHECK
+      (SETUPHOLD ena (posedge clk) (71:71:71) (58:58:58))
+      (SETUPHOLD datain (posedge clk) (71:71:71) (58:58:58))
+      (PERIOD clk (2531:2531:2531))
+      (WIDTH (posedge clk) (1100:1100:1100))
+      (WIDTH (negedge clk) (690:690:690))
+      (WIDTH ena (45:45:45))
+    )
+  )
+  (CELL
+    (CELLTYPE "affc1")
+    (INSTANCE inst\|altsyncram_component\|auto_generated\|ram_block1a0.ram_portadatain_reg_18)
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (2378:2572:2572) (2327:2468:2468))
+        (PORT ena (680:728:728) (623:616:616))
+        (PORT datain (1070:1133:1133) (922:977:977))
+      )
+    )
+    (TIMINGCHECK
+      (SETUPHOLD ena (posedge clk) (71:71:71) (58:58:58))
+      (SETUPHOLD datain (posedge clk) (71:71:71) (58:58:58))
+      (PERIOD clk (2531:2531:2531))
+      (WIDTH (posedge clk) (1100:1100:1100))
+      (WIDTH (negedge clk) (690:690:690))
+      (WIDTH ena (45:45:45))
+    )
+  )
+  (CELL
+    (CELLTYPE "affc1")
+    (INSTANCE inst\|altsyncram_component\|auto_generated\|ram_block1a0.ram_portadatain_reg_19)
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (2378:2572:2572) (2327:2468:2468))
+        (PORT ena (680:728:728) (623:616:616))
+        (PORT datain (1054:1116:1116) (911:966:966))
+      )
+    )
+    (TIMINGCHECK
+      (SETUPHOLD ena (posedge clk) (71:71:71) (58:58:58))
+      (SETUPHOLD datain (posedge clk) (71:71:71) (58:58:58))
+      (PERIOD clk (2531:2531:2531))
+      (WIDTH (posedge clk) (1100:1100:1100))
+      (WIDTH (negedge clk) (690:690:690))
+      (WIDTH ena (45:45:45))
+    )
+  )
+  (CELL
+    (CELLTYPE "affc1")
+    (INSTANCE inst\|altsyncram_component\|auto_generated\|ram_block1a0.ram_portadatain_reg_20)
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (2378:2572:2572) (2327:2468:2468))
+        (PORT ena (680:728:728) (623:616:616))
+        (PORT datain (1070:1133:1133) (922:977:977))
+      )
+    )
+    (TIMINGCHECK
+      (SETUPHOLD ena (posedge clk) (71:71:71) (58:58:58))
+      (SETUPHOLD datain (posedge clk) (71:71:71) (58:58:58))
+      (PERIOD clk (2531:2531:2531))
+      (WIDTH (posedge clk) (1100:1100:1100))
+      (WIDTH (negedge clk) (690:690:690))
+      (WIDTH ena (45:45:45))
+    )
+  )
+  (CELL
+    (CELLTYPE "affc1")
+    (INSTANCE inst\|altsyncram_component\|auto_generated\|ram_block1a0.ram_portadatain_reg_21)
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (2378:2572:2572) (2327:2468:2468))
+        (PORT ena (680:728:728) (623:616:616))
+        (PORT datain (1054:1116:1116) (911:966:966))
+      )
+    )
+    (TIMINGCHECK
+      (SETUPHOLD ena (posedge clk) (71:71:71) (58:58:58))
+      (SETUPHOLD datain (posedge clk) (71:71:71) (58:58:58))
+      (PERIOD clk (2531:2531:2531))
+      (WIDTH (posedge clk) (1100:1100:1100))
+      (WIDTH (negedge clk) (690:690:690))
+      (WIDTH ena (45:45:45))
+    )
+  )
+  (CELL
+    (CELLTYPE "affc1")
+    (INSTANCE inst\|altsyncram_component\|auto_generated\|ram_block1a0.ram_portadatain_reg_22)
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (2378:2572:2572) (2327:2468:2468))
+        (PORT ena (680:728:728) (623:616:616))
+        (PORT datain (1070:1133:1133) (922:977:977))
+      )
+    )
+    (TIMINGCHECK
+      (SETUPHOLD ena (posedge clk) (71:71:71) (58:58:58))
+      (SETUPHOLD datain (posedge clk) (71:71:71) (58:58:58))
+      (PERIOD clk (2531:2531:2531))
+      (WIDTH (posedge clk) (1100:1100:1100))
+      (WIDTH (negedge clk) (690:690:690))
+      (WIDTH ena (45:45:45))
+    )
+  )
+  (CELL
+    (CELLTYPE "affc1")
+    (INSTANCE inst\|altsyncram_component\|auto_generated\|ram_block1a0.ram_portadatain_reg_23)
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (2378:2572:2572) (2327:2468:2468))
+        (PORT ena (680:728:728) (623:616:616))
+        (PORT datain (1054:1116:1116) (911:966:966))
+      )
+    )
+    (TIMINGCHECK
+      (SETUPHOLD ena (posedge clk) (71:71:71) (58:58:58))
+      (SETUPHOLD datain (posedge clk) (71:71:71) (58:58:58))
+      (PERIOD clk (2531:2531:2531))
+      (WIDTH (posedge clk) (1100:1100:1100))
+      (WIDTH (negedge clk) (690:690:690))
+      (WIDTH ena (45:45:45))
+    )
+  )
+  (CELL
+    (CELLTYPE "affc1")
+    (INSTANCE inst\|altsyncram_component\|auto_generated\|ram_block1a0.ram_portadatain_reg_24)
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (2378:2572:2572) (2327:2468:2468))
+        (PORT ena (680:728:728) (623:616:616))
+        (PORT datain (1070:1133:1133) (922:977:977))
+      )
+    )
+    (TIMINGCHECK
+      (SETUPHOLD ena (posedge clk) (71:71:71) (58:58:58))
+      (SETUPHOLD datain (posedge clk) (71:71:71) (58:58:58))
+      (PERIOD clk (2531:2531:2531))
+      (WIDTH (posedge clk) (1100:1100:1100))
+      (WIDTH (negedge clk) (690:690:690))
+      (WIDTH ena (45:45:45))
+    )
+  )
+  (CELL
+    (CELLTYPE "affc1")
+    (INSTANCE inst\|altsyncram_component\|auto_generated\|ram_block1a0.ram_portadatain_reg_25)
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (2378:2572:2572) (2327:2468:2468))
+        (PORT ena (680:728:728) (623:616:616))
+        (PORT datain (1054:1116:1116) (911:966:966))
+      )
+    )
+    (TIMINGCHECK
+      (SETUPHOLD ena (posedge clk) (71:71:71) (58:58:58))
+      (SETUPHOLD datain (posedge clk) (71:71:71) (58:58:58))
+      (PERIOD clk (2531:2531:2531))
+      (WIDTH (posedge clk) (1100:1100:1100))
+      (WIDTH (negedge clk) (690:690:690))
+      (WIDTH ena (45:45:45))
+    )
+  )
+  (CELL
+    (CELLTYPE "affc1")
+    (INSTANCE inst\|altsyncram_component\|auto_generated\|ram_block1a0.ram_portadatain_reg_26)
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (2378:2572:2572) (2327:2468:2468))
+        (PORT ena (680:728:728) (623:616:616))
+        (PORT datain (1070:1133:1133) (922:977:977))
+      )
+    )
+    (TIMINGCHECK
+      (SETUPHOLD ena (posedge clk) (71:71:71) (58:58:58))
+      (SETUPHOLD datain (posedge clk) (71:71:71) (58:58:58))
+      (PERIOD clk (2531:2531:2531))
+      (WIDTH (posedge clk) (1100:1100:1100))
+      (WIDTH (negedge clk) (690:690:690))
+      (WIDTH ena (45:45:45))
+    )
+  )
+  (CELL
+    (CELLTYPE "affc1")
+    (INSTANCE inst\|altsyncram_component\|auto_generated\|ram_block1a0.ram_portadatain_reg_27)
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (2378:2572:2572) (2327:2468:2468))
+        (PORT ena (680:728:728) (623:616:616))
+        (PORT datain (1070:1133:1133) (922:977:977))
+      )
+    )
+    (TIMINGCHECK
+      (SETUPHOLD ena (posedge clk) (71:71:71) (58:58:58))
+      (SETUPHOLD datain (posedge clk) (71:71:71) (58:58:58))
+      (PERIOD clk (2531:2531:2531))
+      (WIDTH (posedge clk) (1100:1100:1100))
+      (WIDTH (negedge clk) (690:690:690))
+      (WIDTH ena (45:45:45))
+    )
+  )
+  (CELL
+    (CELLTYPE "affc1")
+    (INSTANCE inst\|altsyncram_component\|auto_generated\|ram_block1a0.ram_portadatain_reg_28)
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (2378:2572:2572) (2327:2468:2468))
+        (PORT ena (680:728:728) (623:616:616))
+        (PORT datain (1054:1116:1116) (911:966:966))
+      )
+    )
+    (TIMINGCHECK
+      (SETUPHOLD ena (posedge clk) (71:71:71) (58:58:58))
+      (SETUPHOLD datain (posedge clk) (71:71:71) (58:58:58))
+      (PERIOD clk (2531:2531:2531))
+      (WIDTH (posedge clk) (1100:1100:1100))
+      (WIDTH (negedge clk) (690:690:690))
+      (WIDTH ena (45:45:45))
+    )
+  )
+  (CELL
+    (CELLTYPE "affc1")
+    (INSTANCE inst\|altsyncram_component\|auto_generated\|ram_block1a0.ram_portadatain_reg_29)
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (2378:2572:2572) (2327:2468:2468))
+        (PORT ena (680:728:728) (623:616:616))
+        (PORT datain (1070:1133:1133) (922:977:977))
+      )
+    )
+    (TIMINGCHECK
+      (SETUPHOLD ena (posedge clk) (71:71:71) (58:58:58))
+      (SETUPHOLD datain (posedge clk) (71:71:71) (58:58:58))
+      (PERIOD clk (2531:2531:2531))
+      (WIDTH (posedge clk) (1100:1100:1100))
+      (WIDTH (negedge clk) (690:690:690))
+      (WIDTH ena (45:45:45))
+    )
+  )
+  (CELL
+    (CELLTYPE "affc1")
+    (INSTANCE inst\|altsyncram_component\|auto_generated\|ram_block1a0.ram_portadatain_reg_30)
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (2378:2572:2572) (2327:2468:2468))
+        (PORT ena (680:728:728) (623:616:616))
+        (PORT datain (1054:1116:1116) (911:966:966))
+      )
+    )
+    (TIMINGCHECK
+      (SETUPHOLD ena (posedge clk) (71:71:71) (58:58:58))
+      (SETUPHOLD datain (posedge clk) (71:71:71) (58:58:58))
+      (PERIOD clk (2531:2531:2531))
+      (WIDTH (posedge clk) (1100:1100:1100))
+      (WIDTH (negedge clk) (690:690:690))
+      (WIDTH ena (45:45:45))
+    )
+  )
+  (CELL
+    (CELLTYPE "affc1")
+    (INSTANCE inst\|altsyncram_component\|auto_generated\|ram_block1a0.ram_portadatain_reg_31)
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (2378:2572:2572) (2327:2468:2468))
+        (PORT ena (680:728:728) (623:616:616))
+        (PORT datain (1070:1133:1133) (922:977:977))
+      )
+    )
+    (TIMINGCHECK
+      (SETUPHOLD ena (posedge clk) (71:71:71) (58:58:58))
+      (SETUPHOLD datain (posedge clk) (71:71:71) (58:58:58))
+      (PERIOD clk (2531:2531:2531))
+      (WIDTH (posedge clk) (1100:1100:1100))
+      (WIDTH (negedge clk) (690:690:690))
+      (WIDTH ena (45:45:45))
+    )
+  )
+  (CELL
+    (CELLTYPE "affstall")
+    (INSTANCE inst\|altsyncram_component\|auto_generated\|ram_block1a0.ram_portaaddr_reg_0)
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (2346:2452:2452) (2277:2384:2384))
+        (PORT ena (604:598:598) (541:522:522))
+        (PORT datain (1162:1234:1234) (1005:1074:1074))
+        (IOPATH (posedge clk) regout (108:108:108) (108:108:108))
+      )
+    )
+    (TIMINGCHECK
+      (SETUPHOLD ena (posedge clk) (79:79:79) (82:82:82))
+      (SETUPHOLD datain (posedge clk) (79:79:79) (82:82:82))
+      (PERIOD clk (2531:2531:2531))
+      (WIDTH (posedge clk) (1100:1100:1100))
+      (WIDTH (negedge clk) (690:690:690))
+      (WIDTH ena (45:45:45))
+    )
+  )
+  (CELL
+    (CELLTYPE "affstall")
+    (INSTANCE inst\|altsyncram_component\|auto_generated\|ram_block1a0.ram_portaaddr_reg_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (2346:2452:2452) (2277:2384:2384))
+        (PORT ena (604:598:598) (541:522:522))
+        (PORT datain (1164:1236:1236) (1024:1094:1094))
+        (IOPATH (posedge clk) regout (108:108:108) (108:108:108))
+      )
+    )
+    (TIMINGCHECK
+      (SETUPHOLD ena (posedge clk) (79:79:79) (82:82:82))
+      (SETUPHOLD datain (posedge clk) (79:79:79) (82:82:82))
+      (PERIOD clk (2531:2531:2531))
+      (WIDTH (posedge clk) (1100:1100:1100))
+      (WIDTH (negedge clk) (690:690:690))
+      (WIDTH ena (45:45:45))
+    )
+  )
+  (CELL
+    (CELLTYPE "affstall")
+    (INSTANCE inst\|altsyncram_component\|auto_generated\|ram_block1a0.ram_portaaddr_reg_2)
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (2346:2452:2452) (2277:2384:2384))
+        (PORT ena (604:598:598) (541:522:522))
+        (PORT datain (1162:1234:1234) (1005:1074:1074))
+        (IOPATH (posedge clk) regout (108:108:108) (108:108:108))
+      )
+    )
+    (TIMINGCHECK
+      (SETUPHOLD ena (posedge clk) (79:79:79) (82:82:82))
+      (SETUPHOLD datain (posedge clk) (79:79:79) (82:82:82))
+      (PERIOD clk (2531:2531:2531))
+      (WIDTH (posedge clk) (1100:1100:1100))
+      (WIDTH (negedge clk) (690:690:690))
+      (WIDTH ena (45:45:45))
+    )
+  )
+  (CELL
+    (CELLTYPE "affstall")
+    (INSTANCE inst\|altsyncram_component\|auto_generated\|ram_block1a0.ram_portaaddr_reg_3)
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (2346:2452:2452) (2277:2384:2384))
+        (PORT ena (604:598:598) (541:522:522))
+        (PORT datain (1164:1236:1236) (1024:1094:1094))
+        (IOPATH (posedge clk) regout (108:108:108) (108:108:108))
+      )
+    )
+    (TIMINGCHECK
+      (SETUPHOLD ena (posedge clk) (79:79:79) (82:82:82))
+      (SETUPHOLD datain (posedge clk) (79:79:79) (82:82:82))
+      (PERIOD clk (2531:2531:2531))
+      (WIDTH (posedge clk) (1100:1100:1100))
+      (WIDTH (negedge clk) (690:690:690))
+      (WIDTH ena (45:45:45))
+    )
+  )
+  (CELL
+    (CELLTYPE "affstall")
+    (INSTANCE inst\|altsyncram_component\|auto_generated\|ram_block1a0.ram_portaaddr_reg_4)
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (2346:2452:2452) (2277:2384:2384))
+        (PORT ena (604:598:598) (541:522:522))
+        (PORT datain (1162:1234:1234) (1005:1074:1074))
+        (IOPATH (posedge clk) regout (108:108:108) (108:108:108))
+      )
+    )
+    (TIMINGCHECK
+      (SETUPHOLD ena (posedge clk) (79:79:79) (82:82:82))
+      (SETUPHOLD datain (posedge clk) (79:79:79) (82:82:82))
+      (PERIOD clk (2531:2531:2531))
+      (WIDTH (posedge clk) (1100:1100:1100))
+      (WIDTH (negedge clk) (690:690:690))
+      (WIDTH ena (45:45:45))
+    )
+  )
+  (CELL
+    (CELLTYPE "affc1")
+    (INSTANCE inst\|altsyncram_component\|auto_generated\|ram_block1a0.ram_porta_we_reg)
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (2329:2429:2429) (2260:2363:2363))
+        (PORT ena (508:608:608) (436:546:546))
+        (PORT datain (395:417:417) (368:390:390))
+        (IOPATH (posedge clk) q (77:77:77) (77:77:77))
+      )
+    )
+    (TIMINGCHECK
+      (SETUPHOLD ena (posedge clk) (71:71:71) (69:69:69))
+      (SETUPHOLD datain (posedge clk) (71:71:71) (69:69:69))
+      (PERIOD clk (2531:2531:2531))
+      (WIDTH (posedge clk) (1100:1100:1100))
+      (WIDTH (negedge clk) (690:690:690))
+      (WIDTH ena (45:45:45))
+    )
+  )
+  (CELL
+    (CELLTYPE "affstall")
+    (INSTANCE inst\|altsyncram_component\|auto_generated\|ram_block1a0.ram_portbaddr_reg_0)
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (2239:2447:2447) (2205:2425:2425))
+        (PORT ena (421:593:593) (397:564:564))
+        (PORT datain (5705:6069:6069) (5290:5652:5652))
+        (IOPATH (posedge clk) regout (108:108:108) (108:108:108))
+      )
+    )
+    (TIMINGCHECK
+      (SETUPHOLD ena (posedge clk) (79:79:79) (82:82:82))
+      (SETUPHOLD datain (posedge clk) (79:79:79) (82:82:82))
+      (PERIOD clk (2531:2531:2531))
+      (WIDTH (posedge clk) (1100:1100:1100))
+      (WIDTH (negedge clk) (690:690:690))
+      (WIDTH ena (45:45:45))
+    )
+  )
+  (CELL
+    (CELLTYPE "affstall")
+    (INSTANCE inst\|altsyncram_component\|auto_generated\|ram_block1a0.ram_portbaddr_reg_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (2239:2447:2447) (2205:2425:2425))
+        (PORT ena (421:593:593) (397:564:564))
+        (PORT datain (6045:6426:6426) (5602:5981:5981))
+        (IOPATH (posedge clk) regout (108:108:108) (108:108:108))
+      )
+    )
+    (TIMINGCHECK
+      (SETUPHOLD ena (posedge clk) (79:79:79) (82:82:82))
+      (SETUPHOLD datain (posedge clk) (79:79:79) (82:82:82))
+      (PERIOD clk (2531:2531:2531))
+      (WIDTH (posedge clk) (1100:1100:1100))
+      (WIDTH (negedge clk) (690:690:690))
+      (WIDTH ena (45:45:45))
+    )
+  )
+  (CELL
+    (CELLTYPE "affstall")
+    (INSTANCE inst\|altsyncram_component\|auto_generated\|ram_block1a0.ram_portbaddr_reg_2)
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (2239:2447:2447) (2205:2425:2425))
+        (PORT ena (421:593:593) (397:564:564))
+        (PORT datain (5173:5487:5487) (4876:5174:5174))
+        (IOPATH (posedge clk) regout (108:108:108) (108:108:108))
+      )
+    )
+    (TIMINGCHECK
+      (SETUPHOLD ena (posedge clk) (79:79:79) (82:82:82))
+      (SETUPHOLD datain (posedge clk) (79:79:79) (82:82:82))
+      (PERIOD clk (2531:2531:2531))
+      (WIDTH (posedge clk) (1100:1100:1100))
+      (WIDTH (negedge clk) (690:690:690))
+      (WIDTH ena (45:45:45))
+    )
+  )
+  (CELL
+    (CELLTYPE "affstall")
+    (INSTANCE inst\|altsyncram_component\|auto_generated\|ram_block1a0.ram_portbaddr_reg_3)
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (2239:2447:2447) (2205:2425:2425))
+        (PORT ena (421:593:593) (397:564:564))
+        (PORT datain (5942:6318:6318) (5527:5902:5902))
+        (IOPATH (posedge clk) regout (108:108:108) (108:108:108))
+      )
+    )
+    (TIMINGCHECK
+      (SETUPHOLD ena (posedge clk) (79:79:79) (82:82:82))
+      (SETUPHOLD datain (posedge clk) (79:79:79) (82:82:82))
+      (PERIOD clk (2531:2531:2531))
+      (WIDTH (posedge clk) (1100:1100:1100))
+      (WIDTH (negedge clk) (690:690:690))
+      (WIDTH ena (45:45:45))
+    )
+  )
+  (CELL
+    (CELLTYPE "affstall")
+    (INSTANCE inst\|altsyncram_component\|auto_generated\|ram_block1a0.ram_portbaddr_reg_4)
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (2239:2447:2447) (2205:2425:2425))
+        (PORT ena (421:593:593) (397:564:564))
+        (PORT datain (6185:6574:6574) (5695:6079:6079))
+        (IOPATH (posedge clk) regout (108:108:108) (108:108:108))
+      )
+    )
+    (TIMINGCHECK
+      (SETUPHOLD ena (posedge clk) (79:79:79) (82:82:82))
+      (SETUPHOLD datain (posedge clk) (79:79:79) (82:82:82))
+      (PERIOD clk (2531:2531:2531))
+      (WIDTH (posedge clk) (1100:1100:1100))
+      (WIDTH (negedge clk) (690:690:690))
+      (WIDTH ena (45:45:45))
+    )
+  )
+  (CELL
+    (CELLTYPE "affc1")
+    (INSTANCE inst\|altsyncram_component\|auto_generated\|ram_block1a0.ram_portb_re_reg)
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (2161:2356:2356) (2123:2358:2358))
+        (PORT datain (352:370:370) (366:385:385))
+        (IOPATH (posedge clk) q (77:77:77) (77:77:77))
+      )
+    )
+    (TIMINGCHECK
+      (SETUPHOLD datain (posedge clk) (71:71:71) (69:69:69))
+      (PERIOD clk (2531:2531:2531))
+      (WIDTH (posedge clk) (1100:1100:1100))
+      (WIDTH (negedge clk) (690:690:690))
+    )
+  )
+  (CELL
+    (CELLTYPE "affc1")
+    (INSTANCE inst\|altsyncram_component\|auto_generated\|ram_block1a0.ram_portbdataout_reg_0)
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (2198:2354:2354) (2153:2389:2389))
+        (IOPATH (posedge clk) q (133:136:136) (154:159:159))
+      )
+    )
+    (TIMINGCHECK
+      (SETUPHOLD ena (posedge clk) (110:110:110) (64:64:64))
+      (SETUPHOLD datain (posedge clk) (110:110:110) (64:64:64))
+      (PERIOD clk (2531:2531:2531))
+      (WIDTH (posedge clk) (1100:1100:1100))
+      (WIDTH (negedge clk) (690:690:690))
+      (WIDTH ena (45:45:45))
+    )
+  )
+  (CELL
+    (CELLTYPE "affc1")
+    (INSTANCE inst\|altsyncram_component\|auto_generated\|ram_block1a0.ram_portbdataout_reg_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (2198:2354:2354) (2153:2389:2389))
+        (IOPATH (posedge clk) q (133:136:136) (154:159:159))
+      )
+    )
+    (TIMINGCHECK
+      (SETUPHOLD ena (posedge clk) (110:110:110) (64:64:64))
+      (SETUPHOLD datain (posedge clk) (110:110:110) (64:64:64))
+      (PERIOD clk (2531:2531:2531))
+      (WIDTH (posedge clk) (1100:1100:1100))
+      (WIDTH (negedge clk) (690:690:690))
+      (WIDTH ena (45:45:45))
+    )
+  )
+  (CELL
+    (CELLTYPE "affc1")
+    (INSTANCE inst\|altsyncram_component\|auto_generated\|ram_block1a0.ram_portbdataout_reg_2)
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (2198:2354:2354) (2153:2389:2389))
+        (IOPATH (posedge clk) q (133:136:136) (154:159:159))
+      )
+    )
+    (TIMINGCHECK
+      (SETUPHOLD ena (posedge clk) (110:110:110) (64:64:64))
+      (SETUPHOLD datain (posedge clk) (110:110:110) (64:64:64))
+      (PERIOD clk (2531:2531:2531))
+      (WIDTH (posedge clk) (1100:1100:1100))
+      (WIDTH (negedge clk) (690:690:690))
+      (WIDTH ena (45:45:45))
+    )
+  )
+  (CELL
+    (CELLTYPE "affc1")
+    (INSTANCE inst\|altsyncram_component\|auto_generated\|ram_block1a0.ram_portbdataout_reg_3)
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (2198:2354:2354) (2153:2389:2389))
+        (IOPATH (posedge clk) q (133:136:136) (154:159:159))
+      )
+    )
+    (TIMINGCHECK
+      (SETUPHOLD ena (posedge clk) (110:110:110) (64:64:64))
+      (SETUPHOLD datain (posedge clk) (110:110:110) (64:64:64))
+      (PERIOD clk (2531:2531:2531))
+      (WIDTH (posedge clk) (1100:1100:1100))
+      (WIDTH (negedge clk) (690:690:690))
+      (WIDTH ena (45:45:45))
+    )
+  )
+  (CELL
+    (CELLTYPE "affc1")
+    (INSTANCE inst\|altsyncram_component\|auto_generated\|ram_block1a0.ram_portbdataout_reg_4)
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (2198:2354:2354) (2153:2389:2389))
+        (IOPATH (posedge clk) q (133:136:136) (154:159:159))
+      )
+    )
+    (TIMINGCHECK
+      (SETUPHOLD ena (posedge clk) (110:110:110) (64:64:64))
+      (SETUPHOLD datain (posedge clk) (110:110:110) (64:64:64))
+      (PERIOD clk (2531:2531:2531))
+      (WIDTH (posedge clk) (1100:1100:1100))
+      (WIDTH (negedge clk) (690:690:690))
+      (WIDTH ena (45:45:45))
+    )
+  )
+  (CELL
+    (CELLTYPE "affc1")
+    (INSTANCE inst\|altsyncram_component\|auto_generated\|ram_block1a0.ram_portbdataout_reg_5)
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (2198:2354:2354) (2153:2389:2389))
+        (IOPATH (posedge clk) q (133:136:136) (154:159:159))
+      )
+    )
+    (TIMINGCHECK
+      (SETUPHOLD ena (posedge clk) (110:110:110) (64:64:64))
+      (SETUPHOLD datain (posedge clk) (110:110:110) (64:64:64))
+      (PERIOD clk (2531:2531:2531))
+      (WIDTH (posedge clk) (1100:1100:1100))
+      (WIDTH (negedge clk) (690:690:690))
+      (WIDTH ena (45:45:45))
+    )
+  )
+  (CELL
+    (CELLTYPE "affc1")
+    (INSTANCE inst\|altsyncram_component\|auto_generated\|ram_block1a0.ram_portbdataout_reg_6)
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (2198:2354:2354) (2153:2389:2389))
+        (IOPATH (posedge clk) q (133:136:136) (154:159:159))
+      )
+    )
+    (TIMINGCHECK
+      (SETUPHOLD ena (posedge clk) (110:110:110) (64:64:64))
+      (SETUPHOLD datain (posedge clk) (110:110:110) (64:64:64))
+      (PERIOD clk (2531:2531:2531))
+      (WIDTH (posedge clk) (1100:1100:1100))
+      (WIDTH (negedge clk) (690:690:690))
+      (WIDTH ena (45:45:45))
+    )
+  )
+  (CELL
+    (CELLTYPE "affc1")
+    (INSTANCE inst\|altsyncram_component\|auto_generated\|ram_block1a0.ram_portbdataout_reg_7)
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (2198:2354:2354) (2153:2389:2389))
+        (IOPATH (posedge clk) q (133:136:136) (154:159:159))
+      )
+    )
+    (TIMINGCHECK
+      (SETUPHOLD ena (posedge clk) (110:110:110) (64:64:64))
+      (SETUPHOLD datain (posedge clk) (110:110:110) (64:64:64))
+      (PERIOD clk (2531:2531:2531))
+      (WIDTH (posedge clk) (1100:1100:1100))
+      (WIDTH (negedge clk) (690:690:690))
+      (WIDTH ena (45:45:45))
+    )
+  )
+  (CELL
+    (CELLTYPE "affc1")
+    (INSTANCE inst\|altsyncram_component\|auto_generated\|ram_block1a0.ram_portbdataout_reg_8)
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (2198:2354:2354) (2153:2389:2389))
+        (IOPATH (posedge clk) q (133:136:136) (154:159:159))
+      )
+    )
+    (TIMINGCHECK
+      (SETUPHOLD ena (posedge clk) (110:110:110) (64:64:64))
+      (SETUPHOLD datain (posedge clk) (110:110:110) (64:64:64))
+      (PERIOD clk (2531:2531:2531))
+      (WIDTH (posedge clk) (1100:1100:1100))
+      (WIDTH (negedge clk) (690:690:690))
+      (WIDTH ena (45:45:45))
+    )
+  )
+  (CELL
+    (CELLTYPE "affc1")
+    (INSTANCE inst\|altsyncram_component\|auto_generated\|ram_block1a0.ram_portbdataout_reg_9)
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (2198:2354:2354) (2153:2389:2389))
+        (IOPATH (posedge clk) q (133:136:136) (154:159:159))
+      )
+    )
+    (TIMINGCHECK
+      (SETUPHOLD ena (posedge clk) (110:110:110) (64:64:64))
+      (SETUPHOLD datain (posedge clk) (110:110:110) (64:64:64))
+      (PERIOD clk (2531:2531:2531))
+      (WIDTH (posedge clk) (1100:1100:1100))
+      (WIDTH (negedge clk) (690:690:690))
+      (WIDTH ena (45:45:45))
+    )
+  )
+  (CELL
+    (CELLTYPE "affc1")
+    (INSTANCE inst\|altsyncram_component\|auto_generated\|ram_block1a0.ram_portbdataout_reg_10)
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (2198:2354:2354) (2153:2389:2389))
+        (IOPATH (posedge clk) q (133:136:136) (154:159:159))
+      )
+    )
+    (TIMINGCHECK
+      (SETUPHOLD ena (posedge clk) (110:110:110) (64:64:64))
+      (SETUPHOLD datain (posedge clk) (110:110:110) (64:64:64))
+      (PERIOD clk (2531:2531:2531))
+      (WIDTH (posedge clk) (1100:1100:1100))
+      (WIDTH (negedge clk) (690:690:690))
+      (WIDTH ena (45:45:45))
+    )
+  )
+  (CELL
+    (CELLTYPE "affc1")
+    (INSTANCE inst\|altsyncram_component\|auto_generated\|ram_block1a0.ram_portbdataout_reg_11)
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (2198:2354:2354) (2153:2389:2389))
+        (IOPATH (posedge clk) q (133:136:136) (154:159:159))
+      )
+    )
+    (TIMINGCHECK
+      (SETUPHOLD ena (posedge clk) (110:110:110) (64:64:64))
+      (SETUPHOLD datain (posedge clk) (110:110:110) (64:64:64))
+      (PERIOD clk (2531:2531:2531))
+      (WIDTH (posedge clk) (1100:1100:1100))
+      (WIDTH (negedge clk) (690:690:690))
+      (WIDTH ena (45:45:45))
+    )
+  )
+  (CELL
+    (CELLTYPE "affc1")
+    (INSTANCE inst\|altsyncram_component\|auto_generated\|ram_block1a0.ram_portbdataout_reg_12)
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (2198:2354:2354) (2153:2389:2389))
+        (IOPATH (posedge clk) q (133:136:136) (154:159:159))
+      )
+    )
+    (TIMINGCHECK
+      (SETUPHOLD ena (posedge clk) (110:110:110) (64:64:64))
+      (SETUPHOLD datain (posedge clk) (110:110:110) (64:64:64))
+      (PERIOD clk (2531:2531:2531))
+      (WIDTH (posedge clk) (1100:1100:1100))
+      (WIDTH (negedge clk) (690:690:690))
+      (WIDTH ena (45:45:45))
+    )
+  )
+  (CELL
+    (CELLTYPE "affc1")
+    (INSTANCE inst\|altsyncram_component\|auto_generated\|ram_block1a0.ram_portbdataout_reg_13)
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (2198:2354:2354) (2153:2389:2389))
+        (IOPATH (posedge clk) q (133:136:136) (154:159:159))
+      )
+    )
+    (TIMINGCHECK
+      (SETUPHOLD ena (posedge clk) (110:110:110) (64:64:64))
+      (SETUPHOLD datain (posedge clk) (110:110:110) (64:64:64))
+      (PERIOD clk (2531:2531:2531))
+      (WIDTH (posedge clk) (1100:1100:1100))
+      (WIDTH (negedge clk) (690:690:690))
+      (WIDTH ena (45:45:45))
+    )
+  )
+  (CELL
+    (CELLTYPE "affc1")
+    (INSTANCE inst\|altsyncram_component\|auto_generated\|ram_block1a0.ram_portbdataout_reg_14)
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (2198:2354:2354) (2153:2389:2389))
+        (IOPATH (posedge clk) q (133:136:136) (154:159:159))
+      )
+    )
+    (TIMINGCHECK
+      (SETUPHOLD ena (posedge clk) (110:110:110) (64:64:64))
+      (SETUPHOLD datain (posedge clk) (110:110:110) (64:64:64))
+      (PERIOD clk (2531:2531:2531))
+      (WIDTH (posedge clk) (1100:1100:1100))
+      (WIDTH (negedge clk) (690:690:690))
+      (WIDTH ena (45:45:45))
+    )
+  )
+  (CELL
+    (CELLTYPE "affc1")
+    (INSTANCE inst\|altsyncram_component\|auto_generated\|ram_block1a0.ram_portbdataout_reg_15)
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (2198:2354:2354) (2153:2389:2389))
+        (IOPATH (posedge clk) q (133:136:136) (154:159:159))
+      )
+    )
+    (TIMINGCHECK
+      (SETUPHOLD ena (posedge clk) (110:110:110) (64:64:64))
+      (SETUPHOLD datain (posedge clk) (110:110:110) (64:64:64))
+      (PERIOD clk (2531:2531:2531))
+      (WIDTH (posedge clk) (1100:1100:1100))
+      (WIDTH (negedge clk) (690:690:690))
+      (WIDTH ena (45:45:45))
+    )
+  )
+  (CELL
+    (CELLTYPE "affc1")
+    (INSTANCE inst\|altsyncram_component\|auto_generated\|ram_block1a0.ram_portbdataout_reg_16)
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (2198:2354:2354) (2153:2389:2389))
+        (IOPATH (posedge clk) q (133:136:136) (154:159:159))
+      )
+    )
+    (TIMINGCHECK
+      (SETUPHOLD ena (posedge clk) (110:110:110) (64:64:64))
+      (SETUPHOLD datain (posedge clk) (110:110:110) (64:64:64))
+      (PERIOD clk (2531:2531:2531))
+      (WIDTH (posedge clk) (1100:1100:1100))
+      (WIDTH (negedge clk) (690:690:690))
+      (WIDTH ena (45:45:45))
+    )
+  )
+  (CELL
+    (CELLTYPE "affc1")
+    (INSTANCE inst\|altsyncram_component\|auto_generated\|ram_block1a0.ram_portbdataout_reg_17)
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (2198:2354:2354) (2153:2389:2389))
+        (IOPATH (posedge clk) q (133:136:136) (154:159:159))
+      )
+    )
+    (TIMINGCHECK
+      (SETUPHOLD ena (posedge clk) (110:110:110) (64:64:64))
+      (SETUPHOLD datain (posedge clk) (110:110:110) (64:64:64))
+      (PERIOD clk (2531:2531:2531))
+      (WIDTH (posedge clk) (1100:1100:1100))
+      (WIDTH (negedge clk) (690:690:690))
+      (WIDTH ena (45:45:45))
+    )
+  )
+  (CELL
+    (CELLTYPE "affc1")
+    (INSTANCE inst\|altsyncram_component\|auto_generated\|ram_block1a0.ram_portbdataout_reg_18)
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (2198:2354:2354) (2153:2389:2389))
+        (IOPATH (posedge clk) q (133:136:136) (154:159:159))
+      )
+    )
+    (TIMINGCHECK
+      (SETUPHOLD ena (posedge clk) (110:110:110) (64:64:64))
+      (SETUPHOLD datain (posedge clk) (110:110:110) (64:64:64))
+      (PERIOD clk (2531:2531:2531))
+      (WIDTH (posedge clk) (1100:1100:1100))
+      (WIDTH (negedge clk) (690:690:690))
+      (WIDTH ena (45:45:45))
+    )
+  )
+  (CELL
+    (CELLTYPE "affc1")
+    (INSTANCE inst\|altsyncram_component\|auto_generated\|ram_block1a0.ram_portbdataout_reg_19)
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (2198:2354:2354) (2153:2389:2389))
+        (IOPATH (posedge clk) q (133:136:136) (154:159:159))
+      )
+    )
+    (TIMINGCHECK
+      (SETUPHOLD ena (posedge clk) (110:110:110) (64:64:64))
+      (SETUPHOLD datain (posedge clk) (110:110:110) (64:64:64))
+      (PERIOD clk (2531:2531:2531))
+      (WIDTH (posedge clk) (1100:1100:1100))
+      (WIDTH (negedge clk) (690:690:690))
+      (WIDTH ena (45:45:45))
+    )
+  )
+  (CELL
+    (CELLTYPE "affc1")
+    (INSTANCE inst\|altsyncram_component\|auto_generated\|ram_block1a0.ram_portbdataout_reg_20)
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (2198:2354:2354) (2153:2389:2389))
+        (IOPATH (posedge clk) q (133:136:136) (154:159:159))
+      )
+    )
+    (TIMINGCHECK
+      (SETUPHOLD ena (posedge clk) (110:110:110) (64:64:64))
+      (SETUPHOLD datain (posedge clk) (110:110:110) (64:64:64))
+      (PERIOD clk (2531:2531:2531))
+      (WIDTH (posedge clk) (1100:1100:1100))
+      (WIDTH (negedge clk) (690:690:690))
+      (WIDTH ena (45:45:45))
+    )
+  )
+  (CELL
+    (CELLTYPE "affc1")
+    (INSTANCE inst\|altsyncram_component\|auto_generated\|ram_block1a0.ram_portbdataout_reg_21)
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (2198:2354:2354) (2153:2389:2389))
+        (IOPATH (posedge clk) q (133:136:136) (154:159:159))
+      )
+    )
+    (TIMINGCHECK
+      (SETUPHOLD ena (posedge clk) (110:110:110) (64:64:64))
+      (SETUPHOLD datain (posedge clk) (110:110:110) (64:64:64))
+      (PERIOD clk (2531:2531:2531))
+      (WIDTH (posedge clk) (1100:1100:1100))
+      (WIDTH (negedge clk) (690:690:690))
+      (WIDTH ena (45:45:45))
+    )
+  )
+  (CELL
+    (CELLTYPE "affc1")
+    (INSTANCE inst\|altsyncram_component\|auto_generated\|ram_block1a0.ram_portbdataout_reg_22)
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (2198:2354:2354) (2153:2389:2389))
+        (IOPATH (posedge clk) q (133:136:136) (154:159:159))
+      )
+    )
+    (TIMINGCHECK
+      (SETUPHOLD ena (posedge clk) (110:110:110) (64:64:64))
+      (SETUPHOLD datain (posedge clk) (110:110:110) (64:64:64))
+      (PERIOD clk (2531:2531:2531))
+      (WIDTH (posedge clk) (1100:1100:1100))
+      (WIDTH (negedge clk) (690:690:690))
+      (WIDTH ena (45:45:45))
+    )
+  )
+  (CELL
+    (CELLTYPE "affc1")
+    (INSTANCE inst\|altsyncram_component\|auto_generated\|ram_block1a0.ram_portbdataout_reg_23)
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (2198:2354:2354) (2153:2389:2389))
+        (IOPATH (posedge clk) q (133:136:136) (154:159:159))
+      )
+    )
+    (TIMINGCHECK
+      (SETUPHOLD ena (posedge clk) (110:110:110) (64:64:64))
+      (SETUPHOLD datain (posedge clk) (110:110:110) (64:64:64))
+      (PERIOD clk (2531:2531:2531))
+      (WIDTH (posedge clk) (1100:1100:1100))
+      (WIDTH (negedge clk) (690:690:690))
+      (WIDTH ena (45:45:45))
+    )
+  )
+  (CELL
+    (CELLTYPE "affc1")
+    (INSTANCE inst\|altsyncram_component\|auto_generated\|ram_block1a0.ram_portbdataout_reg_24)
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (2198:2354:2354) (2153:2389:2389))
+        (IOPATH (posedge clk) q (133:136:136) (154:159:159))
+      )
+    )
+    (TIMINGCHECK
+      (SETUPHOLD ena (posedge clk) (110:110:110) (64:64:64))
+      (SETUPHOLD datain (posedge clk) (110:110:110) (64:64:64))
+      (PERIOD clk (2531:2531:2531))
+      (WIDTH (posedge clk) (1100:1100:1100))
+      (WIDTH (negedge clk) (690:690:690))
+      (WIDTH ena (45:45:45))
+    )
+  )
+  (CELL
+    (CELLTYPE "affc1")
+    (INSTANCE inst\|altsyncram_component\|auto_generated\|ram_block1a0.ram_portbdataout_reg_25)
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (2198:2354:2354) (2153:2389:2389))
+        (IOPATH (posedge clk) q (133:136:136) (154:159:159))
+      )
+    )
+    (TIMINGCHECK
+      (SETUPHOLD ena (posedge clk) (110:110:110) (64:64:64))
+      (SETUPHOLD datain (posedge clk) (110:110:110) (64:64:64))
+      (PERIOD clk (2531:2531:2531))
+      (WIDTH (posedge clk) (1100:1100:1100))
+      (WIDTH (negedge clk) (690:690:690))
+      (WIDTH ena (45:45:45))
+    )
+  )
+  (CELL
+    (CELLTYPE "affc1")
+    (INSTANCE inst\|altsyncram_component\|auto_generated\|ram_block1a0.ram_portbdataout_reg_26)
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (2198:2354:2354) (2153:2389:2389))
+        (IOPATH (posedge clk) q (133:136:136) (154:159:159))
+      )
+    )
+    (TIMINGCHECK
+      (SETUPHOLD ena (posedge clk) (110:110:110) (64:64:64))
+      (SETUPHOLD datain (posedge clk) (110:110:110) (64:64:64))
+      (PERIOD clk (2531:2531:2531))
+      (WIDTH (posedge clk) (1100:1100:1100))
+      (WIDTH (negedge clk) (690:690:690))
+      (WIDTH ena (45:45:45))
+    )
+  )
+  (CELL
+    (CELLTYPE "affc1")
+    (INSTANCE inst\|altsyncram_component\|auto_generated\|ram_block1a0.ram_portbdataout_reg_27)
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (2198:2354:2354) (2153:2389:2389))
+        (IOPATH (posedge clk) q (133:136:136) (154:159:159))
+      )
+    )
+    (TIMINGCHECK
+      (SETUPHOLD ena (posedge clk) (110:110:110) (64:64:64))
+      (SETUPHOLD datain (posedge clk) (110:110:110) (64:64:64))
+      (PERIOD clk (2531:2531:2531))
+      (WIDTH (posedge clk) (1100:1100:1100))
+      (WIDTH (negedge clk) (690:690:690))
+      (WIDTH ena (45:45:45))
+    )
+  )
+  (CELL
+    (CELLTYPE "affc1")
+    (INSTANCE inst\|altsyncram_component\|auto_generated\|ram_block1a0.ram_portbdataout_reg_28)
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (2198:2354:2354) (2153:2389:2389))
+        (IOPATH (posedge clk) q (133:136:136) (154:159:159))
+      )
+    )
+    (TIMINGCHECK
+      (SETUPHOLD ena (posedge clk) (110:110:110) (64:64:64))
+      (SETUPHOLD datain (posedge clk) (110:110:110) (64:64:64))
+      (PERIOD clk (2531:2531:2531))
+      (WIDTH (posedge clk) (1100:1100:1100))
+      (WIDTH (negedge clk) (690:690:690))
+      (WIDTH ena (45:45:45))
+    )
+  )
+  (CELL
+    (CELLTYPE "affc1")
+    (INSTANCE inst\|altsyncram_component\|auto_generated\|ram_block1a0.ram_portbdataout_reg_29)
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (2198:2354:2354) (2153:2389:2389))
+        (IOPATH (posedge clk) q (133:136:136) (154:159:159))
+      )
+    )
+    (TIMINGCHECK
+      (SETUPHOLD ena (posedge clk) (110:110:110) (64:64:64))
+      (SETUPHOLD datain (posedge clk) (110:110:110) (64:64:64))
+      (PERIOD clk (2531:2531:2531))
+      (WIDTH (posedge clk) (1100:1100:1100))
+      (WIDTH (negedge clk) (690:690:690))
+      (WIDTH ena (45:45:45))
+    )
+  )
+  (CELL
+    (CELLTYPE "affc1")
+    (INSTANCE inst\|altsyncram_component\|auto_generated\|ram_block1a0.ram_portbdataout_reg_30)
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (2198:2354:2354) (2153:2389:2389))
+        (IOPATH (posedge clk) q (133:136:136) (154:159:159))
+      )
+    )
+    (TIMINGCHECK
+      (SETUPHOLD ena (posedge clk) (110:110:110) (64:64:64))
+      (SETUPHOLD datain (posedge clk) (110:110:110) (64:64:64))
+      (PERIOD clk (2531:2531:2531))
+      (WIDTH (posedge clk) (1100:1100:1100))
+      (WIDTH (negedge clk) (690:690:690))
+      (WIDTH ena (45:45:45))
+    )
+  )
+  (CELL
+    (CELLTYPE "affc1")
+    (INSTANCE inst\|altsyncram_component\|auto_generated\|ram_block1a0.ram_portbdataout_reg_31)
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (2198:2354:2354) (2153:2389:2389))
+        (IOPATH (posedge clk) q (133:136:136) (154:159:159))
+      )
+    )
+    (TIMINGCHECK
+      (SETUPHOLD ena (posedge clk) (110:110:110) (64:64:64))
+      (SETUPHOLD datain (posedge clk) (110:110:110) (64:64:64))
+      (PERIOD clk (2531:2531:2531))
+      (WIDTH (posedge clk) (1100:1100:1100))
+      (WIDTH (negedge clk) (690:690:690))
+      (WIDTH ena (45:45:45))
+    )
+  )
+  (CELL
+    (CELLTYPE "affc1")
+    (INSTANCE inst\|altsyncram_component\|auto_generated\|ram_block1a0.ram_portbdataout_reg_32)
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (2198:2354:2354) (2153:2389:2389))
+        (IOPATH (posedge clk) q (133:136:136) (154:159:159))
+      )
+    )
+    (TIMINGCHECK
+      (SETUPHOLD ena (posedge clk) (110:110:110) (64:64:64))
+      (SETUPHOLD datain (posedge clk) (110:110:110) (64:64:64))
+      (PERIOD clk (2531:2531:2531))
+      (WIDTH (posedge clk) (1100:1100:1100))
+      (WIDTH (negedge clk) (690:690:690))
+      (WIDTH ena (45:45:45))
+    )
+  )
+  (CELL
+    (CELLTYPE "affc1")
+    (INSTANCE inst\|altsyncram_component\|auto_generated\|ram_block1a0.ram_portbdataout_reg_33)
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (2198:2354:2354) (2153:2389:2389))
+        (IOPATH (posedge clk) q (133:136:136) (154:159:159))
+      )
+    )
+    (TIMINGCHECK
+      (SETUPHOLD ena (posedge clk) (110:110:110) (64:64:64))
+      (SETUPHOLD datain (posedge clk) (110:110:110) (64:64:64))
+      (PERIOD clk (2531:2531:2531))
+      (WIDTH (posedge clk) (1100:1100:1100))
+      (WIDTH (negedge clk) (690:690:690))
+      (WIDTH ena (45:45:45))
+    )
+  )
+  (CELL
+    (CELLTYPE "affc1")
+    (INSTANCE inst\|altsyncram_component\|auto_generated\|ram_block1a0.ram_portbdataout_reg_34)
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (2198:2354:2354) (2153:2389:2389))
+        (IOPATH (posedge clk) q (133:136:136) (154:159:159))
+      )
+    )
+    (TIMINGCHECK
+      (SETUPHOLD ena (posedge clk) (110:110:110) (64:64:64))
+      (SETUPHOLD datain (posedge clk) (110:110:110) (64:64:64))
+      (PERIOD clk (2531:2531:2531))
+      (WIDTH (posedge clk) (1100:1100:1100))
+      (WIDTH (negedge clk) (690:690:690))
+      (WIDTH ena (45:45:45))
+    )
+  )
+  (CELL
+    (CELLTYPE "affc1")
+    (INSTANCE inst\|altsyncram_component\|auto_generated\|ram_block1a0.ram_portbdataout_reg_35)
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (2198:2354:2354) (2153:2389:2389))
+        (IOPATH (posedge clk) q (133:136:136) (154:159:159))
+      )
+    )
+    (TIMINGCHECK
+      (SETUPHOLD ena (posedge clk) (110:110:110) (64:64:64))
+      (SETUPHOLD datain (posedge clk) (110:110:110) (64:64:64))
+      (PERIOD clk (2531:2531:2531))
+      (WIDTH (posedge clk) (1100:1100:1100))
+      (WIDTH (negedge clk) (690:690:690))
+      (WIDTH ena (45:45:45))
+    )
+  )
+  (CELL
+    (CELLTYPE "stratixiii_io_ibuf")
+    (INSTANCE PC\[31\]\~input)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH i o (699:702:702) (511:514:514))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "stratixiii_io_ibuf")
+    (INSTANCE PC\[30\]\~input)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH i o (748:751:751) (552:554:554))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "stratixiii_io_ibuf")
+    (INSTANCE PC\[29\]\~input)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH i o (758:761:761) (562:564:564))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "stratixiii_io_ibuf")
+    (INSTANCE PC\[28\]\~input)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH i o (606:606:606) (407:407:407))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "stratixiii_io_ibuf")
+    (INSTANCE PC\[27\]\~input)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH i o (662:662:662) (471:471:471))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "stratixiii_io_ibuf")
+    (INSTANCE PC\[26\]\~input)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH i o (783:786:786) (587:590:590))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "stratixiii_io_ibuf")
+    (INSTANCE PC\[25\]\~input)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH i o (592:592:592) (401:401:401))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "stratixiii_io_ibuf")
+    (INSTANCE PC\[24\]\~input)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH i o (728:731:731) (532:534:534))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "stratixiii_io_ibuf")
+    (INSTANCE PC\[23\]\~input)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH i o (719:722:722) (531:534:534))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "stratixiii_io_ibuf")
+    (INSTANCE PC\[22\]\~input)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH i o (749:752:752) (561:564:564))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "stratixiii_io_ibuf")
+    (INSTANCE PC\[21\]\~input)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH i o (656:656:656) (457:457:457))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "stratixiii_io_ibuf")
+    (INSTANCE PC\[20\]\~input)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH i o (612:612:612) (421:421:421))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "stratixiii_io_ibuf")
+    (INSTANCE PC\[19\]\~input)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH i o (728:731:731) (532:534:534))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "stratixiii_io_ibuf")
+    (INSTANCE PC\[18\]\~input)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH i o (592:592:592) (401:401:401))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "stratixiii_io_ibuf")
+    (INSTANCE PC\[17\]\~input)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH i o (592:592:592) (401:401:401))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "stratixiii_io_ibuf")
+    (INSTANCE PC\[16\]\~input)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH i o (729:732:732) (541:544:544))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "stratixiii_io_ibuf")
+    (INSTANCE PC\[15\]\~input)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH i o (642:642:642) (451:451:451))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "stratixiii_io_ibuf")
+    (INSTANCE PC\[14\]\~input)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH i o (656:656:656) (457:457:457))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "stratixiii_io_ibuf")
+    (INSTANCE PC\[13\]\~input)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH i o (626:626:626) (427:427:427))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "stratixiii_io_ibuf")
+    (INSTANCE PC\[12\]\~input)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH i o (748:751:751) (552:554:554))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "stratixiii_io_ibuf")
+    (INSTANCE PC\[11\]\~input)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH i o (636:636:636) (437:437:437))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "stratixiii_io_ibuf")
+    (INSTANCE PC\[10\]\~input)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH i o (592:592:592) (401:401:401))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "stratixiii_io_ibuf")
+    (INSTANCE PC\[9\]\~input)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH i o (719:722:722) (531:534:534))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "stratixiii_io_ibuf")
+    (INSTANCE PC\[8\]\~input)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH i o (729:732:732) (541:544:544))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "stratixiii_io_ibuf")
+    (INSTANCE PC\[7\]\~input)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH i o (656:656:656) (457:457:457))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "stratixiii_io_ibuf")
+    (INSTANCE PC\[6\]\~input)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH i o (699:702:702) (511:514:514))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "stratixiii_io_ibuf")
+    (INSTANCE PC\[5\]\~input)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH i o (626:626:626) (427:427:427))
+      )
+    )
+  )
+)

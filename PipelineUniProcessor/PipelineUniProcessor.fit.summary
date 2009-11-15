@@ -1,0 +1,18 @@
+Fitter Status : Successful - Wed Nov 04 18:42:31 2009
+Quartus II Version : 9.0 Build 132 02/25/2009 SJ Full Version
+Revision Name : PipelineUniProcessor
+Top-level Entity Name : InstMem
+Family : Stratix III
+Device : EP3SL340F1760I4
+Timing Models : Final
+Logic utilization : < 1 %
+    Combinational ALUTs : 1 / 270,400 ( < 1 % )
+    Memory ALUTs : 0 / 135,200 ( 0 % )
+    Dedicated logic registers : 0 / 270,400 ( 0 % )
+Total registers : 0
+Total pins : 65 / 1,120 ( 6 % )
+Total virtual pins : 0
+Total block memory bits : 1,024 / 16,662,528 ( < 1 % )
+DSP block 18-bit elements : 0 / 576 ( 0 % )
+Total PLLs : 0 / 12 ( 0 % )
+Total DLLs : 0 / 4 ( 0 % )

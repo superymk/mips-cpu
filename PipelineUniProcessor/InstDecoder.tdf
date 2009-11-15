@@ -1,0 +1,35 @@
+% instruction decoder %
+% Expanding InstDecoder & InstTranslator to support new instruction.%
+
+subdesign InstDecoder
+(
+OP[5..0], FUNC[5..0] : input;
+add, sub, and_ins, or_ins, sll, srl, sra, addi, andi, ori, lw, sw, beq, bne, j : output;
+)
+begin
+if op[] == b"000000"
+then
+   table
+     func[]    => add, sub, and_ins, or_ins, sll, srl, sra, addi, andi, ori, lw, sw, beq, bne, j;
+     b"100000" => 1,   0,   0,       0,      0,   0,   0,   0,    0,    0,   0,  0,  0,   0,   0;
+     b"100010" => 0,   1,   0,       0,      0,   0,   0,   0,    0,    0,   0,  0,  0,   0,   0;
+     b"100100" => 0,   0,   1,       0,      0,   0,   0,   0,    0,    0,   0,  0,  0,   0,   0;
+     b"100101" => 0,   0,   0,       1,      0,   0,   0,   0,    0,    0,   0,  0,  0,   0,   0;
+     b"000000" => 0,   0,   0,       0,      1,   0,   0,   0,    0,    0,   0,  0,  0,   0,   0;
+     b"000010" => 0,   0,   0,       0,      0,   1,   0,   0,    0,    0,   0,  0,  0,   0,   0;
+     b"000011" => 0,   0,   0,       0,      0,   0,   1,   0,    0,    0,   0,  0,  0,   0,   0;
+   end table;
+else
+   table
+     op[]      => add, sub, and_ins, or_ins, sll, srl, sra, addi, andi, ori, lw, sw, beq, bne, j;
+     b"001000" => 0,   0,   0,       0,      0,   0,   0,   1,    0,    0,   0,  0,  0,   0,   0;
+     b"001100" => 0,   0,   0,       0,      0,   0,   0,   0,    1,    0,   0,  0,  0,   0,   0;
+     b"001101" => 0,   0,   0,       0,      0,   0,   0,   0,    0,    1,   0,  0,  0,   0,   0;
+     b"100011" => 0,   0,   0,       0,      0,   0,   0,   0,    0,    0,   1,  0,  0,   0,   0;
+     b"101011" => 0,   0,   0,       0,      0,   0,   0,   0,    0,    0,   0,  1,  0,   0,   0;
+     b"000100" => 0,   0,   0,       0,      0,   0,   0,   0,    0,    0,   0,  0,  1,   0,   0;
+     b"000101" => 0,   0,   0,       0,      0,   0,   0,   0,    0,    0,   0,  0,  0,   1,   0;
+     b"000010" => 0,   0,   0,       0,      0,   0,   0,   0,    0,    0,   0,  0,  0,   0,   1;
+   end table;
+end if;
+end;

@@ -1,0 +1,16 @@
+subdesign CtrlStall
+(
+tempwmem, tempwreg, tempm2reg, stall : input;
+WRITEREG, WRITEMEM, MEMTOREG : output;
+)
+begin
+   if stall then 
+                 WRITEREG = gnd;
+                 WRITEMEM = gnd;
+                 MEMTOREG = gnd;
+            else 
+                 WRITEREG = tempwreg;
+                 WRITEMEM = tempwmem;
+                 MEMTOREG = tempm2reg;
+   end if;
+end;
