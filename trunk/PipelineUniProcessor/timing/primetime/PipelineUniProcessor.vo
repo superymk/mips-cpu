@@ -1,0 +1,1571 @@
+// Copyright (C) 1991-2009 Altera Corporation
+// Your use of Altera Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Altera Program License 
+// Subscription Agreement, Altera MegaCore Function License 
+// Agreement, or other applicable license agreement, including, 
+// without limitation, that your use is for the sole purpose of 
+// programming logic devices manufactured by Altera and sold by 
+// Altera or its authorized distributors.  Please refer to the 
+// applicable agreement for further details.
+
+// VENDOR "Altera"
+// PROGRAM "Quartus II"
+// VERSION "Version 9.0 Build 132 02/25/2009 SJ Full Version"
+
+// DATE "11/04/2009 18:44:08"
+
+// 
+// Device: Altera EP3SL340F1760I4 Package FBGA1760
+// 
+
+// 
+// This Verilog file should be used for PrimeTime (Verilog) only
+// 
+
+`timescale 1 ps/ 1 ps
+
+module InstMem (
+	MEMINST,
+	CLK,
+	PC);
+output 	[31:0] MEMINST;
+input 	CLK;
+input 	[31:0] PC;
+
+wire gnd = 1'b0;
+wire vcc = 1'b1;
+
+// synopsys translate_off
+initial $sdf_annotate("PipelineUniProcessor_v.sdo");
+// synopsys translate_on
+
+wire \PC[31]~input_o ;
+wire \PC[30]~input_o ;
+wire \PC[29]~input_o ;
+wire \PC[28]~input_o ;
+wire \PC[27]~input_o ;
+wire \PC[26]~input_o ;
+wire \PC[25]~input_o ;
+wire \PC[24]~input_o ;
+wire \PC[23]~input_o ;
+wire \PC[22]~input_o ;
+wire \PC[21]~input_o ;
+wire \PC[20]~input_o ;
+wire \PC[19]~input_o ;
+wire \PC[18]~input_o ;
+wire \PC[17]~input_o ;
+wire \PC[16]~input_o ;
+wire \PC[15]~input_o ;
+wire \PC[14]~input_o ;
+wire \PC[13]~input_o ;
+wire \PC[12]~input_o ;
+wire \PC[11]~input_o ;
+wire \PC[10]~input_o ;
+wire \PC[9]~input_o ;
+wire \PC[8]~input_o ;
+wire \PC[7]~input_o ;
+wire \PC[6]~input_o ;
+wire \PC[5]~input_o ;
+wire \CLK~input_o ;
+wire \CLK~inputclkctrl_outclk ;
+wire \~GND~combout ;
+wire \PC[0]~input_o ;
+wire \PC[1]~input_o ;
+wire \PC[2]~input_o ;
+wire \PC[3]~input_o ;
+wire \PC[4]~input_o ;
+wire \inst|altsyncram_component|auto_generated|q_b[31] ;
+wire \inst|altsyncram_component|auto_generated|q_b[30] ;
+wire \inst|altsyncram_component|auto_generated|q_b[29] ;
+wire \inst|altsyncram_component|auto_generated|q_b[28] ;
+wire \inst|altsyncram_component|auto_generated|q_b[27] ;
+wire \inst|altsyncram_component|auto_generated|q_b[26] ;
+wire \inst|altsyncram_component|auto_generated|q_b[25] ;
+wire \inst|altsyncram_component|auto_generated|q_b[24] ;
+wire \inst|altsyncram_component|auto_generated|q_b[23] ;
+wire \inst|altsyncram_component|auto_generated|q_b[22] ;
+wire \inst|altsyncram_component|auto_generated|q_b[21] ;
+wire \inst|altsyncram_component|auto_generated|q_b[20] ;
+wire \inst|altsyncram_component|auto_generated|q_b[19] ;
+wire \inst|altsyncram_component|auto_generated|q_b[18] ;
+wire \inst|altsyncram_component|auto_generated|q_b[17] ;
+wire \inst|altsyncram_component|auto_generated|q_b[16] ;
+wire \inst|altsyncram_component|auto_generated|q_b[15] ;
+wire \inst|altsyncram_component|auto_generated|q_b[14] ;
+wire \inst|altsyncram_component|auto_generated|q_b[13] ;
+wire \inst|altsyncram_component|auto_generated|q_b[12] ;
+wire \inst|altsyncram_component|auto_generated|q_b[11] ;
+wire \inst|altsyncram_component|auto_generated|q_b[10] ;
+wire \inst|altsyncram_component|auto_generated|q_b[9] ;
+wire \inst|altsyncram_component|auto_generated|q_b[8] ;
+wire \inst|altsyncram_component|auto_generated|q_b[7] ;
+wire \inst|altsyncram_component|auto_generated|q_b[6] ;
+wire \inst|altsyncram_component|auto_generated|q_b[5] ;
+wire \inst|altsyncram_component|auto_generated|q_b[4] ;
+wire \inst|altsyncram_component|auto_generated|q_b[3] ;
+wire \inst|altsyncram_component|auto_generated|q_b[2] ;
+wire \inst|altsyncram_component|auto_generated|q_b[1] ;
+wire \inst|altsyncram_component|auto_generated|q_b[0] ;
+
+wire [143:0] \inst|altsyncram_component|auto_generated|ram_block1a0_PORTBDATAOUT_bus ;
+
+AND1 \inst|altsyncram_component|auto_generated|q_b[0]pt_buf (
+	.IN1(\inst|altsyncram_component|auto_generated|ram_block1a0_PORTBDATAOUT_bus [0]),
+	.Y(\inst|altsyncram_component|auto_generated|q_b[0] ));
+
+AND1 \inst|altsyncram_component|auto_generated|q_b[1]pt_buf (
+	.IN1(\inst|altsyncram_component|auto_generated|ram_block1a0_PORTBDATAOUT_bus [1]),
+	.Y(\inst|altsyncram_component|auto_generated|q_b[1] ));
+
+AND1 \inst|altsyncram_component|auto_generated|q_b[2]pt_buf (
+	.IN1(\inst|altsyncram_component|auto_generated|ram_block1a0_PORTBDATAOUT_bus [2]),
+	.Y(\inst|altsyncram_component|auto_generated|q_b[2] ));
+
+AND1 \inst|altsyncram_component|auto_generated|q_b[3]pt_buf (
+	.IN1(\inst|altsyncram_component|auto_generated|ram_block1a0_PORTBDATAOUT_bus [3]),
+	.Y(\inst|altsyncram_component|auto_generated|q_b[3] ));
+
+AND1 \inst|altsyncram_component|auto_generated|q_b[4]pt_buf (
+	.IN1(\inst|altsyncram_component|auto_generated|ram_block1a0_PORTBDATAOUT_bus [4]),
+	.Y(\inst|altsyncram_component|auto_generated|q_b[4] ));
+
+AND1 \inst|altsyncram_component|auto_generated|q_b[5]pt_buf (
+	.IN1(\inst|altsyncram_component|auto_generated|ram_block1a0_PORTBDATAOUT_bus [5]),
+	.Y(\inst|altsyncram_component|auto_generated|q_b[5] ));
+
+AND1 \inst|altsyncram_component|auto_generated|q_b[6]pt_buf (
+	.IN1(\inst|altsyncram_component|auto_generated|ram_block1a0_PORTBDATAOUT_bus [6]),
+	.Y(\inst|altsyncram_component|auto_generated|q_b[6] ));
+
+AND1 \inst|altsyncram_component|auto_generated|q_b[7]pt_buf (
+	.IN1(\inst|altsyncram_component|auto_generated|ram_block1a0_PORTBDATAOUT_bus [7]),
+	.Y(\inst|altsyncram_component|auto_generated|q_b[7] ));
+
+AND1 \inst|altsyncram_component|auto_generated|q_b[8]pt_buf (
+	.IN1(\inst|altsyncram_component|auto_generated|ram_block1a0_PORTBDATAOUT_bus [8]),
+	.Y(\inst|altsyncram_component|auto_generated|q_b[8] ));
+
+AND1 \inst|altsyncram_component|auto_generated|q_b[9]pt_buf (
+	.IN1(\inst|altsyncram_component|auto_generated|ram_block1a0_PORTBDATAOUT_bus [9]),
+	.Y(\inst|altsyncram_component|auto_generated|q_b[9] ));
+
+AND1 \inst|altsyncram_component|auto_generated|q_b[10]pt_buf (
+	.IN1(\inst|altsyncram_component|auto_generated|ram_block1a0_PORTBDATAOUT_bus [10]),
+	.Y(\inst|altsyncram_component|auto_generated|q_b[10] ));
+
+AND1 \inst|altsyncram_component|auto_generated|q_b[11]pt_buf (
+	.IN1(\inst|altsyncram_component|auto_generated|ram_block1a0_PORTBDATAOUT_bus [11]),
+	.Y(\inst|altsyncram_component|auto_generated|q_b[11] ));
+
+AND1 \inst|altsyncram_component|auto_generated|q_b[12]pt_buf (
+	.IN1(\inst|altsyncram_component|auto_generated|ram_block1a0_PORTBDATAOUT_bus [12]),
+	.Y(\inst|altsyncram_component|auto_generated|q_b[12] ));
+
+AND1 \inst|altsyncram_component|auto_generated|q_b[13]pt_buf (
+	.IN1(\inst|altsyncram_component|auto_generated|ram_block1a0_PORTBDATAOUT_bus [13]),
+	.Y(\inst|altsyncram_component|auto_generated|q_b[13] ));
+
+AND1 \inst|altsyncram_component|auto_generated|q_b[14]pt_buf (
+	.IN1(\inst|altsyncram_component|auto_generated|ram_block1a0_PORTBDATAOUT_bus [14]),
+	.Y(\inst|altsyncram_component|auto_generated|q_b[14] ));
+
+AND1 \inst|altsyncram_component|auto_generated|q_b[15]pt_buf (
+	.IN1(\inst|altsyncram_component|auto_generated|ram_block1a0_PORTBDATAOUT_bus [15]),
+	.Y(\inst|altsyncram_component|auto_generated|q_b[15] ));
+
+AND1 \inst|altsyncram_component|auto_generated|q_b[16]pt_buf (
+	.IN1(\inst|altsyncram_component|auto_generated|ram_block1a0_PORTBDATAOUT_bus [16]),
+	.Y(\inst|altsyncram_component|auto_generated|q_b[16] ));
+
+AND1 \inst|altsyncram_component|auto_generated|q_b[17]pt_buf (
+	.IN1(\inst|altsyncram_component|auto_generated|ram_block1a0_PORTBDATAOUT_bus [17]),
+	.Y(\inst|altsyncram_component|auto_generated|q_b[17] ));
+
+AND1 \inst|altsyncram_component|auto_generated|q_b[18]pt_buf (
+	.IN1(\inst|altsyncram_component|auto_generated|ram_block1a0_PORTBDATAOUT_bus [18]),
+	.Y(\inst|altsyncram_component|auto_generated|q_b[18] ));
+
+AND1 \inst|altsyncram_component|auto_generated|q_b[19]pt_buf (
+	.IN1(\inst|altsyncram_component|auto_generated|ram_block1a0_PORTBDATAOUT_bus [19]),
+	.Y(\inst|altsyncram_component|auto_generated|q_b[19] ));
+
+AND1 \inst|altsyncram_component|auto_generated|q_b[20]pt_buf (
+	.IN1(\inst|altsyncram_component|auto_generated|ram_block1a0_PORTBDATAOUT_bus [20]),
+	.Y(\inst|altsyncram_component|auto_generated|q_b[20] ));
+
+AND1 \inst|altsyncram_component|auto_generated|q_b[21]pt_buf (
+	.IN1(\inst|altsyncram_component|auto_generated|ram_block1a0_PORTBDATAOUT_bus [21]),
+	.Y(\inst|altsyncram_component|auto_generated|q_b[21] ));
+
+AND1 \inst|altsyncram_component|auto_generated|q_b[22]pt_buf (
+	.IN1(\inst|altsyncram_component|auto_generated|ram_block1a0_PORTBDATAOUT_bus [22]),
+	.Y(\inst|altsyncram_component|auto_generated|q_b[22] ));
+
+AND1 \inst|altsyncram_component|auto_generated|q_b[23]pt_buf (
+	.IN1(\inst|altsyncram_component|auto_generated|ram_block1a0_PORTBDATAOUT_bus [23]),
+	.Y(\inst|altsyncram_component|auto_generated|q_b[23] ));
+
+AND1 \inst|altsyncram_component|auto_generated|q_b[24]pt_buf (
+	.IN1(\inst|altsyncram_component|auto_generated|ram_block1a0_PORTBDATAOUT_bus [24]),
+	.Y(\inst|altsyncram_component|auto_generated|q_b[24] ));
+
+AND1 \inst|altsyncram_component|auto_generated|q_b[25]pt_buf (
+	.IN1(\inst|altsyncram_component|auto_generated|ram_block1a0_PORTBDATAOUT_bus [25]),
+	.Y(\inst|altsyncram_component|auto_generated|q_b[25] ));
+
+AND1 \inst|altsyncram_component|auto_generated|q_b[26]pt_buf (
+	.IN1(\inst|altsyncram_component|auto_generated|ram_block1a0_PORTBDATAOUT_bus [26]),
+	.Y(\inst|altsyncram_component|auto_generated|q_b[26] ));
+
+AND1 \inst|altsyncram_component|auto_generated|q_b[27]pt_buf (
+	.IN1(\inst|altsyncram_component|auto_generated|ram_block1a0_PORTBDATAOUT_bus [27]),
+	.Y(\inst|altsyncram_component|auto_generated|q_b[27] ));
+
+AND1 \inst|altsyncram_component|auto_generated|q_b[28]pt_buf (
+	.IN1(\inst|altsyncram_component|auto_generated|ram_block1a0_PORTBDATAOUT_bus [28]),
+	.Y(\inst|altsyncram_component|auto_generated|q_b[28] ));
+
+AND1 \inst|altsyncram_component|auto_generated|q_b[29]pt_buf (
+	.IN1(\inst|altsyncram_component|auto_generated|ram_block1a0_PORTBDATAOUT_bus [29]),
+	.Y(\inst|altsyncram_component|auto_generated|q_b[29] ));
+
+AND1 \inst|altsyncram_component|auto_generated|q_b[30]pt_buf (
+	.IN1(\inst|altsyncram_component|auto_generated|ram_block1a0_PORTBDATAOUT_bus [30]),
+	.Y(\inst|altsyncram_component|auto_generated|q_b[30] ));
+
+AND1 \inst|altsyncram_component|auto_generated|q_b[31]pt_buf (
+	.IN1(\inst|altsyncram_component|auto_generated|ram_block1a0_PORTBDATAOUT_bus [31]),
+	.Y(\inst|altsyncram_component|auto_generated|q_b[31] ));
+
+
+// atom is at IOIBUF_X0_Y55_N1
+stratixiii_io_ibuf \CLK~input (
+	.i(CLK),
+	.o(\CLK~input_o ));
+// synopsys translate_off
+// defparam \CLK~input .bus_hold = "false";
+// defparam \CLK~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// atom is at IOOBUF_X79_Y105_N2
+stratixiii_io_obuf \MEMINST[31]~output (
+	.i(\inst|altsyncram_component|auto_generated|q_b[31] ),
+	.oe(vcc),
+	.o(MEMINST[31]));
+// synopsys translate_off
+// defparam \MEMINST[31]~output .bus_hold = "false";
+// defparam \MEMINST[31]~output .open_drain_output = "false";
+// defparam \MEMINST[31]~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+// atom is at IOOBUF_X148_Y89_N82
+stratixiii_io_obuf \MEMINST[30]~output (
+	.i(\inst|altsyncram_component|auto_generated|q_b[30] ),
+	.oe(vcc),
+	.o(MEMINST[30]));
+// synopsys translate_off
+// defparam \MEMINST[30]~output .bus_hold = "false";
+// defparam \MEMINST[30]~output .open_drain_output = "false";
+// defparam \MEMINST[30]~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+// atom is at IOOBUF_X79_Y105_N64
+stratixiii_io_obuf \MEMINST[29]~output (
+	.i(\inst|altsyncram_component|auto_generated|q_b[29] ),
+	.oe(vcc),
+	.o(MEMINST[29]));
+// synopsys translate_off
+// defparam \MEMINST[29]~output .bus_hold = "false";
+// defparam \MEMINST[29]~output .open_drain_output = "false";
+// defparam \MEMINST[29]~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+// atom is at IOOBUF_X148_Y90_N82
+stratixiii_io_obuf \MEMINST[28]~output (
+	.i(\inst|altsyncram_component|auto_generated|q_b[28] ),
+	.oe(vcc),
+	.o(MEMINST[28]));
+// synopsys translate_off
+// defparam \MEMINST[28]~output .bus_hold = "false";
+// defparam \MEMINST[28]~output .open_drain_output = "false";
+// defparam \MEMINST[28]~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+// atom is at IOOBUF_X0_Y89_N51
+stratixiii_io_obuf \MEMINST[27]~output (
+	.i(\inst|altsyncram_component|auto_generated|q_b[27] ),
+	.oe(vcc),
+	.o(MEMINST[27]));
+// synopsys translate_off
+// defparam \MEMINST[27]~output .bus_hold = "false";
+// defparam \MEMINST[27]~output .open_drain_output = "false";
+// defparam \MEMINST[27]~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+// atom is at IOOBUF_X68_Y0_N95
+stratixiii_io_obuf \MEMINST[26]~output (
+	.i(\inst|altsyncram_component|auto_generated|q_b[26] ),
+	.oe(vcc),
+	.o(MEMINST[26]));
+// synopsys translate_off
+// defparam \MEMINST[26]~output .bus_hold = "false";
+// defparam \MEMINST[26]~output .open_drain_output = "false";
+// defparam \MEMINST[26]~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+// atom is at IOOBUF_X68_Y0_N33
+stratixiii_io_obuf \MEMINST[25]~output (
+	.i(\inst|altsyncram_component|auto_generated|q_b[25] ),
+	.oe(vcc),
+	.o(MEMINST[25]));
+// synopsys translate_off
+// defparam \MEMINST[25]~output .bus_hold = "false";
+// defparam \MEMINST[25]~output .open_drain_output = "false";
+// defparam \MEMINST[25]~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+// atom is at IOOBUF_X148_Y89_N51
+stratixiii_io_obuf \MEMINST[24]~output (
+	.i(\inst|altsyncram_component|auto_generated|q_b[24] ),
+	.oe(vcc),
+	.o(MEMINST[24]));
+// synopsys translate_off
+// defparam \MEMINST[24]~output .bus_hold = "false";
+// defparam \MEMINST[24]~output .open_drain_output = "false";
+// defparam \MEMINST[24]~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+// atom is at IOOBUF_X148_Y90_N20
+stratixiii_io_obuf \MEMINST[23]~output (
+	.i(\inst|altsyncram_component|auto_generated|q_b[23] ),
+	.oe(vcc),
+	.o(MEMINST[23]));
+// synopsys translate_off
+// defparam \MEMINST[23]~output .bus_hold = "false";
+// defparam \MEMINST[23]~output .open_drain_output = "false";
+// defparam \MEMINST[23]~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+// atom is at IOOBUF_X68_Y105_N2
+stratixiii_io_obuf \MEMINST[22]~output (
+	.i(\inst|altsyncram_component|auto_generated|q_b[22] ),
+	.oe(vcc),
+	.o(MEMINST[22]));
+// synopsys translate_off
+// defparam \MEMINST[22]~output .bus_hold = "false";
+// defparam \MEMINST[22]~output .open_drain_output = "false";
+// defparam \MEMINST[22]~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+// atom is at IOOBUF_X68_Y105_N33
+stratixiii_io_obuf \MEMINST[21]~output (
+	.i(\inst|altsyncram_component|auto_generated|q_b[21] ),
+	.oe(vcc),
+	.o(MEMINST[21]));
+// synopsys translate_off
+// defparam \MEMINST[21]~output .bus_hold = "false";
+// defparam \MEMINST[21]~output .open_drain_output = "false";
+// defparam \MEMINST[21]~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+// atom is at IOOBUF_X0_Y89_N20
+stratixiii_io_obuf \MEMINST[20]~output (
+	.i(\inst|altsyncram_component|auto_generated|q_b[20] ),
+	.oe(vcc),
+	.o(MEMINST[20]));
+// synopsys translate_off
+// defparam \MEMINST[20]~output .bus_hold = "false";
+// defparam \MEMINST[20]~output .open_drain_output = "false";
+// defparam \MEMINST[20]~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+// atom is at IOOBUF_X148_Y90_N113
+stratixiii_io_obuf \MEMINST[19]~output (
+	.i(\inst|altsyncram_component|auto_generated|q_b[19] ),
+	.oe(vcc),
+	.o(MEMINST[19]));
+// synopsys translate_off
+// defparam \MEMINST[19]~output .bus_hold = "false";
+// defparam \MEMINST[19]~output .open_drain_output = "false";
+// defparam \MEMINST[19]~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+// atom is at IOOBUF_X79_Y0_N33
+stratixiii_io_obuf \MEMINST[18]~output (
+	.i(\inst|altsyncram_component|auto_generated|q_b[18] ),
+	.oe(vcc),
+	.o(MEMINST[18]));
+// synopsys translate_off
+// defparam \MEMINST[18]~output .bus_hold = "false";
+// defparam \MEMINST[18]~output .open_drain_output = "false";
+// defparam \MEMINST[18]~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+// atom is at IOOBUF_X148_Y90_N51
+stratixiii_io_obuf \MEMINST[17]~output (
+	.i(\inst|altsyncram_component|auto_generated|q_b[17] ),
+	.oe(vcc),
+	.o(MEMINST[17]));
+// synopsys translate_off
+// defparam \MEMINST[17]~output .bus_hold = "false";
+// defparam \MEMINST[17]~output .open_drain_output = "false";
+// defparam \MEMINST[17]~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+// atom is at IOOBUF_X68_Y0_N64
+stratixiii_io_obuf \MEMINST[16]~output (
+	.i(\inst|altsyncram_component|auto_generated|q_b[16] ),
+	.oe(vcc),
+	.o(MEMINST[16]));
+// synopsys translate_off
+// defparam \MEMINST[16]~output .bus_hold = "false";
+// defparam \MEMINST[16]~output .open_drain_output = "false";
+// defparam \MEMINST[16]~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+// atom is at IOOBUF_X0_Y90_N51
+stratixiii_io_obuf \MEMINST[15]~output (
+	.i(\inst|altsyncram_component|auto_generated|q_b[15] ),
+	.oe(vcc),
+	.o(MEMINST[15]));
+// synopsys translate_off
+// defparam \MEMINST[15]~output .bus_hold = "false";
+// defparam \MEMINST[15]~output .open_drain_output = "false";
+// defparam \MEMINST[15]~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+// atom is at IOOBUF_X0_Y90_N20
+stratixiii_io_obuf \MEMINST[14]~output (
+	.i(\inst|altsyncram_component|auto_generated|q_b[14] ),
+	.oe(vcc),
+	.o(MEMINST[14]));
+// synopsys translate_off
+// defparam \MEMINST[14]~output .bus_hold = "false";
+// defparam \MEMINST[14]~output .open_drain_output = "false";
+// defparam \MEMINST[14]~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+// atom is at IOOBUF_X0_Y90_N113
+stratixiii_io_obuf \MEMINST[13]~output (
+	.i(\inst|altsyncram_component|auto_generated|q_b[13] ),
+	.oe(vcc),
+	.o(MEMINST[13]));
+// synopsys translate_off
+// defparam \MEMINST[13]~output .bus_hold = "false";
+// defparam \MEMINST[13]~output .open_drain_output = "false";
+// defparam \MEMINST[13]~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+// atom is at IOOBUF_X148_Y89_N113
+stratixiii_io_obuf \MEMINST[12]~output (
+	.i(\inst|altsyncram_component|auto_generated|q_b[12] ),
+	.oe(vcc),
+	.o(MEMINST[12]));
+// synopsys translate_off
+// defparam \MEMINST[12]~output .bus_hold = "false";
+// defparam \MEMINST[12]~output .open_drain_output = "false";
+// defparam \MEMINST[12]~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+// atom is at IOOBUF_X68_Y105_N95
+stratixiii_io_obuf \MEMINST[11]~output (
+	.i(\inst|altsyncram_component|auto_generated|q_b[11] ),
+	.oe(vcc),
+	.o(MEMINST[11]));
+// synopsys translate_off
+// defparam \MEMINST[11]~output .bus_hold = "false";
+// defparam \MEMINST[11]~output .open_drain_output = "false";
+// defparam \MEMINST[11]~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+// atom is at IOOBUF_X148_Y85_N51
+stratixiii_io_obuf \MEMINST[10]~output (
+	.i(\inst|altsyncram_component|auto_generated|q_b[10] ),
+	.oe(vcc),
+	.o(MEMINST[10]));
+// synopsys translate_off
+// defparam \MEMINST[10]~output .bus_hold = "false";
+// defparam \MEMINST[10]~output .open_drain_output = "false";
+// defparam \MEMINST[10]~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+// atom is at IOOBUF_X148_Y40_N51
+stratixiii_io_obuf \MEMINST[9]~output (
+	.i(\inst|altsyncram_component|auto_generated|q_b[9] ),
+	.oe(vcc),
+	.o(MEMINST[9]));
+// synopsys translate_off
+// defparam \MEMINST[9]~output .bus_hold = "false";
+// defparam \MEMINST[9]~output .open_drain_output = "false";
+// defparam \MEMINST[9]~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+// atom is at IOOBUF_X79_Y105_N33
+stratixiii_io_obuf \MEMINST[8]~output (
+	.i(\inst|altsyncram_component|auto_generated|q_b[8] ),
+	.oe(vcc),
+	.o(MEMINST[8]));
+// synopsys translate_off
+// defparam \MEMINST[8]~output .bus_hold = "false";
+// defparam \MEMINST[8]~output .open_drain_output = "false";
+// defparam \MEMINST[8]~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+// atom is at IOOBUF_X84_Y105_N64
+stratixiii_io_obuf \MEMINST[7]~output (
+	.i(\inst|altsyncram_component|auto_generated|q_b[7] ),
+	.oe(vcc),
+	.o(MEMINST[7]));
+// synopsys translate_off
+// defparam \MEMINST[7]~output .bus_hold = "false";
+// defparam \MEMINST[7]~output .open_drain_output = "false";
+// defparam \MEMINST[7]~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+// atom is at IOOBUF_X81_Y105_N2
+stratixiii_io_obuf \MEMINST[6]~output (
+	.i(\inst|altsyncram_component|auto_generated|q_b[6] ),
+	.oe(vcc),
+	.o(MEMINST[6]));
+// synopsys translate_off
+// defparam \MEMINST[6]~output .bus_hold = "false";
+// defparam \MEMINST[6]~output .open_drain_output = "false";
+// defparam \MEMINST[6]~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+// atom is at IOOBUF_X0_Y84_N20
+stratixiii_io_obuf \MEMINST[5]~output (
+	.i(\inst|altsyncram_component|auto_generated|q_b[5] ),
+	.oe(vcc),
+	.o(MEMINST[5]));
+// synopsys translate_off
+// defparam \MEMINST[5]~output .bus_hold = "false";
+// defparam \MEMINST[5]~output .open_drain_output = "false";
+// defparam \MEMINST[5]~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+// atom is at IOOBUF_X148_Y91_N82
+stratixiii_io_obuf \MEMINST[4]~output (
+	.i(\inst|altsyncram_component|auto_generated|q_b[4] ),
+	.oe(vcc),
+	.o(MEMINST[4]));
+// synopsys translate_off
+// defparam \MEMINST[4]~output .bus_hold = "false";
+// defparam \MEMINST[4]~output .open_drain_output = "false";
+// defparam \MEMINST[4]~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+// atom is at IOOBUF_X66_Y0_N95
+stratixiii_io_obuf \MEMINST[3]~output (
+	.i(\inst|altsyncram_component|auto_generated|q_b[3] ),
+	.oe(vcc),
+	.o(MEMINST[3]));
+// synopsys translate_off
+// defparam \MEMINST[3]~output .bus_hold = "false";
+// defparam \MEMINST[3]~output .open_drain_output = "false";
+// defparam \MEMINST[3]~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+// atom is at IOOBUF_X81_Y0_N33
+stratixiii_io_obuf \MEMINST[2]~output (
+	.i(\inst|altsyncram_component|auto_generated|q_b[2] ),
+	.oe(vcc),
+	.o(MEMINST[2]));
+// synopsys translate_off
+// defparam \MEMINST[2]~output .bus_hold = "false";
+// defparam \MEMINST[2]~output .open_drain_output = "false";
+// defparam \MEMINST[2]~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+// atom is at IOOBUF_X68_Y105_N64
+stratixiii_io_obuf \MEMINST[1]~output (
+	.i(\inst|altsyncram_component|auto_generated|q_b[1] ),
+	.oe(vcc),
+	.o(MEMINST[1]));
+// synopsys translate_off
+// defparam \MEMINST[1]~output .bus_hold = "false";
+// defparam \MEMINST[1]~output .open_drain_output = "false";
+// defparam \MEMINST[1]~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+// atom is at IOOBUF_X112_Y0_N82
+stratixiii_io_obuf \MEMINST[0]~output (
+	.i(\inst|altsyncram_component|auto_generated|q_b[0] ),
+	.oe(vcc),
+	.o(MEMINST[0]));
+// synopsys translate_off
+// defparam \MEMINST[0]~output .bus_hold = "false";
+// defparam \MEMINST[0]~output .open_drain_output = "false";
+// defparam \MEMINST[0]~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+// atom is at CLKCTRL_G3
+stratixiii_clkena_0 \CLK~inputclkctrl (
+	.inclk(\CLK~input_o ),
+	.outclk(\CLK~inputclkctrl_outclk ));
+// synopsys translate_off
+// defparam \CLK~inputclkctrl .clock_type = "global clock";
+// defparam \CLK~inputclkctrl .ena_register_mode = "falling edge";
+// synopsys translate_on
+
+// atom is at LABCELL_X75_Y86_N20
+stratixiii_lcell_comb_1000_0000000000000000_0_0 \~GND (
+	.combout(\~GND~combout ));
+// synopsys translate_off
+// defparam \~GND .extended_lut = "off";
+// defparam \~GND .lut_mask = 64'h0000000000000000;
+// defparam \~GND .shared_arith = "off";
+// synopsys translate_on
+
+// atom is at IOIBUF_X0_Y90_N63
+stratixiii_io_ibuf \PC[0]~input (
+	.i(PC[0]),
+	.o(\PC[0]~input_o ));
+// synopsys translate_off
+// defparam \PC[0]~input .bus_hold = "false";
+// defparam \PC[0]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// atom is at IOIBUF_X148_Y88_N63
+stratixiii_io_ibuf \PC[1]~input (
+	.i(PC[1]),
+	.o(\PC[1]~input_o ));
+// synopsys translate_off
+// defparam \PC[1]~input .bus_hold = "false";
+// defparam \PC[1]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// atom is at IOIBUF_X81_Y105_N94
+stratixiii_io_ibuf \PC[2]~input (
+	.i(PC[2]),
+	.o(\PC[2]~input_o ));
+// synopsys translate_off
+// defparam \PC[2]~input .bus_hold = "false";
+// defparam \PC[2]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// atom is at IOIBUF_X0_Y89_N63
+stratixiii_io_ibuf \PC[3]~input (
+	.i(PC[3]),
+	.o(\PC[3]~input_o ));
+// synopsys translate_off
+// defparam \PC[3]~input .bus_hold = "false";
+// defparam \PC[3]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// atom is at IOIBUF_X148_Y91_N94
+stratixiii_io_ibuf \PC[4]~input (
+	.i(PC[4]),
+	.o(\PC[4]~input_o ));
+// synopsys translate_off
+// defparam \PC[4]~input .bus_hold = "false";
+// defparam \PC[4]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// atom is at M9K_X69_Y90_N0
+ram_0 \inst|altsyncram_component|auto_generated|ram_block1a0 (
+	.portawe(gnd),
+	.portbre(vcc),
+	.clk0(\CLK~inputclkctrl_outclk ),
+	.clk1(\CLK~inputclkctrl_outclk ),
+	.ena0(gnd),
+	.ena2(vcc),
+	.ena3(vcc),
+	.portadatain({gnd,gnd,gnd,gnd,\~GND~combout ,\~GND~combout ,\~GND~combout ,\~GND~combout ,\~GND~combout ,\~GND~combout ,\~GND~combout ,\~GND~combout ,\~GND~combout ,\~GND~combout ,\~GND~combout ,\~GND~combout ,\~GND~combout ,\~GND~combout ,\~GND~combout ,\~GND~combout ,\~GND~combout ,
+\~GND~combout ,\~GND~combout ,\~GND~combout ,\~GND~combout ,\~GND~combout ,\~GND~combout ,\~GND~combout ,\~GND~combout ,\~GND~combout ,\~GND~combout ,\~GND~combout ,\~GND~combout ,\~GND~combout ,\~GND~combout ,\~GND~combout }),
+	.portaaddr({\~GND~combout ,\~GND~combout ,\~GND~combout ,\~GND~combout ,\~GND~combout }),
+	.portbaddr({\PC[4]~input_o ,\PC[3]~input_o ,\PC[2]~input_o ,\PC[1]~input_o ,\PC[0]~input_o }),
+	.portbdataout(\inst|altsyncram_component|auto_generated|ram_block1a0_PORTBDATAOUT_bus ));
+// synopsys translate_off
+// defparam \inst|altsyncram_component|auto_generated|ram_block1a0 .clk0_core_clock_enable = "ena0";
+// defparam \inst|altsyncram_component|auto_generated|ram_block1a0 .clk0_input_clock_enable = "ena2";
+// defparam \inst|altsyncram_component|auto_generated|ram_block1a0 .clk1_core_clock_enable = "ena3";
+// defparam \inst|altsyncram_component|auto_generated|ram_block1a0 .clk1_input_clock_enable = "ena3";
+// defparam \inst|altsyncram_component|auto_generated|ram_block1a0 .clock_duty_cycle_dependence = "on";
+// defparam \inst|altsyncram_component|auto_generated|ram_block1a0 .data_interleave_offset_in_bits = 1;
+// defparam \inst|altsyncram_component|auto_generated|ram_block1a0 .data_interleave_width_in_bits = 1;
+// defparam \inst|altsyncram_component|auto_generated|ram_block1a0 .init_file = "./MemContentInstance/IMemPipe.mif";
+// defparam \inst|altsyncram_component|auto_generated|ram_block1a0 .init_file_layout = "port_a";
+// defparam \inst|altsyncram_component|auto_generated|ram_block1a0 .logical_ram_name = "InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|ALTSYNCRAM";
+// defparam \inst|altsyncram_component|auto_generated|ram_block1a0 .mixed_port_feed_through_mode = "dont_care";
+// defparam \inst|altsyncram_component|auto_generated|ram_block1a0 .operation_mode = "dual_port";
+// defparam \inst|altsyncram_component|auto_generated|ram_block1a0 .port_a_address_clear = "none";
+// defparam \inst|altsyncram_component|auto_generated|ram_block1a0 .port_a_address_width = 5;
+// defparam \inst|altsyncram_component|auto_generated|ram_block1a0 .port_a_byte_enable_clock = "none";
+// defparam \inst|altsyncram_component|auto_generated|ram_block1a0 .port_a_data_out_clear = "none";
+// defparam \inst|altsyncram_component|auto_generated|ram_block1a0 .port_a_data_out_clock = "none";
+// defparam \inst|altsyncram_component|auto_generated|ram_block1a0 .port_a_data_width = 36;
+// defparam \inst|altsyncram_component|auto_generated|ram_block1a0 .port_a_first_address = 0;
+// defparam \inst|altsyncram_component|auto_generated|ram_block1a0 .port_a_first_bit_number = 0;
+// defparam \inst|altsyncram_component|auto_generated|ram_block1a0 .port_a_last_address = 31;
+// defparam \inst|altsyncram_component|auto_generated|ram_block1a0 .port_a_logical_ram_depth = 32;
+// defparam \inst|altsyncram_component|auto_generated|ram_block1a0 .port_a_logical_ram_width = 32;
+// defparam \inst|altsyncram_component|auto_generated|ram_block1a0 .port_a_read_during_write_mode = "new_data_no_nbe_read";
+// defparam \inst|altsyncram_component|auto_generated|ram_block1a0 .port_b_address_clear = "none";
+// defparam \inst|altsyncram_component|auto_generated|ram_block1a0 .port_b_address_clock = "clock1";
+// defparam \inst|altsyncram_component|auto_generated|ram_block1a0 .port_b_address_width = 5;
+// defparam \inst|altsyncram_component|auto_generated|ram_block1a0 .port_b_data_out_clear = "none";
+// defparam \inst|altsyncram_component|auto_generated|ram_block1a0 .port_b_data_out_clock = "clock1";
+// defparam \inst|altsyncram_component|auto_generated|ram_block1a0 .port_b_data_width = 36;
+// defparam \inst|altsyncram_component|auto_generated|ram_block1a0 .port_b_first_address = 0;
+// defparam \inst|altsyncram_component|auto_generated|ram_block1a0 .port_b_first_bit_number = 0;
+// defparam \inst|altsyncram_component|auto_generated|ram_block1a0 .port_b_last_address = 31;
+// defparam \inst|altsyncram_component|auto_generated|ram_block1a0 .port_b_logical_ram_depth = 32;
+// defparam \inst|altsyncram_component|auto_generated|ram_block1a0 .port_b_logical_ram_width = 32;
+// defparam \inst|altsyncram_component|auto_generated|ram_block1a0 .port_b_read_during_write_mode = "new_data_no_nbe_read";
+// defparam \inst|altsyncram_component|auto_generated|ram_block1a0 .port_b_read_enable_clock = "clock1";
+// defparam \inst|altsyncram_component|auto_generated|ram_block1a0 .ram_block_type = "M9K";
+// defparam \inst|altsyncram_component|auto_generated|ram_block1a0 .mem_init0 = 1152'h00000000000000000000000000000000000000000000000800001A000031BC2000031C03000031C00000021BC002002FFFF00000000000800000C000A63824010400003000A4302503085FFFF02004FFFF03443FFFF02042FFFF02002000300081182208C2400500AC23005002021000401440FFFC02042FFFF00064182008C240050000001820020020004000000820;
+// synopsys translate_on
+
+// atom is at IOIBUF_X55_Y0_N94
+stratixiii_io_ibuf \PC[31]~input (
+	.i(PC[31]),
+	.o(\PC[31]~input_o ));
+// synopsys translate_off
+// defparam \PC[31]~input .bus_hold = "false";
+// defparam \PC[31]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// atom is at IOIBUF_X148_Y57_N94
+stratixiii_io_ibuf \PC[30]~input (
+	.i(PC[30]),
+	.o(\PC[30]~input_o ));
+// synopsys translate_off
+// defparam \PC[30]~input .bus_hold = "false";
+// defparam \PC[30]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// atom is at IOIBUF_X0_Y31_N1
+stratixiii_io_ibuf \PC[29]~input (
+	.i(PC[29]),
+	.o(\PC[29]~input_o ));
+// synopsys translate_off
+// defparam \PC[29]~input .bus_hold = "false";
+// defparam \PC[29]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// atom is at IOIBUF_X0_Y46_N32
+stratixiii_io_ibuf \PC[28]~input (
+	.i(PC[28]),
+	.o(\PC[28]~input_o ));
+// synopsys translate_off
+// defparam \PC[28]~input .bus_hold = "false";
+// defparam \PC[28]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// atom is at IOIBUF_X20_Y0_N63
+stratixiii_io_ibuf \PC[27]~input (
+	.i(PC[27]),
+	.o(\PC[27]~input_o ));
+// synopsys translate_off
+// defparam \PC[27]~input .bus_hold = "false";
+// defparam \PC[27]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// atom is at IOIBUF_X148_Y55_N32
+stratixiii_io_ibuf \PC[26]~input (
+	.i(PC[26]),
+	.o(\PC[26]~input_o ));
+// synopsys translate_off
+// defparam \PC[26]~input .bus_hold = "false";
+// defparam \PC[26]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// atom is at IOIBUF_X113_Y0_N32
+stratixiii_io_ibuf \PC[25]~input (
+	.i(PC[25]),
+	.o(\PC[25]~input_o ));
+// synopsys translate_off
+// defparam \PC[25]~input .bus_hold = "false";
+// defparam \PC[25]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// atom is at IOIBUF_X148_Y38_N94
+stratixiii_io_ibuf \PC[24]~input (
+	.i(PC[24]),
+	.o(\PC[24]~input_o ));
+// synopsys translate_off
+// defparam \PC[24]~input .bus_hold = "false";
+// defparam \PC[24]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// atom is at IOIBUF_X131_Y0_N1
+stratixiii_io_ibuf \PC[23]~input (
+	.i(PC[23]),
+	.o(\PC[23]~input_o ));
+// synopsys translate_off
+// defparam \PC[23]~input .bus_hold = "false";
+// defparam \PC[23]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// atom is at IOIBUF_X56_Y0_N1
+stratixiii_io_ibuf \PC[22]~input (
+	.i(PC[22]),
+	.o(\PC[22]~input_o ));
+// synopsys translate_off
+// defparam \PC[22]~input .bus_hold = "false";
+// defparam \PC[22]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// atom is at IOIBUF_X0_Y95_N32
+stratixiii_io_ibuf \PC[21]~input (
+	.i(PC[21]),
+	.o(\PC[21]~input_o ));
+// synopsys translate_off
+// defparam \PC[21]~input .bus_hold = "false";
+// defparam \PC[21]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// atom is at IOIBUF_X89_Y0_N32
+stratixiii_io_ibuf \PC[20]~input (
+	.i(PC[20]),
+	.o(\PC[20]~input_o ));
+// synopsys translate_off
+// defparam \PC[20]~input .bus_hold = "false";
+// defparam \PC[20]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// atom is at IOIBUF_X148_Y73_N1
+stratixiii_io_ibuf \PC[19]~input (
+	.i(PC[19]),
+	.o(\PC[19]~input_o ));
+// synopsys translate_off
+// defparam \PC[19]~input .bus_hold = "false";
+// defparam \PC[19]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// atom is at IOIBUF_X97_Y0_N63
+stratixiii_io_ibuf \PC[18]~input (
+	.i(PC[18]),
+	.o(\PC[18]~input_o ));
+// synopsys translate_off
+// defparam \PC[18]~input .bus_hold = "false";
+// defparam \PC[18]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// atom is at IOIBUF_X39_Y0_N32
+stratixiii_io_ibuf \PC[17]~input (
+	.i(PC[17]),
+	.o(\PC[17]~input_o ));
+// synopsys translate_off
+// defparam \PC[17]~input .bus_hold = "false";
+// defparam \PC[17]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// atom is at IOIBUF_X59_Y0_N94
+stratixiii_io_ibuf \PC[16]~input (
+	.i(PC[16]),
+	.o(\PC[16]~input_o ));
+// synopsys translate_off
+// defparam \PC[16]~input .bus_hold = "false";
+// defparam \PC[16]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// atom is at IOIBUF_X105_Y105_N32
+stratixiii_io_ibuf \PC[15]~input (
+	.i(PC[15]),
+	.o(\PC[15]~input_o ));
+// synopsys translate_off
+// defparam \PC[15]~input .bus_hold = "false";
+// defparam \PC[15]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// atom is at IOIBUF_X148_Y46_N63
+stratixiii_io_ibuf \PC[14]~input (
+	.i(PC[14]),
+	.o(\PC[14]~input_o ));
+// synopsys translate_off
+// defparam \PC[14]~input .bus_hold = "false";
+// defparam \PC[14]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// atom is at IOIBUF_X148_Y61_N63
+stratixiii_io_ibuf \PC[13]~input (
+	.i(PC[13]),
+	.o(\PC[13]~input_o ));
+// synopsys translate_off
+// defparam \PC[13]~input .bus_hold = "false";
+// defparam \PC[13]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// atom is at IOIBUF_X148_Y88_N94
+stratixiii_io_ibuf \PC[12]~input (
+	.i(PC[12]),
+	.o(\PC[12]~input_o ));
+// synopsys translate_off
+// defparam \PC[12]~input .bus_hold = "false";
+// defparam \PC[12]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// atom is at IOIBUF_X0_Y27_N32
+stratixiii_io_ibuf \PC[11]~input (
+	.i(PC[11]),
+	.o(\PC[11]~input_o ));
+// synopsys translate_off
+// defparam \PC[11]~input .bus_hold = "false";
+// defparam \PC[11]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// atom is at IOIBUF_X35_Y0_N63
+stratixiii_io_ibuf \PC[10]~input (
+	.i(PC[10]),
+	.o(\PC[10]~input_o ));
+// synopsys translate_off
+// defparam \PC[10]~input .bus_hold = "false";
+// defparam \PC[10]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// atom is at IOIBUF_X109_Y105_N1
+stratixiii_io_ibuf \PC[9]~input (
+	.i(PC[9]),
+	.o(\PC[9]~input_o ));
+// synopsys translate_off
+// defparam \PC[9]~input .bus_hold = "false";
+// defparam \PC[9]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// atom is at IOIBUF_X51_Y105_N1
+stratixiii_io_ibuf \PC[8]~input (
+	.i(PC[8]),
+	.o(\PC[8]~input_o ));
+// synopsys translate_off
+// defparam \PC[8]~input .bus_hold = "false";
+// defparam \PC[8]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// atom is at IOIBUF_X0_Y21_N63
+stratixiii_io_ibuf \PC[7]~input (
+	.i(PC[7]),
+	.o(\PC[7]~input_o ));
+// synopsys translate_off
+// defparam \PC[7]~input .bus_hold = "false";
+// defparam \PC[7]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// atom is at IOIBUF_X31_Y105_N1
+stratixiii_io_ibuf \PC[6]~input (
+	.i(PC[6]),
+	.o(\PC[6]~input_o ));
+// synopsys translate_off
+// defparam \PC[6]~input .bus_hold = "false";
+// defparam \PC[6]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// atom is at IOIBUF_X148_Y44_N32
+stratixiii_io_ibuf \PC[5]~input (
+	.i(PC[5]),
+	.o(\PC[5]~input_o ));
+// synopsys translate_off
+// defparam \PC[5]~input .bus_hold = "false";
+// defparam \PC[5]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+endmodule
+
+module ram_0 (
+	portawe, portbre, clk0, clk1, ena0, ena2, ena3, portadatain, portaaddr, portbaddr,
+	portbdataout);
+input portawe, portbre, clk0, clk1, ena0, ena2, ena3;
+input [35:0] portadatain;
+input [4:0] portaaddr;
+input [4:0] portbaddr;
+output [143:0] portbdataout;
+wire porta_we_reg, portb_re_reg;
+wire [31:0] porta_datain_reg;
+wire [4:0] porta_addr_reg;
+wire [4:0] portb_addr_reg;
+wire [35:0] portbdataout_bufout;
+wire [35:0] portb_dataout_buf;
+wire [143:0] portbdataout;
+
+affc1 ram_portadatain_reg_0(
+	.clk(clk0),
+	.ena(1'b1),
+	.aclr(1'b0),
+	.datain(portadatain[0]),
+	.q(porta_datain_reg[0]));
+
+affc1 ram_portadatain_reg_1(
+	.clk(clk0),
+	.ena(1'b1),
+	.aclr(1'b0),
+	.datain(portadatain[1]),
+	.q(porta_datain_reg[1]));
+
+affc1 ram_portadatain_reg_2(
+	.clk(clk0),
+	.ena(1'b1),
+	.aclr(1'b0),
+	.datain(portadatain[2]),
+	.q(porta_datain_reg[2]));
+
+affc1 ram_portadatain_reg_3(
+	.clk(clk0),
+	.ena(1'b1),
+	.aclr(1'b0),
+	.datain(portadatain[3]),
+	.q(porta_datain_reg[3]));
+
+affc1 ram_portadatain_reg_4(
+	.clk(clk0),
+	.ena(1'b1),
+	.aclr(1'b0),
+	.datain(portadatain[4]),
+	.q(porta_datain_reg[4]));
+
+affc1 ram_portadatain_reg_5(
+	.clk(clk0),
+	.ena(1'b1),
+	.aclr(1'b0),
+	.datain(portadatain[5]),
+	.q(porta_datain_reg[5]));
+
+affc1 ram_portadatain_reg_6(
+	.clk(clk0),
+	.ena(1'b1),
+	.aclr(1'b0),
+	.datain(portadatain[6]),
+	.q(porta_datain_reg[6]));
+
+affc1 ram_portadatain_reg_7(
+	.clk(clk0),
+	.ena(1'b1),
+	.aclr(1'b0),
+	.datain(portadatain[7]),
+	.q(porta_datain_reg[7]));
+
+affc1 ram_portadatain_reg_8(
+	.clk(clk0),
+	.ena(1'b1),
+	.aclr(1'b0),
+	.datain(portadatain[8]),
+	.q(porta_datain_reg[8]));
+
+affc1 ram_portadatain_reg_9(
+	.clk(clk0),
+	.ena(1'b1),
+	.aclr(1'b0),
+	.datain(portadatain[9]),
+	.q(porta_datain_reg[9]));
+
+affc1 ram_portadatain_reg_10(
+	.clk(clk0),
+	.ena(1'b1),
+	.aclr(1'b0),
+	.datain(portadatain[10]),
+	.q(porta_datain_reg[10]));
+
+affc1 ram_portadatain_reg_11(
+	.clk(clk0),
+	.ena(1'b1),
+	.aclr(1'b0),
+	.datain(portadatain[11]),
+	.q(porta_datain_reg[11]));
+
+affc1 ram_portadatain_reg_12(
+	.clk(clk0),
+	.ena(1'b1),
+	.aclr(1'b0),
+	.datain(portadatain[12]),
+	.q(porta_datain_reg[12]));
+
+affc1 ram_portadatain_reg_13(
+	.clk(clk0),
+	.ena(1'b1),
+	.aclr(1'b0),
+	.datain(portadatain[13]),
+	.q(porta_datain_reg[13]));
+
+affc1 ram_portadatain_reg_14(
+	.clk(clk0),
+	.ena(1'b1),
+	.aclr(1'b0),
+	.datain(portadatain[14]),
+	.q(porta_datain_reg[14]));
+
+affc1 ram_portadatain_reg_15(
+	.clk(clk0),
+	.ena(1'b1),
+	.aclr(1'b0),
+	.datain(portadatain[15]),
+	.q(porta_datain_reg[15]));
+
+affc1 ram_portadatain_reg_16(
+	.clk(clk0),
+	.ena(1'b1),
+	.aclr(1'b0),
+	.datain(portadatain[16]),
+	.q(porta_datain_reg[16]));
+
+affc1 ram_portadatain_reg_17(
+	.clk(clk0),
+	.ena(1'b1),
+	.aclr(1'b0),
+	.datain(portadatain[17]),
+	.q(porta_datain_reg[17]));
+
+affc1 ram_portadatain_reg_18(
+	.clk(clk0),
+	.ena(1'b1),
+	.aclr(1'b0),
+	.datain(portadatain[18]),
+	.q(porta_datain_reg[18]));
+
+affc1 ram_portadatain_reg_19(
+	.clk(clk0),
+	.ena(1'b1),
+	.aclr(1'b0),
+	.datain(portadatain[19]),
+	.q(porta_datain_reg[19]));
+
+affc1 ram_portadatain_reg_20(
+	.clk(clk0),
+	.ena(1'b1),
+	.aclr(1'b0),
+	.datain(portadatain[20]),
+	.q(porta_datain_reg[20]));
+
+affc1 ram_portadatain_reg_21(
+	.clk(clk0),
+	.ena(1'b1),
+	.aclr(1'b0),
+	.datain(portadatain[21]),
+	.q(porta_datain_reg[21]));
+
+affc1 ram_portadatain_reg_22(
+	.clk(clk0),
+	.ena(1'b1),
+	.aclr(1'b0),
+	.datain(portadatain[22]),
+	.q(porta_datain_reg[22]));
+
+affc1 ram_portadatain_reg_23(
+	.clk(clk0),
+	.ena(1'b1),
+	.aclr(1'b0),
+	.datain(portadatain[23]),
+	.q(porta_datain_reg[23]));
+
+affc1 ram_portadatain_reg_24(
+	.clk(clk0),
+	.ena(1'b1),
+	.aclr(1'b0),
+	.datain(portadatain[24]),
+	.q(porta_datain_reg[24]));
+
+affc1 ram_portadatain_reg_25(
+	.clk(clk0),
+	.ena(1'b1),
+	.aclr(1'b0),
+	.datain(portadatain[25]),
+	.q(porta_datain_reg[25]));
+
+affc1 ram_portadatain_reg_26(
+	.clk(clk0),
+	.ena(1'b1),
+	.aclr(1'b0),
+	.datain(portadatain[26]),
+	.q(porta_datain_reg[26]));
+
+affc1 ram_portadatain_reg_27(
+	.clk(clk0),
+	.ena(1'b1),
+	.aclr(1'b0),
+	.datain(portadatain[27]),
+	.q(porta_datain_reg[27]));
+
+affc1 ram_portadatain_reg_28(
+	.clk(clk0),
+	.ena(1'b1),
+	.aclr(1'b0),
+	.datain(portadatain[28]),
+	.q(porta_datain_reg[28]));
+
+affc1 ram_portadatain_reg_29(
+	.clk(clk0),
+	.ena(1'b1),
+	.aclr(1'b0),
+	.datain(portadatain[29]),
+	.q(porta_datain_reg[29]));
+
+affc1 ram_portadatain_reg_30(
+	.clk(clk0),
+	.ena(1'b1),
+	.aclr(1'b0),
+	.datain(portadatain[30]),
+	.q(porta_datain_reg[30]));
+
+affc1 ram_portadatain_reg_31(
+	.clk(clk0),
+	.ena(1'b1),
+	.aclr(1'b0),
+	.datain(portadatain[31]),
+	.q(porta_datain_reg[31]));
+
+affstall ram_portaaddr_reg_0(
+	.clk(clk0),
+	.ena(1'b1),
+	.stall(1'b0),
+	.datain(portaaddr[0]),
+	.regout(porta_addr_reg[0]));
+
+affstall ram_portaaddr_reg_1(
+	.clk(clk0),
+	.ena(1'b1),
+	.stall(1'b0),
+	.datain(portaaddr[1]),
+	.regout(porta_addr_reg[1]));
+
+affstall ram_portaaddr_reg_2(
+	.clk(clk0),
+	.ena(1'b1),
+	.stall(1'b0),
+	.datain(portaaddr[2]),
+	.regout(porta_addr_reg[2]));
+
+affstall ram_portaaddr_reg_3(
+	.clk(clk0),
+	.ena(1'b1),
+	.stall(1'b0),
+	.datain(portaaddr[3]),
+	.regout(porta_addr_reg[3]));
+
+affstall ram_portaaddr_reg_4(
+	.clk(clk0),
+	.ena(1'b1),
+	.stall(1'b0),
+	.datain(portaaddr[4]),
+	.regout(porta_addr_reg[4]));
+
+affc1 ram_porta_we_reg(
+	.clk(clk0),
+	.ena(1'b0),
+	.datain(portawe),
+	.q(porta_we_reg),
+	.aclr(1'b0));
+
+affstall ram_portbaddr_reg_0(
+	.clk(clk1),
+	.ena(1'b1),
+	.stall(1'b0),
+	.datain(portbaddr[0]),
+	.regout(portb_addr_reg[0]));
+
+affstall ram_portbaddr_reg_1(
+	.clk(clk1),
+	.ena(1'b1),
+	.stall(1'b0),
+	.datain(portbaddr[1]),
+	.regout(portb_addr_reg[1]));
+
+affstall ram_portbaddr_reg_2(
+	.clk(clk1),
+	.ena(1'b1),
+	.stall(1'b0),
+	.datain(portbaddr[2]),
+	.regout(portb_addr_reg[2]));
+
+affstall ram_portbaddr_reg_3(
+	.clk(clk1),
+	.ena(1'b1),
+	.stall(1'b0),
+	.datain(portbaddr[3]),
+	.regout(portb_addr_reg[3]));
+
+affstall ram_portbaddr_reg_4(
+	.clk(clk1),
+	.ena(1'b1),
+	.stall(1'b0),
+	.datain(portbaddr[4]),
+	.regout(portb_addr_reg[4]));
+
+affc1 ram_portb_re_reg(
+	.clk(clk1),
+	.datain(portbre),
+	.q(portb_re_reg),
+	.aclr(1'b0),
+	.ena(1'b1));
+
+affc1 ram_portbdataout_reg_0(
+	.clk(clk1),
+	.ena(1'b1),
+	.aclr(1'b0),
+	.datain(portb_dataout_buf[0]),
+	.q(portbdataout_bufout[0]));
+
+affc1 ram_portbdataout_reg_1(
+	.clk(clk1),
+	.ena(1'b1),
+	.aclr(1'b0),
+	.datain(portb_dataout_buf[1]),
+	.q(portbdataout_bufout[1]));
+
+affc1 ram_portbdataout_reg_2(
+	.clk(clk1),
+	.ena(1'b1),
+	.aclr(1'b0),
+	.datain(portb_dataout_buf[2]),
+	.q(portbdataout_bufout[2]));
+
+affc1 ram_portbdataout_reg_3(
+	.clk(clk1),
+	.ena(1'b1),
+	.aclr(1'b0),
+	.datain(portb_dataout_buf[3]),
+	.q(portbdataout_bufout[3]));
+
+affc1 ram_portbdataout_reg_4(
+	.clk(clk1),
+	.ena(1'b1),
+	.aclr(1'b0),
+	.datain(portb_dataout_buf[4]),
+	.q(portbdataout_bufout[4]));
+
+affc1 ram_portbdataout_reg_5(
+	.clk(clk1),
+	.ena(1'b1),
+	.aclr(1'b0),
+	.datain(portb_dataout_buf[5]),
+	.q(portbdataout_bufout[5]));
+
+affc1 ram_portbdataout_reg_6(
+	.clk(clk1),
+	.ena(1'b1),
+	.aclr(1'b0),
+	.datain(portb_dataout_buf[6]),
+	.q(portbdataout_bufout[6]));
+
+affc1 ram_portbdataout_reg_7(
+	.clk(clk1),
+	.ena(1'b1),
+	.aclr(1'b0),
+	.datain(portb_dataout_buf[7]),
+	.q(portbdataout_bufout[7]));
+
+affc1 ram_portbdataout_reg_8(
+	.clk(clk1),
+	.ena(1'b1),
+	.aclr(1'b0),
+	.datain(portb_dataout_buf[8]),
+	.q(portbdataout_bufout[8]));
+
+affc1 ram_portbdataout_reg_9(
+	.clk(clk1),
+	.ena(1'b1),
+	.aclr(1'b0),
+	.datain(portb_dataout_buf[9]),
+	.q(portbdataout_bufout[9]));
+
+affc1 ram_portbdataout_reg_10(
+	.clk(clk1),
+	.ena(1'b1),
+	.aclr(1'b0),
+	.datain(portb_dataout_buf[10]),
+	.q(portbdataout_bufout[10]));
+
+affc1 ram_portbdataout_reg_11(
+	.clk(clk1),
+	.ena(1'b1),
+	.aclr(1'b0),
+	.datain(portb_dataout_buf[11]),
+	.q(portbdataout_bufout[11]));
+
+affc1 ram_portbdataout_reg_12(
+	.clk(clk1),
+	.ena(1'b1),
+	.aclr(1'b0),
+	.datain(portb_dataout_buf[12]),
+	.q(portbdataout_bufout[12]));
+
+affc1 ram_portbdataout_reg_13(
+	.clk(clk1),
+	.ena(1'b1),
+	.aclr(1'b0),
+	.datain(portb_dataout_buf[13]),
+	.q(portbdataout_bufout[13]));
+
+affc1 ram_portbdataout_reg_14(
+	.clk(clk1),
+	.ena(1'b1),
+	.aclr(1'b0),
+	.datain(portb_dataout_buf[14]),
+	.q(portbdataout_bufout[14]));
+
+affc1 ram_portbdataout_reg_15(
+	.clk(clk1),
+	.ena(1'b1),
+	.aclr(1'b0),
+	.datain(portb_dataout_buf[15]),
+	.q(portbdataout_bufout[15]));
+
+affc1 ram_portbdataout_reg_16(
+	.clk(clk1),
+	.ena(1'b1),
+	.aclr(1'b0),
+	.datain(portb_dataout_buf[16]),
+	.q(portbdataout_bufout[16]));
+
+affc1 ram_portbdataout_reg_17(
+	.clk(clk1),
+	.ena(1'b1),
+	.aclr(1'b0),
+	.datain(portb_dataout_buf[17]),
+	.q(portbdataout_bufout[17]));
+
+affc1 ram_portbdataout_reg_18(
+	.clk(clk1),
+	.ena(1'b1),
+	.aclr(1'b0),
+	.datain(portb_dataout_buf[18]),
+	.q(portbdataout_bufout[18]));
+
+affc1 ram_portbdataout_reg_19(
+	.clk(clk1),
+	.ena(1'b1),
+	.aclr(1'b0),
+	.datain(portb_dataout_buf[19]),
+	.q(portbdataout_bufout[19]));
+
+affc1 ram_portbdataout_reg_20(
+	.clk(clk1),
+	.ena(1'b1),
+	.aclr(1'b0),
+	.datain(portb_dataout_buf[20]),
+	.q(portbdataout_bufout[20]));
+
+affc1 ram_portbdataout_reg_21(
+	.clk(clk1),
+	.ena(1'b1),
+	.aclr(1'b0),
+	.datain(portb_dataout_buf[21]),
+	.q(portbdataout_bufout[21]));
+
+affc1 ram_portbdataout_reg_22(
+	.clk(clk1),
+	.ena(1'b1),
+	.aclr(1'b0),
+	.datain(portb_dataout_buf[22]),
+	.q(portbdataout_bufout[22]));
+
+affc1 ram_portbdataout_reg_23(
+	.clk(clk1),
+	.ena(1'b1),
+	.aclr(1'b0),
+	.datain(portb_dataout_buf[23]),
+	.q(portbdataout_bufout[23]));
+
+affc1 ram_portbdataout_reg_24(
+	.clk(clk1),
+	.ena(1'b1),
+	.aclr(1'b0),
+	.datain(portb_dataout_buf[24]),
+	.q(portbdataout_bufout[24]));
+
+affc1 ram_portbdataout_reg_25(
+	.clk(clk1),
+	.ena(1'b1),
+	.aclr(1'b0),
+	.datain(portb_dataout_buf[25]),
+	.q(portbdataout_bufout[25]));
+
+affc1 ram_portbdataout_reg_26(
+	.clk(clk1),
+	.ena(1'b1),
+	.aclr(1'b0),
+	.datain(portb_dataout_buf[26]),
+	.q(portbdataout_bufout[26]));
+
+affc1 ram_portbdataout_reg_27(
+	.clk(clk1),
+	.ena(1'b1),
+	.aclr(1'b0),
+	.datain(portb_dataout_buf[27]),
+	.q(portbdataout_bufout[27]));
+
+affc1 ram_portbdataout_reg_28(
+	.clk(clk1),
+	.ena(1'b1),
+	.aclr(1'b0),
+	.datain(portb_dataout_buf[28]),
+	.q(portbdataout_bufout[28]));
+
+affc1 ram_portbdataout_reg_29(
+	.clk(clk1),
+	.ena(1'b1),
+	.aclr(1'b0),
+	.datain(portb_dataout_buf[29]),
+	.q(portbdataout_bufout[29]));
+
+affc1 ram_portbdataout_reg_30(
+	.clk(clk1),
+	.ena(1'b1),
+	.aclr(1'b0),
+	.datain(portb_dataout_buf[30]),
+	.q(portbdataout_bufout[30]));
+
+affc1 ram_portbdataout_reg_31(
+	.clk(clk1),
+	.ena(1'b1),
+	.aclr(1'b0),
+	.datain(portb_dataout_buf[31]),
+	.q(portbdataout_bufout[31]));
+
+affc1 ram_portbdataout_reg_32(
+	.clk(clk1),
+	.ena(1'b1),
+	.aclr(1'b0),
+	.datain(portb_dataout_buf[32]),
+	.q(portbdataout_bufout[32]));
+
+affc1 ram_portbdataout_reg_33(
+	.clk(clk1),
+	.ena(1'b1),
+	.aclr(1'b0),
+	.datain(portb_dataout_buf[33]),
+	.q(portbdataout_bufout[33]));
+
+affc1 ram_portbdataout_reg_34(
+	.clk(clk1),
+	.ena(1'b1),
+	.aclr(1'b0),
+	.datain(portb_dataout_buf[34]),
+	.q(portbdataout_bufout[34]));
+
+affc1 ram_portbdataout_reg_35(
+	.clk(clk1),
+	.ena(1'b1),
+	.aclr(1'b0),
+	.datain(portb_dataout_buf[35]),
+	.q(portbdataout_bufout[35]));
+
+assign portbdataout = {108'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, portbdataout_bufout[35:0]};
+endmodule
+
+module stratixiii_clkena_0 (
+	inclk,
+	outclk);
+input inclk;
+output outclk;
+wire outclk;
+
+AND1 and_inst(
+	.IN1(inclk),
+	.Y(outclk));
+endmodule
+
+module stratixiii_lcell_comb_1000_0000000000000000_0_0 (
+	combout);
+output combout;
+
+// Equation(s):
+// combout = GND
+
+wire combout;
+
+assign combout = {1'b0};
+endmodule

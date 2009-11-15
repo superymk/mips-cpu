@@ -1,0 +1,11 @@
+% signal extension %
+
+subdesign SignExt
+(
+SE,IMM[15..0] : input;
+EIMM[31..0] : output;
+)
+begin
+EIMM[15..0]=IMM[15..0];
+if (SE&IMM[15]) == B"1" then EIMM[31..16] = h"FFFF"; else EIMM[31..16] = h"0000"; end if;
+end;

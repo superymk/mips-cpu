@@ -1,0 +1,1296 @@
+TimeQuest Timing Analyzer report for PipelineUniProcessor
+Wed Nov 04 18:44:04 2009
+Quartus II Version 9.0 Build 132 02/25/2009 SJ Full Version
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. TimeQuest Timing Analyzer Summary
+  3. Parallel Compilation
+  4. Clocks
+  5. Slow 1100mV 100C Model Fmax Summary
+  6. Slow 1100mV 100C Model Setup Summary
+  7. Slow 1100mV 100C Model Hold Summary
+  8. Slow 1100mV 100C Model Recovery Summary
+  9. Slow 1100mV 100C Model Removal Summary
+ 10. Slow 1100mV 100C Model Minimum Pulse Width
+ 11. Setup Times
+ 12. Hold Times
+ 13. Clock to Output Times
+ 14. Minimum Clock to Output Times
+ 15. Slow 1100mV -40C Model Fmax Summary
+ 16. Slow 1100mV -40C Model Setup Summary
+ 17. Slow 1100mV -40C Model Hold Summary
+ 18. Slow 1100mV -40C Model Recovery Summary
+ 19. Slow 1100mV -40C Model Removal Summary
+ 20. Slow 1100mV -40C Model Minimum Pulse Width
+ 21. Setup Times
+ 22. Hold Times
+ 23. Clock to Output Times
+ 24. Minimum Clock to Output Times
+ 25. Fast 1100mV -40C Model Setup Summary
+ 26. Fast 1100mV -40C Model Hold Summary
+ 27. Fast 1100mV -40C Model Recovery Summary
+ 28. Fast 1100mV -40C Model Removal Summary
+ 29. Fast 1100mV -40C Model Minimum Pulse Width
+ 30. Setup Times
+ 31. Hold Times
+ 32. Clock to Output Times
+ 33. Minimum Clock to Output Times
+ 34. Multicorner Timing Analysis Summary
+ 35. Setup Times
+ 36. Hold Times
+ 37. Clock to Output Times
+ 38. Minimum Clock to Output Times
+ 39. Board Trace Model Assignments
+ 40. Input Transition Times
+ 41. Slow Corner Signal Integrity Metrics
+ 42. Fast Corner Signal Integrity Metrics
+ 43. Setup Transfers
+ 44. Hold Transfers
+ 45. Report TCCS
+ 46. Report RSKM
+ 47. Unconstrained Paths
+ 48. TimeQuest Timing Analyzer Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2009 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++-----------------------------------------------------------------------+
+; TimeQuest Timing Analyzer Summary                                     ;
++--------------------+--------------------------------------------------+
+; Quartus II Version ; Version 9.0 Build 132 02/25/2009 SJ Full Version ;
+; Revision Name      ; PipelineUniProcessor                             ;
+; Device Family      ; Stratix III                                      ;
+; Device Name        ; EP3SL340F1760I4                                  ;
+; Timing Models      ; Final                                            ;
+; Delay Model        ; Combined                                         ;
+; Rise/Fall Delays   ; Enabled                                          ;
++--------------------+--------------------------------------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 2           ;
+; Maximum allowed            ; 2           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 2           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     1 processor            ; 100.0%      ;
+;     2 processors           ; < 0.1%      ;
++----------------------------+-------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Clocks                                                                                                                                                                          ;
++------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+---------+
+; Clock Name ; Type ; Period ; Frequency  ; Rise  ; Fall  ; Duty Cycle ; Divide by ; Multiply by ; Phase ; Offset ; Edge List ; Edge Shift ; Inverted ; Master ; Source ; Targets ;
++------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+---------+
+; CLK        ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { CLK } ;
++------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+---------+
+
+
++-----------------------------------------------------------------------------------------------------------+
+; Slow 1100mV 100C Model Fmax Summary                                                                       ;
++------------+-----------------+------------+---------------------------------------------------------------+
+; Fmax       ; Restricted Fmax ; Clock Name ; Note                                                          ;
++------------+-----------------+------------+---------------------------------------------------------------+
+; 448.03 MHz ; 350.02 MHz      ; CLK        ; limit due to minimum period restriction (max I/O toggle rate) ;
++------------+-----------------+------------+---------------------------------------------------------------+
+This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
+
+
++--------------------------------------+
+; Slow 1100mV 100C Model Setup Summary ;
++-------+--------+---------------------+
+; Clock ; Slack  ; End Point TNS       ;
++-------+--------+---------------------+
+; CLK   ; -1.232 ; -39.424             ;
++-------+--------+---------------------+
+
+
++-------------------------------------+
+; Slow 1100mV 100C Model Hold Summary ;
++-------+-------+---------------------+
+; Clock ; Slack ; End Point TNS       ;
++-------+-------+---------------------+
+; CLK   ; 1.559 ; 0.000               ;
++-------+-------+---------------------+
+
+
+-------------------------------------------
+; Slow 1100mV 100C Model Recovery Summary ;
+-------------------------------------------
+No paths to report.
+
+
+------------------------------------------
+; Slow 1100mV 100C Model Removal Summary ;
+------------------------------------------
+No paths to report.
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Slow 1100mV 100C Model Minimum Pulse Width                                                                                                                                                               ;
++--------+--------------+----------------+-------+------------------+-------+------------+-----------------------------------------------------------------------------------------------------------------+
+; Slack  ; Actual Width ; Required Width ; CCPP  ; Type             ; Clock ; Clock Edge ; Target                                                                                                          ;
++--------+--------------+----------------+-------+------------------+-------+------------+-----------------------------------------------------------------------------------------------------------------+
+; -1.857 ; 1.000        ; 2.857          ; 0.000 ; Port Rate        ; CLK   ; Rise       ; CLK                                                                                                             ;
+; -1.531 ; 1.000        ; 2.531          ; 0.000 ; Min Period       ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[0]                          ;
+; -1.531 ; 1.000        ; 2.531          ; 0.000 ; Min Period       ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[10]                         ;
+; -1.531 ; 1.000        ; 2.531          ; 0.000 ; Min Period       ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[11]                         ;
+; -1.531 ; 1.000        ; 2.531          ; 0.000 ; Min Period       ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[12]                         ;
+; -1.531 ; 1.000        ; 2.531          ; 0.000 ; Min Period       ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[13]                         ;
+; -1.531 ; 1.000        ; 2.531          ; 0.000 ; Min Period       ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[14]                         ;
+; -1.531 ; 1.000        ; 2.531          ; 0.000 ; Min Period       ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[15]                         ;
+; -1.531 ; 1.000        ; 2.531          ; 0.000 ; Min Period       ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[16]                         ;
+; -1.531 ; 1.000        ; 2.531          ; 0.000 ; Min Period       ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[17]                         ;
+; -1.531 ; 1.000        ; 2.531          ; 0.000 ; Min Period       ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[18]                         ;
+; -1.531 ; 1.000        ; 2.531          ; 0.000 ; Min Period       ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[19]                         ;
+; -1.531 ; 1.000        ; 2.531          ; 0.000 ; Min Period       ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[1]                          ;
+; -1.531 ; 1.000        ; 2.531          ; 0.000 ; Min Period       ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[20]                         ;
+; -1.531 ; 1.000        ; 2.531          ; 0.000 ; Min Period       ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[21]                         ;
+; -1.531 ; 1.000        ; 2.531          ; 0.000 ; Min Period       ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[22]                         ;
+; -1.531 ; 1.000        ; 2.531          ; 0.000 ; Min Period       ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[23]                         ;
+; -1.531 ; 1.000        ; 2.531          ; 0.000 ; Min Period       ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[24]                         ;
+; -1.531 ; 1.000        ; 2.531          ; 0.000 ; Min Period       ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[25]                         ;
+; -1.531 ; 1.000        ; 2.531          ; 0.000 ; Min Period       ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[26]                         ;
+; -1.531 ; 1.000        ; 2.531          ; 0.000 ; Min Period       ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[27]                         ;
+; -1.531 ; 1.000        ; 2.531          ; 0.000 ; Min Period       ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[28]                         ;
+; -1.531 ; 1.000        ; 2.531          ; 0.000 ; Min Period       ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[29]                         ;
+; -1.531 ; 1.000        ; 2.531          ; 0.000 ; Min Period       ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[2]                          ;
+; -1.531 ; 1.000        ; 2.531          ; 0.000 ; Min Period       ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[30]                         ;
+; -1.531 ; 1.000        ; 2.531          ; 0.000 ; Min Period       ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[31]                         ;
+; -1.531 ; 1.000        ; 2.531          ; 0.000 ; Min Period       ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[3]                          ;
+; -1.531 ; 1.000        ; 2.531          ; 0.000 ; Min Period       ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[4]                          ;
+; -1.531 ; 1.000        ; 2.531          ; 0.000 ; Min Period       ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[5]                          ;
+; -1.531 ; 1.000        ; 2.531          ; 0.000 ; Min Period       ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[6]                          ;
+; -1.531 ; 1.000        ; 2.531          ; 0.000 ; Min Period       ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[7]                          ;
+; -1.531 ; 1.000        ; 2.531          ; 0.000 ; Min Period       ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[8]                          ;
+; -1.531 ; 1.000        ; 2.531          ; 0.000 ; Min Period       ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[9]                          ;
+; -1.531 ; 1.000        ; 2.531          ; 0.000 ; Min Period       ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|ram_block1a0~porta_address_reg0 ;
+; -1.531 ; 1.000        ; 2.531          ; 0.000 ; Min Period       ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|ram_block1a0~porta_datain_reg0  ;
+; -1.531 ; 1.000        ; 2.531          ; 0.000 ; Min Period       ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|ram_block1a0~portb_address_reg0 ;
+; -0.767 ; 0.192        ; 1.100          ; 0.141 ; High Pulse Width ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|ram_block1a0~porta_address_reg0 ;
+; -0.750 ; 0.111        ; 1.100          ; 0.239 ; High Pulse Width ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|ram_block1a0~porta_datain_reg0  ;
+; -0.744 ; 0.158        ; 1.100          ; 0.198 ; High Pulse Width ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[0]                          ;
+; -0.744 ; 0.158        ; 1.100          ; 0.198 ; High Pulse Width ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[10]                         ;
+; -0.744 ; 0.158        ; 1.100          ; 0.198 ; High Pulse Width ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[11]                         ;
+; -0.744 ; 0.158        ; 1.100          ; 0.198 ; High Pulse Width ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[12]                         ;
+; -0.744 ; 0.158        ; 1.100          ; 0.198 ; High Pulse Width ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[13]                         ;
+; -0.744 ; 0.158        ; 1.100          ; 0.198 ; High Pulse Width ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[14]                         ;
+; -0.744 ; 0.158        ; 1.100          ; 0.198 ; High Pulse Width ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[15]                         ;
+; -0.744 ; 0.158        ; 1.100          ; 0.198 ; High Pulse Width ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[16]                         ;
+; -0.744 ; 0.158        ; 1.100          ; 0.198 ; High Pulse Width ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[17]                         ;
+; -0.744 ; 0.158        ; 1.100          ; 0.198 ; High Pulse Width ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[18]                         ;
+; -0.744 ; 0.158        ; 1.100          ; 0.198 ; High Pulse Width ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[19]                         ;
+; -0.744 ; 0.158        ; 1.100          ; 0.198 ; High Pulse Width ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[1]                          ;
+; -0.744 ; 0.158        ; 1.100          ; 0.198 ; High Pulse Width ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[20]                         ;
+; -0.744 ; 0.158        ; 1.100          ; 0.198 ; High Pulse Width ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[21]                         ;
+; -0.744 ; 0.158        ; 1.100          ; 0.198 ; High Pulse Width ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[22]                         ;
+; -0.744 ; 0.158        ; 1.100          ; 0.198 ; High Pulse Width ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[23]                         ;
+; -0.744 ; 0.158        ; 1.100          ; 0.198 ; High Pulse Width ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[24]                         ;
+; -0.744 ; 0.158        ; 1.100          ; 0.198 ; High Pulse Width ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[25]                         ;
+; -0.744 ; 0.158        ; 1.100          ; 0.198 ; High Pulse Width ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[26]                         ;
+; -0.744 ; 0.158        ; 1.100          ; 0.198 ; High Pulse Width ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[27]                         ;
+; -0.744 ; 0.158        ; 1.100          ; 0.198 ; High Pulse Width ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[28]                         ;
+; -0.744 ; 0.158        ; 1.100          ; 0.198 ; High Pulse Width ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[29]                         ;
+; -0.744 ; 0.158        ; 1.100          ; 0.198 ; High Pulse Width ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[2]                          ;
+; -0.744 ; 0.158        ; 1.100          ; 0.198 ; High Pulse Width ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[30]                         ;
+; -0.744 ; 0.158        ; 1.100          ; 0.198 ; High Pulse Width ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[31]                         ;
+; -0.744 ; 0.158        ; 1.100          ; 0.198 ; High Pulse Width ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[3]                          ;
+; -0.744 ; 0.158        ; 1.100          ; 0.198 ; High Pulse Width ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[4]                          ;
+; -0.744 ; 0.158        ; 1.100          ; 0.198 ; High Pulse Width ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[5]                          ;
+; -0.744 ; 0.158        ; 1.100          ; 0.198 ; High Pulse Width ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[6]                          ;
+; -0.744 ; 0.158        ; 1.100          ; 0.198 ; High Pulse Width ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[7]                          ;
+; -0.744 ; 0.158        ; 1.100          ; 0.198 ; High Pulse Width ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[8]                          ;
+; -0.744 ; 0.158        ; 1.100          ; 0.198 ; High Pulse Width ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[9]                          ;
+; -0.731 ; 0.115        ; 1.100          ; 0.254 ; High Pulse Width ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|ram_block1a0~portb_address_reg0 ;
+; -0.151 ; 0.398        ; 0.690          ; 0.141 ; Low Pulse Width  ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|ram_block1a0~porta_address_reg0 ;
+; -0.130 ; 0.362        ; 0.690          ; 0.198 ; Low Pulse Width  ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[0]                          ;
+; -0.130 ; 0.362        ; 0.690          ; 0.198 ; Low Pulse Width  ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[10]                         ;
+; -0.130 ; 0.362        ; 0.690          ; 0.198 ; Low Pulse Width  ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[11]                         ;
+; -0.130 ; 0.362        ; 0.690          ; 0.198 ; Low Pulse Width  ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[12]                         ;
+; -0.130 ; 0.362        ; 0.690          ; 0.198 ; Low Pulse Width  ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[13]                         ;
+; -0.130 ; 0.362        ; 0.690          ; 0.198 ; Low Pulse Width  ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[14]                         ;
+; -0.130 ; 0.362        ; 0.690          ; 0.198 ; Low Pulse Width  ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[15]                         ;
+; -0.130 ; 0.362        ; 0.690          ; 0.198 ; Low Pulse Width  ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[16]                         ;
+; -0.130 ; 0.362        ; 0.690          ; 0.198 ; Low Pulse Width  ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[17]                         ;
+; -0.130 ; 0.362        ; 0.690          ; 0.198 ; Low Pulse Width  ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[18]                         ;
+; -0.130 ; 0.362        ; 0.690          ; 0.198 ; Low Pulse Width  ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[19]                         ;
+; -0.130 ; 0.362        ; 0.690          ; 0.198 ; Low Pulse Width  ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[1]                          ;
+; -0.130 ; 0.362        ; 0.690          ; 0.198 ; Low Pulse Width  ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[20]                         ;
+; -0.130 ; 0.362        ; 0.690          ; 0.198 ; Low Pulse Width  ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[21]                         ;
+; -0.130 ; 0.362        ; 0.690          ; 0.198 ; Low Pulse Width  ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[22]                         ;
+; -0.130 ; 0.362        ; 0.690          ; 0.198 ; Low Pulse Width  ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[23]                         ;
+; -0.130 ; 0.362        ; 0.690          ; 0.198 ; Low Pulse Width  ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[24]                         ;
+; -0.130 ; 0.362        ; 0.690          ; 0.198 ; Low Pulse Width  ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[25]                         ;
+; -0.130 ; 0.362        ; 0.690          ; 0.198 ; Low Pulse Width  ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[26]                         ;
+; -0.130 ; 0.362        ; 0.690          ; 0.198 ; Low Pulse Width  ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[27]                         ;
+; -0.130 ; 0.362        ; 0.690          ; 0.198 ; Low Pulse Width  ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[28]                         ;
+; -0.130 ; 0.362        ; 0.690          ; 0.198 ; Low Pulse Width  ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[29]                         ;
+; -0.130 ; 0.362        ; 0.690          ; 0.198 ; Low Pulse Width  ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[2]                          ;
+; -0.130 ; 0.362        ; 0.690          ; 0.198 ; Low Pulse Width  ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[30]                         ;
+; -0.130 ; 0.362        ; 0.690          ; 0.198 ; Low Pulse Width  ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[31]                         ;
+; -0.130 ; 0.362        ; 0.690          ; 0.198 ; Low Pulse Width  ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[3]                          ;
+; -0.130 ; 0.362        ; 0.690          ; 0.198 ; Low Pulse Width  ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[4]                          ;
+; -0.130 ; 0.362        ; 0.690          ; 0.198 ; Low Pulse Width  ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[5]                          ;
++--------+--------------+----------------+-------+------------------+-------+------------+-----------------------------------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------+
+; Setup Times                                                           ;
++-----------+------------+-------+-------+------------+-----------------+
+; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------+------------+-------+-------+------------+-----------------+
+; PC[*]     ; CLK        ; 4.272 ; 3.618 ; Rise       ; CLK             ;
+;  PC[0]    ; CLK        ; 3.605 ; 3.042 ; Rise       ; CLK             ;
+;  PC[1]    ; CLK        ; 4.002 ; 3.383 ; Rise       ; CLK             ;
+;  PC[2]    ; CLK        ; 3.094 ; 2.600 ; Rise       ; CLK             ;
+;  PC[3]    ; CLK        ; 3.865 ; 3.284 ; Rise       ; CLK             ;
+;  PC[4]    ; CLK        ; 4.272 ; 3.618 ; Rise       ; CLK             ;
++-----------+------------+-------+-------+------------+-----------------+
+
+
++-------------------------------------------------------------------------+
+; Hold Times                                                              ;
++-----------+------------+--------+--------+------------+-----------------+
+; Data Port ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++-----------+------------+--------+--------+------------+-----------------+
+; PC[*]     ; CLK        ; -2.265 ; -1.784 ; Rise       ; CLK             ;
+;  PC[0]    ; CLK        ; -2.725 ; -2.159 ; Rise       ; CLK             ;
+;  PC[1]    ; CLK        ; -3.103 ; -2.484 ; Rise       ; CLK             ;
+;  PC[2]    ; CLK        ; -2.265 ; -1.784 ; Rise       ; CLK             ;
+;  PC[3]    ; CLK        ; -2.971 ; -2.389 ; Rise       ; CLK             ;
+;  PC[4]    ; CLK        ; -3.362 ; -2.710 ; Rise       ; CLK             ;
++-----------+------------+--------+--------+------------+-----------------+
+
+
++----------------------------------------------------------------------------+
+; Clock to Output Times                                                      ;
++--------------+------------+--------+--------+------------+-----------------+
+; Data Port    ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++--------------+------------+--------+--------+------------+-----------------+
+; MEMINST[*]   ; CLK        ; 15.623 ; 14.906 ; Rise       ; CLK             ;
+;  MEMINST[0]  ; CLK        ; 13.721 ; 13.025 ; Rise       ; CLK             ;
+;  MEMINST[1]  ; CLK        ; 8.357  ; 8.221  ; Rise       ; CLK             ;
+;  MEMINST[2]  ; CLK        ; 11.047 ; 10.630 ; Rise       ; CLK             ;
+;  MEMINST[3]  ; CLK        ; 10.918 ; 10.571 ; Rise       ; CLK             ;
+;  MEMINST[4]  ; CLK        ; 9.545  ; 9.182  ; Rise       ; CLK             ;
+;  MEMINST[5]  ; CLK        ; 9.447  ; 9.186  ; Rise       ; CLK             ;
+;  MEMINST[6]  ; CLK        ; 8.832  ; 8.725  ; Rise       ; CLK             ;
+;  MEMINST[7]  ; CLK        ; 8.996  ; 8.837  ; Rise       ; CLK             ;
+;  MEMINST[8]  ; CLK        ; 8.913  ; 8.755  ; Rise       ; CLK             ;
+;  MEMINST[9]  ; CLK        ; 13.945 ; 13.173 ; Rise       ; CLK             ;
+;  MEMINST[10] ; CLK        ; 9.775  ; 9.438  ; Rise       ; CLK             ;
+;  MEMINST[11] ; CLK        ; 8.312  ; 8.227  ; Rise       ; CLK             ;
+;  MEMINST[12] ; CLK        ; 10.333 ; 9.857  ; Rise       ; CLK             ;
+;  MEMINST[13] ; CLK        ; 9.985  ; 9.621  ; Rise       ; CLK             ;
+;  MEMINST[14] ; CLK        ; 9.484  ; 9.174  ; Rise       ; CLK             ;
+;  MEMINST[15] ; CLK        ; 9.149  ; 8.876  ; Rise       ; CLK             ;
+;  MEMINST[16] ; CLK        ; 15.623 ; 14.906 ; Rise       ; CLK             ;
+;  MEMINST[17] ; CLK        ; 9.251  ; 8.946  ; Rise       ; CLK             ;
+;  MEMINST[18] ; CLK        ; 15.594 ; 14.781 ; Rise       ; CLK             ;
+;  MEMINST[19] ; CLK        ; 10.289 ; 9.915  ; Rise       ; CLK             ;
+;  MEMINST[20] ; CLK        ; 9.488  ; 9.158  ; Rise       ; CLK             ;
+;  MEMINST[21] ; CLK        ; 8.519  ; 8.364  ; Rise       ; CLK             ;
+;  MEMINST[22] ; CLK        ; 8.280  ; 8.195  ; Rise       ; CLK             ;
+;  MEMINST[23] ; CLK        ; 9.367  ; 9.045  ; Rise       ; CLK             ;
+;  MEMINST[24] ; CLK        ; 10.235 ; 9.823  ; Rise       ; CLK             ;
+;  MEMINST[25] ; CLK        ; 15.262 ; 14.523 ; Rise       ; CLK             ;
+;  MEMINST[26] ; CLK        ; 14.951 ; 14.159 ; Rise       ; CLK             ;
+;  MEMINST[27] ; CLK        ; 9.268  ; 8.963  ; Rise       ; CLK             ;
+;  MEMINST[28] ; CLK        ; 9.428  ; 9.046  ; Rise       ; CLK             ;
+;  MEMINST[29] ; CLK        ; 8.985  ; 8.759  ; Rise       ; CLK             ;
+;  MEMINST[30] ; CLK        ; 9.871  ; 9.476  ; Rise       ; CLK             ;
+;  MEMINST[31] ; CLK        ; 8.893  ; 8.717  ; Rise       ; CLK             ;
++--------------+------------+--------+--------+------------+-----------------+
+
+
++----------------------------------------------------------------------------+
+; Minimum Clock to Output Times                                              ;
++--------------+------------+--------+--------+------------+-----------------+
+; Data Port    ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++--------------+------------+--------+--------+------------+-----------------+
+; MEMINST[*]   ; CLK        ; 7.814  ; 7.732  ; Rise       ; CLK             ;
+;  MEMINST[0]  ; CLK        ; 12.983 ; 12.321 ; Rise       ; CLK             ;
+;  MEMINST[1]  ; CLK        ; 7.888  ; 7.758  ; Rise       ; CLK             ;
+;  MEMINST[2]  ; CLK        ; 10.447 ; 10.051 ; Rise       ; CLK             ;
+;  MEMINST[3]  ; CLK        ; 10.320 ; 9.989  ; Rise       ; CLK             ;
+;  MEMINST[4]  ; CLK        ; 8.992  ; 8.647  ; Rise       ; CLK             ;
+;  MEMINST[5]  ; CLK        ; 8.898  ; 8.648  ; Rise       ; CLK             ;
+;  MEMINST[6]  ; CLK        ; 8.337  ; 8.235  ; Rise       ; CLK             ;
+;  MEMINST[7]  ; CLK        ; 8.492  ; 8.340  ; Rise       ; CLK             ;
+;  MEMINST[8]  ; CLK        ; 8.416  ; 8.265  ; Rise       ; CLK             ;
+;  MEMINST[9]  ; CLK        ; 13.172 ; 12.438 ; Rise       ; CLK             ;
+;  MEMINST[10] ; CLK        ; 9.211  ; 8.889  ; Rise       ; CLK             ;
+;  MEMINST[11] ; CLK        ; 7.845  ; 7.763  ; Rise       ; CLK             ;
+;  MEMINST[12] ; CLK        ; 9.740  ; 9.286  ; Rise       ; CLK             ;
+;  MEMINST[13] ; CLK        ; 9.410  ; 9.062  ; Rise       ; CLK             ;
+;  MEMINST[14] ; CLK        ; 8.935  ; 8.638  ; Rise       ; CLK             ;
+;  MEMINST[15] ; CLK        ; 8.616  ; 8.356  ; Rise       ; CLK             ;
+;  MEMINST[16] ; CLK        ; 14.793 ; 14.110 ; Rise       ; CLK             ;
+;  MEMINST[17] ; CLK        ; 8.712  ; 8.422  ; Rise       ; CLK             ;
+;  MEMINST[18] ; CLK        ; 14.765 ; 13.992 ; Rise       ; CLK             ;
+;  MEMINST[19] ; CLK        ; 9.699  ; 9.343  ; Rise       ; CLK             ;
+;  MEMINST[20] ; CLK        ; 8.937  ; 8.622  ; Rise       ; CLK             ;
+;  MEMINST[21] ; CLK        ; 8.042  ; 7.894  ; Rise       ; CLK             ;
+;  MEMINST[22] ; CLK        ; 7.814  ; 7.732  ; Rise       ; CLK             ;
+;  MEMINST[23] ; CLK        ; 8.823  ; 8.515  ; Rise       ; CLK             ;
+;  MEMINST[24] ; CLK        ; 9.647  ; 9.255  ; Rise       ; CLK             ;
+;  MEMINST[25] ; CLK        ; 14.449 ; 13.746 ; Rise       ; CLK             ;
+;  MEMINST[26] ; CLK        ; 14.154 ; 13.400 ; Rise       ; CLK             ;
+;  MEMINST[27] ; CLK        ; 8.728  ; 8.438  ; Rise       ; CLK             ;
+;  MEMINST[28] ; CLK        ; 8.880  ; 8.517  ; Rise       ; CLK             ;
+;  MEMINST[29] ; CLK        ; 8.486  ; 8.269  ; Rise       ; CLK             ;
+;  MEMINST[30] ; CLK        ; 9.301  ; 8.924  ; Rise       ; CLK             ;
+;  MEMINST[31] ; CLK        ; 8.397  ; 8.229  ; Rise       ; CLK             ;
++--------------+------------+--------+--------+------------+-----------------+
+
+
++-----------------------------------------------------------------------------------------------------------+
+; Slow 1100mV -40C Model Fmax Summary                                                                       ;
++------------+-----------------+------------+---------------------------------------------------------------+
+; Fmax       ; Restricted Fmax ; Clock Name ; Note                                                          ;
++------------+-----------------+------------+---------------------------------------------------------------+
+; 489.72 MHz ; 350.02 MHz      ; CLK        ; limit due to minimum period restriction (max I/O toggle rate) ;
++------------+-----------------+------------+---------------------------------------------------------------+
+This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
+
+
++--------------------------------------+
+; Slow 1100mV -40C Model Setup Summary ;
++-------+--------+---------------------+
+; Clock ; Slack  ; End Point TNS       ;
++-------+--------+---------------------+
+; CLK   ; -1.042 ; -33.344             ;
++-------+--------+---------------------+
+
+
++-------------------------------------+
+; Slow 1100mV -40C Model Hold Summary ;
++-------+-------+---------------------+
+; Clock ; Slack ; End Point TNS       ;
++-------+-------+---------------------+
+; CLK   ; 1.384 ; 0.000               ;
++-------+-------+---------------------+
+
+
+-------------------------------------------
+; Slow 1100mV -40C Model Recovery Summary ;
+-------------------------------------------
+No paths to report.
+
+
+------------------------------------------
+; Slow 1100mV -40C Model Removal Summary ;
+------------------------------------------
+No paths to report.
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Slow 1100mV -40C Model Minimum Pulse Width                                                                                                                                                               ;
++--------+--------------+----------------+-------+------------------+-------+------------+-----------------------------------------------------------------------------------------------------------------+
+; Slack  ; Actual Width ; Required Width ; CCPP  ; Type             ; Clock ; Clock Edge ; Target                                                                                                          ;
++--------+--------------+----------------+-------+------------------+-------+------------+-----------------------------------------------------------------------------------------------------------------+
+; -1.857 ; 1.000        ; 2.857          ; 0.000 ; Port Rate        ; CLK   ; Rise       ; CLK                                                                                                             ;
+; -1.531 ; 1.000        ; 2.531          ; 0.000 ; Min Period       ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[0]                          ;
+; -1.531 ; 1.000        ; 2.531          ; 0.000 ; Min Period       ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[10]                         ;
+; -1.531 ; 1.000        ; 2.531          ; 0.000 ; Min Period       ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[11]                         ;
+; -1.531 ; 1.000        ; 2.531          ; 0.000 ; Min Period       ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[12]                         ;
+; -1.531 ; 1.000        ; 2.531          ; 0.000 ; Min Period       ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[13]                         ;
+; -1.531 ; 1.000        ; 2.531          ; 0.000 ; Min Period       ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[14]                         ;
+; -1.531 ; 1.000        ; 2.531          ; 0.000 ; Min Period       ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[15]                         ;
+; -1.531 ; 1.000        ; 2.531          ; 0.000 ; Min Period       ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[16]                         ;
+; -1.531 ; 1.000        ; 2.531          ; 0.000 ; Min Period       ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[17]                         ;
+; -1.531 ; 1.000        ; 2.531          ; 0.000 ; Min Period       ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[18]                         ;
+; -1.531 ; 1.000        ; 2.531          ; 0.000 ; Min Period       ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[19]                         ;
+; -1.531 ; 1.000        ; 2.531          ; 0.000 ; Min Period       ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[1]                          ;
+; -1.531 ; 1.000        ; 2.531          ; 0.000 ; Min Period       ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[20]                         ;
+; -1.531 ; 1.000        ; 2.531          ; 0.000 ; Min Period       ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[21]                         ;
+; -1.531 ; 1.000        ; 2.531          ; 0.000 ; Min Period       ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[22]                         ;
+; -1.531 ; 1.000        ; 2.531          ; 0.000 ; Min Period       ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[23]                         ;
+; -1.531 ; 1.000        ; 2.531          ; 0.000 ; Min Period       ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[24]                         ;
+; -1.531 ; 1.000        ; 2.531          ; 0.000 ; Min Period       ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[25]                         ;
+; -1.531 ; 1.000        ; 2.531          ; 0.000 ; Min Period       ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[26]                         ;
+; -1.531 ; 1.000        ; 2.531          ; 0.000 ; Min Period       ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[27]                         ;
+; -1.531 ; 1.000        ; 2.531          ; 0.000 ; Min Period       ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[28]                         ;
+; -1.531 ; 1.000        ; 2.531          ; 0.000 ; Min Period       ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[29]                         ;
+; -1.531 ; 1.000        ; 2.531          ; 0.000 ; Min Period       ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[2]                          ;
+; -1.531 ; 1.000        ; 2.531          ; 0.000 ; Min Period       ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[30]                         ;
+; -1.531 ; 1.000        ; 2.531          ; 0.000 ; Min Period       ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[31]                         ;
+; -1.531 ; 1.000        ; 2.531          ; 0.000 ; Min Period       ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[3]                          ;
+; -1.531 ; 1.000        ; 2.531          ; 0.000 ; Min Period       ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[4]                          ;
+; -1.531 ; 1.000        ; 2.531          ; 0.000 ; Min Period       ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[5]                          ;
+; -1.531 ; 1.000        ; 2.531          ; 0.000 ; Min Period       ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[6]                          ;
+; -1.531 ; 1.000        ; 2.531          ; 0.000 ; Min Period       ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[7]                          ;
+; -1.531 ; 1.000        ; 2.531          ; 0.000 ; Min Period       ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[8]                          ;
+; -1.531 ; 1.000        ; 2.531          ; 0.000 ; Min Period       ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[9]                          ;
+; -1.531 ; 1.000        ; 2.531          ; 0.000 ; Min Period       ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|ram_block1a0~porta_address_reg0 ;
+; -1.531 ; 1.000        ; 2.531          ; 0.000 ; Min Period       ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|ram_block1a0~porta_datain_reg0  ;
+; -1.531 ; 1.000        ; 2.531          ; 0.000 ; Min Period       ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|ram_block1a0~portb_address_reg0 ;
+; -0.879 ; 0.067        ; 1.100          ; 0.154 ; High Pulse Width ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|ram_block1a0~porta_datain_reg0  ;
+; -0.844 ; 0.137        ; 1.100          ; 0.119 ; High Pulse Width ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|ram_block1a0~porta_address_reg0 ;
+; -0.820 ; 0.111        ; 1.100          ; 0.169 ; High Pulse Width ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[0]                          ;
+; -0.820 ; 0.111        ; 1.100          ; 0.169 ; High Pulse Width ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[10]                         ;
+; -0.820 ; 0.111        ; 1.100          ; 0.169 ; High Pulse Width ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[11]                         ;
+; -0.820 ; 0.111        ; 1.100          ; 0.169 ; High Pulse Width ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[12]                         ;
+; -0.820 ; 0.111        ; 1.100          ; 0.169 ; High Pulse Width ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[13]                         ;
+; -0.820 ; 0.111        ; 1.100          ; 0.169 ; High Pulse Width ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[14]                         ;
+; -0.820 ; 0.111        ; 1.100          ; 0.169 ; High Pulse Width ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[15]                         ;
+; -0.820 ; 0.111        ; 1.100          ; 0.169 ; High Pulse Width ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[16]                         ;
+; -0.820 ; 0.111        ; 1.100          ; 0.169 ; High Pulse Width ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[17]                         ;
+; -0.820 ; 0.111        ; 1.100          ; 0.169 ; High Pulse Width ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[18]                         ;
+; -0.820 ; 0.111        ; 1.100          ; 0.169 ; High Pulse Width ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[19]                         ;
+; -0.820 ; 0.111        ; 1.100          ; 0.169 ; High Pulse Width ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[1]                          ;
+; -0.820 ; 0.111        ; 1.100          ; 0.169 ; High Pulse Width ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[20]                         ;
+; -0.820 ; 0.111        ; 1.100          ; 0.169 ; High Pulse Width ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[21]                         ;
+; -0.820 ; 0.111        ; 1.100          ; 0.169 ; High Pulse Width ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[22]                         ;
+; -0.820 ; 0.111        ; 1.100          ; 0.169 ; High Pulse Width ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[23]                         ;
+; -0.820 ; 0.111        ; 1.100          ; 0.169 ; High Pulse Width ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[24]                         ;
+; -0.820 ; 0.111        ; 1.100          ; 0.169 ; High Pulse Width ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[25]                         ;
+; -0.820 ; 0.111        ; 1.100          ; 0.169 ; High Pulse Width ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[26]                         ;
+; -0.820 ; 0.111        ; 1.100          ; 0.169 ; High Pulse Width ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[27]                         ;
+; -0.820 ; 0.111        ; 1.100          ; 0.169 ; High Pulse Width ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[28]                         ;
+; -0.820 ; 0.111        ; 1.100          ; 0.169 ; High Pulse Width ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[29]                         ;
+; -0.820 ; 0.111        ; 1.100          ; 0.169 ; High Pulse Width ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[2]                          ;
+; -0.820 ; 0.111        ; 1.100          ; 0.169 ; High Pulse Width ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[30]                         ;
+; -0.820 ; 0.111        ; 1.100          ; 0.169 ; High Pulse Width ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[31]                         ;
+; -0.820 ; 0.111        ; 1.100          ; 0.169 ; High Pulse Width ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[3]                          ;
+; -0.820 ; 0.111        ; 1.100          ; 0.169 ; High Pulse Width ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[4]                          ;
+; -0.820 ; 0.111        ; 1.100          ; 0.169 ; High Pulse Width ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[5]                          ;
+; -0.820 ; 0.111        ; 1.100          ; 0.169 ; High Pulse Width ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[6]                          ;
+; -0.820 ; 0.111        ; 1.100          ; 0.169 ; High Pulse Width ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[7]                          ;
+; -0.820 ; 0.111        ; 1.100          ; 0.169 ; High Pulse Width ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[8]                          ;
+; -0.820 ; 0.111        ; 1.100          ; 0.169 ; High Pulse Width ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[9]                          ;
+; -0.809 ; 0.070        ; 1.100          ; 0.221 ; High Pulse Width ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|ram_block1a0~portb_address_reg0 ;
+; -0.050 ; 0.471        ; 0.690          ; 0.169 ; Low Pulse Width  ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[0]                          ;
+; -0.050 ; 0.471        ; 0.690          ; 0.169 ; Low Pulse Width  ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[10]                         ;
+; -0.050 ; 0.471        ; 0.690          ; 0.169 ; Low Pulse Width  ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[11]                         ;
+; -0.050 ; 0.471        ; 0.690          ; 0.169 ; Low Pulse Width  ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[12]                         ;
+; -0.050 ; 0.471        ; 0.690          ; 0.169 ; Low Pulse Width  ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[13]                         ;
+; -0.050 ; 0.471        ; 0.690          ; 0.169 ; Low Pulse Width  ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[14]                         ;
+; -0.050 ; 0.471        ; 0.690          ; 0.169 ; Low Pulse Width  ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[15]                         ;
+; -0.050 ; 0.471        ; 0.690          ; 0.169 ; Low Pulse Width  ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[16]                         ;
+; -0.050 ; 0.471        ; 0.690          ; 0.169 ; Low Pulse Width  ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[17]                         ;
+; -0.050 ; 0.471        ; 0.690          ; 0.169 ; Low Pulse Width  ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[18]                         ;
+; -0.050 ; 0.471        ; 0.690          ; 0.169 ; Low Pulse Width  ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[19]                         ;
+; -0.050 ; 0.471        ; 0.690          ; 0.169 ; Low Pulse Width  ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[1]                          ;
+; -0.050 ; 0.471        ; 0.690          ; 0.169 ; Low Pulse Width  ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[20]                         ;
+; -0.050 ; 0.471        ; 0.690          ; 0.169 ; Low Pulse Width  ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[21]                         ;
+; -0.050 ; 0.471        ; 0.690          ; 0.169 ; Low Pulse Width  ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[22]                         ;
+; -0.050 ; 0.471        ; 0.690          ; 0.169 ; Low Pulse Width  ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[23]                         ;
+; -0.050 ; 0.471        ; 0.690          ; 0.169 ; Low Pulse Width  ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[24]                         ;
+; -0.050 ; 0.471        ; 0.690          ; 0.169 ; Low Pulse Width  ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[25]                         ;
+; -0.050 ; 0.471        ; 0.690          ; 0.169 ; Low Pulse Width  ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[26]                         ;
+; -0.050 ; 0.471        ; 0.690          ; 0.169 ; Low Pulse Width  ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[27]                         ;
+; -0.050 ; 0.471        ; 0.690          ; 0.169 ; Low Pulse Width  ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[28]                         ;
+; -0.050 ; 0.471        ; 0.690          ; 0.169 ; Low Pulse Width  ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[29]                         ;
+; -0.050 ; 0.471        ; 0.690          ; 0.169 ; Low Pulse Width  ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[2]                          ;
+; -0.050 ; 0.471        ; 0.690          ; 0.169 ; Low Pulse Width  ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[30]                         ;
+; -0.050 ; 0.471        ; 0.690          ; 0.169 ; Low Pulse Width  ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[31]                         ;
+; -0.050 ; 0.471        ; 0.690          ; 0.169 ; Low Pulse Width  ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[3]                          ;
+; -0.050 ; 0.471        ; 0.690          ; 0.169 ; Low Pulse Width  ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[4]                          ;
+; -0.050 ; 0.471        ; 0.690          ; 0.169 ; Low Pulse Width  ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[5]                          ;
+; -0.050 ; 0.471        ; 0.690          ; 0.169 ; Low Pulse Width  ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[6]                          ;
++--------+--------------+----------------+-------+------------------+-------+------------+-----------------------------------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------+
+; Setup Times                                                           ;
++-----------+------------+-------+-------+------------+-----------------+
+; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------+------------+-------+-------+------------+-----------------+
+; PC[*]     ; CLK        ; 4.003 ; 3.311 ; Rise       ; CLK             ;
+;  PC[0]    ; CLK        ; 3.383 ; 2.767 ; Rise       ; CLK             ;
+;  PC[1]    ; CLK        ; 3.750 ; 3.106 ; Rise       ; CLK             ;
+;  PC[2]    ; CLK        ; 2.877 ; 2.376 ; Rise       ; CLK             ;
+;  PC[3]    ; CLK        ; 3.612 ; 2.997 ; Rise       ; CLK             ;
+;  PC[4]    ; CLK        ; 4.003 ; 3.311 ; Rise       ; CLK             ;
++-----------+------------+-------+-------+------------+-----------------+
+
+
++-------------------------------------------------------------------------+
+; Hold Times                                                              ;
++-----------+------------+--------+--------+------------+-----------------+
+; Data Port ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++-----------+------------+--------+--------+------------+-----------------+
+; PC[*]     ; CLK        ; -2.178 ; -1.693 ; Rise       ; CLK             ;
+;  PC[0]    ; CLK        ; -2.637 ; -2.023 ; Rise       ; CLK             ;
+;  PC[1]    ; CLK        ; -2.987 ; -2.345 ; Rise       ; CLK             ;
+;  PC[2]    ; CLK        ; -2.178 ; -1.693 ; Rise       ; CLK             ;
+;  PC[3]    ; CLK        ; -2.854 ; -2.240 ; Rise       ; CLK             ;
+;  PC[4]    ; CLK        ; -3.229 ; -2.543 ; Rise       ; CLK             ;
++-----------+------------+--------+--------+------------+-----------------+
+
+
++----------------------------------------------------------------------------+
+; Clock to Output Times                                                      ;
++--------------+------------+--------+--------+------------+-----------------+
+; Data Port    ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++--------------+------------+--------+--------+------------+-----------------+
+; MEMINST[*]   ; CLK        ; 14.682 ; 13.956 ; Rise       ; CLK             ;
+;  MEMINST[0]  ; CLK        ; 12.860 ; 12.091 ; Rise       ; CLK             ;
+;  MEMINST[1]  ; CLK        ; 7.730  ; 7.579  ; Rise       ; CLK             ;
+;  MEMINST[2]  ; CLK        ; 10.274 ; 9.757  ; Rise       ; CLK             ;
+;  MEMINST[3]  ; CLK        ; 10.132 ; 9.678  ; Rise       ; CLK             ;
+;  MEMINST[4]  ; CLK        ; 8.879  ; 8.464  ; Rise       ; CLK             ;
+;  MEMINST[5]  ; CLK        ; 8.775  ; 8.477  ; Rise       ; CLK             ;
+;  MEMINST[6]  ; CLK        ; 8.184  ; 8.066  ; Rise       ; CLK             ;
+;  MEMINST[7]  ; CLK        ; 8.344  ; 8.155  ; Rise       ; CLK             ;
+;  MEMINST[8]  ; CLK        ; 8.254  ; 8.077  ; Rise       ; CLK             ;
+;  MEMINST[9]  ; CLK        ; 13.080 ; 12.281 ; Rise       ; CLK             ;
+;  MEMINST[10] ; CLK        ; 9.082  ; 8.721  ; Rise       ; CLK             ;
+;  MEMINST[11] ; CLK        ; 7.684  ; 7.584  ; Rise       ; CLK             ;
+;  MEMINST[12] ; CLK        ; 9.623  ; 9.052  ; Rise       ; CLK             ;
+;  MEMINST[13] ; CLK        ; 9.283  ; 8.778  ; Rise       ; CLK             ;
+;  MEMINST[14] ; CLK        ; 8.814  ; 8.457  ; Rise       ; CLK             ;
+;  MEMINST[15] ; CLK        ; 8.485  ; 8.160  ; Rise       ; CLK             ;
+;  MEMINST[16] ; CLK        ; 14.682 ; 13.956 ; Rise       ; CLK             ;
+;  MEMINST[17] ; CLK        ; 8.582  ; 8.249  ; Rise       ; CLK             ;
+;  MEMINST[18] ; CLK        ; 14.656 ; 13.873 ; Rise       ; CLK             ;
+;  MEMINST[19] ; CLK        ; 9.587  ; 9.122  ; Rise       ; CLK             ;
+;  MEMINST[20] ; CLK        ; 8.786  ; 8.444  ; Rise       ; CLK             ;
+;  MEMINST[21] ; CLK        ; 7.885  ; 7.734  ; Rise       ; CLK             ;
+;  MEMINST[22] ; CLK        ; 7.651  ; 7.571  ; Rise       ; CLK             ;
+;  MEMINST[23] ; CLK        ; 8.704  ; 8.345  ; Rise       ; CLK             ;
+;  MEMINST[24] ; CLK        ; 9.529  ; 9.031  ; Rise       ; CLK             ;
+;  MEMINST[25] ; CLK        ; 14.334 ; 13.630 ; Rise       ; CLK             ;
+;  MEMINST[26] ; CLK        ; 14.040 ; 13.265 ; Rise       ; CLK             ;
+;  MEMINST[27] ; CLK        ; 8.598  ; 8.273  ; Rise       ; CLK             ;
+;  MEMINST[28] ; CLK        ; 8.758  ; 8.334  ; Rise       ; CLK             ;
+;  MEMINST[29] ; CLK        ; 8.327  ; 8.087  ; Rise       ; CLK             ;
+;  MEMINST[30] ; CLK        ; 9.189  ; 8.739  ; Rise       ; CLK             ;
+;  MEMINST[31] ; CLK        ; 8.233  ; 8.062  ; Rise       ; CLK             ;
++--------------+------------+--------+--------+------------+-----------------+
+
+
++----------------------------------------------------------------------------+
+; Minimum Clock to Output Times                                              ;
++--------------+------------+--------+--------+------------+-----------------+
+; Data Port    ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++--------------+------------+--------+--------+------------+-----------------+
+; MEMINST[*]   ; CLK        ; 7.242  ; 7.162  ; Rise       ; CLK             ;
+;  MEMINST[0]  ; CLK        ; 12.190 ; 11.456 ; Rise       ; CLK             ;
+;  MEMINST[1]  ; CLK        ; 7.317  ; 7.171  ; Rise       ; CLK             ;
+;  MEMINST[2]  ; CLK        ; 9.737  ; 9.243  ; Rise       ; CLK             ;
+;  MEMINST[3]  ; CLK        ; 9.597  ; 9.162  ; Rise       ; CLK             ;
+;  MEMINST[4]  ; CLK        ; 8.386  ; 7.989  ; Rise       ; CLK             ;
+;  MEMINST[5]  ; CLK        ; 8.286  ; 7.999  ; Rise       ; CLK             ;
+;  MEMINST[6]  ; CLK        ; 7.746  ; 7.631  ; Rise       ; CLK             ;
+;  MEMINST[7]  ; CLK        ; 7.897  ; 7.715  ; Rise       ; CLK             ;
+;  MEMINST[8]  ; CLK        ; 7.815  ; 7.643  ; Rise       ; CLK             ;
+;  MEMINST[9]  ; CLK        ; 12.377 ; 11.616 ; Rise       ; CLK             ;
+;  MEMINST[10] ; CLK        ; 8.579  ; 8.233  ; Rise       ; CLK             ;
+;  MEMINST[11] ; CLK        ; 7.273  ; 7.174  ; Rise       ; CLK             ;
+;  MEMINST[12] ; CLK        ; 9.092  ; 8.546  ; Rise       ; CLK             ;
+;  MEMINST[13] ; CLK        ; 8.769  ; 8.286  ; Rise       ; CLK             ;
+;  MEMINST[14] ; CLK        ; 8.325  ; 7.982  ; Rise       ; CLK             ;
+;  MEMINST[15] ; CLK        ; 8.012  ; 7.701  ; Rise       ; CLK             ;
+;  MEMINST[16] ; CLK        ; 13.924 ; 13.230 ; Rise       ; CLK             ;
+;  MEMINST[17] ; CLK        ; 8.103  ; 7.784  ; Rise       ; CLK             ;
+;  MEMINST[18] ; CLK        ; 13.899 ; 13.151 ; Rise       ; CLK             ;
+;  MEMINST[19] ; CLK        ; 9.059  ; 8.614  ; Rise       ; CLK             ;
+;  MEMINST[20] ; CLK        ; 8.297  ; 7.969  ; Rise       ; CLK             ;
+;  MEMINST[21] ; CLK        ; 7.464  ; 7.317  ; Rise       ; CLK             ;
+;  MEMINST[22] ; CLK        ; 7.242  ; 7.162  ; Rise       ; CLK             ;
+;  MEMINST[23] ; CLK        ; 8.220  ; 7.875  ; Rise       ; CLK             ;
+;  MEMINST[24] ; CLK        ; 9.003  ; 8.527  ; Rise       ; CLK             ;
+;  MEMINST[25] ; CLK        ; 13.592 ; 12.920 ; Rise       ; CLK             ;
+;  MEMINST[26] ; CLK        ; 13.313 ; 12.573 ; Rise       ; CLK             ;
+;  MEMINST[27] ; CLK        ; 8.118  ; 7.807  ; Rise       ; CLK             ;
+;  MEMINST[28] ; CLK        ; 8.271  ; 7.866  ; Rise       ; CLK             ;
+;  MEMINST[29] ; CLK        ; 7.884  ; 7.653  ; Rise       ; CLK             ;
+;  MEMINST[30] ; CLK        ; 8.679  ; 8.249  ; Rise       ; CLK             ;
+;  MEMINST[31] ; CLK        ; 7.794  ; 7.628  ; Rise       ; CLK             ;
++--------------+------------+--------+--------+------------+-----------------+
+
+
++--------------------------------------+
+; Fast 1100mV -40C Model Setup Summary ;
++-------+-------+----------------------+
+; Clock ; Slack ; End Point TNS        ;
++-------+-------+----------------------+
+; CLK   ; 0.119 ; 0.000                ;
++-------+-------+----------------------+
+
+
++-------------------------------------+
+; Fast 1100mV -40C Model Hold Summary ;
++-------+-------+---------------------+
+; Clock ; Slack ; End Point TNS       ;
++-------+-------+---------------------+
+; CLK   ; 0.624 ; 0.000               ;
++-------+-------+---------------------+
+
+
+-------------------------------------------
+; Fast 1100mV -40C Model Recovery Summary ;
+-------------------------------------------
+No paths to report.
+
+
+------------------------------------------
+; Fast 1100mV -40C Model Removal Summary ;
+------------------------------------------
+No paths to report.
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Fast 1100mV -40C Model Minimum Pulse Width                                                                                                                                                               ;
++--------+--------------+----------------+-------+------------------+-------+------------+-----------------------------------------------------------------------------------------------------------------+
+; Slack  ; Actual Width ; Required Width ; CCPP  ; Type             ; Clock ; Clock Edge ; Target                                                                                                          ;
++--------+--------------+----------------+-------+------------------+-------+------------+-----------------------------------------------------------------------------------------------------------------+
+; -1.857 ; 1.000        ; 2.857          ; 0.000 ; Port Rate        ; CLK   ; Rise       ; CLK                                                                                                             ;
+; -0.286 ; 0.424        ; 0.800          ; 0.090 ; High Pulse Width ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|ram_block1a0~porta_datain_reg0  ;
+; -0.274 ; 0.429        ; 0.800          ; 0.097 ; High Pulse Width ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|ram_block1a0~portb_address_reg0 ;
+; -0.273 ; 0.461        ; 0.800          ; 0.066 ; High Pulse Width ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|ram_block1a0~porta_address_reg0 ;
+; -0.263 ; 0.444        ; 0.800          ; 0.093 ; High Pulse Width ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[0]                          ;
+; -0.263 ; 0.444        ; 0.800          ; 0.093 ; High Pulse Width ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[10]                         ;
+; -0.263 ; 0.444        ; 0.800          ; 0.093 ; High Pulse Width ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[11]                         ;
+; -0.263 ; 0.444        ; 0.800          ; 0.093 ; High Pulse Width ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[12]                         ;
+; -0.263 ; 0.444        ; 0.800          ; 0.093 ; High Pulse Width ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[13]                         ;
+; -0.263 ; 0.444        ; 0.800          ; 0.093 ; High Pulse Width ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[14]                         ;
+; -0.263 ; 0.444        ; 0.800          ; 0.093 ; High Pulse Width ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[15]                         ;
+; -0.263 ; 0.444        ; 0.800          ; 0.093 ; High Pulse Width ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[16]                         ;
+; -0.263 ; 0.444        ; 0.800          ; 0.093 ; High Pulse Width ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[17]                         ;
+; -0.263 ; 0.444        ; 0.800          ; 0.093 ; High Pulse Width ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[18]                         ;
+; -0.263 ; 0.444        ; 0.800          ; 0.093 ; High Pulse Width ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[19]                         ;
+; -0.263 ; 0.444        ; 0.800          ; 0.093 ; High Pulse Width ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[1]                          ;
+; -0.263 ; 0.444        ; 0.800          ; 0.093 ; High Pulse Width ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[20]                         ;
+; -0.263 ; 0.444        ; 0.800          ; 0.093 ; High Pulse Width ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[21]                         ;
+; -0.263 ; 0.444        ; 0.800          ; 0.093 ; High Pulse Width ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[22]                         ;
+; -0.263 ; 0.444        ; 0.800          ; 0.093 ; High Pulse Width ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[23]                         ;
+; -0.263 ; 0.444        ; 0.800          ; 0.093 ; High Pulse Width ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[24]                         ;
+; -0.263 ; 0.444        ; 0.800          ; 0.093 ; High Pulse Width ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[25]                         ;
+; -0.263 ; 0.444        ; 0.800          ; 0.093 ; High Pulse Width ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[26]                         ;
+; -0.263 ; 0.444        ; 0.800          ; 0.093 ; High Pulse Width ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[27]                         ;
+; -0.263 ; 0.444        ; 0.800          ; 0.093 ; High Pulse Width ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[28]                         ;
+; -0.263 ; 0.444        ; 0.800          ; 0.093 ; High Pulse Width ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[29]                         ;
+; -0.263 ; 0.444        ; 0.800          ; 0.093 ; High Pulse Width ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[2]                          ;
+; -0.263 ; 0.444        ; 0.800          ; 0.093 ; High Pulse Width ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[30]                         ;
+; -0.263 ; 0.444        ; 0.800          ; 0.093 ; High Pulse Width ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[31]                         ;
+; -0.263 ; 0.444        ; 0.800          ; 0.093 ; High Pulse Width ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[3]                          ;
+; -0.263 ; 0.444        ; 0.800          ; 0.093 ; High Pulse Width ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[4]                          ;
+; -0.263 ; 0.444        ; 0.800          ; 0.093 ; High Pulse Width ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[5]                          ;
+; -0.263 ; 0.444        ; 0.800          ; 0.093 ; High Pulse Width ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[6]                          ;
+; -0.263 ; 0.444        ; 0.800          ; 0.093 ; High Pulse Width ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[7]                          ;
+; -0.263 ; 0.444        ; 0.800          ; 0.093 ; High Pulse Width ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[8]                          ;
+; -0.263 ; 0.444        ; 0.800          ; 0.093 ; High Pulse Width ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[9]                          ;
+; -0.040 ; 0.363        ; 0.500          ; 0.097 ; Low Pulse Width  ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|ram_block1a0~portb_address_reg0 ;
+; -0.039 ; 0.368        ; 0.500          ; 0.093 ; Low Pulse Width  ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[0]                          ;
+; -0.039 ; 0.368        ; 0.500          ; 0.093 ; Low Pulse Width  ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[10]                         ;
+; -0.039 ; 0.368        ; 0.500          ; 0.093 ; Low Pulse Width  ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[11]                         ;
+; -0.039 ; 0.368        ; 0.500          ; 0.093 ; Low Pulse Width  ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[12]                         ;
+; -0.039 ; 0.368        ; 0.500          ; 0.093 ; Low Pulse Width  ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[13]                         ;
+; -0.039 ; 0.368        ; 0.500          ; 0.093 ; Low Pulse Width  ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[14]                         ;
+; -0.039 ; 0.368        ; 0.500          ; 0.093 ; Low Pulse Width  ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[15]                         ;
+; -0.039 ; 0.368        ; 0.500          ; 0.093 ; Low Pulse Width  ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[16]                         ;
+; -0.039 ; 0.368        ; 0.500          ; 0.093 ; Low Pulse Width  ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[17]                         ;
+; -0.039 ; 0.368        ; 0.500          ; 0.093 ; Low Pulse Width  ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[18]                         ;
+; -0.039 ; 0.368        ; 0.500          ; 0.093 ; Low Pulse Width  ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[19]                         ;
+; -0.039 ; 0.368        ; 0.500          ; 0.093 ; Low Pulse Width  ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[1]                          ;
+; -0.039 ; 0.368        ; 0.500          ; 0.093 ; Low Pulse Width  ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[20]                         ;
+; -0.039 ; 0.368        ; 0.500          ; 0.093 ; Low Pulse Width  ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[21]                         ;
+; -0.039 ; 0.368        ; 0.500          ; 0.093 ; Low Pulse Width  ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[22]                         ;
+; -0.039 ; 0.368        ; 0.500          ; 0.093 ; Low Pulse Width  ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[23]                         ;
+; -0.039 ; 0.368        ; 0.500          ; 0.093 ; Low Pulse Width  ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[24]                         ;
+; -0.039 ; 0.368        ; 0.500          ; 0.093 ; Low Pulse Width  ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[25]                         ;
+; -0.039 ; 0.368        ; 0.500          ; 0.093 ; Low Pulse Width  ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[26]                         ;
+; -0.039 ; 0.368        ; 0.500          ; 0.093 ; Low Pulse Width  ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[27]                         ;
+; -0.039 ; 0.368        ; 0.500          ; 0.093 ; Low Pulse Width  ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[28]                         ;
+; -0.039 ; 0.368        ; 0.500          ; 0.093 ; Low Pulse Width  ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[29]                         ;
+; -0.039 ; 0.368        ; 0.500          ; 0.093 ; Low Pulse Width  ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[2]                          ;
+; -0.039 ; 0.368        ; 0.500          ; 0.093 ; Low Pulse Width  ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[30]                         ;
+; -0.039 ; 0.368        ; 0.500          ; 0.093 ; Low Pulse Width  ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[31]                         ;
+; -0.039 ; 0.368        ; 0.500          ; 0.093 ; Low Pulse Width  ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[3]                          ;
+; -0.039 ; 0.368        ; 0.500          ; 0.093 ; Low Pulse Width  ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[4]                          ;
+; -0.039 ; 0.368        ; 0.500          ; 0.093 ; Low Pulse Width  ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[5]                          ;
+; -0.039 ; 0.368        ; 0.500          ; 0.093 ; Low Pulse Width  ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[6]                          ;
+; -0.039 ; 0.368        ; 0.500          ; 0.093 ; Low Pulse Width  ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[7]                          ;
+; -0.039 ; 0.368        ; 0.500          ; 0.093 ; Low Pulse Width  ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[8]                          ;
+; -0.039 ; 0.368        ; 0.500          ; 0.093 ; Low Pulse Width  ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[9]                          ;
+; -0.031 ; 0.403        ; 0.500          ; 0.066 ; Low Pulse Width  ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|ram_block1a0~porta_address_reg0 ;
+; -0.030 ; 0.380        ; 0.500          ; 0.090 ; Low Pulse Width  ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|ram_block1a0~porta_datain_reg0  ;
+; 0.000  ; 1.000        ; 1.000          ; 0.000 ; Min Period       ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[0]                          ;
+; 0.000  ; 1.000        ; 1.000          ; 0.000 ; Min Period       ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[10]                         ;
+; 0.000  ; 1.000        ; 1.000          ; 0.000 ; Min Period       ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[11]                         ;
+; 0.000  ; 1.000        ; 1.000          ; 0.000 ; Min Period       ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[12]                         ;
+; 0.000  ; 1.000        ; 1.000          ; 0.000 ; Min Period       ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[13]                         ;
+; 0.000  ; 1.000        ; 1.000          ; 0.000 ; Min Period       ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[14]                         ;
+; 0.000  ; 1.000        ; 1.000          ; 0.000 ; Min Period       ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[15]                         ;
+; 0.000  ; 1.000        ; 1.000          ; 0.000 ; Min Period       ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[16]                         ;
+; 0.000  ; 1.000        ; 1.000          ; 0.000 ; Min Period       ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[17]                         ;
+; 0.000  ; 1.000        ; 1.000          ; 0.000 ; Min Period       ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[18]                         ;
+; 0.000  ; 1.000        ; 1.000          ; 0.000 ; Min Period       ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[19]                         ;
+; 0.000  ; 1.000        ; 1.000          ; 0.000 ; Min Period       ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[1]                          ;
+; 0.000  ; 1.000        ; 1.000          ; 0.000 ; Min Period       ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[20]                         ;
+; 0.000  ; 1.000        ; 1.000          ; 0.000 ; Min Period       ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[21]                         ;
+; 0.000  ; 1.000        ; 1.000          ; 0.000 ; Min Period       ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[22]                         ;
+; 0.000  ; 1.000        ; 1.000          ; 0.000 ; Min Period       ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[23]                         ;
+; 0.000  ; 1.000        ; 1.000          ; 0.000 ; Min Period       ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[24]                         ;
+; 0.000  ; 1.000        ; 1.000          ; 0.000 ; Min Period       ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[25]                         ;
+; 0.000  ; 1.000        ; 1.000          ; 0.000 ; Min Period       ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[26]                         ;
+; 0.000  ; 1.000        ; 1.000          ; 0.000 ; Min Period       ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[27]                         ;
+; 0.000  ; 1.000        ; 1.000          ; 0.000 ; Min Period       ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[28]                         ;
+; 0.000  ; 1.000        ; 1.000          ; 0.000 ; Min Period       ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[29]                         ;
+; 0.000  ; 1.000        ; 1.000          ; 0.000 ; Min Period       ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[2]                          ;
+; 0.000  ; 1.000        ; 1.000          ; 0.000 ; Min Period       ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[30]                         ;
+; 0.000  ; 1.000        ; 1.000          ; 0.000 ; Min Period       ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[31]                         ;
+; 0.000  ; 1.000        ; 1.000          ; 0.000 ; Min Period       ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[3]                          ;
+; 0.000  ; 1.000        ; 1.000          ; 0.000 ; Min Period       ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[4]                          ;
+; 0.000  ; 1.000        ; 1.000          ; 0.000 ; Min Period       ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[5]                          ;
+; 0.000  ; 1.000        ; 1.000          ; 0.000 ; Min Period       ; CLK   ; Rise       ; InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|q_b[6]                          ;
++--------+--------------+----------------+-------+------------------+-------+------------+-----------------------------------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------+
+; Setup Times                                                           ;
++-----------+------------+-------+-------+------------+-----------------+
+; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------+------------+-------+-------+------------+-----------------+
+; PC[*]     ; CLK        ; 1.854 ; 1.826 ; Rise       ; CLK             ;
+;  PC[0]    ; CLK        ; 1.512 ; 1.525 ; Rise       ; CLK             ;
+;  PC[1]    ; CLK        ; 1.742 ; 1.729 ; Rise       ; CLK             ;
+;  PC[2]    ; CLK        ; 1.266 ; 1.258 ; Rise       ; CLK             ;
+;  PC[3]    ; CLK        ; 1.633 ; 1.637 ; Rise       ; CLK             ;
+;  PC[4]    ; CLK        ; 1.854 ; 1.826 ; Rise       ; CLK             ;
++-----------+------------+-------+-------+------------+-----------------+
+
+
++-------------------------------------------------------------------------+
+; Hold Times                                                              ;
++-----------+------------+--------+--------+------------+-----------------+
+; Data Port ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++-----------+------------+--------+--------+------------+-----------------+
+; PC[*]     ; CLK        ; -0.915 ; -0.909 ; Rise       ; CLK             ;
+;  PC[0]    ; CLK        ; -1.137 ; -1.140 ; Rise       ; CLK             ;
+;  PC[1]    ; CLK        ; -1.356 ; -1.335 ; Rise       ; CLK             ;
+;  PC[2]    ; CLK        ; -0.915 ; -0.909 ; Rise       ; CLK             ;
+;  PC[3]    ; CLK        ; -1.251 ; -1.246 ; Rise       ; CLK             ;
+;  PC[4]    ; CLK        ; -1.464 ; -1.429 ; Rise       ; CLK             ;
++-----------+------------+--------+--------+------------+-----------------+
+
+
++--------------------------------------------------------------------------+
+; Clock to Output Times                                                    ;
++--------------+------------+-------+-------+------------+-----------------+
+; Data Port    ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++--------------+------------+-------+-------+------------+-----------------+
+; MEMINST[*]   ; CLK        ; 9.085 ; 9.249 ; Rise       ; CLK             ;
+;  MEMINST[0]  ; CLK        ; 7.703 ; 7.703 ; Rise       ; CLK             ;
+;  MEMINST[1]  ; CLK        ; 4.560 ; 4.581 ; Rise       ; CLK             ;
+;  MEMINST[2]  ; CLK        ; 5.836 ; 5.782 ; Rise       ; CLK             ;
+;  MEMINST[3]  ; CLK        ; 5.863 ; 5.818 ; Rise       ; CLK             ;
+;  MEMINST[4]  ; CLK        ; 5.084 ; 5.045 ; Rise       ; CLK             ;
+;  MEMINST[5]  ; CLK        ; 5.100 ; 5.030 ; Rise       ; CLK             ;
+;  MEMINST[6]  ; CLK        ; 4.796 ; 4.851 ; Rise       ; CLK             ;
+;  MEMINST[7]  ; CLK        ; 4.847 ; 4.876 ; Rise       ; CLK             ;
+;  MEMINST[8]  ; CLK        ; 4.833 ; 4.872 ; Rise       ; CLK             ;
+;  MEMINST[9]  ; CLK        ; 7.870 ; 7.897 ; Rise       ; CLK             ;
+;  MEMINST[10] ; CLK        ; 5.229 ; 5.234 ; Rise       ; CLK             ;
+;  MEMINST[11] ; CLK        ; 4.523 ; 4.546 ; Rise       ; CLK             ;
+;  MEMINST[12] ; CLK        ; 5.456 ; 5.399 ; Rise       ; CLK             ;
+;  MEMINST[13] ; CLK        ; 5.253 ; 5.240 ; Rise       ; CLK             ;
+;  MEMINST[14] ; CLK        ; 5.031 ; 4.984 ; Rise       ; CLK             ;
+;  MEMINST[15] ; CLK        ; 4.854 ; 4.817 ; Rise       ; CLK             ;
+;  MEMINST[16] ; CLK        ; 9.055 ; 9.215 ; Rise       ; CLK             ;
+;  MEMINST[17] ; CLK        ; 4.955 ; 4.936 ; Rise       ; CLK             ;
+;  MEMINST[18] ; CLK        ; 9.085 ; 9.249 ; Rise       ; CLK             ;
+;  MEMINST[19] ; CLK        ; 5.416 ; 5.405 ; Rise       ; CLK             ;
+;  MEMINST[20] ; CLK        ; 5.030 ; 4.945 ; Rise       ; CLK             ;
+;  MEMINST[21] ; CLK        ; 4.629 ; 4.662 ; Rise       ; CLK             ;
+;  MEMINST[22] ; CLK        ; 4.511 ; 4.532 ; Rise       ; CLK             ;
+;  MEMINST[23] ; CLK        ; 5.011 ; 4.967 ; Rise       ; CLK             ;
+;  MEMINST[24] ; CLK        ; 5.357 ; 5.372 ; Rise       ; CLK             ;
+;  MEMINST[25] ; CLK        ; 8.886 ; 9.026 ; Rise       ; CLK             ;
+;  MEMINST[26] ; CLK        ; 8.748 ; 8.874 ; Rise       ; CLK             ;
+;  MEMINST[27] ; CLK        ; 4.917 ; 4.842 ; Rise       ; CLK             ;
+;  MEMINST[28] ; CLK        ; 5.023 ; 4.942 ; Rise       ; CLK             ;
+;  MEMINST[29] ; CLK        ; 4.833 ; 4.851 ; Rise       ; CLK             ;
+;  MEMINST[30] ; CLK        ; 5.211 ; 5.193 ; Rise       ; CLK             ;
+;  MEMINST[31] ; CLK        ; 4.814 ; 4.856 ; Rise       ; CLK             ;
++--------------+------------+-------+-------+------------+-----------------+
+
+
++--------------------------------------------------------------------------+
+; Minimum Clock to Output Times                                            ;
++--------------+------------+-------+-------+------------+-----------------+
+; Data Port    ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++--------------+------------+-------+-------+------------+-----------------+
+; MEMINST[*]   ; CLK        ; 4.278 ; 4.297 ; Rise       ; CLK             ;
+;  MEMINST[0]  ; CLK        ; 7.316 ; 7.315 ; Rise       ; CLK             ;
+;  MEMINST[1]  ; CLK        ; 4.325 ; 4.344 ; Rise       ; CLK             ;
+;  MEMINST[2]  ; CLK        ; 5.539 ; 5.488 ; Rise       ; CLK             ;
+;  MEMINST[3]  ; CLK        ; 5.564 ; 5.520 ; Rise       ; CLK             ;
+;  MEMINST[4]  ; CLK        ; 4.810 ; 4.772 ; Rise       ; CLK             ;
+;  MEMINST[5]  ; CLK        ; 4.825 ; 4.758 ; Rise       ; CLK             ;
+;  MEMINST[6]  ; CLK        ; 4.548 ; 4.600 ; Rise       ; CLK             ;
+;  MEMINST[7]  ; CLK        ; 4.596 ; 4.623 ; Rise       ; CLK             ;
+;  MEMINST[8]  ; CLK        ; 4.584 ; 4.621 ; Rise       ; CLK             ;
+;  MEMINST[9]  ; CLK        ; 7.461 ; 7.488 ; Rise       ; CLK             ;
+;  MEMINST[10] ; CLK        ; 4.948 ; 4.952 ; Rise       ; CLK             ;
+;  MEMINST[11] ; CLK        ; 4.289 ; 4.310 ; Rise       ; CLK             ;
+;  MEMINST[12] ; CLK        ; 5.164 ; 5.110 ; Rise       ; CLK             ;
+;  MEMINST[13] ; CLK        ; 4.972 ; 4.959 ; Rise       ; CLK             ;
+;  MEMINST[14] ; CLK        ; 4.761 ; 4.716 ; Rise       ; CLK             ;
+;  MEMINST[15] ; CLK        ; 4.591 ; 4.555 ; Rise       ; CLK             ;
+;  MEMINST[16] ; CLK        ; 8.604 ; 8.756 ; Rise       ; CLK             ;
+;  MEMINST[17] ; CLK        ; 4.686 ; 4.668 ; Rise       ; CLK             ;
+;  MEMINST[18] ; CLK        ; 8.633 ; 8.790 ; Rise       ; CLK             ;
+;  MEMINST[19] ; CLK        ; 5.128 ; 5.117 ; Rise       ; CLK             ;
+;  MEMINST[20] ; CLK        ; 4.759 ; 4.678 ; Rise       ; CLK             ;
+;  MEMINST[21] ; CLK        ; 4.391 ; 4.421 ; Rise       ; CLK             ;
+;  MEMINST[22] ; CLK        ; 4.278 ; 4.297 ; Rise       ; CLK             ;
+;  MEMINST[23] ; CLK        ; 4.742 ; 4.700 ; Rise       ; CLK             ;
+;  MEMINST[24] ; CLK        ; 5.069 ; 5.083 ; Rise       ; CLK             ;
+;  MEMINST[25] ; CLK        ; 8.443 ; 8.576 ; Rise       ; CLK             ;
+;  MEMINST[26] ; CLK        ; 8.312 ; 8.431 ; Rise       ; CLK             ;
+;  MEMINST[27] ; CLK        ; 4.650 ; 4.579 ; Rise       ; CLK             ;
+;  MEMINST[28] ; CLK        ; 4.752 ; 4.674 ; Rise       ; CLK             ;
+;  MEMINST[29] ; CLK        ; 4.585 ; 4.601 ; Rise       ; CLK             ;
+;  MEMINST[30] ; CLK        ; 4.930 ; 4.912 ; Rise       ; CLK             ;
+;  MEMINST[31] ; CLK        ; 4.566 ; 4.606 ; Rise       ; CLK             ;
++--------------+------------+-------+-------+------------+-----------------+
+
+
++-------------------------------------------------------------------------------+
+; Multicorner Timing Analysis Summary                                           ;
++------------------+---------+-------+----------+---------+---------------------+
+; Clock            ; Setup   ; Hold  ; Recovery ; Removal ; Minimum Pulse Width ;
++------------------+---------+-------+----------+---------+---------------------+
+; Worst-case Slack ; -1.232  ; 0.0   ; 0.0      ; 0.0     ; -1.857              ;
+;  CLK             ; -1.232  ; 0.624 ; N/A      ; N/A     ; N/A                 ;
+; Design-wide TNS  ; -39.424 ; 0.0   ; 0.0      ; 0.0     ; N/A                 ;
+;  CLK             ; -39.424 ; 0.000 ; N/A      ; N/A     ; N/A                 ;
++------------------+---------+-------+----------+---------+---------------------+
+
+
++-----------------------------------------------------------------------+
+; Setup Times                                                           ;
++-----------+------------+-------+-------+------------+-----------------+
+; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------+------------+-------+-------+------------+-----------------+
+; PC[*]     ; CLK        ; 4.272 ; 3.618 ; Rise       ; CLK             ;
+;  PC[0]    ; CLK        ; 3.605 ; 3.042 ; Rise       ; CLK             ;
+;  PC[1]    ; CLK        ; 4.002 ; 3.383 ; Rise       ; CLK             ;
+;  PC[2]    ; CLK        ; 3.094 ; 2.600 ; Rise       ; CLK             ;
+;  PC[3]    ; CLK        ; 3.865 ; 3.284 ; Rise       ; CLK             ;
+;  PC[4]    ; CLK        ; 4.272 ; 3.618 ; Rise       ; CLK             ;
++-----------+------------+-------+-------+------------+-----------------+
+
+
++-------------------------------------------------------------------------+
+; Hold Times                                                              ;
++-----------+------------+--------+--------+------------+-----------------+
+; Data Port ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++-----------+------------+--------+--------+------------+-----------------+
+; PC[*]     ; CLK        ; -0.915 ; -0.909 ; Rise       ; CLK             ;
+;  PC[0]    ; CLK        ; -1.137 ; -1.140 ; Rise       ; CLK             ;
+;  PC[1]    ; CLK        ; -1.356 ; -1.335 ; Rise       ; CLK             ;
+;  PC[2]    ; CLK        ; -0.915 ; -0.909 ; Rise       ; CLK             ;
+;  PC[3]    ; CLK        ; -1.251 ; -1.246 ; Rise       ; CLK             ;
+;  PC[4]    ; CLK        ; -1.464 ; -1.429 ; Rise       ; CLK             ;
++-----------+------------+--------+--------+------------+-----------------+
+
+
++----------------------------------------------------------------------------+
+; Clock to Output Times                                                      ;
++--------------+------------+--------+--------+------------+-----------------+
+; Data Port    ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++--------------+------------+--------+--------+------------+-----------------+
+; MEMINST[*]   ; CLK        ; 15.623 ; 14.906 ; Rise       ; CLK             ;
+;  MEMINST[0]  ; CLK        ; 13.721 ; 13.025 ; Rise       ; CLK             ;
+;  MEMINST[1]  ; CLK        ; 8.357  ; 8.221  ; Rise       ; CLK             ;
+;  MEMINST[2]  ; CLK        ; 11.047 ; 10.630 ; Rise       ; CLK             ;
+;  MEMINST[3]  ; CLK        ; 10.918 ; 10.571 ; Rise       ; CLK             ;
+;  MEMINST[4]  ; CLK        ; 9.545  ; 9.182  ; Rise       ; CLK             ;
+;  MEMINST[5]  ; CLK        ; 9.447  ; 9.186  ; Rise       ; CLK             ;
+;  MEMINST[6]  ; CLK        ; 8.832  ; 8.725  ; Rise       ; CLK             ;
+;  MEMINST[7]  ; CLK        ; 8.996  ; 8.837  ; Rise       ; CLK             ;
+;  MEMINST[8]  ; CLK        ; 8.913  ; 8.755  ; Rise       ; CLK             ;
+;  MEMINST[9]  ; CLK        ; 13.945 ; 13.173 ; Rise       ; CLK             ;
+;  MEMINST[10] ; CLK        ; 9.775  ; 9.438  ; Rise       ; CLK             ;
+;  MEMINST[11] ; CLK        ; 8.312  ; 8.227  ; Rise       ; CLK             ;
+;  MEMINST[12] ; CLK        ; 10.333 ; 9.857  ; Rise       ; CLK             ;
+;  MEMINST[13] ; CLK        ; 9.985  ; 9.621  ; Rise       ; CLK             ;
+;  MEMINST[14] ; CLK        ; 9.484  ; 9.174  ; Rise       ; CLK             ;
+;  MEMINST[15] ; CLK        ; 9.149  ; 8.876  ; Rise       ; CLK             ;
+;  MEMINST[16] ; CLK        ; 15.623 ; 14.906 ; Rise       ; CLK             ;
+;  MEMINST[17] ; CLK        ; 9.251  ; 8.946  ; Rise       ; CLK             ;
+;  MEMINST[18] ; CLK        ; 15.594 ; 14.781 ; Rise       ; CLK             ;
+;  MEMINST[19] ; CLK        ; 10.289 ; 9.915  ; Rise       ; CLK             ;
+;  MEMINST[20] ; CLK        ; 9.488  ; 9.158  ; Rise       ; CLK             ;
+;  MEMINST[21] ; CLK        ; 8.519  ; 8.364  ; Rise       ; CLK             ;
+;  MEMINST[22] ; CLK        ; 8.280  ; 8.195  ; Rise       ; CLK             ;
+;  MEMINST[23] ; CLK        ; 9.367  ; 9.045  ; Rise       ; CLK             ;
+;  MEMINST[24] ; CLK        ; 10.235 ; 9.823  ; Rise       ; CLK             ;
+;  MEMINST[25] ; CLK        ; 15.262 ; 14.523 ; Rise       ; CLK             ;
+;  MEMINST[26] ; CLK        ; 14.951 ; 14.159 ; Rise       ; CLK             ;
+;  MEMINST[27] ; CLK        ; 9.268  ; 8.963  ; Rise       ; CLK             ;
+;  MEMINST[28] ; CLK        ; 9.428  ; 9.046  ; Rise       ; CLK             ;
+;  MEMINST[29] ; CLK        ; 8.985  ; 8.759  ; Rise       ; CLK             ;
+;  MEMINST[30] ; CLK        ; 9.871  ; 9.476  ; Rise       ; CLK             ;
+;  MEMINST[31] ; CLK        ; 8.893  ; 8.717  ; Rise       ; CLK             ;
++--------------+------------+--------+--------+------------+-----------------+
+
+
++--------------------------------------------------------------------------+
+; Minimum Clock to Output Times                                            ;
++--------------+------------+-------+-------+------------+-----------------+
+; Data Port    ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++--------------+------------+-------+-------+------------+-----------------+
+; MEMINST[*]   ; CLK        ; 4.278 ; 4.297 ; Rise       ; CLK             ;
+;  MEMINST[0]  ; CLK        ; 7.316 ; 7.315 ; Rise       ; CLK             ;
+;  MEMINST[1]  ; CLK        ; 4.325 ; 4.344 ; Rise       ; CLK             ;
+;  MEMINST[2]  ; CLK        ; 5.539 ; 5.488 ; Rise       ; CLK             ;
+;  MEMINST[3]  ; CLK        ; 5.564 ; 5.520 ; Rise       ; CLK             ;
+;  MEMINST[4]  ; CLK        ; 4.810 ; 4.772 ; Rise       ; CLK             ;
+;  MEMINST[5]  ; CLK        ; 4.825 ; 4.758 ; Rise       ; CLK             ;
+;  MEMINST[6]  ; CLK        ; 4.548 ; 4.600 ; Rise       ; CLK             ;
+;  MEMINST[7]  ; CLK        ; 4.596 ; 4.623 ; Rise       ; CLK             ;
+;  MEMINST[8]  ; CLK        ; 4.584 ; 4.621 ; Rise       ; CLK             ;
+;  MEMINST[9]  ; CLK        ; 7.461 ; 7.488 ; Rise       ; CLK             ;
+;  MEMINST[10] ; CLK        ; 4.948 ; 4.952 ; Rise       ; CLK             ;
+;  MEMINST[11] ; CLK        ; 4.289 ; 4.310 ; Rise       ; CLK             ;
+;  MEMINST[12] ; CLK        ; 5.164 ; 5.110 ; Rise       ; CLK             ;
+;  MEMINST[13] ; CLK        ; 4.972 ; 4.959 ; Rise       ; CLK             ;
+;  MEMINST[14] ; CLK        ; 4.761 ; 4.716 ; Rise       ; CLK             ;
+;  MEMINST[15] ; CLK        ; 4.591 ; 4.555 ; Rise       ; CLK             ;
+;  MEMINST[16] ; CLK        ; 8.604 ; 8.756 ; Rise       ; CLK             ;
+;  MEMINST[17] ; CLK        ; 4.686 ; 4.668 ; Rise       ; CLK             ;
+;  MEMINST[18] ; CLK        ; 8.633 ; 8.790 ; Rise       ; CLK             ;
+;  MEMINST[19] ; CLK        ; 5.128 ; 5.117 ; Rise       ; CLK             ;
+;  MEMINST[20] ; CLK        ; 4.759 ; 4.678 ; Rise       ; CLK             ;
+;  MEMINST[21] ; CLK        ; 4.391 ; 4.421 ; Rise       ; CLK             ;
+;  MEMINST[22] ; CLK        ; 4.278 ; 4.297 ; Rise       ; CLK             ;
+;  MEMINST[23] ; CLK        ; 4.742 ; 4.700 ; Rise       ; CLK             ;
+;  MEMINST[24] ; CLK        ; 5.069 ; 5.083 ; Rise       ; CLK             ;
+;  MEMINST[25] ; CLK        ; 8.443 ; 8.576 ; Rise       ; CLK             ;
+;  MEMINST[26] ; CLK        ; 8.312 ; 8.431 ; Rise       ; CLK             ;
+;  MEMINST[27] ; CLK        ; 4.650 ; 4.579 ; Rise       ; CLK             ;
+;  MEMINST[28] ; CLK        ; 4.752 ; 4.674 ; Rise       ; CLK             ;
+;  MEMINST[29] ; CLK        ; 4.585 ; 4.601 ; Rise       ; CLK             ;
+;  MEMINST[30] ; CLK        ; 4.930 ; 4.912 ; Rise       ; CLK             ;
+;  MEMINST[31] ; CLK        ; 4.566 ; 4.606 ; Rise       ; CLK             ;
++--------------+------------+-------+-------+------------+-----------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Board Trace Model Assignments                                                                                                                                                                                                                                                                                                                                  ;
++-------------+--------------+-------------------+-------------------------+-------------------------+---------------+---------------------+----------------+------------------+--------+------------------+------------------------+------------------------+--------------+---------------+-----------------+-------+---------------------+--------------------+
+; Pin         ; I/O Standard ; Near Tline Length ; Near Tline L per Length ; Near Tline C per Length ; Near Series R ; Near Differential R ; Near Pull-up R ; Near Pull-down R ; Near C ; Far Tline Length ; Far Tline L per Length ; Far Tline C per Length ; Far Series R ; Far Pull-up R ; Far Pull-down R ; Far C ; Termination Voltage ; Far Differential R ;
++-------------+--------------+-------------------+-------------------------+-------------------------+---------------+---------------------+----------------+------------------+--------+------------------+------------------------+------------------------+--------------+---------------+-----------------+-------+---------------------+--------------------+
+; MEMINST[31] ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ;
+; MEMINST[30] ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ;
+; MEMINST[29] ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ;
+; MEMINST[28] ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ;
+; MEMINST[27] ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ;
+; MEMINST[26] ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ;
+; MEMINST[25] ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ;
+; MEMINST[24] ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ;
+; MEMINST[23] ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ;
+; MEMINST[22] ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ;
+; MEMINST[21] ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ;
+; MEMINST[20] ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ;
+; MEMINST[19] ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ;
+; MEMINST[18] ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ;
+; MEMINST[17] ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ;
+; MEMINST[16] ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ;
+; MEMINST[15] ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ;
+; MEMINST[14] ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ;
+; MEMINST[13] ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ;
+; MEMINST[12] ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ;
+; MEMINST[11] ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ;
+; MEMINST[10] ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ;
+; MEMINST[9]  ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ;
+; MEMINST[8]  ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ;
+; MEMINST[7]  ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ;
+; MEMINST[6]  ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ;
+; MEMINST[5]  ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ;
+; MEMINST[4]  ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ;
+; MEMINST[3]  ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ;
+; MEMINST[2]  ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ;
+; MEMINST[1]  ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ;
+; MEMINST[0]  ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ;
++-------------+--------------+-------------------+-------------------------+-------------------------+---------------+---------------------+----------------+------------------+--------+------------------+------------------------+------------------------+--------------+---------------+-----------------+-------+---------------------+--------------------+
+
+
++-------------------------------------------------------------------+
+; Input Transition Times                                            ;
++----------------+--------------+-----------------+-----------------+
+; Pin            ; I/O Standard ; 10-90 Rise Time ; 90-10 Fall Time ;
++----------------+--------------+-----------------+-----------------+
+; PC[31]         ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; PC[30]         ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; PC[29]         ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; PC[28]         ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; PC[27]         ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; PC[26]         ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; PC[25]         ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; PC[24]         ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; PC[23]         ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; PC[22]         ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; PC[21]         ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; PC[20]         ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; PC[19]         ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; PC[18]         ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; PC[17]         ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; PC[16]         ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; PC[15]         ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; PC[14]         ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; PC[13]         ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; PC[12]         ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; PC[11]         ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; PC[10]         ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; PC[9]          ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; PC[8]          ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; PC[7]          ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; PC[6]          ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; PC[5]          ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; CLK            ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; PC[0]          ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; PC[1]          ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; PC[2]          ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; PC[3]          ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; PC[4]          ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; ~ALTERA_DATA0~ ; 1.8 V        ; 1440 ps         ; 1440 ps         ;
++----------------+--------------+-----------------+-----------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Slow Corner Signal Integrity Metrics                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     ;
++-------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; Pin         ; I/O Standard ; Board Delay on Rise ; Board Delay on Fall ; Steady State Voh at FPGA Pin ; Steady State Vol at FPGA Pin ; Voh Max at FPGA Pin ; Vol Min at FPGA Pin ; Ringback Voltage on Rise at FPGA Pin ; Ringback Voltage on Fall at FPGA Pin ; 10-90 Rise Time at FPGA Pin ; 90-10 Fall Time at FPGA Pin ; Monotonic Rise at FPGA Pin ; Monotonic Fall at FPGA Pin ; Steady State Voh at Far-end ; Steady State Vol at Far-end ; Voh Max at Far-end ; Vol Min at Far-end ; Ringback Voltage on Rise at Far-end ; Ringback Voltage on Fall at Far-end ; 10-90 Rise Time at Far-end ; 90-10 Fall Time at Far-end ; Monotonic Rise at Far-end ; Monotonic Fall at Far-end ;
++-------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; MEMINST[31] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.37 V                       ; 1.98e-006 V                  ; 2.38 V              ; -0.00187 V          ; 0.075 V                              ; 0.021 V                              ; 5.48e-010 s                 ; 5.01e-010 s                 ; Yes                        ; Yes                        ; 2.37 V                      ; 1.98e-006 V                 ; 2.38 V             ; -0.00187 V         ; 0.075 V                             ; 0.021 V                             ; 5.48e-010 s                ; 5.01e-010 s                ; Yes                       ; Yes                       ;
+; MEMINST[30] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.37 V                       ; 1.05e-006 V                  ; 2.38 V              ; -0.00282 V          ; 0.16 V                               ; 0.029 V                              ; 7.05e-010 s                 ; 6.4e-010 s                  ; Yes                        ; Yes                        ; 2.37 V                      ; 1.05e-006 V                 ; 2.38 V             ; -0.00282 V         ; 0.16 V                              ; 0.029 V                             ; 7.05e-010 s                ; 6.4e-010 s                 ; Yes                       ; Yes                       ;
+; MEMINST[29] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.37 V                       ; 1.98e-006 V                  ; 2.38 V              ; -0.00187 V          ; 0.075 V                              ; 0.021 V                              ; 5.48e-010 s                 ; 5.01e-010 s                 ; Yes                        ; Yes                        ; 2.37 V                      ; 1.98e-006 V                 ; 2.38 V             ; -0.00187 V         ; 0.075 V                             ; 0.021 V                             ; 5.48e-010 s                ; 5.01e-010 s                ; Yes                       ; Yes                       ;
+; MEMINST[28] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.37 V                       ; 1.05e-006 V                  ; 2.38 V              ; -0.00282 V          ; 0.16 V                               ; 0.029 V                              ; 7.05e-010 s                 ; 6.4e-010 s                  ; Yes                        ; Yes                        ; 2.37 V                      ; 1.05e-006 V                 ; 2.38 V             ; -0.00282 V         ; 0.16 V                              ; 0.029 V                             ; 7.05e-010 s                ; 6.4e-010 s                 ; Yes                       ; Yes                       ;
+; MEMINST[27] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.37 V                       ; 1.05e-006 V                  ; 2.38 V              ; -0.00282 V          ; 0.16 V                               ; 0.029 V                              ; 7.05e-010 s                 ; 6.4e-010 s                  ; Yes                        ; Yes                        ; 2.37 V                      ; 1.05e-006 V                 ; 2.38 V             ; -0.00282 V         ; 0.16 V                              ; 0.029 V                             ; 7.05e-010 s                ; 6.4e-010 s                 ; Yes                       ; Yes                       ;
+; MEMINST[26] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.37 V                       ; 1.98e-006 V                  ; 2.38 V              ; -0.00187 V          ; 0.075 V                              ; 0.021 V                              ; 5.48e-010 s                 ; 5.01e-010 s                 ; Yes                        ; Yes                        ; 2.37 V                      ; 1.98e-006 V                 ; 2.38 V             ; -0.00187 V         ; 0.075 V                             ; 0.021 V                             ; 5.48e-010 s                ; 5.01e-010 s                ; Yes                       ; Yes                       ;
+; MEMINST[25] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.37 V                       ; 1.98e-006 V                  ; 2.38 V              ; -0.00187 V          ; 0.075 V                              ; 0.021 V                              ; 5.48e-010 s                 ; 5.01e-010 s                 ; Yes                        ; Yes                        ; 2.37 V                      ; 1.98e-006 V                 ; 2.38 V             ; -0.00187 V         ; 0.075 V                             ; 0.021 V                             ; 5.48e-010 s                ; 5.01e-010 s                ; Yes                       ; Yes                       ;
+; MEMINST[24] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.37 V                       ; 1.05e-006 V                  ; 2.38 V              ; -0.00282 V          ; 0.16 V                               ; 0.029 V                              ; 7.05e-010 s                 ; 6.4e-010 s                  ; Yes                        ; Yes                        ; 2.37 V                      ; 1.05e-006 V                 ; 2.38 V             ; -0.00282 V         ; 0.16 V                              ; 0.029 V                             ; 7.05e-010 s                ; 6.4e-010 s                 ; Yes                       ; Yes                       ;
+; MEMINST[23] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.37 V                       ; 1.05e-006 V                  ; 2.38 V              ; -0.00216 V          ; 0.072 V                              ; 0.044 V                              ; 5.45e-010 s                 ; 5.01e-010 s                 ; Yes                        ; Yes                        ; 2.37 V                      ; 1.05e-006 V                 ; 2.38 V             ; -0.00216 V         ; 0.072 V                             ; 0.044 V                             ; 5.45e-010 s                ; 5.01e-010 s                ; Yes                       ; Yes                       ;
+; MEMINST[22] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.37 V                       ; 1.98e-006 V                  ; 2.38 V              ; -0.00187 V          ; 0.075 V                              ; 0.021 V                              ; 5.48e-010 s                 ; 5.01e-010 s                 ; Yes                        ; Yes                        ; 2.37 V                      ; 1.98e-006 V                 ; 2.38 V             ; -0.00187 V         ; 0.075 V                             ; 0.021 V                             ; 5.48e-010 s                ; 5.01e-010 s                ; Yes                       ; Yes                       ;
+; MEMINST[21] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.37 V                       ; 1.98e-006 V                  ; 2.38 V              ; -0.00187 V          ; 0.075 V                              ; 0.021 V                              ; 5.48e-010 s                 ; 5.01e-010 s                 ; Yes                        ; Yes                        ; 2.37 V                      ; 1.98e-006 V                 ; 2.38 V             ; -0.00187 V         ; 0.075 V                             ; 0.021 V                             ; 5.48e-010 s                ; 5.01e-010 s                ; Yes                       ; Yes                       ;
+; MEMINST[20] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.37 V                       ; 1.05e-006 V                  ; 2.38 V              ; -0.00216 V          ; 0.072 V                              ; 0.044 V                              ; 5.45e-010 s                 ; 5.01e-010 s                 ; Yes                        ; Yes                        ; 2.37 V                      ; 1.05e-006 V                 ; 2.38 V             ; -0.00216 V         ; 0.072 V                             ; 0.044 V                             ; 5.45e-010 s                ; 5.01e-010 s                ; Yes                       ; Yes                       ;
+; MEMINST[19] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.37 V                       ; 1.05e-006 V                  ; 2.38 V              ; -0.00216 V          ; 0.072 V                              ; 0.044 V                              ; 5.45e-010 s                 ; 5.01e-010 s                 ; Yes                        ; Yes                        ; 2.37 V                      ; 1.05e-006 V                 ; 2.38 V             ; -0.00216 V         ; 0.072 V                             ; 0.044 V                             ; 5.45e-010 s                ; 5.01e-010 s                ; Yes                       ; Yes                       ;
+; MEMINST[18] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.37 V                       ; 1.98e-006 V                  ; 2.38 V              ; -0.00187 V          ; 0.075 V                              ; 0.021 V                              ; 5.48e-010 s                 ; 5.01e-010 s                 ; Yes                        ; Yes                        ; 2.37 V                      ; 1.98e-006 V                 ; 2.38 V             ; -0.00187 V         ; 0.075 V                             ; 0.021 V                             ; 5.48e-010 s                ; 5.01e-010 s                ; Yes                       ; Yes                       ;
+; MEMINST[17] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.37 V                       ; 1.05e-006 V                  ; 2.38 V              ; -0.00282 V          ; 0.16 V                               ; 0.029 V                              ; 7.05e-010 s                 ; 6.4e-010 s                  ; Yes                        ; Yes                        ; 2.37 V                      ; 1.05e-006 V                 ; 2.38 V             ; -0.00282 V         ; 0.16 V                              ; 0.029 V                             ; 7.05e-010 s                ; 6.4e-010 s                 ; Yes                       ; Yes                       ;
+; MEMINST[16] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.37 V                       ; 1.98e-006 V                  ; 2.38 V              ; -0.00187 V          ; 0.075 V                              ; 0.021 V                              ; 5.48e-010 s                 ; 5.01e-010 s                 ; Yes                        ; Yes                        ; 2.37 V                      ; 1.98e-006 V                 ; 2.38 V             ; -0.00187 V         ; 0.075 V                             ; 0.021 V                             ; 5.48e-010 s                ; 5.01e-010 s                ; Yes                       ; Yes                       ;
+; MEMINST[15] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.37 V                       ; 1.05e-006 V                  ; 2.38 V              ; -0.00282 V          ; 0.16 V                               ; 0.029 V                              ; 7.05e-010 s                 ; 6.4e-010 s                  ; Yes                        ; Yes                        ; 2.37 V                      ; 1.05e-006 V                 ; 2.38 V             ; -0.00282 V         ; 0.16 V                              ; 0.029 V                             ; 7.05e-010 s                ; 6.4e-010 s                 ; Yes                       ; Yes                       ;
+; MEMINST[14] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.37 V                       ; 1.05e-006 V                  ; 2.38 V              ; -0.00216 V          ; 0.072 V                              ; 0.044 V                              ; 5.45e-010 s                 ; 5.01e-010 s                 ; Yes                        ; Yes                        ; 2.37 V                      ; 1.05e-006 V                 ; 2.38 V             ; -0.00216 V         ; 0.072 V                             ; 0.044 V                             ; 5.45e-010 s                ; 5.01e-010 s                ; Yes                       ; Yes                       ;
+; MEMINST[13] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.37 V                       ; 1.05e-006 V                  ; 2.38 V              ; -0.00216 V          ; 0.072 V                              ; 0.044 V                              ; 5.45e-010 s                 ; 5.01e-010 s                 ; Yes                        ; Yes                        ; 2.37 V                      ; 1.05e-006 V                 ; 2.38 V             ; -0.00216 V         ; 0.072 V                             ; 0.044 V                             ; 5.45e-010 s                ; 5.01e-010 s                ; Yes                       ; Yes                       ;
+; MEMINST[12] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.37 V                       ; 1.05e-006 V                  ; 2.38 V              ; -0.00216 V          ; 0.072 V                              ; 0.044 V                              ; 5.45e-010 s                 ; 5.01e-010 s                 ; Yes                        ; Yes                        ; 2.37 V                      ; 1.05e-006 V                 ; 2.38 V             ; -0.00216 V         ; 0.072 V                             ; 0.044 V                             ; 5.45e-010 s                ; 5.01e-010 s                ; Yes                       ; Yes                       ;
+; MEMINST[11] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.37 V                       ; 1.98e-006 V                  ; 2.38 V              ; -0.00187 V          ; 0.075 V                              ; 0.021 V                              ; 5.48e-010 s                 ; 5.01e-010 s                 ; Yes                        ; Yes                        ; 2.37 V                      ; 1.98e-006 V                 ; 2.38 V             ; -0.00187 V         ; 0.075 V                             ; 0.021 V                             ; 5.48e-010 s                ; 5.01e-010 s                ; Yes                       ; Yes                       ;
+; MEMINST[10] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.37 V                       ; 1.05e-006 V                  ; 2.38 V              ; -0.00282 V          ; 0.16 V                               ; 0.029 V                              ; 7.05e-010 s                 ; 6.4e-010 s                  ; Yes                        ; Yes                        ; 2.37 V                      ; 1.05e-006 V                 ; 2.38 V             ; -0.00282 V         ; 0.16 V                              ; 0.029 V                             ; 7.05e-010 s                ; 6.4e-010 s                 ; Yes                       ; Yes                       ;
+; MEMINST[9]  ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.37 V                       ; 1.05e-006 V                  ; 2.38 V              ; -0.00282 V          ; 0.16 V                               ; 0.029 V                              ; 7.05e-010 s                 ; 6.4e-010 s                  ; Yes                        ; Yes                        ; 2.37 V                      ; 1.05e-006 V                 ; 2.38 V             ; -0.00282 V         ; 0.16 V                              ; 0.029 V                             ; 7.05e-010 s                ; 6.4e-010 s                 ; Yes                       ; Yes                       ;
+; MEMINST[8]  ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.37 V                       ; 1.98e-006 V                  ; 2.38 V              ; -0.00187 V          ; 0.075 V                              ; 0.021 V                              ; 5.48e-010 s                 ; 5.01e-010 s                 ; Yes                        ; Yes                        ; 2.37 V                      ; 1.98e-006 V                 ; 2.38 V             ; -0.00187 V         ; 0.075 V                             ; 0.021 V                             ; 5.48e-010 s                ; 5.01e-010 s                ; Yes                       ; Yes                       ;
+; MEMINST[7]  ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.37 V                       ; 1.98e-006 V                  ; 2.38 V              ; -0.00187 V          ; 0.075 V                              ; 0.021 V                              ; 5.48e-010 s                 ; 5.01e-010 s                 ; Yes                        ; Yes                        ; 2.37 V                      ; 1.98e-006 V                 ; 2.38 V             ; -0.00187 V         ; 0.075 V                             ; 0.021 V                             ; 5.48e-010 s                ; 5.01e-010 s                ; Yes                       ; Yes                       ;
+; MEMINST[6]  ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.37 V                       ; 1.98e-006 V                  ; 2.38 V              ; -0.00188 V          ; 0.076 V                              ; 0.043 V                              ; 5.49e-010 s                 ; 5e-010 s                    ; Yes                        ; Yes                        ; 2.37 V                      ; 1.98e-006 V                 ; 2.38 V             ; -0.00188 V         ; 0.076 V                             ; 0.043 V                             ; 5.49e-010 s                ; 5e-010 s                   ; Yes                       ; Yes                       ;
+; MEMINST[5]  ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.37 V                       ; 1.05e-006 V                  ; 2.38 V              ; -0.00216 V          ; 0.072 V                              ; 0.044 V                              ; 5.45e-010 s                 ; 5.01e-010 s                 ; Yes                        ; Yes                        ; 2.37 V                      ; 1.05e-006 V                 ; 2.38 V             ; -0.00216 V         ; 0.072 V                             ; 0.044 V                             ; 5.45e-010 s                ; 5.01e-010 s                ; Yes                       ; Yes                       ;
+; MEMINST[4]  ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.37 V                       ; 1.05e-006 V                  ; 2.38 V              ; -0.00282 V          ; 0.16 V                               ; 0.029 V                              ; 7.05e-010 s                 ; 6.4e-010 s                  ; Yes                        ; Yes                        ; 2.37 V                      ; 1.05e-006 V                 ; 2.38 V             ; -0.00282 V         ; 0.16 V                              ; 0.029 V                             ; 7.05e-010 s                ; 6.4e-010 s                 ; Yes                       ; Yes                       ;
+; MEMINST[3]  ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.37 V                       ; 1.98e-006 V                  ; 2.38 V              ; -0.00188 V          ; 0.076 V                              ; 0.043 V                              ; 5.49e-010 s                 ; 5e-010 s                    ; Yes                        ; Yes                        ; 2.37 V                      ; 1.98e-006 V                 ; 2.38 V             ; -0.00188 V         ; 0.076 V                             ; 0.043 V                             ; 5.49e-010 s                ; 5e-010 s                   ; Yes                       ; Yes                       ;
+; MEMINST[2]  ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.37 V                       ; 1.06e-006 V                  ; 2.38 V              ; -0.00431 V          ; 0.15 V                               ; 0.057 V                              ; 7.78e-010 s                 ; 7.21e-010 s                 ; Yes                        ; Yes                        ; 2.37 V                      ; 1.06e-006 V                 ; 2.38 V             ; -0.00431 V         ; 0.15 V                              ; 0.057 V                             ; 7.78e-010 s                ; 7.21e-010 s                ; Yes                       ; Yes                       ;
+; MEMINST[1]  ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.37 V                       ; 1.98e-006 V                  ; 2.38 V              ; -0.00187 V          ; 0.075 V                              ; 0.021 V                              ; 5.48e-010 s                 ; 5.01e-010 s                 ; Yes                        ; Yes                        ; 2.37 V                      ; 1.98e-006 V                 ; 2.38 V             ; -0.00187 V         ; 0.075 V                             ; 0.021 V                             ; 5.48e-010 s                ; 5.01e-010 s                ; Yes                       ; Yes                       ;
+; MEMINST[0]  ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.37 V                       ; 1.98e-006 V                  ; 2.38 V              ; -0.00187 V          ; 0.075 V                              ; 0.021 V                              ; 5.48e-010 s                 ; 5.01e-010 s                 ; Yes                        ; Yes                        ; 2.37 V                      ; 1.98e-006 V                 ; 2.38 V             ; -0.00187 V         ; 0.075 V                             ; 0.021 V                             ; 5.48e-010 s                ; 5.01e-010 s                ; Yes                       ; Yes                       ;
++-------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Fast Corner Signal Integrity Metrics                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     ;
++-------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; Pin         ; I/O Standard ; Board Delay on Rise ; Board Delay on Fall ; Steady State Voh at FPGA Pin ; Steady State Vol at FPGA Pin ; Voh Max at FPGA Pin ; Vol Min at FPGA Pin ; Ringback Voltage on Rise at FPGA Pin ; Ringback Voltage on Fall at FPGA Pin ; 10-90 Rise Time at FPGA Pin ; 90-10 Fall Time at FPGA Pin ; Monotonic Rise at FPGA Pin ; Monotonic Fall at FPGA Pin ; Steady State Voh at Far-end ; Steady State Vol at Far-end ; Voh Max at Far-end ; Vol Min at Far-end ; Ringback Voltage on Rise at Far-end ; Ringback Voltage on Fall at Far-end ; 10-90 Rise Time at Far-end ; 90-10 Fall Time at Far-end ; Monotonic Rise at Far-end ; Monotonic Fall at Far-end ;
++-------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; MEMINST[31] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 1.63e-007 V                  ; 2.65 V              ; -0.0282 V           ; 0.256 V                              ; 0.185 V                              ; 2.62e-010 s                 ; 2.5e-010 s                  ; No                         ; Yes                        ; 2.62 V                      ; 1.63e-007 V                 ; 2.65 V             ; -0.0282 V          ; 0.256 V                             ; 0.185 V                             ; 2.62e-010 s                ; 2.5e-010 s                 ; No                        ; Yes                       ;
+; MEMINST[30] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 1.04e-007 V                  ; 2.67 V              ; -0.0358 V           ; 0.219 V                              ; 0.142 V                              ; 3.76e-010 s                 ; 3.58e-010 s                 ; No                         ; No                         ; 2.62 V                      ; 1.04e-007 V                 ; 2.67 V             ; -0.0358 V          ; 0.219 V                             ; 0.142 V                             ; 3.76e-010 s                ; 3.58e-010 s                ; No                        ; No                        ;
+; MEMINST[29] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 1.63e-007 V                  ; 2.65 V              ; -0.0282 V           ; 0.256 V                              ; 0.185 V                              ; 2.62e-010 s                 ; 2.5e-010 s                  ; No                         ; Yes                        ; 2.62 V                      ; 1.63e-007 V                 ; 2.65 V             ; -0.0282 V          ; 0.256 V                             ; 0.185 V                             ; 2.62e-010 s                ; 2.5e-010 s                 ; No                        ; Yes                       ;
+; MEMINST[28] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 1.04e-007 V                  ; 2.67 V              ; -0.0358 V           ; 0.219 V                              ; 0.142 V                              ; 3.76e-010 s                 ; 3.58e-010 s                 ; No                         ; No                         ; 2.62 V                      ; 1.04e-007 V                 ; 2.67 V             ; -0.0358 V          ; 0.219 V                             ; 0.142 V                             ; 3.76e-010 s                ; 3.58e-010 s                ; No                        ; No                        ;
+; MEMINST[27] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 1.04e-007 V                  ; 2.67 V              ; -0.0358 V           ; 0.219 V                              ; 0.142 V                              ; 3.76e-010 s                 ; 3.58e-010 s                 ; No                         ; No                         ; 2.62 V                      ; 1.04e-007 V                 ; 2.67 V             ; -0.0358 V          ; 0.219 V                             ; 0.142 V                             ; 3.76e-010 s                ; 3.58e-010 s                ; No                        ; No                        ;
+; MEMINST[26] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 1.63e-007 V                  ; 2.65 V              ; -0.0282 V           ; 0.256 V                              ; 0.185 V                              ; 2.62e-010 s                 ; 2.5e-010 s                  ; No                         ; Yes                        ; 2.62 V                      ; 1.63e-007 V                 ; 2.65 V             ; -0.0282 V          ; 0.256 V                             ; 0.185 V                             ; 2.62e-010 s                ; 2.5e-010 s                 ; No                        ; Yes                       ;
+; MEMINST[25] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 1.63e-007 V                  ; 2.65 V              ; -0.0282 V           ; 0.256 V                              ; 0.185 V                              ; 2.62e-010 s                 ; 2.5e-010 s                  ; No                         ; Yes                        ; 2.62 V                      ; 1.63e-007 V                 ; 2.65 V             ; -0.0282 V          ; 0.256 V                             ; 0.185 V                             ; 2.62e-010 s                ; 2.5e-010 s                 ; No                        ; Yes                       ;
+; MEMINST[24] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 1.04e-007 V                  ; 2.67 V              ; -0.0358 V           ; 0.219 V                              ; 0.142 V                              ; 3.76e-010 s                 ; 3.58e-010 s                 ; No                         ; No                         ; 2.62 V                      ; 1.04e-007 V                 ; 2.67 V             ; -0.0358 V          ; 0.219 V                             ; 0.142 V                             ; 3.76e-010 s                ; 3.58e-010 s                ; No                        ; No                        ;
+; MEMINST[23] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 1.03e-007 V                  ; 2.65 V              ; -0.0293 V           ; 0.258 V                              ; 0.194 V                              ; 2.63e-010 s                 ; 2.51e-010 s                 ; No                         ; Yes                        ; 2.62 V                      ; 1.03e-007 V                 ; 2.65 V             ; -0.0293 V          ; 0.258 V                             ; 0.194 V                             ; 2.63e-010 s                ; 2.51e-010 s                ; No                        ; Yes                       ;
+; MEMINST[22] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 1.63e-007 V                  ; 2.65 V              ; -0.0282 V           ; 0.256 V                              ; 0.185 V                              ; 2.62e-010 s                 ; 2.5e-010 s                  ; No                         ; Yes                        ; 2.62 V                      ; 1.63e-007 V                 ; 2.65 V             ; -0.0282 V          ; 0.256 V                             ; 0.185 V                             ; 2.62e-010 s                ; 2.5e-010 s                 ; No                        ; Yes                       ;
+; MEMINST[21] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 1.63e-007 V                  ; 2.65 V              ; -0.0282 V           ; 0.256 V                              ; 0.185 V                              ; 2.62e-010 s                 ; 2.5e-010 s                  ; No                         ; Yes                        ; 2.62 V                      ; 1.63e-007 V                 ; 2.65 V             ; -0.0282 V          ; 0.256 V                             ; 0.185 V                             ; 2.62e-010 s                ; 2.5e-010 s                 ; No                        ; Yes                       ;
+; MEMINST[20] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 1.03e-007 V                  ; 2.65 V              ; -0.0293 V           ; 0.258 V                              ; 0.194 V                              ; 2.63e-010 s                 ; 2.51e-010 s                 ; No                         ; Yes                        ; 2.62 V                      ; 1.03e-007 V                 ; 2.65 V             ; -0.0293 V          ; 0.258 V                             ; 0.194 V                             ; 2.63e-010 s                ; 2.51e-010 s                ; No                        ; Yes                       ;
+; MEMINST[19] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 1.03e-007 V                  ; 2.65 V              ; -0.0293 V           ; 0.258 V                              ; 0.194 V                              ; 2.63e-010 s                 ; 2.51e-010 s                 ; No                         ; Yes                        ; 2.62 V                      ; 1.03e-007 V                 ; 2.65 V             ; -0.0293 V          ; 0.258 V                             ; 0.194 V                             ; 2.63e-010 s                ; 2.51e-010 s                ; No                        ; Yes                       ;
+; MEMINST[18] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 1.63e-007 V                  ; 2.65 V              ; -0.0282 V           ; 0.256 V                              ; 0.185 V                              ; 2.62e-010 s                 ; 2.5e-010 s                  ; No                         ; Yes                        ; 2.62 V                      ; 1.63e-007 V                 ; 2.65 V             ; -0.0282 V          ; 0.256 V                             ; 0.185 V                             ; 2.62e-010 s                ; 2.5e-010 s                 ; No                        ; Yes                       ;
+; MEMINST[17] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 1.04e-007 V                  ; 2.67 V              ; -0.0358 V           ; 0.219 V                              ; 0.142 V                              ; 3.76e-010 s                 ; 3.58e-010 s                 ; No                         ; No                         ; 2.62 V                      ; 1.04e-007 V                 ; 2.67 V             ; -0.0358 V          ; 0.219 V                             ; 0.142 V                             ; 3.76e-010 s                ; 3.58e-010 s                ; No                        ; No                        ;
+; MEMINST[16] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 1.63e-007 V                  ; 2.65 V              ; -0.0282 V           ; 0.256 V                              ; 0.185 V                              ; 2.62e-010 s                 ; 2.5e-010 s                  ; No                         ; Yes                        ; 2.62 V                      ; 1.63e-007 V                 ; 2.65 V             ; -0.0282 V          ; 0.256 V                             ; 0.185 V                             ; 2.62e-010 s                ; 2.5e-010 s                 ; No                        ; Yes                       ;
+; MEMINST[15] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 1.04e-007 V                  ; 2.67 V              ; -0.0358 V           ; 0.219 V                              ; 0.142 V                              ; 3.76e-010 s                 ; 3.58e-010 s                 ; No                         ; No                         ; 2.62 V                      ; 1.04e-007 V                 ; 2.67 V             ; -0.0358 V          ; 0.219 V                             ; 0.142 V                             ; 3.76e-010 s                ; 3.58e-010 s                ; No                        ; No                        ;
+; MEMINST[14] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 1.03e-007 V                  ; 2.65 V              ; -0.0293 V           ; 0.258 V                              ; 0.194 V                              ; 2.63e-010 s                 ; 2.51e-010 s                 ; No                         ; Yes                        ; 2.62 V                      ; 1.03e-007 V                 ; 2.65 V             ; -0.0293 V          ; 0.258 V                             ; 0.194 V                             ; 2.63e-010 s                ; 2.51e-010 s                ; No                        ; Yes                       ;
+; MEMINST[13] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 1.03e-007 V                  ; 2.65 V              ; -0.0293 V           ; 0.258 V                              ; 0.194 V                              ; 2.63e-010 s                 ; 2.51e-010 s                 ; No                         ; Yes                        ; 2.62 V                      ; 1.03e-007 V                 ; 2.65 V             ; -0.0293 V          ; 0.258 V                             ; 0.194 V                             ; 2.63e-010 s                ; 2.51e-010 s                ; No                        ; Yes                       ;
+; MEMINST[12] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 1.03e-007 V                  ; 2.65 V              ; -0.0293 V           ; 0.258 V                              ; 0.194 V                              ; 2.63e-010 s                 ; 2.51e-010 s                 ; No                         ; Yes                        ; 2.62 V                      ; 1.03e-007 V                 ; 2.65 V             ; -0.0293 V          ; 0.258 V                             ; 0.194 V                             ; 2.63e-010 s                ; 2.51e-010 s                ; No                        ; Yes                       ;
+; MEMINST[11] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 1.63e-007 V                  ; 2.65 V              ; -0.0282 V           ; 0.256 V                              ; 0.185 V                              ; 2.62e-010 s                 ; 2.5e-010 s                  ; No                         ; Yes                        ; 2.62 V                      ; 1.63e-007 V                 ; 2.65 V             ; -0.0282 V          ; 0.256 V                             ; 0.185 V                             ; 2.62e-010 s                ; 2.5e-010 s                 ; No                        ; Yes                       ;
+; MEMINST[10] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 1.04e-007 V                  ; 2.67 V              ; -0.0358 V           ; 0.219 V                              ; 0.142 V                              ; 3.76e-010 s                 ; 3.58e-010 s                 ; No                         ; No                         ; 2.62 V                      ; 1.04e-007 V                 ; 2.67 V             ; -0.0358 V          ; 0.219 V                             ; 0.142 V                             ; 3.76e-010 s                ; 3.58e-010 s                ; No                        ; No                        ;
+; MEMINST[9]  ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 1.04e-007 V                  ; 2.67 V              ; -0.0358 V           ; 0.219 V                              ; 0.142 V                              ; 3.76e-010 s                 ; 3.58e-010 s                 ; No                         ; No                         ; 2.62 V                      ; 1.04e-007 V                 ; 2.67 V             ; -0.0358 V          ; 0.219 V                             ; 0.142 V                             ; 3.76e-010 s                ; 3.58e-010 s                ; No                        ; No                        ;
+; MEMINST[8]  ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 1.63e-007 V                  ; 2.65 V              ; -0.0282 V           ; 0.256 V                              ; 0.185 V                              ; 2.62e-010 s                 ; 2.5e-010 s                  ; No                         ; Yes                        ; 2.62 V                      ; 1.63e-007 V                 ; 2.65 V             ; -0.0282 V          ; 0.256 V                             ; 0.185 V                             ; 2.62e-010 s                ; 2.5e-010 s                 ; No                        ; Yes                       ;
+; MEMINST[7]  ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 1.63e-007 V                  ; 2.65 V              ; -0.0282 V           ; 0.256 V                              ; 0.185 V                              ; 2.62e-010 s                 ; 2.5e-010 s                  ; No                         ; Yes                        ; 2.62 V                      ; 1.63e-007 V                 ; 2.65 V             ; -0.0282 V          ; 0.256 V                             ; 0.185 V                             ; 2.62e-010 s                ; 2.5e-010 s                 ; No                        ; Yes                       ;
+; MEMINST[6]  ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 1.63e-007 V                  ; 2.65 V              ; -0.0279 V           ; 0.256 V                              ; 0.185 V                              ; 2.62e-010 s                 ; 2.5e-010 s                  ; No                         ; Yes                        ; 2.62 V                      ; 1.63e-007 V                 ; 2.65 V             ; -0.0279 V          ; 0.256 V                             ; 0.185 V                             ; 2.62e-010 s                ; 2.5e-010 s                 ; No                        ; Yes                       ;
+; MEMINST[5]  ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 1.03e-007 V                  ; 2.65 V              ; -0.0293 V           ; 0.258 V                              ; 0.194 V                              ; 2.63e-010 s                 ; 2.51e-010 s                 ; No                         ; Yes                        ; 2.62 V                      ; 1.03e-007 V                 ; 2.65 V             ; -0.0293 V          ; 0.258 V                             ; 0.194 V                             ; 2.63e-010 s                ; 2.51e-010 s                ; No                        ; Yes                       ;
+; MEMINST[4]  ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 1.04e-007 V                  ; 2.67 V              ; -0.0358 V           ; 0.219 V                              ; 0.142 V                              ; 3.76e-010 s                 ; 3.58e-010 s                 ; No                         ; No                         ; 2.62 V                      ; 1.04e-007 V                 ; 2.67 V             ; -0.0358 V          ; 0.219 V                             ; 0.142 V                             ; 3.76e-010 s                ; 3.58e-010 s                ; No                        ; No                        ;
+; MEMINST[3]  ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 1.63e-007 V                  ; 2.65 V              ; -0.0279 V           ; 0.256 V                              ; 0.185 V                              ; 2.62e-010 s                 ; 2.5e-010 s                  ; No                         ; Yes                        ; 2.62 V                      ; 1.63e-007 V                 ; 2.65 V             ; -0.0279 V          ; 0.256 V                             ; 0.185 V                             ; 2.62e-010 s                ; 2.5e-010 s                 ; No                        ; Yes                       ;
+; MEMINST[2]  ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 1.05e-007 V                  ; 2.66 V              ; -0.0369 V           ; 0.285 V                              ; 0.218 V                              ; 3.97e-010 s                 ; 3.82e-010 s                 ; No                         ; Yes                        ; 2.62 V                      ; 1.05e-007 V                 ; 2.66 V             ; -0.0369 V          ; 0.285 V                             ; 0.218 V                             ; 3.97e-010 s                ; 3.82e-010 s                ; No                        ; Yes                       ;
+; MEMINST[1]  ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 1.63e-007 V                  ; 2.65 V              ; -0.0282 V           ; 0.256 V                              ; 0.185 V                              ; 2.62e-010 s                 ; 2.5e-010 s                  ; No                         ; Yes                        ; 2.62 V                      ; 1.63e-007 V                 ; 2.65 V             ; -0.0282 V          ; 0.256 V                             ; 0.185 V                             ; 2.62e-010 s                ; 2.5e-010 s                 ; No                        ; Yes                       ;
+; MEMINST[0]  ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 1.63e-007 V                  ; 2.65 V              ; -0.0282 V           ; 0.256 V                              ; 0.185 V                              ; 2.62e-010 s                 ; 2.5e-010 s                  ; No                         ; Yes                        ; 2.62 V                      ; 1.63e-007 V                 ; 2.65 V             ; -0.0282 V          ; 0.256 V                             ; 0.185 V                             ; 2.62e-010 s                ; 2.5e-010 s                 ; No                        ; Yes                       ;
++-------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+
+
++-------------------------------------------------------------------+
+; Setup Transfers                                                   ;
++------------+----------+----------+----------+----------+----------+
+; From Clock ; To Clock ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++------------+----------+----------+----------+----------+----------+
+; CLK        ; CLK      ; 32       ; 0        ; 0        ; 0        ;
++------------+----------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
++-------------------------------------------------------------------+
+; Hold Transfers                                                    ;
++------------+----------+----------+----------+----------+----------+
+; From Clock ; To Clock ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++------------+----------+----------+----------+----------+----------+
+; CLK        ; CLK      ; 32       ; 0        ; 0        ; 0        ;
++------------+----------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
+---------------
+; Report TCCS ;
+---------------
+No dedicated SERDES Transmitter circuitry present in device or used in design.
+
+
+---------------
+; Report RSKM ;
+---------------
+No dedicated SERDES Receiver circuitry present in device or used in design.
+
+
++------------------------------------------------+
+; Unconstrained Paths                            ;
++---------------------------------+-------+------+
+; Property                        ; Setup ; Hold ;
++---------------------------------+-------+------+
+; Illegal Clocks                  ; 0     ; 0    ;
+; Unconstrained Clocks            ; 0     ; 0    ;
+; Unconstrained Input Ports       ; 5     ; 5    ;
+; Unconstrained Input Port Paths  ; 5     ; 5    ;
+; Unconstrained Output Ports      ; 32    ; 32   ;
+; Unconstrained Output Port Paths ; 32    ; 32   ;
++---------------------------------+-------+------+
+
+
++------------------------------------+
+; TimeQuest Timing Analyzer Messages ;
++------------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II TimeQuest Timing Analyzer
+    Info: Version 9.0 Build 132 02/25/2009 SJ Full Version
+    Info: Processing started: Wed Nov 04 18:43:47 2009
+Info: Command: quartus_sta PipelineUniProcessor -c PipelineUniProcessor
+Info: qsta_default_script.tcl version: #3
+Info: Parallel compilation is enabled and will use 2 of the 2 processors detected
+Info: Core supply voltage is 1.1V
+Info: Low junction temperature is -40 degrees C
+Info: High junction temperature is 100 degrees C
+Critical Warning: Synopsys Design Constraints File file not found: 'PipelineUniProcessor.sdc'. A Synopsys Design Constraints File is required by the TimeQuest Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
+Info: No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
+Info: Deriving Clocks
+    Info: create_clock -period 1.000 -name CLK CLK
+Critical Warning: The following clock transfers have no clock uncertainty assignment. For more accurate results, apply clock uncertainty assignments or use the derive_clock_uncertainty command.
+    Critical Warning: From CLK (Rise) to CLK (Rise) (setup and hold)
+Info: write_sdc -pt
+Info: Analyzing Slow 1100mV 100C Model
+Critical Warning: Timing requirements not met
+Info: Worst-case setup slack is -1.232
+    Info:     Slack End Point TNS Clock 
+    Info: ========= ============= =====================
+    Info:    -1.232       -39.424 CLK 
+Info: Worst-case hold slack is 1.559
+    Info:     Slack End Point TNS Clock 
+    Info: ========= ============= =====================
+    Info:     1.559         0.000 CLK 
+Info: No recovery paths to report
+Info: No removal paths to report
+Critical Warning: Found minimum pulse width or period violations. See Report Minimum Pulse Width for details.
+Warning: Altera strongly recommends that you perform SI analysis for the chosen Drive Strength and Output Pin Load combination.
+Info: The Metastability Analysis global option is set to OFF.
+Info: No synchronizer chains to report.
+Info: Analyzing Slow 1100mV -40C Model
+Info: Started post-fitting delay annotation
+Info: Delay annotation completed successfully
+Critical Warning: The following clock transfers have no clock uncertainty assignment. For more accurate results, apply clock uncertainty assignments or use the derive_clock_uncertainty command.
+    Critical Warning: From CLK (Rise) to CLK (Rise) (setup and hold)
+Critical Warning: Timing requirements not met
+Info: Worst-case setup slack is -1.042
+    Info:     Slack End Point TNS Clock 
+    Info: ========= ============= =====================
+    Info:    -1.042       -33.344 CLK 
+Info: Worst-case hold slack is 1.384
+    Info:     Slack End Point TNS Clock 
+    Info: ========= ============= =====================
+    Info:     1.384         0.000 CLK 
+Info: No recovery paths to report
+Info: No removal paths to report
+Critical Warning: Found minimum pulse width or period violations. See Report Minimum Pulse Width for details.
+Warning: Altera strongly recommends that you perform SI analysis for the chosen Drive Strength and Output Pin Load combination.
+Info: The Metastability Analysis global option is set to OFF.
+Info: No synchronizer chains to report.
+Info: Analyzing Fast 1100mV -40C Model
+Info: Started post-fitting delay annotation
+Info: Delay annotation completed successfully
+Critical Warning: The following clock transfers have no clock uncertainty assignment. For more accurate results, apply clock uncertainty assignments or use the derive_clock_uncertainty command.
+    Critical Warning: From CLK (Rise) to CLK (Rise) (setup and hold)
+Info: Worst-case setup slack is 0.119
+    Info:     Slack End Point TNS Clock 
+    Info: ========= ============= =====================
+    Info:     0.119         0.000 CLK 
+Info: Worst-case hold slack is 0.624
+    Info:     Slack End Point TNS Clock 
+    Info: ========= ============= =====================
+    Info:     0.624         0.000 CLK 
+Info: No recovery paths to report
+Info: No removal paths to report
+Critical Warning: Timing requirements not met
+Critical Warning: Found minimum pulse width or period violations. See Report Minimum Pulse Width for details.
+Warning: Altera strongly recommends that you perform SI analysis for the chosen Drive Strength and Output Pin Load combination.
+Info: The Metastability Analysis global option is set to OFF.
+Info: No synchronizer chains to report.
+Info: Design is not fully constrained for setup requirements
+Info: Design is not fully constrained for hold requirements
+Info: Quartus II TimeQuest Timing Analyzer was successful. 0 errors, 16 warnings
+    Info: Peak virtual memory: 338 megabytes
+    Info: Processing ended: Wed Nov 04 18:44:04 2009
+    Info: Elapsed time: 00:00:17
+    Info: Total CPU time (on all processors): 00:00:15
+
+

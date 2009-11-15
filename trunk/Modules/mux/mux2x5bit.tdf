@@ -1,0 +1,8 @@
+subdesign mux2x5bit
+(
+a0[4..0], a1[4..0], s : input;
+y[4..0] : output;
+)
+begin
+  if s == 0 then y[] = a0[]; else y[] = a1[]; end if;
+end;
