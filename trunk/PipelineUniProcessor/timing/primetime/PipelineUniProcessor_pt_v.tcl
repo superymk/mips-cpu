@@ -16,10 +16,10 @@
 ## PROGRAM "Quartus II"
 ## VERSION "Version 9.0 Build 132 02/25/2009 SJ Full Version"
 
-## DATE "10/16/2009 00:11:52"
+## DATE "11/23/2009 15:38:47"
 
 ## 
-## Device: Altera EPM7256SRI208-10 Package RQFP208
+## Device: Altera EPM7128SQC100-6 Package PQFP100
 ## 
 
 ## 
@@ -43,7 +43,7 @@ read_verilog  max_all_pt.v
 ##########################
 
 read_verilog  PipelineUniProcessor.vo
-current_design PipelineUniProcessor
+current_design InstMem
 link
 ## Set variable timing_propagate_single_condition_min_slew to false only for versions 2004.06 and earlier
 regexp {([1-9][0-9][0-9][0-9]\.[0-9][0-9])} $sh_product_version dummy version
@@ -75,6 +75,38 @@ read_sdf PipelineUniProcessor_v.sdo
 ## End individual pin commands definition ##
 
 ## Start Output pin capacitance definition ##
+set_load -pin_load 10 [get_ports { MEMINST[0] } ]
+set_load -pin_load 10 [get_ports { MEMINST[10] } ]
+set_load -pin_load 10 [get_ports { MEMINST[11] } ]
+set_load -pin_load 10 [get_ports { MEMINST[12] } ]
+set_load -pin_load 10 [get_ports { MEMINST[13] } ]
+set_load -pin_load 10 [get_ports { MEMINST[14] } ]
+set_load -pin_load 10 [get_ports { MEMINST[15] } ]
+set_load -pin_load 10 [get_ports { MEMINST[16] } ]
+set_load -pin_load 10 [get_ports { MEMINST[17] } ]
+set_load -pin_load 10 [get_ports { MEMINST[18] } ]
+set_load -pin_load 10 [get_ports { MEMINST[19] } ]
+set_load -pin_load 10 [get_ports { MEMINST[1] } ]
+set_load -pin_load 10 [get_ports { MEMINST[20] } ]
+set_load -pin_load 10 [get_ports { MEMINST[21] } ]
+set_load -pin_load 10 [get_ports { MEMINST[22] } ]
+set_load -pin_load 10 [get_ports { MEMINST[23] } ]
+set_load -pin_load 10 [get_ports { MEMINST[24] } ]
+set_load -pin_load 10 [get_ports { MEMINST[25] } ]
+set_load -pin_load 10 [get_ports { MEMINST[26] } ]
+set_load -pin_load 10 [get_ports { MEMINST[27] } ]
+set_load -pin_load 10 [get_ports { MEMINST[28] } ]
+set_load -pin_load 10 [get_ports { MEMINST[29] } ]
+set_load -pin_load 10 [get_ports { MEMINST[2] } ]
+set_load -pin_load 10 [get_ports { MEMINST[30] } ]
+set_load -pin_load 10 [get_ports { MEMINST[31] } ]
+set_load -pin_load 10 [get_ports { MEMINST[3] } ]
+set_load -pin_load 10 [get_ports { MEMINST[4] } ]
+set_load -pin_load 10 [get_ports { MEMINST[5] } ]
+set_load -pin_load 10 [get_ports { MEMINST[6] } ]
+set_load -pin_load 10 [get_ports { MEMINST[7] } ]
+set_load -pin_load 10 [get_ports { MEMINST[8] } ]
+set_load -pin_load 10 [get_ports { MEMINST[9] } ]
 ## End Output pin capacitance definition ##
 
 ## Start clock uncertainty definition ##
