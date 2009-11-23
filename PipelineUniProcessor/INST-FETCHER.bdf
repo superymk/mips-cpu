@@ -180,22 +180,6 @@ applicable agreement for further details.
 		(line (pt 78 12)(pt 82 8)(line_width 1))
 	)
 )
-(pin
-	(output)
-	(rect 616 40 793 56)
-	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
-	(text "TESTINST[31..0]" (rect 90 0 172 12)(font "Arial" ))
-	(pt 0 8)
-	(drawing
-		(line (pt 0 8)(pt 52 8)(line_width 1))
-		(line (pt 52 4)(pt 78 4)(line_width 1))
-		(line (pt 52 12)(pt 78 12)(line_width 1))
-		(line (pt 52 12)(pt 52 4)(line_width 1))
-		(line (pt 78 4)(pt 82 8)(line_width 1))
-		(line (pt 82 8)(pt 78 12)(line_width 1))
-		(line (pt 78 12)(pt 82 8)(line_width 1))
-	)
-)
 (symbol
 	(rect 368 160 520 256)
 	(text "mux2x32bit" (rect 5 0 69 14)(font "Arial" (font_size 8)))
@@ -443,49 +427,6 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 600 96 744 224)
-	(text "dffe32bit" (rect 5 0 55 14)(font "Arial" (font_size 8)))
-	(text "inst13" (rect 8 112 37 124)(font "Arial" ))
-	(port
-		(pt 0 32)
-		(input)
-		(text "D[31..0]" (rect 0 0 43 14)(font "Arial" (font_size 8)))
-		(text "D[31..0]" (rect 21 27 64 41)(font "Arial" (font_size 8)))
-		(line (pt 0 32)(pt 16 32)(line_width 3))
-	)
-	(port
-		(pt 0 48)
-		(input)
-		(text "CLK" (rect 0 0 23 14)(font "Arial" (font_size 8)))
-		(text "CLK" (rect 21 43 44 57)(font "Arial" (font_size 8)))
-		(line (pt 0 48)(pt 16 48)(line_width 1))
-	)
-	(port
-		(pt 0 64)
-		(input)
-		(text "CE" (rect 0 0 15 14)(font "Arial" (font_size 8)))
-		(text "CE" (rect 21 59 36 73)(font "Arial" (font_size 8)))
-		(line (pt 0 64)(pt 16 64)(line_width 1))
-	)
-	(port
-		(pt 0 80)
-		(input)
-		(text "CLRN" (rect 0 0 31 14)(font "Arial" (font_size 8)))
-		(text "CLRN" (rect 21 75 52 89)(font "Arial" (font_size 8)))
-		(line (pt 0 80)(pt 16 80)(line_width 1))
-	)
-	(port
-		(pt 144 32)
-		(output)
-		(text "Q[31..0]" (rect 0 0 44 14)(font "Arial" (font_size 8)))
-		(text "Q[31..0]" (rect 79 27 123 41)(font "Arial" (font_size 8)))
-		(line (pt 144 32)(pt 128 32)(line_width 3))
-	)
-	(drawing
-		(rectangle (rect 16 16 128 112)(line_width 1))
-	)
-)
-(symbol
 	(rect 600 224 744 352)
 	(text "dffe32bit" (rect 5 0 55 14)(font "Arial" (font_size 8)))
 	(text "inst14" (rect 8 112 37 124)(font "Arial" ))
@@ -557,6 +498,50 @@ applicable agreement for further details.
 		(rectangle (rect 16 16 176 80)(line_width 1))
 	)
 )
+(symbol
+	(rect 600 96 744 224)
+	(text "dffe32bit" (rect 5 0 55 14)(font "Arial" (font_size 8)))
+	(text "inst13" (rect 8 112 37 124)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "D[31..0]" (rect 0 0 43 14)(font "Arial" (font_size 8)))
+		(text "D[31..0]" (rect 21 27 64 41)(font "Arial" (font_size 8)))
+		(line (pt 0 32)(pt 16 32)(line_width 3))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "CLK" (rect 0 0 23 14)(font "Arial" (font_size 8)))
+		(text "CLK" (rect 21 43 44 57)(font "Arial" (font_size 8)))
+		(line (pt 0 48)(pt 16 48)(line_width 1))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "CE" (rect 0 0 15 14)(font "Arial" (font_size 8)))
+		(text "CE" (rect 21 59 36 73)(font "Arial" (font_size 8)))
+		(line (pt 0 64)(pt 16 64)(line_width 1))
+	)
+	(port
+		(pt 0 80)
+		(input)
+		(text "CLRN" (rect 0 0 31 14)(font "Arial" (font_size 8)))
+		(text "CLRN" (rect 21 75 52 89)(font "Arial" (font_size 8)))
+		(line (pt 0 80)(pt 16 80)(line_width 1))
+	)
+	(port
+		(pt 144 32)
+		(output)
+		(text "Q[31..0]" (rect 0 0 44 14)(font "Arial" (font_size 8)))
+		(text "Q[31..0]" (rect 79 27 123 41)(font "Arial" (font_size 8)))
+		(line (pt 144 32)(pt 128 32)(line_width 3))
+		(unused)
+	)
+	(drawing
+		(rectangle (rect 16 16 128 112)(line_width 1))
+	)
+)
 (connector
 	(text "PC[31..0]" (rect -54 176 -7 188)(font "Arial" ))
 	(pt -64 192)
@@ -597,10 +582,6 @@ applicable agreement for further details.
 	(text "Z" (rect 378 64 385 76)(font "Arial" ))
 	(pt 368 80)
 	(pt 400 80)
-)
-(connector
-	(pt 368 224)
-	(pt 304 224)
 )
 (connector
 	(pt 304 424)
@@ -646,14 +627,6 @@ applicable agreement for further details.
 (connector
 	(pt 304 312)
 	(pt 288 312)
-)
-(connector
-	(pt 304 224)
-	(pt 304 312)
-)
-(connector
-	(pt 304 312)
-	(pt 304 424)
 )
 (connector
 	(text "I" (rect 240 379 252 382)(font "Arial" )(vertical))
@@ -712,12 +685,6 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(text "INST[31..0]" (rect 754 112 810 124)(font "Arial" ))
-	(pt 744 128)
-	(pt 824 128)
-	(bus)
-)
-(connector
 	(pt 504 392)
 	(pt 616 392)
 	(bus)
@@ -750,9 +717,21 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(text "TESTINST[31..0]" (rect 271 176 353 188)(font "Arial" ))
+	(pt 304 224)
+	(pt 304 312)
+)
+(connector
+	(pt 304 312)
+	(pt 304 424)
+)
+(connector
+	(pt 304 224)
+	(pt 368 224)
+)
+(connector
+	(text "INST[31..0]" (rect 242 176 298 188)(font "Arial" ))
 	(pt 232 192)
-	(pt 368 192)
+	(pt 312 192)
 	(bus)
 )
 (junction (pt 304 312))

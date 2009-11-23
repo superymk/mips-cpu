@@ -1,5 +1,5 @@
 Assembler report for PipelineUniProcessor
-Wed Nov 04 18:43:43 2009
+Mon Nov 23 16:08:15 2009
 Quartus II Version 9.0 Build 132 02/25/2009 SJ Full Version
 
 
@@ -10,7 +10,7 @@ Quartus II Version 9.0 Build 132 02/25/2009 SJ Full Version
   2. Assembler Summary
   3. Assembler Settings
   4. Assembler Generated Files
-  5. Assembler Device Options: F:/WorkSpace/Workspace/MasterLife/TERM 1/Architecture/MIPS/PipelineUniProcessor/PipelineUniProcessor.sof
+  5. Assembler Device Options: F:/WorkSpace/Workspace/MasterLife/TERM 1/Architecture/mips-cpu/PipelineUniProcessor/PipelineUniProcessor.sof
   6. Assembler Messages
 
 
@@ -37,11 +37,11 @@ applicable agreement for further details.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Wed Nov 04 18:43:43 2009 ;
+; Assembler Status      ; Successful - Mon Nov 23 16:08:15 2009 ;
 ; Revision Name         ; PipelineUniProcessor                  ;
 ; Top-level Entity Name ; InstMem                               ;
 ; Family                ; Stratix III                           ;
-; Device                ; EP3SL340F1760I4                       ;
+; Device                ; EP3SL50F484C2                         ;
 +-----------------------+---------------------------------------+
 
 
@@ -75,24 +75,24 @@ applicable agreement for further details.
 +-----------------------------------------------------------------------------+----------+---------------+
 
 
-+----------------------------------------------------------------------------------------------------------+
-; Assembler Generated Files                                                                                ;
-+----------------------------------------------------------------------------------------------------------+
-; File Name                                                                                                ;
-+----------------------------------------------------------------------------------------------------------+
-; F:/WorkSpace/Workspace/MasterLife/TERM 1/Architecture/MIPS/PipelineUniProcessor/PipelineUniProcessor.sof ;
-+----------------------------------------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------+
+; Assembler Generated Files                                                                                    ;
++--------------------------------------------------------------------------------------------------------------+
+; File Name                                                                                                    ;
++--------------------------------------------------------------------------------------------------------------+
+; F:/WorkSpace/Workspace/MasterLife/TERM 1/Architecture/mips-cpu/PipelineUniProcessor/PipelineUniProcessor.sof ;
++--------------------------------------------------------------------------------------------------------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------+
-; Assembler Device Options: F:/WorkSpace/Workspace/MasterLife/TERM 1/Architecture/MIPS/PipelineUniProcessor/PipelineUniProcessor.sof ;
-+----------------+-------------------------------------------------------------------------------------------------------------------+
-; Option         ; Setting                                                                                                           ;
-+----------------+-------------------------------------------------------------------------------------------------------------------+
-; Device         ; EP3SL340F1760I4                                                                                                   ;
-; JTAG usercode  ; 0xFFFFFFFF                                                                                                        ;
-; Checksum       ; 0x0A90AC13                                                                                                        ;
-+----------------+-------------------------------------------------------------------------------------------------------------------+
++----------------------------------------------------------------------------------------------------------------------------------------+
+; Assembler Device Options: F:/WorkSpace/Workspace/MasterLife/TERM 1/Architecture/mips-cpu/PipelineUniProcessor/PipelineUniProcessor.sof ;
++----------------+-----------------------------------------------------------------------------------------------------------------------+
+; Option         ; Setting                                                                                                               ;
++----------------+-----------------------------------------------------------------------------------------------------------------------+
+; Device         ; EP3SL50F484C2                                                                                                         ;
+; JTAG usercode  ; 0xFFFFFFFF                                                                                                            ;
+; Checksum       ; 0x0222A09C                                                                                                            ;
++----------------+-----------------------------------------------------------------------------------------------------------------------+
 
 
 +--------------------+
@@ -101,14 +101,14 @@ applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II Assembler
     Info: Version 9.0 Build 132 02/25/2009 SJ Full Version
-    Info: Processing started: Wed Nov 04 18:42:34 2009
+    Info: Processing started: Mon Nov 23 16:07:56 2009
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off PipelineUniProcessor -c PipelineUniProcessor
 Info: Writing out detailed assembly data for power analysis
 Info: Assembler is generating device programming files
 Info: Quartus II Assembler was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 754 megabytes
-    Info: Processing ended: Wed Nov 04 18:43:43 2009
-    Info: Elapsed time: 00:01:09
-    Info: Total CPU time (on all processors): 00:01:08
+    Info: Peak virtual memory: 277 megabytes
+    Info: Processing ended: Mon Nov 23 16:08:16 2009
+    Info: Elapsed time: 00:00:20
+    Info: Total CPU time (on all processors): 00:00:18
 
 

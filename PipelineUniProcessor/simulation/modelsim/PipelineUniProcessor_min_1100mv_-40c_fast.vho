@@ -16,7 +16,7 @@
 -- PROGRAM "Quartus II"
 -- VERSION "Version 9.0 Build 132 02/25/2009 SJ Full Version"
 
--- DATE "11/04/2009 18:44:08"
+-- DATE "11/23/2009 00:16:12"
 
 -- 
 -- Device: Altera EP3SL340F1760I4 Package FBGA1760
@@ -34,7 +34,8 @@ ENTITY 	InstMem IS
     PORT (
 	MEMINST : OUT std_logic_vector(31 DOWNTO 0);
 	CLK : IN std_logic;
-	PC : IN std_logic_vector(31 DOWNTO 0)
+	PC : IN std_logic_vector(31 DOWNTO 0);
+	MEMINST2 : OUT std_logic_vector(31 DOWNTO 0)
 	);
 END InstMem;
 
@@ -50,10 +51,17 @@ SIGNAL ww_devpor : std_logic;
 SIGNAL ww_MEMINST : std_logic_vector(31 DOWNTO 0);
 SIGNAL ww_CLK : std_logic;
 SIGNAL ww_PC : std_logic_vector(31 DOWNTO 0);
-SIGNAL \inst|altsyncram_component|auto_generated|ram_block1a0_PORTADATAIN_bus\ : std_logic_vector(35 DOWNTO 0);
+SIGNAL ww_MEMINST2 : std_logic_vector(31 DOWNTO 0);
+SIGNAL \inst1|altsyncram_component|auto_generated|ram_block1a0_PORTADATAIN_bus\ : std_logic_vector(35 DOWNTO 0);
+SIGNAL \inst1|altsyncram_component|auto_generated|ram_block1a0_PORTAADDR_bus\ : std_logic_vector(4 DOWNTO 0);
+SIGNAL \inst1|altsyncram_component|auto_generated|ram_block1a0_PORTBADDR_bus\ : std_logic_vector(4 DOWNTO 0);
+SIGNAL \inst1|altsyncram_component|auto_generated|ram_block1a0_PORTBDATAOUT_bus\ : std_logic_vector(35 DOWNTO 0);
+SIGNAL \inst|altsyncram_component|auto_generated|ram_block1a18_PORTADATAIN_bus\ : std_logic_vector(17 DOWNTO 0);
+SIGNAL \inst|altsyncram_component|auto_generated|ram_block1a18_PORTAADDR_bus\ : std_logic_vector(4 DOWNTO 0);
+SIGNAL \inst|altsyncram_component|auto_generated|ram_block1a18_PORTADATAOUT_bus\ : std_logic_vector(17 DOWNTO 0);
+SIGNAL \inst|altsyncram_component|auto_generated|ram_block1a0_PORTADATAIN_bus\ : std_logic_vector(17 DOWNTO 0);
 SIGNAL \inst|altsyncram_component|auto_generated|ram_block1a0_PORTAADDR_bus\ : std_logic_vector(4 DOWNTO 0);
-SIGNAL \inst|altsyncram_component|auto_generated|ram_block1a0_PORTBADDR_bus\ : std_logic_vector(4 DOWNTO 0);
-SIGNAL \inst|altsyncram_component|auto_generated|ram_block1a0_PORTBDATAOUT_bus\ : std_logic_vector(35 DOWNTO 0);
+SIGNAL \inst|altsyncram_component|auto_generated|ram_block1a0_PORTADATAOUT_bus\ : std_logic_vector(17 DOWNTO 0);
 SIGNAL \PC[31]~input_o\ : std_logic;
 SIGNAL \PC[30]~input_o\ : std_logic;
 SIGNAL \PC[29]~input_o\ : std_logic;
@@ -89,57 +97,105 @@ SIGNAL \PC[1]~input_o\ : std_logic;
 SIGNAL \PC[2]~input_o\ : std_logic;
 SIGNAL \PC[3]~input_o\ : std_logic;
 SIGNAL \PC[4]~input_o\ : std_logic;
-SIGNAL \inst|altsyncram_component|auto_generated|q_b\ : std_logic_vector(31 DOWNTO 0);
+SIGNAL \inst|altsyncram_component|auto_generated|q_a\ : std_logic_vector(31 DOWNTO 0);
+SIGNAL \inst1|altsyncram_component|auto_generated|q_b\ : std_logic_vector(31 DOWNTO 0);
+SIGNAL \ALT_INV_CLK~inputclkctrl_outclk\ : std_logic;
 
 BEGIN
 
 MEMINST <= ww_MEMINST;
 ww_CLK <= CLK;
 ww_PC <= PC;
+MEMINST2 <= ww_MEMINST2;
 ww_devoe <= devoe;
 ww_devclrn <= devclrn;
 ww_devpor <= devpor;
 
-\inst|altsyncram_component|auto_generated|ram_block1a0_PORTADATAIN_bus\ <= (gnd & gnd & gnd & gnd & \~GND~combout\ & \~GND~combout\ & \~GND~combout\ & \~GND~combout\ & \~GND~combout\ & \~GND~combout\ & \~GND~combout\ & \~GND~combout\ & \~GND~combout\ & 
+\inst1|altsyncram_component|auto_generated|ram_block1a0_PORTADATAIN_bus\ <= (gnd & gnd & gnd & gnd & \~GND~combout\ & \~GND~combout\ & \~GND~combout\ & \~GND~combout\ & \~GND~combout\ & \~GND~combout\ & \~GND~combout\ & \~GND~combout\ & \~GND~combout\ & 
 \~GND~combout\ & \~GND~combout\ & \~GND~combout\ & \~GND~combout\ & \~GND~combout\ & \~GND~combout\ & \~GND~combout\ & \~GND~combout\ & \~GND~combout\ & \~GND~combout\ & \~GND~combout\ & \~GND~combout\ & \~GND~combout\ & \~GND~combout\ & \~GND~combout\ & 
 \~GND~combout\ & \~GND~combout\ & \~GND~combout\ & \~GND~combout\ & \~GND~combout\ & \~GND~combout\ & \~GND~combout\ & \~GND~combout\);
 
-\inst|altsyncram_component|auto_generated|ram_block1a0_PORTAADDR_bus\ <= (\~GND~combout\ & \~GND~combout\ & \~GND~combout\ & \~GND~combout\ & \~GND~combout\);
+\inst1|altsyncram_component|auto_generated|ram_block1a0_PORTAADDR_bus\ <= (\~GND~combout\ & \~GND~combout\ & \~GND~combout\ & \~GND~combout\ & \~GND~combout\);
 
-\inst|altsyncram_component|auto_generated|ram_block1a0_PORTBADDR_bus\ <= (\PC[4]~input_o\ & \PC[3]~input_o\ & \PC[2]~input_o\ & \PC[1]~input_o\ & \PC[0]~input_o\);
+\inst1|altsyncram_component|auto_generated|ram_block1a0_PORTBADDR_bus\ <= (\PC[4]~input_o\ & \PC[3]~input_o\ & \PC[2]~input_o\ & \PC[1]~input_o\ & \PC[0]~input_o\);
 
-\inst|altsyncram_component|auto_generated|q_b\(0) <= \inst|altsyncram_component|auto_generated|ram_block1a0_PORTBDATAOUT_bus\(0);
-\inst|altsyncram_component|auto_generated|q_b\(1) <= \inst|altsyncram_component|auto_generated|ram_block1a0_PORTBDATAOUT_bus\(1);
-\inst|altsyncram_component|auto_generated|q_b\(2) <= \inst|altsyncram_component|auto_generated|ram_block1a0_PORTBDATAOUT_bus\(2);
-\inst|altsyncram_component|auto_generated|q_b\(3) <= \inst|altsyncram_component|auto_generated|ram_block1a0_PORTBDATAOUT_bus\(3);
-\inst|altsyncram_component|auto_generated|q_b\(4) <= \inst|altsyncram_component|auto_generated|ram_block1a0_PORTBDATAOUT_bus\(4);
-\inst|altsyncram_component|auto_generated|q_b\(5) <= \inst|altsyncram_component|auto_generated|ram_block1a0_PORTBDATAOUT_bus\(5);
-\inst|altsyncram_component|auto_generated|q_b\(6) <= \inst|altsyncram_component|auto_generated|ram_block1a0_PORTBDATAOUT_bus\(6);
-\inst|altsyncram_component|auto_generated|q_b\(7) <= \inst|altsyncram_component|auto_generated|ram_block1a0_PORTBDATAOUT_bus\(7);
-\inst|altsyncram_component|auto_generated|q_b\(8) <= \inst|altsyncram_component|auto_generated|ram_block1a0_PORTBDATAOUT_bus\(8);
-\inst|altsyncram_component|auto_generated|q_b\(9) <= \inst|altsyncram_component|auto_generated|ram_block1a0_PORTBDATAOUT_bus\(9);
-\inst|altsyncram_component|auto_generated|q_b\(10) <= \inst|altsyncram_component|auto_generated|ram_block1a0_PORTBDATAOUT_bus\(10);
-\inst|altsyncram_component|auto_generated|q_b\(11) <= \inst|altsyncram_component|auto_generated|ram_block1a0_PORTBDATAOUT_bus\(11);
-\inst|altsyncram_component|auto_generated|q_b\(12) <= \inst|altsyncram_component|auto_generated|ram_block1a0_PORTBDATAOUT_bus\(12);
-\inst|altsyncram_component|auto_generated|q_b\(13) <= \inst|altsyncram_component|auto_generated|ram_block1a0_PORTBDATAOUT_bus\(13);
-\inst|altsyncram_component|auto_generated|q_b\(14) <= \inst|altsyncram_component|auto_generated|ram_block1a0_PORTBDATAOUT_bus\(14);
-\inst|altsyncram_component|auto_generated|q_b\(15) <= \inst|altsyncram_component|auto_generated|ram_block1a0_PORTBDATAOUT_bus\(15);
-\inst|altsyncram_component|auto_generated|q_b\(16) <= \inst|altsyncram_component|auto_generated|ram_block1a0_PORTBDATAOUT_bus\(16);
-\inst|altsyncram_component|auto_generated|q_b\(17) <= \inst|altsyncram_component|auto_generated|ram_block1a0_PORTBDATAOUT_bus\(17);
-\inst|altsyncram_component|auto_generated|q_b\(18) <= \inst|altsyncram_component|auto_generated|ram_block1a0_PORTBDATAOUT_bus\(18);
-\inst|altsyncram_component|auto_generated|q_b\(19) <= \inst|altsyncram_component|auto_generated|ram_block1a0_PORTBDATAOUT_bus\(19);
-\inst|altsyncram_component|auto_generated|q_b\(20) <= \inst|altsyncram_component|auto_generated|ram_block1a0_PORTBDATAOUT_bus\(20);
-\inst|altsyncram_component|auto_generated|q_b\(21) <= \inst|altsyncram_component|auto_generated|ram_block1a0_PORTBDATAOUT_bus\(21);
-\inst|altsyncram_component|auto_generated|q_b\(22) <= \inst|altsyncram_component|auto_generated|ram_block1a0_PORTBDATAOUT_bus\(22);
-\inst|altsyncram_component|auto_generated|q_b\(23) <= \inst|altsyncram_component|auto_generated|ram_block1a0_PORTBDATAOUT_bus\(23);
-\inst|altsyncram_component|auto_generated|q_b\(24) <= \inst|altsyncram_component|auto_generated|ram_block1a0_PORTBDATAOUT_bus\(24);
-\inst|altsyncram_component|auto_generated|q_b\(25) <= \inst|altsyncram_component|auto_generated|ram_block1a0_PORTBDATAOUT_bus\(25);
-\inst|altsyncram_component|auto_generated|q_b\(26) <= \inst|altsyncram_component|auto_generated|ram_block1a0_PORTBDATAOUT_bus\(26);
-\inst|altsyncram_component|auto_generated|q_b\(27) <= \inst|altsyncram_component|auto_generated|ram_block1a0_PORTBDATAOUT_bus\(27);
-\inst|altsyncram_component|auto_generated|q_b\(28) <= \inst|altsyncram_component|auto_generated|ram_block1a0_PORTBDATAOUT_bus\(28);
-\inst|altsyncram_component|auto_generated|q_b\(29) <= \inst|altsyncram_component|auto_generated|ram_block1a0_PORTBDATAOUT_bus\(29);
-\inst|altsyncram_component|auto_generated|q_b\(30) <= \inst|altsyncram_component|auto_generated|ram_block1a0_PORTBDATAOUT_bus\(30);
-\inst|altsyncram_component|auto_generated|q_b\(31) <= \inst|altsyncram_component|auto_generated|ram_block1a0_PORTBDATAOUT_bus\(31);
+\inst1|altsyncram_component|auto_generated|q_b\(0) <= \inst1|altsyncram_component|auto_generated|ram_block1a0_PORTBDATAOUT_bus\(0);
+\inst1|altsyncram_component|auto_generated|q_b\(1) <= \inst1|altsyncram_component|auto_generated|ram_block1a0_PORTBDATAOUT_bus\(1);
+\inst1|altsyncram_component|auto_generated|q_b\(2) <= \inst1|altsyncram_component|auto_generated|ram_block1a0_PORTBDATAOUT_bus\(2);
+\inst1|altsyncram_component|auto_generated|q_b\(3) <= \inst1|altsyncram_component|auto_generated|ram_block1a0_PORTBDATAOUT_bus\(3);
+\inst1|altsyncram_component|auto_generated|q_b\(4) <= \inst1|altsyncram_component|auto_generated|ram_block1a0_PORTBDATAOUT_bus\(4);
+\inst1|altsyncram_component|auto_generated|q_b\(5) <= \inst1|altsyncram_component|auto_generated|ram_block1a0_PORTBDATAOUT_bus\(5);
+\inst1|altsyncram_component|auto_generated|q_b\(6) <= \inst1|altsyncram_component|auto_generated|ram_block1a0_PORTBDATAOUT_bus\(6);
+\inst1|altsyncram_component|auto_generated|q_b\(7) <= \inst1|altsyncram_component|auto_generated|ram_block1a0_PORTBDATAOUT_bus\(7);
+\inst1|altsyncram_component|auto_generated|q_b\(8) <= \inst1|altsyncram_component|auto_generated|ram_block1a0_PORTBDATAOUT_bus\(8);
+\inst1|altsyncram_component|auto_generated|q_b\(9) <= \inst1|altsyncram_component|auto_generated|ram_block1a0_PORTBDATAOUT_bus\(9);
+\inst1|altsyncram_component|auto_generated|q_b\(10) <= \inst1|altsyncram_component|auto_generated|ram_block1a0_PORTBDATAOUT_bus\(10);
+\inst1|altsyncram_component|auto_generated|q_b\(11) <= \inst1|altsyncram_component|auto_generated|ram_block1a0_PORTBDATAOUT_bus\(11);
+\inst1|altsyncram_component|auto_generated|q_b\(12) <= \inst1|altsyncram_component|auto_generated|ram_block1a0_PORTBDATAOUT_bus\(12);
+\inst1|altsyncram_component|auto_generated|q_b\(13) <= \inst1|altsyncram_component|auto_generated|ram_block1a0_PORTBDATAOUT_bus\(13);
+\inst1|altsyncram_component|auto_generated|q_b\(14) <= \inst1|altsyncram_component|auto_generated|ram_block1a0_PORTBDATAOUT_bus\(14);
+\inst1|altsyncram_component|auto_generated|q_b\(15) <= \inst1|altsyncram_component|auto_generated|ram_block1a0_PORTBDATAOUT_bus\(15);
+\inst1|altsyncram_component|auto_generated|q_b\(16) <= \inst1|altsyncram_component|auto_generated|ram_block1a0_PORTBDATAOUT_bus\(16);
+\inst1|altsyncram_component|auto_generated|q_b\(17) <= \inst1|altsyncram_component|auto_generated|ram_block1a0_PORTBDATAOUT_bus\(17);
+\inst1|altsyncram_component|auto_generated|q_b\(18) <= \inst1|altsyncram_component|auto_generated|ram_block1a0_PORTBDATAOUT_bus\(18);
+\inst1|altsyncram_component|auto_generated|q_b\(19) <= \inst1|altsyncram_component|auto_generated|ram_block1a0_PORTBDATAOUT_bus\(19);
+\inst1|altsyncram_component|auto_generated|q_b\(20) <= \inst1|altsyncram_component|auto_generated|ram_block1a0_PORTBDATAOUT_bus\(20);
+\inst1|altsyncram_component|auto_generated|q_b\(21) <= \inst1|altsyncram_component|auto_generated|ram_block1a0_PORTBDATAOUT_bus\(21);
+\inst1|altsyncram_component|auto_generated|q_b\(22) <= \inst1|altsyncram_component|auto_generated|ram_block1a0_PORTBDATAOUT_bus\(22);
+\inst1|altsyncram_component|auto_generated|q_b\(23) <= \inst1|altsyncram_component|auto_generated|ram_block1a0_PORTBDATAOUT_bus\(23);
+\inst1|altsyncram_component|auto_generated|q_b\(24) <= \inst1|altsyncram_component|auto_generated|ram_block1a0_PORTBDATAOUT_bus\(24);
+\inst1|altsyncram_component|auto_generated|q_b\(25) <= \inst1|altsyncram_component|auto_generated|ram_block1a0_PORTBDATAOUT_bus\(25);
+\inst1|altsyncram_component|auto_generated|q_b\(26) <= \inst1|altsyncram_component|auto_generated|ram_block1a0_PORTBDATAOUT_bus\(26);
+\inst1|altsyncram_component|auto_generated|q_b\(27) <= \inst1|altsyncram_component|auto_generated|ram_block1a0_PORTBDATAOUT_bus\(27);
+\inst1|altsyncram_component|auto_generated|q_b\(28) <= \inst1|altsyncram_component|auto_generated|ram_block1a0_PORTBDATAOUT_bus\(28);
+\inst1|altsyncram_component|auto_generated|q_b\(29) <= \inst1|altsyncram_component|auto_generated|ram_block1a0_PORTBDATAOUT_bus\(29);
+\inst1|altsyncram_component|auto_generated|q_b\(30) <= \inst1|altsyncram_component|auto_generated|ram_block1a0_PORTBDATAOUT_bus\(30);
+\inst1|altsyncram_component|auto_generated|q_b\(31) <= \inst1|altsyncram_component|auto_generated|ram_block1a0_PORTBDATAOUT_bus\(31);
+
+\inst|altsyncram_component|auto_generated|ram_block1a18_PORTADATAIN_bus\ <= (gnd & gnd & gnd & gnd & \~GND~combout\ & \~GND~combout\ & \~GND~combout\ & \~GND~combout\ & \~GND~combout\ & \~GND~combout\ & \~GND~combout\ & \~GND~combout\ & \~GND~combout\ & 
+\~GND~combout\ & \~GND~combout\ & \~GND~combout\ & \~GND~combout\ & \~GND~combout\);
+
+\inst|altsyncram_component|auto_generated|ram_block1a18_PORTAADDR_bus\ <= (\PC[4]~input_o\ & \PC[3]~input_o\ & \PC[2]~input_o\ & \PC[1]~input_o\ & \PC[0]~input_o\);
+
+\inst|altsyncram_component|auto_generated|q_a\(18) <= \inst|altsyncram_component|auto_generated|ram_block1a18_PORTADATAOUT_bus\(0);
+\inst|altsyncram_component|auto_generated|q_a\(19) <= \inst|altsyncram_component|auto_generated|ram_block1a18_PORTADATAOUT_bus\(1);
+\inst|altsyncram_component|auto_generated|q_a\(20) <= \inst|altsyncram_component|auto_generated|ram_block1a18_PORTADATAOUT_bus\(2);
+\inst|altsyncram_component|auto_generated|q_a\(21) <= \inst|altsyncram_component|auto_generated|ram_block1a18_PORTADATAOUT_bus\(3);
+\inst|altsyncram_component|auto_generated|q_a\(22) <= \inst|altsyncram_component|auto_generated|ram_block1a18_PORTADATAOUT_bus\(4);
+\inst|altsyncram_component|auto_generated|q_a\(23) <= \inst|altsyncram_component|auto_generated|ram_block1a18_PORTADATAOUT_bus\(5);
+\inst|altsyncram_component|auto_generated|q_a\(24) <= \inst|altsyncram_component|auto_generated|ram_block1a18_PORTADATAOUT_bus\(6);
+\inst|altsyncram_component|auto_generated|q_a\(25) <= \inst|altsyncram_component|auto_generated|ram_block1a18_PORTADATAOUT_bus\(7);
+\inst|altsyncram_component|auto_generated|q_a\(26) <= \inst|altsyncram_component|auto_generated|ram_block1a18_PORTADATAOUT_bus\(8);
+\inst|altsyncram_component|auto_generated|q_a\(27) <= \inst|altsyncram_component|auto_generated|ram_block1a18_PORTADATAOUT_bus\(9);
+\inst|altsyncram_component|auto_generated|q_a\(28) <= \inst|altsyncram_component|auto_generated|ram_block1a18_PORTADATAOUT_bus\(10);
+\inst|altsyncram_component|auto_generated|q_a\(29) <= \inst|altsyncram_component|auto_generated|ram_block1a18_PORTADATAOUT_bus\(11);
+\inst|altsyncram_component|auto_generated|q_a\(30) <= \inst|altsyncram_component|auto_generated|ram_block1a18_PORTADATAOUT_bus\(12);
+\inst|altsyncram_component|auto_generated|q_a\(31) <= \inst|altsyncram_component|auto_generated|ram_block1a18_PORTADATAOUT_bus\(13);
+
+\inst|altsyncram_component|auto_generated|ram_block1a0_PORTADATAIN_bus\ <= (\~GND~combout\ & \~GND~combout\ & \~GND~combout\ & \~GND~combout\ & \~GND~combout\ & \~GND~combout\ & \~GND~combout\ & \~GND~combout\ & \~GND~combout\ & \~GND~combout\ & 
+\~GND~combout\ & \~GND~combout\ & \~GND~combout\ & \~GND~combout\ & \~GND~combout\ & \~GND~combout\ & \~GND~combout\ & \~GND~combout\);
+
+\inst|altsyncram_component|auto_generated|ram_block1a0_PORTAADDR_bus\ <= (\PC[4]~input_o\ & \PC[3]~input_o\ & \PC[2]~input_o\ & \PC[1]~input_o\ & \PC[0]~input_o\);
+
+\inst|altsyncram_component|auto_generated|q_a\(0) <= \inst|altsyncram_component|auto_generated|ram_block1a0_PORTADATAOUT_bus\(0);
+\inst|altsyncram_component|auto_generated|q_a\(1) <= \inst|altsyncram_component|auto_generated|ram_block1a0_PORTADATAOUT_bus\(1);
+\inst|altsyncram_component|auto_generated|q_a\(2) <= \inst|altsyncram_component|auto_generated|ram_block1a0_PORTADATAOUT_bus\(2);
+\inst|altsyncram_component|auto_generated|q_a\(3) <= \inst|altsyncram_component|auto_generated|ram_block1a0_PORTADATAOUT_bus\(3);
+\inst|altsyncram_component|auto_generated|q_a\(4) <= \inst|altsyncram_component|auto_generated|ram_block1a0_PORTADATAOUT_bus\(4);
+\inst|altsyncram_component|auto_generated|q_a\(5) <= \inst|altsyncram_component|auto_generated|ram_block1a0_PORTADATAOUT_bus\(5);
+\inst|altsyncram_component|auto_generated|q_a\(6) <= \inst|altsyncram_component|auto_generated|ram_block1a0_PORTADATAOUT_bus\(6);
+\inst|altsyncram_component|auto_generated|q_a\(7) <= \inst|altsyncram_component|auto_generated|ram_block1a0_PORTADATAOUT_bus\(7);
+\inst|altsyncram_component|auto_generated|q_a\(8) <= \inst|altsyncram_component|auto_generated|ram_block1a0_PORTADATAOUT_bus\(8);
+\inst|altsyncram_component|auto_generated|q_a\(9) <= \inst|altsyncram_component|auto_generated|ram_block1a0_PORTADATAOUT_bus\(9);
+\inst|altsyncram_component|auto_generated|q_a\(10) <= \inst|altsyncram_component|auto_generated|ram_block1a0_PORTADATAOUT_bus\(10);
+\inst|altsyncram_component|auto_generated|q_a\(11) <= \inst|altsyncram_component|auto_generated|ram_block1a0_PORTADATAOUT_bus\(11);
+\inst|altsyncram_component|auto_generated|q_a\(12) <= \inst|altsyncram_component|auto_generated|ram_block1a0_PORTADATAOUT_bus\(12);
+\inst|altsyncram_component|auto_generated|q_a\(13) <= \inst|altsyncram_component|auto_generated|ram_block1a0_PORTADATAOUT_bus\(13);
+\inst|altsyncram_component|auto_generated|q_a\(14) <= \inst|altsyncram_component|auto_generated|ram_block1a0_PORTADATAOUT_bus\(14);
+\inst|altsyncram_component|auto_generated|q_a\(15) <= \inst|altsyncram_component|auto_generated|ram_block1a0_PORTADATAOUT_bus\(15);
+\inst|altsyncram_component|auto_generated|q_a\(16) <= \inst|altsyncram_component|auto_generated|ram_block1a0_PORTADATAOUT_bus\(16);
+\inst|altsyncram_component|auto_generated|q_a\(17) <= \inst|altsyncram_component|auto_generated|ram_block1a0_PORTADATAOUT_bus\(17);
+\ALT_INV_CLK~inputclkctrl_outclk\ <= NOT \CLK~inputclkctrl_outclk\;
 
 \CLK~input\ : stratixiii_io_ibuf
 -- pragma translate_off
@@ -159,7 +215,7 @@ GENERIC MAP (
 	shift_series_termination_control => "false")
 -- pragma translate_on
 PORT MAP (
-	i => \inst|altsyncram_component|auto_generated|q_b\(31),
+	i => \inst1|altsyncram_component|auto_generated|q_b\(31),
 	devoe => ww_devoe,
 	o => ww_MEMINST(31));
 
@@ -171,7 +227,7 @@ GENERIC MAP (
 	shift_series_termination_control => "false")
 -- pragma translate_on
 PORT MAP (
-	i => \inst|altsyncram_component|auto_generated|q_b\(30),
+	i => \inst1|altsyncram_component|auto_generated|q_b\(30),
 	devoe => ww_devoe,
 	o => ww_MEMINST(30));
 
@@ -183,7 +239,7 @@ GENERIC MAP (
 	shift_series_termination_control => "false")
 -- pragma translate_on
 PORT MAP (
-	i => \inst|altsyncram_component|auto_generated|q_b\(29),
+	i => \inst1|altsyncram_component|auto_generated|q_b\(29),
 	devoe => ww_devoe,
 	o => ww_MEMINST(29));
 
@@ -195,7 +251,7 @@ GENERIC MAP (
 	shift_series_termination_control => "false")
 -- pragma translate_on
 PORT MAP (
-	i => \inst|altsyncram_component|auto_generated|q_b\(28),
+	i => \inst1|altsyncram_component|auto_generated|q_b\(28),
 	devoe => ww_devoe,
 	o => ww_MEMINST(28));
 
@@ -207,7 +263,7 @@ GENERIC MAP (
 	shift_series_termination_control => "false")
 -- pragma translate_on
 PORT MAP (
-	i => \inst|altsyncram_component|auto_generated|q_b\(27),
+	i => \inst1|altsyncram_component|auto_generated|q_b\(27),
 	devoe => ww_devoe,
 	o => ww_MEMINST(27));
 
@@ -219,7 +275,7 @@ GENERIC MAP (
 	shift_series_termination_control => "false")
 -- pragma translate_on
 PORT MAP (
-	i => \inst|altsyncram_component|auto_generated|q_b\(26),
+	i => \inst1|altsyncram_component|auto_generated|q_b\(26),
 	devoe => ww_devoe,
 	o => ww_MEMINST(26));
 
@@ -231,7 +287,7 @@ GENERIC MAP (
 	shift_series_termination_control => "false")
 -- pragma translate_on
 PORT MAP (
-	i => \inst|altsyncram_component|auto_generated|q_b\(25),
+	i => \inst1|altsyncram_component|auto_generated|q_b\(25),
 	devoe => ww_devoe,
 	o => ww_MEMINST(25));
 
@@ -243,7 +299,7 @@ GENERIC MAP (
 	shift_series_termination_control => "false")
 -- pragma translate_on
 PORT MAP (
-	i => \inst|altsyncram_component|auto_generated|q_b\(24),
+	i => \inst1|altsyncram_component|auto_generated|q_b\(24),
 	devoe => ww_devoe,
 	o => ww_MEMINST(24));
 
@@ -255,7 +311,7 @@ GENERIC MAP (
 	shift_series_termination_control => "false")
 -- pragma translate_on
 PORT MAP (
-	i => \inst|altsyncram_component|auto_generated|q_b\(23),
+	i => \inst1|altsyncram_component|auto_generated|q_b\(23),
 	devoe => ww_devoe,
 	o => ww_MEMINST(23));
 
@@ -267,7 +323,7 @@ GENERIC MAP (
 	shift_series_termination_control => "false")
 -- pragma translate_on
 PORT MAP (
-	i => \inst|altsyncram_component|auto_generated|q_b\(22),
+	i => \inst1|altsyncram_component|auto_generated|q_b\(22),
 	devoe => ww_devoe,
 	o => ww_MEMINST(22));
 
@@ -279,7 +335,7 @@ GENERIC MAP (
 	shift_series_termination_control => "false")
 -- pragma translate_on
 PORT MAP (
-	i => \inst|altsyncram_component|auto_generated|q_b\(21),
+	i => \inst1|altsyncram_component|auto_generated|q_b\(21),
 	devoe => ww_devoe,
 	o => ww_MEMINST(21));
 
@@ -291,7 +347,7 @@ GENERIC MAP (
 	shift_series_termination_control => "false")
 -- pragma translate_on
 PORT MAP (
-	i => \inst|altsyncram_component|auto_generated|q_b\(20),
+	i => \inst1|altsyncram_component|auto_generated|q_b\(20),
 	devoe => ww_devoe,
 	o => ww_MEMINST(20));
 
@@ -303,7 +359,7 @@ GENERIC MAP (
 	shift_series_termination_control => "false")
 -- pragma translate_on
 PORT MAP (
-	i => \inst|altsyncram_component|auto_generated|q_b\(19),
+	i => \inst1|altsyncram_component|auto_generated|q_b\(19),
 	devoe => ww_devoe,
 	o => ww_MEMINST(19));
 
@@ -315,7 +371,7 @@ GENERIC MAP (
 	shift_series_termination_control => "false")
 -- pragma translate_on
 PORT MAP (
-	i => \inst|altsyncram_component|auto_generated|q_b\(18),
+	i => \inst1|altsyncram_component|auto_generated|q_b\(18),
 	devoe => ww_devoe,
 	o => ww_MEMINST(18));
 
@@ -327,7 +383,7 @@ GENERIC MAP (
 	shift_series_termination_control => "false")
 -- pragma translate_on
 PORT MAP (
-	i => \inst|altsyncram_component|auto_generated|q_b\(17),
+	i => \inst1|altsyncram_component|auto_generated|q_b\(17),
 	devoe => ww_devoe,
 	o => ww_MEMINST(17));
 
@@ -339,7 +395,7 @@ GENERIC MAP (
 	shift_series_termination_control => "false")
 -- pragma translate_on
 PORT MAP (
-	i => \inst|altsyncram_component|auto_generated|q_b\(16),
+	i => \inst1|altsyncram_component|auto_generated|q_b\(16),
 	devoe => ww_devoe,
 	o => ww_MEMINST(16));
 
@@ -351,7 +407,7 @@ GENERIC MAP (
 	shift_series_termination_control => "false")
 -- pragma translate_on
 PORT MAP (
-	i => \inst|altsyncram_component|auto_generated|q_b\(15),
+	i => \inst1|altsyncram_component|auto_generated|q_b\(15),
 	devoe => ww_devoe,
 	o => ww_MEMINST(15));
 
@@ -363,7 +419,7 @@ GENERIC MAP (
 	shift_series_termination_control => "false")
 -- pragma translate_on
 PORT MAP (
-	i => \inst|altsyncram_component|auto_generated|q_b\(14),
+	i => \inst1|altsyncram_component|auto_generated|q_b\(14),
 	devoe => ww_devoe,
 	o => ww_MEMINST(14));
 
@@ -375,7 +431,7 @@ GENERIC MAP (
 	shift_series_termination_control => "false")
 -- pragma translate_on
 PORT MAP (
-	i => \inst|altsyncram_component|auto_generated|q_b\(13),
+	i => \inst1|altsyncram_component|auto_generated|q_b\(13),
 	devoe => ww_devoe,
 	o => ww_MEMINST(13));
 
@@ -387,7 +443,7 @@ GENERIC MAP (
 	shift_series_termination_control => "false")
 -- pragma translate_on
 PORT MAP (
-	i => \inst|altsyncram_component|auto_generated|q_b\(12),
+	i => \inst1|altsyncram_component|auto_generated|q_b\(12),
 	devoe => ww_devoe,
 	o => ww_MEMINST(12));
 
@@ -399,7 +455,7 @@ GENERIC MAP (
 	shift_series_termination_control => "false")
 -- pragma translate_on
 PORT MAP (
-	i => \inst|altsyncram_component|auto_generated|q_b\(11),
+	i => \inst1|altsyncram_component|auto_generated|q_b\(11),
 	devoe => ww_devoe,
 	o => ww_MEMINST(11));
 
@@ -411,7 +467,7 @@ GENERIC MAP (
 	shift_series_termination_control => "false")
 -- pragma translate_on
 PORT MAP (
-	i => \inst|altsyncram_component|auto_generated|q_b\(10),
+	i => \inst1|altsyncram_component|auto_generated|q_b\(10),
 	devoe => ww_devoe,
 	o => ww_MEMINST(10));
 
@@ -423,7 +479,7 @@ GENERIC MAP (
 	shift_series_termination_control => "false")
 -- pragma translate_on
 PORT MAP (
-	i => \inst|altsyncram_component|auto_generated|q_b\(9),
+	i => \inst1|altsyncram_component|auto_generated|q_b\(9),
 	devoe => ww_devoe,
 	o => ww_MEMINST(9));
 
@@ -435,7 +491,7 @@ GENERIC MAP (
 	shift_series_termination_control => "false")
 -- pragma translate_on
 PORT MAP (
-	i => \inst|altsyncram_component|auto_generated|q_b\(8),
+	i => \inst1|altsyncram_component|auto_generated|q_b\(8),
 	devoe => ww_devoe,
 	o => ww_MEMINST(8));
 
@@ -447,7 +503,7 @@ GENERIC MAP (
 	shift_series_termination_control => "false")
 -- pragma translate_on
 PORT MAP (
-	i => \inst|altsyncram_component|auto_generated|q_b\(7),
+	i => \inst1|altsyncram_component|auto_generated|q_b\(7),
 	devoe => ww_devoe,
 	o => ww_MEMINST(7));
 
@@ -459,7 +515,7 @@ GENERIC MAP (
 	shift_series_termination_control => "false")
 -- pragma translate_on
 PORT MAP (
-	i => \inst|altsyncram_component|auto_generated|q_b\(6),
+	i => \inst1|altsyncram_component|auto_generated|q_b\(6),
 	devoe => ww_devoe,
 	o => ww_MEMINST(6));
 
@@ -471,7 +527,7 @@ GENERIC MAP (
 	shift_series_termination_control => "false")
 -- pragma translate_on
 PORT MAP (
-	i => \inst|altsyncram_component|auto_generated|q_b\(5),
+	i => \inst1|altsyncram_component|auto_generated|q_b\(5),
 	devoe => ww_devoe,
 	o => ww_MEMINST(5));
 
@@ -483,7 +539,7 @@ GENERIC MAP (
 	shift_series_termination_control => "false")
 -- pragma translate_on
 PORT MAP (
-	i => \inst|altsyncram_component|auto_generated|q_b\(4),
+	i => \inst1|altsyncram_component|auto_generated|q_b\(4),
 	devoe => ww_devoe,
 	o => ww_MEMINST(4));
 
@@ -495,7 +551,7 @@ GENERIC MAP (
 	shift_series_termination_control => "false")
 -- pragma translate_on
 PORT MAP (
-	i => \inst|altsyncram_component|auto_generated|q_b\(3),
+	i => \inst1|altsyncram_component|auto_generated|q_b\(3),
 	devoe => ww_devoe,
 	o => ww_MEMINST(3));
 
@@ -507,7 +563,7 @@ GENERIC MAP (
 	shift_series_termination_control => "false")
 -- pragma translate_on
 PORT MAP (
-	i => \inst|altsyncram_component|auto_generated|q_b\(2),
+	i => \inst1|altsyncram_component|auto_generated|q_b\(2),
 	devoe => ww_devoe,
 	o => ww_MEMINST(2));
 
@@ -519,7 +575,7 @@ GENERIC MAP (
 	shift_series_termination_control => "false")
 -- pragma translate_on
 PORT MAP (
-	i => \inst|altsyncram_component|auto_generated|q_b\(1),
+	i => \inst1|altsyncram_component|auto_generated|q_b\(1),
 	devoe => ww_devoe,
 	o => ww_MEMINST(1));
 
@@ -531,9 +587,393 @@ GENERIC MAP (
 	shift_series_termination_control => "false")
 -- pragma translate_on
 PORT MAP (
-	i => \inst|altsyncram_component|auto_generated|q_b\(0),
+	i => \inst1|altsyncram_component|auto_generated|q_b\(0),
 	devoe => ww_devoe,
 	o => ww_MEMINST(0));
+
+\MEMINST2[31]~output\ : stratixiii_io_obuf
+-- pragma translate_off
+GENERIC MAP (
+	bus_hold => "false",
+	open_drain_output => "false",
+	shift_series_termination_control => "false")
+-- pragma translate_on
+PORT MAP (
+	i => \inst|altsyncram_component|auto_generated|q_a\(31),
+	devoe => ww_devoe,
+	o => ww_MEMINST2(31));
+
+\MEMINST2[30]~output\ : stratixiii_io_obuf
+-- pragma translate_off
+GENERIC MAP (
+	bus_hold => "false",
+	open_drain_output => "false",
+	shift_series_termination_control => "false")
+-- pragma translate_on
+PORT MAP (
+	i => \inst|altsyncram_component|auto_generated|q_a\(30),
+	devoe => ww_devoe,
+	o => ww_MEMINST2(30));
+
+\MEMINST2[29]~output\ : stratixiii_io_obuf
+-- pragma translate_off
+GENERIC MAP (
+	bus_hold => "false",
+	open_drain_output => "false",
+	shift_series_termination_control => "false")
+-- pragma translate_on
+PORT MAP (
+	i => \inst|altsyncram_component|auto_generated|q_a\(29),
+	devoe => ww_devoe,
+	o => ww_MEMINST2(29));
+
+\MEMINST2[28]~output\ : stratixiii_io_obuf
+-- pragma translate_off
+GENERIC MAP (
+	bus_hold => "false",
+	open_drain_output => "false",
+	shift_series_termination_control => "false")
+-- pragma translate_on
+PORT MAP (
+	i => \inst|altsyncram_component|auto_generated|q_a\(28),
+	devoe => ww_devoe,
+	o => ww_MEMINST2(28));
+
+\MEMINST2[27]~output\ : stratixiii_io_obuf
+-- pragma translate_off
+GENERIC MAP (
+	bus_hold => "false",
+	open_drain_output => "false",
+	shift_series_termination_control => "false")
+-- pragma translate_on
+PORT MAP (
+	i => \inst|altsyncram_component|auto_generated|q_a\(27),
+	devoe => ww_devoe,
+	o => ww_MEMINST2(27));
+
+\MEMINST2[26]~output\ : stratixiii_io_obuf
+-- pragma translate_off
+GENERIC MAP (
+	bus_hold => "false",
+	open_drain_output => "false",
+	shift_series_termination_control => "false")
+-- pragma translate_on
+PORT MAP (
+	i => \inst|altsyncram_component|auto_generated|q_a\(26),
+	devoe => ww_devoe,
+	o => ww_MEMINST2(26));
+
+\MEMINST2[25]~output\ : stratixiii_io_obuf
+-- pragma translate_off
+GENERIC MAP (
+	bus_hold => "false",
+	open_drain_output => "false",
+	shift_series_termination_control => "false")
+-- pragma translate_on
+PORT MAP (
+	i => \inst|altsyncram_component|auto_generated|q_a\(25),
+	devoe => ww_devoe,
+	o => ww_MEMINST2(25));
+
+\MEMINST2[24]~output\ : stratixiii_io_obuf
+-- pragma translate_off
+GENERIC MAP (
+	bus_hold => "false",
+	open_drain_output => "false",
+	shift_series_termination_control => "false")
+-- pragma translate_on
+PORT MAP (
+	i => \inst|altsyncram_component|auto_generated|q_a\(24),
+	devoe => ww_devoe,
+	o => ww_MEMINST2(24));
+
+\MEMINST2[23]~output\ : stratixiii_io_obuf
+-- pragma translate_off
+GENERIC MAP (
+	bus_hold => "false",
+	open_drain_output => "false",
+	shift_series_termination_control => "false")
+-- pragma translate_on
+PORT MAP (
+	i => \inst|altsyncram_component|auto_generated|q_a\(23),
+	devoe => ww_devoe,
+	o => ww_MEMINST2(23));
+
+\MEMINST2[22]~output\ : stratixiii_io_obuf
+-- pragma translate_off
+GENERIC MAP (
+	bus_hold => "false",
+	open_drain_output => "false",
+	shift_series_termination_control => "false")
+-- pragma translate_on
+PORT MAP (
+	i => \inst|altsyncram_component|auto_generated|q_a\(22),
+	devoe => ww_devoe,
+	o => ww_MEMINST2(22));
+
+\MEMINST2[21]~output\ : stratixiii_io_obuf
+-- pragma translate_off
+GENERIC MAP (
+	bus_hold => "false",
+	open_drain_output => "false",
+	shift_series_termination_control => "false")
+-- pragma translate_on
+PORT MAP (
+	i => \inst|altsyncram_component|auto_generated|q_a\(21),
+	devoe => ww_devoe,
+	o => ww_MEMINST2(21));
+
+\MEMINST2[20]~output\ : stratixiii_io_obuf
+-- pragma translate_off
+GENERIC MAP (
+	bus_hold => "false",
+	open_drain_output => "false",
+	shift_series_termination_control => "false")
+-- pragma translate_on
+PORT MAP (
+	i => \inst|altsyncram_component|auto_generated|q_a\(20),
+	devoe => ww_devoe,
+	o => ww_MEMINST2(20));
+
+\MEMINST2[19]~output\ : stratixiii_io_obuf
+-- pragma translate_off
+GENERIC MAP (
+	bus_hold => "false",
+	open_drain_output => "false",
+	shift_series_termination_control => "false")
+-- pragma translate_on
+PORT MAP (
+	i => \inst|altsyncram_component|auto_generated|q_a\(19),
+	devoe => ww_devoe,
+	o => ww_MEMINST2(19));
+
+\MEMINST2[18]~output\ : stratixiii_io_obuf
+-- pragma translate_off
+GENERIC MAP (
+	bus_hold => "false",
+	open_drain_output => "false",
+	shift_series_termination_control => "false")
+-- pragma translate_on
+PORT MAP (
+	i => \inst|altsyncram_component|auto_generated|q_a\(18),
+	devoe => ww_devoe,
+	o => ww_MEMINST2(18));
+
+\MEMINST2[17]~output\ : stratixiii_io_obuf
+-- pragma translate_off
+GENERIC MAP (
+	bus_hold => "false",
+	open_drain_output => "false",
+	shift_series_termination_control => "false")
+-- pragma translate_on
+PORT MAP (
+	i => \inst|altsyncram_component|auto_generated|q_a\(17),
+	devoe => ww_devoe,
+	o => ww_MEMINST2(17));
+
+\MEMINST2[16]~output\ : stratixiii_io_obuf
+-- pragma translate_off
+GENERIC MAP (
+	bus_hold => "false",
+	open_drain_output => "false",
+	shift_series_termination_control => "false")
+-- pragma translate_on
+PORT MAP (
+	i => \inst|altsyncram_component|auto_generated|q_a\(16),
+	devoe => ww_devoe,
+	o => ww_MEMINST2(16));
+
+\MEMINST2[15]~output\ : stratixiii_io_obuf
+-- pragma translate_off
+GENERIC MAP (
+	bus_hold => "false",
+	open_drain_output => "false",
+	shift_series_termination_control => "false")
+-- pragma translate_on
+PORT MAP (
+	i => \inst|altsyncram_component|auto_generated|q_a\(15),
+	devoe => ww_devoe,
+	o => ww_MEMINST2(15));
+
+\MEMINST2[14]~output\ : stratixiii_io_obuf
+-- pragma translate_off
+GENERIC MAP (
+	bus_hold => "false",
+	open_drain_output => "false",
+	shift_series_termination_control => "false")
+-- pragma translate_on
+PORT MAP (
+	i => \inst|altsyncram_component|auto_generated|q_a\(14),
+	devoe => ww_devoe,
+	o => ww_MEMINST2(14));
+
+\MEMINST2[13]~output\ : stratixiii_io_obuf
+-- pragma translate_off
+GENERIC MAP (
+	bus_hold => "false",
+	open_drain_output => "false",
+	shift_series_termination_control => "false")
+-- pragma translate_on
+PORT MAP (
+	i => \inst|altsyncram_component|auto_generated|q_a\(13),
+	devoe => ww_devoe,
+	o => ww_MEMINST2(13));
+
+\MEMINST2[12]~output\ : stratixiii_io_obuf
+-- pragma translate_off
+GENERIC MAP (
+	bus_hold => "false",
+	open_drain_output => "false",
+	shift_series_termination_control => "false")
+-- pragma translate_on
+PORT MAP (
+	i => \inst|altsyncram_component|auto_generated|q_a\(12),
+	devoe => ww_devoe,
+	o => ww_MEMINST2(12));
+
+\MEMINST2[11]~output\ : stratixiii_io_obuf
+-- pragma translate_off
+GENERIC MAP (
+	bus_hold => "false",
+	open_drain_output => "false",
+	shift_series_termination_control => "false")
+-- pragma translate_on
+PORT MAP (
+	i => \inst|altsyncram_component|auto_generated|q_a\(11),
+	devoe => ww_devoe,
+	o => ww_MEMINST2(11));
+
+\MEMINST2[10]~output\ : stratixiii_io_obuf
+-- pragma translate_off
+GENERIC MAP (
+	bus_hold => "false",
+	open_drain_output => "false",
+	shift_series_termination_control => "false")
+-- pragma translate_on
+PORT MAP (
+	i => \inst|altsyncram_component|auto_generated|q_a\(10),
+	devoe => ww_devoe,
+	o => ww_MEMINST2(10));
+
+\MEMINST2[9]~output\ : stratixiii_io_obuf
+-- pragma translate_off
+GENERIC MAP (
+	bus_hold => "false",
+	open_drain_output => "false",
+	shift_series_termination_control => "false")
+-- pragma translate_on
+PORT MAP (
+	i => \inst|altsyncram_component|auto_generated|q_a\(9),
+	devoe => ww_devoe,
+	o => ww_MEMINST2(9));
+
+\MEMINST2[8]~output\ : stratixiii_io_obuf
+-- pragma translate_off
+GENERIC MAP (
+	bus_hold => "false",
+	open_drain_output => "false",
+	shift_series_termination_control => "false")
+-- pragma translate_on
+PORT MAP (
+	i => \inst|altsyncram_component|auto_generated|q_a\(8),
+	devoe => ww_devoe,
+	o => ww_MEMINST2(8));
+
+\MEMINST2[7]~output\ : stratixiii_io_obuf
+-- pragma translate_off
+GENERIC MAP (
+	bus_hold => "false",
+	open_drain_output => "false",
+	shift_series_termination_control => "false")
+-- pragma translate_on
+PORT MAP (
+	i => \inst|altsyncram_component|auto_generated|q_a\(7),
+	devoe => ww_devoe,
+	o => ww_MEMINST2(7));
+
+\MEMINST2[6]~output\ : stratixiii_io_obuf
+-- pragma translate_off
+GENERIC MAP (
+	bus_hold => "false",
+	open_drain_output => "false",
+	shift_series_termination_control => "false")
+-- pragma translate_on
+PORT MAP (
+	i => \inst|altsyncram_component|auto_generated|q_a\(6),
+	devoe => ww_devoe,
+	o => ww_MEMINST2(6));
+
+\MEMINST2[5]~output\ : stratixiii_io_obuf
+-- pragma translate_off
+GENERIC MAP (
+	bus_hold => "false",
+	open_drain_output => "false",
+	shift_series_termination_control => "false")
+-- pragma translate_on
+PORT MAP (
+	i => \inst|altsyncram_component|auto_generated|q_a\(5),
+	devoe => ww_devoe,
+	o => ww_MEMINST2(5));
+
+\MEMINST2[4]~output\ : stratixiii_io_obuf
+-- pragma translate_off
+GENERIC MAP (
+	bus_hold => "false",
+	open_drain_output => "false",
+	shift_series_termination_control => "false")
+-- pragma translate_on
+PORT MAP (
+	i => \inst|altsyncram_component|auto_generated|q_a\(4),
+	devoe => ww_devoe,
+	o => ww_MEMINST2(4));
+
+\MEMINST2[3]~output\ : stratixiii_io_obuf
+-- pragma translate_off
+GENERIC MAP (
+	bus_hold => "false",
+	open_drain_output => "false",
+	shift_series_termination_control => "false")
+-- pragma translate_on
+PORT MAP (
+	i => \inst|altsyncram_component|auto_generated|q_a\(3),
+	devoe => ww_devoe,
+	o => ww_MEMINST2(3));
+
+\MEMINST2[2]~output\ : stratixiii_io_obuf
+-- pragma translate_off
+GENERIC MAP (
+	bus_hold => "false",
+	open_drain_output => "false",
+	shift_series_termination_control => "false")
+-- pragma translate_on
+PORT MAP (
+	i => \inst|altsyncram_component|auto_generated|q_a\(2),
+	devoe => ww_devoe,
+	o => ww_MEMINST2(2));
+
+\MEMINST2[1]~output\ : stratixiii_io_obuf
+-- pragma translate_off
+GENERIC MAP (
+	bus_hold => "false",
+	open_drain_output => "false",
+	shift_series_termination_control => "false")
+-- pragma translate_on
+PORT MAP (
+	i => \inst|altsyncram_component|auto_generated|q_a\(1),
+	devoe => ww_devoe,
+	o => ww_MEMINST2(1));
+
+\MEMINST2[0]~output\ : stratixiii_io_obuf
+-- pragma translate_off
+GENERIC MAP (
+	bus_hold => "false",
+	open_drain_output => "false",
+	shift_series_termination_control => "false")
+-- pragma translate_on
+PORT MAP (
+	i => \inst|altsyncram_component|auto_generated|q_a\(0),
+	devoe => ww_devoe,
+	o => ww_MEMINST2(0));
 
 \CLK~inputclkctrl\ : stratixiii_clkena
 -- pragma translate_off
@@ -610,7 +1050,7 @@ PORT MAP (
 	i => ww_PC(4),
 	o => \PC[4]~input_o\);
 
-\inst|altsyncram_component|auto_generated|ram_block1a0\ : stratixiii_ram_block
+\inst1|altsyncram_component|auto_generated|ram_block1a0\ : stratixiii_ram_block
 -- pragma translate_off
 GENERIC MAP (
 	mem_init0 => X"00000000000000000000000000000000000000000000000800001A000031BC2000031C03000031C00000021BC002002FFFF00000000000800000C000A63824010400003000A4302503085FFFF02004FFFF03443FFFF02042FFFF02002000300081182208C2400500AC23005002021000401440FFFC02042FFFF00064182008C240050000001820020020004000000820",
@@ -623,7 +1063,7 @@ GENERIC MAP (
 	data_interleave_width_in_bits => 1,
 	init_file => "./MemContentInstance/IMemPipe.mif",
 	init_file_layout => "port_a",
-	logical_ram_name => "InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|ALTSYNCRAM",
+	logical_ram_name => "lpm_ram_dp1:inst1|altsyncram:altsyncram_component|altsyncram_aor1:auto_generated|ALTSYNCRAM",
 	mixed_port_feed_through_mode => "dont_care",
 	operation_mode => "dual_port",
 	port_a_address_clear => "none",
@@ -656,17 +1096,97 @@ GENERIC MAP (
 PORT MAP (
 	portawe => GND,
 	portbre => VCC,
-	clk0 => \CLK~inputclkctrl_outclk\,
-	clk1 => \CLK~inputclkctrl_outclk\,
+	clk0 => \ALT_INV_CLK~inputclkctrl_outclk\,
+	clk1 => \ALT_INV_CLK~inputclkctrl_outclk\,
 	ena0 => GND,
 	ena2 => VCC,
 	ena3 => VCC,
-	portadatain => \inst|altsyncram_component|auto_generated|ram_block1a0_PORTADATAIN_bus\,
-	portaaddr => \inst|altsyncram_component|auto_generated|ram_block1a0_PORTAADDR_bus\,
-	portbaddr => \inst|altsyncram_component|auto_generated|ram_block1a0_PORTBADDR_bus\,
+	portadatain => \inst1|altsyncram_component|auto_generated|ram_block1a0_PORTADATAIN_bus\,
+	portaaddr => \inst1|altsyncram_component|auto_generated|ram_block1a0_PORTAADDR_bus\,
+	portbaddr => \inst1|altsyncram_component|auto_generated|ram_block1a0_PORTBADDR_bus\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
-	portbdataout => \inst|altsyncram_component|auto_generated|ram_block1a0_PORTBDATAOUT_bus\);
+	portbdataout => \inst1|altsyncram_component|auto_generated|ram_block1a0_PORTBDATAOUT_bus\);
+
+\inst|altsyncram_component|auto_generated|ram_block1a18\ : stratixiii_ram_block
+-- pragma translate_off
+GENERIC MAP (
+	mem_init0 => X"00000000000000000000000020000000000000000000002000000000800002901040002903084080103440081002000002008C242B0802020051002040001908C240000020000000",
+	clk0_core_clock_enable => "ena2",
+	clk0_input_clock_enable => "ena2",
+	clock_duty_cycle_dependence => "on",
+	data_interleave_offset_in_bits => 1,
+	data_interleave_width_in_bits => 1,
+	init_file => "./MemContentInstance/IMemPipe.mif",
+	init_file_layout => "port_a",
+	logical_ram_name => "InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_dki1:auto_generated|ALTSYNCRAM",
+	operation_mode => "single_port",
+	port_a_address_clear => "none",
+	port_a_address_width => 5,
+	port_a_byte_enable_clock => "none",
+	port_a_data_out_clear => "none",
+	port_a_data_out_clock => "clock0",
+	port_a_data_width => 18,
+	port_a_first_address => 0,
+	port_a_first_bit_number => 18,
+	port_a_last_address => 31,
+	port_a_logical_ram_depth => 32,
+	port_a_logical_ram_width => 32,
+	port_a_read_during_write_mode => "dont_care",
+	port_b_address_width => 5,
+	port_b_data_width => 18,
+	ram_block_type => "M9K")
+-- pragma translate_on
+PORT MAP (
+	portawe => GND,
+	portare => VCC,
+	clk0 => \ALT_INV_CLK~inputclkctrl_outclk\,
+	ena2 => VCC,
+	portadatain => \inst|altsyncram_component|auto_generated|ram_block1a18_PORTADATAIN_bus\,
+	portaaddr => \inst|altsyncram_component|auto_generated|ram_block1a18_PORTAADDR_bus\,
+	devclrn => ww_devclrn,
+	devpor => ww_devpor,
+	portadataout => \inst|altsyncram_component|auto_generated|ram_block1a18_PORTADATAOUT_bus\);
+
+\inst|altsyncram_component|auto_generated|ram_block1a0\ : stratixiii_ram_block
+-- pragma translate_off
+GENERIC MAP (
+	mem_init0 => X"00000000000000000000000001AC6F0B1C03C70021BC0BFFFC00000003238240000C30257FFFCFFFFFFFFEFFFF8000D182200143005040010FFFCBFFFC1820001401820800100820",
+	clk0_core_clock_enable => "ena2",
+	clk0_input_clock_enable => "ena2",
+	clock_duty_cycle_dependence => "on",
+	data_interleave_offset_in_bits => 1,
+	data_interleave_width_in_bits => 1,
+	init_file => "./MemContentInstance/IMemPipe.mif",
+	init_file_layout => "port_a",
+	logical_ram_name => "InstMemCore:inst|altsyncram:altsyncram_component|altsyncram_dki1:auto_generated|ALTSYNCRAM",
+	operation_mode => "single_port",
+	port_a_address_clear => "none",
+	port_a_address_width => 5,
+	port_a_byte_enable_clock => "none",
+	port_a_data_out_clear => "none",
+	port_a_data_out_clock => "clock0",
+	port_a_data_width => 18,
+	port_a_first_address => 0,
+	port_a_first_bit_number => 0,
+	port_a_last_address => 31,
+	port_a_logical_ram_depth => 32,
+	port_a_logical_ram_width => 32,
+	port_a_read_during_write_mode => "dont_care",
+	port_b_address_width => 5,
+	port_b_data_width => 18,
+	ram_block_type => "M9K")
+-- pragma translate_on
+PORT MAP (
+	portawe => GND,
+	portare => VCC,
+	clk0 => \ALT_INV_CLK~inputclkctrl_outclk\,
+	ena2 => VCC,
+	portadatain => \inst|altsyncram_component|auto_generated|ram_block1a0_PORTADATAIN_bus\,
+	portaaddr => \inst|altsyncram_component|auto_generated|ram_block1a0_PORTAADDR_bus\,
+	devclrn => ww_devclrn,
+	devpor => ww_devpor,
+	portadataout => \inst|altsyncram_component|auto_generated|ram_block1a0_PORTADATAOUT_bus\);
 
 \PC[31]~input\ : stratixiii_io_ibuf
 -- pragma translate_off
