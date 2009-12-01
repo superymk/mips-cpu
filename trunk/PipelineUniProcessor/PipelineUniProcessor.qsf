@@ -63,7 +63,6 @@ set_global_assignment -name VHDL_FILE ../MotherBoard/DataRAM.vhd
 set_global_assignment -name BSF_FILE ../MotherBoard/DataRAM.bsf
 set_global_assignment -name SOURCE_FILE ../MotherBoard/DataRAM.cmp
 set_global_assignment -name QIP_FILE ../MotherBoard/DataRAM.qip
-set_global_assignment -name MIF_FILE MemContentInstance/IMemPipe.mif
 set_global_assignment -name AHDL_FILE Comp32.tdf
 set_global_assignment -name BDF_FILE "ID-EXE-SIGNAL-BUFFER.bdf"
 set_global_assignment -name BDF_FILE PCDecision.bdf

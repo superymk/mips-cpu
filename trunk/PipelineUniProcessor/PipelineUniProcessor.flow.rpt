@@ -1,5 +1,5 @@
 Flow report for PipelineUniProcessor
-Thu Nov 26 00:22:29 2009
+Tue Dec 01 22:56:59 2009
 Quartus II Version 9.0 Build 132 02/25/2009 SJ Full Version
 
 
@@ -38,17 +38,17 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------+
 ; Flow Summary                                                             ;
 +-------------------------------+------------------------------------------+
-; Flow Status                   ; Successful - Thu Nov 26 00:22:29 2009    ;
+; Flow Status                   ; Successful - Tue Dec 01 22:56:59 2009    ;
 ; Quartus II Version            ; 9.0 Build 132 02/25/2009 SJ Full Version ;
 ; Revision Name                 ; PipelineUniProcessor                     ;
 ; Top-level Entity Name         ; MotherBoard                              ;
 ; Family                        ; Stratix II                               ;
 ; Met timing requirements       ; Yes                                      ;
 ; Logic utilization             ; 2 %                                      ;
-;     Combinational ALUTs       ; 1,637 / 106,032 ( 2 % )                  ;
-;     Dedicated logic registers ; 1,339 / 106,032 ( 1 % )                  ;
-; Total registers               ; 1339                                     ;
-; Total pins                    ; 100 / 743 ( 13 % )                       ;
+;     Combinational ALUTs       ; 1,659 / 106,032 ( 2 % )                  ;
+;     Dedicated logic registers ; 1,340 / 106,032 ( 1 % )                  ;
+; Total registers               ; 1340                                     ;
+; Total pins                    ; 132 / 743 ( 18 % )                       ;
 ; Total virtual pins            ; 0                                        ;
 ; Total block memory bits       ; 4,194,304 / 6,747,840 ( 62 % )           ;
 ; DSP block 9-bit elements      ; 0 / 504 ( 0 % )                          ;
@@ -64,7 +64,7 @@ applicable agreement for further details.
 +-------------------+----------------------+
 ; Option            ; Setting              ;
 +-------------------+----------------------+
-; Start date & time ; 11/26/2009 00:17:28  ;
+; Start date & time ; 12/01/2009 22:50:32  ;
 ; Main task         ; Compilation          ;
 ; Revision Name     ; PipelineUniProcessor ;
 +-------------------+----------------------+
@@ -75,7 +75,7 @@ applicable agreement for further details.
 +------------------------------------+----------------------------------------------+------------------------------+-------------+----------------------+
 ; Assignment Name                    ; Value                                        ; Default Value                ; Entity Name ; Section Id           ;
 +------------------------------------+----------------------------------------------+------------------------------+-------------+----------------------+
-; COMPILER_SIGNATURE_ID              ; 94265003581.125916584804992                  ; --                           ; --          ; --                   ;
+; COMPILER_SIGNATURE_ID              ; 81638347583.125967903203000                  ; --                           ; --          ; --                   ;
 ; EDA_DESIGN_ENTRY_SYNTHESIS_TOOL    ; Design Compiler                              ; <None>                       ; --          ; --                   ;
 ; EDA_INPUT_DATA_FORMAT              ; Verilog Hdl                                  ; --                           ; --          ; eda_design_synthesis ;
 ; EDA_INPUT_VCC_NAME                 ; Vdd                                          ; --                           ; --          ; eda_design_synthesis ;
@@ -133,12 +133,12 @@ applicable agreement for further details.
 +-------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name             ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +-------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis    ; 00:01:05     ; 1.0                     ; 268 MB              ; 00:01:04                           ;
-; Fitter                  ; 00:02:58     ; 1.6                     ; 536 MB              ; 00:03:45                           ;
-; Assembler               ; 00:00:31     ; 1.0                     ; 499 MB              ; 00:00:30                           ;
-; Classic Timing Analyzer ; 00:00:07     ; 1.0                     ; 174 MB              ; 00:00:07                           ;
-; EDA Netlist Writer      ; 00:00:10     ; 1.0                     ; 173 MB              ; 00:00:10                           ;
-; Total                   ; 00:04:51     ; --                      ; --                  ; 00:05:36                           ;
+; Analysis & Synthesis    ; 00:01:13     ; 1.0                     ; 233 MB              ; 00:01:11                           ;
+; Fitter                  ; 00:04:08     ; 1.7                     ; 537 MB              ; 00:04:38                           ;
+; Assembler               ; 00:00:37     ; 1.0                     ; 499 MB              ; 00:00:36                           ;
+; Classic Timing Analyzer ; 00:00:05     ; 1.0                     ; 173 MB              ; 00:00:04                           ;
+; EDA Netlist Writer      ; 00:00:12     ; 1.0                     ; 173 MB              ; 00:00:12                           ;
+; Total                   ; 00:06:15     ; --                      ; --                  ; 00:06:41                           ;
 +-------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -147,11 +147,11 @@ applicable agreement for further details.
 +-------------------------+------------------+------------+------------+----------------+
 ; Module Name             ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
 +-------------------------+------------------+------------+------------+----------------+
-; Analysis & Synthesis    ; founder-c5fd0b3  ; Windows XP ; 5.1        ; i686           ;
-; Fitter                  ; founder-c5fd0b3  ; Windows XP ; 5.1        ; i686           ;
-; Assembler               ; founder-c5fd0b3  ; Windows XP ; 5.1        ; i686           ;
-; Classic Timing Analyzer ; founder-c5fd0b3  ; Windows XP ; 5.1        ; i686           ;
-; EDA Netlist Writer      ; founder-c5fd0b3  ; Windows XP ; 5.1        ; i686           ;
+; Analysis & Synthesis    ; founder-bb7e454  ; Windows XP ; 5.1        ; i686           ;
+; Fitter                  ; founder-bb7e454  ; Windows XP ; 5.1        ; i686           ;
+; Assembler               ; founder-bb7e454  ; Windows XP ; 5.1        ; i686           ;
+; Classic Timing Analyzer ; founder-bb7e454  ; Windows XP ; 5.1        ; i686           ;
+; EDA Netlist Writer      ; founder-bb7e454  ; Windows XP ; 5.1        ; i686           ;
 +-------------------------+------------------+------------+------------+----------------+
 
 
