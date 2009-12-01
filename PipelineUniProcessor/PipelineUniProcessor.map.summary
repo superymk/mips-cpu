@@ -1,16 +1,15 @@
-Analysis & Synthesis Status : Successful - Mon Nov 23 16:07:03 2009
+Analysis & Synthesis Status : Successful - Thu Nov 26 00:18:33 2009
 Quartus II Version : 9.0 Build 132 02/25/2009 SJ Full Version
 Revision Name : PipelineUniProcessor
-Top-level Entity Name : InstMem
-Family : Stratix III
+Top-level Entity Name : MotherBoard
+Family : Stratix II
 Logic utilization : N/A
-    Combinational ALUTs : 1
-    Memory ALUTs : 0
-    Dedicated logic registers : 0
-Total registers : 0
-Total pins : 97
+    Combinational ALUTs : 1,636
+    Dedicated logic registers : 1,334
+Total registers : 1334
+Total pins : 100
 Total virtual pins : 0
-Total block memory bits : 2,048
-DSP block 18-bit elements : 0
+Total block memory bits : 4,194,304
+DSP block 9-bit elements : 0
 Total PLLs : 0
 Total DLLs : 0

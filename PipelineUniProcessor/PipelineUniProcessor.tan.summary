@@ -2,14 +2,54 @@
 Timing Analyzer Summary
 --------------------------------------------------------------------------------------
 
+Type           : Worst-case tsu
+Slack          : N/A
+Required Time  : None
+Actual Time    : 4.960 ns
+From           : INT
+To             : PipelineUniProcessor:IntelInside|PC-BUFFER:PCBUFFER|dffe32bit:inst|dffe8bit:diff32Part2|inst6
+From Clock     : --
+To Clock       : CLK
+Failed Paths   : 0
+
+Type           : Worst-case tco
+Slack          : N/A
+Required Time  : None
+Actual Time    : 20.262 ns
+From           : PipelineUniProcessor:IntelInside|ID-EXE-SIGNAL-BUFFER:inst13|dffe8bit:inst|inst3
+To             : TESTNEXTIADDR[30]
+From Clock     : CLK
+To Clock       : --
+Failed Paths   : 0
+
 Type           : Worst-case tpd
 Slack          : N/A
 Required Time  : None
-Actual Time    : 27.600 ns
-From           : INST[3]
-To             : NPC[4]
+Actual Time    : 12.379 ns
+From           : INT
+To             : TESTNEXTIADDR[30]
 From Clock     : --
 To Clock       : --
+Failed Paths   : 0
+
+Type           : Worst-case th
+Slack          : N/A
+Required Time  : None
+Actual Time    : -2.611 ns
+From           : INT
+To             : PipelineUniProcessor:IntelInside|IF-ID-INSTPC-BUFFER:inst1|dffe32bit:PCREGBUFFER|dffe8bit:diff32Part3|inst2
+From Clock     : --
+To Clock       : CLK
+Failed Paths   : 0
+
+Type           : Clock Setup: 'CLK'
+Slack          : N/A
+Required Time  : None
+Actual Time    : 64.67 MHz ( period = 15.464 ns )
+From           : PipelineUniProcessor:IntelInside|RegFile32x32:Regs|dffe32bit:inst14|dffe8bit:diff32Part2|inst2
+To             : PipelineUniProcessor:IntelInside|PC-BUFFER:PCBUFFER|dffe32bit:inst|dffe8bit:diff32Part1|inst
+From Clock     : CLK
+To Clock       : CLK
 Failed Paths   : 0
 
 Type           : Total number of failed paths

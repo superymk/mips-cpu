@@ -1,7 +1,15 @@
 <?xml version="1.0" ?>
 <LOG_ROOT>
 	<PROJECT NAME="PipelineUniProcessor">
-		<CBX_INST_ENTRY INSTANCE_NAME="|InstMem|lpm_ram_dp1:inst1|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_aor1.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|InstMem|lpm_rom0:inst|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_seb1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|MotherBoard|PipelineUniProcessor:IntelInside|RegFile32x32:Regs|LPM_MUX:55" CBX_FILE_NAME="mux_2rc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|MotherBoard|InstROM1:InstROM1|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_mh71.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|MotherBoard|PipelineUniProcessor:IntelInside|ALU:inst12|ALSHIFT:inst9|lpm_clArithshift32bit:inst|lpm_clshift:lpm_clshift_component" CBX_FILE_NAME="lpm_clshift_euc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|MotherBoard|PipelineUniProcessor:IntelInside|ALU:inst12|lpm_add_sub32BIT:inst5|lpm_add_sub:lpm_add_sub_component" CBX_FILE_NAME="add_sub_qkg.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|MotherBoard|PipelineUniProcessor:IntelInside|RegFile32x32:Regs|LPM_MUX:54" CBX_FILE_NAME="mux_2rc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|MotherBoard|DataRAM:DataRAM1|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_5ca1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|MotherBoard|PipelineUniProcessor:IntelInside|ALU:inst12|ALSHIFT:inst9|lpm_clLogicalshift32bit:inst8|lpm_clshift:lpm_clshift_component" CBX_FILE_NAME="lpm_clshift_vjc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|MotherBoard|PipelineUniProcessor:IntelInside|Comp32:inst9|lpm_compare:lpm_compare_component" CBX_FILE_NAME="cmpr_sjg.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|MotherBoard|PipelineUniProcessor:IntelInside|RegFile32x32:Regs|LPM_DECODE:37" CBX_FILE_NAME="decode_ktf.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|MotherBoard|lpm_ram_dp1:inst3|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_vas1.tdf"/>
 	</PROJECT>
 </LOG_ROOT>

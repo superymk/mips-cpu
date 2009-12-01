@@ -36,9 +36,9 @@
 # -------------------------------------------------------------------------- #
 
 
-set_global_assignment -name FAMILY "Stratix III"
+set_global_assignment -name FAMILY "Stratix II"
 set_global_assignment -name DEVICE AUTO
-set_global_assignment -name TOP_LEVEL_ENTITY InstMem
+set_global_assignment -name TOP_LEVEL_ENTITY MotherBoard
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 9.0
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "13:23:43  OCTOBER 15, 2009"
 set_global_assignment -name LAST_QUARTUS_VERSION 9.0
@@ -51,15 +51,18 @@ set_global_assignment -name EDA_OUTPUT_DATA_FORMAT VHDL -section_id eda_simulati
 set_global_assignment -name EDA_TIMING_ANALYSIS_TOOL "PrimeTime (Verilog)"
 set_global_assignment -name EDA_OUTPUT_DATA_FORMAT "VERILOG HDL" -section_id eda_timing_analysis
 set_global_assignment -name USE_GENERATED_PHYSICAL_CONSTRAINTS OFF -section_id eda_blast_fpga
-set_global_assignment -name USE_CONFIGURATION_DEVICE ON
 set_global_assignment -name INCREMENTAL_COMPILATION OFF
 set_global_assignment -name SIMULATION_MODE FUNCTIONAL
+set_global_assignment -name FITTER_EFFORT "STANDARD FIT"
+set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE ../MotherBoard/Test/PipelineUniProcessor.vwf
 set_global_assignment -name LL_ROOT_REGION ON -section_id "Root Region"
 set_global_assignment -name LL_MEMBER_STATE LOCKED -section_id "Root Region"
-set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE InstMem.vwf
-set_global_assignment -name FITTER_EFFORT "STANDARD FIT"
-set_global_assignment -name SOURCE_FILE InstMemCore.cmp
-set_global_assignment -name VHDL_FILE InstMemCore.vhd
+set_global_assignment -name QIP_FILE ../MotherBoard/lpm_ram_dp1.qip
+set_global_assignment -name VHDL_FILE ../MotherBoard/lpm_ram_dp1.vhd
+set_global_assignment -name VHDL_FILE ../MotherBoard/DataRAM.vhd
+set_global_assignment -name BSF_FILE ../MotherBoard/DataRAM.bsf
+set_global_assignment -name SOURCE_FILE ../MotherBoard/DataRAM.cmp
+set_global_assignment -name QIP_FILE ../MotherBoard/DataRAM.qip
 set_global_assignment -name MIF_FILE MemContentInstance/IMemPipe.mif
 set_global_assignment -name AHDL_FILE Comp32.tdf
 set_global_assignment -name BDF_FILE "ID-EXE-SIGNAL-BUFFER.bdf"
@@ -107,11 +110,7 @@ set_global_assignment -name BDF_FILE ../Modules/gates/ALSHIFT.bdf
 set_global_assignment -name QIP_FILE ../Modules/gates/lpm_clArithshift32bit.qip
 set_global_assignment -name BDF_FILE "EXE-MEM-SIGNAL-BUFFER.bdf"
 set_global_assignment -name BDF_FILE "EXE-MEM-INSTDATA-BUFFER.bdf"
-set_global_assignment -name QIP_FILE ../MotherBoard/Memory/DataRAM.qip
 set_global_assignment -name BDF_FILE "MEM-WB-SIGNAL-BUFFER.bdf"
 set_global_assignment -name BDF_FILE "MEM-WB-INSTDATA-BUFFER.bdf"
 set_global_assignment -name VECTOR_WAVEFORM_FILE ../MotherBoard/Test/PipelineUniProcessor.vwf
-set_global_assignment -name BDF_FILE InstMem.bdf
-set_global_assignment -name VECTOR_WAVEFORM_FILE InstMem.vwf
-set_global_assignment -name QIP_FILE lpm_ram_dp1.qip
-set_global_assignment -name QIP_FILE lpm_rom0.qip
+set_global_assignment -name QIP_FILE ../MotherBoard/InstROM1.qip
