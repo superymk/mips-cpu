@@ -1,5 +1,5 @@
 Analysis & Synthesis report for PipelineUniProcessor
-Thu Nov 26 00:18:33 2009
+Tue Dec 01 22:51:44 2009
 Quartus II Version 9.0 Build 132 02/25/2009 SJ Full Version
 
 
@@ -17,22 +17,20 @@ Quartus II Version 9.0 Build 132 02/25/2009 SJ Full Version
   9. General Register Statistics
  10. Multiplexer Restructuring Statistics (Restructuring Performed)
  11. Source assignments for DataRAM:DataRAM1|altsyncram:altsyncram_component|altsyncram_5ca1:auto_generated
- 12. Source assignments for InstROM1:InstROM1|altsyncram:altsyncram_component|altsyncram_mh71:auto_generated
- 13. Source assignments for lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated
- 14. Parameter Settings for User Entity Instance: PipelineUniProcessor:IntelInside|ALU:inst12|lpm_and32bit:inst|LPM_AND:lpm_and_component
- 15. Parameter Settings for User Entity Instance: PipelineUniProcessor:IntelInside|ALU:inst12|lpm_or32bit:inst1|LPM_OR:lpm_or_component
- 16. Parameter Settings for User Entity Instance: PipelineUniProcessor:IntelInside|ALU:inst12|lpm_add_sub32BIT:inst5|lpm_add_sub:lpm_add_sub_component
- 17. Parameter Settings for User Entity Instance: PipelineUniProcessor:IntelInside|ALU:inst12|ALSHIFT:inst9|lpm_clLogicalshift32bit:inst8|lpm_clshift:lpm_clshift_component
- 18. Parameter Settings for User Entity Instance: PipelineUniProcessor:IntelInside|ALU:inst12|ALSHIFT:inst9|lpm_clArithshift32bit:inst|lpm_clshift:lpm_clshift_component
- 19. Parameter Settings for User Entity Instance: PipelineUniProcessor:IntelInside|RegFile32x32:Regs|LPM_MUX:54
- 20. Parameter Settings for User Entity Instance: PipelineUniProcessor:IntelInside|RegFile32x32:Regs|LPM_DECODE:37
- 21. Parameter Settings for User Entity Instance: PipelineUniProcessor:IntelInside|RegFile32x32:Regs|LPM_MUX:55
- 22. Parameter Settings for User Entity Instance: PipelineUniProcessor:IntelInside|Comp32:inst9|lpm_compare:lpm_compare_component
- 23. Parameter Settings for User Entity Instance: DataRAM:DataRAM1|altsyncram:altsyncram_component
- 24. Parameter Settings for User Entity Instance: InstROM1:InstROM1|altsyncram:altsyncram_component
- 25. Parameter Settings for User Entity Instance: lpm_ram_dp1:inst3|altsyncram:altsyncram_component
- 26. altsyncram Parameter Settings by Entity Instance
- 27. Analysis & Synthesis Messages
+ 12. Source assignments for InstROM1:InstROM1|altsyncram:altsyncram_component|altsyncram_b881:auto_generated
+ 13. Parameter Settings for User Entity Instance: PipelineUniProcessor:IntelInside|ALU:inst12|lpm_and32bit:inst|LPM_AND:lpm_and_component
+ 14. Parameter Settings for User Entity Instance: PipelineUniProcessor:IntelInside|ALU:inst12|lpm_or32bit:inst1|LPM_OR:lpm_or_component
+ 15. Parameter Settings for User Entity Instance: PipelineUniProcessor:IntelInside|ALU:inst12|lpm_add_sub32BIT:inst5|lpm_add_sub:lpm_add_sub_component
+ 16. Parameter Settings for User Entity Instance: PipelineUniProcessor:IntelInside|ALU:inst12|ALSHIFT:inst9|lpm_clLogicalshift32bit:inst8|lpm_clshift:lpm_clshift_component
+ 17. Parameter Settings for User Entity Instance: PipelineUniProcessor:IntelInside|ALU:inst12|ALSHIFT:inst9|lpm_clArithshift32bit:inst|lpm_clshift:lpm_clshift_component
+ 18. Parameter Settings for User Entity Instance: PipelineUniProcessor:IntelInside|RegFile32x32:Regs|LPM_MUX:54
+ 19. Parameter Settings for User Entity Instance: PipelineUniProcessor:IntelInside|RegFile32x32:Regs|LPM_DECODE:37
+ 20. Parameter Settings for User Entity Instance: PipelineUniProcessor:IntelInside|RegFile32x32:Regs|LPM_MUX:55
+ 21. Parameter Settings for User Entity Instance: PipelineUniProcessor:IntelInside|Comp32:inst9|lpm_compare:lpm_compare_component
+ 22. Parameter Settings for User Entity Instance: DataRAM:DataRAM1|altsyncram:altsyncram_component
+ 23. Parameter Settings for User Entity Instance: InstROM1:InstROM1|altsyncram:altsyncram_component
+ 24. altsyncram Parameter Settings by Entity Instance
+ 25. Analysis & Synthesis Messages
 
 
 
@@ -58,16 +56,16 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                             ;
 +-------------------------------+------------------------------------------+
-; Analysis & Synthesis Status   ; Successful - Thu Nov 26 00:18:33 2009    ;
+; Analysis & Synthesis Status   ; Successful - Tue Dec 01 22:51:44 2009    ;
 ; Quartus II Version            ; 9.0 Build 132 02/25/2009 SJ Full Version ;
 ; Revision Name                 ; PipelineUniProcessor                     ;
 ; Top-level Entity Name         ; MotherBoard                              ;
 ; Family                        ; Stratix II                               ;
 ; Logic utilization             ; N/A                                      ;
-;     Combinational ALUTs       ; 1,636                                    ;
-;     Dedicated logic registers ; 1,334                                    ;
-; Total registers               ; 1334                                     ;
-; Total pins                    ; 100                                      ;
+;     Combinational ALUTs       ; 1,658                                    ;
+;     Dedicated logic registers ; 1,330                                    ;
+; Total registers               ; 1330                                     ;
+; Total pins                    ; 132                                      ;
 ; Total virtual pins            ; 0                                        ;
 ; Total block memory bits       ; 4,194,304                                ;
 ; DSP block 9-bit elements      ; 0                                        ;
@@ -155,102 +153,99 @@ applicable agreement for further details.
 +----------------------------------------------------------------+--------------------+----------------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                                                                   ;
-+----------------------------------------------+-----------------+-------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------+
-; File Name with User-Entered Path             ; Used in Netlist ; File Type                                             ; File Name with Absolute Path                                                                                    ;
-+----------------------------------------------+-----------------+-------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------+
-; ../MotherBoard/lpm_ram_dp1.vhd               ; yes             ; User Wizard-Generated File                            ; F:/WorkSpace/Workspace/MasterLife/TERM 1/Architecture/mips-cpu/MotherBoard/lpm_ram_dp1.vhd                      ;
-; ../MotherBoard/DataRAM.vhd                   ; yes             ; User Wizard-Generated File                            ; F:/WorkSpace/Workspace/MasterLife/TERM 1/Architecture/mips-cpu/MotherBoard/DataRAM.vhd                          ;
-; Comp32.tdf                                   ; yes             ; User Wizard-Generated File                            ; F:/WorkSpace/Workspace/MasterLife/TERM 1/Architecture/mips-cpu/PipelineUniProcessor/Comp32.tdf                  ;
-; ID-EXE-SIGNAL-BUFFER.bdf                     ; yes             ; User Block Diagram/Schematic File                     ; F:/WorkSpace/Workspace/MasterLife/TERM 1/Architecture/mips-cpu/PipelineUniProcessor/ID-EXE-SIGNAL-BUFFER.bdf    ;
-; PCDecision.bdf                               ; yes             ; User Block Diagram/Schematic File                     ; F:/WorkSpace/Workspace/MasterLife/TERM 1/Architecture/mips-cpu/PipelineUniProcessor/PCDecision.bdf              ;
-; BasicControlUnit.bdf                         ; yes             ; User Block Diagram/Schematic File                     ; F:/WorkSpace/Workspace/MasterLife/TERM 1/Architecture/mips-cpu/PipelineUniProcessor/BasicControlUnit.bdf        ;
-; PipelineUniProcessor.bdf                     ; yes             ; User Block Diagram/Schematic File                     ; F:/WorkSpace/Workspace/MasterLife/TERM 1/Architecture/mips-cpu/PipelineUniProcessor/PipelineUniProcessor.bdf    ;
-; PC-BUFFER.bdf                                ; yes             ; User Block Diagram/Schematic File                     ; F:/WorkSpace/Workspace/MasterLife/TERM 1/Architecture/mips-cpu/PipelineUniProcessor/PC-BUFFER.bdf               ;
-; ../Modules/reg/dffe4bit.bdf                  ; yes             ; User Block Diagram/Schematic File                     ; F:/WorkSpace/Workspace/MasterLife/TERM 1/Architecture/mips-cpu/Modules/reg/dffe4bit.bdf                         ;
-; ../Modules/reg/dffe8bit.bdf                  ; yes             ; User Block Diagram/Schematic File                     ; F:/WorkSpace/Workspace/MasterLife/TERM 1/Architecture/mips-cpu/Modules/reg/dffe8bit.bdf                         ;
-; ../Modules/reg/dffe32bit.bdf                 ; yes             ; User Block Diagram/Schematic File                     ; F:/WorkSpace/Workspace/MasterLife/TERM 1/Architecture/mips-cpu/Modules/reg/dffe32bit.bdf                        ;
-; ../Modules/mux/mux2x1bit.bdf                 ; yes             ; User Block Diagram/Schematic File                     ; F:/WorkSpace/Workspace/MasterLife/TERM 1/Architecture/mips-cpu/Modules/mux/mux2x1bit.bdf                        ;
-; ../Modules/mux/mux2x4bit.bdf                 ; yes             ; User Block Diagram/Schematic File                     ; F:/WorkSpace/Workspace/MasterLife/TERM 1/Architecture/mips-cpu/Modules/mux/mux2x4bit.bdf                        ;
-; ../Modules/mux/mux2x8bit.bdf                 ; yes             ; User Block Diagram/Schematic File                     ; F:/WorkSpace/Workspace/MasterLife/TERM 1/Architecture/mips-cpu/Modules/mux/mux2x8bit.bdf                        ;
-; ../Modules/mux/mux2x32bit.bdf                ; yes             ; User Block Diagram/Schematic File                     ; F:/WorkSpace/Workspace/MasterLife/TERM 1/Architecture/mips-cpu/Modules/mux/mux2x32bit.bdf                       ;
-; ../Modules/add/add1bit.bdf                   ; yes             ; User Block Diagram/Schematic File                     ; F:/WorkSpace/Workspace/MasterLife/TERM 1/Architecture/mips-cpu/Modules/add/add1bit.bdf                          ;
-; ../Modules/add/add8bit.bdf                   ; yes             ; User Block Diagram/Schematic File                     ; F:/WorkSpace/Workspace/MasterLife/TERM 1/Architecture/mips-cpu/Modules/add/add8bit.bdf                          ;
-; ../Modules/add/add32bit.bdf                  ; yes             ; User Block Diagram/Schematic File                     ; F:/WorkSpace/Workspace/MasterLife/TERM 1/Architecture/mips-cpu/Modules/add/add32bit.bdf                         ;
-; ../Modules/add/add32bitci.bdf                ; yes             ; User Block Diagram/Schematic File                     ; F:/WorkSpace/Workspace/MasterLife/TERM 1/Architecture/mips-cpu/Modules/add/add32bitci.bdf                       ;
-; ProcessPC.bdf                                ; yes             ; User Block Diagram/Schematic File                     ; F:/WorkSpace/Workspace/MasterLife/TERM 1/Architecture/mips-cpu/PipelineUniProcessor/ProcessPC.bdf               ;
-; INST-FETCHER.bdf                             ; yes             ; User Block Diagram/Schematic File                     ; F:/WorkSpace/Workspace/MasterLife/TERM 1/Architecture/mips-cpu/PipelineUniProcessor/INST-FETCHER.bdf            ;
-; IF-ID-INSTPC-BUFFER.bdf                      ; yes             ; User Block Diagram/Schematic File                     ; F:/WorkSpace/Workspace/MasterLife/TERM 1/Architecture/mips-cpu/PipelineUniProcessor/IF-ID-INSTPC-BUFFER.bdf     ;
-; IF-ID-INT-BUFFER.bdf                         ; yes             ; User Block Diagram/Schematic File                     ; F:/WorkSpace/Workspace/MasterLife/TERM 1/Architecture/mips-cpu/PipelineUniProcessor/IF-ID-INT-BUFFER.bdf        ;
-; InstTranslator.tdf                           ; yes             ; User AHDL File                                        ; F:/WorkSpace/Workspace/MasterLife/TERM 1/Architecture/mips-cpu/PipelineUniProcessor/InstTranslator.tdf          ;
-; InstDecoder.tdf                              ; yes             ; User AHDL File                                        ; F:/WorkSpace/Workspace/MasterLife/TERM 1/Architecture/mips-cpu/PipelineUniProcessor/InstDecoder.tdf             ;
-; ControlUnit.bdf                              ; yes             ; User Block Diagram/Schematic File                     ; F:/WorkSpace/Workspace/MasterLife/TERM 1/Architecture/mips-cpu/PipelineUniProcessor/ControlUnit.bdf             ;
-; HazardControlUnit.tdf                        ; yes             ; User AHDL File                                        ; F:/WorkSpace/Workspace/MasterLife/TERM 1/Architecture/mips-cpu/PipelineUniProcessor/HazardControlUnit.tdf       ;
-; CtrlStall.tdf                                ; yes             ; User AHDL File                                        ; F:/WorkSpace/Workspace/MasterLife/TERM 1/Architecture/mips-cpu/PipelineUniProcessor/CtrlStall.tdf               ;
-; RegFile32x32.bdf                             ; yes             ; User Block Diagram/Schematic File                     ; F:/WorkSpace/Workspace/MasterLife/TERM 1/Architecture/mips-cpu/PipelineUniProcessor/RegFile32x32.bdf            ;
-; ForwardControlUnit.tdf                       ; yes             ; User AHDL File                                        ; F:/WorkSpace/Workspace/MasterLife/TERM 1/Architecture/mips-cpu/PipelineUniProcessor/ForwardControlUnit.tdf      ;
-; InstDisassembly.tdf                          ; yes             ; User AHDL File                                        ; F:/WorkSpace/Workspace/MasterLife/TERM 1/Architecture/mips-cpu/PipelineUniProcessor/InstDisassembly.tdf         ;
-; SignExt.tdf                                  ; yes             ; User AHDL File                                        ; F:/WorkSpace/Workspace/MasterLife/TERM 1/Architecture/mips-cpu/PipelineUniProcessor/SignExt.tdf                 ;
-; ../Modules/mux/mux2x5bit.tdf                 ; yes             ; User AHDL File                                        ; F:/WorkSpace/Workspace/MasterLife/TERM 1/Architecture/mips-cpu/Modules/mux/mux2x5bit.tdf                        ;
-; ../Modules/mux/mux4x32bit.tdf                ; yes             ; User AHDL File                                        ; F:/WorkSpace/Workspace/MasterLife/TERM 1/Architecture/mips-cpu/Modules/mux/mux4x32bit.tdf                       ;
-; ID-EXE-INSTDATA-BUFFER.bdf                   ; yes             ; User Block Diagram/Schematic File                     ; F:/WorkSpace/Workspace/MasterLife/TERM 1/Architecture/mips-cpu/PipelineUniProcessor/ID-EXE-INSTDATA-BUFFER.bdf  ;
-; ../Modules/reg/dffe5bit.bdf                  ; yes             ; User Block Diagram/Schematic File                     ; F:/WorkSpace/Workspace/MasterLife/TERM 1/Architecture/mips-cpu/Modules/reg/dffe5bit.bdf                         ;
-; ../MotherBoard/MotherBoard.bdf               ; yes             ; User Block Diagram/Schematic File                     ; F:/WorkSpace/Workspace/MasterLife/TERM 1/Architecture/mips-cpu/MotherBoard/MotherBoard.bdf                      ;
-; ALU.bdf                                      ; yes             ; User Block Diagram/Schematic File                     ; F:/WorkSpace/Workspace/MasterLife/TERM 1/Architecture/mips-cpu/PipelineUniProcessor/ALU.bdf                     ;
-; ../Modules/gates/lpm_and32bit.vhd            ; yes             ; User Wizard-Generated File                            ; F:/WorkSpace/Workspace/MasterLife/TERM 1/Architecture/mips-cpu/Modules/gates/lpm_and32bit.vhd                   ;
-; ../Modules/gates/lpm_or32bit.vhd             ; yes             ; User Wizard-Generated File                            ; F:/WorkSpace/Workspace/MasterLife/TERM 1/Architecture/mips-cpu/Modules/gates/lpm_or32bit.vhd                    ;
-; IsZero.tdf                                   ; yes             ; User AHDL File                                        ; F:/WorkSpace/Workspace/MasterLife/TERM 1/Architecture/mips-cpu/PipelineUniProcessor/IsZero.tdf                  ;
-; ../Modules/add/lpm_add_sub32BIT.vhd          ; yes             ; User Wizard-Generated File                            ; F:/WorkSpace/Workspace/MasterLife/TERM 1/Architecture/mips-cpu/Modules/add/lpm_add_sub32BIT.vhd                 ;
-; ../Modules/gates/lpm_clLogicalshift32bit.vhd ; yes             ; User Wizard-Generated File                            ; F:/WorkSpace/Workspace/MasterLife/TERM 1/Architecture/mips-cpu/Modules/gates/lpm_clLogicalshift32bit.vhd        ;
-; ../Modules/gates/ALSHIFT.bdf                 ; yes             ; User Block Diagram/Schematic File                     ; F:/WorkSpace/Workspace/MasterLife/TERM 1/Architecture/mips-cpu/Modules/gates/ALSHIFT.bdf                        ;
-; ../Modules/gates/lpm_clArithshift32bit.vhd   ; yes             ; User Wizard-Generated File                            ; F:/WorkSpace/Workspace/MasterLife/TERM 1/Architecture/mips-cpu/Modules/gates/lpm_clArithshift32bit.vhd          ;
-; EXE-MEM-SIGNAL-BUFFER.bdf                    ; yes             ; User Block Diagram/Schematic File                     ; F:/WorkSpace/Workspace/MasterLife/TERM 1/Architecture/mips-cpu/PipelineUniProcessor/EXE-MEM-SIGNAL-BUFFER.bdf   ;
-; EXE-MEM-INSTDATA-BUFFER.bdf                  ; yes             ; User Block Diagram/Schematic File                     ; F:/WorkSpace/Workspace/MasterLife/TERM 1/Architecture/mips-cpu/PipelineUniProcessor/EXE-MEM-INSTDATA-BUFFER.bdf ;
-; MEM-WB-SIGNAL-BUFFER.bdf                     ; yes             ; User Block Diagram/Schematic File                     ; F:/WorkSpace/Workspace/MasterLife/TERM 1/Architecture/mips-cpu/PipelineUniProcessor/MEM-WB-SIGNAL-BUFFER.bdf    ;
-; MEM-WB-INSTDATA-BUFFER.bdf                   ; yes             ; User Block Diagram/Schematic File                     ; F:/WorkSpace/Workspace/MasterLife/TERM 1/Architecture/mips-cpu/PipelineUniProcessor/MEM-WB-INSTDATA-BUFFER.bdf  ;
-; ../MotherBoard/InstROM1.vhd                  ; yes             ; User Wizard-Generated File                            ; F:/WorkSpace/Workspace/MasterLife/TERM 1/Architecture/mips-cpu/MotherBoard/InstROM1.vhd                         ;
-; lpm_compare.inc                              ; yes             ; Megafunction                                          ; d:/altera/90/quartus/libraries/megafunctions/lpm_compare.inc                                                    ;
-; LPM_AND.tdf                                  ; yes             ; Megafunction                                          ; d:/altera/90/quartus/libraries/megafunctions/LPM_AND.tdf                                                        ;
-; aglobal90.inc                                ; yes             ; Megafunction                                          ; d:/altera/90/quartus/libraries/megafunctions/aglobal90.inc                                                      ;
-; LPM_OR.tdf                                   ; yes             ; Megafunction                                          ; d:/altera/90/quartus/libraries/megafunctions/LPM_OR.tdf                                                         ;
-; lpm_add_sub.tdf                              ; yes             ; Megafunction                                          ; d:/altera/90/quartus/libraries/megafunctions/lpm_add_sub.tdf                                                    ;
-; addcore.inc                                  ; yes             ; Megafunction                                          ; d:/altera/90/quartus/libraries/megafunctions/addcore.inc                                                        ;
-; look_add.inc                                 ; yes             ; Megafunction                                          ; d:/altera/90/quartus/libraries/megafunctions/look_add.inc                                                       ;
-; bypassff.inc                                 ; yes             ; Megafunction                                          ; d:/altera/90/quartus/libraries/megafunctions/bypassff.inc                                                       ;
-; altshift.inc                                 ; yes             ; Megafunction                                          ; d:/altera/90/quartus/libraries/megafunctions/altshift.inc                                                       ;
-; alt_stratix_add_sub.inc                      ; yes             ; Megafunction                                          ; d:/altera/90/quartus/libraries/megafunctions/alt_stratix_add_sub.inc                                            ;
-; alt_mercury_add_sub.inc                      ; yes             ; Megafunction                                          ; d:/altera/90/quartus/libraries/megafunctions/alt_mercury_add_sub.inc                                            ;
-; db/add_sub_qkg.tdf                           ; yes             ; Auto-Generated Megafunction                           ; F:/WorkSpace/Workspace/MasterLife/TERM 1/Architecture/mips-cpu/PipelineUniProcessor/db/add_sub_qkg.tdf          ;
-; lpm_clshift.tdf                              ; yes             ; Megafunction                                          ; d:/altera/90/quartus/libraries/megafunctions/lpm_clshift.tdf                                                    ;
-; db/lpm_clshift_vjc.tdf                       ; yes             ; Auto-Generated Megafunction                           ; F:/WorkSpace/Workspace/MasterLife/TERM 1/Architecture/mips-cpu/PipelineUniProcessor/db/lpm_clshift_vjc.tdf      ;
-; db/lpm_clshift_euc.tdf                       ; yes             ; Auto-Generated Megafunction                           ; F:/WorkSpace/Workspace/MasterLife/TERM 1/Architecture/mips-cpu/PipelineUniProcessor/db/lpm_clshift_euc.tdf      ;
-; LPM_MUX.tdf                                  ; yes             ; Megafunction                                          ; d:/altera/90/quartus/libraries/megafunctions/LPM_MUX.tdf                                                        ;
-; muxlut.inc                                   ; yes             ; Megafunction                                          ; d:/altera/90/quartus/libraries/megafunctions/muxlut.inc                                                         ;
-; db/mux_2rc.tdf                               ; yes             ; Auto-Generated Megafunction                           ; F:/WorkSpace/Workspace/MasterLife/TERM 1/Architecture/mips-cpu/PipelineUniProcessor/db/mux_2rc.tdf              ;
-; LPM_DECODE.tdf                               ; yes             ; Megafunction                                          ; d:/altera/90/quartus/libraries/megafunctions/LPM_DECODE.tdf                                                     ;
-; declut.inc                                   ; yes             ; Megafunction                                          ; d:/altera/90/quartus/libraries/megafunctions/declut.inc                                                         ;
-; lpm_constant.inc                             ; yes             ; Megafunction                                          ; d:/altera/90/quartus/libraries/megafunctions/lpm_constant.inc                                                   ;
-; db/decode_ktf.tdf                            ; yes             ; Auto-Generated Megafunction                           ; F:/WorkSpace/Workspace/MasterLife/TERM 1/Architecture/mips-cpu/PipelineUniProcessor/db/decode_ktf.tdf           ;
-; lpm_compare.tdf                              ; yes             ; Megafunction                                          ; d:/altera/90/quartus/libraries/megafunctions/lpm_compare.tdf                                                    ;
-; comptree.inc                                 ; yes             ; Megafunction                                          ; d:/altera/90/quartus/libraries/megafunctions/comptree.inc                                                       ;
-; db/cmpr_sjg.tdf                              ; yes             ; Auto-Generated Megafunction                           ; F:/WorkSpace/Workspace/MasterLife/TERM 1/Architecture/mips-cpu/PipelineUniProcessor/db/cmpr_sjg.tdf             ;
-; altsyncram.tdf                               ; yes             ; Megafunction                                          ; d:/altera/90/quartus/libraries/megafunctions/altsyncram.tdf                                                     ;
-; stratix_ram_block.inc                        ; yes             ; Megafunction                                          ; d:/altera/90/quartus/libraries/megafunctions/stratix_ram_block.inc                                              ;
-; lpm_mux.inc                                  ; yes             ; Megafunction                                          ; d:/altera/90/quartus/libraries/megafunctions/lpm_mux.inc                                                        ;
-; lpm_decode.inc                               ; yes             ; Megafunction                                          ; d:/altera/90/quartus/libraries/megafunctions/lpm_decode.inc                                                     ;
-; a_rdenreg.inc                                ; yes             ; Megafunction                                          ; d:/altera/90/quartus/libraries/megafunctions/a_rdenreg.inc                                                      ;
-; altrom.inc                                   ; yes             ; Megafunction                                          ; d:/altera/90/quartus/libraries/megafunctions/altrom.inc                                                         ;
-; altram.inc                                   ; yes             ; Megafunction                                          ; d:/altera/90/quartus/libraries/megafunctions/altram.inc                                                         ;
-; altdpram.inc                                 ; yes             ; Megafunction                                          ; d:/altera/90/quartus/libraries/megafunctions/altdpram.inc                                                       ;
-; altqpram.inc                                 ; yes             ; Megafunction                                          ; d:/altera/90/quartus/libraries/megafunctions/altqpram.inc                                                       ;
-; db/altsyncram_5ca1.tdf                       ; yes             ; Auto-Generated Megafunction                           ; F:/WorkSpace/Workspace/MasterLife/TERM 1/Architecture/mips-cpu/PipelineUniProcessor/db/altsyncram_5ca1.tdf      ;
-; db/altsyncram_mh71.tdf                       ; yes             ; Auto-Generated Megafunction                           ; F:/WorkSpace/Workspace/MasterLife/TERM 1/Architecture/mips-cpu/PipelineUniProcessor/db/altsyncram_mh71.tdf      ;
-; IMemPipe.mif                                 ; yes             ; Auto-Generated Auto-Found Memory Initialization File  ; IMemPipe.mif                                                                                                    ;
-; db/decode_rqa.tdf                            ; yes             ; Auto-Generated Megafunction                           ; F:/WorkSpace/Workspace/MasterLife/TERM 1/Architecture/mips-cpu/PipelineUniProcessor/db/decode_rqa.tdf           ;
-; db/mux_omb.tdf                               ; yes             ; Auto-Generated Megafunction                           ; F:/WorkSpace/Workspace/MasterLife/TERM 1/Architecture/mips-cpu/PipelineUniProcessor/db/mux_omb.tdf              ;
-; db/altsyncram_vas1.tdf                       ; yes             ; Auto-Generated Megafunction                           ; F:/WorkSpace/Workspace/MasterLife/TERM 1/Architecture/mips-cpu/PipelineUniProcessor/db/altsyncram_vas1.tdf      ;
-+----------------------------------------------+-----------------+-------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                                         ;
++----------------------------------------------+-----------------+------------------------------------+--------------------------------------------------------------------------------------------------------------------------+
+; File Name with User-Entered Path             ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                                                                             ;
++----------------------------------------------+-----------------+------------------------------------+--------------------------------------------------------------------------------------------------------------------------+
+; ../MotherBoard/DataRAM.vhd                   ; yes             ; User Wizard-Generated File         ; F:/WorkSpace/Workspace/MasterLife/TERM 1/Computer Architecture/mips-cpu/MotherBoard/DataRAM.vhd                          ;
+; Comp32.tdf                                   ; yes             ; User Wizard-Generated File         ; F:/WorkSpace/Workspace/MasterLife/TERM 1/Computer Architecture/mips-cpu/PipelineUniProcessor/Comp32.tdf                  ;
+; ID-EXE-SIGNAL-BUFFER.bdf                     ; yes             ; User Block Diagram/Schematic File  ; F:/WorkSpace/Workspace/MasterLife/TERM 1/Computer Architecture/mips-cpu/PipelineUniProcessor/ID-EXE-SIGNAL-BUFFER.bdf    ;
+; PCDecision.bdf                               ; yes             ; User Block Diagram/Schematic File  ; F:/WorkSpace/Workspace/MasterLife/TERM 1/Computer Architecture/mips-cpu/PipelineUniProcessor/PCDecision.bdf              ;
+; BasicControlUnit.bdf                         ; yes             ; User Block Diagram/Schematic File  ; F:/WorkSpace/Workspace/MasterLife/TERM 1/Computer Architecture/mips-cpu/PipelineUniProcessor/BasicControlUnit.bdf        ;
+; PipelineUniProcessor.bdf                     ; yes             ; User Block Diagram/Schematic File  ; F:/WorkSpace/Workspace/MasterLife/TERM 1/Computer Architecture/mips-cpu/PipelineUniProcessor/PipelineUniProcessor.bdf    ;
+; PC-BUFFER.bdf                                ; yes             ; User Block Diagram/Schematic File  ; F:/WorkSpace/Workspace/MasterLife/TERM 1/Computer Architecture/mips-cpu/PipelineUniProcessor/PC-BUFFER.bdf               ;
+; ../Modules/reg/dffe4bit.bdf                  ; yes             ; User Block Diagram/Schematic File  ; F:/WorkSpace/Workspace/MasterLife/TERM 1/Computer Architecture/mips-cpu/Modules/reg/dffe4bit.bdf                         ;
+; ../Modules/reg/dffe8bit.bdf                  ; yes             ; User Block Diagram/Schematic File  ; F:/WorkSpace/Workspace/MasterLife/TERM 1/Computer Architecture/mips-cpu/Modules/reg/dffe8bit.bdf                         ;
+; ../Modules/reg/dffe32bit.bdf                 ; yes             ; User Block Diagram/Schematic File  ; F:/WorkSpace/Workspace/MasterLife/TERM 1/Computer Architecture/mips-cpu/Modules/reg/dffe32bit.bdf                        ;
+; ../Modules/mux/mux2x1bit.bdf                 ; yes             ; User Block Diagram/Schematic File  ; F:/WorkSpace/Workspace/MasterLife/TERM 1/Computer Architecture/mips-cpu/Modules/mux/mux2x1bit.bdf                        ;
+; ../Modules/mux/mux2x4bit.bdf                 ; yes             ; User Block Diagram/Schematic File  ; F:/WorkSpace/Workspace/MasterLife/TERM 1/Computer Architecture/mips-cpu/Modules/mux/mux2x4bit.bdf                        ;
+; ../Modules/mux/mux2x8bit.bdf                 ; yes             ; User Block Diagram/Schematic File  ; F:/WorkSpace/Workspace/MasterLife/TERM 1/Computer Architecture/mips-cpu/Modules/mux/mux2x8bit.bdf                        ;
+; ../Modules/mux/mux2x32bit.bdf                ; yes             ; User Block Diagram/Schematic File  ; F:/WorkSpace/Workspace/MasterLife/TERM 1/Computer Architecture/mips-cpu/Modules/mux/mux2x32bit.bdf                       ;
+; ../Modules/add/add1bit.bdf                   ; yes             ; User Block Diagram/Schematic File  ; F:/WorkSpace/Workspace/MasterLife/TERM 1/Computer Architecture/mips-cpu/Modules/add/add1bit.bdf                          ;
+; ../Modules/add/add8bit.bdf                   ; yes             ; User Block Diagram/Schematic File  ; F:/WorkSpace/Workspace/MasterLife/TERM 1/Computer Architecture/mips-cpu/Modules/add/add8bit.bdf                          ;
+; ../Modules/add/add32bit.bdf                  ; yes             ; User Block Diagram/Schematic File  ; F:/WorkSpace/Workspace/MasterLife/TERM 1/Computer Architecture/mips-cpu/Modules/add/add32bit.bdf                         ;
+; ../Modules/add/add32bitci.bdf                ; yes             ; User Block Diagram/Schematic File  ; F:/WorkSpace/Workspace/MasterLife/TERM 1/Computer Architecture/mips-cpu/Modules/add/add32bitci.bdf                       ;
+; ProcessPC.bdf                                ; yes             ; User Block Diagram/Schematic File  ; F:/WorkSpace/Workspace/MasterLife/TERM 1/Computer Architecture/mips-cpu/PipelineUniProcessor/ProcessPC.bdf               ;
+; INST-FETCHER.bdf                             ; yes             ; User Block Diagram/Schematic File  ; F:/WorkSpace/Workspace/MasterLife/TERM 1/Computer Architecture/mips-cpu/PipelineUniProcessor/INST-FETCHER.bdf            ;
+; IF-ID-INSTPC-BUFFER.bdf                      ; yes             ; User Block Diagram/Schematic File  ; F:/WorkSpace/Workspace/MasterLife/TERM 1/Computer Architecture/mips-cpu/PipelineUniProcessor/IF-ID-INSTPC-BUFFER.bdf     ;
+; IF-ID-INT-BUFFER.bdf                         ; yes             ; User Block Diagram/Schematic File  ; F:/WorkSpace/Workspace/MasterLife/TERM 1/Computer Architecture/mips-cpu/PipelineUniProcessor/IF-ID-INT-BUFFER.bdf        ;
+; InstTranslator.tdf                           ; yes             ; User AHDL File                     ; F:/WorkSpace/Workspace/MasterLife/TERM 1/Computer Architecture/mips-cpu/PipelineUniProcessor/InstTranslator.tdf          ;
+; InstDecoder.tdf                              ; yes             ; User AHDL File                     ; F:/WorkSpace/Workspace/MasterLife/TERM 1/Computer Architecture/mips-cpu/PipelineUniProcessor/InstDecoder.tdf             ;
+; ControlUnit.bdf                              ; yes             ; User Block Diagram/Schematic File  ; F:/WorkSpace/Workspace/MasterLife/TERM 1/Computer Architecture/mips-cpu/PipelineUniProcessor/ControlUnit.bdf             ;
+; HazardControlUnit.tdf                        ; yes             ; User AHDL File                     ; F:/WorkSpace/Workspace/MasterLife/TERM 1/Computer Architecture/mips-cpu/PipelineUniProcessor/HazardControlUnit.tdf       ;
+; CtrlStall.tdf                                ; yes             ; User AHDL File                     ; F:/WorkSpace/Workspace/MasterLife/TERM 1/Computer Architecture/mips-cpu/PipelineUniProcessor/CtrlStall.tdf               ;
+; RegFile32x32.bdf                             ; yes             ; User Block Diagram/Schematic File  ; F:/WorkSpace/Workspace/MasterLife/TERM 1/Computer Architecture/mips-cpu/PipelineUniProcessor/RegFile32x32.bdf            ;
+; ForwardControlUnit.tdf                       ; yes             ; User AHDL File                     ; F:/WorkSpace/Workspace/MasterLife/TERM 1/Computer Architecture/mips-cpu/PipelineUniProcessor/ForwardControlUnit.tdf      ;
+; InstDisassembly.tdf                          ; yes             ; User AHDL File                     ; F:/WorkSpace/Workspace/MasterLife/TERM 1/Computer Architecture/mips-cpu/PipelineUniProcessor/InstDisassembly.tdf         ;
+; SignExt.tdf                                  ; yes             ; User AHDL File                     ; F:/WorkSpace/Workspace/MasterLife/TERM 1/Computer Architecture/mips-cpu/PipelineUniProcessor/SignExt.tdf                 ;
+; ../Modules/mux/mux2x5bit.tdf                 ; yes             ; User AHDL File                     ; F:/WorkSpace/Workspace/MasterLife/TERM 1/Computer Architecture/mips-cpu/Modules/mux/mux2x5bit.tdf                        ;
+; ../Modules/mux/mux4x32bit.tdf                ; yes             ; User AHDL File                     ; F:/WorkSpace/Workspace/MasterLife/TERM 1/Computer Architecture/mips-cpu/Modules/mux/mux4x32bit.tdf                       ;
+; ID-EXE-INSTDATA-BUFFER.bdf                   ; yes             ; User Block Diagram/Schematic File  ; F:/WorkSpace/Workspace/MasterLife/TERM 1/Computer Architecture/mips-cpu/PipelineUniProcessor/ID-EXE-INSTDATA-BUFFER.bdf  ;
+; ../Modules/reg/dffe5bit.bdf                  ; yes             ; User Block Diagram/Schematic File  ; F:/WorkSpace/Workspace/MasterLife/TERM 1/Computer Architecture/mips-cpu/Modules/reg/dffe5bit.bdf                         ;
+; ../MotherBoard/MotherBoard.bdf               ; yes             ; User Block Diagram/Schematic File  ; F:/WorkSpace/Workspace/MasterLife/TERM 1/Computer Architecture/mips-cpu/MotherBoard/MotherBoard.bdf                      ;
+; ALU.bdf                                      ; yes             ; User Block Diagram/Schematic File  ; F:/WorkSpace/Workspace/MasterLife/TERM 1/Computer Architecture/mips-cpu/PipelineUniProcessor/ALU.bdf                     ;
+; ../Modules/gates/lpm_and32bit.vhd            ; yes             ; User Wizard-Generated File         ; F:/WorkSpace/Workspace/MasterLife/TERM 1/Computer Architecture/mips-cpu/Modules/gates/lpm_and32bit.vhd                   ;
+; ../Modules/gates/lpm_or32bit.vhd             ; yes             ; User Wizard-Generated File         ; F:/WorkSpace/Workspace/MasterLife/TERM 1/Computer Architecture/mips-cpu/Modules/gates/lpm_or32bit.vhd                    ;
+; IsZero.tdf                                   ; yes             ; User AHDL File                     ; F:/WorkSpace/Workspace/MasterLife/TERM 1/Computer Architecture/mips-cpu/PipelineUniProcessor/IsZero.tdf                  ;
+; ../Modules/add/lpm_add_sub32BIT.vhd          ; yes             ; User Wizard-Generated File         ; F:/WorkSpace/Workspace/MasterLife/TERM 1/Computer Architecture/mips-cpu/Modules/add/lpm_add_sub32BIT.vhd                 ;
+; ../Modules/gates/lpm_clLogicalshift32bit.vhd ; yes             ; User Wizard-Generated File         ; F:/WorkSpace/Workspace/MasterLife/TERM 1/Computer Architecture/mips-cpu/Modules/gates/lpm_clLogicalshift32bit.vhd        ;
+; ../Modules/gates/ALSHIFT.bdf                 ; yes             ; User Block Diagram/Schematic File  ; F:/WorkSpace/Workspace/MasterLife/TERM 1/Computer Architecture/mips-cpu/Modules/gates/ALSHIFT.bdf                        ;
+; ../Modules/gates/lpm_clArithshift32bit.vhd   ; yes             ; User Wizard-Generated File         ; F:/WorkSpace/Workspace/MasterLife/TERM 1/Computer Architecture/mips-cpu/Modules/gates/lpm_clArithshift32bit.vhd          ;
+; EXE-MEM-SIGNAL-BUFFER.bdf                    ; yes             ; User Block Diagram/Schematic File  ; F:/WorkSpace/Workspace/MasterLife/TERM 1/Computer Architecture/mips-cpu/PipelineUniProcessor/EXE-MEM-SIGNAL-BUFFER.bdf   ;
+; EXE-MEM-INSTDATA-BUFFER.bdf                  ; yes             ; User Block Diagram/Schematic File  ; F:/WorkSpace/Workspace/MasterLife/TERM 1/Computer Architecture/mips-cpu/PipelineUniProcessor/EXE-MEM-INSTDATA-BUFFER.bdf ;
+; MEM-WB-SIGNAL-BUFFER.bdf                     ; yes             ; User Block Diagram/Schematic File  ; F:/WorkSpace/Workspace/MasterLife/TERM 1/Computer Architecture/mips-cpu/PipelineUniProcessor/MEM-WB-SIGNAL-BUFFER.bdf    ;
+; MEM-WB-INSTDATA-BUFFER.bdf                   ; yes             ; User Block Diagram/Schematic File  ; F:/WorkSpace/Workspace/MasterLife/TERM 1/Computer Architecture/mips-cpu/PipelineUniProcessor/MEM-WB-INSTDATA-BUFFER.bdf  ;
+; ../MotherBoard/InstROM1.vhd                  ; yes             ; User Wizard-Generated File         ; F:/WorkSpace/Workspace/MasterLife/TERM 1/Computer Architecture/mips-cpu/MotherBoard/InstROM1.vhd                         ;
+; lpm_compare.inc                              ; yes             ; Megafunction                       ; e:/altera/90/quartus/libraries/megafunctions/lpm_compare.inc                                                             ;
+; LPM_AND.tdf                                  ; yes             ; Megafunction                       ; e:/altera/90/quartus/libraries/megafunctions/LPM_AND.tdf                                                                 ;
+; aglobal90.inc                                ; yes             ; Megafunction                       ; e:/altera/90/quartus/libraries/megafunctions/aglobal90.inc                                                               ;
+; LPM_OR.tdf                                   ; yes             ; Megafunction                       ; e:/altera/90/quartus/libraries/megafunctions/LPM_OR.tdf                                                                  ;
+; lpm_add_sub.tdf                              ; yes             ; Megafunction                       ; e:/altera/90/quartus/libraries/megafunctions/lpm_add_sub.tdf                                                             ;
+; addcore.inc                                  ; yes             ; Megafunction                       ; e:/altera/90/quartus/libraries/megafunctions/addcore.inc                                                                 ;
+; look_add.inc                                 ; yes             ; Megafunction                       ; e:/altera/90/quartus/libraries/megafunctions/look_add.inc                                                                ;
+; bypassff.inc                                 ; yes             ; Megafunction                       ; e:/altera/90/quartus/libraries/megafunctions/bypassff.inc                                                                ;
+; altshift.inc                                 ; yes             ; Megafunction                       ; e:/altera/90/quartus/libraries/megafunctions/altshift.inc                                                                ;
+; alt_stratix_add_sub.inc                      ; yes             ; Megafunction                       ; e:/altera/90/quartus/libraries/megafunctions/alt_stratix_add_sub.inc                                                     ;
+; alt_mercury_add_sub.inc                      ; yes             ; Megafunction                       ; e:/altera/90/quartus/libraries/megafunctions/alt_mercury_add_sub.inc                                                     ;
+; db/add_sub_qkg.tdf                           ; yes             ; Auto-Generated Megafunction        ; F:/WorkSpace/Workspace/MasterLife/TERM 1/Computer Architecture/mips-cpu/PipelineUniProcessor/db/add_sub_qkg.tdf          ;
+; lpm_clshift.tdf                              ; yes             ; Megafunction                       ; e:/altera/90/quartus/libraries/megafunctions/lpm_clshift.tdf                                                             ;
+; db/lpm_clshift_vjc.tdf                       ; yes             ; Auto-Generated Megafunction        ; F:/WorkSpace/Workspace/MasterLife/TERM 1/Computer Architecture/mips-cpu/PipelineUniProcessor/db/lpm_clshift_vjc.tdf      ;
+; db/lpm_clshift_euc.tdf                       ; yes             ; Auto-Generated Megafunction        ; F:/WorkSpace/Workspace/MasterLife/TERM 1/Computer Architecture/mips-cpu/PipelineUniProcessor/db/lpm_clshift_euc.tdf      ;
+; LPM_MUX.tdf                                  ; yes             ; Megafunction                       ; e:/altera/90/quartus/libraries/megafunctions/LPM_MUX.tdf                                                                 ;
+; muxlut.inc                                   ; yes             ; Megafunction                       ; e:/altera/90/quartus/libraries/megafunctions/muxlut.inc                                                                  ;
+; db/mux_2rc.tdf                               ; yes             ; Auto-Generated Megafunction        ; F:/WorkSpace/Workspace/MasterLife/TERM 1/Computer Architecture/mips-cpu/PipelineUniProcessor/db/mux_2rc.tdf              ;
+; LPM_DECODE.tdf                               ; yes             ; Megafunction                       ; e:/altera/90/quartus/libraries/megafunctions/LPM_DECODE.tdf                                                              ;
+; declut.inc                                   ; yes             ; Megafunction                       ; e:/altera/90/quartus/libraries/megafunctions/declut.inc                                                                  ;
+; lpm_constant.inc                             ; yes             ; Megafunction                       ; e:/altera/90/quartus/libraries/megafunctions/lpm_constant.inc                                                            ;
+; db/decode_ktf.tdf                            ; yes             ; Auto-Generated Megafunction        ; F:/WorkSpace/Workspace/MasterLife/TERM 1/Computer Architecture/mips-cpu/PipelineUniProcessor/db/decode_ktf.tdf           ;
+; lpm_compare.tdf                              ; yes             ; Megafunction                       ; e:/altera/90/quartus/libraries/megafunctions/lpm_compare.tdf                                                             ;
+; comptree.inc                                 ; yes             ; Megafunction                       ; e:/altera/90/quartus/libraries/megafunctions/comptree.inc                                                                ;
+; db/cmpr_sjg.tdf                              ; yes             ; Auto-Generated Megafunction        ; F:/WorkSpace/Workspace/MasterLife/TERM 1/Computer Architecture/mips-cpu/PipelineUniProcessor/db/cmpr_sjg.tdf             ;
+; altsyncram.tdf                               ; yes             ; Megafunction                       ; e:/altera/90/quartus/libraries/megafunctions/altsyncram.tdf                                                              ;
+; stratix_ram_block.inc                        ; yes             ; Megafunction                       ; e:/altera/90/quartus/libraries/megafunctions/stratix_ram_block.inc                                                       ;
+; lpm_mux.inc                                  ; yes             ; Megafunction                       ; e:/altera/90/quartus/libraries/megafunctions/lpm_mux.inc                                                                 ;
+; lpm_decode.inc                               ; yes             ; Megafunction                       ; e:/altera/90/quartus/libraries/megafunctions/lpm_decode.inc                                                              ;
+; a_rdenreg.inc                                ; yes             ; Megafunction                       ; e:/altera/90/quartus/libraries/megafunctions/a_rdenreg.inc                                                               ;
+; altrom.inc                                   ; yes             ; Megafunction                       ; e:/altera/90/quartus/libraries/megafunctions/altrom.inc                                                                  ;
+; altram.inc                                   ; yes             ; Megafunction                       ; e:/altera/90/quartus/libraries/megafunctions/altram.inc                                                                  ;
+; altdpram.inc                                 ; yes             ; Megafunction                       ; e:/altera/90/quartus/libraries/megafunctions/altdpram.inc                                                                ;
+; altqpram.inc                                 ; yes             ; Megafunction                       ; e:/altera/90/quartus/libraries/megafunctions/altqpram.inc                                                                ;
+; db/altsyncram_5ca1.tdf                       ; yes             ; Auto-Generated Megafunction        ; F:/WorkSpace/Workspace/MasterLife/TERM 1/Computer Architecture/mips-cpu/PipelineUniProcessor/db/altsyncram_5ca1.tdf      ;
+; db/altsyncram_b881.tdf                       ; yes             ; Auto-Generated Megafunction        ; F:/WorkSpace/Workspace/MasterLife/TERM 1/Computer Architecture/mips-cpu/PipelineUniProcessor/db/altsyncram_b881.tdf      ;
+; db/decode_rqa.tdf                            ; yes             ; Auto-Generated Megafunction        ; F:/WorkSpace/Workspace/MasterLife/TERM 1/Computer Architecture/mips-cpu/PipelineUniProcessor/db/decode_rqa.tdf           ;
+; db/mux_omb.tdf                               ; yes             ; Auto-Generated Megafunction        ; F:/WorkSpace/Workspace/MasterLife/TERM 1/Computer Architecture/mips-cpu/PipelineUniProcessor/db/mux_omb.tdf              ;
++----------------------------------------------+-----------------+------------------------------------+--------------------------------------------------------------------------------------------------------------------------+
 
 
 +---------------------------------------------------------+
@@ -258,39 +253,39 @@ applicable agreement for further details.
 +-----------------------------------------------+---------+
 ; Resource                                      ; Usage   ;
 +-----------------------------------------------+---------+
-; Estimated ALUTs Used                          ; 1636    ;
-; Dedicated logic registers                     ; 1334    ;
+; Estimated ALUTs Used                          ; 1658    ;
+; Dedicated logic registers                     ; 1330    ;
 ;                                               ;         ;
-; Estimated ALUTs Unavailable                   ; 497     ;
+; Estimated ALUTs Unavailable                   ; 507     ;
 ;                                               ;         ;
-; Total combinational functions                 ; 1636    ;
+; Total combinational functions                 ; 1658    ;
 ; Combinational ALUT usage by number of inputs  ;         ;
-;     -- 7 input functions                      ; 10      ;
-;     -- 6 input functions                      ; 899     ;
-;     -- 5 input functions                      ; 359     ;
-;     -- 4 input functions                      ; 62      ;
-;     -- <=3 input functions                    ; 306     ;
+;     -- 7 input functions                      ; 9       ;
+;     -- 6 input functions                      ; 921     ;
+;     -- 5 input functions                      ; 350     ;
+;     -- 4 input functions                      ; 69      ;
+;     -- <=3 input functions                    ; 309     ;
 ;                                               ;         ;
 ; Combinational ALUTs by mode                   ;         ;
-;     -- normal mode                            ; 1563    ;
-;     -- extended LUT mode                      ; 10      ;
+;     -- normal mode                            ; 1586    ;
+;     -- extended LUT mode                      ; 9       ;
 ;     -- arithmetic mode                        ; 63      ;
 ;     -- shared arithmetic mode                 ; 0       ;
 ;                                               ;         ;
-; Estimated ALUT/register pairs used            ; 2763    ;
+; Estimated ALUT/register pairs used            ; 2781    ;
 ;                                               ;         ;
-; Total registers                               ; 1334    ;
-;     -- Dedicated logic registers              ; 1334    ;
+; Total registers                               ; 1330    ;
+;     -- Dedicated logic registers              ; 1330    ;
 ;     -- I/O registers                          ; 0       ;
 ;                                               ;         ;
-; Estimated ALMs:  partially or completely used ; 1,462   ;
+; Estimated ALMs:  partially or completely used ; 1,471   ;
 ;                                               ;         ;
-; I/O pins                                      ; 100     ;
+; I/O pins                                      ; 132     ;
 ; Total block memory bits                       ; 4194304 ;
 ; Maximum fan-out node                          ; CLK     ;
-; Maximum fan-out                               ; 1878    ;
-; Total fan-out                                 ; 21305   ;
-; Average fan-out                               ; 5.90    ;
+; Maximum fan-out                               ; 1874    ;
+; Total fan-out                                 ; 21443   ;
+; Average fan-out                               ; 5.85    ;
 +-----------------------------------------------+---------+
 
 
@@ -299,24 +294,24 @@ applicable agreement for further details.
 +----------------------------------------------------+-------------------+--------------+-------------------+--------------+---------+-----------+-----------+------+--------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node                         ; LC Combinationals ; LC Registers ; Block Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; DSP 36x36 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                                                   ; Library Name ;
 +----------------------------------------------------+-------------------+--------------+-------------------+--------------+---------+-----------+-----------+------+--------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
-; |MotherBoard                                       ; 1636 (0)          ; 1334 (0)     ; 4194304           ; 0            ; 0       ; 0         ; 0         ; 100  ; 0            ; |MotherBoard                                                                                                                                                          ; work         ;
+; |MotherBoard                                       ; 1658 (0)          ; 1330 (0)     ; 4194304           ; 0            ; 0       ; 0         ; 0         ; 132  ; 0            ; |MotherBoard                                                                                                                                                          ; work         ;
 ;    |DataRAM:DataRAM1|                              ; 0 (0)             ; 0 (0)        ; 2097152           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |MotherBoard|DataRAM:DataRAM1                                                                                                                                         ; work         ;
 ;       |altsyncram:altsyncram_component|            ; 0 (0)             ; 0 (0)        ; 2097152           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |MotherBoard|DataRAM:DataRAM1|altsyncram:altsyncram_component                                                                                                         ; work         ;
 ;          |altsyncram_5ca1:auto_generated|          ; 0 (0)             ; 0 (0)        ; 2097152           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |MotherBoard|DataRAM:DataRAM1|altsyncram:altsyncram_component|altsyncram_5ca1:auto_generated                                                                          ; work         ;
-;    |InstROM1:InstROM1|                             ; 176 (0)           ; 8 (0)        ; 2097152           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |MotherBoard|InstROM1:InstROM1                                                                                                                                        ; work         ;
-;       |altsyncram:altsyncram_component|            ; 176 (0)           ; 8 (0)        ; 2097152           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |MotherBoard|InstROM1:InstROM1|altsyncram:altsyncram_component                                                                                                        ; work         ;
-;          |altsyncram_mh71:auto_generated|          ; 176 (0)           ; 8 (8)        ; 2097152           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |MotherBoard|InstROM1:InstROM1|altsyncram:altsyncram_component|altsyncram_mh71:auto_generated                                                                         ; work         ;
-;             |decode_rqa:deep_decode|               ; 16 (16)           ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |MotherBoard|InstROM1:InstROM1|altsyncram:altsyncram_component|altsyncram_mh71:auto_generated|decode_rqa:deep_decode                                                  ; work         ;
-;             |mux_omb:mux2|                         ; 160 (160)         ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |MotherBoard|InstROM1:InstROM1|altsyncram:altsyncram_component|altsyncram_mh71:auto_generated|mux_omb:mux2                                                            ; work         ;
-;    |PipelineUniProcessor:IntelInside|              ; 1460 (23)         ; 1326 (0)     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |MotherBoard|PipelineUniProcessor:IntelInside                                                                                                                         ; work         ;
-;       |ALU:inst12|                                 ; 336 (0)           ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |MotherBoard|PipelineUniProcessor:IntelInside|ALU:inst12                                                                                                              ; work         ;
-;          |ALSHIFT:inst9|                           ; 184 (0)           ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |MotherBoard|PipelineUniProcessor:IntelInside|ALU:inst12|ALSHIFT:inst9                                                                                                ; work         ;
-;             |lpm_clArithshift32bit:inst|           ; 45 (0)            ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |MotherBoard|PipelineUniProcessor:IntelInside|ALU:inst12|ALSHIFT:inst9|lpm_clArithshift32bit:inst                                                                     ; work         ;
-;                |lpm_clshift:lpm_clshift_component| ; 45 (0)            ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |MotherBoard|PipelineUniProcessor:IntelInside|ALU:inst12|ALSHIFT:inst9|lpm_clArithshift32bit:inst|lpm_clshift:lpm_clshift_component                                   ; work         ;
-;                   |lpm_clshift_euc:auto_generated| ; 45 (45)           ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |MotherBoard|PipelineUniProcessor:IntelInside|ALU:inst12|ALSHIFT:inst9|lpm_clArithshift32bit:inst|lpm_clshift:lpm_clshift_component|lpm_clshift_euc:auto_generated    ; work         ;
-;             |lpm_clLogicalshift32bit:inst8|        ; 134 (0)           ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |MotherBoard|PipelineUniProcessor:IntelInside|ALU:inst12|ALSHIFT:inst9|lpm_clLogicalshift32bit:inst8                                                                  ; work         ;
-;                |lpm_clshift:lpm_clshift_component| ; 134 (0)           ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |MotherBoard|PipelineUniProcessor:IntelInside|ALU:inst12|ALSHIFT:inst9|lpm_clLogicalshift32bit:inst8|lpm_clshift:lpm_clshift_component                                ; work         ;
-;                   |lpm_clshift_vjc:auto_generated| ; 134 (134)         ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |MotherBoard|PipelineUniProcessor:IntelInside|ALU:inst12|ALSHIFT:inst9|lpm_clLogicalshift32bit:inst8|lpm_clshift:lpm_clshift_component|lpm_clshift_vjc:auto_generated ; work         ;
+;    |InstROM1:InstROM1|                             ; 176 (0)           ; 4 (0)        ; 2097152           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |MotherBoard|InstROM1:InstROM1                                                                                                                                        ; work         ;
+;       |altsyncram:altsyncram_component|            ; 176 (0)           ; 4 (0)        ; 2097152           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |MotherBoard|InstROM1:InstROM1|altsyncram:altsyncram_component                                                                                                        ; work         ;
+;          |altsyncram_b881:auto_generated|          ; 176 (0)           ; 4 (4)        ; 2097152           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |MotherBoard|InstROM1:InstROM1|altsyncram:altsyncram_component|altsyncram_b881:auto_generated                                                                         ; work         ;
+;             |decode_rqa:deep_decode|               ; 16 (16)           ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |MotherBoard|InstROM1:InstROM1|altsyncram:altsyncram_component|altsyncram_b881:auto_generated|decode_rqa:deep_decode                                                  ; work         ;
+;             |mux_omb:mux2|                         ; 160 (160)         ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |MotherBoard|InstROM1:InstROM1|altsyncram:altsyncram_component|altsyncram_b881:auto_generated|mux_omb:mux2                                                            ; work         ;
+;    |PipelineUniProcessor:IntelInside|              ; 1482 (25)         ; 1326 (0)     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |MotherBoard|PipelineUniProcessor:IntelInside                                                                                                                         ; work         ;
+;       |ALU:inst12|                                 ; 332 (0)           ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |MotherBoard|PipelineUniProcessor:IntelInside|ALU:inst12                                                                                                              ; work         ;
+;          |ALSHIFT:inst9|                           ; 180 (0)           ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |MotherBoard|PipelineUniProcessor:IntelInside|ALU:inst12|ALSHIFT:inst9                                                                                                ; work         ;
+;             |lpm_clArithshift32bit:inst|           ; 46 (0)            ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |MotherBoard|PipelineUniProcessor:IntelInside|ALU:inst12|ALSHIFT:inst9|lpm_clArithshift32bit:inst                                                                     ; work         ;
+;                |lpm_clshift:lpm_clshift_component| ; 46 (0)            ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |MotherBoard|PipelineUniProcessor:IntelInside|ALU:inst12|ALSHIFT:inst9|lpm_clArithshift32bit:inst|lpm_clshift:lpm_clshift_component                                   ; work         ;
+;                   |lpm_clshift_euc:auto_generated| ; 46 (46)           ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |MotherBoard|PipelineUniProcessor:IntelInside|ALU:inst12|ALSHIFT:inst9|lpm_clArithshift32bit:inst|lpm_clshift:lpm_clshift_component|lpm_clshift_euc:auto_generated    ; work         ;
+;             |lpm_clLogicalshift32bit:inst8|        ; 129 (0)           ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |MotherBoard|PipelineUniProcessor:IntelInside|ALU:inst12|ALSHIFT:inst9|lpm_clLogicalshift32bit:inst8                                                                  ; work         ;
+;                |lpm_clshift:lpm_clshift_component| ; 129 (0)           ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |MotherBoard|PipelineUniProcessor:IntelInside|ALU:inst12|ALSHIFT:inst9|lpm_clLogicalshift32bit:inst8|lpm_clshift:lpm_clshift_component                                ; work         ;
+;                   |lpm_clshift_vjc:auto_generated| ; 129 (129)         ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |MotherBoard|PipelineUniProcessor:IntelInside|ALU:inst12|ALSHIFT:inst9|lpm_clLogicalshift32bit:inst8|lpm_clshift:lpm_clshift_component|lpm_clshift_vjc:auto_generated ; work         ;
 ;             |mux2x32bit:inst2|                     ; 5 (0)             ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |MotherBoard|PipelineUniProcessor:IntelInside|ALU:inst12|ALSHIFT:inst9|mux2x32bit:inst2                                                                               ; work         ;
 ;                |mux2x8bit:inst2|                   ; 2 (0)             ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |MotherBoard|PipelineUniProcessor:IntelInside|ALU:inst12|ALSHIFT:inst9|mux2x32bit:inst2|mux2x8bit:inst2                                                               ; work         ;
 ;                   |mux2x1bit:inst|                 ; 2 (2)             ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |MotherBoard|PipelineUniProcessor:IntelInside|ALU:inst12|ALSHIFT:inst9|mux2x32bit:inst2|mux2x8bit:inst2|mux2x1bit:inst                                                ; work         ;
@@ -326,13 +321,13 @@ applicable agreement for further details.
 ;             |lpm_add_sub:lpm_add_sub_component|    ; 33 (0)            ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |MotherBoard|PipelineUniProcessor:IntelInside|ALU:inst12|lpm_add_sub32BIT:inst5|lpm_add_sub:lpm_add_sub_component                                                     ; work         ;
 ;                |add_sub_qkg:auto_generated|        ; 33 (33)           ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |MotherBoard|PipelineUniProcessor:IntelInside|ALU:inst12|lpm_add_sub32BIT:inst5|lpm_add_sub:lpm_add_sub_component|add_sub_qkg:auto_generated                          ; work         ;
 ;          |mux4x32bit:inst2|                        ; 119 (119)         ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |MotherBoard|PipelineUniProcessor:IntelInside|ALU:inst12|mux4x32bit:inst2                                                                                             ; work         ;
-;       |ControlUnit:CU|                             ; 38 (0)            ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |MotherBoard|PipelineUniProcessor:IntelInside|ControlUnit:CU                                                                                                          ; work         ;
-;          |BasicControlUnit:BCU|                    ; 20 (0)            ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |MotherBoard|PipelineUniProcessor:IntelInside|ControlUnit:CU|BasicControlUnit:BCU                                                                                     ; work         ;
-;             |InstDecoder:inst1|                    ; 9 (9)             ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |MotherBoard|PipelineUniProcessor:IntelInside|ControlUnit:CU|BasicControlUnit:BCU|InstDecoder:inst1                                                                   ; work         ;
-;             |InstTranslator:inst|                  ; 11 (11)           ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |MotherBoard|PipelineUniProcessor:IntelInside|ControlUnit:CU|BasicControlUnit:BCU|InstTranslator:inst                                                                 ; work         ;
+;       |ControlUnit:CU|                             ; 40 (0)            ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |MotherBoard|PipelineUniProcessor:IntelInside|ControlUnit:CU                                                                                                          ; work         ;
+;          |BasicControlUnit:BCU|                    ; 22 (0)            ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |MotherBoard|PipelineUniProcessor:IntelInside|ControlUnit:CU|BasicControlUnit:BCU                                                                                     ; work         ;
+;             |InstDecoder:inst1|                    ; 10 (10)           ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |MotherBoard|PipelineUniProcessor:IntelInside|ControlUnit:CU|BasicControlUnit:BCU|InstDecoder:inst1                                                                   ; work         ;
+;             |InstTranslator:inst|                  ; 12 (12)           ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |MotherBoard|PipelineUniProcessor:IntelInside|ControlUnit:CU|BasicControlUnit:BCU|InstTranslator:inst                                                                 ; work         ;
 ;          |CtrlStall:inst3|                         ; 3 (3)             ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |MotherBoard|PipelineUniProcessor:IntelInside|ControlUnit:CU|CtrlStall:inst3                                                                                          ; work         ;
-;          |ForwardControlUnit:inst|                 ; 14 (14)           ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |MotherBoard|PipelineUniProcessor:IntelInside|ControlUnit:CU|ForwardControlUnit:inst                                                                                  ; work         ;
-;          |HazardControlUnit:inst1|                 ; 1 (1)             ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |MotherBoard|PipelineUniProcessor:IntelInside|ControlUnit:CU|HazardControlUnit:inst1                                                                                  ; work         ;
+;          |ForwardControlUnit:inst|                 ; 10 (10)           ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |MotherBoard|PipelineUniProcessor:IntelInside|ControlUnit:CU|ForwardControlUnit:inst                                                                                  ; work         ;
+;          |HazardControlUnit:inst1|                 ; 5 (5)             ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |MotherBoard|PipelineUniProcessor:IntelInside|ControlUnit:CU|HazardControlUnit:inst1                                                                                  ; work         ;
 ;       |EXE-MEM-INSTDATA-BUFFER:inst16|             ; 0 (0)             ; 69 (0)       ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |MotherBoard|PipelineUniProcessor:IntelInside|EXE-MEM-INSTDATA-BUFFER:inst16                                                                                          ; work         ;
 ;          |dffe32bit:inst1|                         ; 0 (0)             ; 32 (0)       ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |MotherBoard|PipelineUniProcessor:IntelInside|EXE-MEM-INSTDATA-BUFFER:inst16|dffe32bit:inst1                                                                          ; work         ;
 ;             |dffe8bit:diff32Part1|                 ; 0 (0)             ; 8 (8)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |MotherBoard|PipelineUniProcessor:IntelInside|EXE-MEM-INSTDATA-BUFFER:inst16|dffe32bit:inst1|dffe8bit:diff32Part1                                                     ; work         ;
@@ -401,14 +396,15 @@ applicable agreement for further details.
 ;          |add32bitci:inst|                         ; 30 (0)            ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |MotherBoard|PipelineUniProcessor:IntelInside|PCDecision:inst10|add32bitci:inst                                                                                       ; work         ;
 ;             |add8bit:Adder8-inst|                  ; 30 (0)            ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |MotherBoard|PipelineUniProcessor:IntelInside|PCDecision:inst10|add32bitci:inst|add8bit:Adder8-inst                                                                   ; work         ;
 ;                |add1bit:inst3|                     ; 30 (30)           ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |MotherBoard|PipelineUniProcessor:IntelInside|PCDecision:inst10|add32bitci:inst|add8bit:Adder8-inst|add1bit:inst3                                                     ; work         ;
-;       |ProcessPC:inst4|                            ; 45 (0)            ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |MotherBoard|PipelineUniProcessor:IntelInside|ProcessPC:inst4                                                                                                         ; work         ;
-;          |add32bit:inst1|                          ; 13 (0)            ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |MotherBoard|PipelineUniProcessor:IntelInside|ProcessPC:inst4|add32bit:inst1                                                                                          ; work         ;
-;             |add32bitci:inst|                      ; 13 (0)            ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |MotherBoard|PipelineUniProcessor:IntelInside|ProcessPC:inst4|add32bit:inst1|add32bitci:inst                                                                          ; work         ;
-;                |add8bit:Adder8-inst1|              ; 4 (0)             ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |MotherBoard|PipelineUniProcessor:IntelInside|ProcessPC:inst4|add32bit:inst1|add32bitci:inst|add8bit:Adder8-inst1                                                     ; work         ;
-;                   |add1bit:inst1|                  ; 1 (1)             ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |MotherBoard|PipelineUniProcessor:IntelInside|ProcessPC:inst4|add32bit:inst1|add32bitci:inst|add8bit:Adder8-inst1|add1bit:inst1                                       ; work         ;
+;       |ProcessPC:inst4|                            ; 47 (0)            ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |MotherBoard|PipelineUniProcessor:IntelInside|ProcessPC:inst4                                                                                                         ; work         ;
+;          |add32bit:inst1|                          ; 15 (0)            ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |MotherBoard|PipelineUniProcessor:IntelInside|ProcessPC:inst4|add32bit:inst1                                                                                          ; work         ;
+;             |add32bitci:inst|                      ; 15 (0)            ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |MotherBoard|PipelineUniProcessor:IntelInside|ProcessPC:inst4|add32bit:inst1|add32bitci:inst                                                                          ; work         ;
+;                |add8bit:Adder8-inst1|              ; 5 (0)             ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |MotherBoard|PipelineUniProcessor:IntelInside|ProcessPC:inst4|add32bit:inst1|add32bitci:inst|add8bit:Adder8-inst1                                                     ; work         ;
+;                   |add1bit:inst2|                  ; 1 (1)             ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |MotherBoard|PipelineUniProcessor:IntelInside|ProcessPC:inst4|add32bit:inst1|add32bitci:inst|add8bit:Adder8-inst1|add1bit:inst2                                       ; work         ;
 ;                   |add1bit:inst4|                  ; 1 (1)             ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |MotherBoard|PipelineUniProcessor:IntelInside|ProcessPC:inst4|add32bit:inst1|add32bitci:inst|add8bit:Adder8-inst1|add1bit:inst4                                       ; work         ;
-;                   |add1bit:inst6|                  ; 1 (1)             ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |MotherBoard|PipelineUniProcessor:IntelInside|ProcessPC:inst4|add32bit:inst1|add32bitci:inst|add8bit:Adder8-inst1|add1bit:inst6                                       ; work         ;
+;                   |add1bit:inst5|                  ; 1 (1)             ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |MotherBoard|PipelineUniProcessor:IntelInside|ProcessPC:inst4|add32bit:inst1|add32bitci:inst|add8bit:Adder8-inst1|add1bit:inst5                                       ; work         ;
 ;                   |add1bit:inst7|                  ; 1 (1)             ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |MotherBoard|PipelineUniProcessor:IntelInside|ProcessPC:inst4|add32bit:inst1|add32bitci:inst|add8bit:Adder8-inst1|add1bit:inst7                                       ; work         ;
+;                   |add1bit:inst|                   ; 1 (1)             ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |MotherBoard|PipelineUniProcessor:IntelInside|ProcessPC:inst4|add32bit:inst1|add32bitci:inst|add8bit:Adder8-inst1|add1bit:inst                                        ; work         ;
 ;                |add8bit:Adder8-inst2|              ; 4 (0)             ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |MotherBoard|PipelineUniProcessor:IntelInside|ProcessPC:inst4|add32bit:inst1|add32bitci:inst|add8bit:Adder8-inst2                                                     ; work         ;
 ;                   |add1bit:inst1|                  ; 1 (1)             ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |MotherBoard|PipelineUniProcessor:IntelInside|ProcessPC:inst4|add32bit:inst1|add32bitci:inst|add8bit:Adder8-inst2|add1bit:inst1                                       ; work         ;
 ;                   |add1bit:inst3|                  ; 1 (1)             ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |MotherBoard|PipelineUniProcessor:IntelInside|ProcessPC:inst4|add32bit:inst1|add32bitci:inst|add8bit:Adder8-inst2|add1bit:inst3                                       ; work         ;
@@ -418,8 +414,9 @@ applicable agreement for further details.
 ;                   |add1bit:inst1|                  ; 1 (1)             ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |MotherBoard|PipelineUniProcessor:IntelInside|ProcessPC:inst4|add32bit:inst1|add32bitci:inst|add8bit:Adder8-inst3|add1bit:inst1                                       ; work         ;
 ;                   |add1bit:inst3|                  ; 1 (1)             ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |MotherBoard|PipelineUniProcessor:IntelInside|ProcessPC:inst4|add32bit:inst1|add32bitci:inst|add8bit:Adder8-inst3|add1bit:inst3                                       ; work         ;
 ;                   |add1bit:inst5|                  ; 1 (1)             ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |MotherBoard|PipelineUniProcessor:IntelInside|ProcessPC:inst4|add32bit:inst1|add32bitci:inst|add8bit:Adder8-inst3|add1bit:inst5                                       ; work         ;
-;                |add8bit:Adder8-inst|               ; 2 (0)             ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |MotherBoard|PipelineUniProcessor:IntelInside|ProcessPC:inst4|add32bit:inst1|add32bitci:inst|add8bit:Adder8-inst                                                      ; work         ;
-;                   |add1bit:inst4|                  ; 1 (1)             ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |MotherBoard|PipelineUniProcessor:IntelInside|ProcessPC:inst4|add32bit:inst1|add32bitci:inst|add8bit:Adder8-inst|add1bit:inst4                                        ; work         ;
+;                |add8bit:Adder8-inst|               ; 3 (0)             ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |MotherBoard|PipelineUniProcessor:IntelInside|ProcessPC:inst4|add32bit:inst1|add32bitci:inst|add8bit:Adder8-inst                                                      ; work         ;
+;                   |add1bit:inst3|                  ; 1 (1)             ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |MotherBoard|PipelineUniProcessor:IntelInside|ProcessPC:inst4|add32bit:inst1|add32bitci:inst|add8bit:Adder8-inst|add1bit:inst3                                        ; work         ;
+;                   |add1bit:inst5|                  ; 1 (1)             ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |MotherBoard|PipelineUniProcessor:IntelInside|ProcessPC:inst4|add32bit:inst1|add32bitci:inst|add8bit:Adder8-inst|add1bit:inst5                                        ; work         ;
 ;                   |add1bit:inst7|                  ; 1 (1)             ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |MotherBoard|PipelineUniProcessor:IntelInside|ProcessPC:inst4|add32bit:inst1|add32bitci:inst|add8bit:Adder8-inst|add1bit:inst7                                        ; work         ;
 ;          |mux2x32bit:inst5|                        ; 32 (0)            ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |MotherBoard|PipelineUniProcessor:IntelInside|ProcessPC:inst4|mux2x32bit:inst5                                                                                        ; work         ;
 ;             |mux2x8bit:inst1|                      ; 8 (0)             ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |MotherBoard|PipelineUniProcessor:IntelInside|ProcessPC:inst4|mux2x32bit:inst5|mux2x8bit:inst1                                                                        ; work         ;
@@ -458,7 +455,7 @@ applicable agreement for further details.
 ;                |mux2x1bit:inst8|                   ; 1 (1)             ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |MotherBoard|PipelineUniProcessor:IntelInside|ProcessPC:inst4|mux2x32bit:inst5|mux2x8bit:inst|mux2x1bit:inst8                                                         ; work         ;
 ;                |mux2x1bit:inst9|                   ; 1 (1)             ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |MotherBoard|PipelineUniProcessor:IntelInside|ProcessPC:inst4|mux2x32bit:inst5|mux2x8bit:inst|mux2x1bit:inst9                                                         ; work         ;
 ;                |mux2x1bit:inst|                    ; 1 (1)             ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |MotherBoard|PipelineUniProcessor:IntelInside|ProcessPC:inst4|mux2x32bit:inst5|mux2x8bit:inst|mux2x1bit:inst                                                          ; work         ;
-;       |RegFile32x32:Regs|                          ; 745 (0)           ; 992 (0)      ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |MotherBoard|PipelineUniProcessor:IntelInside|RegFile32x32:Regs                                                                                                       ; work         ;
+;       |RegFile32x32:Regs|                          ; 743 (0)           ; 992 (0)      ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |MotherBoard|PipelineUniProcessor:IntelInside|RegFile32x32:Regs                                                                                                       ; work         ;
 ;          |dffe32bit:inst10|                        ; 0 (0)             ; 32 (0)       ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |MotherBoard|PipelineUniProcessor:IntelInside|RegFile32x32:Regs|dffe32bit:inst10                                                                                      ; work         ;
 ;             |dffe8bit:diff32Part1|                 ; 0 (0)             ; 8 (8)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |MotherBoard|PipelineUniProcessor:IntelInside|RegFile32x32:Regs|dffe32bit:inst10|dffe8bit:diff32Part1                                                                 ; work         ;
 ;             |dffe8bit:diff32Part2|                 ; 0 (0)             ; 8 (8)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |MotherBoard|PipelineUniProcessor:IntelInside|RegFile32x32:Regs|dffe32bit:inst10|dffe8bit:diff32Part2                                                                 ; work         ;
@@ -616,10 +613,10 @@ applicable agreement for further details.
 ;             |dffe8bit:diff32Part4|                 ; 0 (0)             ; 8 (8)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |MotherBoard|PipelineUniProcessor:IntelInside|RegFile32x32:Regs|dffe32bit:inst|dffe8bit:diff32Part4                                                                   ; work         ;
 ;          |lpm_decode:37|                           ; 33 (0)            ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |MotherBoard|PipelineUniProcessor:IntelInside|RegFile32x32:Regs|lpm_decode:37                                                                                         ; work         ;
 ;             |decode_ktf:auto_generated|            ; 33 (33)           ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |MotherBoard|PipelineUniProcessor:IntelInside|RegFile32x32:Regs|lpm_decode:37|decode_ktf:auto_generated                                                               ; work         ;
-;          |lpm_mux:54|                              ; 356 (0)           ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |MotherBoard|PipelineUniProcessor:IntelInside|RegFile32x32:Regs|lpm_mux:54                                                                                            ; work         ;
-;             |mux_2rc:auto_generated|               ; 356 (356)         ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |MotherBoard|PipelineUniProcessor:IntelInside|RegFile32x32:Regs|lpm_mux:54|mux_2rc:auto_generated                                                                     ; work         ;
-;          |lpm_mux:55|                              ; 356 (0)           ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |MotherBoard|PipelineUniProcessor:IntelInside|RegFile32x32:Regs|lpm_mux:55                                                                                            ; work         ;
-;             |mux_2rc:auto_generated|               ; 356 (356)         ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |MotherBoard|PipelineUniProcessor:IntelInside|RegFile32x32:Regs|lpm_mux:55|mux_2rc:auto_generated                                                                     ; work         ;
+;          |lpm_mux:54|                              ; 355 (0)           ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |MotherBoard|PipelineUniProcessor:IntelInside|RegFile32x32:Regs|lpm_mux:54                                                                                            ; work         ;
+;             |mux_2rc:auto_generated|               ; 355 (355)         ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |MotherBoard|PipelineUniProcessor:IntelInside|RegFile32x32:Regs|lpm_mux:54|mux_2rc:auto_generated                                                                     ; work         ;
+;          |lpm_mux:55|                              ; 355 (0)           ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |MotherBoard|PipelineUniProcessor:IntelInside|RegFile32x32:Regs|lpm_mux:55                                                                                            ; work         ;
+;             |mux_2rc:auto_generated|               ; 355 (355)         ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |MotherBoard|PipelineUniProcessor:IntelInside|RegFile32x32:Regs|lpm_mux:55|mux_2rc:auto_generated                                                                     ; work         ;
 ;       |SignExt:inst3|                              ; 1 (1)             ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |MotherBoard|PipelineUniProcessor:IntelInside|SignExt:inst3                                                                                                           ; work         ;
 ;       |mux2x32bit:AluASrcSelector|                 ; 32 (0)            ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |MotherBoard|PipelineUniProcessor:IntelInside|mux2x32bit:AluASrcSelector                                                                                              ; work         ;
 ;          |mux2x8bit:inst1|                         ; 8 (0)             ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |MotherBoard|PipelineUniProcessor:IntelInside|mux2x32bit:AluASrcSelector|mux2x8bit:inst1                                                                              ; work         ;
@@ -733,8 +730,8 @@ applicable agreement for further details.
 ;             |mux2x1bit:inst9|                      ; 1 (1)             ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |MotherBoard|PipelineUniProcessor:IntelInside|mux2x32bit:inst23|mux2x8bit:inst|mux2x1bit:inst9                                                                        ; work         ;
 ;             |mux2x1bit:inst|                       ; 1 (1)             ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |MotherBoard|PipelineUniProcessor:IntelInside|mux2x32bit:inst23|mux2x8bit:inst|mux2x1bit:inst                                                                         ; work         ;
 ;       |mux2x5bit:inst5|                            ; 5 (5)             ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |MotherBoard|PipelineUniProcessor:IntelInside|mux2x5bit:inst5                                                                                                         ; work         ;
-;       |mux4x32bit:inst7|                           ; 70 (70)           ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |MotherBoard|PipelineUniProcessor:IntelInside|mux4x32bit:inst7                                                                                                        ; work         ;
-;       |mux4x32bit:inst8|                           ; 69 (69)           ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |MotherBoard|PipelineUniProcessor:IntelInside|mux4x32bit:inst8                                                                                                        ; work         ;
+;       |mux4x32bit:inst7|                           ; 81 (81)           ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |MotherBoard|PipelineUniProcessor:IntelInside|mux4x32bit:inst7                                                                                                        ; work         ;
+;       |mux4x32bit:inst8|                           ; 80 (80)           ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |MotherBoard|PipelineUniProcessor:IntelInside|mux4x32bit:inst8                                                                                                        ; work         ;
 +----------------------------------------------------+-------------------+--------------+-------------------+--------------+---------+-----------+-----------+------+--------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -745,7 +742,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Name                                                                                        ; Type ; Mode        ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Size    ; MIF          ;
 +---------------------------------------------------------------------------------------------+------+-------------+--------------+--------------+--------------+--------------+---------+--------------+
 ; DataRAM:DataRAM1|altsyncram:altsyncram_component|altsyncram_5ca1:auto_generated|ALTSYNCRAM  ; AUTO ; Single Port ; 65536        ; 32           ; --           ; --           ; 2097152 ; None         ;
-; InstROM1:InstROM1|altsyncram:altsyncram_component|altsyncram_mh71:auto_generated|ALTSYNCRAM ; AUTO ; ROM         ; 65536        ; 32           ; --           ; --           ; 2097152 ; IMemPipe.mif ;
+; InstROM1:InstROM1|altsyncram:altsyncram_component|altsyncram_b881:auto_generated|ALTSYNCRAM ; AUTO ; ROM         ; 65536        ; 32           ; --           ; --           ; 2097152 ; IMemPipe.mif ;
 +---------------------------------------------------------------------------------------------+------+-------------+--------------+--------------+--------------+--------------+---------+--------------+
 
 
@@ -783,7 +780,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 1334  ;
+; Total registers                              ; 1330  ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 1326  ;
@@ -799,7 +796,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                                                                      ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------------------------------------------------------------------------------+
 ; 3:1                ; 30 bits   ; 60 ALUTs      ; 60 ALUTs             ; 0 ALUTs                ; No         ; |MotherBoard|PipelineUniProcessor:IntelInside|ProcessPC:inst4|mux2x32bit:inst2|mux2x8bit:inst1|mux2x1bit:inst1|inst3            ;
-; 16:1               ; 32 bits   ; 320 ALUTs     ; 320 ALUTs            ; 0 ALUTs                ; No         ; |MotherBoard|InstROM1:InstROM1|altsyncram:altsyncram_component|altsyncram_mh71:auto_generated|mux_omb:mux2|l4_w9_n0_mux_dataout ;
+; 16:1               ; 32 bits   ; 320 ALUTs     ; 320 ALUTs            ; 0 ALUTs                ; No         ; |MotherBoard|InstROM1:InstROM1|altsyncram:altsyncram_component|altsyncram_b881:auto_generated|mux_omb:mux2|l4_w9_n0_mux_dataout ;
 ; 31:1               ; 32 bits   ; 640 ALUTs     ; 640 ALUTs            ; 0 ALUTs                ; No         ; |MotherBoard|PipelineUniProcessor:IntelInside|RegFile32x32:Regs|lpm_mux:54|mux_2rc:auto_generated|l5_w12_n0_mux_dataout         ;
 ; 31:1               ; 32 bits   ; 640 ALUTs     ; 640 ALUTs            ; 0 ALUTs                ; No         ; |MotherBoard|PipelineUniProcessor:IntelInside|RegFile32x32:Regs|lpm_mux:55|mux_2rc:auto_generated|l5_w26_n0_mux_dataout         ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------------------------------------------------------------------------------+
@@ -815,16 +812,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 
 
 +---------------------------------------------------------------------------------------------------------+
-; Source assignments for InstROM1:InstROM1|altsyncram:altsyncram_component|altsyncram_mh71:auto_generated ;
-+---------------------------------+--------------------+------+-------------------------------------------+
-; Assignment                      ; Value              ; From ; To                                        ;
-+---------------------------------+--------------------+------+-------------------------------------------+
-; OPTIMIZE_POWER_DURING_SYNTHESIS ; NORMAL_COMPILATION ; -    ; -                                         ;
-+---------------------------------+--------------------+------+-------------------------------------------+
-
-
-+---------------------------------------------------------------------------------------------------------+
-; Source assignments for lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated ;
+; Source assignments for InstROM1:InstROM1|altsyncram:altsyncram_component|altsyncram_b881:auto_generated ;
 +---------------------------------+--------------------+------+-------------------------------------------+
 ; Assignment                      ; Value              ; From ; To                                        ;
 +---------------------------------+--------------------+------+-------------------------------------------+
@@ -1081,7 +1069,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; WIDTH_A                            ; 32                   ; Signed Integer                     ;
 ; WIDTHAD_A                          ; 16                   ; Signed Integer                     ;
 ; NUMWORDS_A                         ; 65536                ; Signed Integer                     ;
-; OUTDATA_REG_A                      ; CLOCK0               ; Untyped                            ;
+; OUTDATA_REG_A                      ; UNREGISTERED         ; Untyped                            ;
 ; ADDRESS_ACLR_A                     ; NONE                 ; Untyped                            ;
 ; OUTDATA_ACLR_A                     ; NONE                 ; Untyped                            ;
 ; WRCONTROL_ACLR_A                   ; NONE                 ; Untyped                            ;
@@ -1120,67 +1108,8 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; CLOCK_ENABLE_CORE_B                ; USE_INPUT_CLKEN      ; Untyped                            ;
 ; ENABLE_ECC                         ; FALSE                ; Untyped                            ;
 ; DEVICE_FAMILY                      ; Stratix II           ; Untyped                            ;
-; CBXI_PARAMETER                     ; altsyncram_mh71      ; Untyped                            ;
+; CBXI_PARAMETER                     ; altsyncram_b881      ; Untyped                            ;
 +------------------------------------+----------------------+------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: lpm_ram_dp1:inst3|altsyncram:altsyncram_component ;
-+------------------------------------+-----------------------------+-----------------------------+
-; Parameter Name                     ; Value                       ; Type                        ;
-+------------------------------------+-----------------------------+-----------------------------+
-; BYTE_SIZE_BLOCK                    ; 8                           ; Untyped                     ;
-; AUTO_CARRY_CHAINS                  ; ON                          ; AUTO_CARRY                  ;
-; IGNORE_CARRY_BUFFERS               ; OFF                         ; IGNORE_CARRY                ;
-; AUTO_CASCADE_CHAINS                ; ON                          ; AUTO_CASCADE                ;
-; IGNORE_CASCADE_BUFFERS             ; OFF                         ; IGNORE_CASCADE              ;
-; WIDTH_BYTEENA                      ; 1                           ; Untyped                     ;
-; OPERATION_MODE                     ; DUAL_PORT                   ; Untyped                     ;
-; WIDTH_A                            ; 32                          ; Signed Integer              ;
-; WIDTHAD_A                          ; 16                          ; Signed Integer              ;
-; NUMWORDS_A                         ; 65536                       ; Signed Integer              ;
-; OUTDATA_REG_A                      ; UNREGISTERED                ; Untyped                     ;
-; ADDRESS_ACLR_A                     ; NONE                        ; Untyped                     ;
-; OUTDATA_ACLR_A                     ; NONE                        ; Untyped                     ;
-; WRCONTROL_ACLR_A                   ; NONE                        ; Untyped                     ;
-; INDATA_ACLR_A                      ; NONE                        ; Untyped                     ;
-; BYTEENA_ACLR_A                     ; NONE                        ; Untyped                     ;
-; WIDTH_B                            ; 32                          ; Signed Integer              ;
-; WIDTHAD_B                          ; 16                          ; Signed Integer              ;
-; NUMWORDS_B                         ; 65536                       ; Signed Integer              ;
-; INDATA_REG_B                       ; CLOCK1                      ; Untyped                     ;
-; WRCONTROL_WRADDRESS_REG_B          ; CLOCK1                      ; Untyped                     ;
-; RDCONTROL_REG_B                    ; CLOCK1                      ; Untyped                     ;
-; ADDRESS_REG_B                      ; CLOCK0                      ; Untyped                     ;
-; OUTDATA_REG_B                      ; CLOCK0                      ; Untyped                     ;
-; BYTEENA_REG_B                      ; CLOCK1                      ; Untyped                     ;
-; INDATA_ACLR_B                      ; NONE                        ; Untyped                     ;
-; WRCONTROL_ACLR_B                   ; NONE                        ; Untyped                     ;
-; ADDRESS_ACLR_B                     ; NONE                        ; Untyped                     ;
-; OUTDATA_ACLR_B                     ; NONE                        ; Untyped                     ;
-; RDCONTROL_ACLR_B                   ; NONE                        ; Untyped                     ;
-; BYTEENA_ACLR_B                     ; NONE                        ; Untyped                     ;
-; WIDTH_BYTEENA_A                    ; 1                           ; Signed Integer              ;
-; WIDTH_BYTEENA_B                    ; 1                           ; Untyped                     ;
-; RAM_BLOCK_TYPE                     ; AUTO                        ; Untyped                     ;
-; BYTE_SIZE                          ; 8                           ; Untyped                     ;
-; READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                   ; Untyped                     ;
-; READ_DURING_WRITE_MODE_PORT_A      ; NEW_DATA_NO_NBE_READ        ; Untyped                     ;
-; READ_DURING_WRITE_MODE_PORT_B      ; NEW_DATA_NO_NBE_READ        ; Untyped                     ;
-; INIT_FILE                          ; ../MotherBoard/IMemPipe.mif ; Untyped                     ;
-; INIT_FILE_LAYOUT                   ; PORT_A                      ; Untyped                     ;
-; MAXIMUM_DEPTH                      ; 0                           ; Untyped                     ;
-; CLOCK_ENABLE_INPUT_A               ; BYPASS                      ; Untyped                     ;
-; CLOCK_ENABLE_INPUT_B               ; BYPASS                      ; Untyped                     ;
-; CLOCK_ENABLE_OUTPUT_A              ; BYPASS                      ; Untyped                     ;
-; CLOCK_ENABLE_OUTPUT_B              ; BYPASS                      ; Untyped                     ;
-; CLOCK_ENABLE_CORE_A                ; USE_INPUT_CLKEN             ; Untyped                     ;
-; CLOCK_ENABLE_CORE_B                ; USE_INPUT_CLKEN             ; Untyped                     ;
-; ENABLE_ECC                         ; FALSE                       ; Untyped                     ;
-; DEVICE_FAMILY                      ; Stratix II                  ; Untyped                     ;
-; CBXI_PARAMETER                     ; altsyncram_vas1             ; Untyped                     ;
-+------------------------------------+-----------------------------+-----------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -1189,7 +1118,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-------------------------------------------+---------------------------------------------------+
 ; Name                                      ; Value                                             ;
 +-------------------------------------------+---------------------------------------------------+
-; Number of entity instances                ; 3                                                 ;
+; Number of entity instances                ; 2                                                 ;
 ; Entity Instance                           ; DataRAM:DataRAM1|altsyncram:altsyncram_component  ;
 ;     -- OPERATION_MODE                     ; SINGLE_PORT                                       ;
 ;     -- WIDTH_A                            ; 32                                                ;
@@ -1205,22 +1134,11 @@ Note: In order to hide this table in the UI and the text report file, please set
 ;     -- OPERATION_MODE                     ; ROM                                               ;
 ;     -- WIDTH_A                            ; 32                                                ;
 ;     -- NUMWORDS_A                         ; 65536                                             ;
-;     -- OUTDATA_REG_A                      ; CLOCK0                                            ;
+;     -- OUTDATA_REG_A                      ; UNREGISTERED                                      ;
 ;     -- WIDTH_B                            ; 1                                                 ;
 ;     -- NUMWORDS_B                         ; 1                                                 ;
 ;     -- ADDRESS_REG_B                      ; CLOCK1                                            ;
 ;     -- OUTDATA_REG_B                      ; UNREGISTERED                                      ;
-;     -- RAM_BLOCK_TYPE                     ; AUTO                                              ;
-;     -- READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                                         ;
-; Entity Instance                           ; lpm_ram_dp1:inst3|altsyncram:altsyncram_component ;
-;     -- OPERATION_MODE                     ; DUAL_PORT                                         ;
-;     -- WIDTH_A                            ; 32                                                ;
-;     -- NUMWORDS_A                         ; 65536                                             ;
-;     -- OUTDATA_REG_A                      ; UNREGISTERED                                      ;
-;     -- WIDTH_B                            ; 32                                                ;
-;     -- NUMWORDS_B                         ; 65536                                             ;
-;     -- ADDRESS_REG_B                      ; CLOCK0                                            ;
-;     -- OUTDATA_REG_B                      ; CLOCK0                                            ;
 ;     -- RAM_BLOCK_TYPE                     ; AUTO                                              ;
 ;     -- READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                                         ;
 +-------------------------------------------+---------------------------------------------------+
@@ -1232,7 +1150,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II Analysis & Synthesis
     Info: Version 9.0 Build 132 02/25/2009 SJ Full Version
-    Info: Processing started: Thu Nov 26 00:17:28 2009
+    Info: Processing started: Tue Dec 01 22:50:31 2009
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off PipelineUniProcessor -c PipelineUniProcessor
 Info: Found 2 design units, including 1 entities, in source file ../MotherBoard/lpm_ram_dp1.vhd
     Info: Found design unit 1: lpm_ram_dp1-SYN
@@ -1493,573 +1411,28 @@ Info: Instantiated megafunction "InstROM1:InstROM1|altsyncram:altsyncram_compone
     Info: Parameter "numwords_a" = "65536"
     Info: Parameter "operation_mode" = "ROM"
     Info: Parameter "outdata_aclr_a" = "NONE"
-    Info: Parameter "outdata_reg_a" = "CLOCK0"
+    Info: Parameter "outdata_reg_a" = "UNREGISTERED"
     Info: Parameter "widthad_a" = "16"
     Info: Parameter "width_a" = "32"
     Info: Parameter "width_byteena_a" = "1"
-Info: Found 1 design units, including 1 entities, in source file db/altsyncram_mh71.tdf
-    Info: Found entity 1: altsyncram_mh71
-Info: Elaborating entity "altsyncram_mh71" for hierarchy "InstROM1:InstROM1|altsyncram:altsyncram_component|altsyncram_mh71:auto_generated"
-Warning: 4 out of 32 addresses are uninitialized. The Quartus II software will initialize them to "0". There are 1 warnings found, and 1 warnings are reported.
-    Warning: Addresses ranging from 28 to 31 are not initialized
-Critical Warning: Memory depth (65536) in the design file differs from memory depth (32) in the Memory Initialization File "IMemPipe.mif" -- setting initial value for remaining addresses to 0
+Info: Found 1 design units, including 1 entities, in source file db/altsyncram_b881.tdf
+    Info: Found entity 1: altsyncram_b881
+Info: Elaborating entity "altsyncram_b881" for hierarchy "InstROM1:InstROM1|altsyncram:altsyncram_component|altsyncram_b881:auto_generated"
 Info: Found 1 design units, including 1 entities, in source file db/decode_rqa.tdf
     Info: Found entity 1: decode_rqa
-Info: Elaborating entity "decode_rqa" for hierarchy "InstROM1:InstROM1|altsyncram:altsyncram_component|altsyncram_mh71:auto_generated|decode_rqa:deep_decode"
+Info: Elaborating entity "decode_rqa" for hierarchy "InstROM1:InstROM1|altsyncram:altsyncram_component|altsyncram_b881:auto_generated|decode_rqa:deep_decode"
 Info: Found 1 design units, including 1 entities, in source file db/mux_omb.tdf
     Info: Found entity 1: mux_omb
-Info: Elaborating entity "mux_omb" for hierarchy "InstROM1:InstROM1|altsyncram:altsyncram_component|altsyncram_mh71:auto_generated|mux_omb:mux2"
-Info: Elaborating entity "lpm_ram_dp1" for hierarchy "lpm_ram_dp1:inst3"
-Info: Elaborating entity "altsyncram" for hierarchy "lpm_ram_dp1:inst3|altsyncram:altsyncram_component"
-Info: Elaborated megafunction instantiation "lpm_ram_dp1:inst3|altsyncram:altsyncram_component"
-Info: Instantiated megafunction "lpm_ram_dp1:inst3|altsyncram:altsyncram_component" with the following parameter:
-    Info: Parameter "address_reg_b" = "CLOCK0"
-    Info: Parameter "clock_enable_input_a" = "BYPASS"
-    Info: Parameter "clock_enable_input_b" = "BYPASS"
-    Info: Parameter "clock_enable_output_a" = "BYPASS"
-    Info: Parameter "clock_enable_output_b" = "BYPASS"
-    Info: Parameter "init_file" = "../MotherBoard/IMemPipe.mif"
-    Info: Parameter "intended_device_family" = "Stratix II"
-    Info: Parameter "lpm_type" = "altsyncram"
-    Info: Parameter "numwords_a" = "65536"
-    Info: Parameter "numwords_b" = "65536"
-    Info: Parameter "operation_mode" = "DUAL_PORT"
-    Info: Parameter "outdata_aclr_b" = "NONE"
-    Info: Parameter "outdata_reg_b" = "CLOCK0"
-    Info: Parameter "power_up_uninitialized" = "FALSE"
-    Info: Parameter "read_during_write_mode_mixed_ports" = "DONT_CARE"
-    Info: Parameter "widthad_a" = "16"
-    Info: Parameter "widthad_b" = "16"
-    Info: Parameter "width_a" = "32"
-    Info: Parameter "width_b" = "32"
-    Info: Parameter "width_byteena_a" = "1"
-Info: Found 1 design units, including 1 entities, in source file db/altsyncram_vas1.tdf
-    Info: Found entity 1: altsyncram_vas1
-Info: Elaborating entity "altsyncram_vas1" for hierarchy "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated"
-Info: Elaborating entity "decode_rqa" for hierarchy "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|decode_rqa:decode2"
-Warning: Synthesized away the following node(s):
-    Warning: Synthesized away the following RAM node(s):
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a0"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a1"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a2"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a3"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a4"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a5"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a6"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a7"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a8"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a9"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a10"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a11"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a12"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a13"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a14"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a15"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a16"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a17"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a18"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a19"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a20"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a21"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a22"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a23"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a24"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a25"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a26"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a27"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a28"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a29"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a30"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a31"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a32"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a33"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a34"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a35"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a36"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a37"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a38"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a39"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a40"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a41"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a42"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a43"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a44"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a45"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a46"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a47"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a48"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a49"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a50"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a51"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a52"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a53"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a54"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a55"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a56"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a57"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a58"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a59"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a60"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a61"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a62"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a63"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a64"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a65"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a66"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a67"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a68"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a69"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a70"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a71"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a72"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a73"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a74"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a75"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a76"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a77"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a78"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a79"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a80"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a81"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a82"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a83"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a84"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a85"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a86"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a87"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a88"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a89"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a90"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a91"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a92"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a93"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a94"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a95"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a96"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a97"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a98"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a99"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a100"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a101"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a102"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a103"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a104"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a105"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a106"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a107"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a108"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a109"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a110"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a111"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a112"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a113"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a114"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a115"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a116"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a117"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a118"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a119"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a120"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a121"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a122"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a123"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a124"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a125"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a126"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a127"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a128"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a129"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a130"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a131"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a132"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a133"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a134"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a135"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a136"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a137"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a138"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a139"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a140"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a141"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a142"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a143"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a144"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a145"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a146"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a147"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a148"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a149"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a150"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a151"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a152"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a153"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a154"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a155"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a156"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a157"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a158"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a159"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a160"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a161"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a162"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a163"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a164"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a165"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a166"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a167"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a168"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a169"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a170"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a171"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a172"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a173"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a174"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a175"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a176"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a177"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a178"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a179"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a180"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a181"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a182"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a183"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a184"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a185"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a186"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a187"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a188"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a189"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a190"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a191"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a192"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a193"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a194"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a195"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a196"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a197"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a198"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a199"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a200"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a201"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a202"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a203"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a204"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a205"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a206"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a207"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a208"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a209"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a210"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a211"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a212"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a213"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a214"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a215"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a216"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a217"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a218"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a219"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a220"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a221"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a222"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a223"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a224"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a225"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a226"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a227"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a228"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a229"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a230"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a231"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a232"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a233"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a234"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a235"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a236"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a237"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a238"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a239"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a240"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a241"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a242"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a243"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a244"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a245"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a246"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a247"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a248"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a249"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a250"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a251"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a252"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a253"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a254"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a255"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a256"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a257"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a258"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a259"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a260"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a261"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a262"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a263"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a264"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a265"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a266"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a267"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a268"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a269"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a270"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a271"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a272"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a273"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a274"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a275"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a276"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a277"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a278"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a279"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a280"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a281"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a282"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a283"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a284"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a285"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a286"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a287"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a288"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a289"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a290"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a291"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a292"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a293"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a294"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a295"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a296"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a297"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a298"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a299"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a300"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a301"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a302"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a303"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a304"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a305"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a306"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a307"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a308"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a309"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a310"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a311"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a312"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a313"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a314"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a315"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a316"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a317"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a318"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a319"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a320"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a321"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a322"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a323"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a324"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a325"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a326"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a327"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a328"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a329"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a330"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a331"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a332"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a333"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a334"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a335"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a336"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a337"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a338"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a339"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a340"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a341"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a342"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a343"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a344"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a345"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a346"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a347"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a348"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a349"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a350"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a351"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a352"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a353"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a354"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a355"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a356"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a357"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a358"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a359"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a360"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a361"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a362"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a363"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a364"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a365"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a366"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a367"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a368"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a369"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a370"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a371"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a372"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a373"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a374"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a375"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a376"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a377"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a378"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a379"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a380"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a381"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a382"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a383"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a384"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a385"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a386"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a387"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a388"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a389"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a390"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a391"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a392"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a393"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a394"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a395"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a396"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a397"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a398"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a399"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a400"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a401"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a402"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a403"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a404"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a405"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a406"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a407"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a408"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a409"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a410"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a411"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a412"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a413"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a414"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a415"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a416"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a417"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a418"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a419"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a420"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a421"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a422"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a423"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a424"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a425"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a426"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a427"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a428"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a429"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a430"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a431"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a432"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a433"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a434"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a435"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a436"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a437"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a438"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a439"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a440"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a441"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a442"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a443"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a444"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a445"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a446"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a447"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a448"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a449"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a450"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a451"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a452"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a453"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a454"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a455"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a456"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a457"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a458"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a459"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a460"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a461"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a462"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a463"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a464"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a465"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a466"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a467"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a468"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a469"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a470"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a471"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a472"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a473"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a474"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a475"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a476"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a477"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a478"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a479"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a480"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a481"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a482"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a483"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a484"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a485"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a486"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a487"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a488"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a489"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a490"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a491"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a492"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a493"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a494"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a495"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a496"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a497"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a498"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a499"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a500"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a501"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a502"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a503"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a504"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a505"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a506"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a507"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a508"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a509"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a510"
-        Warning (14320): Synthesized away node "lpm_ram_dp1:inst3|altsyncram:altsyncram_component|altsyncram_vas1:auto_generated|ram_block1a511"
-Info: Implemented 3601 device resources after synthesis - the final resource count might be different
+Info: Elaborating entity "mux_omb" for hierarchy "InstROM1:InstROM1|altsyncram:altsyncram_component|altsyncram_b881:auto_generated|mux_omb:mux2"
+Info: Implemented 3648 device resources after synthesis - the final resource count might be different
     Info: Implemented 3 input pins
-    Info: Implemented 97 output pins
-    Info: Implemented 2957 logic cells
+    Info: Implemented 129 output pins
+    Info: Implemented 2972 logic cells
     Info: Implemented 544 RAM segments
-Info: Quartus II Analysis & Synthesis was successful. 0 errors, 517 warnings
-    Info: Peak virtual memory: 268 megabytes
-    Info: Processing ended: Thu Nov 26 00:18:33 2009
-    Info: Elapsed time: 00:01:05
-    Info: Total CPU time (on all processors): 00:01:05
+Info: Quartus II Analysis & Synthesis was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 233 megabytes
+    Info: Processing ended: Tue Dec 01 22:51:44 2009
+    Info: Elapsed time: 00:01:13
+    Info: Total CPU time (on all processors): 00:01:11
 
 
