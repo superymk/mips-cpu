@@ -1,0 +1,54 @@
+-- Copyright (C) 1991-2009 Altera Corporation
+-- Your use of Altera Corporation's design tools, logic functions 
+-- and other software and tools, and its AMPP partner logic 
+-- functions, and any output files from any of the foregoing 
+-- (including device programming or simulation files), and any 
+-- associated documentation or information are expressly subject 
+-- to the terms and conditions of the Altera Program License 
+-- Subscription Agreement, Altera MegaCore Function License 
+-- Agreement, or other applicable license agreement, including, 
+-- without limitation, that your use is for the sole purpose of 
+-- programming logic devices manufactured by Altera and sold by 
+-- Altera or its authorized distributors.  Please refer to the 
+-- applicable agreement for further details.
+
+-- Quartus II generated Memory Initialization File (.mif)
+
+DEPTH = 32;           % Memory depth and width are required    %
+WIDTH = 32;           % Enter a decimal number                 %
+
+ADDRESS_RADIX = HEX;  % Address and value radixes are optional %
+DATA_RADIX = HEX;     % Enter BIN, DEC, HEX, or OCT; unless    %
+                      % otherwise specified, radixes = HEX     %
+CONTENT
+BEGIN
+--[0..1F] : 00000000; % Range--Every address from 0 to 1F = 00000000                                                      %
+   0 :    00000820; % 000000 00000 00000 00001 00000 100000 (00)         add  $1, $0, $0    ; address of data[0]        %
+   1 :    20020004; % 001000 00000 00010 00000 00000 000100 (04)         addi $2, $0,  4    ; counter                   %
+   2 :    00001820; % 000000 00000 00000 00011 00000 100000 (08)         add  $3, $0, $0    ; sum                       %
+   3 :    8C240050; % 100011 00001 00100 00000 00001 010000 (0C) loop:   lw   $4, 80($1)    ; load data                 %
+   4 :    00641820; % 000000 00011 00100 00011 00000 100000 (10)         add  $3, $3, $4    ; sum, PIPELINE STALLS      %
+   5 :    2042FFFF; % 001000 00010 00010 11111 11111 111111 (14)         addi $2, $2, -1    ; counter - 1               %
+   6 :    1440FFFC; % 000101 00010 00000 11111 11111 111100 (18)         bne  $2, $0, loop  ; finish?                   %
+   7 :    20210004; % 001000 00001 00001 00000 00000 000100 (1C)         addi $1, $1,  4    ; address + 4, DELAY SLOT   %
+   8 :    AC230050; % 101011 00001 00011 00000 00001 010000 (20)         sw   $3, 80($1)    ; yes, store sum            %
+   9 :    8C240050; % 100011 00001 00100 00000 00001 010000 (24)         lw   $4, 80($1)    ; check sw                  %
+   A :    00811822; % 000000 00100 00001 00011 00000 100010 (28)         sub  $3, $4, $1    ; sub: $3 <- $4 - $1        %
+   B :    20020003; % 001000 00000 00010 00000 00000 000011 (2C)         addi $2, $0,  3    ; counter                   %
+   C :    2042FFFF; % 001000 00010 00010 11111 11111 111111 (30) loop2:  addi $2, $2, -1    ; counter - 1               %
+   D :    3443FFFF; % 001101 00010 00011 11111 11111 111111 (34)         ori  $3, $2, -1    ; zero-extend: 0000ffff     %
+   E :    2004FFFF; % 001000 00000 00100 11111 11111 111111 (38)         addi $4, $0, -1    ; sign-extend: ffffffff     %
+   F :    3085FFFF; % 001100 00100 00101 11111 11111 111111 (3C)         andi $5, $4, -1    ; zero-extend: 0000ffff     %
+  10 :    00A43025; % 000000 00101 00100 00110 00000 100101 (40)         or   $6, $5, $4    ; or:  ffffffff             %
+  11 :    10400003; % 000100 00010 00000 00000 00000 000011 (44)         beq  $2, $0, shift ; if $2 = 0, goto shift     %
+  12 :    00A63824; % 000000 00101 00110 00111 00000 100100 (48)         and  $7, $5, $6    ; and: 0000ffff, DELAY SLOT %
+  13 :    0800000C; % 000010 00000 00000 00000 00000 001100 (4C)         j    loop2         ; jump loop2                %
+  14 :    00000000; % 000000 00000 00000 00000 00000 000000 (50)         nop                ; nop, DELAY SLOT           %
+  15 :    2002FFFF; % 001000 00000 00010 11111 11111 111111 (54) shift:  addi $2, $0, -1    ; $2   = ffffffff           %
+  16 :    00021BC0; % 000000 00000 00010 00011 01111 000000 (58)         sll  $3, $2, 15    ; <<15 = ffff8000           %
+  17 :    00031C00; % 000000 00000 00011 00011 10000 000000 (5C)         sll  $3, $3, 16    ; <<16 = 80000000           %
+  18 :    00031C03; % 000000 00000 00011 00011 10000 000011 (60)         sra  $3, $3, 16    ; >>16 = ffff8000 (arith)   %
+  19 :    00031BC2; % 000000 00000 00011 00011 01111 000010 (64)         srl  $3, $3, 15    ; >>15 = 0001ffff (logic)   %
+  1A :    0800001A; % 000010 00000 00000 00000 00000 011010 (68) finish: j    finish        ; dead loop                 %
+  1B :    00000000; % 000000 00000 00000 00000 00000 000000 (6C)         nop                ; nop, DELAY SLOT           %
+END ;

@@ -1,6 +1,4 @@
 set tool_name "ModelSim-Altera (VHDL)"
 set corner_file_list {
-	{{"Slow -2 1.1V 85 Model"} {PipelineUniProcessor_2_1100mv_85c_slow.vho PipelineUniProcessor_2_1100mv_85c_vhd_slow.sdo}}
-	{{"Slow -2 1.1V 0 Model"} {PipelineUniProcessor_2_1100mv_0c_slow.vho PipelineUniProcessor_2_1100mv_0c_vhd_slow.sdo}}
-	{{"Fast -M 1.1V 0 Model"} {PipelineUniProcessor_min_1100mv_0c_fast.vho PipelineUniProcessor_min_1100mv_0c_vhd_fast.sdo}}
+	{{"Slow Model"} {PipelineUniProcessor.vho PipelineUniProcessor_vhd.sdo}}
 }

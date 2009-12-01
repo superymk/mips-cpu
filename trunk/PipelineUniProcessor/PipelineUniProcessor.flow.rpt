@@ -1,5 +1,5 @@
 Flow report for PipelineUniProcessor
-Mon Nov 23 16:08:38 2009
+Thu Nov 26 00:22:29 2009
 Quartus II Version 9.0 Build 132 02/25/2009 SJ Full Version
 
 
@@ -38,24 +38,23 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------+
 ; Flow Summary                                                             ;
 +-------------------------------+------------------------------------------+
-; Flow Status                   ; Successful - Mon Nov 23 16:08:38 2009    ;
+; Flow Status                   ; Successful - Thu Nov 26 00:22:29 2009    ;
 ; Quartus II Version            ; 9.0 Build 132 02/25/2009 SJ Full Version ;
 ; Revision Name                 ; PipelineUniProcessor                     ;
-; Top-level Entity Name         ; InstMem                                  ;
-; Family                        ; Stratix III                              ;
-; Met timing requirements       ; N/A                                      ;
-; Logic utilization             ; < 1 %                                    ;
-;     Combinational ALUTs       ; 1 / 38,000 ( < 1 % )                     ;
-;     Memory ALUTs              ; 32 / 19,000 ( < 1 % )                    ;
-;     Dedicated logic registers ; 37 / 38,000 ( < 1 % )                    ;
-; Total registers               ; 37                                       ;
-; Total pins                    ; 97 / 296 ( 33 % )                        ;
+; Top-level Entity Name         ; MotherBoard                              ;
+; Family                        ; Stratix II                               ;
+; Met timing requirements       ; Yes                                      ;
+; Logic utilization             ; 2 %                                      ;
+;     Combinational ALUTs       ; 1,637 / 106,032 ( 2 % )                  ;
+;     Dedicated logic registers ; 1,339 / 106,032 ( 1 % )                  ;
+; Total registers               ; 1339                                     ;
+; Total pins                    ; 100 / 743 ( 13 % )                       ;
 ; Total virtual pins            ; 0                                        ;
-; Total block memory bits       ; 1,024 / 1,880,064 ( < 1 % )              ;
-; DSP block 18-bit elements     ; 0 / 216 ( 0 % )                          ;
-; Total PLLs                    ; 0 / 4 ( 0 % )                            ;
-; Total DLLs                    ; 0 / 4 ( 0 % )                            ;
-; Device                        ; EP3SL50F484C2                            ;
+; Total block memory bits       ; 4,194,304 / 6,747,840 ( 62 % )           ;
+; DSP block 9-bit elements      ; 0 / 504 ( 0 % )                          ;
+; Total PLLs                    ; 0 / 12 ( 0 % )                           ;
+; Total DLLs                    ; 0 / 2 ( 0 % )                            ;
+; Device                        ; EP2S130F1020C3                           ;
 ; Timing Models                 ; Final                                    ;
 +-------------------------------+------------------------------------------+
 
@@ -65,7 +64,7 @@ applicable agreement for further details.
 +-------------------+----------------------+
 ; Option            ; Setting              ;
 +-------------------+----------------------+
-; Start date & time ; 11/23/2009 16:06:58  ;
+; Start date & time ; 11/26/2009 00:17:28  ;
 ; Main task         ; Compilation          ;
 ; Revision Name     ; PipelineUniProcessor ;
 +-------------------+----------------------+
@@ -76,7 +75,7 @@ applicable agreement for further details.
 +------------------------------------+----------------------------------------------+------------------------------+-------------+----------------------+
 ; Assignment Name                    ; Value                                        ; Default Value                ; Entity Name ; Section Id           ;
 +------------------------------------+----------------------------------------------+------------------------------+-------------+----------------------+
-; COMPILER_SIGNATURE_ID              ; 81638347583.125896361704936                  ; --                           ; --          ; --                   ;
+; COMPILER_SIGNATURE_ID              ; 94265003581.125916584804992                  ; --                           ; --          ; --                   ;
 ; EDA_DESIGN_ENTRY_SYNTHESIS_TOOL    ; Design Compiler                              ; <None>                       ; --          ; --                   ;
 ; EDA_INPUT_DATA_FORMAT              ; Verilog Hdl                                  ; --                           ; --          ; eda_design_synthesis ;
 ; EDA_INPUT_VCC_NAME                 ; Vdd                                          ; --                           ; --          ; eda_design_synthesis ;
@@ -87,14 +86,14 @@ applicable agreement for further details.
 ; EDA_TIMING_ANALYSIS_TOOL           ; PrimeTime (Verilog)                          ; <None>                       ; --          ; --                   ;
 ; FITTER_EFFORT                      ; Standard Fit                                 ; Auto Fit                     ; --          ; --                   ;
 ; INCREMENTAL_COMPILATION            ; Off                                          ; FULL_INCREMENTAL_COMPILATION ; --          ; --                   ;
+; IP_TOOL_NAME                       ; LPM_RAM_DP                                   ; --                           ; --          ; --                   ;
+; IP_TOOL_NAME                       ; LPM_RAM_DQ                                   ; --                           ; --          ; --                   ;
 ; IP_TOOL_NAME                       ; LPM_COMPARE                                  ; --                           ; --          ; --                   ;
 ; IP_TOOL_NAME                       ; LPM_AND                                      ; --                           ; --          ; --                   ;
 ; IP_TOOL_NAME                       ; LPM_OR                                       ; --                           ; --          ; --                   ;
 ; IP_TOOL_NAME                       ; LPM_ADD_SUB                                  ; --                           ; --          ; --                   ;
 ; IP_TOOL_NAME                       ; LPM_CLSHIFT                                  ; --                           ; --          ; --                   ;
 ; IP_TOOL_NAME                       ; LPM_CLSHIFT                                  ; --                           ; --          ; --                   ;
-; IP_TOOL_NAME                       ; LPM_RAM_DQ                                   ; --                           ; --          ; --                   ;
-; IP_TOOL_NAME                       ; LPM_RAM_DP                                   ; --                           ; --          ; --                   ;
 ; IP_TOOL_NAME                       ; LPM_ROM                                      ; --                           ; --          ; --                   ;
 ; IP_TOOL_VERSION                    ; 9.0                                          ; --                           ; --          ; --                   ;
 ; IP_TOOL_VERSION                    ; 9.0                                          ; --                           ; --          ; --                   ;
@@ -105,6 +104,10 @@ applicable agreement for further details.
 ; IP_TOOL_VERSION                    ; 9.0                                          ; --                           ; --          ; --                   ;
 ; IP_TOOL_VERSION                    ; 9.0                                          ; --                           ; --          ; --                   ;
 ; IP_TOOL_VERSION                    ; 9.0                                          ; --                           ; --          ; --                   ;
+; MISC_FILE                          ; ../MotherBoard/lpm_ram_dp1.bsf               ; --                           ; --          ; --                   ;
+; MISC_FILE                          ; ../MotherBoard/lpm_ram_dp1.cmp               ; --                           ; --          ; --                   ;
+; MISC_FILE                          ; ../MotherBoard/DataRAM.bsf                   ; --                           ; --          ; --                   ;
+; MISC_FILE                          ; ../MotherBoard/DataRAM.cmp                   ; --                           ; --          ; --                   ;
 ; MISC_FILE                          ; Comp32.tdf                                   ; --                           ; --          ; --                   ;
 ; MISC_FILE                          ; Comp32.bsf                                   ; --                           ; --          ; --                   ;
 ; MISC_FILE                          ; Comp32.cmp                                   ; --                           ; --          ; --                   ;
@@ -118,42 +121,38 @@ applicable agreement for further details.
 ; MISC_FILE                          ; ../Modules/gates/lpm_clLogicalshift32bit.cmp ; --                           ; --          ; --                   ;
 ; MISC_FILE                          ; ../Modules/gates/lpm_clArithshift32bit.bsf   ; --                           ; --          ; --                   ;
 ; MISC_FILE                          ; ../Modules/gates/lpm_clArithshift32bit.cmp   ; --                           ; --          ; --                   ;
-; MISC_FILE                          ; ../MotherBoard/Memory/DataRAM.bsf            ; --                           ; --          ; --                   ;
-; MISC_FILE                          ; ../MotherBoard/Memory/DataRAM.cmp            ; --                           ; --          ; --                   ;
-; MISC_FILE                          ; lpm_ram_dp1.bsf                              ; --                           ; --          ; --                   ;
-; MISC_FILE                          ; lpm_ram_dp1.cmp                              ; --                           ; --          ; --                   ;
-; MISC_FILE                          ; lpm_rom0.bsf                                 ; --                           ; --          ; --                   ;
-; MISC_FILE                          ; lpm_rom0.cmp                                 ; --                           ; --          ; --                   ;
-; TOP_LEVEL_ENTITY                   ; InstMem                                      ; PipelineUniProcessor         ; --          ; --                   ;
+; MISC_FILE                          ; ../MotherBoard/InstROM1.bsf                  ; --                           ; --          ; --                   ;
+; MISC_FILE                          ; ../MotherBoard/InstROM1.cmp                  ; --                           ; --          ; --                   ;
+; TOP_LEVEL_ENTITY                   ; MotherBoard                                  ; PipelineUniProcessor         ; --          ; --                   ;
 ; USE_GENERATED_PHYSICAL_CONSTRAINTS ; Off                                          ; --                           ; --          ; eda_blast_fpga       ;
 +------------------------------------+----------------------------------------------+------------------------------+-------------+----------------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------+
-; Flow Elapsed Time                                                                                                             ;
-+---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
-+---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:06     ; 1.0                     ; 199 MB              ; 00:00:05                           ;
-; Fitter                    ; 00:00:45     ; 1.3                     ; 354 MB              ; 00:00:47                           ;
-; Assembler                 ; 00:00:19     ; 1.0                     ; 277 MB              ; 00:00:18                           ;
-; TimeQuest Timing Analyzer ; 00:00:13     ; 1.0                     ; 233 MB              ; 00:00:09                           ;
-; EDA Netlist Writer        ; 00:00:05     ; 1.0                     ; 150 MB              ; 00:00:04                           ;
-; Total                     ; 00:01:28     ; --                      ; --                  ; 00:01:23                           ;
-+---------------------------+--------------+-------------------------+---------------------+------------------------------------+
++-----------------------------------------------------------------------------------------------------------------------------+
+; Flow Elapsed Time                                                                                                           ;
++-------------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Module Name             ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
++-------------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Analysis & Synthesis    ; 00:01:05     ; 1.0                     ; 268 MB              ; 00:01:04                           ;
+; Fitter                  ; 00:02:58     ; 1.6                     ; 536 MB              ; 00:03:45                           ;
+; Assembler               ; 00:00:31     ; 1.0                     ; 499 MB              ; 00:00:30                           ;
+; Classic Timing Analyzer ; 00:00:07     ; 1.0                     ; 174 MB              ; 00:00:07                           ;
+; EDA Netlist Writer      ; 00:00:10     ; 1.0                     ; 173 MB              ; 00:00:10                           ;
+; Total                   ; 00:04:51     ; --                      ; --                  ; 00:05:36                           ;
++-------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
-+-----------------------------------------------------------------------------------------+
-; Flow OS Summary                                                                         ;
-+---------------------------+------------------+------------+------------+----------------+
-; Module Name               ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
-+---------------------------+------------------+------------+------------+----------------+
-; Analysis & Synthesis      ; founder-c5fd0b3  ; Windows XP ; 5.1        ; i686           ;
-; Fitter                    ; founder-c5fd0b3  ; Windows XP ; 5.1        ; i686           ;
-; Assembler                 ; founder-c5fd0b3  ; Windows XP ; 5.1        ; i686           ;
-; TimeQuest Timing Analyzer ; founder-c5fd0b3  ; Windows XP ; 5.1        ; i686           ;
-; EDA Netlist Writer        ; founder-c5fd0b3  ; Windows XP ; 5.1        ; i686           ;
-+---------------------------+------------------+------------+------------+----------------+
++---------------------------------------------------------------------------------------+
+; Flow OS Summary                                                                       ;
++-------------------------+------------------+------------+------------+----------------+
+; Module Name             ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
++-------------------------+------------------+------------+------------+----------------+
+; Analysis & Synthesis    ; founder-c5fd0b3  ; Windows XP ; 5.1        ; i686           ;
+; Fitter                  ; founder-c5fd0b3  ; Windows XP ; 5.1        ; i686           ;
+; Assembler               ; founder-c5fd0b3  ; Windows XP ; 5.1        ; i686           ;
+; Classic Timing Analyzer ; founder-c5fd0b3  ; Windows XP ; 5.1        ; i686           ;
+; EDA Netlist Writer      ; founder-c5fd0b3  ; Windows XP ; 5.1        ; i686           ;
++-------------------------+------------------+------------+------------+----------------+
 
 
 ------------
@@ -162,7 +161,7 @@ applicable agreement for further details.
 quartus_map --read_settings_files=on --write_settings_files=off PipelineUniProcessor -c PipelineUniProcessor
 quartus_fit --read_settings_files=off --write_settings_files=off PipelineUniProcessor -c PipelineUniProcessor
 quartus_asm --read_settings_files=off --write_settings_files=off PipelineUniProcessor -c PipelineUniProcessor
-quartus_sta PipelineUniProcessor -c PipelineUniProcessor
+quartus_tan --read_settings_files=off --write_settings_files=off PipelineUniProcessor -c PipelineUniProcessor --timing_analysis_only
 quartus_eda --read_settings_files=off --write_settings_files=off PipelineUniProcessor -c PipelineUniProcessor
 
 
