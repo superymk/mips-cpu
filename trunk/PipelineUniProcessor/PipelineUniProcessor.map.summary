@@ -1,13 +1,13 @@
-Analysis & Synthesis Status : Successful - Tue Dec 01 22:51:44 2009
+Analysis & Synthesis Status : Successful - Wed Dec 02 14:13:31 2009
 Quartus II Version : 9.0 Build 132 02/25/2009 SJ Full Version
 Revision Name : PipelineUniProcessor
 Top-level Entity Name : MotherBoard
 Family : Stratix II
 Logic utilization : N/A
-    Combinational ALUTs : 1,658
+    Combinational ALUTs : 1,633
     Dedicated logic registers : 1,330
 Total registers : 1330
-Total pins : 132
+Total pins : 101
 Total virtual pins : 0
 Total block memory bits : 4,194,304
 DSP block 9-bit elements : 0

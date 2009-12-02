@@ -22,7 +22,7 @@ DATA_RADIX = HEX;     % Enter BIN, DEC, HEX, or OCT; unless    %
                       % otherwise specified, radixes = HEX     %
 CONTENT
 BEGIN
-[0..1F] : 00000000; % Range--Every address from 0 to 1F = 00000000                                                      %
+--[0..1F] : 00000000; % Range--Every address from 0 to 1F = 00000000                                                      %
    0 :    00000820; % 000000 00000 00000 00001 00000 100000 (00)         add  $1, $0, $0    ; address of data[0]        %
    1 :    20020004; % 001000 00000 00010 00000 00000 000100 (04)         addi $2, $0,  4    ; counter                   %
    2 :    00001820; % 000000 00000 00000 00011 00000 100000 (08)         add  $3, $0, $0    ; sum                       %

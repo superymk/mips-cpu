@@ -85,7 +85,7 @@ BEGIN
 	GENERIC MAP (
 		clock_enable_input_a => "BYPASS",
 		clock_enable_output_a => "BYPASS",
-		init_file => "IMemPipe.mif",
+		init_file => "../MotherBoard/InitInstROM.mif",
 		intended_device_family => "Stratix II",
 		lpm_hint => "ENABLE_RUNTIME_MOD=NO",
 		lpm_type => "altsyncram",
@@ -127,7 +127,7 @@ END SYN;
 -- Retrieval info: PRIVATE: JTAG_ENABLED NUMERIC "0"
 -- Retrieval info: PRIVATE: JTAG_ID STRING "NONE"
 -- Retrieval info: PRIVATE: MAXIMUM_DEPTH NUMERIC "0"
--- Retrieval info: PRIVATE: MIFfilename STRING "IMemPipe.mif"
+-- Retrieval info: PRIVATE: MIFfilename STRING "../MotherBoard/InitInstROM.mif"
 -- Retrieval info: PRIVATE: NUMWORDS_A NUMERIC "65536"
 -- Retrieval info: PRIVATE: RAM_BLOCK_TYPE NUMERIC "0"
 -- Retrieval info: PRIVATE: RegAddr NUMERIC "1"
@@ -140,7 +140,7 @@ END SYN;
 -- Retrieval info: PRIVATE: rden NUMERIC "0"
 -- Retrieval info: CONSTANT: CLOCK_ENABLE_INPUT_A STRING "BYPASS"
 -- Retrieval info: CONSTANT: CLOCK_ENABLE_OUTPUT_A STRING "BYPASS"
--- Retrieval info: CONSTANT: INIT_FILE STRING "IMemPipe.mif"
+-- Retrieval info: CONSTANT: INIT_FILE STRING "../MotherBoard/InitInstROM.mif"
 -- Retrieval info: CONSTANT: INTENDED_DEVICE_FAMILY STRING "Stratix II"
 -- Retrieval info: CONSTANT: LPM_HINT STRING "ENABLE_RUNTIME_MOD=NO"
 -- Retrieval info: CONSTANT: LPM_TYPE STRING "altsyncram"

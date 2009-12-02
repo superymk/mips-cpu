@@ -173,15 +173,15 @@ applicable agreement for further details.
 	(port
 		(pt 232 192)
 		(output)
-		(text "WRITEMEM" (rect 0 0 62 14)(font "Arial" (font_size 8)))
-		(text "WRITEMEM" (rect 149 187 211 201)(font "Arial" (font_size 8)))
+		(text "WRITEREG" (rect 0 0 61 14)(font "Arial" (font_size 8)))
+		(text "WRITEREG" (rect 150 187 211 201)(font "Arial" (font_size 8)))
 		(line (pt 232 192)(pt 216 192)(line_width 1))
 	)
 	(port
 		(pt 232 208)
 		(output)
-		(text "WRITEREG" (rect 0 0 61 14)(font "Arial" (font_size 8)))
-		(text "WRITEREG" (rect 150 203 211 217)(font "Arial" (font_size 8)))
+		(text "WRITEMEM" (rect 0 0 62 14)(font "Arial" (font_size 8)))
+		(text "WRITEMEM" (rect 149 203 211 217)(font "Arial" (font_size 8)))
 		(line (pt 232 208)(pt 216 208)(line_width 1))
 	)
 	(port
