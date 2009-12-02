@@ -16,7 +16,7 @@
 ## PROGRAM "Quartus II"
 ## VERSION "Version 9.0 Build 132 02/25/2009 SJ Full Version"
 
-## DATE "12/01/2009 22:56:59"
+## DATE "12/02/2009 13:54:45"
 
 ## 
 ## Device: Altera EP2S130F1020C3 Package FBGA1020
@@ -79,38 +79,6 @@ set_propagated_clock [all_clocks]
 ## End individual pin commands definition ##
 
 ## Start Output pin capacitance definition ##
-set_load -pin_load 0 [get_ports { INST[0] } ]
-set_load -pin_load 0 [get_ports { INST[10] } ]
-set_load -pin_load 0 [get_ports { INST[11] } ]
-set_load -pin_load 0 [get_ports { INST[12] } ]
-set_load -pin_load 0 [get_ports { INST[13] } ]
-set_load -pin_load 0 [get_ports { INST[14] } ]
-set_load -pin_load 0 [get_ports { INST[15] } ]
-set_load -pin_load 0 [get_ports { INST[16] } ]
-set_load -pin_load 0 [get_ports { INST[17] } ]
-set_load -pin_load 0 [get_ports { INST[18] } ]
-set_load -pin_load 0 [get_ports { INST[19] } ]
-set_load -pin_load 0 [get_ports { INST[1] } ]
-set_load -pin_load 0 [get_ports { INST[20] } ]
-set_load -pin_load 0 [get_ports { INST[21] } ]
-set_load -pin_load 0 [get_ports { INST[22] } ]
-set_load -pin_load 0 [get_ports { INST[23] } ]
-set_load -pin_load 0 [get_ports { INST[24] } ]
-set_load -pin_load 0 [get_ports { INST[25] } ]
-set_load -pin_load 0 [get_ports { INST[26] } ]
-set_load -pin_load 0 [get_ports { INST[27] } ]
-set_load -pin_load 0 [get_ports { INST[28] } ]
-set_load -pin_load 0 [get_ports { INST[29] } ]
-set_load -pin_load 0 [get_ports { INST[2] } ]
-set_load -pin_load 0 [get_ports { INST[30] } ]
-set_load -pin_load 0 [get_ports { INST[31] } ]
-set_load -pin_load 0 [get_ports { INST[3] } ]
-set_load -pin_load 0 [get_ports { INST[4] } ]
-set_load -pin_load 0 [get_ports { INST[5] } ]
-set_load -pin_load 0 [get_ports { INST[6] } ]
-set_load -pin_load 0 [get_ports { INST[7] } ]
-set_load -pin_load 0 [get_ports { INST[8] } ]
-set_load -pin_load 0 [get_ports { INST[9] } ]
 set_load -pin_load 0 [get_ports { TESTINSTIF[0] } ]
 set_load -pin_load 0 [get_ports { TESTINSTIF[10] } ]
 set_load -pin_load 0 [get_ports { TESTINSTIF[11] } ]

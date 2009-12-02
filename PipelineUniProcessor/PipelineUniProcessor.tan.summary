@@ -5,9 +5,9 @@ Timing Analyzer Summary
 Type           : Worst-case tsu
 Slack          : N/A
 Required Time  : None
-Actual Time    : 4.309 ns
+Actual Time    : 5.473 ns
 From           : INT
-To             : PipelineUniProcessor:IntelInside|PC-BUFFER:PCBUFFER|dffe32bit:inst|dffe8bit:diff32Part3|inst4
+To             : PipelineUniProcessor:IntelInside|PC-BUFFER:PCBUFFER|dffe32bit:inst|dffe8bit:diff32Part4|inst1
 From Clock     : --
 To Clock       : CLK
 Failed Paths   : 0
@@ -15,9 +15,9 @@ Failed Paths   : 0
 Type           : Worst-case tco
 Slack          : N/A
 Required Time  : None
-Actual Time    : 13.497 ns
-From           : InstROM1:InstROM1|altsyncram:altsyncram_component|altsyncram_b881:auto_generated|ram_block1a176~porta_address_reg11
-To             : INST[16]
+Actual Time    : 10.927 ns
+From           : PipelineUniProcessor:IntelInside|PC-BUFFER:PCBUFFER|dffe32bit:inst|dffe8bit:diff32Part4|inst5
+To             : TESTPC[6]
 From Clock     : CLK
 To Clock       : --
 Failed Paths   : 0
@@ -25,9 +25,9 @@ Failed Paths   : 0
 Type           : Worst-case th
 Slack          : N/A
 Required Time  : None
-Actual Time    : -2.646 ns
+Actual Time    : -2.312 ns
 From           : INT
-To             : PipelineUniProcessor:IntelInside|PC-BUFFER:PCBUFFER|dffe32bit:inst|dffe8bit:diff32Part1|inst4
+To             : PipelineUniProcessor:IntelInside|IF-ID-INSTPC-BUFFER:inst1|dffe32bit:PCREGBUFFER|dffe8bit:diff32Part4|inst4
 From Clock     : --
 To Clock       : CLK
 Failed Paths   : 0
@@ -35,9 +35,9 @@ Failed Paths   : 0
 Type           : Clock Setup: 'CLK'
 Slack          : N/A
 Required Time  : None
-Actual Time    : 68.98 MHz ( period = 14.498 ns )
-From           : PipelineUniProcessor:IntelInside|RegFile32x32:Regs|dffe32bit:inst3|dffe8bit:diff32Part2|inst4
-To             : PipelineUniProcessor:IntelInside|PC-BUFFER:PCBUFFER|dffe32bit:inst|dffe8bit:diff32Part2|inst5
+Actual Time    : 71.05 MHz ( period = 14.074 ns )
+From           : PipelineUniProcessor:IntelInside|RegFile32x32:Regs|dffe32bit:inst7|dffe8bit:diff32Part1|inst3
+To             : PipelineUniProcessor:IntelInside|IF-ID-INSTPC-BUFFER:inst1|dffe32bit:PCREGBUFFER|dffe8bit:diff32Part2|inst5
 From Clock     : CLK
 To Clock       : CLK
 Failed Paths   : 0

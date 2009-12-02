@@ -1,5 +1,5 @@
 Analysis & Synthesis report for PipelineUniProcessor
-Tue Dec 01 22:51:44 2009
+Wed Dec 02 14:13:31 2009
 Quartus II Version 9.0 Build 132 02/25/2009 SJ Full Version
 
 
@@ -56,16 +56,16 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                             ;
 +-------------------------------+------------------------------------------+
-; Analysis & Synthesis Status   ; Successful - Tue Dec 01 22:51:44 2009    ;
+; Analysis & Synthesis Status   ; Successful - Wed Dec 02 14:13:31 2009    ;
 ; Quartus II Version            ; 9.0 Build 132 02/25/2009 SJ Full Version ;
 ; Revision Name                 ; PipelineUniProcessor                     ;
 ; Top-level Entity Name         ; MotherBoard                              ;
 ; Family                        ; Stratix II                               ;
 ; Logic utilization             ; N/A                                      ;
-;     Combinational ALUTs       ; 1,658                                    ;
+;     Combinational ALUTs       ; 1,633                                    ;
 ;     Dedicated logic registers ; 1,330                                    ;
 ; Total registers               ; 1330                                     ;
-; Total pins                    ; 132                                      ;
+; Total pins                    ; 101                                      ;
 ; Total virtual pins            ; 0                                        ;
 ; Total block memory bits       ; 4,194,304                                ;
 ; DSP block 9-bit elements      ; 0                                        ;
@@ -253,39 +253,39 @@ applicable agreement for further details.
 +-----------------------------------------------+---------+
 ; Resource                                      ; Usage   ;
 +-----------------------------------------------+---------+
-; Estimated ALUTs Used                          ; 1658    ;
+; Estimated ALUTs Used                          ; 1633    ;
 ; Dedicated logic registers                     ; 1330    ;
 ;                                               ;         ;
-; Estimated ALUTs Unavailable                   ; 507     ;
+; Estimated ALUTs Unavailable                   ; 491     ;
 ;                                               ;         ;
-; Total combinational functions                 ; 1658    ;
+; Total combinational functions                 ; 1633    ;
 ; Combinational ALUT usage by number of inputs  ;         ;
-;     -- 7 input functions                      ; 9       ;
-;     -- 6 input functions                      ; 921     ;
-;     -- 5 input functions                      ; 350     ;
-;     -- 4 input functions                      ; 69      ;
-;     -- <=3 input functions                    ; 309     ;
+;     -- 7 input functions                      ; 4       ;
+;     -- 6 input functions                      ; 899     ;
+;     -- 5 input functions                      ; 363     ;
+;     -- 4 input functions                      ; 66      ;
+;     -- <=3 input functions                    ; 301     ;
 ;                                               ;         ;
 ; Combinational ALUTs by mode                   ;         ;
-;     -- normal mode                            ; 1586    ;
-;     -- extended LUT mode                      ; 9       ;
+;     -- normal mode                            ; 1566    ;
+;     -- extended LUT mode                      ; 4       ;
 ;     -- arithmetic mode                        ; 63      ;
 ;     -- shared arithmetic mode                 ; 0       ;
 ;                                               ;         ;
-; Estimated ALUT/register pairs used            ; 2781    ;
+; Estimated ALUT/register pairs used            ; 2756    ;
 ;                                               ;         ;
 ; Total registers                               ; 1330    ;
 ;     -- Dedicated logic registers              ; 1330    ;
 ;     -- I/O registers                          ; 0       ;
 ;                                               ;         ;
-; Estimated ALMs:  partially or completely used ; 1,471   ;
+; Estimated ALMs:  partially or completely used ; 1,458   ;
 ;                                               ;         ;
-; I/O pins                                      ; 132     ;
+; I/O pins                                      ; 101     ;
 ; Total block memory bits                       ; 4194304 ;
 ; Maximum fan-out node                          ; CLK     ;
 ; Maximum fan-out                               ; 1874    ;
-; Total fan-out                                 ; 21443   ;
-; Average fan-out                               ; 5.85    ;
+; Total fan-out                                 ; 21273   ;
+; Average fan-out                               ; 5.90    ;
 +-----------------------------------------------+---------+
 
 
@@ -294,7 +294,7 @@ applicable agreement for further details.
 +----------------------------------------------------+-------------------+--------------+-------------------+--------------+---------+-----------+-----------+------+--------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node                         ; LC Combinationals ; LC Registers ; Block Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; DSP 36x36 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                                                   ; Library Name ;
 +----------------------------------------------------+-------------------+--------------+-------------------+--------------+---------+-----------+-----------+------+--------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
-; |MotherBoard                                       ; 1658 (0)          ; 1330 (0)     ; 4194304           ; 0            ; 0       ; 0         ; 0         ; 132  ; 0            ; |MotherBoard                                                                                                                                                          ; work         ;
+; |MotherBoard                                       ; 1633 (0)          ; 1330 (0)     ; 4194304           ; 0            ; 0       ; 0         ; 0         ; 101  ; 0            ; |MotherBoard                                                                                                                                                          ; work         ;
 ;    |DataRAM:DataRAM1|                              ; 0 (0)             ; 0 (0)        ; 2097152           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |MotherBoard|DataRAM:DataRAM1                                                                                                                                         ; work         ;
 ;       |altsyncram:altsyncram_component|            ; 0 (0)             ; 0 (0)        ; 2097152           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |MotherBoard|DataRAM:DataRAM1|altsyncram:altsyncram_component                                                                                                         ; work         ;
 ;          |altsyncram_5ca1:auto_generated|          ; 0 (0)             ; 0 (0)        ; 2097152           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |MotherBoard|DataRAM:DataRAM1|altsyncram:altsyncram_component|altsyncram_5ca1:auto_generated                                                                          ; work         ;
@@ -303,15 +303,15 @@ applicable agreement for further details.
 ;          |altsyncram_b881:auto_generated|          ; 176 (0)           ; 4 (4)        ; 2097152           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |MotherBoard|InstROM1:InstROM1|altsyncram:altsyncram_component|altsyncram_b881:auto_generated                                                                         ; work         ;
 ;             |decode_rqa:deep_decode|               ; 16 (16)           ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |MotherBoard|InstROM1:InstROM1|altsyncram:altsyncram_component|altsyncram_b881:auto_generated|decode_rqa:deep_decode                                                  ; work         ;
 ;             |mux_omb:mux2|                         ; 160 (160)         ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |MotherBoard|InstROM1:InstROM1|altsyncram:altsyncram_component|altsyncram_b881:auto_generated|mux_omb:mux2                                                            ; work         ;
-;    |PipelineUniProcessor:IntelInside|              ; 1482 (25)         ; 1326 (0)     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |MotherBoard|PipelineUniProcessor:IntelInside                                                                                                                         ; work         ;
+;    |PipelineUniProcessor:IntelInside|              ; 1457 (24)         ; 1326 (0)     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |MotherBoard|PipelineUniProcessor:IntelInside                                                                                                                         ; work         ;
 ;       |ALU:inst12|                                 ; 332 (0)           ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |MotherBoard|PipelineUniProcessor:IntelInside|ALU:inst12                                                                                                              ; work         ;
-;          |ALSHIFT:inst9|                           ; 180 (0)           ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |MotherBoard|PipelineUniProcessor:IntelInside|ALU:inst12|ALSHIFT:inst9                                                                                                ; work         ;
-;             |lpm_clArithshift32bit:inst|           ; 46 (0)            ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |MotherBoard|PipelineUniProcessor:IntelInside|ALU:inst12|ALSHIFT:inst9|lpm_clArithshift32bit:inst                                                                     ; work         ;
-;                |lpm_clshift:lpm_clshift_component| ; 46 (0)            ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |MotherBoard|PipelineUniProcessor:IntelInside|ALU:inst12|ALSHIFT:inst9|lpm_clArithshift32bit:inst|lpm_clshift:lpm_clshift_component                                   ; work         ;
-;                   |lpm_clshift_euc:auto_generated| ; 46 (46)           ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |MotherBoard|PipelineUniProcessor:IntelInside|ALU:inst12|ALSHIFT:inst9|lpm_clArithshift32bit:inst|lpm_clshift:lpm_clshift_component|lpm_clshift_euc:auto_generated    ; work         ;
-;             |lpm_clLogicalshift32bit:inst8|        ; 129 (0)           ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |MotherBoard|PipelineUniProcessor:IntelInside|ALU:inst12|ALSHIFT:inst9|lpm_clLogicalshift32bit:inst8                                                                  ; work         ;
-;                |lpm_clshift:lpm_clshift_component| ; 129 (0)           ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |MotherBoard|PipelineUniProcessor:IntelInside|ALU:inst12|ALSHIFT:inst9|lpm_clLogicalshift32bit:inst8|lpm_clshift:lpm_clshift_component                                ; work         ;
-;                   |lpm_clshift_vjc:auto_generated| ; 129 (129)         ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |MotherBoard|PipelineUniProcessor:IntelInside|ALU:inst12|ALSHIFT:inst9|lpm_clLogicalshift32bit:inst8|lpm_clshift:lpm_clshift_component|lpm_clshift_vjc:auto_generated ; work         ;
+;          |ALSHIFT:inst9|                           ; 182 (0)           ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |MotherBoard|PipelineUniProcessor:IntelInside|ALU:inst12|ALSHIFT:inst9                                                                                                ; work         ;
+;             |lpm_clArithshift32bit:inst|           ; 44 (0)            ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |MotherBoard|PipelineUniProcessor:IntelInside|ALU:inst12|ALSHIFT:inst9|lpm_clArithshift32bit:inst                                                                     ; work         ;
+;                |lpm_clshift:lpm_clshift_component| ; 44 (0)            ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |MotherBoard|PipelineUniProcessor:IntelInside|ALU:inst12|ALSHIFT:inst9|lpm_clArithshift32bit:inst|lpm_clshift:lpm_clshift_component                                   ; work         ;
+;                   |lpm_clshift_euc:auto_generated| ; 44 (44)           ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |MotherBoard|PipelineUniProcessor:IntelInside|ALU:inst12|ALSHIFT:inst9|lpm_clArithshift32bit:inst|lpm_clshift:lpm_clshift_component|lpm_clshift_euc:auto_generated    ; work         ;
+;             |lpm_clLogicalshift32bit:inst8|        ; 133 (0)           ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |MotherBoard|PipelineUniProcessor:IntelInside|ALU:inst12|ALSHIFT:inst9|lpm_clLogicalshift32bit:inst8                                                                  ; work         ;
+;                |lpm_clshift:lpm_clshift_component| ; 133 (0)           ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |MotherBoard|PipelineUniProcessor:IntelInside|ALU:inst12|ALSHIFT:inst9|lpm_clLogicalshift32bit:inst8|lpm_clshift:lpm_clshift_component                                ; work         ;
+;                   |lpm_clshift_vjc:auto_generated| ; 133 (133)         ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |MotherBoard|PipelineUniProcessor:IntelInside|ALU:inst12|ALSHIFT:inst9|lpm_clLogicalshift32bit:inst8|lpm_clshift:lpm_clshift_component|lpm_clshift_vjc:auto_generated ; work         ;
 ;             |mux2x32bit:inst2|                     ; 5 (0)             ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |MotherBoard|PipelineUniProcessor:IntelInside|ALU:inst12|ALSHIFT:inst9|mux2x32bit:inst2                                                                               ; work         ;
 ;                |mux2x8bit:inst2|                   ; 2 (0)             ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |MotherBoard|PipelineUniProcessor:IntelInside|ALU:inst12|ALSHIFT:inst9|mux2x32bit:inst2|mux2x8bit:inst2                                                               ; work         ;
 ;                   |mux2x1bit:inst|                 ; 2 (2)             ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |MotherBoard|PipelineUniProcessor:IntelInside|ALU:inst12|ALSHIFT:inst9|mux2x32bit:inst2|mux2x8bit:inst2|mux2x1bit:inst                                                ; work         ;
@@ -320,11 +320,11 @@ applicable agreement for further details.
 ;          |lpm_add_sub32BIT:inst5|                  ; 33 (0)            ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |MotherBoard|PipelineUniProcessor:IntelInside|ALU:inst12|lpm_add_sub32BIT:inst5                                                                                       ; work         ;
 ;             |lpm_add_sub:lpm_add_sub_component|    ; 33 (0)            ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |MotherBoard|PipelineUniProcessor:IntelInside|ALU:inst12|lpm_add_sub32BIT:inst5|lpm_add_sub:lpm_add_sub_component                                                     ; work         ;
 ;                |add_sub_qkg:auto_generated|        ; 33 (33)           ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |MotherBoard|PipelineUniProcessor:IntelInside|ALU:inst12|lpm_add_sub32BIT:inst5|lpm_add_sub:lpm_add_sub_component|add_sub_qkg:auto_generated                          ; work         ;
-;          |mux4x32bit:inst2|                        ; 119 (119)         ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |MotherBoard|PipelineUniProcessor:IntelInside|ALU:inst12|mux4x32bit:inst2                                                                                             ; work         ;
-;       |ControlUnit:CU|                             ; 40 (0)            ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |MotherBoard|PipelineUniProcessor:IntelInside|ControlUnit:CU                                                                                                          ; work         ;
-;          |BasicControlUnit:BCU|                    ; 22 (0)            ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |MotherBoard|PipelineUniProcessor:IntelInside|ControlUnit:CU|BasicControlUnit:BCU                                                                                     ; work         ;
-;             |InstDecoder:inst1|                    ; 10 (10)           ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |MotherBoard|PipelineUniProcessor:IntelInside|ControlUnit:CU|BasicControlUnit:BCU|InstDecoder:inst1                                                                   ; work         ;
-;             |InstTranslator:inst|                  ; 12 (12)           ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |MotherBoard|PipelineUniProcessor:IntelInside|ControlUnit:CU|BasicControlUnit:BCU|InstTranslator:inst                                                                 ; work         ;
+;          |mux4x32bit:inst2|                        ; 117 (117)         ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |MotherBoard|PipelineUniProcessor:IntelInside|ALU:inst12|mux4x32bit:inst2                                                                                             ; work         ;
+;       |ControlUnit:CU|                             ; 41 (0)            ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |MotherBoard|PipelineUniProcessor:IntelInside|ControlUnit:CU                                                                                                          ; work         ;
+;          |BasicControlUnit:BCU|                    ; 23 (0)            ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |MotherBoard|PipelineUniProcessor:IntelInside|ControlUnit:CU|BasicControlUnit:BCU                                                                                     ; work         ;
+;             |InstDecoder:inst1|                    ; 9 (9)             ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |MotherBoard|PipelineUniProcessor:IntelInside|ControlUnit:CU|BasicControlUnit:BCU|InstDecoder:inst1                                                                   ; work         ;
+;             |InstTranslator:inst|                  ; 14 (14)           ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |MotherBoard|PipelineUniProcessor:IntelInside|ControlUnit:CU|BasicControlUnit:BCU|InstTranslator:inst                                                                 ; work         ;
 ;          |CtrlStall:inst3|                         ; 3 (3)             ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |MotherBoard|PipelineUniProcessor:IntelInside|ControlUnit:CU|CtrlStall:inst3                                                                                          ; work         ;
 ;          |ForwardControlUnit:inst|                 ; 10 (10)           ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |MotherBoard|PipelineUniProcessor:IntelInside|ControlUnit:CU|ForwardControlUnit:inst                                                                                  ; work         ;
 ;          |HazardControlUnit:inst1|                 ; 5 (5)             ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |MotherBoard|PipelineUniProcessor:IntelInside|ControlUnit:CU|HazardControlUnit:inst1                                                                                  ; work         ;
@@ -396,7 +396,7 @@ applicable agreement for further details.
 ;          |add32bitci:inst|                         ; 30 (0)            ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |MotherBoard|PipelineUniProcessor:IntelInside|PCDecision:inst10|add32bitci:inst                                                                                       ; work         ;
 ;             |add8bit:Adder8-inst|                  ; 30 (0)            ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |MotherBoard|PipelineUniProcessor:IntelInside|PCDecision:inst10|add32bitci:inst|add8bit:Adder8-inst                                                                   ; work         ;
 ;                |add1bit:inst3|                     ; 30 (30)           ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |MotherBoard|PipelineUniProcessor:IntelInside|PCDecision:inst10|add32bitci:inst|add8bit:Adder8-inst|add1bit:inst3                                                     ; work         ;
-;       |ProcessPC:inst4|                            ; 47 (0)            ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |MotherBoard|PipelineUniProcessor:IntelInside|ProcessPC:inst4                                                                                                         ; work         ;
+;       |ProcessPC:inst4|                            ; 49 (0)            ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |MotherBoard|PipelineUniProcessor:IntelInside|ProcessPC:inst4                                                                                                         ; work         ;
 ;          |add32bit:inst1|                          ; 15 (0)            ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |MotherBoard|PipelineUniProcessor:IntelInside|ProcessPC:inst4|add32bit:inst1                                                                                          ; work         ;
 ;             |add32bitci:inst|                      ; 15 (0)            ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |MotherBoard|PipelineUniProcessor:IntelInside|ProcessPC:inst4|add32bit:inst1|add32bitci:inst                                                                          ; work         ;
 ;                |add8bit:Adder8-inst1|              ; 5 (0)             ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |MotherBoard|PipelineUniProcessor:IntelInside|ProcessPC:inst4|add32bit:inst1|add32bitci:inst|add8bit:Adder8-inst1                                                     ; work         ;
@@ -418,7 +418,7 @@ applicable agreement for further details.
 ;                   |add1bit:inst3|                  ; 1 (1)             ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |MotherBoard|PipelineUniProcessor:IntelInside|ProcessPC:inst4|add32bit:inst1|add32bitci:inst|add8bit:Adder8-inst|add1bit:inst3                                        ; work         ;
 ;                   |add1bit:inst5|                  ; 1 (1)             ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |MotherBoard|PipelineUniProcessor:IntelInside|ProcessPC:inst4|add32bit:inst1|add32bitci:inst|add8bit:Adder8-inst|add1bit:inst5                                        ; work         ;
 ;                   |add1bit:inst7|                  ; 1 (1)             ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |MotherBoard|PipelineUniProcessor:IntelInside|ProcessPC:inst4|add32bit:inst1|add32bitci:inst|add8bit:Adder8-inst|add1bit:inst7                                        ; work         ;
-;          |mux2x32bit:inst5|                        ; 32 (0)            ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |MotherBoard|PipelineUniProcessor:IntelInside|ProcessPC:inst4|mux2x32bit:inst5                                                                                        ; work         ;
+;          |mux2x32bit:inst5|                        ; 34 (0)            ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |MotherBoard|PipelineUniProcessor:IntelInside|ProcessPC:inst4|mux2x32bit:inst5                                                                                        ; work         ;
 ;             |mux2x8bit:inst1|                      ; 8 (0)             ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |MotherBoard|PipelineUniProcessor:IntelInside|ProcessPC:inst4|mux2x32bit:inst5|mux2x8bit:inst1                                                                        ; work         ;
 ;                |mux2x1bit:inst1|                   ; 1 (1)             ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |MotherBoard|PipelineUniProcessor:IntelInside|ProcessPC:inst4|mux2x32bit:inst5|mux2x8bit:inst1|mux2x1bit:inst1                                                        ; work         ;
 ;                |mux2x1bit:inst3|                   ; 1 (1)             ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |MotherBoard|PipelineUniProcessor:IntelInside|ProcessPC:inst4|mux2x32bit:inst5|mux2x8bit:inst1|mux2x1bit:inst3                                                        ; work         ;
@@ -437,13 +437,13 @@ applicable agreement for further details.
 ;                |mux2x1bit:inst8|                   ; 1 (1)             ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |MotherBoard|PipelineUniProcessor:IntelInside|ProcessPC:inst4|mux2x32bit:inst5|mux2x8bit:inst2|mux2x1bit:inst8                                                        ; work         ;
 ;                |mux2x1bit:inst9|                   ; 1 (1)             ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |MotherBoard|PipelineUniProcessor:IntelInside|ProcessPC:inst4|mux2x32bit:inst5|mux2x8bit:inst2|mux2x1bit:inst9                                                        ; work         ;
 ;                |mux2x1bit:inst|                    ; 1 (1)             ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |MotherBoard|PipelineUniProcessor:IntelInside|ProcessPC:inst4|mux2x32bit:inst5|mux2x8bit:inst2|mux2x1bit:inst                                                         ; work         ;
-;             |mux2x8bit:inst3|                      ; 8 (0)             ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |MotherBoard|PipelineUniProcessor:IntelInside|ProcessPC:inst4|mux2x32bit:inst5|mux2x8bit:inst3                                                                        ; work         ;
+;             |mux2x8bit:inst3|                      ; 10 (0)            ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |MotherBoard|PipelineUniProcessor:IntelInside|ProcessPC:inst4|mux2x32bit:inst5|mux2x8bit:inst3                                                                        ; work         ;
 ;                |mux2x1bit:inst1|                   ; 1 (1)             ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |MotherBoard|PipelineUniProcessor:IntelInside|ProcessPC:inst4|mux2x32bit:inst5|mux2x8bit:inst3|mux2x1bit:inst1                                                        ; work         ;
 ;                |mux2x1bit:inst3|                   ; 1 (1)             ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |MotherBoard|PipelineUniProcessor:IntelInside|ProcessPC:inst4|mux2x32bit:inst5|mux2x8bit:inst3|mux2x1bit:inst3                                                        ; work         ;
 ;                |mux2x1bit:inst5|                   ; 1 (1)             ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |MotherBoard|PipelineUniProcessor:IntelInside|ProcessPC:inst4|mux2x32bit:inst5|mux2x8bit:inst3|mux2x1bit:inst5                                                        ; work         ;
 ;                |mux2x1bit:inst6|                   ; 1 (1)             ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |MotherBoard|PipelineUniProcessor:IntelInside|ProcessPC:inst4|mux2x32bit:inst5|mux2x8bit:inst3|mux2x1bit:inst6                                                        ; work         ;
 ;                |mux2x1bit:inst7|                   ; 1 (1)             ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |MotherBoard|PipelineUniProcessor:IntelInside|ProcessPC:inst4|mux2x32bit:inst5|mux2x8bit:inst3|mux2x1bit:inst7                                                        ; work         ;
-;                |mux2x1bit:inst8|                   ; 1 (1)             ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |MotherBoard|PipelineUniProcessor:IntelInside|ProcessPC:inst4|mux2x32bit:inst5|mux2x8bit:inst3|mux2x1bit:inst8                                                        ; work         ;
+;                |mux2x1bit:inst8|                   ; 3 (3)             ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |MotherBoard|PipelineUniProcessor:IntelInside|ProcessPC:inst4|mux2x32bit:inst5|mux2x8bit:inst3|mux2x1bit:inst8                                                        ; work         ;
 ;                |mux2x1bit:inst9|                   ; 1 (1)             ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |MotherBoard|PipelineUniProcessor:IntelInside|ProcessPC:inst4|mux2x32bit:inst5|mux2x8bit:inst3|mux2x1bit:inst9                                                        ; work         ;
 ;                |mux2x1bit:inst|                    ; 1 (1)             ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |MotherBoard|PipelineUniProcessor:IntelInside|ProcessPC:inst4|mux2x32bit:inst5|mux2x8bit:inst3|mux2x1bit:inst                                                         ; work         ;
 ;             |mux2x8bit:inst|                       ; 8 (0)             ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |MotherBoard|PipelineUniProcessor:IntelInside|ProcessPC:inst4|mux2x32bit:inst5|mux2x8bit:inst                                                                         ; work         ;
@@ -455,7 +455,7 @@ applicable agreement for further details.
 ;                |mux2x1bit:inst8|                   ; 1 (1)             ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |MotherBoard|PipelineUniProcessor:IntelInside|ProcessPC:inst4|mux2x32bit:inst5|mux2x8bit:inst|mux2x1bit:inst8                                                         ; work         ;
 ;                |mux2x1bit:inst9|                   ; 1 (1)             ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |MotherBoard|PipelineUniProcessor:IntelInside|ProcessPC:inst4|mux2x32bit:inst5|mux2x8bit:inst|mux2x1bit:inst9                                                         ; work         ;
 ;                |mux2x1bit:inst|                    ; 1 (1)             ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |MotherBoard|PipelineUniProcessor:IntelInside|ProcessPC:inst4|mux2x32bit:inst5|mux2x8bit:inst|mux2x1bit:inst                                                          ; work         ;
-;       |RegFile32x32:Regs|                          ; 743 (0)           ; 992 (0)      ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |MotherBoard|PipelineUniProcessor:IntelInside|RegFile32x32:Regs                                                                                                       ; work         ;
+;       |RegFile32x32:Regs|                          ; 745 (0)           ; 992 (0)      ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |MotherBoard|PipelineUniProcessor:IntelInside|RegFile32x32:Regs                                                                                                       ; work         ;
 ;          |dffe32bit:inst10|                        ; 0 (0)             ; 32 (0)       ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |MotherBoard|PipelineUniProcessor:IntelInside|RegFile32x32:Regs|dffe32bit:inst10                                                                                      ; work         ;
 ;             |dffe8bit:diff32Part1|                 ; 0 (0)             ; 8 (8)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |MotherBoard|PipelineUniProcessor:IntelInside|RegFile32x32:Regs|dffe32bit:inst10|dffe8bit:diff32Part1                                                                 ; work         ;
 ;             |dffe8bit:diff32Part2|                 ; 0 (0)             ; 8 (8)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |MotherBoard|PipelineUniProcessor:IntelInside|RegFile32x32:Regs|dffe32bit:inst10|dffe8bit:diff32Part2                                                                 ; work         ;
@@ -613,10 +613,10 @@ applicable agreement for further details.
 ;             |dffe8bit:diff32Part4|                 ; 0 (0)             ; 8 (8)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |MotherBoard|PipelineUniProcessor:IntelInside|RegFile32x32:Regs|dffe32bit:inst|dffe8bit:diff32Part4                                                                   ; work         ;
 ;          |lpm_decode:37|                           ; 33 (0)            ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |MotherBoard|PipelineUniProcessor:IntelInside|RegFile32x32:Regs|lpm_decode:37                                                                                         ; work         ;
 ;             |decode_ktf:auto_generated|            ; 33 (33)           ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |MotherBoard|PipelineUniProcessor:IntelInside|RegFile32x32:Regs|lpm_decode:37|decode_ktf:auto_generated                                                               ; work         ;
-;          |lpm_mux:54|                              ; 355 (0)           ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |MotherBoard|PipelineUniProcessor:IntelInside|RegFile32x32:Regs|lpm_mux:54                                                                                            ; work         ;
-;             |mux_2rc:auto_generated|               ; 355 (355)         ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |MotherBoard|PipelineUniProcessor:IntelInside|RegFile32x32:Regs|lpm_mux:54|mux_2rc:auto_generated                                                                     ; work         ;
-;          |lpm_mux:55|                              ; 355 (0)           ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |MotherBoard|PipelineUniProcessor:IntelInside|RegFile32x32:Regs|lpm_mux:55                                                                                            ; work         ;
-;             |mux_2rc:auto_generated|               ; 355 (355)         ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |MotherBoard|PipelineUniProcessor:IntelInside|RegFile32x32:Regs|lpm_mux:55|mux_2rc:auto_generated                                                                     ; work         ;
+;          |lpm_mux:54|                              ; 356 (0)           ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |MotherBoard|PipelineUniProcessor:IntelInside|RegFile32x32:Regs|lpm_mux:54                                                                                            ; work         ;
+;             |mux_2rc:auto_generated|               ; 356 (356)         ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |MotherBoard|PipelineUniProcessor:IntelInside|RegFile32x32:Regs|lpm_mux:54|mux_2rc:auto_generated                                                                     ; work         ;
+;          |lpm_mux:55|                              ; 356 (0)           ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |MotherBoard|PipelineUniProcessor:IntelInside|RegFile32x32:Regs|lpm_mux:55                                                                                            ; work         ;
+;             |mux_2rc:auto_generated|               ; 356 (356)         ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |MotherBoard|PipelineUniProcessor:IntelInside|RegFile32x32:Regs|lpm_mux:55|mux_2rc:auto_generated                                                                     ; work         ;
 ;       |SignExt:inst3|                              ; 1 (1)             ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |MotherBoard|PipelineUniProcessor:IntelInside|SignExt:inst3                                                                                                           ; work         ;
 ;       |mux2x32bit:AluASrcSelector|                 ; 32 (0)            ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |MotherBoard|PipelineUniProcessor:IntelInside|mux2x32bit:AluASrcSelector                                                                                              ; work         ;
 ;          |mux2x8bit:inst1|                         ; 8 (0)             ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |MotherBoard|PipelineUniProcessor:IntelInside|mux2x32bit:AluASrcSelector|mux2x8bit:inst1                                                                              ; work         ;
@@ -730,8 +730,8 @@ applicable agreement for further details.
 ;             |mux2x1bit:inst9|                      ; 1 (1)             ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |MotherBoard|PipelineUniProcessor:IntelInside|mux2x32bit:inst23|mux2x8bit:inst|mux2x1bit:inst9                                                                        ; work         ;
 ;             |mux2x1bit:inst|                       ; 1 (1)             ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |MotherBoard|PipelineUniProcessor:IntelInside|mux2x32bit:inst23|mux2x8bit:inst|mux2x1bit:inst                                                                         ; work         ;
 ;       |mux2x5bit:inst5|                            ; 5 (5)             ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |MotherBoard|PipelineUniProcessor:IntelInside|mux2x5bit:inst5                                                                                                         ; work         ;
-;       |mux4x32bit:inst7|                           ; 81 (81)           ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |MotherBoard|PipelineUniProcessor:IntelInside|mux4x32bit:inst7                                                                                                        ; work         ;
-;       |mux4x32bit:inst8|                           ; 80 (80)           ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |MotherBoard|PipelineUniProcessor:IntelInside|mux4x32bit:inst8                                                                                                        ; work         ;
+;       |mux4x32bit:inst7|                           ; 66 (66)           ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |MotherBoard|PipelineUniProcessor:IntelInside|mux4x32bit:inst7                                                                                                        ; work         ;
+;       |mux4x32bit:inst8|                           ; 66 (66)           ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |MotherBoard|PipelineUniProcessor:IntelInside|mux4x32bit:inst8                                                                                                        ; work         ;
 +----------------------------------------------------+-------------------+--------------+-------------------+--------------+---------+-----------+-----------+------+--------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -790,16 +790,16 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                                                                                ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                                                                      ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------------------------------------------------------------------------------+
-; 3:1                ; 30 bits   ; 60 ALUTs      ; 60 ALUTs             ; 0 ALUTs                ; No         ; |MotherBoard|PipelineUniProcessor:IntelInside|ProcessPC:inst4|mux2x32bit:inst2|mux2x8bit:inst1|mux2x1bit:inst1|inst3            ;
-; 16:1               ; 32 bits   ; 320 ALUTs     ; 320 ALUTs            ; 0 ALUTs                ; No         ; |MotherBoard|InstROM1:InstROM1|altsyncram:altsyncram_component|altsyncram_b881:auto_generated|mux_omb:mux2|l4_w9_n0_mux_dataout ;
-; 31:1               ; 32 bits   ; 640 ALUTs     ; 640 ALUTs            ; 0 ALUTs                ; No         ; |MotherBoard|PipelineUniProcessor:IntelInside|RegFile32x32:Regs|lpm_mux:54|mux_2rc:auto_generated|l5_w12_n0_mux_dataout         ;
-; 31:1               ; 32 bits   ; 640 ALUTs     ; 640 ALUTs            ; 0 ALUTs                ; No         ; |MotherBoard|PipelineUniProcessor:IntelInside|RegFile32x32:Regs|lpm_mux:55|mux_2rc:auto_generated|l5_w26_n0_mux_dataout         ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------------------------------------------------------------------------------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                                                                        ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                                                              ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------------------------------------------------------------------+
+; 16:1               ; 32 bits   ; 320 ALUTs     ; 320 ALUTs            ; 0 ALUTs                ; Yes        ; |MotherBoard|PipelineUniProcessor:IntelInside|IF-ID-INSTPC-BUFFER:inst1|dffe32bit:INSTBUFFER|dffe8bit:diff32Part1|inst2 ;
+; 3:1                ; 30 bits   ; 60 ALUTs      ; 60 ALUTs             ; 0 ALUTs                ; No         ; |MotherBoard|PipelineUniProcessor:IntelInside|ProcessPC:inst4|mux2x32bit:inst2|mux2x8bit:inst|mux2x1bit:inst1|inst3     ;
+; 31:1               ; 32 bits   ; 640 ALUTs     ; 640 ALUTs            ; 0 ALUTs                ; No         ; |MotherBoard|PipelineUniProcessor:IntelInside|RegFile32x32:Regs|lpm_mux:54|mux_2rc:auto_generated|l5_w30_n0_mux_dataout ;
+; 31:1               ; 32 bits   ; 640 ALUTs     ; 640 ALUTs            ; 0 ALUTs                ; No         ; |MotherBoard|PipelineUniProcessor:IntelInside|RegFile32x32:Regs|lpm_mux:55|mux_2rc:auto_generated|l5_w30_n0_mux_dataout ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------------------------------------------------------------------+
 
 
 +--------------------------------------------------------------------------------------------------------+
@@ -1150,7 +1150,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II Analysis & Synthesis
     Info: Version 9.0 Build 132 02/25/2009 SJ Full Version
-    Info: Processing started: Tue Dec 01 22:50:31 2009
+    Info: Processing started: Wed Dec 02 14:12:30 2009
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off PipelineUniProcessor -c PipelineUniProcessor
 Info: Found 2 design units, including 1 entities, in source file ../MotherBoard/lpm_ram_dp1.vhd
     Info: Found design unit 1: lpm_ram_dp1-SYN
@@ -1262,6 +1262,7 @@ Info: Found 2 design units, including 1 entities, in source file ../MotherBoard/
     Info: Found entity 1: InstROM1
 Info: Elaborating entity "MotherBoard" for the top level hierarchy
 Info: Elaborating entity "PipelineUniProcessor" for hierarchy "PipelineUniProcessor:IntelInside"
+Warning: Pin "TESTWRITEMEM" is missing source
 Info: Elaborating entity "EXE-MEM-SIGNAL-BUFFER" for hierarchy "PipelineUniProcessor:IntelInside|EXE-MEM-SIGNAL-BUFFER:inst15"
 Info: Elaborating entity "dffe4bit" for hierarchy "PipelineUniProcessor:IntelInside|EXE-MEM-SIGNAL-BUFFER:inst15|dffe4bit:inst"
 Info: Elaborating entity "ID-EXE-SIGNAL-BUFFER" for hierarchy "PipelineUniProcessor:IntelInside|ID-EXE-SIGNAL-BUFFER:inst13"
@@ -1424,15 +1425,17 @@ Info: Elaborating entity "decode_rqa" for hierarchy "InstROM1:InstROM1|altsyncra
 Info: Found 1 design units, including 1 entities, in source file db/mux_omb.tdf
     Info: Found entity 1: mux_omb
 Info: Elaborating entity "mux_omb" for hierarchy "InstROM1:InstROM1|altsyncram:altsyncram_component|altsyncram_b881:auto_generated|mux_omb:mux2"
-Info: Implemented 3648 device resources after synthesis - the final resource count might be different
+Warning: Output pins are stuck at VCC or GND
+    Warning (13410): Pin "TESTWRITEMEM1" is stuck at GND
+Info: Implemented 3561 device resources after synthesis - the final resource count might be different
     Info: Implemented 3 input pins
-    Info: Implemented 129 output pins
-    Info: Implemented 2972 logic cells
+    Info: Implemented 98 output pins
+    Info: Implemented 2916 logic cells
     Info: Implemented 544 RAM segments
-Info: Quartus II Analysis & Synthesis was successful. 0 errors, 0 warnings
+Info: Quartus II Analysis & Synthesis was successful. 0 errors, 3 warnings
     Info: Peak virtual memory: 233 megabytes
-    Info: Processing ended: Tue Dec 01 22:51:44 2009
-    Info: Elapsed time: 00:01:13
-    Info: Total CPU time (on all processors): 00:01:11
+    Info: Processing ended: Wed Dec 02 14:13:32 2009
+    Info: Elapsed time: 00:01:02
+    Info: Total CPU time (on all processors): 00:01:01
 
 

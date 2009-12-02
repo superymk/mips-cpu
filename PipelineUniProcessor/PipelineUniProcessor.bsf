@@ -100,6 +100,13 @@ applicable agreement for further details.
 		(text "TESTINSTIF[31..0]" (rect 127 107 227 121)(font "Arial" (font_size 8)))
 		(line (pt 248 112)(pt 232 112)(line_width 3))
 	)
+	(port
+		(pt 248 128)
+		(output)
+		(text "TESTWRITEMEM" (rect 0 0 92 14)(font "Arial" (font_size 8)))
+		(text "TESTWRITEMEM" (rect 135 123 227 137)(font "Arial" (font_size 8)))
+		(line (pt 248 128)(pt 232 128)(line_width 1))
+	)
 	(drawing
 		(rectangle (rect 16 16 232 144)(line_width 1))
 	)
