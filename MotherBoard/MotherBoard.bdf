@@ -86,7 +86,7 @@ applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 872 304 1060 320)
+	(rect 768 304 956 320)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "TESTMWRITEMEM" (rect 90 0 183 12)(font "Arial" ))
 	(pt 0 8)
@@ -277,7 +277,7 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 1144 408 1192 440)
+	(rect 856 408 904 440)
 	(text "NOT" (rect 1 0 21 10)(font "Arial" (font_size 6)))
 	(text "NotInst" (rect 3 21 39 33)(font "Arial" ))
 	(port
@@ -302,7 +302,7 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 1256 216 1416 328)
+	(rect 968 216 1128 328)
 	(text "DataRAM" (rect 52 1 118 17)(font "Arial" (font_size 10)))
 	(text "DataRAM1" (rect 8 96 61 108)(font "Arial" ))
 	(port
@@ -350,7 +350,7 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 1256 376 1416 456)
+	(rect 968 376 1128 456)
 	(text "InstROM1" (rect 51 1 119 17)(font "Arial" (font_size 10)))
 	(text "InstROM1" (rect 8 64 57 76)(font "Arial" ))
 	(port
@@ -559,61 +559,9 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(text "DATA_MEM[31..0]" (rect 1424 232 1513 244)(font "Arial" ))
-	(pt 1416 248)
-	(pt 1480 248)
-	(bus)
-)
-(connector
-	(text "INST[31..0]" (rect 1418 400 1474 412)(font "Arial" ))
-	(pt 1416 416)
-	(pt 1472 416)
-	(bus)
-)
-(connector
-	(text "CLK" (rect 1136 280 1157 292)(font "Arial" ))
-	(pt 1128 296)
-	(pt 1256 296)
-)
-(connector
-	(pt 1192 424)
-	(pt 1256 424)
-)
-(connector
-	(pt 832 264)
-	(pt 832 312)
-)
-(connector
-	(pt 872 312)
-	(pt 832 312)
-)
-(connector
-	(text "CLK" (rect 1096 408 1117 420)(font "Arial" ))
-	(pt 1144 424)
-	(pt 1088 424)
-)
-(connector
-	(text "DADDR[11..2]" (rect 1170 264 1241 276)(font "Arial" ))
-	(pt 1168 280)
-	(pt 1256 280)
-	(bus)
-)
-(connector
-	(text "IADDR[11..2]" (rect 1194 392 1261 404)(font "Arial" ))
-	(pt 1192 408)
-	(pt 1256 408)
-	(bus)
-)
-(connector
 	(text "DADDR[31..0]" (rect 592 264 663 276)(font "Arial" ))
 	(pt 504 280)
 	(pt 648 280)
-	(bus)
-)
-(connector
-	(text "DATA_CPU[31..0]" (rect 1152 232 1241 244)(font "Arial" ))
-	(pt 504 248)
-	(pt 1256 248)
 	(bus)
 )
 (connector
@@ -623,12 +571,64 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 504 264)
-	(pt 832 264)
+	(pt 728 264)
+	(pt 728 312)
 )
 (connector
-	(text "MWRITEMEM" (rect 1152 248 1219 260)(font "Arial" ))
-	(pt 832 264)
-	(pt 1256 264)
+	(pt 768 312)
+	(pt 728 312)
 )
-(junction (pt 832 264))
+(connector
+	(text "DATA_CPU[31..0]" (rect 864 232 953 244)(font "Arial" ))
+	(pt 504 248)
+	(pt 968 248)
+	(bus)
+)
+(connector
+	(text "CLK" (rect 808 408 829 420)(font "Arial" ))
+	(pt 800 424)
+	(pt 856 424)
+)
+(connector
+	(text "DADDR[11..2]" (rect 882 264 953 276)(font "Arial" ))
+	(pt 880 280)
+	(pt 968 280)
+	(bus)
+)
+(connector
+	(pt 504 264)
+	(pt 728 264)
+)
+(connector
+	(text "MWRITEMEM" (rect 864 248 931 260)(font "Arial" ))
+	(pt 728 264)
+	(pt 968 264)
+)
+(connector
+	(pt 904 424)
+	(pt 968 424)
+)
+(connector
+	(text "DATA_MEM[31..0]" (rect 1136 232 1225 244)(font "Arial" ))
+	(pt 1128 248)
+	(pt 1192 248)
+	(bus)
+)
+(connector
+	(text "INST[31..0]" (rect 1130 400 1186 412)(font "Arial" ))
+	(pt 1128 416)
+	(pt 1184 416)
+	(bus)
+)
+(connector
+	(text "CLK" (rect 888 280 909 292)(font "Arial" ))
+	(pt 968 296)
+	(pt 880 296)
+)
+(connector
+	(text "IADDR[11..2]" (rect 882 392 949 404)(font "Arial" ))
+	(pt 968 408)
+	(pt 880 408)
+	(bus)
+)
+(junction (pt 728 264))
