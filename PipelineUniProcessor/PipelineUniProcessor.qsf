@@ -113,3 +113,7 @@ set_global_assignment -name BDF_FILE "MEM-WB-SIGNAL-BUFFER.bdf"
 set_global_assignment -name BDF_FILE "MEM-WB-INSTDATA-BUFFER.bdf"
 set_global_assignment -name VECTOR_WAVEFORM_FILE ../MotherBoard/Test/PipelineUniProcessor.vwf
 set_global_assignment -name QIP_FILE ../MotherBoard/InstROM1.qip
+set_global_assignment -name VHDL_FILE ../Coprocessor/CacheEntry.vhd
+set_global_assignment -name BDF_FILE ../Coprocessor/DataCache.bdf
+set_global_assignment -name VHDL_FILE ../Coprocessor/DataCacheControlUnit.vhd
+set_global_assignment -name QIP_FILE ../Coprocessor/DataCacheEntryHitOr.qip
