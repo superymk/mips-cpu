@@ -152,9 +152,23 @@ applicable agreement for further details.
 	(port
 		(pt 248 160)
 		(output)
+		(text "SELECTADDR" (rect 0 0 73 12)(font "Arial" ))
+		(text "SELECTADDR" (rect 154 155 227 167)(font "Arial" ))
+		(line (pt 248 160)(pt 232 160)(line_width 1))
+	)
+	(port
+		(pt 248 176)
+		(output)
 		(text "DATAIN[127..0]" (rect 0 0 77 12)(font "Arial" ))
-		(text "DATAIN[127..0]" (rect 150 155 227 167)(font "Arial" ))
-		(line (pt 248 160)(pt 232 160)(line_width 3))
+		(text "DATAIN[127..0]" (rect 150 171 227 183)(font "Arial" ))
+		(line (pt 248 176)(pt 232 176)(line_width 3))
+	)
+	(port
+		(pt 248 192)
+		(output)
+		(text "ADDRIN[31..0]" (rect 0 0 75 12)(font "Arial" ))
+		(text "ADDRIN[31..0]" (rect 152 187 227 199)(font "Arial" ))
+		(line (pt 248 192)(pt 232 192)(line_width 3))
 	)
 	(drawing
 		(rectangle (rect 16 16 232 208)(line_width 1))

@@ -45,7 +45,7 @@ arcHITecture ca of CacheEntry is
                     CacheIndex <= ADDR(6 downto 4);
                     data <= DATAIN;
                  elsif WRITEENTRY = '1' then
-                    if (ADDR(4 downto 2) = CacheIndex) and (vld = '1') then
+                    if (ADDR(6 downto 4) = CacheIndex) and (vld = '1') then
                         dty <= '1';
                         if ADDR(3 downto 2) = "11" then
                            data(31 downto 0) <= DATAIN(31 downto 0);
