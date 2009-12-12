@@ -37,7 +37,7 @@ arcHITecture ca of CacheEntry is
                  CacheIndex  <= "000";
                  HIT <= '0';
                  DATAOUT <= data; -- in fact , all zero
-                 --Tag <= "0000 0000 0000 0000 0000 0000 0";
+                 --InternalTag <= "0000 0000 0000 0000 0000 0000 0";
               else
                  if REPLACE = '1' then
                     vld <= '1';
@@ -83,7 +83,7 @@ arcHITecture ca of CacheEntry is
           end if;
           DIRTY <= dty;
           VALID <= vld;
-          Tag   <= ADDR(31 downto 7);
-          TAG <= Tag;
+          InternalTag   <= ADDR(31 downto 7);
+          TAG <= InternalTag;
     end process;
 end;
