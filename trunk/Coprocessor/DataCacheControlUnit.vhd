@@ -13,7 +13,8 @@ entity DataCacheControlUnit is
                   VALID           	: 	in bit_vector(7 downto 0);
                   DIRTY           	: 	in bit_vector(7 downto 0);
                   ADDR				: 	in bit_vector(31 downto 0); -- Access address
-                  DataToMem			:	in bit_vector(31 downto 0); -- the data to write to the data memory.
+                  DataToMem			:	in bit_vector(127 downto 0); -- the data to write to the data memory.
+                  DataFromMem		:	in bit_vector(127 downto 0); -- the data comes from the data memory.
                   --data_t_mem      : in bit_vector(127 downto 0); -- the exact data is stored in the low 32 bits
                   --data_f_cpu      : in bit_vector(127 downto 0);
                   --data_f_mem      : in bit_vector(127 downto 0);
@@ -74,8 +75,11 @@ begin
 				if ( (VALID(nextToRep)='0') or (DIRTY(nextToRep)='0') ) then
 		            -- memaddr(4 downto 3) <= "00";
 		            -- memaddr(2 downto 0) <= addr(4 downto 2);
-		            addrin <= addr;
+		            -- ADDRIN <= ADDR;
 		            current <= BUSY;
+		            DATAIN <= DataFromMem;
+		            
+		            
 		            nextToRep <= nextToRep + 1;
 		            --count <= delay;
 	            else
