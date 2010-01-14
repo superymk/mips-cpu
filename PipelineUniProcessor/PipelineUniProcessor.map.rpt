@@ -1,5 +1,5 @@
 Analysis & Synthesis report for PipelineUniProcessor
-Wed Dec 02 22:17:56 2009
+Thu Jan 14 20:06:45 2010
 Quartus II Version 9.0 Build 132 02/25/2009 SJ Full Version
 
 
@@ -14,23 +14,35 @@ Quartus II Version 9.0 Build 132 02/25/2009 SJ Full Version
   6. Analysis & Synthesis Resource Utilization by Entity
   7. Analysis & Synthesis RAM Summary
   8. Registers Removed During Synthesis
-  9. General Register Statistics
- 10. Multiplexer Restructuring Statistics (Restructuring Performed)
- 11. Source assignments for DataRAM:DataRAM1|altsyncram:altsyncram_component|altsyncram_fte1:auto_generated
- 12. Source assignments for InstROM1:InstROM1|altsyncram:altsyncram_component|altsyncram_ur91:auto_generated
- 13. Parameter Settings for User Entity Instance: PipelineUniProcessor:IntelInside|Comp32:inst9|lpm_compare:lpm_compare_component
- 14. Parameter Settings for User Entity Instance: PipelineUniProcessor:IntelInside|RegFile32x32:Regs|LPM_MUX:54
- 15. Parameter Settings for User Entity Instance: PipelineUniProcessor:IntelInside|RegFile32x32:Regs|LPM_DECODE:37
- 16. Parameter Settings for User Entity Instance: PipelineUniProcessor:IntelInside|RegFile32x32:Regs|LPM_MUX:55
- 17. Parameter Settings for User Entity Instance: PipelineUniProcessor:IntelInside|ALU:inst12|lpm_and32bit:inst|LPM_AND:lpm_and_component
- 18. Parameter Settings for User Entity Instance: PipelineUniProcessor:IntelInside|ALU:inst12|lpm_or32bit:inst1|LPM_OR:lpm_or_component
- 19. Parameter Settings for User Entity Instance: PipelineUniProcessor:IntelInside|ALU:inst12|lpm_add_sub32BIT:inst5|lpm_add_sub:lpm_add_sub_component
- 20. Parameter Settings for User Entity Instance: PipelineUniProcessor:IntelInside|ALU:inst12|ALSHIFT:inst9|lpm_clLogicalshift32bit:inst8|lpm_clshift:lpm_clshift_component
- 21. Parameter Settings for User Entity Instance: PipelineUniProcessor:IntelInside|ALU:inst12|ALSHIFT:inst9|lpm_clArithshift32bit:inst|lpm_clshift:lpm_clshift_component
- 22. Parameter Settings for User Entity Instance: DataRAM:DataRAM1|altsyncram:altsyncram_component
- 23. Parameter Settings for User Entity Instance: InstROM1:InstROM1|altsyncram:altsyncram_component
- 24. altsyncram Parameter Settings by Entity Instance
- 25. Analysis & Synthesis Messages
+  9. Removed Registers Triggering Further Register Optimizations
+ 10. General Register Statistics
+ 11. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 12. Source assignments for DataRAM:DataRAM1|altsyncram:altsyncram_component|altsyncram_fte1:auto_generated
+ 13. Source assignments for InstROM1:InstROM1|altsyncram:altsyncram_component|altsyncram_ur91:auto_generated
+ 14. Source assignments for InstROMWithCache:instROMWithCache1|altsyncram:altsyncram_component|altsyncram_v291:auto_generated
+ 15. Parameter Settings for User Entity Instance: PipelineUniProcessor:IntelInside|Comp32:inst9|lpm_compare:lpm_compare_component
+ 16. Parameter Settings for User Entity Instance: PipelineUniProcessor:IntelInside|RegFile32x32:Regs|LPM_MUX:54
+ 17. Parameter Settings for User Entity Instance: PipelineUniProcessor:IntelInside|RegFile32x32:Regs|LPM_DECODE:37
+ 18. Parameter Settings for User Entity Instance: PipelineUniProcessor:IntelInside|RegFile32x32:Regs|LPM_MUX:55
+ 19. Parameter Settings for User Entity Instance: PipelineUniProcessor:IntelInside|ALU:inst12|lpm_and32bit:inst|LPM_AND:lpm_and_component
+ 20. Parameter Settings for User Entity Instance: PipelineUniProcessor:IntelInside|ALU:inst12|lpm_or32bit:inst1|LPM_OR:lpm_or_component
+ 21. Parameter Settings for User Entity Instance: PipelineUniProcessor:IntelInside|ALU:inst12|lpm_add_sub32BIT:inst5|lpm_add_sub:lpm_add_sub_component
+ 22. Parameter Settings for User Entity Instance: PipelineUniProcessor:IntelInside|ALU:inst12|ALSHIFT:inst9|lpm_clLogicalshift32bit:inst8|lpm_clshift:lpm_clshift_component
+ 23. Parameter Settings for User Entity Instance: PipelineUniProcessor:IntelInside|ALU:inst12|ALSHIFT:inst9|lpm_clArithshift32bit:inst|lpm_clshift:lpm_clshift_component
+ 24. Parameter Settings for User Entity Instance: DataRAM:DataRAM1|altsyncram:altsyncram_component
+ 25. Parameter Settings for User Entity Instance: InstROM1:InstROM1|altsyncram:altsyncram_component
+ 26. Parameter Settings for User Entity Instance: Coprocessor:Coprocessor1|DataCache:INSTCACHE|DataCacheEntryHitOr:inst25|LPM_OR:lpm_or_component
+ 27. Parameter Settings for User Entity Instance: Coprocessor:Coprocessor1|DataCache:INSTCACHE|DataCacheEntryDecoder:inst14|LPM_DECODE:lpm_decode_component
+ 28. Parameter Settings for User Entity Instance: Coprocessor:Coprocessor1|DataCache:INSTCACHE|DataCacheEntryDecoder:inst13|LPM_DECODE:lpm_decode_component
+ 29. Parameter Settings for User Entity Instance: Coprocessor:Coprocessor1|DataCache:INSTCACHE|DataCacheEntryOutputOr:inst21|LPM_OR:lpm_or_component
+ 30. Parameter Settings for User Entity Instance: Coprocessor:Coprocessor1|DataCache:DATACACHE|DataCacheEntryHitOr:inst25|LPM_OR:lpm_or_component
+ 31. Parameter Settings for User Entity Instance: Coprocessor:Coprocessor1|DataCache:DATACACHE|DataCacheEntryDecoder:inst14|LPM_DECODE:lpm_decode_component
+ 32. Parameter Settings for User Entity Instance: Coprocessor:Coprocessor1|DataCache:DATACACHE|DataCacheEntryDecoder:inst13|LPM_DECODE:lpm_decode_component
+ 33. Parameter Settings for User Entity Instance: Coprocessor:Coprocessor1|DataCache:DATACACHE|DataCacheEntryOutputOr:inst21|LPM_OR:lpm_or_component
+ 34. Parameter Settings for User Entity Instance: InstROMWithCache:instROMWithCache1
+ 35. Parameter Settings for User Entity Instance: InstROMWithCache:instROMWithCache1|altsyncram:altsyncram_component
+ 36. altsyncram Parameter Settings by Entity Instance
+ 37. Analysis & Synthesis Messages
 
 
 
@@ -56,7 +68,7 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                             ;
 +-------------------------------+------------------------------------------+
-; Analysis & Synthesis Status   ; Successful - Wed Dec 02 22:17:56 2009    ;
+; Analysis & Synthesis Status   ; Successful - Thu Jan 14 20:06:45 2010    ;
 ; Quartus II Version            ; 9.0 Build 132 02/25/2009 SJ Full Version ;
 ; Revision Name                 ; PipelineUniProcessor                     ;
 ; Top-level Entity Name         ; MotherBoard                              ;
@@ -158,6 +170,10 @@ applicable agreement for further details.
 +----------------------------------------------+-----------------+----------------------------------------+--------------------------------------------------------------------------------------------------------------------------+
 ; File Name with User-Entered Path             ; Used in Netlist ; File Type                              ; File Name with Absolute Path                                                                                             ;
 +----------------------------------------------+-----------------+----------------------------------------+--------------------------------------------------------------------------------------------------------------------------+
+; ../MotherBoard/InstROMWithCache.tdf          ; yes             ; User Wizard-Generated File             ; F:/WorkSpace/Workspace/MasterLife/TERM 1/Computer Architecture/mips-cpu/MotherBoard/InstROMWithCache.tdf                 ;
+; ../Coprocessor/DataCacheEntryDecoder.tdf     ; yes             ; User Wizard-Generated File             ; F:/WorkSpace/Workspace/MasterLife/TERM 1/Computer Architecture/mips-cpu/Coprocessor/DataCacheEntryDecoder.tdf            ;
+; ../Coprocessor/DataCacheEntryHitOr.tdf       ; yes             ; User Wizard-Generated File             ; F:/WorkSpace/Workspace/MasterLife/TERM 1/Computer Architecture/mips-cpu/Coprocessor/DataCacheEntryHitOr.tdf              ;
+; ../Coprocessor/DataCacheEntryOutputOr.tdf    ; yes             ; User Wizard-Generated File             ; F:/WorkSpace/Workspace/MasterLife/TERM 1/Computer Architecture/mips-cpu/Coprocessor/DataCacheEntryOutputOr.tdf           ;
 ; ../MotherBoard/DataRAM.vhd                   ; yes             ; User Wizard-Generated File             ; F:/WorkSpace/Workspace/MasterLife/TERM 1/Computer Architecture/mips-cpu/MotherBoard/DataRAM.vhd                          ;
 ; Comp32.tdf                                   ; yes             ; User Wizard-Generated File             ; F:/WorkSpace/Workspace/MasterLife/TERM 1/Computer Architecture/mips-cpu/PipelineUniProcessor/Comp32.tdf                  ;
 ; ID-EXE-SIGNAL-BUFFER.bdf                     ; yes             ; User Block Diagram/Schematic File      ; F:/WorkSpace/Workspace/MasterLife/TERM 1/Computer Architecture/mips-cpu/PipelineUniProcessor/ID-EXE-SIGNAL-BUFFER.bdf    ;
@@ -207,6 +223,13 @@ applicable agreement for further details.
 ; MEM-WB-SIGNAL-BUFFER.bdf                     ; yes             ; User Block Diagram/Schematic File      ; F:/WorkSpace/Workspace/MasterLife/TERM 1/Computer Architecture/mips-cpu/PipelineUniProcessor/MEM-WB-SIGNAL-BUFFER.bdf    ;
 ; MEM-WB-INSTDATA-BUFFER.bdf                   ; yes             ; User Block Diagram/Schematic File      ; F:/WorkSpace/Workspace/MasterLife/TERM 1/Computer Architecture/mips-cpu/PipelineUniProcessor/MEM-WB-INSTDATA-BUFFER.bdf  ;
 ; ../MotherBoard/InstROM1.vhd                  ; yes             ; User Wizard-Generated File             ; F:/WorkSpace/Workspace/MasterLife/TERM 1/Computer Architecture/mips-cpu/MotherBoard/InstROM1.vhd                         ;
+; ../Coprocessor/CacheEntry.vhd                ; yes             ; User VHDL File                         ; F:/WorkSpace/Workspace/MasterLife/TERM 1/Computer Architecture/mips-cpu/Coprocessor/CacheEntry.vhd                       ;
+; ../Coprocessor/DataCache.bdf                 ; yes             ; User Block Diagram/Schematic File      ; F:/WorkSpace/Workspace/MasterLife/TERM 1/Computer Architecture/mips-cpu/Coprocessor/DataCache.bdf                        ;
+; ../Coprocessor/DataCacheControlUnit.vhd      ; yes             ; User VHDL File                         ; F:/WorkSpace/Workspace/MasterLife/TERM 1/Computer Architecture/mips-cpu/Coprocessor/DataCacheControlUnit.vhd             ;
+; ../Coprocessor/Coprocessor.bdf               ; yes             ; User Block Diagram/Schematic File      ; F:/WorkSpace/Workspace/MasterLife/TERM 1/Computer Architecture/mips-cpu/Coprocessor/Coprocessor.bdf                      ;
+; altsyncram.inc                               ; yes             ; Auto-Found AHDL File                   ; e:/altera/90/quartus/libraries/megafunctions/altsyncram.inc                                                              ;
+; lpm_decode.inc                               ; yes             ; Megafunction                           ; e:/altera/90/quartus/libraries/megafunctions/lpm_decode.inc                                                              ;
+; lpm_or.inc                                   ; yes             ; Auto-Found AHDL File                   ; e:/altera/90/quartus/libraries/megafunctions/lpm_or.inc                                                                  ;
 ; lpm_compare.inc                              ; yes             ; Megafunction                           ; e:/altera/90/quartus/libraries/megafunctions/lpm_compare.inc                                                             ;
 ; lpm_compare.tdf                              ; yes             ; Megafunction                           ; e:/altera/90/quartus/libraries/megafunctions/lpm_compare.tdf                                                             ;
 ; comptree.inc                                 ; yes             ; Megafunction                           ; e:/altera/90/quartus/libraries/megafunctions/comptree.inc                                                                ;
@@ -235,7 +258,6 @@ applicable agreement for further details.
 ; altsyncram.tdf                               ; yes             ; Megafunction                           ; e:/altera/90/quartus/libraries/megafunctions/altsyncram.tdf                                                              ;
 ; stratix_ram_block.inc                        ; yes             ; Megafunction                           ; e:/altera/90/quartus/libraries/megafunctions/stratix_ram_block.inc                                                       ;
 ; lpm_mux.inc                                  ; yes             ; Megafunction                           ; e:/altera/90/quartus/libraries/megafunctions/lpm_mux.inc                                                                 ;
-; lpm_decode.inc                               ; yes             ; Megafunction                           ; e:/altera/90/quartus/libraries/megafunctions/lpm_decode.inc                                                              ;
 ; a_rdenreg.inc                                ; yes             ; Megafunction                           ; e:/altera/90/quartus/libraries/megafunctions/a_rdenreg.inc                                                               ;
 ; altrom.inc                                   ; yes             ; Megafunction                           ; e:/altera/90/quartus/libraries/megafunctions/altrom.inc                                                                  ;
 ; altram.inc                                   ; yes             ; Megafunction                           ; e:/altera/90/quartus/libraries/megafunctions/altram.inc                                                                  ;
@@ -245,6 +267,8 @@ applicable agreement for further details.
 ; ../MotherBoard/InitDataRAM.mif               ; yes             ; Auto-Found Memory Initialization File  ; F:/WorkSpace/Workspace/MasterLife/TERM 1/Computer Architecture/mips-cpu/MotherBoard/InitDataRAM.mif                      ;
 ; db/altsyncram_ur91.tdf                       ; yes             ; Auto-Generated Megafunction            ; F:/WorkSpace/Workspace/MasterLife/TERM 1/Computer Architecture/mips-cpu/PipelineUniProcessor/db/altsyncram_ur91.tdf      ;
 ; ../MotherBoard/InitInstROM.mif               ; yes             ; Auto-Found Memory Initialization File  ; F:/WorkSpace/Workspace/MasterLife/TERM 1/Computer Architecture/mips-cpu/MotherBoard/InitInstROM.mif                      ;
+; db/decode_5sf.tdf                            ; yes             ; Auto-Generated Megafunction            ; F:/WorkSpace/Workspace/MasterLife/TERM 1/Computer Architecture/mips-cpu/PipelineUniProcessor/db/decode_5sf.tdf           ;
+; db/altsyncram_v291.tdf                       ; yes             ; Auto-Generated Megafunction            ; F:/WorkSpace/Workspace/MasterLife/TERM 1/Computer Architecture/mips-cpu/PipelineUniProcessor/db/altsyncram_v291.tdf      ;
 +----------------------------------------------+-----------------+----------------------------------------+--------------------------------------------------------------------------------------------------------------------------+
 
 
@@ -755,6 +779,54 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------+
 ; Register name                                                                                             ; Reason for Removal                                                                                                   ;
 +-----------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------+
+; Coprocessor:Coprocessor1|DataCache:INSTCACHE|CacheEntry:inst8|vld                                         ; Lost fanout                                                                                                          ;
+; Coprocessor:Coprocessor1|DataCache:INSTCACHE|CacheEntry:inst8|dty                                         ; Lost fanout                                                                                                          ;
+; Coprocessor:Coprocessor1|DataCache:INSTCACHE|CacheEntry:inst8|CacheIndex[1..2]                            ; Lost fanout                                                                                                          ;
+; Coprocessor:Coprocessor1|DataCache:INSTCACHE|CacheEntry:inst8|HIT                                         ; Lost fanout                                                                                                          ;
+; Coprocessor:Coprocessor1|DataCache:INSTCACHE|CacheEntry:inst8|CacheIndex[0]                               ; Lost fanout                                                                                                          ;
+; Coprocessor:Coprocessor1|DataCache:INSTCACHE|CacheEntry:inst11|vld                                        ; Lost fanout                                                                                                          ;
+; Coprocessor:Coprocessor1|DataCache:INSTCACHE|CacheEntry:inst11|dty                                        ; Lost fanout                                                                                                          ;
+; Coprocessor:Coprocessor1|DataCache:INSTCACHE|CacheEntry:inst11|CacheIndex[1..2]                           ; Lost fanout                                                                                                          ;
+; Coprocessor:Coprocessor1|DataCache:INSTCACHE|CacheEntry:inst11|HIT                                        ; Lost fanout                                                                                                          ;
+; Coprocessor:Coprocessor1|DataCache:INSTCACHE|CacheEntry:inst11|CacheIndex[0]                              ; Lost fanout                                                                                                          ;
+; Coprocessor:Coprocessor1|DataCache:INSTCACHE|CacheEntry:inst7|vld                                         ; Lost fanout                                                                                                          ;
+; Coprocessor:Coprocessor1|DataCache:INSTCACHE|CacheEntry:inst7|dty                                         ; Lost fanout                                                                                                          ;
+; Coprocessor:Coprocessor1|DataCache:INSTCACHE|CacheEntry:inst7|CacheIndex[1..2]                            ; Lost fanout                                                                                                          ;
+; Coprocessor:Coprocessor1|DataCache:INSTCACHE|CacheEntry:inst7|HIT                                         ; Lost fanout                                                                                                          ;
+; Coprocessor:Coprocessor1|DataCache:INSTCACHE|CacheEntry:inst7|CacheIndex[0]                               ; Lost fanout                                                                                                          ;
+; Coprocessor:Coprocessor1|DataCache:INSTCACHE|CacheEntry:inst10|vld                                        ; Lost fanout                                                                                                          ;
+; Coprocessor:Coprocessor1|DataCache:INSTCACHE|CacheEntry:inst10|dty                                        ; Lost fanout                                                                                                          ;
+; Coprocessor:Coprocessor1|DataCache:INSTCACHE|CacheEntry:inst10|CacheIndex[1..2]                           ; Lost fanout                                                                                                          ;
+; Coprocessor:Coprocessor1|DataCache:INSTCACHE|CacheEntry:inst10|HIT                                        ; Lost fanout                                                                                                          ;
+; Coprocessor:Coprocessor1|DataCache:INSTCACHE|CacheEntry:inst10|CacheIndex[0]                              ; Lost fanout                                                                                                          ;
+; Coprocessor:Coprocessor1|DataCache:INSTCACHE|CacheEntry:inst6|vld                                         ; Lost fanout                                                                                                          ;
+; Coprocessor:Coprocessor1|DataCache:INSTCACHE|CacheEntry:inst6|dty                                         ; Lost fanout                                                                                                          ;
+; Coprocessor:Coprocessor1|DataCache:INSTCACHE|CacheEntry:inst6|CacheIndex[1..2]                            ; Lost fanout                                                                                                          ;
+; Coprocessor:Coprocessor1|DataCache:INSTCACHE|CacheEntry:inst6|HIT                                         ; Lost fanout                                                                                                          ;
+; Coprocessor:Coprocessor1|DataCache:INSTCACHE|CacheEntry:inst6|CacheIndex[0]                               ; Lost fanout                                                                                                          ;
+; Coprocessor:Coprocessor1|DataCache:INSTCACHE|CacheEntry:inst9|vld                                         ; Lost fanout                                                                                                          ;
+; Coprocessor:Coprocessor1|DataCache:INSTCACHE|CacheEntry:inst9|dty                                         ; Lost fanout                                                                                                          ;
+; Coprocessor:Coprocessor1|DataCache:INSTCACHE|CacheEntry:inst9|CacheIndex[1..2]                            ; Lost fanout                                                                                                          ;
+; Coprocessor:Coprocessor1|DataCache:INSTCACHE|CacheEntry:inst9|HIT                                         ; Lost fanout                                                                                                          ;
+; Coprocessor:Coprocessor1|DataCache:INSTCACHE|CacheEntry:inst9|CacheIndex[0]                               ; Lost fanout                                                                                                          ;
+; Coprocessor:Coprocessor1|DataCache:INSTCACHE|CacheEntry:inst5|vld                                         ; Lost fanout                                                                                                          ;
+; Coprocessor:Coprocessor1|DataCache:INSTCACHE|CacheEntry:inst5|dty                                         ; Lost fanout                                                                                                          ;
+; Coprocessor:Coprocessor1|DataCache:INSTCACHE|CacheEntry:inst5|CacheIndex[1..2]                            ; Lost fanout                                                                                                          ;
+; Coprocessor:Coprocessor1|DataCache:INSTCACHE|CacheEntry:inst5|HIT                                         ; Lost fanout                                                                                                          ;
+; Coprocessor:Coprocessor1|DataCache:INSTCACHE|CacheEntry:inst5|CacheIndex[0]                               ; Lost fanout                                                                                                          ;
+; Coprocessor:Coprocessor1|DataCache:INSTCACHE|CacheEntry:inst|vld                                          ; Lost fanout                                                                                                          ;
+; Coprocessor:Coprocessor1|DataCache:INSTCACHE|CacheEntry:inst|dty                                          ; Lost fanout                                                                                                          ;
+; Coprocessor:Coprocessor1|DataCache:INSTCACHE|CacheEntry:inst|CacheIndex[1..2]                             ; Lost fanout                                                                                                          ;
+; Coprocessor:Coprocessor1|DataCache:INSTCACHE|CacheEntry:inst|HIT                                          ; Lost fanout                                                                                                          ;
+; Coprocessor:Coprocessor1|DataCache:INSTCACHE|CacheEntry:inst|CacheIndex[0]                                ; Lost fanout                                                                                                          ;
+; Coprocessor:Coprocessor1|DataCache:INSTCACHE|DataCacheControlUnit:inst15|WRITEENTRY                       ; Lost fanout                                                                                                          ;
+; Coprocessor:Coprocessor1|DataCache:INSTCACHE|DataCacheControlUnit:inst15|READLN                           ; Lost fanout                                                                                                          ;
+; Coprocessor:Coprocessor1|DataCache:INSTCACHE|DataCacheControlUnit:inst15|nextToRep[0..31]                 ; Lost fanout                                                                                                          ;
+; Coprocessor:Coprocessor1|DataCache:INSTCACHE|DataCacheControlUnit:inst15|SELECTADDR                       ; Lost fanout                                                                                                          ;
+; Coprocessor:Coprocessor1|DataCache:INSTCACHE|DataCacheControlUnit:inst15|ENTRYSEL[0..2]                   ; Lost fanout                                                                                                          ;
+; Coprocessor:Coprocessor1|DataCache:INSTCACHE|DataCacheControlUnit:inst15|ADDRIN[4..6]                     ; Lost fanout                                                                                                          ;
+; Coprocessor:Coprocessor1|DataCache:INSTCACHE|DataCacheControlUnit:inst15|MEMADDR[4]                       ; Lost fanout                                                                                                          ;
+; Coprocessor:Coprocessor1|DataCache:INSTCACHE|DataCacheControlUnit:inst15|current                          ; Lost fanout                                                                                                          ;
 ; PipelineUniProcessor:IntelInside|ID-EXE-INSTDATA-BUFFER:inst14|dffe32bit:inst2|dffe8bit:diff32Part4|inst5 ; Merged with PipelineUniProcessor:IntelInside|ID-EXE-INSTDATA-BUFFER:inst14|dffe5bit:inst5|inst                       ;
 ; PipelineUniProcessor:IntelInside|ID-EXE-INSTDATA-BUFFER:inst14|dffe32bit:inst2|dffe8bit:diff32Part4|inst4 ; Merged with PipelineUniProcessor:IntelInside|ID-EXE-INSTDATA-BUFFER:inst14|dffe5bit:inst5|inst1                      ;
 ; PipelineUniProcessor:IntelInside|ID-EXE-INSTDATA-BUFFER:inst14|dffe32bit:inst2|dffe8bit:diff32Part3|inst  ; Merged with PipelineUniProcessor:IntelInside|ID-EXE-INSTDATA-BUFFER:inst14|dffe5bit:inst5|inst2                      ;
@@ -775,8 +847,21 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; PipelineUniProcessor:IntelInside|ID-EXE-INSTDATA-BUFFER:inst14|dffe32bit:inst2|dffe8bit:diff32Part2|inst2 ; Merged with PipelineUniProcessor:IntelInside|ID-EXE-INSTDATA-BUFFER:inst14|dffe32bit:inst2|dffe8bit:diff32Part1|inst ;
 ; PipelineUniProcessor:IntelInside|ID-EXE-INSTDATA-BUFFER:inst14|dffe32bit:inst2|dffe8bit:diff32Part2|inst1 ; Merged with PipelineUniProcessor:IntelInside|ID-EXE-INSTDATA-BUFFER:inst14|dffe32bit:inst2|dffe8bit:diff32Part1|inst ;
 ; PipelineUniProcessor:IntelInside|ID-EXE-INSTDATA-BUFFER:inst14|dffe32bit:inst2|dffe8bit:diff32Part2|inst  ; Merged with PipelineUniProcessor:IntelInside|ID-EXE-INSTDATA-BUFFER:inst14|dffe32bit:inst2|dffe8bit:diff32Part1|inst ;
-; Total Number of Removed Registers = 20                                                                    ;                                                                                                                      ;
+; Total Number of Removed Registers = 111                                                                   ;                                                                                                                      ;
 +-----------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Removed Registers Triggering Further Register Optimizations                                                                                                                                      ;
++-------------------------------------------------------------------------------------+--------------------+---------------------------------------------------------------------------------------+
+; Register name                                                                       ; Reason for Removal ; Registers Removed due to This Register                                                ;
++-------------------------------------------------------------------------------------+--------------------+---------------------------------------------------------------------------------------+
+; Coprocessor:Coprocessor1|DataCache:INSTCACHE|CacheEntry:inst8|HIT                   ; Lost Fanouts       ; Coprocessor:Coprocessor1|DataCache:INSTCACHE|DataCacheControlUnit:inst15|READLN,      ;
+;                                                                                     ;                    ; Coprocessor:Coprocessor1|DataCache:INSTCACHE|DataCacheControlUnit:inst15|ENTRYSEL[2], ;
+;                                                                                     ;                    ; Coprocessor:Coprocessor1|DataCache:INSTCACHE|DataCacheControlUnit:inst15|ENTRYSEL[1], ;
+;                                                                                     ;                    ; Coprocessor:Coprocessor1|DataCache:INSTCACHE|DataCacheControlUnit:inst15|ENTRYSEL[0]  ;
+; Coprocessor:Coprocessor1|DataCache:INSTCACHE|DataCacheControlUnit:inst15|WRITEENTRY ; Lost Fanouts       ; Coprocessor:Coprocessor1|DataCache:INSTCACHE|DataCacheControlUnit:inst15|current      ;
++-------------------------------------------------------------------------------------+--------------------+---------------------------------------------------------------------------------------+
 
 
 +------------------------------------------------------+
@@ -821,6 +906,15 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +---------------------------------+--------------------+------+-------------------------------------------+
 ; OPTIMIZE_POWER_DURING_SYNTHESIS ; NORMAL_COMPILATION ; -    ; -                                         ;
 +---------------------------------+--------------------+------+-------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------+
+; Source assignments for InstROMWithCache:instROMWithCache1|altsyncram:altsyncram_component|altsyncram_v291:auto_generated ;
++---------------------------------+--------------------+------+------------------------------------------------------------+
+; Assignment                      ; Value              ; From ; To                                                         ;
++---------------------------------+--------------------+------+------------------------------------------------------------+
+; OPTIMIZE_POWER_DURING_SYNTHESIS ; NORMAL_COMPILATION ; -    ; -                                                          ;
++---------------------------------+--------------------+------+------------------------------------------------------------+
 
 
 +------------------------------------------------------------------------------------------------------------------------------+
@@ -1116,35 +1210,268 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+-----------------------------------------------------------------------------------------------+
-; altsyncram Parameter Settings by Entity Instance                                              ;
-+-------------------------------------------+---------------------------------------------------+
-; Name                                      ; Value                                             ;
-+-------------------------------------------+---------------------------------------------------+
-; Number of entity instances                ; 2                                                 ;
-; Entity Instance                           ; DataRAM:DataRAM1|altsyncram:altsyncram_component  ;
-;     -- OPERATION_MODE                     ; SINGLE_PORT                                       ;
-;     -- WIDTH_A                            ; 32                                                ;
-;     -- NUMWORDS_A                         ; 1024                                              ;
-;     -- OUTDATA_REG_A                      ; UNREGISTERED                                      ;
-;     -- WIDTH_B                            ; 1                                                 ;
-;     -- NUMWORDS_B                         ; 1                                                 ;
-;     -- ADDRESS_REG_B                      ; CLOCK1                                            ;
-;     -- OUTDATA_REG_B                      ; UNREGISTERED                                      ;
-;     -- RAM_BLOCK_TYPE                     ; AUTO                                              ;
-;     -- READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                                         ;
-; Entity Instance                           ; InstROM1:InstROM1|altsyncram:altsyncram_component ;
-;     -- OPERATION_MODE                     ; ROM                                               ;
-;     -- WIDTH_A                            ; 32                                                ;
-;     -- NUMWORDS_A                         ; 1024                                              ;
-;     -- OUTDATA_REG_A                      ; UNREGISTERED                                      ;
-;     -- WIDTH_B                            ; 1                                                 ;
-;     -- NUMWORDS_B                         ; 1                                                 ;
-;     -- ADDRESS_REG_B                      ; CLOCK1                                            ;
-;     -- OUTDATA_REG_B                      ; UNREGISTERED                                      ;
-;     -- RAM_BLOCK_TYPE                     ; AUTO                                              ;
-;     -- READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                                         ;
-+-------------------------------------------+---------------------------------------------------+
++----------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Coprocessor:Coprocessor1|DataCache:INSTCACHE|DataCacheEntryHitOr:inst25|LPM_OR:lpm_or_component ;
++------------------------+------------+--------------------------------------------------------------------------------------------------------+
+; Parameter Name         ; Value      ; Type                                                                                                   ;
++------------------------+------------+--------------------------------------------------------------------------------------------------------+
+; AUTO_CARRY_CHAINS      ; ON         ; AUTO_CARRY                                                                                             ;
+; IGNORE_CARRY_BUFFERS   ; OFF        ; IGNORE_CARRY                                                                                           ;
+; AUTO_CASCADE_CHAINS    ; ON         ; AUTO_CASCADE                                                                                           ;
+; IGNORE_CASCADE_BUFFERS ; OFF        ; IGNORE_CASCADE                                                                                         ;
+; LPM_WIDTH              ; 1          ; Untyped                                                                                                ;
+; LPM_SIZE               ; 8          ; Untyped                                                                                                ;
+; CARRY_CHAIN_LENGTH     ; 48         ; CARRY_CHAIN_LENGTH                                                                                     ;
+; CARRY_CHAIN            ; MANUAL     ; Untyped                                                                                                ;
+; CASCADE_CHAIN          ; MANUAL     ; Untyped                                                                                                ;
+; DEVICE_FAMILY          ; Stratix II ; Untyped                                                                                                ;
++------------------------+------------+--------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Coprocessor:Coprocessor1|DataCache:INSTCACHE|DataCacheEntryDecoder:inst14|LPM_DECODE:lpm_decode_component ;
++------------------------+------------+------------------------------------------------------------------------------------------------------------------+
+; Parameter Name         ; Value      ; Type                                                                                                             ;
++------------------------+------------+------------------------------------------------------------------------------------------------------------------+
+; LPM_WIDTH              ; 3          ; Untyped                                                                                                          ;
+; LPM_DECODES            ; 8          ; Untyped                                                                                                          ;
+; LPM_PIPELINE           ; 0          ; Untyped                                                                                                          ;
+; CASCADE_CHAIN          ; MANUAL     ; Untyped                                                                                                          ;
+; DEVICE_FAMILY          ; Stratix II ; Untyped                                                                                                          ;
+; CBXI_PARAMETER         ; decode_5sf ; Untyped                                                                                                          ;
+; AUTO_CARRY_CHAINS      ; ON         ; AUTO_CARRY                                                                                                       ;
+; IGNORE_CARRY_BUFFERS   ; OFF        ; IGNORE_CARRY                                                                                                     ;
+; AUTO_CASCADE_CHAINS    ; ON         ; AUTO_CASCADE                                                                                                     ;
+; IGNORE_CASCADE_BUFFERS ; OFF        ; IGNORE_CASCADE                                                                                                   ;
++------------------------+------------+------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Coprocessor:Coprocessor1|DataCache:INSTCACHE|DataCacheEntryDecoder:inst13|LPM_DECODE:lpm_decode_component ;
++------------------------+------------+------------------------------------------------------------------------------------------------------------------+
+; Parameter Name         ; Value      ; Type                                                                                                             ;
++------------------------+------------+------------------------------------------------------------------------------------------------------------------+
+; LPM_WIDTH              ; 3          ; Untyped                                                                                                          ;
+; LPM_DECODES            ; 8          ; Untyped                                                                                                          ;
+; LPM_PIPELINE           ; 0          ; Untyped                                                                                                          ;
+; CASCADE_CHAIN          ; MANUAL     ; Untyped                                                                                                          ;
+; DEVICE_FAMILY          ; Stratix II ; Untyped                                                                                                          ;
+; CBXI_PARAMETER         ; decode_5sf ; Untyped                                                                                                          ;
+; AUTO_CARRY_CHAINS      ; ON         ; AUTO_CARRY                                                                                                       ;
+; IGNORE_CARRY_BUFFERS   ; OFF        ; IGNORE_CARRY                                                                                                     ;
+; AUTO_CASCADE_CHAINS    ; ON         ; AUTO_CASCADE                                                                                                     ;
+; IGNORE_CASCADE_BUFFERS ; OFF        ; IGNORE_CASCADE                                                                                                   ;
++------------------------+------------+------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Coprocessor:Coprocessor1|DataCache:INSTCACHE|DataCacheEntryOutputOr:inst21|LPM_OR:lpm_or_component ;
++------------------------+------------+-----------------------------------------------------------------------------------------------------------+
+; Parameter Name         ; Value      ; Type                                                                                                      ;
++------------------------+------------+-----------------------------------------------------------------------------------------------------------+
+; AUTO_CARRY_CHAINS      ; ON         ; AUTO_CARRY                                                                                                ;
+; IGNORE_CARRY_BUFFERS   ; OFF        ; IGNORE_CARRY                                                                                              ;
+; AUTO_CASCADE_CHAINS    ; ON         ; AUTO_CASCADE                                                                                              ;
+; IGNORE_CASCADE_BUFFERS ; OFF        ; IGNORE_CASCADE                                                                                            ;
+; LPM_WIDTH              ; 128        ; Untyped                                                                                                   ;
+; LPM_SIZE               ; 8          ; Untyped                                                                                                   ;
+; CARRY_CHAIN_LENGTH     ; 48         ; CARRY_CHAIN_LENGTH                                                                                        ;
+; CARRY_CHAIN            ; MANUAL     ; Untyped                                                                                                   ;
+; CASCADE_CHAIN          ; MANUAL     ; Untyped                                                                                                   ;
+; DEVICE_FAMILY          ; Stratix II ; Untyped                                                                                                   ;
++------------------------+------------+-----------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Coprocessor:Coprocessor1|DataCache:DATACACHE|DataCacheEntryHitOr:inst25|LPM_OR:lpm_or_component ;
++------------------------+------------+--------------------------------------------------------------------------------------------------------+
+; Parameter Name         ; Value      ; Type                                                                                                   ;
++------------------------+------------+--------------------------------------------------------------------------------------------------------+
+; AUTO_CARRY_CHAINS      ; ON         ; AUTO_CARRY                                                                                             ;
+; IGNORE_CARRY_BUFFERS   ; OFF        ; IGNORE_CARRY                                                                                           ;
+; AUTO_CASCADE_CHAINS    ; ON         ; AUTO_CASCADE                                                                                           ;
+; IGNORE_CASCADE_BUFFERS ; OFF        ; IGNORE_CASCADE                                                                                         ;
+; LPM_WIDTH              ; 1          ; Untyped                                                                                                ;
+; LPM_SIZE               ; 8          ; Untyped                                                                                                ;
+; CARRY_CHAIN_LENGTH     ; 48         ; CARRY_CHAIN_LENGTH                                                                                     ;
+; CARRY_CHAIN            ; MANUAL     ; Untyped                                                                                                ;
+; CASCADE_CHAIN          ; MANUAL     ; Untyped                                                                                                ;
+; DEVICE_FAMILY          ; Stratix II ; Untyped                                                                                                ;
++------------------------+------------+--------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Coprocessor:Coprocessor1|DataCache:DATACACHE|DataCacheEntryDecoder:inst14|LPM_DECODE:lpm_decode_component ;
++------------------------+------------+------------------------------------------------------------------------------------------------------------------+
+; Parameter Name         ; Value      ; Type                                                                                                             ;
++------------------------+------------+------------------------------------------------------------------------------------------------------------------+
+; LPM_WIDTH              ; 3          ; Untyped                                                                                                          ;
+; LPM_DECODES            ; 8          ; Untyped                                                                                                          ;
+; LPM_PIPELINE           ; 0          ; Untyped                                                                                                          ;
+; CASCADE_CHAIN          ; MANUAL     ; Untyped                                                                                                          ;
+; DEVICE_FAMILY          ; Stratix II ; Untyped                                                                                                          ;
+; CBXI_PARAMETER         ; decode_5sf ; Untyped                                                                                                          ;
+; AUTO_CARRY_CHAINS      ; ON         ; AUTO_CARRY                                                                                                       ;
+; IGNORE_CARRY_BUFFERS   ; OFF        ; IGNORE_CARRY                                                                                                     ;
+; AUTO_CASCADE_CHAINS    ; ON         ; AUTO_CASCADE                                                                                                     ;
+; IGNORE_CASCADE_BUFFERS ; OFF        ; IGNORE_CASCADE                                                                                                   ;
++------------------------+------------+------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Coprocessor:Coprocessor1|DataCache:DATACACHE|DataCacheEntryDecoder:inst13|LPM_DECODE:lpm_decode_component ;
++------------------------+------------+------------------------------------------------------------------------------------------------------------------+
+; Parameter Name         ; Value      ; Type                                                                                                             ;
++------------------------+------------+------------------------------------------------------------------------------------------------------------------+
+; LPM_WIDTH              ; 3          ; Untyped                                                                                                          ;
+; LPM_DECODES            ; 8          ; Untyped                                                                                                          ;
+; LPM_PIPELINE           ; 0          ; Untyped                                                                                                          ;
+; CASCADE_CHAIN          ; MANUAL     ; Untyped                                                                                                          ;
+; DEVICE_FAMILY          ; Stratix II ; Untyped                                                                                                          ;
+; CBXI_PARAMETER         ; decode_5sf ; Untyped                                                                                                          ;
+; AUTO_CARRY_CHAINS      ; ON         ; AUTO_CARRY                                                                                                       ;
+; IGNORE_CARRY_BUFFERS   ; OFF        ; IGNORE_CARRY                                                                                                     ;
+; AUTO_CASCADE_CHAINS    ; ON         ; AUTO_CASCADE                                                                                                     ;
+; IGNORE_CASCADE_BUFFERS ; OFF        ; IGNORE_CASCADE                                                                                                   ;
++------------------------+------------+------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Coprocessor:Coprocessor1|DataCache:DATACACHE|DataCacheEntryOutputOr:inst21|LPM_OR:lpm_or_component ;
++------------------------+------------+-----------------------------------------------------------------------------------------------------------+
+; Parameter Name         ; Value      ; Type                                                                                                      ;
++------------------------+------------+-----------------------------------------------------------------------------------------------------------+
+; AUTO_CARRY_CHAINS      ; ON         ; AUTO_CARRY                                                                                                ;
+; IGNORE_CARRY_BUFFERS   ; OFF        ; IGNORE_CARRY                                                                                              ;
+; AUTO_CASCADE_CHAINS    ; ON         ; AUTO_CASCADE                                                                                              ;
+; IGNORE_CASCADE_BUFFERS ; OFF        ; IGNORE_CASCADE                                                                                            ;
+; LPM_WIDTH              ; 128        ; Untyped                                                                                                   ;
+; LPM_SIZE               ; 8          ; Untyped                                                                                                   ;
+; CARRY_CHAIN_LENGTH     ; 48         ; CARRY_CHAIN_LENGTH                                                                                        ;
+; CARRY_CHAIN            ; MANUAL     ; Untyped                                                                                                   ;
+; CASCADE_CHAIN          ; MANUAL     ; Untyped                                                                                                   ;
+; DEVICE_FAMILY          ; Stratix II ; Untyped                                                                                                   ;
++------------------------+------------+-----------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: InstROMWithCache:instROMWithCache1 ;
++-----------------+-------+-------------------------------------------------------+
+; Parameter Name  ; Value ; Type                                                  ;
++-----------------+-------+-------------------------------------------------------+
+; WIDTH_BYTEENA_A ; 1     ; Untyped                                               ;
+; WIDTH_BYTEENA_B ; 1     ; Untyped                                               ;
++-----------------+-------+-------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: InstROMWithCache:instROMWithCache1|altsyncram:altsyncram_component ;
++------------------------------------+----------------------+-----------------------------------------------------+
+; Parameter Name                     ; Value                ; Type                                                ;
++------------------------------------+----------------------+-----------------------------------------------------+
+; BYTE_SIZE_BLOCK                    ; 8                    ; Untyped                                             ;
+; AUTO_CARRY_CHAINS                  ; ON                   ; AUTO_CARRY                                          ;
+; IGNORE_CARRY_BUFFERS               ; OFF                  ; IGNORE_CARRY                                        ;
+; AUTO_CASCADE_CHAINS                ; ON                   ; AUTO_CASCADE                                        ;
+; IGNORE_CASCADE_BUFFERS             ; OFF                  ; IGNORE_CASCADE                                      ;
+; WIDTH_BYTEENA                      ; 1                    ; Untyped                                             ;
+; OPERATION_MODE                     ; ROM                  ; Untyped                                             ;
+; WIDTH_A                            ; 128                  ; Untyped                                             ;
+; WIDTHAD_A                          ; 10                   ; Untyped                                             ;
+; NUMWORDS_A                         ; 1024                 ; Untyped                                             ;
+; OUTDATA_REG_A                      ; UNREGISTERED         ; Untyped                                             ;
+; ADDRESS_ACLR_A                     ; NONE                 ; Untyped                                             ;
+; OUTDATA_ACLR_A                     ; NONE                 ; Untyped                                             ;
+; WRCONTROL_ACLR_A                   ; NONE                 ; Untyped                                             ;
+; INDATA_ACLR_A                      ; NONE                 ; Untyped                                             ;
+; BYTEENA_ACLR_A                     ; NONE                 ; Untyped                                             ;
+; WIDTH_B                            ; 1                    ; Untyped                                             ;
+; WIDTHAD_B                          ; 1                    ; Untyped                                             ;
+; NUMWORDS_B                         ; 1                    ; Untyped                                             ;
+; INDATA_REG_B                       ; CLOCK1               ; Untyped                                             ;
+; WRCONTROL_WRADDRESS_REG_B          ; CLOCK1               ; Untyped                                             ;
+; RDCONTROL_REG_B                    ; CLOCK1               ; Untyped                                             ;
+; ADDRESS_REG_B                      ; CLOCK1               ; Untyped                                             ;
+; OUTDATA_REG_B                      ; UNREGISTERED         ; Untyped                                             ;
+; BYTEENA_REG_B                      ; CLOCK1               ; Untyped                                             ;
+; INDATA_ACLR_B                      ; NONE                 ; Untyped                                             ;
+; WRCONTROL_ACLR_B                   ; NONE                 ; Untyped                                             ;
+; ADDRESS_ACLR_B                     ; NONE                 ; Untyped                                             ;
+; OUTDATA_ACLR_B                     ; NONE                 ; Untyped                                             ;
+; RDCONTROL_ACLR_B                   ; NONE                 ; Untyped                                             ;
+; BYTEENA_ACLR_B                     ; NONE                 ; Untyped                                             ;
+; WIDTH_BYTEENA_A                    ; 1                    ; Untyped                                             ;
+; WIDTH_BYTEENA_B                    ; 1                    ; Untyped                                             ;
+; RAM_BLOCK_TYPE                     ; AUTO                 ; Untyped                                             ;
+; BYTE_SIZE                          ; 8                    ; Untyped                                             ;
+; READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE            ; Untyped                                             ;
+; READ_DURING_WRITE_MODE_PORT_A      ; NEW_DATA_NO_NBE_READ ; Untyped                                             ;
+; READ_DURING_WRITE_MODE_PORT_B      ; NEW_DATA_NO_NBE_READ ; Untyped                                             ;
+; INIT_FILE                          ; InstRomWithCache.mif ; Untyped                                             ;
+; INIT_FILE_LAYOUT                   ; PORT_A               ; Untyped                                             ;
+; MAXIMUM_DEPTH                      ; 0                    ; Untyped                                             ;
+; CLOCK_ENABLE_INPUT_A               ; BYPASS               ; Untyped                                             ;
+; CLOCK_ENABLE_INPUT_B               ; NORMAL               ; Untyped                                             ;
+; CLOCK_ENABLE_OUTPUT_A              ; BYPASS               ; Untyped                                             ;
+; CLOCK_ENABLE_OUTPUT_B              ; NORMAL               ; Untyped                                             ;
+; CLOCK_ENABLE_CORE_A                ; USE_INPUT_CLKEN      ; Untyped                                             ;
+; CLOCK_ENABLE_CORE_B                ; USE_INPUT_CLKEN      ; Untyped                                             ;
+; ENABLE_ECC                         ; FALSE                ; Untyped                                             ;
+; DEVICE_FAMILY                      ; Stratix II           ; Untyped                                             ;
+; CBXI_PARAMETER                     ; altsyncram_v291      ; Untyped                                             ;
++------------------------------------+----------------------+-----------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------------------+
+; altsyncram Parameter Settings by Entity Instance                                                               ;
++-------------------------------------------+--------------------------------------------------------------------+
+; Name                                      ; Value                                                              ;
++-------------------------------------------+--------------------------------------------------------------------+
+; Number of entity instances                ; 3                                                                  ;
+; Entity Instance                           ; DataRAM:DataRAM1|altsyncram:altsyncram_component                   ;
+;     -- OPERATION_MODE                     ; SINGLE_PORT                                                        ;
+;     -- WIDTH_A                            ; 32                                                                 ;
+;     -- NUMWORDS_A                         ; 1024                                                               ;
+;     -- OUTDATA_REG_A                      ; UNREGISTERED                                                       ;
+;     -- WIDTH_B                            ; 1                                                                  ;
+;     -- NUMWORDS_B                         ; 1                                                                  ;
+;     -- ADDRESS_REG_B                      ; CLOCK1                                                             ;
+;     -- OUTDATA_REG_B                      ; UNREGISTERED                                                       ;
+;     -- RAM_BLOCK_TYPE                     ; AUTO                                                               ;
+;     -- READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                                                          ;
+; Entity Instance                           ; InstROM1:InstROM1|altsyncram:altsyncram_component                  ;
+;     -- OPERATION_MODE                     ; ROM                                                                ;
+;     -- WIDTH_A                            ; 32                                                                 ;
+;     -- NUMWORDS_A                         ; 1024                                                               ;
+;     -- OUTDATA_REG_A                      ; UNREGISTERED                                                       ;
+;     -- WIDTH_B                            ; 1                                                                  ;
+;     -- NUMWORDS_B                         ; 1                                                                  ;
+;     -- ADDRESS_REG_B                      ; CLOCK1                                                             ;
+;     -- OUTDATA_REG_B                      ; UNREGISTERED                                                       ;
+;     -- RAM_BLOCK_TYPE                     ; AUTO                                                               ;
+;     -- READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                                                          ;
+; Entity Instance                           ; InstROMWithCache:instROMWithCache1|altsyncram:altsyncram_component ;
+;     -- OPERATION_MODE                     ; ROM                                                                ;
+;     -- WIDTH_A                            ; 128                                                                ;
+;     -- NUMWORDS_A                         ; 1024                                                               ;
+;     -- OUTDATA_REG_A                      ; UNREGISTERED                                                       ;
+;     -- WIDTH_B                            ; 1                                                                  ;
+;     -- NUMWORDS_B                         ; 1                                                                  ;
+;     -- ADDRESS_REG_B                      ; CLOCK1                                                             ;
+;     -- OUTDATA_REG_B                      ; UNREGISTERED                                                       ;
+;     -- RAM_BLOCK_TYPE                     ; AUTO                                                               ;
+;     -- READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                                                          ;
++-------------------------------------------+--------------------------------------------------------------------+
 
 
 +-------------------------------+
@@ -1153,8 +1480,16 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II Analysis & Synthesis
     Info: Version 9.0 Build 132 02/25/2009 SJ Full Version
-    Info: Processing started: Wed Dec 02 22:16:44 2009
+    Info: Processing started: Thu Jan 14 20:05:41 2010
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off PipelineUniProcessor -c PipelineUniProcessor
+Info: Found 1 design units, including 1 entities, in source file ../MotherBoard/InstROMWithCache.tdf
+    Info: Found entity 1: InstROMWithCache
+Info: Found 1 design units, including 1 entities, in source file ../Coprocessor/DataCacheEntryDecoder.tdf
+    Info: Found entity 1: DataCacheEntryDecoder
+Info: Found 1 design units, including 1 entities, in source file ../Coprocessor/DataCacheEntryHitOr.tdf
+    Info: Found entity 1: DataCacheEntryHitOr
+Info: Found 1 design units, including 1 entities, in source file ../Coprocessor/DataCacheEntryOutputOr.tdf
+    Info: Found entity 1: DataCacheEntryOutputOr
 Info: Found 2 design units, including 1 entities, in source file ../MotherBoard/lpm_ram_dp1.vhd
     Info: Found design unit 1: lpm_ram_dp1-SYN
     Info: Found entity 1: lpm_ram_dp1
@@ -1263,8 +1598,19 @@ Info: Found 1 design units, including 1 entities, in source file MEM-WB-INSTDATA
 Info: Found 2 design units, including 1 entities, in source file ../MotherBoard/InstROM1.vhd
     Info: Found design unit 1: instrom1-SYN
     Info: Found entity 1: InstROM1
+Info: Found 2 design units, including 1 entities, in source file ../Coprocessor/CacheEntry.vhd
+    Info: Found design unit 1: CacheEntry-ca
+    Info: Found entity 1: CacheEntry
+Info: Found 1 design units, including 1 entities, in source file ../Coprocessor/DataCache.bdf
+    Info: Found entity 1: DataCache
+Info: Found 2 design units, including 1 entities, in source file ../Coprocessor/DataCacheControlUnit.vhd
+    Info: Found design unit 1: DataCacheControlUnit-cc
+    Info: Found entity 1: DataCacheControlUnit
+Info: Found 1 design units, including 1 entities, in source file ../Coprocessor/Coprocessor.bdf
+    Info: Found entity 1: Coprocessor
 Info: Elaborating entity "MotherBoard" for the top level hierarchy
 Info: Elaborating entity "PipelineUniProcessor" for hierarchy "PipelineUniProcessor:IntelInside"
+Warning: Pin "CACHEFREE" not connected
 Warning: Primitive "WIRE" of instance "38" not used
 Info: Elaborating entity "EXE-MEM-SIGNAL-BUFFER" for hierarchy "PipelineUniProcessor:IntelInside|EXE-MEM-SIGNAL-BUFFER:inst15"
 Info: Elaborating entity "dffe4bit" for hierarchy "PipelineUniProcessor:IntelInside|EXE-MEM-SIGNAL-BUFFER:inst15|dffe4bit:inst"
@@ -1403,7 +1749,8 @@ Info: Instantiated megafunction "DataRAM:DataRAM1|altsyncram:altsyncram_componen
 Info: Found 1 design units, including 1 entities, in source file db/altsyncram_fte1.tdf
     Info: Found entity 1: altsyncram_fte1
 Info: Elaborating entity "altsyncram_fte1" for hierarchy "DataRAM:DataRAM1|altsyncram:altsyncram_component|altsyncram_fte1:auto_generated"
-Critical Warning: Memory depth (1024) in the design file differs from memory depth (32) in the Memory Initialization File "InitDataRAM.mif" -- setting initial value for remaining addresses to 0
+Warning: 992 out of 1024 addresses are uninitialized. The Quartus II software will initialize them to "0". There are 1 warnings found, and 1 warnings are reported.
+    Warning: Addresses ranging from 32 to 1023 are not initialized
 Info: Elaborating entity "InstROM1" for hierarchy "InstROM1:InstROM1"
 Info: Elaborating entity "altsyncram" for hierarchy "InstROM1:InstROM1|altsyncram:altsyncram_component"
 Info: Elaborated megafunction instantiation "InstROM1:InstROM1|altsyncram:altsyncram_component"
@@ -1424,16 +1771,304 @@ Info: Instantiated megafunction "InstROM1:InstROM1|altsyncram:altsyncram_compone
 Info: Found 1 design units, including 1 entities, in source file db/altsyncram_ur91.tdf
     Info: Found entity 1: altsyncram_ur91
 Info: Elaborating entity "altsyncram_ur91" for hierarchy "InstROM1:InstROM1|altsyncram:altsyncram_component|altsyncram_ur91:auto_generated"
-Critical Warning: Memory depth (1024) in the design file differs from memory depth (32) in the Memory Initialization File "InitInstROM.mif" -- setting initial value for remaining addresses to 0
+Warning: 992 out of 1024 addresses are uninitialized. The Quartus II software will initialize them to "0". There are 1 warnings found, and 1 warnings are reported.
+    Warning: Addresses ranging from 32 to 1023 are not initialized
+Info: Elaborating entity "Coprocessor" for hierarchy "Coprocessor:Coprocessor1"
+Warning: Port "CLK" of type DataCache and instance "DATACACHE" is missing source signal
+Info: Elaborating entity "DataCache" for hierarchy "Coprocessor:Coprocessor1|DataCache:INSTCACHE"
+Info: Elaborating entity "DataCacheControlUnit" for hierarchy "Coprocessor:Coprocessor1|DataCache:INSTCACHE|DataCacheControlUnit:inst15"
+Warning (10541): VHDL Signal Declaration warning at DataCacheControlUnit.vhd(31): used implicit default value for signal "MEMWDATA" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
+Warning (10036): Verilog HDL or VHDL warning at DataCacheControlUnit.vhd(43): object "tmp_wdata" assigned a value but never read
+Warning (10631): VHDL Process Statement warning at DataCacheControlUnit.vhd(53): inferring latch(es) for signal or variable "REPLACEENTRY", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at DataCacheControlUnit.vhd(53): inferring latch(es) for signal or variable "WRITEMEM", which holds its previous value in one or more paths through the process
+Info (10041): Inferred latch for "WRITEMEM" at DataCacheControlUnit.vhd(53)
+Info (10041): Inferred latch for "REPLACEENTRY" at DataCacheControlUnit.vhd(53)
+Info: Elaborating entity "DataCacheEntryHitOr" for hierarchy "Coprocessor:Coprocessor1|DataCache:INSTCACHE|DataCacheEntryHitOr:inst25"
+Info: Elaborating entity "LPM_OR" for hierarchy "Coprocessor:Coprocessor1|DataCache:INSTCACHE|DataCacheEntryHitOr:inst25|LPM_OR:lpm_or_component"
+Info: Elaborated megafunction instantiation "Coprocessor:Coprocessor1|DataCache:INSTCACHE|DataCacheEntryHitOr:inst25|LPM_OR:lpm_or_component"
+Info: Instantiated megafunction "Coprocessor:Coprocessor1|DataCache:INSTCACHE|DataCacheEntryHitOr:inst25|LPM_OR:lpm_or_component" with the following parameter:
+    Info: Parameter "LPM_TYPE" = "LPM_OR"
+    Info: Parameter "LPM_WIDTH" = "1"
+    Info: Parameter "LPM_SIZE" = "8"
+Info: Elaborating entity "CacheEntry" for hierarchy "Coprocessor:Coprocessor1|DataCache:INSTCACHE|CacheEntry:inst"
+Warning (10492): VHDL Process Statement warning at CacheEntry.vhd(67): signal "data" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at CacheEntry.vhd(69): signal "CacheIndex" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at CacheEntry.vhd(69): signal "vld" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at CacheEntry.vhd(72): signal "data" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at CacheEntry.vhd(74): signal "data" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at CacheEntry.vhd(76): signal "data" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at CacheEntry.vhd(78): signal "data" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at CacheEntry.vhd(84): signal "dty" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at CacheEntry.vhd(85): signal "vld" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at CacheEntry.vhd(87): signal "InternalTag" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Info: Elaborating entity "DataCacheEntryDecoder" for hierarchy "Coprocessor:Coprocessor1|DataCache:INSTCACHE|DataCacheEntryDecoder:inst14"
+Info: Elaborating entity "LPM_DECODE" for hierarchy "Coprocessor:Coprocessor1|DataCache:INSTCACHE|DataCacheEntryDecoder:inst14|LPM_DECODE:lpm_decode_component"
+Info: Elaborated megafunction instantiation "Coprocessor:Coprocessor1|DataCache:INSTCACHE|DataCacheEntryDecoder:inst14|LPM_DECODE:lpm_decode_component"
+Info: Instantiated megafunction "Coprocessor:Coprocessor1|DataCache:INSTCACHE|DataCacheEntryDecoder:inst14|LPM_DECODE:lpm_decode_component" with the following parameter:
+    Info: Parameter "LPM_TYPE" = "LPM_DECODE"
+    Info: Parameter "LPM_WIDTH" = "3"
+    Info: Parameter "LPM_DECODES" = "8"
+Info: Found 1 design units, including 1 entities, in source file db/decode_5sf.tdf
+    Info: Found entity 1: decode_5sf
+Info: Elaborating entity "decode_5sf" for hierarchy "Coprocessor:Coprocessor1|DataCache:INSTCACHE|DataCacheEntryDecoder:inst14|LPM_DECODE:lpm_decode_component|decode_5sf:auto_generated"
+Info: Elaborating entity "DataCacheEntryOutputOr" for hierarchy "Coprocessor:Coprocessor1|DataCache:INSTCACHE|DataCacheEntryOutputOr:inst21"
+Info: Elaborating entity "LPM_OR" for hierarchy "Coprocessor:Coprocessor1|DataCache:INSTCACHE|DataCacheEntryOutputOr:inst21|LPM_OR:lpm_or_component"
+Info: Elaborated megafunction instantiation "Coprocessor:Coprocessor1|DataCache:INSTCACHE|DataCacheEntryOutputOr:inst21|LPM_OR:lpm_or_component"
+Info: Instantiated megafunction "Coprocessor:Coprocessor1|DataCache:INSTCACHE|DataCacheEntryOutputOr:inst21|LPM_OR:lpm_or_component" with the following parameter:
+    Info: Parameter "LPM_TYPE" = "LPM_OR"
+    Info: Parameter "LPM_WIDTH" = "128"
+    Info: Parameter "LPM_SIZE" = "8"
+Info: Elaborating entity "InstROMWithCache" for hierarchy "InstROMWithCache:instROMWithCache1"
+Info: Elaborating entity "altsyncram" for hierarchy "InstROMWithCache:instROMWithCache1|altsyncram:altsyncram_component"
+Info: Elaborated megafunction instantiation "InstROMWithCache:instROMWithCache1|altsyncram:altsyncram_component"
+Info: Instantiated megafunction "InstROMWithCache:instROMWithCache1|altsyncram:altsyncram_component" with the following parameter:
+    Info: Parameter "LPM_TYPE" = "altsyncram"
+    Info: Parameter "LPM_HINT" = "ENABLE_RUNTIME_MOD=NO"
+    Info: Parameter "INTENDED_DEVICE_FAMILY" = "Stratix II"
+    Info: Parameter "OPERATION_MODE" = "ROM"
+    Info: Parameter "WIDTH_A" = "128"
+    Info: Parameter "WIDTHAD_A" = "10"
+    Info: Parameter "NUMWORDS_A" = "1024"
+    Info: Parameter "OUTDATA_REG_A" = "UNREGISTERED"
+    Info: Parameter "OUTDATA_ACLR_A" = "NONE"
+    Info: Parameter "INIT_FILE" = "InstRomWithCache.mif"
+    Info: Parameter "WIDTH_BYTEENA_A" = "1"
+    Info: Parameter "CLOCK_ENABLE_INPUT_A" = "BYPASS"
+    Info: Parameter "CLOCK_ENABLE_OUTPUT_A" = "BYPASS"
+Info: Found 1 design units, including 1 entities, in source file db/altsyncram_v291.tdf
+    Info: Found entity 1: altsyncram_v291
+Info: Elaborating entity "altsyncram_v291" for hierarchy "InstROMWithCache:instROMWithCache1|altsyncram:altsyncram_component|altsyncram_v291:auto_generated"
+Warning: Synthesized away the following node(s):
+    Warning: Synthesized away the following RAM node(s):
+        Warning (14320): Synthesized away node "InstROMWithCache:instROMWithCache1|altsyncram:altsyncram_component|altsyncram_v291:auto_generated|q_a[0]"
+        Warning (14320): Synthesized away node "InstROMWithCache:instROMWithCache1|altsyncram:altsyncram_component|altsyncram_v291:auto_generated|q_a[1]"
+        Warning (14320): Synthesized away node "InstROMWithCache:instROMWithCache1|altsyncram:altsyncram_component|altsyncram_v291:auto_generated|q_a[2]"
+        Warning (14320): Synthesized away node "InstROMWithCache:instROMWithCache1|altsyncram:altsyncram_component|altsyncram_v291:auto_generated|q_a[3]"
+        Warning (14320): Synthesized away node "InstROMWithCache:instROMWithCache1|altsyncram:altsyncram_component|altsyncram_v291:auto_generated|q_a[4]"
+        Warning (14320): Synthesized away node "InstROMWithCache:instROMWithCache1|altsyncram:altsyncram_component|altsyncram_v291:auto_generated|q_a[5]"
+        Warning (14320): Synthesized away node "InstROMWithCache:instROMWithCache1|altsyncram:altsyncram_component|altsyncram_v291:auto_generated|q_a[6]"
+        Warning (14320): Synthesized away node "InstROMWithCache:instROMWithCache1|altsyncram:altsyncram_component|altsyncram_v291:auto_generated|q_a[7]"
+        Warning (14320): Synthesized away node "InstROMWithCache:instROMWithCache1|altsyncram:altsyncram_component|altsyncram_v291:auto_generated|q_a[8]"
+        Warning (14320): Synthesized away node "InstROMWithCache:instROMWithCache1|altsyncram:altsyncram_component|altsyncram_v291:auto_generated|q_a[9]"
+        Warning (14320): Synthesized away node "InstROMWithCache:instROMWithCache1|altsyncram:altsyncram_component|altsyncram_v291:auto_generated|q_a[10]"
+        Warning (14320): Synthesized away node "InstROMWithCache:instROMWithCache1|altsyncram:altsyncram_component|altsyncram_v291:auto_generated|q_a[11]"
+        Warning (14320): Synthesized away node "InstROMWithCache:instROMWithCache1|altsyncram:altsyncram_component|altsyncram_v291:auto_generated|q_a[12]"
+        Warning (14320): Synthesized away node "InstROMWithCache:instROMWithCache1|altsyncram:altsyncram_component|altsyncram_v291:auto_generated|q_a[13]"
+        Warning (14320): Synthesized away node "InstROMWithCache:instROMWithCache1|altsyncram:altsyncram_component|altsyncram_v291:auto_generated|q_a[14]"
+        Warning (14320): Synthesized away node "InstROMWithCache:instROMWithCache1|altsyncram:altsyncram_component|altsyncram_v291:auto_generated|q_a[15]"
+        Warning (14320): Synthesized away node "InstROMWithCache:instROMWithCache1|altsyncram:altsyncram_component|altsyncram_v291:auto_generated|q_a[16]"
+        Warning (14320): Synthesized away node "InstROMWithCache:instROMWithCache1|altsyncram:altsyncram_component|altsyncram_v291:auto_generated|q_a[17]"
+        Warning (14320): Synthesized away node "InstROMWithCache:instROMWithCache1|altsyncram:altsyncram_component|altsyncram_v291:auto_generated|q_a[18]"
+        Warning (14320): Synthesized away node "InstROMWithCache:instROMWithCache1|altsyncram:altsyncram_component|altsyncram_v291:auto_generated|q_a[19]"
+        Warning (14320): Synthesized away node "InstROMWithCache:instROMWithCache1|altsyncram:altsyncram_component|altsyncram_v291:auto_generated|q_a[20]"
+        Warning (14320): Synthesized away node "InstROMWithCache:instROMWithCache1|altsyncram:altsyncram_component|altsyncram_v291:auto_generated|q_a[21]"
+        Warning (14320): Synthesized away node "InstROMWithCache:instROMWithCache1|altsyncram:altsyncram_component|altsyncram_v291:auto_generated|q_a[22]"
+        Warning (14320): Synthesized away node "InstROMWithCache:instROMWithCache1|altsyncram:altsyncram_component|altsyncram_v291:auto_generated|q_a[23]"
+        Warning (14320): Synthesized away node "InstROMWithCache:instROMWithCache1|altsyncram:altsyncram_component|altsyncram_v291:auto_generated|q_a[24]"
+        Warning (14320): Synthesized away node "InstROMWithCache:instROMWithCache1|altsyncram:altsyncram_component|altsyncram_v291:auto_generated|q_a[25]"
+        Warning (14320): Synthesized away node "InstROMWithCache:instROMWithCache1|altsyncram:altsyncram_component|altsyncram_v291:auto_generated|q_a[26]"
+        Warning (14320): Synthesized away node "InstROMWithCache:instROMWithCache1|altsyncram:altsyncram_component|altsyncram_v291:auto_generated|q_a[27]"
+        Warning (14320): Synthesized away node "InstROMWithCache:instROMWithCache1|altsyncram:altsyncram_component|altsyncram_v291:auto_generated|q_a[28]"
+        Warning (14320): Synthesized away node "InstROMWithCache:instROMWithCache1|altsyncram:altsyncram_component|altsyncram_v291:auto_generated|q_a[29]"
+        Warning (14320): Synthesized away node "InstROMWithCache:instROMWithCache1|altsyncram:altsyncram_component|altsyncram_v291:auto_generated|q_a[30]"
+        Warning (14320): Synthesized away node "InstROMWithCache:instROMWithCache1|altsyncram:altsyncram_component|altsyncram_v291:auto_generated|q_a[31]"
+        Warning (14320): Synthesized away node "InstROMWithCache:instROMWithCache1|altsyncram:altsyncram_component|altsyncram_v291:auto_generated|q_a[32]"
+        Warning (14320): Synthesized away node "InstROMWithCache:instROMWithCache1|altsyncram:altsyncram_component|altsyncram_v291:auto_generated|q_a[33]"
+        Warning (14320): Synthesized away node "InstROMWithCache:instROMWithCache1|altsyncram:altsyncram_component|altsyncram_v291:auto_generated|q_a[34]"
+        Warning (14320): Synthesized away node "InstROMWithCache:instROMWithCache1|altsyncram:altsyncram_component|altsyncram_v291:auto_generated|q_a[35]"
+        Warning (14320): Synthesized away node "InstROMWithCache:instROMWithCache1|altsyncram:altsyncram_component|altsyncram_v291:auto_generated|q_a[36]"
+        Warning (14320): Synthesized away node "InstROMWithCache:instROMWithCache1|altsyncram:altsyncram_component|altsyncram_v291:auto_generated|q_a[37]"
+        Warning (14320): Synthesized away node "InstROMWithCache:instROMWithCache1|altsyncram:altsyncram_component|altsyncram_v291:auto_generated|q_a[38]"
+        Warning (14320): Synthesized away node "InstROMWithCache:instROMWithCache1|altsyncram:altsyncram_component|altsyncram_v291:auto_generated|q_a[39]"
+        Warning (14320): Synthesized away node "InstROMWithCache:instROMWithCache1|altsyncram:altsyncram_component|altsyncram_v291:auto_generated|q_a[40]"
+        Warning (14320): Synthesized away node "InstROMWithCache:instROMWithCache1|altsyncram:altsyncram_component|altsyncram_v291:auto_generated|q_a[41]"
+        Warning (14320): Synthesized away node "InstROMWithCache:instROMWithCache1|altsyncram:altsyncram_component|altsyncram_v291:auto_generated|q_a[42]"
+        Warning (14320): Synthesized away node "InstROMWithCache:instROMWithCache1|altsyncram:altsyncram_component|altsyncram_v291:auto_generated|q_a[43]"
+        Warning (14320): Synthesized away node "InstROMWithCache:instROMWithCache1|altsyncram:altsyncram_component|altsyncram_v291:auto_generated|q_a[44]"
+        Warning (14320): Synthesized away node "InstROMWithCache:instROMWithCache1|altsyncram:altsyncram_component|altsyncram_v291:auto_generated|q_a[45]"
+        Warning (14320): Synthesized away node "InstROMWithCache:instROMWithCache1|altsyncram:altsyncram_component|altsyncram_v291:auto_generated|q_a[46]"
+        Warning (14320): Synthesized away node "InstROMWithCache:instROMWithCache1|altsyncram:altsyncram_component|altsyncram_v291:auto_generated|q_a[47]"
+        Warning (14320): Synthesized away node "InstROMWithCache:instROMWithCache1|altsyncram:altsyncram_component|altsyncram_v291:auto_generated|q_a[48]"
+        Warning (14320): Synthesized away node "InstROMWithCache:instROMWithCache1|altsyncram:altsyncram_component|altsyncram_v291:auto_generated|q_a[49]"
+        Warning (14320): Synthesized away node "InstROMWithCache:instROMWithCache1|altsyncram:altsyncram_component|altsyncram_v291:auto_generated|q_a[50]"
+        Warning (14320): Synthesized away node "InstROMWithCache:instROMWithCache1|altsyncram:altsyncram_component|altsyncram_v291:auto_generated|q_a[51]"
+        Warning (14320): Synthesized away node "InstROMWithCache:instROMWithCache1|altsyncram:altsyncram_component|altsyncram_v291:auto_generated|q_a[52]"
+        Warning (14320): Synthesized away node "InstROMWithCache:instROMWithCache1|altsyncram:altsyncram_component|altsyncram_v291:auto_generated|q_a[53]"
+        Warning (14320): Synthesized away node "InstROMWithCache:instROMWithCache1|altsyncram:altsyncram_component|altsyncram_v291:auto_generated|q_a[54]"
+        Warning (14320): Synthesized away node "InstROMWithCache:instROMWithCache1|altsyncram:altsyncram_component|altsyncram_v291:auto_generated|q_a[55]"
+        Warning (14320): Synthesized away node "InstROMWithCache:instROMWithCache1|altsyncram:altsyncram_component|altsyncram_v291:auto_generated|q_a[56]"
+        Warning (14320): Synthesized away node "InstROMWithCache:instROMWithCache1|altsyncram:altsyncram_component|altsyncram_v291:auto_generated|q_a[57]"
+        Warning (14320): Synthesized away node "InstROMWithCache:instROMWithCache1|altsyncram:altsyncram_component|altsyncram_v291:auto_generated|q_a[58]"
+        Warning (14320): Synthesized away node "InstROMWithCache:instROMWithCache1|altsyncram:altsyncram_component|altsyncram_v291:auto_generated|q_a[59]"
+        Warning (14320): Synthesized away node "InstROMWithCache:instROMWithCache1|altsyncram:altsyncram_component|altsyncram_v291:auto_generated|q_a[60]"
+        Warning (14320): Synthesized away node "InstROMWithCache:instROMWithCache1|altsyncram:altsyncram_component|altsyncram_v291:auto_generated|q_a[61]"
+        Warning (14320): Synthesized away node "InstROMWithCache:instROMWithCache1|altsyncram:altsyncram_component|altsyncram_v291:auto_generated|q_a[62]"
+        Warning (14320): Synthesized away node "InstROMWithCache:instROMWithCache1|altsyncram:altsyncram_component|altsyncram_v291:auto_generated|q_a[63]"
+        Warning (14320): Synthesized away node "InstROMWithCache:instROMWithCache1|altsyncram:altsyncram_component|altsyncram_v291:auto_generated|q_a[64]"
+        Warning (14320): Synthesized away node "InstROMWithCache:instROMWithCache1|altsyncram:altsyncram_component|altsyncram_v291:auto_generated|q_a[65]"
+        Warning (14320): Synthesized away node "InstROMWithCache:instROMWithCache1|altsyncram:altsyncram_component|altsyncram_v291:auto_generated|q_a[66]"
+        Warning (14320): Synthesized away node "InstROMWithCache:instROMWithCache1|altsyncram:altsyncram_component|altsyncram_v291:auto_generated|q_a[67]"
+        Warning (14320): Synthesized away node "InstROMWithCache:instROMWithCache1|altsyncram:altsyncram_component|altsyncram_v291:auto_generated|q_a[68]"
+        Warning (14320): Synthesized away node "InstROMWithCache:instROMWithCache1|altsyncram:altsyncram_component|altsyncram_v291:auto_generated|q_a[69]"
+        Warning (14320): Synthesized away node "InstROMWithCache:instROMWithCache1|altsyncram:altsyncram_component|altsyncram_v291:auto_generated|q_a[70]"
+        Warning (14320): Synthesized away node "InstROMWithCache:instROMWithCache1|altsyncram:altsyncram_component|altsyncram_v291:auto_generated|q_a[71]"
+        Warning (14320): Synthesized away node "InstROMWithCache:instROMWithCache1|altsyncram:altsyncram_component|altsyncram_v291:auto_generated|q_a[72]"
+        Warning (14320): Synthesized away node "InstROMWithCache:instROMWithCache1|altsyncram:altsyncram_component|altsyncram_v291:auto_generated|q_a[73]"
+        Warning (14320): Synthesized away node "InstROMWithCache:instROMWithCache1|altsyncram:altsyncram_component|altsyncram_v291:auto_generated|q_a[74]"
+        Warning (14320): Synthesized away node "InstROMWithCache:instROMWithCache1|altsyncram:altsyncram_component|altsyncram_v291:auto_generated|q_a[75]"
+        Warning (14320): Synthesized away node "InstROMWithCache:instROMWithCache1|altsyncram:altsyncram_component|altsyncram_v291:auto_generated|q_a[76]"
+        Warning (14320): Synthesized away node "InstROMWithCache:instROMWithCache1|altsyncram:altsyncram_component|altsyncram_v291:auto_generated|q_a[77]"
+        Warning (14320): Synthesized away node "InstROMWithCache:instROMWithCache1|altsyncram:altsyncram_component|altsyncram_v291:auto_generated|q_a[78]"
+        Warning (14320): Synthesized away node "InstROMWithCache:instROMWithCache1|altsyncram:altsyncram_component|altsyncram_v291:auto_generated|q_a[79]"
+        Warning (14320): Synthesized away node "InstROMWithCache:instROMWithCache1|altsyncram:altsyncram_component|altsyncram_v291:auto_generated|q_a[80]"
+        Warning (14320): Synthesized away node "InstROMWithCache:instROMWithCache1|altsyncram:altsyncram_component|altsyncram_v291:auto_generated|q_a[81]"
+        Warning (14320): Synthesized away node "InstROMWithCache:instROMWithCache1|altsyncram:altsyncram_component|altsyncram_v291:auto_generated|q_a[82]"
+        Warning (14320): Synthesized away node "InstROMWithCache:instROMWithCache1|altsyncram:altsyncram_component|altsyncram_v291:auto_generated|q_a[83]"
+        Warning (14320): Synthesized away node "InstROMWithCache:instROMWithCache1|altsyncram:altsyncram_component|altsyncram_v291:auto_generated|q_a[84]"
+        Warning (14320): Synthesized away node "InstROMWithCache:instROMWithCache1|altsyncram:altsyncram_component|altsyncram_v291:auto_generated|q_a[85]"
+        Warning (14320): Synthesized away node "InstROMWithCache:instROMWithCache1|altsyncram:altsyncram_component|altsyncram_v291:auto_generated|q_a[86]"
+        Warning (14320): Synthesized away node "InstROMWithCache:instROMWithCache1|altsyncram:altsyncram_component|altsyncram_v291:auto_generated|q_a[87]"
+        Warning (14320): Synthesized away node "InstROMWithCache:instROMWithCache1|altsyncram:altsyncram_component|altsyncram_v291:auto_generated|q_a[88]"
+        Warning (14320): Synthesized away node "InstROMWithCache:instROMWithCache1|altsyncram:altsyncram_component|altsyncram_v291:auto_generated|q_a[89]"
+        Warning (14320): Synthesized away node "InstROMWithCache:instROMWithCache1|altsyncram:altsyncram_component|altsyncram_v291:auto_generated|q_a[90]"
+        Warning (14320): Synthesized away node "InstROMWithCache:instROMWithCache1|altsyncram:altsyncram_component|altsyncram_v291:auto_generated|q_a[91]"
+        Warning (14320): Synthesized away node "InstROMWithCache:instROMWithCache1|altsyncram:altsyncram_component|altsyncram_v291:auto_generated|q_a[92]"
+        Warning (14320): Synthesized away node "InstROMWithCache:instROMWithCache1|altsyncram:altsyncram_component|altsyncram_v291:auto_generated|q_a[93]"
+        Warning (14320): Synthesized away node "InstROMWithCache:instROMWithCache1|altsyncram:altsyncram_component|altsyncram_v291:auto_generated|q_a[94]"
+        Warning (14320): Synthesized away node "InstROMWithCache:instROMWithCache1|altsyncram:altsyncram_component|altsyncram_v291:auto_generated|q_a[95]"
+        Warning (14320): Synthesized away node "InstROMWithCache:instROMWithCache1|altsyncram:altsyncram_component|altsyncram_v291:auto_generated|q_a[96]"
+        Warning (14320): Synthesized away node "InstROMWithCache:instROMWithCache1|altsyncram:altsyncram_component|altsyncram_v291:auto_generated|q_a[97]"
+        Warning (14320): Synthesized away node "InstROMWithCache:instROMWithCache1|altsyncram:altsyncram_component|altsyncram_v291:auto_generated|q_a[98]"
+        Warning (14320): Synthesized away node "InstROMWithCache:instROMWithCache1|altsyncram:altsyncram_component|altsyncram_v291:auto_generated|q_a[99]"
+        Warning (14320): Synthesized away node "InstROMWithCache:instROMWithCache1|altsyncram:altsyncram_component|altsyncram_v291:auto_generated|q_a[100]"
+        Warning (14320): Synthesized away node "InstROMWithCache:instROMWithCache1|altsyncram:altsyncram_component|altsyncram_v291:auto_generated|q_a[101]"
+        Warning (14320): Synthesized away node "InstROMWithCache:instROMWithCache1|altsyncram:altsyncram_component|altsyncram_v291:auto_generated|q_a[102]"
+        Warning (14320): Synthesized away node "InstROMWithCache:instROMWithCache1|altsyncram:altsyncram_component|altsyncram_v291:auto_generated|q_a[103]"
+        Warning (14320): Synthesized away node "InstROMWithCache:instROMWithCache1|altsyncram:altsyncram_component|altsyncram_v291:auto_generated|q_a[104]"
+        Warning (14320): Synthesized away node "InstROMWithCache:instROMWithCache1|altsyncram:altsyncram_component|altsyncram_v291:auto_generated|q_a[105]"
+        Warning (14320): Synthesized away node "InstROMWithCache:instROMWithCache1|altsyncram:altsyncram_component|altsyncram_v291:auto_generated|q_a[106]"
+        Warning (14320): Synthesized away node "InstROMWithCache:instROMWithCache1|altsyncram:altsyncram_component|altsyncram_v291:auto_generated|q_a[107]"
+        Warning (14320): Synthesized away node "InstROMWithCache:instROMWithCache1|altsyncram:altsyncram_component|altsyncram_v291:auto_generated|q_a[108]"
+        Warning (14320): Synthesized away node "InstROMWithCache:instROMWithCache1|altsyncram:altsyncram_component|altsyncram_v291:auto_generated|q_a[109]"
+        Warning (14320): Synthesized away node "InstROMWithCache:instROMWithCache1|altsyncram:altsyncram_component|altsyncram_v291:auto_generated|q_a[110]"
+        Warning (14320): Synthesized away node "InstROMWithCache:instROMWithCache1|altsyncram:altsyncram_component|altsyncram_v291:auto_generated|q_a[111]"
+        Warning (14320): Synthesized away node "InstROMWithCache:instROMWithCache1|altsyncram:altsyncram_component|altsyncram_v291:auto_generated|q_a[112]"
+        Warning (14320): Synthesized away node "InstROMWithCache:instROMWithCache1|altsyncram:altsyncram_component|altsyncram_v291:auto_generated|q_a[113]"
+        Warning (14320): Synthesized away node "InstROMWithCache:instROMWithCache1|altsyncram:altsyncram_component|altsyncram_v291:auto_generated|q_a[114]"
+        Warning (14320): Synthesized away node "InstROMWithCache:instROMWithCache1|altsyncram:altsyncram_component|altsyncram_v291:auto_generated|q_a[115]"
+        Warning (14320): Synthesized away node "InstROMWithCache:instROMWithCache1|altsyncram:altsyncram_component|altsyncram_v291:auto_generated|q_a[116]"
+        Warning (14320): Synthesized away node "InstROMWithCache:instROMWithCache1|altsyncram:altsyncram_component|altsyncram_v291:auto_generated|q_a[117]"
+        Warning (14320): Synthesized away node "InstROMWithCache:instROMWithCache1|altsyncram:altsyncram_component|altsyncram_v291:auto_generated|q_a[118]"
+        Warning (14320): Synthesized away node "InstROMWithCache:instROMWithCache1|altsyncram:altsyncram_component|altsyncram_v291:auto_generated|q_a[119]"
+        Warning (14320): Synthesized away node "InstROMWithCache:instROMWithCache1|altsyncram:altsyncram_component|altsyncram_v291:auto_generated|q_a[120]"
+        Warning (14320): Synthesized away node "InstROMWithCache:instROMWithCache1|altsyncram:altsyncram_component|altsyncram_v291:auto_generated|q_a[121]"
+        Warning (14320): Synthesized away node "InstROMWithCache:instROMWithCache1|altsyncram:altsyncram_component|altsyncram_v291:auto_generated|q_a[122]"
+        Warning (14320): Synthesized away node "InstROMWithCache:instROMWithCache1|altsyncram:altsyncram_component|altsyncram_v291:auto_generated|q_a[123]"
+        Warning (14320): Synthesized away node "InstROMWithCache:instROMWithCache1|altsyncram:altsyncram_component|altsyncram_v291:auto_generated|q_a[124]"
+        Warning (14320): Synthesized away node "InstROMWithCache:instROMWithCache1|altsyncram:altsyncram_component|altsyncram_v291:auto_generated|q_a[125]"
+        Warning (14320): Synthesized away node "InstROMWithCache:instROMWithCache1|altsyncram:altsyncram_component|altsyncram_v291:auto_generated|q_a[126]"
+        Warning (14320): Synthesized away node "InstROMWithCache:instROMWithCache1|altsyncram:altsyncram_component|altsyncram_v291:auto_generated|q_a[127]"
+Info: 91 registers lost all their fanouts during netlist optimizations. The first 91 are displayed below.
+    Info: Register "Coprocessor:Coprocessor1|DataCache:INSTCACHE|CacheEntry:inst8|vld" lost all its fanouts during netlist optimizations.
+    Info: Register "Coprocessor:Coprocessor1|DataCache:INSTCACHE|CacheEntry:inst8|dty" lost all its fanouts during netlist optimizations.
+    Info: Register "Coprocessor:Coprocessor1|DataCache:INSTCACHE|CacheEntry:inst8|CacheIndex[2]" lost all its fanouts during netlist optimizations.
+    Info: Register "Coprocessor:Coprocessor1|DataCache:INSTCACHE|CacheEntry:inst8|CacheIndex[1]" lost all its fanouts during netlist optimizations.
+    Info: Register "Coprocessor:Coprocessor1|DataCache:INSTCACHE|CacheEntry:inst8|HIT" lost all its fanouts during netlist optimizations.
+    Info: Register "Coprocessor:Coprocessor1|DataCache:INSTCACHE|CacheEntry:inst8|CacheIndex[0]" lost all its fanouts during netlist optimizations.
+    Info: Register "Coprocessor:Coprocessor1|DataCache:INSTCACHE|CacheEntry:inst11|vld" lost all its fanouts during netlist optimizations.
+    Info: Register "Coprocessor:Coprocessor1|DataCache:INSTCACHE|CacheEntry:inst11|dty" lost all its fanouts during netlist optimizations.
+    Info: Register "Coprocessor:Coprocessor1|DataCache:INSTCACHE|CacheEntry:inst11|CacheIndex[2]" lost all its fanouts during netlist optimizations.
+    Info: Register "Coprocessor:Coprocessor1|DataCache:INSTCACHE|CacheEntry:inst11|CacheIndex[1]" lost all its fanouts during netlist optimizations.
+    Info: Register "Coprocessor:Coprocessor1|DataCache:INSTCACHE|CacheEntry:inst11|HIT" lost all its fanouts during netlist optimizations.
+    Info: Register "Coprocessor:Coprocessor1|DataCache:INSTCACHE|CacheEntry:inst11|CacheIndex[0]" lost all its fanouts during netlist optimizations.
+    Info: Register "Coprocessor:Coprocessor1|DataCache:INSTCACHE|CacheEntry:inst7|vld" lost all its fanouts during netlist optimizations.
+    Info: Register "Coprocessor:Coprocessor1|DataCache:INSTCACHE|CacheEntry:inst7|dty" lost all its fanouts during netlist optimizations.
+    Info: Register "Coprocessor:Coprocessor1|DataCache:INSTCACHE|CacheEntry:inst7|CacheIndex[2]" lost all its fanouts during netlist optimizations.
+    Info: Register "Coprocessor:Coprocessor1|DataCache:INSTCACHE|CacheEntry:inst7|CacheIndex[1]" lost all its fanouts during netlist optimizations.
+    Info: Register "Coprocessor:Coprocessor1|DataCache:INSTCACHE|CacheEntry:inst7|HIT" lost all its fanouts during netlist optimizations.
+    Info: Register "Coprocessor:Coprocessor1|DataCache:INSTCACHE|CacheEntry:inst7|CacheIndex[0]" lost all its fanouts during netlist optimizations.
+    Info: Register "Coprocessor:Coprocessor1|DataCache:INSTCACHE|CacheEntry:inst10|vld" lost all its fanouts during netlist optimizations.
+    Info: Register "Coprocessor:Coprocessor1|DataCache:INSTCACHE|CacheEntry:inst10|dty" lost all its fanouts during netlist optimizations.
+    Info: Register "Coprocessor:Coprocessor1|DataCache:INSTCACHE|CacheEntry:inst10|CacheIndex[2]" lost all its fanouts during netlist optimizations.
+    Info: Register "Coprocessor:Coprocessor1|DataCache:INSTCACHE|CacheEntry:inst10|CacheIndex[1]" lost all its fanouts during netlist optimizations.
+    Info: Register "Coprocessor:Coprocessor1|DataCache:INSTCACHE|CacheEntry:inst10|HIT" lost all its fanouts during netlist optimizations.
+    Info: Register "Coprocessor:Coprocessor1|DataCache:INSTCACHE|CacheEntry:inst10|CacheIndex[0]" lost all its fanouts during netlist optimizations.
+    Info: Register "Coprocessor:Coprocessor1|DataCache:INSTCACHE|CacheEntry:inst6|vld" lost all its fanouts during netlist optimizations.
+    Info: Register "Coprocessor:Coprocessor1|DataCache:INSTCACHE|CacheEntry:inst6|dty" lost all its fanouts during netlist optimizations.
+    Info: Register "Coprocessor:Coprocessor1|DataCache:INSTCACHE|CacheEntry:inst6|CacheIndex[2]" lost all its fanouts during netlist optimizations.
+    Info: Register "Coprocessor:Coprocessor1|DataCache:INSTCACHE|CacheEntry:inst6|CacheIndex[1]" lost all its fanouts during netlist optimizations.
+    Info: Register "Coprocessor:Coprocessor1|DataCache:INSTCACHE|CacheEntry:inst6|HIT" lost all its fanouts during netlist optimizations.
+    Info: Register "Coprocessor:Coprocessor1|DataCache:INSTCACHE|CacheEntry:inst6|CacheIndex[0]" lost all its fanouts during netlist optimizations.
+    Info: Register "Coprocessor:Coprocessor1|DataCache:INSTCACHE|CacheEntry:inst9|vld" lost all its fanouts during netlist optimizations.
+    Info: Register "Coprocessor:Coprocessor1|DataCache:INSTCACHE|CacheEntry:inst9|dty" lost all its fanouts during netlist optimizations.
+    Info: Register "Coprocessor:Coprocessor1|DataCache:INSTCACHE|CacheEntry:inst9|CacheIndex[2]" lost all its fanouts during netlist optimizations.
+    Info: Register "Coprocessor:Coprocessor1|DataCache:INSTCACHE|CacheEntry:inst9|CacheIndex[1]" lost all its fanouts during netlist optimizations.
+    Info: Register "Coprocessor:Coprocessor1|DataCache:INSTCACHE|CacheEntry:inst9|HIT" lost all its fanouts during netlist optimizations.
+    Info: Register "Coprocessor:Coprocessor1|DataCache:INSTCACHE|CacheEntry:inst9|CacheIndex[0]" lost all its fanouts during netlist optimizations.
+    Info: Register "Coprocessor:Coprocessor1|DataCache:INSTCACHE|CacheEntry:inst5|vld" lost all its fanouts during netlist optimizations.
+    Info: Register "Coprocessor:Coprocessor1|DataCache:INSTCACHE|CacheEntry:inst5|dty" lost all its fanouts during netlist optimizations.
+    Info: Register "Coprocessor:Coprocessor1|DataCache:INSTCACHE|CacheEntry:inst5|CacheIndex[2]" lost all its fanouts during netlist optimizations.
+    Info: Register "Coprocessor:Coprocessor1|DataCache:INSTCACHE|CacheEntry:inst5|CacheIndex[1]" lost all its fanouts during netlist optimizations.
+    Info: Register "Coprocessor:Coprocessor1|DataCache:INSTCACHE|CacheEntry:inst5|HIT" lost all its fanouts during netlist optimizations.
+    Info: Register "Coprocessor:Coprocessor1|DataCache:INSTCACHE|CacheEntry:inst5|CacheIndex[0]" lost all its fanouts during netlist optimizations.
+    Info: Register "Coprocessor:Coprocessor1|DataCache:INSTCACHE|CacheEntry:inst|vld" lost all its fanouts during netlist optimizations.
+    Info: Register "Coprocessor:Coprocessor1|DataCache:INSTCACHE|CacheEntry:inst|dty" lost all its fanouts during netlist optimizations.
+    Info: Register "Coprocessor:Coprocessor1|DataCache:INSTCACHE|CacheEntry:inst|CacheIndex[2]" lost all its fanouts during netlist optimizations.
+    Info: Register "Coprocessor:Coprocessor1|DataCache:INSTCACHE|CacheEntry:inst|CacheIndex[1]" lost all its fanouts during netlist optimizations.
+    Info: Register "Coprocessor:Coprocessor1|DataCache:INSTCACHE|CacheEntry:inst|HIT" lost all its fanouts during netlist optimizations.
+    Info: Register "Coprocessor:Coprocessor1|DataCache:INSTCACHE|CacheEntry:inst|CacheIndex[0]" lost all its fanouts during netlist optimizations.
+    Info: Register "Coprocessor:Coprocessor1|DataCache:INSTCACHE|DataCacheControlUnit:inst15|WRITEENTRY" lost all its fanouts during netlist optimizations.
+    Info: Register "Coprocessor:Coprocessor1|DataCache:INSTCACHE|DataCacheControlUnit:inst15|READLN" lost all its fanouts during netlist optimizations.
+    Info: Register "Coprocessor:Coprocessor1|DataCache:INSTCACHE|DataCacheControlUnit:inst15|nextToRep[31]" lost all its fanouts during netlist optimizations.
+    Info: Register "Coprocessor:Coprocessor1|DataCache:INSTCACHE|DataCacheControlUnit:inst15|nextToRep[30]" lost all its fanouts during netlist optimizations.
+    Info: Register "Coprocessor:Coprocessor1|DataCache:INSTCACHE|DataCacheControlUnit:inst15|nextToRep[29]" lost all its fanouts during netlist optimizations.
+    Info: Register "Coprocessor:Coprocessor1|DataCache:INSTCACHE|DataCacheControlUnit:inst15|nextToRep[28]" lost all its fanouts during netlist optimizations.
+    Info: Register "Coprocessor:Coprocessor1|DataCache:INSTCACHE|DataCacheControlUnit:inst15|nextToRep[27]" lost all its fanouts during netlist optimizations.
+    Info: Register "Coprocessor:Coprocessor1|DataCache:INSTCACHE|DataCacheControlUnit:inst15|nextToRep[26]" lost all its fanouts during netlist optimizations.
+    Info: Register "Coprocessor:Coprocessor1|DataCache:INSTCACHE|DataCacheControlUnit:inst15|nextToRep[25]" lost all its fanouts during netlist optimizations.
+    Info: Register "Coprocessor:Coprocessor1|DataCache:INSTCACHE|DataCacheControlUnit:inst15|nextToRep[24]" lost all its fanouts during netlist optimizations.
+    Info: Register "Coprocessor:Coprocessor1|DataCache:INSTCACHE|DataCacheControlUnit:inst15|nextToRep[23]" lost all its fanouts during netlist optimizations.
+    Info: Register "Coprocessor:Coprocessor1|DataCache:INSTCACHE|DataCacheControlUnit:inst15|nextToRep[22]" lost all its fanouts during netlist optimizations.
+    Info: Register "Coprocessor:Coprocessor1|DataCache:INSTCACHE|DataCacheControlUnit:inst15|nextToRep[21]" lost all its fanouts during netlist optimizations.
+    Info: Register "Coprocessor:Coprocessor1|DataCache:INSTCACHE|DataCacheControlUnit:inst15|nextToRep[20]" lost all its fanouts during netlist optimizations.
+    Info: Register "Coprocessor:Coprocessor1|DataCache:INSTCACHE|DataCacheControlUnit:inst15|nextToRep[19]" lost all its fanouts during netlist optimizations.
+    Info: Register "Coprocessor:Coprocessor1|DataCache:INSTCACHE|DataCacheControlUnit:inst15|nextToRep[18]" lost all its fanouts during netlist optimizations.
+    Info: Register "Coprocessor:Coprocessor1|DataCache:INSTCACHE|DataCacheControlUnit:inst15|nextToRep[17]" lost all its fanouts during netlist optimizations.
+    Info: Register "Coprocessor:Coprocessor1|DataCache:INSTCACHE|DataCacheControlUnit:inst15|nextToRep[16]" lost all its fanouts during netlist optimizations.
+    Info: Register "Coprocessor:Coprocessor1|DataCache:INSTCACHE|DataCacheControlUnit:inst15|nextToRep[15]" lost all its fanouts during netlist optimizations.
+    Info: Register "Coprocessor:Coprocessor1|DataCache:INSTCACHE|DataCacheControlUnit:inst15|nextToRep[14]" lost all its fanouts during netlist optimizations.
+    Info: Register "Coprocessor:Coprocessor1|DataCache:INSTCACHE|DataCacheControlUnit:inst15|nextToRep[13]" lost all its fanouts during netlist optimizations.
+    Info: Register "Coprocessor:Coprocessor1|DataCache:INSTCACHE|DataCacheControlUnit:inst15|nextToRep[12]" lost all its fanouts during netlist optimizations.
+    Info: Register "Coprocessor:Coprocessor1|DataCache:INSTCACHE|DataCacheControlUnit:inst15|nextToRep[11]" lost all its fanouts during netlist optimizations.
+    Info: Register "Coprocessor:Coprocessor1|DataCache:INSTCACHE|DataCacheControlUnit:inst15|nextToRep[10]" lost all its fanouts during netlist optimizations.
+    Info: Register "Coprocessor:Coprocessor1|DataCache:INSTCACHE|DataCacheControlUnit:inst15|nextToRep[9]" lost all its fanouts during netlist optimizations.
+    Info: Register "Coprocessor:Coprocessor1|DataCache:INSTCACHE|DataCacheControlUnit:inst15|nextToRep[8]" lost all its fanouts during netlist optimizations.
+    Info: Register "Coprocessor:Coprocessor1|DataCache:INSTCACHE|DataCacheControlUnit:inst15|nextToRep[7]" lost all its fanouts during netlist optimizations.
+    Info: Register "Coprocessor:Coprocessor1|DataCache:INSTCACHE|DataCacheControlUnit:inst15|nextToRep[6]" lost all its fanouts during netlist optimizations.
+    Info: Register "Coprocessor:Coprocessor1|DataCache:INSTCACHE|DataCacheControlUnit:inst15|nextToRep[5]" lost all its fanouts during netlist optimizations.
+    Info: Register "Coprocessor:Coprocessor1|DataCache:INSTCACHE|DataCacheControlUnit:inst15|nextToRep[4]" lost all its fanouts during netlist optimizations.
+    Info: Register "Coprocessor:Coprocessor1|DataCache:INSTCACHE|DataCacheControlUnit:inst15|nextToRep[3]" lost all its fanouts during netlist optimizations.
+    Info: Register "Coprocessor:Coprocessor1|DataCache:INSTCACHE|DataCacheControlUnit:inst15|nextToRep[2]" lost all its fanouts during netlist optimizations.
+    Info: Register "Coprocessor:Coprocessor1|DataCache:INSTCACHE|DataCacheControlUnit:inst15|nextToRep[1]" lost all its fanouts during netlist optimizations.
+    Info: Register "Coprocessor:Coprocessor1|DataCache:INSTCACHE|DataCacheControlUnit:inst15|nextToRep[0]" lost all its fanouts during netlist optimizations.
+    Info: Register "Coprocessor:Coprocessor1|DataCache:INSTCACHE|DataCacheControlUnit:inst15|SELECTADDR" lost all its fanouts during netlist optimizations.
+    Info: Register "Coprocessor:Coprocessor1|DataCache:INSTCACHE|DataCacheControlUnit:inst15|ENTRYSEL[2]" lost all its fanouts during netlist optimizations.
+    Info: Register "Coprocessor:Coprocessor1|DataCache:INSTCACHE|DataCacheControlUnit:inst15|ENTRYSEL[1]" lost all its fanouts during netlist optimizations.
+    Info: Register "Coprocessor:Coprocessor1|DataCache:INSTCACHE|DataCacheControlUnit:inst15|ENTRYSEL[0]" lost all its fanouts during netlist optimizations.
+    Info: Register "Coprocessor:Coprocessor1|DataCache:INSTCACHE|DataCacheControlUnit:inst15|ADDRIN[6]" lost all its fanouts during netlist optimizations.
+    Info: Register "Coprocessor:Coprocessor1|DataCache:INSTCACHE|DataCacheControlUnit:inst15|ADDRIN[5]" lost all its fanouts during netlist optimizations.
+    Info: Register "Coprocessor:Coprocessor1|DataCache:INSTCACHE|DataCacheControlUnit:inst15|ADDRIN[4]" lost all its fanouts during netlist optimizations.
+    Info: Register "Coprocessor:Coprocessor1|DataCache:INSTCACHE|DataCacheControlUnit:inst15|MEMADDR[4]" lost all its fanouts during netlist optimizations.
+    Info: Register "Coprocessor:Coprocessor1|DataCache:INSTCACHE|DataCacheControlUnit:inst15|current" lost all its fanouts during netlist optimizations.
 Info: Implemented 2982 device resources after synthesis - the final resource count might be different
     Info: Implemented 3 input pins
     Info: Implemented 201 output pins
     Info: Implemented 2714 logic cells
     Info: Implemented 64 RAM segments
-Info: Quartus II Analysis & Synthesis was successful. 0 errors, 3 warnings
-    Info: Peak virtual memory: 214 megabytes
-    Info: Processing ended: Wed Dec 02 22:17:56 2009
-    Info: Elapsed time: 00:01:12
-    Info: Total CPU time (on all processors): 00:01:09
+Info: Quartus II Analysis & Synthesis was successful. 0 errors, 151 warnings
+    Info: Peak virtual memory: 246 megabytes
+    Info: Processing ended: Thu Jan 14 20:06:45 2010
+    Info: Elapsed time: 00:01:04
+    Info: Total CPU time (on all processors): 00:01:02
 
 

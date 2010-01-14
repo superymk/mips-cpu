@@ -57,6 +57,15 @@ set_global_assignment -name FITTER_EFFORT "STANDARD FIT"
 set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE ../MotherBoard/Test/PipelineUniProcessor.vwf
 set_global_assignment -name LL_ROOT_REGION ON -section_id "Root Region"
 set_global_assignment -name LL_MEMBER_STATE LOCKED -section_id "Root Region"
+set_global_assignment -name SOURCE_FILE ../MotherBoard/InstROMWithCache.cmp
+set_global_assignment -name AHDL_FILE ../MotherBoard/InstROMWithCache.tdf
+set_global_assignment -name SOURCE_FILE ../Coprocessor/DataCacheEntryDecoder.cmp
+set_global_assignment -name AHDL_FILE ../Coprocessor/DataCacheEntryDecoder.tdf
+set_global_assignment -name SOURCE_FILE ../Coprocessor/DataCacheEntryHitOr.cmp
+set_global_assignment -name AHDL_FILE ../Coprocessor/DataCacheEntryHitOr.tdf
+set_global_assignment -name SOURCE_FILE ../Coprocessor/DataCacheEntryOutputOr.cmp
+set_global_assignment -name AHDL_FILE ../Coprocessor/DataCacheEntryOutputOr.tdf
+set_global_assignment -name BSF_FILE ../Coprocessor/Coprocessor.bsf
 set_global_assignment -name QIP_FILE ../MotherBoard/lpm_ram_dp1.qip
 set_global_assignment -name VHDL_FILE ../MotherBoard/lpm_ram_dp1.vhd
 set_global_assignment -name VHDL_FILE ../MotherBoard/DataRAM.vhd
@@ -117,3 +126,5 @@ set_global_assignment -name VHDL_FILE ../Coprocessor/CacheEntry.vhd
 set_global_assignment -name BDF_FILE ../Coprocessor/DataCache.bdf
 set_global_assignment -name VHDL_FILE ../Coprocessor/DataCacheControlUnit.vhd
 set_global_assignment -name QIP_FILE ../Coprocessor/DataCacheEntryHitOr.qip
+set_global_assignment -name BDF_FILE ../Coprocessor/Coprocessor.bdf
+set_global_assignment -name QIP_FILE ../MotherBoard/InstROMWithCache.qip
