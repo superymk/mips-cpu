@@ -25,7 +25,7 @@ ptn_Child1=StateMap
 [ProjectWorkspace.Frames.ChildFrames.Document-1]
 ptn_Child1=ViewFrame-0
 [ProjectWorkspace.Frames.ChildFrames.Document-1.ViewFrame-0]
-DocPathName=PipelineUniProcessor.bdf
+DocPathName=../Coprocessor/Coprocessor.bdf
 DocumentCLSID={7b19e8f2-2bbe-11d1-a082-0020affa5bde}
 IsChildFrameDetached=False
 IsActiveChildFrame=False
@@ -33,7 +33,7 @@ ptn_Child1=StateMap
 [ProjectWorkspace.Frames.ChildFrames.Document-2]
 ptn_Child1=ViewFrame-0
 [ProjectWorkspace.Frames.ChildFrames.Document-2.ViewFrame-0]
-DocPathName=../Coprocessor/Coprocessor.bdf
+DocPathName=../Coprocessor/DataCache.bdf
 DocumentCLSID={7b19e8f2-2bbe-11d1-a082-0020affa5bde}
 IsChildFrameDetached=False
 IsActiveChildFrame=False
@@ -41,7 +41,7 @@ ptn_Child1=StateMap
 [ProjectWorkspace.Frames.ChildFrames.Document-3]
 ptn_Child1=ViewFrame-0
 [ProjectWorkspace.Frames.ChildFrames.Document-3.ViewFrame-0]
-DocPathName=../Coprocessor/DataCache.bdf
+DocPathName=PipelineUniProcessor.bdf
 DocumentCLSID={7b19e8f2-2bbe-11d1-a082-0020affa5bde}
 IsChildFrameDetached=False
 IsActiveChildFrame=False
@@ -69,10 +69,12 @@ AFC_IN_REPORT=False
 [ProjectWorkspace.Frames.ChildFrames.Document-8]
 ptn_Child1=ViewFrame-0
 [ProjectWorkspace.Frames.ChildFrames.Document-8.ViewFrame-0]
-DocPathName=../MotherBoard/InstROMWithCache.tdf
-DocumentCLSID={5d384c4f-893c-11d1-a087-0020affa43f2}
+DocPathName=../Coprocessor/TestCache.vwf
+DocumentCLSID={4a9ed22a-e60b-11d1-a0bd-0020affa43f2}
 IsChildFrameDetached=False
 IsActiveChildFrame=False
 ptn_Child1=StateMap
 [ProjectWorkspace.Frames.ChildFrames.Document-8.ViewFrame-0.StateMap]
+AFC_SIM_AP_NAME=PipelineUniProcessor
+AFC_PROJ_DB_PATH=F:/WorkSpace/Workspace/MasterLife/TERM 1/Computer Architecture/mips-cpu/PipelineUniProcessor/db/PipelineUniProcessor.quartus_db
 AFC_IN_REPORT=False
