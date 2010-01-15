@@ -5,9 +5,9 @@ Timing Analyzer Summary
 Type           : Worst-case tsu
 Slack          : N/A
 Required Time  : None
-Actual Time    : 5.368 ns
-From           : INT
-To             : PipelineUniProcessor:IntelInside|PC-BUFFER:PCBUFFER|dffe32bit:inst|dffe8bit:diff32Part3|inst5
+Actual Time    : 5.403 ns
+From           : RESET
+To             : Coprocessor:Coprocessor|DataCache:INSTCACHE|CacheEntry:inst5|data[97]
 From Clock     : --
 To Clock       : CLK
 Failed Paths   : 0
@@ -15,8 +15,8 @@ Failed Paths   : 0
 Type           : Worst-case tco
 Slack          : N/A
 Required Time  : None
-Actual Time    : 14.759 ns
-From           : PipelineUniProcessor:IntelInside|ID-EXE-SIGNAL-BUFFER:inst13|inst10
+Actual Time    : 16.530 ns
+From           : PipelineUniProcessor:IntelInside|ID-EXE-SIGNAL-BUFFER:inst13|dffe8bit:inst|inst
 To             : TESTEQU
 From Clock     : CLK
 To Clock       : --
@@ -25,9 +25,9 @@ Failed Paths   : 0
 Type           : Worst-case th
 Slack          : N/A
 Required Time  : None
-Actual Time    : -3.245 ns
-From           : INT
-To             : PipelineUniProcessor:IntelInside|IF-ID-INSTPC-BUFFER:inst1|dffe32bit:PCREGBUFFER|dffe8bit:diff32Part4|inst
+Actual Time    : -2.513 ns
+From           : RESET
+To             : Coprocessor:Coprocessor|DataCache:INSTCACHE|CacheEntry:inst|vld
 From Clock     : --
 To Clock       : CLK
 Failed Paths   : 0
@@ -35,9 +35,9 @@ Failed Paths   : 0
 Type           : Clock Setup: 'CLK'
 Slack          : N/A
 Required Time  : None
-Actual Time    : 64.67 MHz ( period = 15.462 ns )
-From           : PipelineUniProcessor:IntelInside|RegFile32x32:Regs|dffe32bit:inst4|dffe8bit:diff32Part4|inst3
-To             : PipelineUniProcessor:IntelInside|IF-ID-INSTPC-BUFFER:inst1|dffe32bit:PCREGBUFFER|dffe8bit:diff32Part2|inst
+Actual Time    : 66.31 MHz ( period = 15.080 ns )
+From           : PipelineUniProcessor:IntelInside|RegFile32x32:Regs|dffe32bit:inst1|dffe8bit:diff32Part1|inst7
+To             : PipelineUniProcessor:IntelInside|IF-ID-INSTPC-BUFFER:inst1|dffe32bit:PCREGBUFFER|dffe8bit:diff32Part1|inst1
 From Clock     : CLK
 To Clock       : CLK
 Failed Paths   : 0

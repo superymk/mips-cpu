@@ -1,0 +1,106 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 1991-2009 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+*/
+(header "symbol" (version "1.1"))
+(symbol
+	(rect 16 16 312 176)
+	(text "Coprocessor" (rect 5 0 79 14)(font "Arial" (font_size 8)))
+	(text "inst" (rect 8 144 25 156)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "RESET" (rect 0 0 37 14)(font "Arial" (font_size 8)))
+		(text "RESET" (rect 21 27 58 41)(font "Arial" (font_size 8)))
+		(line (pt 0 32)(pt 16 32)(line_width 1))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "CLK" (rect 0 0 23 14)(font "Arial" (font_size 8)))
+		(text "CLK" (rect 21 43 44 57)(font "Arial" (font_size 8)))
+		(line (pt 0 48)(pt 16 48)(line_width 1))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "IADDR[31..0]" (rect 0 0 71 14)(font "Arial" (font_size 8)))
+		(text "IADDR[31..0]" (rect 21 59 92 73)(font "Arial" (font_size 8)))
+		(line (pt 0 64)(pt 16 64)(line_width 3))
+	)
+	(port
+		(pt 0 80)
+		(input)
+		(text "IMEMOUT[127..0]" (rect 0 0 95 14)(font "Arial" (font_size 8)))
+		(text "IMEMOUT[127..0]" (rect 21 75 116 89)(font "Arial" (font_size 8)))
+		(line (pt 0 80)(pt 16 80)(line_width 3))
+	)
+	(port
+		(pt 296 32)
+		(output)
+		(text "INST[31..0]" (rect 0 0 61 14)(font "Arial" (font_size 8)))
+		(text "INST[31..0]" (rect 214 27 275 41)(font "Arial" (font_size 8)))
+		(line (pt 296 32)(pt 280 32)(line_width 3))
+	)
+	(port
+		(pt 296 48)
+		(output)
+		(text "RIADDR[31..0]" (rect 0 0 80 14)(font "Arial" (font_size 8)))
+		(text "RIADDR[31..0]" (rect 195 43 275 57)(font "Arial" (font_size 8)))
+		(line (pt 296 48)(pt 280 48)(line_width 3))
+	)
+	(port
+		(pt 296 64)
+		(output)
+		(text "TESTENTRYSEL[2..0]" (rect 0 0 120 14)(font "Arial" (font_size 8)))
+		(text "TESTENTRYSEL[2..0]" (rect 155 59 275 73)(font "Arial" (font_size 8)))
+		(line (pt 296 64)(pt 280 64)(line_width 3))
+	)
+	(port
+		(pt 296 80)
+		(output)
+		(text "TESTREPLACEENTRY" (rect 0 0 123 14)(font "Arial" (font_size 8)))
+		(text "TESTREPLACEENTRY" (rect 152 75 275 89)(font "Arial" (font_size 8)))
+		(line (pt 296 80)(pt 280 80)(line_width 1))
+	)
+	(port
+		(pt 296 96)
+		(output)
+		(text "TESTREPLACE1" (rect 0 0 90 14)(font "Arial" (font_size 8)))
+		(text "TESTREPLACE1" (rect 185 91 275 105)(font "Arial" (font_size 8)))
+		(line (pt 296 96)(pt 280 96)(line_width 1))
+	)
+	(port
+		(pt 296 112)
+		(output)
+		(text "TESTCACHEDATA[127..0]" (rect 0 0 147 14)(font "Arial" (font_size 8)))
+		(text "TESTCACHEDATA[127..0]" (rect 128 107 275 121)(font "Arial" (font_size 8)))
+		(line (pt 296 112)(pt 280 112)(line_width 3))
+	)
+	(port
+		(pt 296 128)
+		(output)
+		(text "TESTSELADDR[31..0]" (rect 0 0 121 14)(font "Arial" (font_size 8)))
+		(text "TESTSELADDR[31..0]" (rect 154 123 275 137)(font "Arial" (font_size 8)))
+		(line (pt 296 128)(pt 280 128)(line_width 3))
+	)
+	(drawing
+		(rectangle (rect 16 16 280 144)(line_width 1))
+	)
+)

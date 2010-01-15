@@ -70,6 +70,7 @@ begin
 			if HIT = '1' then
 				current <= FREE;
 				CACHEFREE <= '1';
+				REPLACEENTRY <= '0';
 			else -- read miss
 				CACHEFREE <= '0';
 				if ( (VALID(nextToRep)='0') or (DIRTY(nextToRep)='0') ) then
@@ -79,8 +80,12 @@ begin
 		            current <= BUSY;
 		            DATAIN <= DataFromMem;
 		            
+		            ENTRYSEL <= CONV_STD_LOGIC_VECTOR(nextToRep, 3);-- select to replace
+		            REPLACEENTRY <= '1';
+		            READLN <= '0';
 		            
 		            nextToRep <= nextToRep + 1;
+		            
 		            --count <= delay;
 	            else
 		            READLN <= '1';
