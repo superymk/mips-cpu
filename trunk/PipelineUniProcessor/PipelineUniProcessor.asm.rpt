@@ -1,5 +1,5 @@
 Assembler report for PipelineUniProcessor
-Fri Jan 15 14:30:33 2010
+Sat Jan 16 17:27:31 2010
 Quartus II Version 9.0 Build 132 02/25/2009 SJ Full Version
 
 
@@ -38,11 +38,11 @@ applicable agreement for further details.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Fri Jan 15 14:30:33 2010 ;
+; Assembler Status      ; Successful - Sat Jan 16 17:27:31 2010 ;
 ; Revision Name         ; PipelineUniProcessor                  ;
 ; Top-level Entity Name ; MotherBoard                           ;
 ; Family                ; Stratix II                            ;
-; Device                ; EP2S30F672C3                          ;
+; Device                ; EP2S60F1020C3                         ;
 +-----------------------+---------------------------------------+
 
 
@@ -92,9 +92,9 @@ applicable agreement for further details.
 +----------------+--------------------------------------------------------------------------------------------------------------------------------+
 ; Option         ; Setting                                                                                                                        ;
 +----------------+--------------------------------------------------------------------------------------------------------------------------------+
-; Device         ; EP2S30F672C3                                                                                                                   ;
+; Device         ; EP2S60F1020C3                                                                                                                  ;
 ; JTAG usercode  ; 0xFFFFFFFF                                                                                                                     ;
-; Checksum       ; 0x0081D1BD                                                                                                                     ;
+; Checksum       ; 0x00E8A255                                                                                                                     ;
 +----------------+--------------------------------------------------------------------------------------------------------------------------------+
 
 
@@ -105,7 +105,7 @@ applicable agreement for further details.
 +--------------------+----------------------------------------------------------------------------------------------------------------------------+
 ; Device             ; EPC16                                                                                                                      ;
 ; JTAG usercode      ; 0xFFFFFFFF                                                                                                                 ;
-; Checksum           ; 0x1D3A651F                                                                                                                 ;
+; Checksum           ; 0x1B5A1E00                                                                                                                 ;
 ; Compression Ratio  ; 2                                                                                                                          ;
 +--------------------+----------------------------------------------------------------------------------------------------------------------------+
 
@@ -116,14 +116,14 @@ applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II Assembler
     Info: Version 9.0 Build 132 02/25/2009 SJ Full Version
-    Info: Processing started: Fri Jan 15 14:30:17 2010
+    Info: Processing started: Sat Jan 16 17:27:14 2010
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off PipelineUniProcessor -c PipelineUniProcessor
 Info: Writing out detailed assembly data for power analysis
 Info: Assembler is generating device programming files
 Info: Quartus II Assembler was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 243 megabytes
-    Info: Processing ended: Fri Jan 15 14:30:33 2010
-    Info: Elapsed time: 00:00:16
-    Info: Total CPU time (on all processors): 00:00:13
+    Info: Peak virtual memory: 316 megabytes
+    Info: Processing ended: Sat Jan 16 17:27:31 2010
+    Info: Elapsed time: 00:00:17
+    Info: Total CPU time (on all processors): 00:00:17
 
 

@@ -36,6 +36,8 @@
  --					Bank 8:		3.3V
  --					Bank 9:		3.3V
  --					Bank 10:	3.3V
+ --					Bank 11:	3.3V
+ --					Bank 12:	3.3V
  -- GND           : Dedicated ground pin. Dedicated GND pins MUST be connected to GND.
  --					It can also be used to report unused dedicated pins. The connection
  --					on the board for unused dedicated pins depends on whether this will
@@ -70,679 +72,1027 @@
  ---------------------------------------------------------------------------------
 
 Quartus II Version 9.0 Build 132 02/25/2009 SJ Full Version
-CHIP  "PipelineUniProcessor"  ASSIGNED TO AN: EP2S30F672C3
+CHIP  "PipelineUniProcessor"  ASSIGNED TO AN: EP2S60F1020C3
 
 Pin Name/Usage               : Location  : Dir.   : I/O Standard      : Voltage : I/O Bank  : User Assignment
 -------------------------------------------------------------------------------------------------------------
 GND                          : A2        : gnd    :                   :         :           :                
-GND*                         : A3        :        :                   :         : 4         :                
-VCCIO4                       : A4        : power  :                   : 3.3V    : 4         :                
+VCCIO4                       : A3        : power  :                   : 3.3V    : 4         :                
+GND*                         : A4        :        :                   :         : 4         :                
 GND*                         : A5        :        :                   :         : 4         :                
 GND*                         : A6        :        :                   :         : 4         :                
 GND*                         : A7        :        :                   :         : 4         :                
-TESTCACHEDATA[122]           : A8        : output : 3.3-V LVTTL       :         : 4         : N              
-TESTCACHEDATA[18]            : A9        : output : 3.3-V LVTTL       :         : 4         : N              
-TESTREPLACE1                 : A10       : output : 3.3-V LVTTL       :         : 4         : N              
-VCCIO4                       : A11       : power  :                   : 3.3V    : 4         :                
-TESTCACHEDATA[6]             : A12       : output : 3.3-V LVTTL       :         : 9         : N              
+GND*                         : A8        :        :                   :         : 4         :                
+GND*                         : A9        :        :                   :         : 4         :                
+TESTTAG2[27]                 : A10       : output : 3.3-V LVTTL       :         : 4         : N              
+TESTMALUO[17]                : A11       : output : 3.3-V LVTTL       :         : 4         : N              
+TESTCACHEDATA[71]            : A12       : output : 3.3-V LVTTL       :         : 4         : N              
 GND                          : A13       : gnd    :                   :         :           :                
-GND                          : A14       : gnd    :                   :         :           :                
-TESTMALUO[22]                : A15       : output : 3.3-V LVTTL       :         : 3         : N              
-VCCIO3                       : A16       : power  :                   : 3.3V    : 3         :                
-TESTMALUO[17]                : A17       : output : 3.3-V LVTTL       :         : 3         : N              
-TESTWALUO[7]                 : A18       : output : 3.3-V LVTTL       :         : 3         : N              
-TESTWMO[5]                   : A19       : output : 3.3-V LVTTL       :         : 3         : N              
-TESTWMO[27]                  : A20       : output : 3.3-V LVTTL       :         : 3         : N              
-TESTWMO[12]                  : A21       : output : 3.3-V LVTTL       :         : 3         : N              
-TESTWMO[13]                  : A22       : output : 3.3-V LVTTL       :         : 3         : N              
-VCCIO3                       : A23       : power  :                   : 3.3V    : 3         :                
-TESTSELADDR[10]              : A24       : output : 3.3-V LVTTL       :         : 3         : N              
-GND                          : A25       : gnd    :                   :         :           :                
-GND*                         : AA1       :        :                   :         : 6         :                
-GND*                         : AA2       :        :                   :         : 6         :                
-GND*                         : AA3       :        :                   :         : 6         :                
-GND*                         : AA4       :        :                   :         : 6         :                
-GND*                         : AA5       :        :                   :         : 6         :                
-RIADDR[11]                   : AA6       : output : 3.3-V LVTTL       :         : 6         : N              
-GND                          : AA7       : gnd    :                   :         :           :                
-RIADDR[13]                   : AA8       : output : 3.3-V LVTTL       :         : 7         : N              
-TESTCACHEDATA[72]            : AA9       : output : 3.3-V LVTTL       :         : 7         : N              
-TESTCACHEDATA[109]           : AA10      : output : 3.3-V LVTTL       :         : 7         : N              
-GND*                         : AA11      :        :                   :         : 7         :                
-TESTPC[15]                   : AA12      : output : 3.3-V LVTTL       :         : 7         : N              
-GND                          : AA13      : gnd    :                   :         :           :                
-TESTEALUO[7]                 : AA14      : output : 3.3-V LVTTL       :         : 8         : N              
-TESTINSTIF[10]               : AA15      : output : 3.3-V LVTTL       :         : 8         : N              
-TESTEALUO[8]                 : AA16      : output : 3.3-V LVTTL       :         : 8         : N              
-TESTWALUO[16]                : AA17      : output : 3.3-V LVTTL       :         : 8         : N              
-TESTSELADDR[9]               : AA18      : output : 3.3-V LVTTL       :         : 8         : N              
-TESTCACHEDATA[46]            : AA19      : output : 3.3-V LVTTL       :         : 8         : N              
-nCONFIG                      : AA20      :        :                   :         : 8         :                
-RIADDR[21]                   : AA21      : output : 3.3-V LVTTL       :         : 1         : N              
-RIADDR[4]                    : AA22      : output : 3.3-V LVTTL       :         : 1         : N              
-TESTWMO[31]                  : AA23      : output : 3.3-V LVTTL       :         : 1         : N              
-TESTSELADDR[31]              : AA24      : output : 3.3-V LVTTL       :         : 1         : N              
-TESTSELADDR[16]              : AA25      : output : 3.3-V LVTTL       :         : 1         : N              
-TESTPC[16]                   : AA26      : output : 3.3-V LVTTL       :         : 1         : N              
-GND*                         : AB1       :        :                   :         : 6         :                
-GND*                         : AB2       :        :                   :         : 6         :                
-TESTCACHEDATA[71]            : AB3       : output : 3.3-V LVTTL       :         : 6         : N              
-GND*                         : AB4       :        :                   :         : 6         :                
-nCEO                         : AB5       :        :                   :         : 7         :                
-PLL_ENA                      : AB6       :        :                   :         : 7         :                
-RIADDR[15]                   : AB7       : output : 3.3-V LVTTL       :         : 7         : N              
-TESTCACHEDATA[68]            : AB8       : output : 3.3-V LVTTL       :         : 7         : N              
-RIADDR[31]                   : AB9       : output : 3.3-V LVTTL       :         : 7         : N              
-RIADDR[29]                   : AB10      : output : 3.3-V LVTTL       :         : 7         : N              
-TESTCACHEDATA[123]           : AB11      : output : 3.3-V LVTTL       :         : 7         : N              
-RIADDR[6]                    : AB12      : output : 3.3-V LVTTL       :         : 7         : N              
-TESTEQU                      : AB13      : output : 3.3-V LVTTL       :         : 7         : N              
-TESTMALUO[25]                : AB14      : output : 3.3-V LVTTL       :         : 8         : N              
-TESTINSTIF[2]                : AB15      : output : 3.3-V LVTTL       :         : 8         : N              
-TESTEALUO[27]                : AB16      : output : 3.3-V LVTTL       :         : 8         : N              
-TESTMALUO[24]                : AB17      : output : 3.3-V LVTTL       :         : 8         : N              
-TESTCACHEDATA[32]            : AB18      : output : 3.3-V LVTTL       :         : 8         : N              
-TESTCACHEDATA[117]           : AB19      : output : 3.3-V LVTTL       :         : 8         : N              
-TESTCACHEDATA[67]            : AB20      : output : 3.3-V LVTTL       :         : 8         : N              
-TRST                         : AB21      : input  :                   :         : 8         :                
-TCK                          : AB22      : input  :                   :         : 8         :                
-TESTCACHEDATA[77]            : AB23      : output : 3.3-V LVTTL       :         : 1         : N              
-RIADDR[9]                    : AB24      : output : 3.3-V LVTTL       :         : 1         : N              
-RIADDR[30]                   : AB25      : output : 3.3-V LVTTL       :         : 1         : N              
-TESTCACHEDATA[47]            : AB26      : output : 3.3-V LVTTL       :         : 1         : N              
-VCCIO6                       : AC1       : power  :                   : 3.3V    : 6         :                
-RIADDR[20]                   : AC2       : output : 3.3-V LVTTL       :         : 6         : N              
-GND*                         : AC3       :        :                   :         : 6         :                
-TESTCACHEDATA[56]            : AC4       : output : 3.3-V LVTTL       :         : 7         : N              
-VREFB7                       : AC5       : power  :                   :         : 7         :                
-GND*                         : AC6       :        :                   :         : 7         :                
-TESTCACHEDATA[57]            : AC7       : output : 3.3-V LVTTL       :         : 7         : N              
-GND*                         : AC8       :        :                   :         : 7         :                
-GND*                         : AC9       :        :                   :         : 7         :                
-TESTPC[22]                   : AC10      : output : 3.3-V LVTTL       :         : 7         : N              
-VREFB7                       : AC11      : power  :                   :         : 7         :                
-TESTPC[28]                   : AC12      : output : 3.3-V LVTTL       :         : 10        : N              
-TESTINSTIF[27]               : AC13      : output : 3.3-V LVTTL       :         : 7         : N              
-TESTWMO[8]                   : AC14      : output : 3.3-V LVTTL       :         : 8         : N              
-TESTEALUO[15]                : AC15      : output : 3.3-V LVTTL       :         : 8         : N              
-VREFB8                       : AC16      : power  :                   :         : 8         :                
-TESTEALUO[25]                : AC17      : output : 3.3-V LVTTL       :         : 8         : N              
-TESTWMO[16]                  : AC18      : output : 3.3-V LVTTL       :         : 8         : N              
-TESTCACHEDATA[87]            : AC19      : output : 3.3-V LVTTL       :         : 8         : N              
-GND*                         : AC20      :        :                   :         : 8         :                
-TESTCACHEDATA[53]            : AC21      : output : 3.3-V LVTTL       :         : 8         : N              
-VREFB8                       : AC22      : power  :                   :         : 8         :                
-TESTCACHEDATA[41]            : AC23      : output : 3.3-V LVTTL       :         : 8         : N              
-TESTCACHEDATA[94]            : AC24      : output : 3.3-V LVTTL       :         : 1         : N              
-GND*                         : AC25      :        :                   :         : 1         :                
-VCCIO1                       : AC26      : power  :                   : 3.3V    : 1         :                
-TESTCACHEDATA[103]           : AD1       : output : 3.3-V LVTTL       :         : 6         : N              
-GND*                         : AD2       :        :                   :         : 6         :                
-TESTCACHEDATA[110]           : AD3       : output : 3.3-V LVTTL       :         : 7         : N              
-TESTCACHEDATA[83]            : AD4       : output : 3.3-V LVTTL       :         : 7         : N              
-GND*                         : AD5       :        :                   :         : 7         :                
-GND*                         : AD6       :        :                   :         : 7         :                
-GND*                         : AD7       :        :                   :         : 7         :                
-RIADDR[8]                    : AD8       : output : 3.3-V LVTTL       :         : 7         : N              
-RIADDR[17]                   : AD9       : output : 3.3-V LVTTL       :         : 7         : N              
-TESTSELADDR[22]              : AD10      : output : 3.3-V LVTTL       :         : 7         : N              
-GND*                         : AD11      :        :                   :         : 7         :                
-TESTCACHEDATA[26]            : AD12      : output : 3.3-V LVTTL       :         : 10        : N              
-TESTSELADDR[19]              : AD13      : output : 3.3-V LVTTL       :         : 10        : N              
-TESTEALUO[12]                : AD14      : output : 3.3-V LVTTL       :         : 7         : N              
-TESTJUMP                     : AD15      : output : 3.3-V LVTTL       :         : 8         : N              
-TESTMALUO[28]                : AD16      : output : 3.3-V LVTTL       :         : 8         : N              
-TESTMALUO[30]                : AD17      : output : 3.3-V LVTTL       :         : 8         : N              
-TESTEALUO[9]                 : AD18      : output : 3.3-V LVTTL       :         : 8         : N              
-TESTMALUO[18]                : AD19      : output : 3.3-V LVTTL       :         : 8         : N              
-TESTEALUO[16]                : AD20      : output : 3.3-V LVTTL       :         : 8         : N              
-TESTWMO[30]                  : AD21      : output : 3.3-V LVTTL       :         : 8         : N              
-TESTINSTIF[26]               : AD22      : output : 3.3-V LVTTL       :         : 8         : N              
-TESTCACHEDATA[99]            : AD23      : output : 3.3-V LVTTL       :         : 8         : N              
-TMS                          : AD24      : input  :                   :         : 8         :                
-TESTCACHEDATA[84]            : AD25      : output : 3.3-V LVTTL       :         : 1         : N              
-GND*                         : AD26      :        :                   :         : 1         :                
-GND                          : AE1       : gnd    :                   :         :           :                
-nIO_PULLUP                   : AE2       :        :                   :         : 7         :                
-TESTCACHEDATA[60]            : AE3       : output : 3.3-V LVTTL       :         : 7         : N              
-TESTCACHEDATA[97]            : AE4       : output : 3.3-V LVTTL       :         : 7         : N              
-RIADDR[26]                   : AE5       : output : 3.3-V LVTTL       :         : 7         : N              
-TESTCACHEDATA[107]           : AE6       : output : 3.3-V LVTTL       :         : 7         : N              
-GND*                         : AE7       :        :                   :         : 7         :                
-TESTCACHEDATA[81]            : AE8       : output : 3.3-V LVTTL       :         : 7         : N              
-TESTCACHEDATA[118]           : AE9       : output : 3.3-V LVTTL       :         : 7         : N              
-TESTSELADDR[15]              : AE10      : output : 3.3-V LVTTL       :         : 7         : N              
-TESTCACHEDATA[30]            : AE11      : output : 3.3-V LVTTL       :         : 7         : N              
-TESTPC[23]                   : AE12      : output : 3.3-V LVTTL       :         : 10        : N              
-TESTSELADDR[23]              : AE13      : output : 3.3-V LVTTL       :         : 10        : N              
-TESTINSTIF[30]               : AE14      : output : 3.3-V LVTTL       :         : 7         : N              
-TESTEALUO[23]                : AE15      : output : 3.3-V LVTTL       :         : 8         : N              
-TESTEALUO[28]                : AE16      : output : 3.3-V LVTTL       :         : 8         : N              
-TESTWMO[4]                   : AE17      : output : 3.3-V LVTTL       :         : 8         : N              
-TESTINSTIF[9]                : AE18      : output : 3.3-V LVTTL       :         : 8         : N              
-TESTWMO[10]                  : AE19      : output : 3.3-V LVTTL       :         : 8         : N              
-TESTWALUO[10]                : AE20      : output : 3.3-V LVTTL       :         : 8         : N              
-TESTPC[17]                   : AE21      : output : 3.3-V LVTTL       :         : 8         : N              
-TESTPC[18]                   : AE22      : output : 3.3-V LVTTL       :         : 8         : N              
-TESTSELADDR[18]              : AE23      : output : 3.3-V LVTTL       :         : 8         : N              
-TESTPC[9]                    : AE24      : output : 3.3-V LVTTL       :         : 8         : N              
-TDI                          : AE25      : input  :                   :         : 8         :                
-GND                          : AE26      : gnd    :                   :         :           :                
-GND                          : AF2       : gnd    :                   :         :           :                
-RIADDR[0]                    : AF3       : output : 3.3-V LVTTL       :         : 7         : N              
-VCCIO7                       : AF4       : power  :                   : 3.3V    : 7         :                
-GND*                         : AF5       :        :                   :         : 7         :                
-TESTCACHEDATA[49]            : AF6       : output : 3.3-V LVTTL       :         : 7         : N              
-GND*                         : AF7       :        :                   :         : 7         :                
-TESTCACHEDATA[61]            : AF8       : output : 3.3-V LVTTL       :         : 7         : N              
-TESTCACHEDATA[66]            : AF9       : output : 3.3-V LVTTL       :         : 7         : N              
-TESTCACHEDATA[39]            : AF10      : output : 3.3-V LVTTL       :         : 7         : N              
-VCCIO7                       : AF11      : power  :                   : 3.3V    : 7         :                
-TESTPC[19]                   : AF12      : output : 3.3-V LVTTL       :         : 10        : N              
-GND                          : AF13      : gnd    :                   :         :           :                
-GND                          : AF14      : gnd    :                   :         :           :                
-TESTWALUO[15]                : AF15      : output : 3.3-V LVTTL       :         : 8         : N              
-VCCIO8                       : AF16      : power  :                   : 3.3V    : 8         :                
-TESTEALUO[30]                : AF17      : output : 3.3-V LVTTL       :         : 8         : N              
-TESTEALUO[26]                : AF18      : output : 3.3-V LVTTL       :         : 8         : N              
+TESTCACHEDATA[64]            : A14       : output : 3.3-V LVTTL       :         : 4         : N              
+VCCIO4                       : A15       : power  :                   : 3.3V    : 4         :                
+TESTCACHEDATA[21]            : A16       : output : 3.3-V LVTTL       :         : 4         : N              
+TESTWMO[2]                   : A17       : output : 3.3-V LVTTL       :         : 3         : N              
+VCCIO3                       : A18       : power  :                   : 3.3V    : 3         :                
+TESTPC[20]                   : A19       : output : 3.3-V LVTTL       :         : 11        : N              
+GND                          : A20       : gnd    :                   :         :           :                
+TESTWALUO[18]                : A21       : output : 3.3-V LVTTL       :         : 3         : N              
+TESTWALUO[27]                : A22       : output : 3.3-V LVTTL       :         : 3         : N              
+TESTWALUO[9]                 : A23       : output : 3.3-V LVTTL       :         : 3         : N              
+TESTWMO[18]                  : A24       : output : 3.3-V LVTTL       :         : 3         : N              
+TESTWMO[27]                  : A25       : output : 3.3-V LVTTL       :         : 3         : N              
+TESTWMO[16]                  : A26       : output : 3.3-V LVTTL       :         : 3         : N              
+TESTWMO[28]                  : A27       : output : 3.3-V LVTTL       :         : 3         : N              
+TESTWALUO[30]                : A28       : output : 3.3-V LVTTL       :         : 3         : N              
+TESTWALUO[3]                 : A29       : output : 3.3-V LVTTL       :         : 3         : N              
+VCCIO3                       : A30       : power  :                   : 3.3V    : 3         :                
+GND                          : A31       : gnd    :                   :         :           :                
+TESTSELADDR[21]              : AA1       : output : 3.3-V LVTTL       :         : 6         : N              
+TESTTAG1[5]                  : AA2       : output : 3.3-V LVTTL       :         : 6         : N              
+TESTSELADDR[22]              : AA3       : output : 3.3-V LVTTL       :         : 6         : N              
+TESTSELADDR[27]              : AA4       : output : 3.3-V LVTTL       :         : 6         : N              
+VCCIO6                       : AA5       : power  :                   : 3.3V    : 6         :                
+RIADDR[20]                   : AA6       : output : 3.3-V LVTTL       :         : 6         : N              
+TESTPC2[16]                  : AA7       : input  : 3.3-V LVTTL       :         : 6         : N              
+TESTIMEMOUT[49]              : AA8       : output : 3.3-V LVTTL       :         : 6         : N              
+TESTIMEMOUT[91]              : AA9       : output : 3.3-V LVTTL       :         : 6         : N              
+TESTIMEMOUT[0]               : AA10      : output : 3.3-V LVTTL       :         : 6         : N              
+TESTPC2[20]                  : AA11      : input  : 3.3-V LVTTL       :         : 6         : N              
+VCCINT                       : AA12      : power  :                   : 1.2V    :           :                
+VCCPD7                       : AA13      : power  :                   : 3.3V    : 7         :                
+GND                          : AA14      : gnd    :                   :         :           :                
+VCCPD7                       : AA15      : power  :                   : 3.3V    : 7         :                
+VCCIO7                       : AA16      : power  :                   : 3.3V    : 7         :                
+VCCIO8                       : AA17      : power  :                   : 3.3V    : 8         :                
+VCCPD8                       : AA18      : power  :                   : 3.3V    : 8         :                
+GND                          : AA19      : gnd    :                   :         :           :                
+VCCPD8                       : AA20      : power  :                   : 3.3V    : 8         :                
+GND                          : AA21      : gnd    :                   :         :           :                
+TESTCACHEDATA[77]            : AA22      : output : 3.3-V LVTTL       :         : 1         : N              
+TESTIMEMOUT[77]              : AA23      : output : 3.3-V LVTTL       :         : 1         : N              
+TESTCACHEDATA[92]            : AA24      : output : 3.3-V LVTTL       :         : 1         : N              
+TESTIMEMOUT[80]              : AA25      : output : 3.3-V LVTTL       :         : 1         : N              
+TESTCACHEDATA[63]            : AA26      : output : 3.3-V LVTTL       :         : 1         : N              
+TESTCACHEDATA[91]            : AA27      : output : 3.3-V LVTTL       :         : 1         : N              
+VCCIO1                       : AA28      : power  :                   : 3.3V    : 1         :                
+TESTCACHEDATA[83]            : AA29      : output : 3.3-V LVTTL       :         : 1         : N              
+TESTCACHEDATA[55]            : AA30      : output : 3.3-V LVTTL       :         : 1         : N              
+TESTINSTIF[24]               : AA31      : output : 3.3-V LVTTL       :         : 1         : N              
+TESTINSTIF[18]               : AA32      : output : 3.3-V LVTTL       :         : 1         : N              
+TESTSELADDR[26]              : AB1       : output : 3.3-V LVTTL       :         : 6         : N              
+TESTSELADDR[13]              : AB2       : output : 3.3-V LVTTL       :         : 6         : N              
+TESTIMEMOUT[82]              : AB3       : output : 3.3-V LVTTL       :         : 6         : N              
+TESTSELADDR[29]              : AB4       : output : 3.3-V LVTTL       :         : 6         : N              
+TESTIMEMOUT[54]              : AB5       : output : 3.3-V LVTTL       :         : 6         : N              
+TESTPC2[28]                  : AB6       : input  : 3.3-V LVTTL       :         : 6         : N              
+RIADDR[8]                    : AB7       : output : 3.3-V LVTTL       :         : 6         : N              
+RIADDR[6]                    : AB8       : output : 3.3-V LVTTL       :         : 6         : N              
+TESTIMEMOUT[93]              : AB9       : output : 3.3-V LVTTL       :         : 6         : N              
+TESTIMEMOUT[95]              : AB10      : output : 3.3-V LVTTL       :         : 6         : N              
+TESTIMEMOUT[58]              : AB11      : output : 3.3-V LVTTL       :         : 7         : N              
+TESTTAG2[2]                  : AB12      : output : 3.3-V LVTTL       :         : 7         : N              
+TESTIMEMOUT[53]              : AB13      : output : 3.3-V LVTTL       :         : 7         : N              
+TESTIMEMOUT[52]              : AB14      : output : 3.3-V LVTTL       :         : 7         : N              
+TESTIMEMOUT[32]              : AB15      : output : 3.3-V LVTTL       :         : 7         : N              
+TESTIMEMOUT[106]             : AB16      : output : 3.3-V LVTTL       :         : 7         : N              
+TESTIMEMOUT[27]              : AB17      : output : 3.3-V LVTTL       :         : 8         : N              
+TESTCACHEDATA[93]            : AB18      : output : 3.3-V LVTTL       :         : 8         : N              
+TESTCACHEDATA[96]            : AB19      : output : 3.3-V LVTTL       :         : 8         : N              
+TESTIMEMOUT[15]              : AB20      : output : 3.3-V LVTTL       :         : 8         : N              
+TESTCACHEDATA[98]            : AB21      : output : 3.3-V LVTTL       :         : 8         : N              
+GND                          : AB22      : gnd    :                   :         :           :                
+TESTCACHEDATA[110]           : AB23      : output : 3.3-V LVTTL       :         : 1         : N              
+TESTCACHEDATA[70]            : AB24      : output : 3.3-V LVTTL       :         : 1         : N              
+TESTIMEMOUT[78]              : AB25      : output : 3.3-V LVTTL       :         : 1         : N              
+TESTCACHEDATA[125]           : AB26      : output : 3.3-V LVTTL       :         : 1         : N              
+TESTCACHEDATA[38]            : AB27      : output : 3.3-V LVTTL       :         : 1         : N              
+TESTIMEMOUT[73]              : AB28      : output : 3.3-V LVTTL       :         : 1         : N              
+TESTWMO[25]                  : AB29      : output : 3.3-V LVTTL       :         : 1         : N              
+TESTWMO[24]                  : AB30      : output : 3.3-V LVTTL       :         : 1         : N              
+TESTINSTIF[9]                : AB31      : output : 3.3-V LVTTL       :         : 1         : N              
+TESTWALUO[31]                : AB32      : output : 3.3-V LVTTL       :         : 1         : N              
+TESTSELADDR[20]              : AC1       : output : 3.3-V LVTTL       :         : 6         : N              
+TESTREPLACEENTRY             : AC2       : output : 3.3-V LVTTL       :         : 6         : N              
+TESTIMEMOUT[84]              : AC3       : output : 3.3-V LVTTL       :         : 6         : N              
+TESTPC2[14]                  : AC4       : input  : 3.3-V LVTTL       :         : 6         : N              
+GND                          : AC5       : gnd    :                   :         :           :                
+RIADDR[13]                   : AC6       : output : 3.3-V LVTTL       :         : 6         : N              
+TESTIMEMOUT[109]             : AC7       : output : 3.3-V LVTTL       :         : 6         : N              
+TESTTAG2[0]                  : AC8       : output : 3.3-V LVTTL       :         : 6         : N              
+TESTIMEMOUT[83]              : AC9       : output : 3.3-V LVTTL       :         : 6         : N              
+VCCINT                       : AC10      : power  :                   : 1.2V    :           :                
+TESTIMEMOUT[127]             : AC11      : output : 3.3-V LVTTL       :         : 7         : N              
+TESTPC2[12]                  : AC12      : input  : 3.3-V LVTTL       :         : 7         : N              
+TESTTAG1[15]                 : AC13      : output : 3.3-V LVTTL       :         : 7         : N              
+TESTIMEMOUT[63]              : AC14      : output : 3.3-V LVTTL       :         : 7         : N              
+TESTIMEMOUT[101]             : AC15      : output : 3.3-V LVTTL       :         : 7         : N              
+TESTIMEMOUT[67]              : AC16      : output : 3.3-V LVTTL       :         : 7         : N              
+TESTIMEMOUT[50]              : AC17      : output : 3.3-V LVTTL       :         : 8         : N              
+TESTCACHEDATA[116]           : AC18      : output : 3.3-V LVTTL       :         : 8         : N              
+TESTCACHEDATA[15]            : AC19      : output : 3.3-V LVTTL       :         : 8         : N              
+TESTIMEMOUT[47]              : AC20      : output : 3.3-V LVTTL       :         : 8         : N              
+TESTCACHEDATA[95]            : AC21      : output : 3.3-V LVTTL       :         : 8         : N              
+GND*                         : AC22      :        :                   :         : 8         :                
+VCCSEL                       : AC23      :        :                   :         : 8         :                
+TESTCACHEDATA[76]            : AC24      : output : 3.3-V LVTTL       :         : 1         : N              
+TESTCACHEDATA[121]           : AC25      : output : 3.3-V LVTTL       :         : 1         : N              
+TESTCACHEDATA[43]            : AC26      : output : 3.3-V LVTTL       :         : 1         : N              
+TESTCACHEDATA[41]            : AC27      : output : 3.3-V LVTTL       :         : 1         : N              
+GND                          : AC28      : gnd    :                   :         :           :                
+NC                           : AC29      :        :                   :         :           :                
+NC                           : AC30      :        :                   :         :           :                
+TESTCACHEDATA[18]            : AC31      : output : 3.3-V LVTTL       :         : 1         : N              
+TESTWMO[7]                   : AC32      : output : 3.3-V LVTTL       :         : 1         : N              
+RIADDR[24]                   : AD1       : output : 3.3-V LVTTL       :         : 6         : N              
+TESTPC2[0]                   : AD2       : input  : 3.3-V LVTTL       :         : 6         : N              
+NC                           : AD3       :        :                   :         :           :                
+NC                           : AD4       :        :                   :         :           :                
+VREFB6                       : AD5       : power  :                   :         : 6         :                
+TESTIMEMOUT[124]             : AD6       : output : 3.3-V LVTTL       :         : 6         : N              
+TESTIMEMOUT[112]             : AD7       : output : 3.3-V LVTTL       :         : 6         : N              
+GND*                         : AD8       :        :                   :         : 6         :                
+RIADDR[16]                   : AD9       : output : 3.3-V LVTTL       :         : 6         : N              
+TESTIMEMOUT[123]             : AD10      : output : 3.3-V LVTTL       :         : 7         : N              
+TESTIMEMOUT[113]             : AD11      : output : 3.3-V LVTTL       :         : 7         : N              
+TESTTAG2[11]                 : AD12      : output : 3.3-V LVTTL       :         : 7         : N              
+TESTIMEMOUT[98]              : AD13      : output : 3.3-V LVTTL       :         : 7         : N              
+TESTIMEMOUT[39]              : AD14      : output : 3.3-V LVTTL       :         : 7         : N              
+VCCD_PLL6                    : AD15      : power  :                   : 1.2V    :           :                
+GNDA_PLL6                    : AD16      : gnd    :                   :         :           :                
+GNDA_PLL12                   : AD17      : gnd    :                   :         :           :                
+TESTIMEMOUT[13]              : AD18      : output : 3.3-V LVTTL       :         : 8         : N              
+TESTCACHEDATA[2]             : AD19      : output : 3.3-V LVTTL       :         : 8         : N              
+TESTMALUO[26]                : AD20      : output : 3.3-V LVTTL       :         : 8         : N              
+TESTCACHEDATA[54]            : AD21      : output : 3.3-V LVTTL       :         : 8         : N              
+GND*                         : AD22      :        :                   :         : 8         :                
+GND*                         : AD23      :        :                   :         : 8         :                
+TESTCACHEDATA[127]           : AD24      : output : 3.3-V LVTTL       :         : 1         : N              
+TESTWRITEMEM                 : AD25      : output : 3.3-V LVTTL       :         : 1         : N              
+TESTCACHEDATA[7]             : AD26      : output : 3.3-V LVTTL       :         : 1         : N              
+TESTCACHEDATA[8]             : AD27      : output : 3.3-V LVTTL       :         : 1         : N              
+VREFB1                       : AD28      : power  :                   :         : 1         :                
+NC                           : AD29      :        :                   :         :           :                
+NC                           : AD30      :        :                   :         :           :                
+TESTCACHEDATA[90]            : AD31      : output : 3.3-V LVTTL       :         : 1         : N              
+TESTCACHEDATA[72]            : AD32      : output : 3.3-V LVTTL       :         : 1         : N              
+TESTIMEMOUT[118]             : AE1       : output : 3.3-V LVTTL       :         : 6         : N              
+TESTIMEMOUT[116]             : AE2       : output : 3.3-V LVTTL       :         : 6         : N              
+TESTPC2[10]                  : AE3       : input  : 3.3-V LVTTL       :         : 6         : N              
+TESTIMEMOUT[3]               : AE4       : output : 3.3-V LVTTL       :         : 6         : N              
+NC                           : AE5       :        :                   :         :           :                
+NC                           : AE6       :        :                   :         :           :                
+VCCA_PLL9                    : AE7       : power  :                   : 1.2V    :           :                
+VCCD_PLL9                    : AE8       : power  :                   : 1.2V    :           :                
+NC                           : AE9       :        :                   :         :           :                
+TESTTAG1[11]                 : AE10      : output : 3.3-V LVTTL       :         : 7         : N              
+RIADDR[11]                   : AE11      : output : 3.3-V LVTTL       :         : 7         : N              
+TESTSELADDR[18]              : AE12      : output : 3.3-V LVTTL       :         : 7         : N              
+TESTIMEMOUT[64]              : AE13      : output : 3.3-V LVTTL       :         : 7         : N              
+TESTIMEMOUT[97]              : AE14      : output : 3.3-V LVTTL       :         : 7         : N              
+VCCA_PLL6                    : AE15      : power  :                   : 1.2V    :           :                
+GNDA_PLL6                    : AE16      : gnd    :                   :         :           :                
+GNDA_PLL12                   : AE17      : gnd    :                   :         :           :                
+VCCD_PLL12                   : AE18      : power  :                   : 1.2V    :           :                
+TESTCACHEDATA[79]            : AE19      : output : 3.3-V LVTTL       :         : 8         : N              
+TESTIMEMOUT[36]              : AE20      : output : 3.3-V LVTTL       :         : 8         : N              
+TESTCACHEDATA[51]            : AE21      : output : 3.3-V LVTTL       :         : 8         : N              
+GND*                         : AE22      :        :                   :         : 8         :                
+GND*                         : AE23      :        :                   :         : 8         :                
+TMS                          : AE24      : input  :                   :         : 8         :                
+GND*                         : AE25      :        :                   :         : 1         :                
+GND*                         : AE26      :        :                   :         : 1         :                
+GND*                         : AE27      :        :                   :         : 1         :                
+GND*                         : AE28      :        :                   :         : 1         :                
+TESTCACHEDATA[42]            : AE29      : output : 3.3-V LVTTL       :         : 1         : N              
+TESTIMEMOUT[42]              : AE30      : output : 3.3-V LVTTL       :         : 1         : N              
+TESTIMEMOUT[40]              : AE31      : output : 3.3-V LVTTL       :         : 1         : N              
+TESTCACHEDATA[14]            : AE32      : output : 3.3-V LVTTL       :         : 1         : N              
+RIADDR[2]                    : AF1       : output : 3.3-V LVTTL       :         : 6         : N              
+RIADDR[18]                   : AF2       : output : 3.3-V LVTTL       :         : 6         : N              
+TESTIMEMOUT[126]             : AF3       : output : 3.3-V LVTTL       :         : 6         : N              
+TESTIMEMOUT[120]             : AF4       : output : 3.3-V LVTTL       :         : 6         : N              
+NC                           : AF5       :        :                   :         :           :                
+NC                           : AF6       :        :                   :         :           :                
+GNDA_PLL9                    : AF7       : gnd    :                   :         :           :                
+PLL_ENA                      : AF8       :        :                   :         : 7         :                
+GND                          : AF9       : gnd    :                   :         :           :                
+TESTPC2[8]                   : AF10      : input  : 3.3-V LVTTL       :         : 7         : N              
+TESTENTRYSEL[0]              : AF11      : output : 3.3-V LVTTL       :         : 7         : N              
+TESTSELADDR[0]               : AF12      : output : 3.3-V LVTTL       :         : 7         : N              
+TESTIMEMOUT[66]              : AF13      : output : 3.3-V LVTTL       :         : 7         : N              
+NC                           : AF14      :        :                   :         :           :                
+VCC_PLL6_OUT                 : AF15      : power  :                   : 3.3V    : 10        :                
+VCC_PLL12_OUT                : AF16      : power  :                   : 3.3V    : 12        :                
+GND                          : AF17      : gnd    :                   :         :           :                
+VCCA_PLL12                   : AF18      : power  :                   : 1.2V    :           :                
 TESTWMO[21]                  : AF19      : output : 3.3-V LVTTL       :         : 8         : N              
-TESTWALUO[25]                : AF20      : output : 3.3-V LVTTL       :         : 8         : N              
-TESTWALUO[4]                 : AF21      : output : 3.3-V LVTTL       :         : 8         : N              
-TESTSELADDR[17]              : AF22      : output : 3.3-V LVTTL       :         : 8         : N              
-VCCIO8                       : AF23      : power  :                   : 3.3V    : 8         :                
-TESTINSTIF[25]               : AF24      : output : 3.3-V LVTTL       :         : 8         : N              
-GND                          : AF25      : gnd    :                   :         :           :                
+TESTCACHEDATA[28]            : AF20      : output : 3.3-V LVTTL       :         : 8         : N              
+GND*                         : AF21      :        :                   :         : 8         :                
+GND*                         : AF22      :        :                   :         : 8         :                
+GND*                         : AF23      :        :                   :         : 8         :                
+TCK                          : AF24      : input  :                   :         : 8         :                
+VCCD_PLL8                    : AF25      : power  :                   : 1.2V    :           :                
+VCCA_PLL8                    : AF26      : power  :                   : 1.2V    :           :                
+NC                           : AF27      :        :                   :         :           :                
+NC                           : AF28      :        :                   :         :           :                
+TESTWALUO[25]                : AF29      : output : 3.3-V LVTTL       :         : 1         : N              
+TESTIMEMOUT[26]              : AF30      : output : 3.3-V LVTTL       :         : 1         : N              
+TESTCACHEDATA[120]           : AF31      : output : 3.3-V LVTTL       :         : 1         : N              
+TESTCACHEDATA[47]            : AF32      : output : 3.3-V LVTTL       :         : 1         : N              
+TESTIMEMOUT[57]              : AG1       : output : 3.3-V LVTTL       :         : 6         : N              
+TESTIMEMOUT[59]              : AG2       : output : 3.3-V LVTTL       :         : 6         : N              
+TESTIMEMOUT[115]             : AG3       : output : 3.3-V LVTTL       :         : 6         : N              
+RIADDR[7]                    : AG4       : output : 3.3-V LVTTL       :         : 6         : N              
+VREFB6                       : AG5       : power  :                   :         : 6         :                
+GND                          : AG6       : gnd    :                   :         :           :                
+GNDA_PLL9                    : AG7       : gnd    :                   :         :           :                
+TESTTAG2[20]                 : AG8       : output : 3.3-V LVTTL       :         : 7         : N              
+TESTTAG2[5]                  : AG9       : output : 3.3-V LVTTL       :         : 7         : N              
+TESTENTRYSEL[1]              : AG10      : output : 3.3-V LVTTL       :         : 7         : N              
+TESTSELADDR[15]              : AG11      : output : 3.3-V LVTTL       :         : 7         : N              
+TESTIMEMOUT[60]              : AG12      : output : 3.3-V LVTTL       :         : 7         : N              
+TESTIMEMOUT[6]               : AG13      : output : 3.3-V LVTTL       :         : 7         : N              
+TESTIMEMOUT[107]             : AG14      : output : 3.3-V LVTTL       :         : 7         : N              
+TESTIMEMOUT[65]              : AG15      : output : 3.3-V LVTTL       :         : 7         : N              
+TESTIMEMOUT[24]              : AG16      : output : 3.3-V LVTTL       :         : 7         : N              
+TESTIMEMOUT[25]              : AG17      : output : 3.3-V LVTTL       :         : 8         : N              
+TESTCACHEDATA[62]            : AG18      : output : 3.3-V LVTTL       :         : 8         : N              
+TESTCACHEDATA[113]           : AG19      : output : 3.3-V LVTTL       :         : 8         : N              
+TESTCACHEDATA[123]           : AG20      : output : 3.3-V LVTTL       :         : 8         : N              
+NC                           : AG21      :        :                   :         :           :                
+TESTMALUO[24]                : AG22      : output : 3.3-V LVTTL       :         : 8         : N              
+TESTIMEMOUT[51]              : AG23      : output : 3.3-V LVTTL       :         : 8         : N              
+TESTCACHEDATA[67]            : AG24      : output : 3.3-V LVTTL       :         : 8         : N              
+NC                           : AG25      :        :                   :         :           :                
+GNDA_PLL8                    : AG26      : gnd    :                   :         :           :                
+GNDA_PLL8                    : AG27      : gnd    :                   :         :           :                
+VREFB1                       : AG28      : power  :                   :         : 1         :                
+TESTCACHEDATA[108]           : AG29      : output : 3.3-V LVTTL       :         : 1         : N              
+TESTCACHEDATA[126]           : AG30      : output : 3.3-V LVTTL       :         : 1         : N              
+TESTCACHEDATA[32]            : AG31      : output : 3.3-V LVTTL       :         : 1         : N              
+TESTCACHEDATA[73]            : AG32      : output : 3.3-V LVTTL       :         : 1         : N              
+RIADDR[4]                    : AH1       : output : 3.3-V LVTTL       :         : 6         : N              
+RIADDR[5]                    : AH2       : output : 3.3-V LVTTL       :         : 6         : N              
+TESTTAG1[20]                 : AH3       : output : 3.3-V LVTTL       :         : 6         : N              
+TESTIMEMOUT[94]              : AH4       : output : 3.3-V LVTTL       :         : 6         : N              
+RIADDR[25]                   : AH5       : output : 3.3-V LVTTL       :         : 7         : N              
+TESTIMEMOUT[5]               : AH6       : output : 3.3-V LVTTL       :         : 7         : N              
+TESTTAG2[7]                  : AH7       : output : 3.3-V LVTTL       :         : 7         : N              
+TESTIMEMOUT[125]             : AH8       : output : 3.3-V LVTTL       :         : 7         : N              
+TESTIMEMOUT[114]             : AH9       : output : 3.3-V LVTTL       :         : 7         : N              
+GND                          : AH10      : gnd    :                   :         :           :                
+TESTIMEMOUT[33]              : AH11      : output : 3.3-V LVTTL       :         : 7         : N              
+VCCIO7                       : AH12      : power  :                   : 3.3V    : 7         :                
+TESTIMEMOUT[62]              : AH13      : output : 3.3-V LVTTL       :         : 7         : N              
+TESTIMEMOUT[18]              : AH14      : output : 3.3-V LVTTL       :         : 7         : N              
+TESTIMEMOUT[16]              : AH15      : output : 3.3-V LVTTL       :         : 10        : N              
+TESTIMEMOUT[23]              : AH16      : output : 3.3-V LVTTL       :         : 7         : N              
+TESTIMEMOUT[81]              : AH17      : output : 3.3-V LVTTL       :         : 8         : N              
+TESTIMEMOUT[37]              : AH18      : output : 3.3-V LVTTL       :         : 12        : N              
+TESTCACHEDATA[40]            : AH19      : output : 3.3-V LVTTL       :         : 8         : N              
+TESTINSTIF[13]               : AH20      : output : 3.3-V LVTTL       :         : 8         : N              
+VCCIO8                       : AH21      : power  :                   : 3.3V    : 8         :                
+TESTMALUO[20]                : AH22      : output : 3.3-V LVTTL       :         : 8         : N              
+GND                          : AH23      : gnd    :                   :         :           :                
+TESTIMEMOUT[17]              : AH24      : output : 3.3-V LVTTL       :         : 8         : N              
+TESTCACHEDATA[81]            : AH25      : output : 3.3-V LVTTL       :         : 8         : N              
+TESTCACHEDATA[61]            : AH26      : output : 3.3-V LVTTL       :         : 8         : N              
+GND                          : AH27      : gnd    :                   :         :           :                
+GND*                         : AH28      :        :                   :         : 8         :                
+TESTCACHEDATA[114]           : AH29      : output : 3.3-V LVTTL       :         : 1         : N              
+TESTCACHEDATA[80]            : AH30      : output : 3.3-V LVTTL       :         : 1         : N              
+TESTCACHEDATA[34]            : AH31      : output : 3.3-V LVTTL       :         : 1         : N              
+TESTIMEMOUT[20]              : AH32      : output : 3.3-V LVTTL       :         : 1         : N              
+TESTIMEMOUT[121]             : AJ1       : output : 3.3-V LVTTL       :         : 6         : N              
+TESTIMEMOUT[117]             : AJ2       : output : 3.3-V LVTTL       :         : 6         : N              
+GND+                         : AJ3       :        :                   :         : 6         :                
+GND+                         : AJ4       :        :                   :         : 6         :                
+RIADDR[17]                   : AJ5       : output : 3.3-V LVTTL       :         : 7         : N              
+TESTTAG2[23]                 : AJ6       : output : 3.3-V LVTTL       :         : 7         : N              
+TESTPC2[1]                   : AJ7       : input  : 3.3-V LVTTL       :         : 7         : N              
+TESTSELADDR[23]              : AJ8       : output : 3.3-V LVTTL       :         : 7         : N              
+VREFB7                       : AJ9       : power  :                   :         : 7         :                
+TESTTAG1[4]                  : AJ10      : output : 3.3-V LVTTL       :         : 7         : N              
+TESTIMEMOUT[70]              : AJ11      : output : 3.3-V LVTTL       :         : 7         : N              
+TESTIMEMOUT[110]             : AJ12      : output : 3.3-V LVTTL       :         : 7         : N              
+TESTIMEMOUT[34]              : AJ13      : output : 3.3-V LVTTL       :         : 7         : N              
+TESTIMEMOUT[28]              : AJ14      : output : 3.3-V LVTTL       :         : 7         : N              
+TESTIMEMOUT[22]              : AJ15      : output : 3.3-V LVTTL       :         : 10        : N              
+TESTIMEMOUT[7]               : AJ16      : output : 3.3-V LVTTL       :         : 10        : N              
+TESTIMEMOUT[48]              : AJ17      : output : 3.3-V LVTTL       :         : 8         : N              
+TESTIMEMOUT[46]              : AJ18      : output : 3.3-V LVTTL       :         : 12        : N              
+TESTCACHEDATA[52]            : AJ19      : output : 3.3-V LVTTL       :         : 8         : N              
+TESTCACHEDATA[17]            : AJ20      : output : 3.3-V LVTTL       :         : 8         : N              
+TESTCACHEDATA[56]            : AJ21      : output : 3.3-V LVTTL       :         : 8         : N              
+TESTWALUO[28]                : AJ22      : output : 3.3-V LVTTL       :         : 8         : N              
+TESTWMO[14]                  : AJ23      : output : 3.3-V LVTTL       :         : 8         : N              
+VREFB8                       : AJ24      : power  :                   :         : 8         :                
+TESTIMEMOUT[75]              : AJ25      : output : 3.3-V LVTTL       :         : 8         : N              
+TESTCACHEDATA[35]            : AJ26      : output : 3.3-V LVTTL       :         : 8         : N              
+TESTCACHEDATA[89]            : AJ27      : output : 3.3-V LVTTL       :         : 8         : N              
+TESTCACHEDATA[75]            : AJ28      : output : 3.3-V LVTTL       :         : 8         : N              
+GND+                         : AJ29      :        :                   :         : 1         :                
+GND+                         : AJ30      :        :                   :         : 1         :                
+TESTCACHEDATA[33]            : AJ31      : output : 3.3-V LVTTL       :         : 1         : N              
+TESTCACHEDATA[74]            : AJ32      : output : 3.3-V LVTTL       :         : 1         : N              
+VCCIO6                       : AK1       : power  :                   : 3.3V    : 6         :                
+VREFB7                       : AK2       : power  :                   :         : 7         :                
+nIO_PULLUP                   : AK3       :        :                   :         : 7         :                
+RIADDR[3]                    : AK4       : output : 3.3-V LVTTL       :         : 7         : N              
+TESTIMEMOUT[92]              : AK5       : output : 3.3-V LVTTL       :         : 7         : N              
+TESTIMEMOUT[122]             : AK6       : output : 3.3-V LVTTL       :         : 7         : N              
+RIADDR[10]                   : AK7       : output : 3.3-V LVTTL       :         : 7         : N              
+TESTTAG1[8]                  : AK8       : output : 3.3-V LVTTL       :         : 7         : N              
+TESTSELADDR[24]              : AK9       : output : 3.3-V LVTTL       :         : 7         : N              
+TESTIMEMOUT[68]              : AK10      : output : 3.3-V LVTTL       :         : 7         : N              
+TESTIMEMOUT[31]              : AK11      : output : 3.3-V LVTTL       :         : 7         : N              
+TESTIMEMOUT[96]              : AK12      : output : 3.3-V LVTTL       :         : 7         : N              
+TESTIMEMOUT[99]              : AK13      : output : 3.3-V LVTTL       :         : 7         : N              
+VREFB7                       : AK14      : power  :                   :         : 7         :                
+TESTIMEMOUT[105]             : AK15      : output : 3.3-V LVTTL       :         : 10        : N              
+TESTIMEMOUT[111]             : AK16      : output : 3.3-V LVTTL       :         : 10        : N              
+TESTCACHEDATA[107]           : AK17      : output : 3.3-V LVTTL       :         : 8         : N              
+TESTIMEMOUT[44]              : AK18      : output : 3.3-V LVTTL       :         : 12        : N              
+VREFB8                       : AK19      : power  :                   :         : 8         :                
+TESTCACHEDATA[58]            : AK20      : output : 3.3-V LVTTL       :         : 8         : N              
+TESTCACHEDATA[49]            : AK21      : output : 3.3-V LVTTL       :         : 8         : N              
+TESTWALUO[24]                : AK22      : output : 3.3-V LVTTL       :         : 8         : N              
+TESTIMEMOUT[76]              : AK23      : output : 3.3-V LVTTL       :         : 8         : N              
+TESTIMEMOUT[41]              : AK24      : output : 3.3-V LVTTL       :         : 8         : N              
+TESTCACHEDATA[36]            : AK25      : output : 3.3-V LVTTL       :         : 8         : N              
+TESTCACHEDATA[59]            : AK26      : output : 3.3-V LVTTL       :         : 8         : N              
+TESTSELADDR[3]               : AK27      : output : 3.3-V LVTTL       :         : 8         : N              
+GND*                         : AK28      :        :                   :         : 8         :                
+GND*                         : AK29      :        :                   :         : 8         :                
+TRST                         : AK30      : input  :                   :         : 8         :                
+VREFB8                       : AK31      : power  :                   :         : 8         :                
+VCCIO1                       : AK32      : power  :                   : 3.3V    : 1         :                
+GND                          : AL1       : gnd    :                   :         :           :                
+PORSEL                       : AL2       :        :                   :         : 7         :                
+nCEO                         : AL3       :        :                   :         : 7         :                
+GND*                         : AL4       :        :                   :         : 7         :                
+RIADDR[1]                    : AL5       : output : 3.3-V LVTTL       :         : 7         : N              
+RIADDR[12]                   : AL6       : output : 3.3-V LVTTL       :         : 7         : N              
+TESTTAG2[14]                 : AL7       : output : 3.3-V LVTTL       :         : 7         : N              
+TESTPC2[4]                   : AL8       : input  : 3.3-V LVTTL       :         : 7         : N              
+TESTSELADDR[16]              : AL9       : output : 3.3-V LVTTL       :         : 7         : N              
+TESTIMEMOUT[103]             : AL10      : output : 3.3-V LVTTL       :         : 7         : N              
+TESTIMEMOUT[108]             : AL11      : output : 3.3-V LVTTL       :         : 7         : N              
+TESTIMEMOUT[104]             : AL12      : output : 3.3-V LVTTL       :         : 7         : N              
+TESTIMEMOUT[10]              : AL13      : output : 3.3-V LVTTL       :         : 7         : N              
+TESTIMEMOUT[71]              : AL14      : output : 3.3-V LVTTL       :         : 7         : N              
+TESTIMEMOUT[35]              : AL15      : output : 3.3-V LVTTL       :         : 10        : N              
+TESTIMEMOUT[12]              : AL16      : output : 3.3-V LVTTL       :         : 7         : N              
+TESTIMEMOUT[21]              : AL17      : output : 3.3-V LVTTL       :         : 8         : N              
+TESTIMEMOUT[38]              : AL18      : output : 3.3-V LVTTL       :         : 12        : N              
+TESTIMEMOUT[79]              : AL19      : output : 3.3-V LVTTL       :         : 12        : N              
+TESTCACHEDATA[53]            : AL20      : output : 3.3-V LVTTL       :         : 8         : N              
+TESTCACHEDATA[105]           : AL21      : output : 3.3-V LVTTL       :         : 8         : N              
+TESTCACHEDATA[122]           : AL22      : output : 3.3-V LVTTL       :         : 8         : N              
+TESTIMEMOUT[74]              : AL23      : output : 3.3-V LVTTL       :         : 8         : N              
+TESTIMEMOUT[14]              : AL24      : output : 3.3-V LVTTL       :         : 8         : N              
+TESTIMEMOUT[45]              : AL25      : output : 3.3-V LVTTL       :         : 8         : N              
+TESTCACHEDATA[37]            : AL26      : output : 3.3-V LVTTL       :         : 8         : N              
+TESTCACHEDATA[60]            : AL27      : output : 3.3-V LVTTL       :         : 8         : N              
+TESTCACHEDATA[103]           : AL28      : output : 3.3-V LVTTL       :         : 8         : N              
+GND*                         : AL29      :        :                   :         : 8         :                
+nCONFIG                      : AL30      :        :                   :         : 8         :                
+TDI                          : AL31      : input  :                   :         : 8         :                
+GND                          : AL32      : gnd    :                   :         :           :                
+GND                          : AM2       : gnd    :                   :         :           :                
+VCCIO7                       : AM3       : power  :                   : 3.3V    : 7         :                
+TESTPC2[29]                  : AM4       : input  : 3.3-V LVTTL       :         : 7         : N              
+TESTPC2[24]                  : AM5       : input  : 3.3-V LVTTL       :         : 7         : N              
+TESTIMEMOUT[119]             : AM6       : output : 3.3-V LVTTL       :         : 7         : N              
+RIADDR[9]                    : AM7       : output : 3.3-V LVTTL       :         : 7         : N              
+TESTPC2[6]                   : AM8       : input  : 3.3-V LVTTL       :         : 7         : N              
+TESTTAG1[23]                 : AM9       : output : 3.3-V LVTTL       :         : 7         : N              
+TESTIMEMOUT[100]             : AM10      : output : 3.3-V LVTTL       :         : 7         : N              
+TESTIMEMOUT[69]              : AM11      : output : 3.3-V LVTTL       :         : 7         : N              
+TESTIMEMOUT[102]             : AM12      : output : 3.3-V LVTTL       :         : 7         : N              
+GND                          : AM13      : gnd    :                   :         :           :                
+TESTIMEMOUT[8]               : AM14      : output : 3.3-V LVTTL       :         : 7         : N              
+VCCIO7                       : AM15      : power  :                   : 3.3V    : 7         :                
+TESTIMEMOUT[4]               : AM16      : output : 3.3-V LVTTL       :         : 7         : N              
+TESTCACHEDATA[100]           : AM17      : output : 3.3-V LVTTL       :         : 8         : N              
+VCCIO8                       : AM18      : power  :                   : 3.3V    : 8         :                
+TESTCACHEDATA[115]           : AM19      : output : 3.3-V LVTTL       :         : 12        : N              
+GND                          : AM20      : gnd    :                   :         :           :                
+TESTCACHEDATA[65]            : AM21      : output : 3.3-V LVTTL       :         : 8         : N              
+TESTWALUO[2]                 : AM22      : output : 3.3-V LVTTL       :         : 8         : N              
+TESTIMEMOUT[43]              : AM23      : output : 3.3-V LVTTL       :         : 8         : N              
+TESTCACHEDATA[66]            : AM24      : output : 3.3-V LVTTL       :         : 8         : N              
+TESTCACHEDATA[69]            : AM25      : output : 3.3-V LVTTL       :         : 8         : N              
+TESTCACHEDATA[85]            : AM26      : output : 3.3-V LVTTL       :         : 8         : N              
+TESTCACHEDATA[48]            : AM27      : output : 3.3-V LVTTL       :         : 8         : N              
+TESTCACHEDATA[20]            : AM28      : output : 3.3-V LVTTL       :         : 8         : N              
+TESTCACHEDATA[124]           : AM29      : output : 3.3-V LVTTL       :         : 8         : N              
+VCCIO8                       : AM30      : power  :                   : 3.3V    : 8         :                
+GND                          : AM31      : gnd    :                   :         :           :                
 GND                          : B1        : gnd    :                   :         :           :                
-MSEL1                        : B2        :        :                   :         : 4         :                
-TESTCACHEDATA[106]           : B3        : output : 3.3-V LVTTL       :         : 4         : N              
+MSEL0                        : B2        :        :                   :         : 4         :                
+TEMPDIODEn                   : B3        :        :                   :         :           :                
 GND*                         : B4        :        :                   :         : 4         :                
-TESTCACHEDATA[34]            : B5        : output : 3.3-V LVTTL       :         : 4         : N              
+GND*                         : B5        :        :                   :         : 4         :                
 GND*                         : B6        :        :                   :         : 4         :                
 GND*                         : B7        :        :                   :         : 4         :                
-TESTCACHEDATA[63]            : B8        : output : 3.3-V LVTTL       :         : 4         : N              
-TESTSELADDR[0]               : B9        : output : 3.3-V LVTTL       :         : 4         : N              
-TESTCACHEDATA[1]             : B10       : output : 3.3-V LVTTL       :         : 4         : N              
-TESTENTRYSEL[2]              : B11       : output : 3.3-V LVTTL       :         : 4         : N              
-TESTCACHEDATA[24]            : B12       : output : 3.3-V LVTTL       :         : 9         : N              
-TESTMALUO[27]                : B13       : output : 3.3-V LVTTL       :         : 4         : N              
-TESTCACHEDATA[31]            : B14       : output : 3.3-V LVTTL       :         : 4         : N              
-TESTMALUO[21]                : B15       : output : 3.3-V LVTTL       :         : 3         : N              
-TESTWALUO[19]                : B16       : output : 3.3-V LVTTL       :         : 3         : N              
-TESTMALUO[23]                : B17       : output : 3.3-V LVTTL       :         : 3         : N              
-TESTFORWARDA[1]              : B18       : output : 3.3-V LVTTL       :         : 3         : N              
-TESTWALUO[9]                 : B19       : output : 3.3-V LVTTL       :         : 3         : N              
-TESTWALUO[2]                 : B20       : output : 3.3-V LVTTL       :         : 3         : N              
-TESTWMO[0]                   : B21       : output : 3.3-V LVTTL       :         : 3         : N              
-TESTPC[10]                   : B22       : output : 3.3-V LVTTL       :         : 3         : N              
-TESTSELADDR[13]              : B23       : output : 3.3-V LVTTL       :         : 3         : N              
-TESTPC[5]                    : B24       : output : 3.3-V LVTTL       :         : 3         : N              
-CONF_DONE                    : B25       :        :                   :         : 3         :                
-GND                          : B26       : gnd    :                   :         :           :                
-GND*                         : C1        :        :                   :         : 5         :                
-TESTCACHEDATA[50]            : C2        : output : 3.3-V LVTTL       :         : 5         : N              
-RIADDR[14]                   : C3        : output : 3.3-V LVTTL       :         : 4         : N              
-RIADDR[19]                   : C4        : output : 3.3-V LVTTL       :         : 4         : N              
+GND*                         : B8        :        :                   :         : 4         :                
+RIADDR[14]                   : B9        : output : 3.3-V LVTTL       :         : 4         : N              
+TESTSELADDR[1]               : B10       : output : 3.3-V LVTTL       :         : 4         : N              
+TESTPC[18]                   : B11       : output : 3.3-V LVTTL       :         : 4         : N              
+TESTINSTIF[30]               : B12       : output : 3.3-V LVTTL       :         : 4         : N              
+TESTCACHEDATA[102]           : B13       : output : 3.3-V LVTTL       :         : 4         : N              
+TESTCACHEDATA[106]           : B14       : output : 3.3-V LVTTL       :         : 4         : N              
+TESTCACHEDATA[29]            : B15       : output : 3.3-V LVTTL       :         : 9         : N              
+TESTCACHEDATA[22]            : B16       : output : 3.3-V LVTTL       :         : 4         : N              
+TESTEALUO[5]                 : B17       : output : 3.3-V LVTTL       :         : 3         : N              
+TESTINSTIF[8]                : B18       : output : 3.3-V LVTTL       :         : 11        : N              
+TESTCACHEDATA[10]            : B19       : output : 3.3-V LVTTL       :         : 11        : N              
+TESTWMO[11]                  : B20       : output : 3.3-V LVTTL       :         : 3         : N              
+TESTEALUO[4]                 : B21       : output : 3.3-V LVTTL       :         : 3         : N              
+TESTINSTIF[1]                : B22       : output : 3.3-V LVTTL       :         : 3         : N              
+TESTEALUO[10]                : B23       : output : 3.3-V LVTTL       :         : 3         : N              
+TESTEALUO[28]                : B24       : output : 3.3-V LVTTL       :         : 3         : N              
+TESTEALUO[11]                : B25       : output : 3.3-V LVTTL       :         : 3         : N              
+TESTWMO[13]                  : B26       : output : 3.3-V LVTTL       :         : 3         : N              
+TESTWMO[0]                   : B27       : output : 3.3-V LVTTL       :         : 3         : N              
+TESTEALUO[14]                : B28       : output : 3.3-V LVTTL       :         : 3         : N              
+TESTPC[16]                   : B29       : output : 3.3-V LVTTL       :         : 3         : N              
+nSTATUS                      : B30       :        :                   :         : 3         :                
+DCLK                         : B31       :        :                   :         : 3         :                
+GND                          : B32       : gnd    :                   :         :           :                
+VCCIO5                       : C1        : power  :                   : 3.3V    : 5         :                
+VREFB4                       : C2        : power  :                   :         : 4         :                
+TDO                          : C3        : output :                   :         : 4         :                
+GND*                         : C4        :        :                   :         : 4         :                
 GND*                         : C5        :        :                   :         : 4         :                
-TESTCACHEDATA[79]            : C6        : output : 3.3-V LVTTL       :         : 4         : N              
-GND*                         : C7        :        :                   :         : 4         :                
+GND*                         : C6        :        :                   :         : 4         :                
+TESTIMEMOUT[87]              : C7        : output : 3.3-V LVTTL       :         : 4         : N              
 GND*                         : C8        :        :                   :         : 4         :                
 GND*                         : C9        :        :                   :         : 4         :                
-TESTCACHEDATA[17]            : C10       : output : 3.3-V LVTTL       :         : 4         : N              
-TESTCACHEDATA[4]             : C11       : output : 3.3-V LVTTL       :         : 4         : N              
-TESTPC[2]                    : C12       : output : 3.3-V LVTTL       :         : 9         : N              
-TESTMALUO[13]                : C13       : output : 3.3-V LVTTL       :         : 4         : N              
-TESTCACHEDATA[12]            : C14       : output : 3.3-V LVTTL       :         : 4         : N              
-TESTWMO[15]                  : C15       : output : 3.3-V LVTTL       :         : 3         : N              
-TESTWMO[19]                  : C16       : output : 3.3-V LVTTL       :         : 3         : N              
-TESTEALUO[0]                 : C17       : output : 3.3-V LVTTL       :         : 3         : N              
-TESTEALUO[3]                 : C18       : output : 3.3-V LVTTL       :         : 3         : N              
-TESTMALUO[0]                 : C19       : output : 3.3-V LVTTL       :         : 3         : N              
-TESTWMO[1]                   : C20       : output : 3.3-V LVTTL       :         : 3         : N              
-TESTWALUO[5]                 : C21       : output : 3.3-V LVTTL       :         : 3         : N              
-TESTPC[13]                   : C22       : output : 3.3-V LVTTL       :         : 3         : N              
-TESTSELADDR[5]               : C23       : output : 3.3-V LVTTL       :         : 3         : N              
-DCLK                         : C24       :        :                   :         : 3         :                
-GND*                         : C25       :        :                   :         : 2         :                
-TESTCACHEDATA[95]            : C26       : output : 3.3-V LVTTL       :         : 2         : N              
-VCCIO5                       : D1        : power  :                   : 3.3V    : 5         :                
-TESTCACHEDATA[80]            : D2        : output : 3.3-V LVTTL       :         : 5         : N              
-GND*                         : D3        :        :                   :         : 5         :                
-GND*                         : D4        :        :                   :         : 4         :                
-VREFB4                       : D5        : power  :                   :         : 4         :                
-TESTCACHEDATA[38]            : D6        : output : 3.3-V LVTTL       :         : 4         : N              
-RIADDR[28]                   : D7        : output : 3.3-V LVTTL       :         : 4         : N              
-GND*                         : D8        :        :                   :         : 4         :                
-TESTPC[0]                    : D9        : output : 3.3-V LVTTL       :         : 4         : N              
-TESTCACHEDATA[10]            : D10       : output : 3.3-V LVTTL       :         : 4         : N              
-VREFB4                       : D11       : power  :                   :         : 4         :                
-TESTCACHEDATA[9]             : D12       : output : 3.3-V LVTTL       :         : 9         : N              
-TESTCACHEDATA[27]            : D13       : output : 3.3-V LVTTL       :         : 9         : N              
-TESTEALUO[22]                : D14       : output : 3.3-V LVTTL       :         : 3         : N              
-TESTWMO[22]                  : D15       : output : 3.3-V LVTTL       :         : 3         : N              
-VREFB3                       : D16       : power  :                   :         : 3         :                
-TESTWALUO[22]                : D17       : output : 3.3-V LVTTL       :         : 3         : N              
-TESTWMO[6]                   : D18       : output : 3.3-V LVTTL       :         : 3         : N              
-GND*                         : D19       :        :                   :         : 3         :                
-GND*                         : D20       :        :                   :         : 3         :                
-TESTCACHEDATA[33]            : D21       : output : 3.3-V LVTTL       :         : 3         : N              
-VREFB3                       : D22       : power  :                   :         : 3         :                
-RIADDR[18]                   : D23       : output : 3.3-V LVTTL       :         : 3         : N              
-GND*                         : D24       :        :                   :         : 2         :                
-TESTCACHEDATA[51]            : D25       : output : 3.3-V LVTTL       :         : 2         : N              
-VCCIO2                       : D26       : power  :                   : 3.3V    : 2         :                
+GND*                         : C10       :        :                   :         : 4         :                
+GND*                         : C11       :        :                   :         : 4         :                
+TESTCACHEDATA[6]             : C12       : output : 3.3-V LVTTL       :         : 4         : N              
+TESTCACHEDATA[1]             : C13       : output : 3.3-V LVTTL       :         : 4         : N              
+VREFB4                       : C14       : power  :                   :         : 4         :                
+TESTCACHEDATA[13]            : C15       : output : 3.3-V LVTTL       :         : 9         : N              
+TESTCACHEDATA[11]            : C16       : output : 3.3-V LVTTL       :         : 9         : N              
+TESTINSTIF[11]               : C17       : output : 3.3-V LVTTL       :         : 3         : N              
+TESTWMO[12]                  : C18       : output : 3.3-V LVTTL       :         : 11        : N              
+VREFB3                       : C19       : power  :                   :         : 3         :                
+TESTWMO[23]                  : C20       : output : 3.3-V LVTTL       :         : 3         : N              
+TESTWMO[20]                  : C21       : output : 3.3-V LVTTL       :         : 3         : N              
+TESTEQU                      : C22       : output : 3.3-V LVTTL       :         : 3         : N              
+TESTPC[30]                   : C23       : output : 3.3-V LVTTL       :         : 3         : N              
+TESTWALUO[15]                : C24       : output : 3.3-V LVTTL       :         : 3         : N              
+TESTMALUO[29]                : C25       : output : 3.3-V LVTTL       :         : 3         : N              
+TESTPC[1]                    : C26       : output : 3.3-V LVTTL       :         : 3         : N              
+TESTMALUO[21]                : C27       : output : 3.3-V LVTTL       :         : 3         : N              
+TESTEALUO[16]                : C28       : output : 3.3-V LVTTL       :         : 3         : N              
+TESTPC[17]                   : C29       : output : 3.3-V LVTTL       :         : 3         : N              
+nCE                          : C30       :        :                   :         : 3         :                
+VREFB3                       : C31       : power  :                   :         : 3         :                
+VCCIO2                       : C32       : power  :                   : 3.3V    : 2         :                
+GND*                         : D1        :        :                   :         : 5         :                
+GND*                         : D2        :        :                   :         : 5         :                
+GND+                         : D3        :        :                   :         : 5         :                
+GND+                         : D4        :        :                   :         : 5         :                
+GND*                         : D5        :        :                   :         : 4         :                
+GND*                         : D6        :        :                   :         : 4         :                
+GND*                         : D7        :        :                   :         : 4         :                
+TESTTAG2[19]                 : D8        : output : 3.3-V LVTTL       :         : 4         : N              
+VREFB4                       : D9        : power  :                   :         : 4         :                
+RIADDR[0]                    : D10       : output : 3.3-V LVTTL       :         : 4         : N              
+TESTTAG1[21]                 : D11       : output : 3.3-V LVTTL       :         : 4         : N              
+TESTIMEMOUT[29]              : D12       : output : 3.3-V LVTTL       :         : 4         : N              
+TESTCACHEDATA[44]            : D13       : output : 3.3-V LVTTL       :         : 4         : N              
+TESTCACHEDATA[82]            : D14       : output : 3.3-V LVTTL       :         : 4         : N              
+TESTCACHEDATA[27]            : D15       : output : 3.3-V LVTTL       :         : 9         : N              
+TESTCACHEDATA[23]            : D16       : output : 3.3-V LVTTL       :         : 9         : N              
+TESTWMO[3]                   : D17       : output : 3.3-V LVTTL       :         : 3         : N              
+TESTINSTIF[7]                : D18       : output : 3.3-V LVTTL       :         : 11        : N              
+TESTPC[4]                    : D19       : output : 3.3-V LVTTL       :         : 3         : N              
+TESTEALUO[12]                : D20       : output : 3.3-V LVTTL       :         : 3         : N              
+TESTEALUO[24]                : D21       : output : 3.3-V LVTTL       :         : 3         : N              
+TESTEALUO[30]                : D22       : output : 3.3-V LVTTL       :         : 3         : N              
+TESTWALUO[19]                : D23       : output : 3.3-V LVTTL       :         : 3         : N              
+VREFB3                       : D24       : power  :                   :         : 3         :                
+TESTMALUO[30]                : D25       : output : 3.3-V LVTTL       :         : 3         : N              
+TESTEALUO[19]                : D26       : output : 3.3-V LVTTL       :         : 3         : N              
+TESTWMO[30]                  : D27       : output : 3.3-V LVTTL       :         : 3         : N              
+TESTMALUO[14]                : D28       : output : 3.3-V LVTTL       :         : 3         : N              
+GND+                         : D29       :        :                   :         : 2         :                
+GND+                         : D30       :        :                   :         : 2         :                
+GND*                         : D31       :        :                   :         : 2         :                
+GND*                         : D32       :        :                   :         : 2         :                
 GND*                         : E1        :        :                   :         : 5         :                
-TESTCACHEDATA[48]            : E2        : output : 3.3-V LVTTL       :         : 5         : N              
+GND*                         : E2        :        :                   :         : 5         :                
 GND*                         : E3        :        :                   :         : 5         :                
-TESTCACHEDATA[111]           : E4        : output : 3.3-V LVTTL       :         : 5         : N              
-TEMPDIODEp                   : E5        :        :                   :         :           :                
-MSEL2                        : E6        :        :                   :         : 4         :                
-TESTCACHEDATA[52]            : E7        : output : 3.3-V LVTTL       :         : 4         : N              
-TESTCACHEDATA[88]            : E8        : output : 3.3-V LVTTL       :         : 4         : N              
-GND*                         : E9        :        :                   :         : 4         :                
-GND*                         : E10       :        :                   :         : 4         :                
-TESTCACHEDATA[69]            : E11       : output : 3.3-V LVTTL       :         : 4         : N              
-TESTCACHEDATA[28]            : E12       : output : 3.3-V LVTTL       :         : 4         : N              
-TESTSELADDR[2]               : E13       : output : 3.3-V LVTTL       :         : 9         : N              
-TESTMALUO[10]                : E14       : output : 3.3-V LVTTL       :         : 3         : N              
-TESTINSTIF[31]               : E15       : output : 3.3-V LVTTL       :         : 3         : N              
-~DATA0~ / RESERVED_INPUT     : E16       : input  : 3.3-V LVTTL       :         : 3         : N              
-TESTEALUO[19]                : E17       : output : 3.3-V LVTTL       :         : 3         : N              
-TESTMALUO[14]                : E18       : output : 3.3-V LVTTL       :         : 3         : N              
-TESTCACHEDATA[86]            : E19       : output : 3.3-V LVTTL       :         : 3         : N              
-TESTCACHEDATA[93]            : E20       : output : 3.3-V LVTTL       :         : 3         : N              
-nSTATUS                      : E21       :        :                   :         : 3         :                
-nCE                          : E22       :        :                   :         : 3         :                
-TESTCACHEDATA[100]           : E23       : output : 3.3-V LVTTL       :         : 2         : N              
-TESTCACHEDATA[36]            : E24       : output : 3.3-V LVTTL       :         : 2         : N              
-GND*                         : E25       :        :                   :         : 2         :                
-TESTWALUO[8]                 : E26       : output : 3.3-V LVTTL       :         : 2         : N              
+GND*                         : E4        :        :                   :         : 5         :                
+GND*                         : E5        :        :                   :         : 4         :                
+GND*                         : E6        :        :                   :         : 4         :                
+GND*                         : E7        :        :                   :         : 4         :                
+TESTTAG1[6]                  : E8        : output : 3.3-V LVTTL       :         : 4         : N              
+TESTTAG1[27]                 : E9        : output : 3.3-V LVTTL       :         : 4         : N              
+GND                          : E10       : gnd    :                   :         :           :                
+TESTPC[26]                   : E11       : output : 3.3-V LVTTL       :         : 4         : N              
+VCCIO4                       : E12       : power  :                   : 3.3V    : 4         :                
+TESTCACHEDATA[0]             : E13       : output : 3.3-V LVTTL       :         : 4         : N              
+TESTCACHEDATA[57]            : E14       : output : 3.3-V LVTTL       :         : 4         : N              
+TESTCACHEDATA[97]            : E15       : output : 3.3-V LVTTL       :         : 9         : N              
+TESTCACHEDATA[31]            : E16       : output : 3.3-V LVTTL       :         : 4         : N              
+TESTMALUO[12]                : E17       : output : 3.3-V LVTTL       :         : 3         : N              
+TESTWALUO[14]                : E18       : output : 3.3-V LVTTL       :         : 11        : N              
+TESTEALUO[3]                 : E19       : output : 3.3-V LVTTL       :         : 3         : N              
+TESTINSTIF[28]               : E20       : output : 3.3-V LVTTL       :         : 3         : N              
+VCCIO3                       : E21       : power  :                   : 3.3V    : 3         :                
+TESTEALUO[23]                : E22       : output : 3.3-V LVTTL       :         : 3         : N              
+GND                          : E23       : gnd    :                   :         :           :                
+TESTEALUO[18]                : E24       : output : 3.3-V LVTTL       :         : 3         : N              
+TESTWMO[26]                  : E25       : output : 3.3-V LVTTL       :         : 3         : N              
+TESTPC[0]                    : E26       : output : 3.3-V LVTTL       :         : 3         : N              
+TESTMALUO[18]                : E27       : output : 3.3-V LVTTL       :         : 3         : N              
+TESTWMO[22]                  : E28       : output : 3.3-V LVTTL       :         : 3         : N              
+TESTPC[19]                   : E29       : output : 3.3-V LVTTL       :         : 2         : N              
+TESTWMO[9]                   : E30       : output : 3.3-V LVTTL       :         : 2         : N              
+TESTEALUO[26]                : E31       : output : 3.3-V LVTTL       :         : 2         : N              
+TESTEALUO[9]                 : E32       : output : 3.3-V LVTTL       :         : 2         : N              
 GND*                         : F1        :        :                   :         : 5         :                
-GND*                         : F2        :        :                   :         : 5         :                
-TESTCACHEDATA[37]            : F3        : output : 3.3-V LVTTL       :         : 5         : N              
-RIADDR[3]                    : F4        : output : 3.3-V LVTTL       :         : 5         : N              
-TEMPDIODEn                   : F5        :        :                   :         :           :                
-TDO                          : F6        : output :                   :         : 4         :                
-MSEL3                        : F7        :        :                   :         : 4         :                
-GND*                         : F8        :        :                   :         : 4         :                
-TESTCACHEDATA[40]            : F9        : output : 3.3-V LVTTL       :         : 4         : N              
-GND*                         : F10       :        :                   :         : 4         :                
-TESTSELADDR[21]              : F11       : output : 3.3-V LVTTL       :         : 4         : N              
-TESTCACHEDATA[21]            : F12       : output : 3.3-V LVTTL       :         : 4         : N              
-TESTCACHEDATA[22]            : F13       : output : 3.3-V LVTTL       :         : 4         : N              
-TESTMALUO[7]                 : F14       : output : 3.3-V LVTTL       :         : 3         : N              
-TESTMALUO[6]                 : F15       : output : 3.3-V LVTTL       :         : 3         : N              
-TESTEALUO[21]                : F16       : output : 3.3-V LVTTL       :         : 3         : N              
-TESTEALUO[2]                 : F17       : output : 3.3-V LVTTL       :         : 3         : N              
-TESTMWRITEMEM                : F18       : output : 3.3-V LVTTL       :         : 3         : N              
-RIADDR[27]                   : F19       : output : 3.3-V LVTTL       :         : 3         : N              
-TESTCACHEDATA[74]            : F20       : output : 3.3-V LVTTL       :         : 3         : N              
-TESTCACHEDATA[120]           : F21       : output : 3.3-V LVTTL       :         : 2         : N              
-GND*                         : F22       :        :                   :         : 2         :                
-TESTPC[4]                    : F23       : output : 3.3-V LVTTL       :         : 2         : N              
-TESTSELADDR[4]               : F24       : output : 3.3-V LVTTL       :         : 2         : N              
-TESTEALUO[13]                : F25       : output : 3.3-V LVTTL       :         : 2         : N              
-TESTWMO[14]                  : F26       : output : 3.3-V LVTTL       :         : 2         : N              
-TESTCACHEDATA[75]            : G1        : output : 3.3-V LVTTL       :         : 5         : N              
-GND*                         : G2        :        :                   :         : 5         :                
-TESTCACHEDATA[96]            : G3        : output : 3.3-V LVTTL       :         : 5         : N              
-TESTCACHEDATA[91]            : G4        : output : 3.3-V LVTTL       :         : 5         : N              
-VREFB5                       : G5        : power  :                   :         : 5         :                
-TESTCACHEDATA[82]            : G6        : output : 3.3-V LVTTL       :         : 5         : N              
-GND*                         : G7        :        :                   :         : 5         :                
-MSEL0                        : G8        :        :                   :         : 4         :                
-GND*                         : G9        :        :                   :         : 4         :                
-TESTCACHEDATA[85]            : G10       : output : 3.3-V LVTTL       :         : 4         : N              
-TESTPC[12]                   : G11       : output : 3.3-V LVTTL       :         : 4         : N              
-VCCA_PLL5                    : G12       : power  :                   : 1.2V    :           :                
-GND                          : G13       : gnd    :                   :         :           :                
-TESTEALUO[20]                : G14       : output : 3.3-V LVTTL       :         : 3         : N              
-TESTMALUO[8]                 : G15       : output : 3.3-V LVTTL       :         : 3         : N              
-TESTWMO[17]                  : G16       : output : 3.3-V LVTTL       :         : 3         : N              
-TESTEALUO[18]                : G17       : output : 3.3-V LVTTL       :         : 3         : N              
-TESTCACHEDATA[126]           : G18       : output : 3.3-V LVTTL       :         : 3         : N              
-GND*                         : G19       :        :                   :         : 3         :                
-GND*                         : G20       :        :                   :         : 2         :                
-TESTCACHEDATA[108]           : G21       : output : 3.3-V LVTTL       :         : 2         : N              
-VREFB2                       : G22       : power  :                   :         : 2         :                
-TESTWMO[7]                   : G23       : output : 3.3-V LVTTL       :         : 2         : N              
-TESTWALUO[1]                 : G24       : output : 3.3-V LVTTL       :         : 2         : N              
-TESTMALUO[9]                 : G25       : output : 3.3-V LVTTL       :         : 2         : N              
-TESTWALUO[6]                 : G26       : output : 3.3-V LVTTL       :         : 2         : N              
-TESTCACHEDATA[76]            : H1        : output : 3.3-V LVTTL       :         : 5         : N              
-TESTCACHEDATA[15]            : H2        : output : 3.3-V LVTTL       :         : 5         : N              
-RIADDR[23]                   : H3        : output : 3.3-V LVTTL       :         : 5         : N              
-TESTCACHEDATA[124]           : H4        : output : 3.3-V LVTTL       :         : 5         : N              
-GND*                         : H5        :        :                   :         : 5         :                
-TESTCACHEDATA[54]            : H6        : output : 3.3-V LVTTL       :         : 5         : N              
-TESTCACHEDATA[64]            : H7        : output : 3.3-V LVTTL       :         : 5         : N              
-TESTCACHEDATA[90]            : H8        : output : 3.3-V LVTTL       :         : 5         : N              
-TESTCACHEDATA[92]            : H9        : output : 3.3-V LVTTL       :         : 4         : N              
-GND*                         : H10       :        :                   :         : 4         :                
-TESTSELADDR[12]              : H11       : output : 3.3-V LVTTL       :         : 4         : N              
-VCC_PLL5_OUT                 : H12       : power  :                   : 3.3V    : 9         :                
-GNDA_PLL5                    : H13       : gnd    :                   :         :           :                
-VCCD_PLL5                    : H14       : power  :                   : 1.2V    :           :                
-TESTMALUO[5]                 : H15       : output : 3.3-V LVTTL       :         : 3         : N              
-TESTWALUO[0]                 : H16       : output : 3.3-V LVTTL       :         : 3         : N              
-RIADDR[10]                   : H17       : output : 3.3-V LVTTL       :         : 3         : N              
-RIADDR[12]                   : H18       : output : 3.3-V LVTTL       :         : 3         : N              
-GND*                         : H19       :        :                   :         : 2         :                
-TESTCACHEDATA[70]            : H20       : output : 3.3-V LVTTL       :         : 2         : N              
-TESTWMO[29]                  : H21       : output : 3.3-V LVTTL       :         : 2         : N              
-TESTEALUO[6]                 : H22       : output : 3.3-V LVTTL       :         : 2         : N              
-TESTEALUO[11]                : H23       : output : 3.3-V LVTTL       :         : 2         : N              
-TESTWMO[23]                  : H24       : output : 3.3-V LVTTL       :         : 2         : N              
-TESTINSTIF[24]               : H25       : output : 3.3-V LVTTL       :         : 2         : N              
-TESTINSTIF[18]               : H26       : output : 3.3-V LVTTL       :         : 2         : N              
-GND*                         : J1        :        :                   :         : 5         :                
-TESTCACHEDATA[29]            : J2        : output : 3.3-V LVTTL       :         : 5         : N              
-TESTCACHEDATA[59]            : J3        : output : 3.3-V LVTTL       :         : 5         : N              
-GND*                         : J4        :        :                   :         : 5         :                
-GND*                         : J5        :        :                   :         : 5         :                
-RIADDR[22]                   : J6        : output : 3.3-V LVTTL       :         : 5         : N              
+TESTCACHEDATA[94]            : F2        : output : 3.3-V LVTTL       :         : 5         : N              
+GND*                         : F3        :        :                   :         : 5         :                
+GND*                         : F4        :        :                   :         : 5         :                
+VREFB5                       : F5        : power  :                   :         : 5         :                
+MSEL1                        : F6        :        :                   :         : 4         :                
+GND                          : F7        : gnd    :                   :         :           :                
+TESTTAG1[26]                 : F8        : output : 3.3-V LVTTL       :         : 4         : N              
+TESTTAG1[10]                 : F9        : output : 3.3-V LVTTL       :         : 4         : N              
+TESTTAG1[3]                  : F10       : output : 3.3-V LVTTL       :         : 4         : N              
+GND*                         : F11       :        :                   :         : 4         :                
+TESTTAG2[18]                 : F12       : output : 3.3-V LVTTL       :         : 4         : N              
+TESTCACHEDATA[30]            : F13       : output : 3.3-V LVTTL       :         : 4         : N              
+TESTCACHEDATA[4]             : F14       : output : 3.3-V LVTTL       :         : 4         : N              
+TESTCACHEDATA[78]            : F15       : output : 3.3-V LVTTL       :         : 4         : N              
+TESTCACHEDATA[19]            : F16       : output : 3.3-V LVTTL       :         : 4         : N              
+TESTPC[28]                   : F17       : output : 3.3-V LVTTL       :         : 3         : N              
+TESTWMO[8]                   : F18       : output : 3.3-V LVTTL       :         : 3         : N              
+TESTPC[11]                   : F19       : output : 3.3-V LVTTL       :         : 3         : N              
+TESTPC[14]                   : F20       : output : 3.3-V LVTTL       :         : 3         : N              
+NC                           : F21       :        :                   :         :           :                
+TESTMALUO[1]                 : F22       : output : 3.3-V LVTTL       :         : 3         : N              
+TESTEALUO[8]                 : F23       : output : 3.3-V LVTTL       :         : 3         : N              
+GND*                         : F24       :        :                   :         : 3         :                
+NC                           : F25       :        :                   :         :           :                
+GNDA_PLL7                    : F26       : gnd    :                   :         :           :                
+GND                          : F27       : gnd    :                   :         :           :                
+VREFB2                       : F28       : power  :                   :         : 2         :                
+TESTPC[31]                   : F29       : output : 3.3-V LVTTL       :         : 2         : N              
+TESTMALUO[13]                : F30       : output : 3.3-V LVTTL       :         : 2         : N              
+TESTWALUO[20]                : F31       : output : 3.3-V LVTTL       :         : 2         : N              
+TESTPC[10]                   : F32       : output : 3.3-V LVTTL       :         : 2         : N              
+TESTTAG1[17]                 : G1        : output : 3.3-V LVTTL       :         : 5         : N              
+TESTTAG1[22]                 : G2        : output : 3.3-V LVTTL       :         : 5         : N              
+TESTTAG2[1]                  : G3        : output : 3.3-V LVTTL       :         : 5         : N              
+TESTTAG2[24]                 : G4        : output : 3.3-V LVTTL       :         : 5         : N              
+NC                           : G5        :        :                   :         :           :                
+NC                           : G6        :        :                   :         :           :                
+GNDA_PLL10                   : G7        : gnd    :                   :         :           :                
+GNDA_PLL10                   : G8        : gnd    :                   :         :           :                
+TEMPDIODEp                   : G9        :        :                   :         :           :                
+TESTCACHEDATA[45]            : G10       : output : 3.3-V LVTTL       :         : 4         : N              
+GND*                         : G11       :        :                   :         : 4         :                
+TESTTAG2[8]                  : G12       : output : 3.3-V LVTTL       :         : 4         : N              
+TESTCACHEDATA[109]           : G13       : output : 3.3-V LVTTL       :         : 4         : N              
+NC                           : G14       :        :                   :         :           :                
+VCCA_PLL5                    : G15       : power  :                   : 1.2V    :           :                
+GNDA_PLL5                    : G16       : gnd    :                   :         :           :                
+GND                          : G17       : gnd    :                   :         :           :                
+GNDA_PLL11                   : G18       : gnd    :                   :         :           :                
+TESTPC[7]                    : G19       : output : 3.3-V LVTTL       :         : 3         : N              
+TESTPC[12]                   : G20       : output : 3.3-V LVTTL       :         : 3         : N              
+TESTMALUO[25]                : G21       : output : 3.3-V LVTTL       :         : 3         : N              
+GND*                         : G22       :        :                   :         : 3         :                
+GND*                         : G23       :        :                   :         : 3         :                
+GND*                         : G24       :        :                   :         : 3         :                
+GND*                         : G25       :        :                   :         : 3         :                
+GNDA_PLL7                    : G26       : gnd    :                   :         :           :                
+NC                           : G27       :        :                   :         :           :                
+NC                           : G28       :        :                   :         :           :                
+TESTINSTIF[31]               : G29       : output : 3.3-V LVTTL       :         : 2         : N              
+TESTWALUO[23]                : G30       : output : 3.3-V LVTTL       :         : 2         : N              
+TESTPC[22]                   : G31       : output : 3.3-V LVTTL       :         : 2         : N              
+TESTPC[27]                   : G32       : output : 3.3-V LVTTL       :         : 2         : N              
+RIADDR[21]                   : H1        : output : 3.3-V LVTTL       :         : 5         : N              
+TESTTAG1[16]                 : H2        : output : 3.3-V LVTTL       :         : 5         : N              
+NC                           : H3        :        :                   :         :           :                
+NC                           : H4        :        :                   :         :           :                
+NC                           : H5        :        :                   :         :           :                
+NC                           : H6        :        :                   :         :           :                
+VCCD_PLL10                   : H7        : power  :                   : 1.2V    :           :                
+VCCA_PLL10                   : H8        : power  :                   : 1.2V    :           :                
+NC                           : H9        :        :                   :         :           :                
+MSEL3                        : H10       :        :                   :         : 4         :                
+GND*                         : H11       :        :                   :         : 4         :                
+GND*                         : H12       :        :                   :         : 4         :                
+GND*                         : H13       :        :                   :         : 4         :                
+TESTREPLACE1                 : H14       : output : 3.3-V LVTTL       :         : 4         : N              
+VCCD_PLL5                    : H15       : power  :                   : 1.2V    :           :                
+GNDA_PLL5                    : H16       : gnd    :                   :         :           :                
+VCCA_PLL11                   : H17       : power  :                   : 1.2V    :           :                
+GNDA_PLL11                   : H18       : gnd    :                   :         :           :                
+~DATA0~ / RESERVED_INPUT     : H19       : input  : 3.3-V LVTTL       :         : 3         : N              
+TESTEALUO[17]                : H20       : output : 3.3-V LVTTL       :         : 3         : N              
+TESTMALUO[28]                : H21       : output : 3.3-V LVTTL       :         : 3         : N              
+GND*                         : H22       :        :                   :         : 3         :                
+GND*                         : H23       :        :                   :         : 3         :                
+GND*                         : H24       :        :                   :         : 3         :                
+VCCD_PLL7                    : H25       : power  :                   : 1.2V    :           :                
+VCCA_PLL7                    : H26       : power  :                   : 1.2V    :           :                
+GND*                         : H27       :        :                   :         : 2         :                
+GND*                         : H28       :        :                   :         : 2         :                
+TESTZERO                     : H29       : output : 3.3-V LVTTL       :         : 2         : N              
+TESTMALUO[15]                : H30       : output : 3.3-V LVTTL       :         : 2         : N              
+TESTWALUO[1]                 : H31       : output : 3.3-V LVTTL       :         : 2         : N              
+TESTPC[24]                   : H32       : output : 3.3-V LVTTL       :         : 2         : N              
+TESTTAG1[18]                 : J1        : output : 3.3-V LVTTL       :         : 5         : N              
+TESTTAG1[13]                 : J2        : output : 3.3-V LVTTL       :         : 5         : N              
+TESTTAG2[13]                 : J3        : output : 3.3-V LVTTL       :         : 5         : N              
+RIADDR[26]                   : J4        : output : 3.3-V LVTTL       :         : 5         : N              
+VREFB5                       : J5        : power  :                   :         : 5         :                
+GND*                         : J6        :        :                   :         : 5         :                
 GND*                         : J7        :        :                   :         : 5         :                
-TESTCACHEDATA[62]            : J8        : output : 3.3-V LVTTL       :         : 5         : N              
-GND*                         : J9        :        :                   :         : 4         :                
-TESTCACHEDATA[121]           : J10       : output : 3.3-V LVTTL       :         : 4         : N              
-TESTPC[21]                   : J11       : output : 3.3-V LVTTL       :         : 4         : N              
-VCCPD4                       : J12       : power  :                   : 3.3V    : 4         :                
-GNDA_PLL5                    : J13       : gnd    :                   :         :           :                
-TESTEALUO[31]                : J14       : output : 3.3-V LVTTL       :         : 3         : N              
-TESTMALUO[11]                : J15       : output : 3.3-V LVTTL       :         : 3         : N              
-VCCPD3                       : J16       : power  :                   : 3.3V    : 3         :                
-TESTWMO[26]                  : J17       : output : 3.3-V LVTTL       :         : 3         : N              
-GND*                         : J18       :        :                   :         : 3         :                
-TESTWALUO[28]                : J19       : output : 3.3-V LVTTL       :         : 2         : N              
-TESTWALUO[13]                : J20       : output : 3.3-V LVTTL       :         : 2         : N              
-TESTWALUO[23]                : J21       : output : 3.3-V LVTTL       :         : 2         : N              
-TESTEALUO[5]                 : J22       : output : 3.3-V LVTTL       :         : 2         : N              
-TESTWALUO[18]                : J23       : output : 3.3-V LVTTL       :         : 2         : N              
-TESTEALUO[1]                 : J24       : output : 3.3-V LVTTL       :         : 2         : N              
-TESTFORWARDB[0]              : J25       : output : 3.3-V LVTTL       :         : 2         : N              
-TESTINSTIF[21]               : J26       : output : 3.3-V LVTTL       :         : 2         : N              
-TESTCACHEDATA[25]            : K1        : output : 3.3-V LVTTL       :         : 5         : N              
-TESTCACHEDATA[16]            : K2        : output : 3.3-V LVTTL       :         : 5         : N              
-TESTCACHEDATA[0]             : K3        : output : 3.3-V LVTTL       :         : 5         : N              
-TESTCACHEDATA[45]            : K4        : output : 3.3-V LVTTL       :         : 5         : N              
-VREFB5                       : K5        : power  :                   :         : 5         :                
+GND*                         : J8        :        :                   :         : 5         :                
+GND*                         : J9        :        :                   :         : 5         :                
+MSEL2                        : J10       :        :                   :         : 4         :                
+GND*                         : J11       :        :                   :         : 4         :                
+GND*                         : J12       :        :                   :         : 4         :                
+GND*                         : J13       :        :                   :         : 4         :                
+TESTTAG2[4]                  : J14       : output : 3.3-V LVTTL       :         : 4         : N              
+TESTCACHEDATA[46]            : J15       : output : 3.3-V LVTTL       :         : 4         : N              
+VCC_PLL5_OUT                 : J16       : power  :                   : 3.3V    : 9         :                
+VCC_PLL11_OUT                : J17       : power  :                   : 3.3V    : 11        :                
+VCCD_PLL11                   : J18       : power  :                   : 1.2V    :           :                
+TESTPC[23]                   : J19       : output : 3.3-V LVTTL       :         : 3         : N              
+TESTWALUO[13]                : J20       : output : 3.3-V LVTTL       :         : 3         : N              
+TESTINSTIF[26]               : J21       : output : 3.3-V LVTTL       :         : 3         : N              
+TESTEALUO[2]                 : J22       : output : 3.3-V LVTTL       :         : 3         : N              
+GND*                         : J23       :        :                   :         : 3         :                
+GND                          : J24       : gnd    :                   :         :           :                
+CONF_DONE                    : J25       :        :                   :         : 3         :                
+TESTCACHEDATA[5]             : J26       : output : 3.3-V LVTTL       :         : 2         : N              
+TESTEALUO[13]                : J27       : output : 3.3-V LVTTL       :         : 2         : N              
+VREFB2                       : J28       : power  :                   :         : 2         :                
+NC                           : J29       :        :                   :         :           :                
+NC                           : J30       :        :                   :         :           :                
+TESTEALUO[27]                : J31       : output : 3.3-V LVTTL       :         : 2         : N              
+TESTEALUO[0]                 : J32       : output : 3.3-V LVTTL       :         : 2         : N              
+TESTTAG1[25]                 : K1        : output : 3.3-V LVTTL       :         : 5         : N              
+TESTTAG1[7]                  : K2        : output : 3.3-V LVTTL       :         : 5         : N              
+TESTTAG2[26]                 : K3        : output : 3.3-V LVTTL       :         : 5         : N              
+RIADDR[30]                   : K4        : output : 3.3-V LVTTL       :         : 5         : N              
+GND                          : K5        : gnd    :                   :         :           :                
 GND*                         : K6        :        :                   :         : 5         :                
-TESTCACHEDATA[58]            : K7        : output : 3.3-V LVTTL       :         : 5         : N              
-RIADDR[16]                   : K8        : output : 3.3-V LVTTL       :         : 5         : N              
-TESTCACHEDATA[98]            : K9        : output : 3.3-V LVTTL       :         : 5         : N              
-RIADDR[24]                   : K10       : output : 3.3-V LVTTL       :         : 4         : N              
+TESTCACHEDATA[119]           : K7        : output : 3.3-V LVTTL       :         : 5         : N              
+GND*                         : K8        :        :                   :         : 5         :                
+GND*                         : K9        :        :                   :         : 5         :                
+VCCINT                       : K10       : power  :                   : 1.2V    :           :                
 GND*                         : K11       :        :                   :         : 4         :                
-GND                          : K12       : gnd    :                   :         :           :                
-VCCIO4                       : K13       : power  :                   : 3.3V    : 4         :                
-GND                          : K14       : gnd    :                   :         :           :                
-VCCIO3                       : K15       : power  :                   : 3.3V    : 3         :                
-TESTWMO[11]                  : K16       : output : 3.3-V LVTTL       :         : 3         : N              
-TESTWALUO[14]                : K17       : output : 3.3-V LVTTL       :         : 3         : N              
-TESTCACHEDATA[119]           : K18       : output : 3.3-V LVTTL       :         : 3         : N              
-TESTMALUO[15]                : K19       : output : 3.3-V LVTTL       :         : 2         : N              
-TESTWALUO[29]                : K20       : output : 3.3-V LVTTL       :         : 2         : N              
-TESTMALUO[1]                 : K21       : output : 3.3-V LVTTL       :         : 2         : N              
-TESTWALUO[27]                : K22       : output : 3.3-V LVTTL       :         : 2         : N              
-TESTEALUO[14]                : K23       : output : 3.3-V LVTTL       :         : 2         : N              
-TESTEALUO[29]                : K24       : output : 3.3-V LVTTL       :         : 2         : N              
-TESTWMO[3]                   : K25       : output : 3.3-V LVTTL       :         : 2         : N              
-TESTWALUO[3]                 : K26       : output : 3.3-V LVTTL       :         : 2         : N              
-VCCIO5                       : L1        : power  :                   : 3.3V    : 5         :                
-TESTCACHEDATA[11]            : L2        : output : 3.3-V LVTTL       :         : 5         : N              
-TESTCACHEDATA[8]             : L3        : output : 3.3-V LVTTL       :         : 5         : N              
-GND*                         : L4        :        :                   :         : 5         :                
-TESTCACHEDATA[112]           : L5        : output : 3.3-V LVTTL       :         : 5         : N              
-TESTCACHEDATA[116]           : L6        : output : 3.3-V LVTTL       :         : 5         : N              
-TESTCACHEDATA[102]           : L7        : output : 3.3-V LVTTL       :         : 5         : N              
-TESTPC[3]                    : L8        : output : 3.3-V LVTTL       :         : 5         : N              
-TESTSELADDR[3]               : L9        : output : 3.3-V LVTTL       :         : 5         : N              
-VCCINT                       : L10       : power  :                   : 1.2V    :           :                
+GND*                         : K12       :        :                   :         : 4         :                
+TESTTAG2[16]                 : K13       : output : 3.3-V LVTTL       :         : 4         : N              
+TESTCACHEDATA[88]            : K14       : output : 3.3-V LVTTL       :         : 4         : N              
+TESTCACHEDATA[16]            : K15       : output : 3.3-V LVTTL       :         : 4         : N              
+TESTCACHEDATA[12]            : K16       : output : 3.3-V LVTTL       :         : 4         : N              
+TESTIMEMOUT[19]              : K17       : output : 3.3-V LVTTL       :         : 4         : N              
+TESTPC[21]                   : K18       : output : 3.3-V LVTTL       :         : 3         : N              
+TESTWALUO[12]                : K19       : output : 3.3-V LVTTL       :         : 3         : N              
+TESTPC[25]                   : K20       : output : 3.3-V LVTTL       :         : 3         : N              
+TESTMALUO[19]                : K21       : output : 3.3-V LVTTL       :         : 3         : N              
+TESTMALUO[23]                : K22       : output : 3.3-V LVTTL       :         : 3         : N              
+VCCINT                       : K23       : power  :                   : 1.2V    :           :                
+GND*                         : K24       :        :                   :         : 2         :                
+GND*                         : K25       :        :                   :         : 2         :                
+TESTWALUO[5]                 : K26       : output : 3.3-V LVTTL       :         : 2         : N              
+TESTPC[3]                    : K27       : output : 3.3-V LVTTL       :         : 2         : N              
+GND                          : K28       : gnd    :                   :         :           :                
+TESTMALUO[16]                : K29       : output : 3.3-V LVTTL       :         : 2         : N              
+TESTWALUO[16]                : K30       : output : 3.3-V LVTTL       :         : 2         : N              
+TESTWMO[15]                  : K31       : output : 3.3-V LVTTL       :         : 2         : N              
+TESTWMO[29]                  : K32       : output : 3.3-V LVTTL       :         : 2         : N              
+TESTIMEMOUT[56]              : L1        : output : 3.3-V LVTTL       :         : 5         : N              
+TESTPC2[7]                   : L2        : input  : 3.3-V LVTTL       :         : 5         : N              
+RIADDR[23]                   : L3        : output : 3.3-V LVTTL       :         : 5         : N              
+TESTTAG2[25]                 : L4        : output : 3.3-V LVTTL       :         : 5         : N              
+TESTTAG2[15]                 : L5        : output : 3.3-V LVTTL       :         : 5         : N              
+TESTTAG2[22]                 : L6        : output : 3.3-V LVTTL       :         : 5         : N              
+GND*                         : L7        :        :                   :         : 5         :                
+GND*                         : L8        :        :                   :         : 5         :                
+GND*                         : L9        :        :                   :         : 5         :                
+GND*                         : L10       :        :                   :         : 5         :                
 GND                          : L11       : gnd    :                   :         :           :                
-VCCINT                       : L12       : power  :                   : 1.2V    :           :                
-GND                          : L13       : gnd    :                   :         :           :                
-VCCINT                       : L14       : power  :                   : 1.2V    :           :                
-GND                          : L15       : gnd    :                   :         :           :                
-VCCINT                       : L16       : power  :                   : 1.2V    :           :                
-GND                          : L17       : gnd    :                   :         :           :                
-TESTINSTIF[14]               : L18       : output : 3.3-V LVTTL       :         : 2         : N              
-TESTEALUO[4]                 : L19       : output : 3.3-V LVTTL       :         : 2         : N              
-TESTWMO[2]                   : L20       : output : 3.3-V LVTTL       :         : 2         : N              
-TESTEALUO[17]                : L21       : output : 3.3-V LVTTL       :         : 2         : N              
-TESTMALUO[29]                : L22       : output : 3.3-V LVTTL       :         : 2         : N              
-TESTWMO[18]                  : L23       : output : 3.3-V LVTTL       :         : 2         : N              
-TESTINSTIF[17]               : L24       : output : 3.3-V LVTTL       :         : 2         : N              
-TESTFORWARDA[0]              : L25       : output : 3.3-V LVTTL       :         : 2         : N              
-VCCIO2                       : L26       : power  :                   : 3.3V    : 2         :                
-TESTMALUO[19]                : M1        : output : 3.3-V LVTTL       :         : 5         : N              
-TESTCACHEDATA[7]             : M2        : output : 3.3-V LVTTL       :         : 5         : N              
-TESTCACHEDATA[78]            : M3        : output : 3.3-V LVTTL       :         : 5         : N              
-TESTCACHEDATA[44]            : M4        : output : 3.3-V LVTTL       :         : 5         : N              
-TESTCACHEDATA[2]             : M5        : output : 3.3-V LVTTL       :         : 5         : N              
-TESTCACHEDATA[3]             : M6        : output : 3.3-V LVTTL       :         : 5         : N              
-RIADDR[5]                    : M7        : output : 3.3-V LVTTL       :         : 5         : N              
-TESTCACHEDATA[14]            : M8        : output : 3.3-V LVTTL       :         : 5         : N              
-VCCPD5                       : M9        : power  :                   : 3.3V    : 5         :                
-GND                          : M10       : gnd    :                   :         :           :                
-VCCINT                       : M11       : power  :                   : 1.2V    :           :                
+GND*                         : L12       :        :                   :         : 4         :                
+TESTTAG1[0]                  : L13       : output : 3.3-V LVTTL       :         : 4         : N              
+TESTWMO[1]                   : L14       : output : 3.3-V LVTTL       :         : 4         : N              
+TESTIMEMOUT[55]              : L15       : output : 3.3-V LVTTL       :         : 4         : N              
+TESTIMEMOUT[30]              : L16       : output : 3.3-V LVTTL       :         : 4         : N              
+TESTCACHEDATA[87]            : L17       : output : 3.3-V LVTTL       :         : 4         : N              
+TESTINSTIF[10]               : L18       : output : 3.3-V LVTTL       :         : 3         : N              
+TESTWMO[4]                   : L19       : output : 3.3-V LVTTL       :         : 3         : N              
+TESTPC[29]                   : L20       : output : 3.3-V LVTTL       :         : 3         : N              
+TESTMALUO[31]                : L21       : output : 3.3-V LVTTL       :         : 3         : N              
+GND*                         : L22       :        :                   :         : 3         :                
+TESTPC[2]                    : L23       : output : 3.3-V LVTTL       :         : 2         : N              
+TESTWALUO[26]                : L24       : output : 3.3-V LVTTL       :         : 2         : N              
+TESTWMO[6]                   : L25       : output : 3.3-V LVTTL       :         : 2         : N              
+TESTPC[15]                   : L26       : output : 3.3-V LVTTL       :         : 2         : N              
+NC                           : L27       :        :                   :         :           :                
+NC                           : L28       :        :                   :         :           :                
+TESTWALUO[8]                 : L29       : output : 3.3-V LVTTL       :         : 2         : N              
+TESTMALUO[22]                : L30       : output : 3.3-V LVTTL       :         : 2         : N              
+TESTINSTIF[3]                : L31       : output : 3.3-V LVTTL       :         : 2         : N              
+TESTINSTIF[2]                : L32       : output : 3.3-V LVTTL       :         : 2         : N              
+TESTIMEMOUT[11]              : M1        : output : 3.3-V LVTTL       :         : 5         : N              
+TESTIMEMOUT[9]               : M2        : output : 3.3-V LVTTL       :         : 5         : N              
+TESTCACHEDATA[3]             : M3        : output : 3.3-V LVTTL       :         : 5         : N              
+RIADDR[22]                   : M4        : output : 3.3-V LVTTL       :         : 5         : N              
+VCCIO5                       : M5        : power  :                   : 3.3V    : 5         :                
+TESTTAG2[3]                  : M6        : output : 3.3-V LVTTL       :         : 5         : N              
+RIADDR[28]                   : M7        : output : 3.3-V LVTTL       :         : 5         : N              
+GND*                         : M8        :        :                   :         : 5         :                
+TESTTAG2[6]                  : M9        : output : 3.3-V LVTTL       :         : 5         : N              
+TESTTAG1[14]                 : M10       : output : 3.3-V LVTTL       :         : 5         : N              
+TESTTAG1[9]                  : M11       : output : 3.3-V LVTTL       :         : 5         : N              
 GND                          : M12       : gnd    :                   :         :           :                
-VCCINT                       : M13       : power  :                   : 1.2V    :           :                
+VCCPD4                       : M13       : power  :                   : 3.3V    : 4         :                
 GND                          : M14       : gnd    :                   :         :           :                
-VCCINT                       : M15       : power  :                   : 1.2V    :           :                
-GND                          : M16       : gnd    :                   :         :           :                
-VCCIO2                       : M17       : power  :                   : 3.3V    : 2         :                
-VCCPD2                       : M18       : power  :                   : 3.3V    : 2         :                
-TESTWMO[20]                  : M19       : output : 3.3-V LVTTL       :         : 2         : N              
-TESTMALUO[2]                 : M20       : output : 3.3-V LVTTL       :         : 2         : N              
-TESTMALUO[3]                 : M21       : output : 3.3-V LVTTL       :         : 2         : N              
-TESTINSTIF[16]               : M22       : output : 3.3-V LVTTL       :         : 2         : N              
-TESTINSTIF[19]               : M23       : output : 3.3-V LVTTL       :         : 2         : N              
-TESTINSTIF[23]               : M24       : output : 3.3-V LVTTL       :         : 2         : N              
-TESTWALUO[20]                : M25       : output : 3.3-V LVTTL       :         : 2         : N              
-TESTWALUO[12]                : M26       : output : 3.3-V LVTTL       :         : 2         : N              
+VCCPD4                       : M15       : power  :                   : 3.3V    : 4         :                
+VCCIO4                       : M16       : power  :                   : 3.3V    : 4         :                
+VCCIO3                       : M17       : power  :                   : 3.3V    : 3         :                
+VCCPD3                       : M18       : power  :                   : 3.3V    : 3         :                
+GND                          : M19       : gnd    :                   :         :           :                
+VCCPD3                       : M20       : power  :                   : 3.3V    : 3         :                
+VCCINT                       : M21       : power  :                   : 1.2V    :           :                
+TESTWMO[17]                  : M22       : output : 3.3-V LVTTL       :         : 2         : N              
+TESTWALUO[21]                : M23       : output : 3.3-V LVTTL       :         : 2         : N              
+TESTPC[5]                    : M24       : output : 3.3-V LVTTL       :         : 2         : N              
+TESTPC[8]                    : M25       : output : 3.3-V LVTTL       :         : 2         : N              
+TESTWALUO[22]                : M26       : output : 3.3-V LVTTL       :         : 2         : N              
+TESTWALUO[29]                : M27       : output : 3.3-V LVTTL       :         : 2         : N              
+VCCIO2                       : M28       : power  :                   : 3.3V    : 2         :                
+TESTINSTIF[25]               : M29       : output : 3.3-V LVTTL       :         : 2         : N              
+TESTWALUO[7]                 : M30       : output : 3.3-V LVTTL       :         : 2         : N              
+TESTMALUO[3]                 : M31       : output : 3.3-V LVTTL       :         : 2         : N              
+TESTJUMP                     : M32       : output : 3.3-V LVTTL       :         : 2         : N              
 GND                          : N1        : gnd    :                   :         :           :                
-RESET                        : N2        : input  : 3.3-V LVTTL       :         : 5         : N              
-GND+                         : N3        :        :                   :         : 5         :                
-TESTCACHEDATA[19]            : N4        : output : 3.3-V LVTTL       :         : 5         : N              
-TESTCACHEDATA[13]            : N5        : output : 3.3-V LVTTL       :         : 5         : N              
-TESTWALUO[21]                : N6        : output : 3.3-V LVTTL       :         : 5         : N              
-TESTMALUO[20]                : N7        : output : 3.3-V LVTTL       :         : 5         : N              
-GNDA_PLL4                    : N8        : gnd    :                   :         :           :                
-GNDA_PLL4                    : N9        : gnd    :                   :         :           :                
-VCCIO5                       : N10       : power  :                   : 3.3V    : 5         :                
-GND                          : N11       : gnd    :                   :         :           :                
-VCCINT                       : N12       : power  :                   : 1.2V    :           :                
-GND                          : N13       : gnd    :                   :         :           :                
-VCCINT                       : N14       : power  :                   : 1.2V    :           :                
-GND                          : N15       : gnd    :                   :         :           :                
-VCCINT                       : N16       : power  :                   : 1.2V    :           :                
-GND                          : N17       : gnd    :                   :         :           :                
-GNDA_PLL1                    : N18       : gnd    :                   :         :           :                
-TESTINSTIF[7]                : N19       : output : 3.3-V LVTTL       :         : 2         : N              
-TESTWALUO[11]                : N20       : output : 3.3-V LVTTL       :         : 2         : N              
-TESTFORWARDB[1]              : N21       : output : 3.3-V LVTTL       :         : 2         : N              
-TESTINSTIF[29]               : N22       : output : 3.3-V LVTTL       :         : 2         : N              
-VREFB2                       : N23       : power  :                   :         : 2         :                
-GND+                         : N24       :        :                   :         : 2         :                
-MEMCLK                       : N25       : input  : 3.3-V LVTTL       :         : 2         : N              
-GND                          : N26       : gnd    :                   :         :           :                
-GND                          : P1        : gnd    :                   :         :           :                
-TESTENTRYSEL[1]              : P2        : output : 3.3-V LVTTL       :         : 5         : N              
-TESTENTRYSEL[0]              : P3        : output : 3.3-V LVTTL       :         : 5         : N              
-TESTREPLACEENTRY             : P4        : output : 3.3-V LVTTL       :         : 5         : N              
-TESTCACHEDATA[20]            : P5        : output : 3.3-V LVTTL       :         : 5         : N              
-GND                          : P6        : gnd    :                   :         :           :                
-VCCD_PLL3                    : P7        : power  :                   : 1.2V    :           :                
-VCCA_PLL4                    : P8        : power  :                   : 1.2V    :           :                
-VCCD_PLL4                    : P9        : power  :                   : 1.2V    :           :                
-GND                          : P10       : gnd    :                   :         :           :                
-VCCINT                       : P11       : power  :                   : 1.2V    :           :                
+TESTINSTIF[27]               : N2        : output : 3.3-V LVTTL       :         : 5         : N              
+TESTCACHEDATA[111]           : N3        : output : 3.3-V LVTTL       :         : 5         : N              
+RIADDR[19]                   : N4        : output : 3.3-V LVTTL       :         : 5         : N              
+TESTHIT                      : N5        : output : 3.3-V LVTTL       :         : 5         : N              
+TESTTAG2[12]                 : N6        : output : 3.3-V LVTTL       :         : 5         : N              
+TESTCACHEDATA[68]            : N7        : output : 3.3-V LVTTL       :         : 5         : N              
+RIADDR[15]                   : N8        : output : 3.3-V LVTTL       :         : 5         : N              
+TESTCACHEDATA[101]           : N9        : output : 3.3-V LVTTL       :         : 5         : N              
+NC                           : N10       :        :                   :         :           :                
+NC                           : N11       :        :                   :         :           :                
+VCCPD5                       : N12       : power  :                   : 3.3V    : 5         :                
+VCCINT                       : N13       : power  :                   : 1.2V    :           :                
+GND                          : N14       : gnd    :                   :         :           :                
+VCCINT                       : N15       : power  :                   : 1.2V    :           :                
+GND                          : N16       : gnd    :                   :         :           :                
+VCCINT                       : N17       : power  :                   : 1.2V    :           :                
+GND                          : N18       : gnd    :                   :         :           :                
+VCCINT                       : N19       : power  :                   : 1.2V    :           :                
+GND                          : N20       : gnd    :                   :         :           :                
+VCCPD2                       : N21       : power  :                   : 3.3V    : 2         :                
+TESTEALUO[22]                : N22       : output : 3.3-V LVTTL       :         : 2         : N              
+TESTPC[6]                    : N23       : output : 3.3-V LVTTL       :         : 2         : N              
+TESTEALUO[31]                : N24       : output : 3.3-V LVTTL       :         : 2         : N              
+TESTMALUO[27]                : N25       : output : 3.3-V LVTTL       :         : 2         : N              
+TESTEALUO[21]                : N26       : output : 3.3-V LVTTL       :         : 2         : N              
+TESTWMO[5]                   : N27       : output : 3.3-V LVTTL       :         : 2         : N              
+TESTMALUO[0]                 : N28       : output : 3.3-V LVTTL       :         : 2         : N              
+TESTEALUO[6]                 : N29       : output : 3.3-V LVTTL       :         : 2         : N              
+TESTINSTIF[4]                : N30       : output : 3.3-V LVTTL       :         : 2         : N              
+TESTMALUO[7]                 : N31       : output : 3.3-V LVTTL       :         : 2         : N              
+GND                          : N32       : gnd    :                   :         :           :                
+TESTTAG1[19]                 : P1        : output : 3.3-V LVTTL       :         : 5         : N              
+TESTTAG2[17]                 : P2        : output : 3.3-V LVTTL       :         : 5         : N              
+VREFB5                       : P3        : power  :                   :         : 5         :                
+TESTPC2[9]                   : P4        : input  : 3.3-V LVTTL       :         : 5         : N              
+RIADDR[27]                   : P5        : output : 3.3-V LVTTL       :         : 5         : N              
+TESTIMEMOUT[89]              : P6        : output : 3.3-V LVTTL       :         : 5         : N              
+TESTTAG1[2]                  : P7        : output : 3.3-V LVTTL       :         : 5         : N              
+RIADDR[31]                   : P8        : output : 3.3-V LVTTL       :         : 5         : N              
+TESTTAG1[12]                 : P9        : output : 3.3-V LVTTL       :         : 5         : N              
+TESTIMEMOUT[1]               : P10       : output : 3.3-V LVTTL       :         : 5         : N              
+TESTPC2[17]                  : P11       : input  : 3.3-V LVTTL       :         : 5         : N              
 GND                          : P12       : gnd    :                   :         :           :                
-VCCINT                       : P13       : power  :                   : 1.2V    :           :                
-GND                          : P14       : gnd    :                   :         :           :                
-VCCINT                       : P15       : power  :                   : 1.2V    :           :                
-GND                          : P16       : gnd    :                   :         :           :                
-VCCIO1                       : P17       : power  :                   : 3.3V    : 1         :                
-GNDA_PLL1                    : P18       : gnd    :                   :         :           :                
-VCCD_PLL1                    : P19       : power  :                   : 1.2V    :           :                
-VCCD_PLL2                    : P20       : power  :                   : 1.2V    :           :                
-VCCA_PLL1                    : P21       : power  :                   : 1.2V    :           :                
-INT                          : P22       : input  : 3.3-V LVTTL       :         : 1         : N              
-CLK                          : P23       : input  : 3.3-V LVTTL       :         : 1         : N              
-TESTINSTIF[1]                : P24       : output : 3.3-V LVTTL       :         : 2         : N              
-TESTMALUO[12]                : P25       : output : 3.3-V LVTTL       :         : 2         : N              
-GND                          : P26       : gnd    :                   :         :           :                
-TESTZERO                     : R1        : output : 3.3-V LVTTL       :         : 6         : N              
-TESTINSTIF[28]               : R2        : output : 3.3-V LVTTL       :         : 6         : N              
-GND+                         : R3        :        :                   :         : 6         :                
-GND+                         : R4        :        :                   :         : 6         :                
-VREFB6                       : R5        : power  :                   :         : 6         :                
-VCCA_PLL3                    : R6        : power  :                   : 1.2V    :           :                
-GNDA_PLL3                    : R7        : gnd    :                   :         :           :                
-GNDA_PLL3                    : R8        : gnd    :                   :         :           :                
-VCCPD6                       : R9        : power  :                   : 3.3V    : 6         :                
-VCCIO6                       : R10       : power  :                   : 3.3V    : 6         :                
-GND                          : R11       : gnd    :                   :         :           :                
-VCCINT                       : R12       : power  :                   : 1.2V    :           :                
-GND                          : R13       : gnd    :                   :         :           :                
-VCCINT                       : R14       : power  :                   : 1.2V    :           :                
-GND                          : R15       : gnd    :                   :         :           :                
-VCCINT                       : R16       : power  :                   : 1.2V    :           :                
-GND                          : R17       : gnd    :                   :         :           :                
-VCCPD1                       : R18       : power  :                   : 3.3V    : 1         :                
-GNDA_PLL2                    : R19       : gnd    :                   :         :           :                
-GNDA_PLL2                    : R20       : gnd    :                   :         :           :                
-VCCA_PLL2                    : R21       : power  :                   : 1.2V    :           :                
-GND                          : R22       : gnd    :                   :         :           :                
-TESTINSTIF[0]                : R23       : output : 3.3-V LVTTL       :         : 1         : N              
-TESTINSTIF[5]                : R24       : output : 3.3-V LVTTL       :         : 1         : N              
-TESTINSTIF[11]               : R25       : output : 3.3-V LVTTL       :         : 1         : N              
-TESTINSTIF[12]               : R26       : output : 3.3-V LVTTL       :         : 1         : N              
-VCCIO6                       : T1        : power  :                   : 3.3V    : 6         :                
-TESTMALUO[31]                : T2        : output : 3.3-V LVTTL       :         : 6         : N              
-TESTSELADDR[26]              : T3        : output : 3.3-V LVTTL       :         : 6         : N              
-TESTCACHEDATA[5]             : T4        : output : 3.3-V LVTTL       :         : 6         : N              
-TESTPC[26]                   : T5        : output : 3.3-V LVTTL       :         : 6         : N              
-TESTCACHEDATA[125]           : T6        : output : 3.3-V LVTTL       :         : 6         : N              
-TESTCACHEDATA[43]            : T7        : output : 3.3-V LVTTL       :         : 6         : N              
-TESTSELADDR[20]              : T8        : output : 3.3-V LVTTL       :         : 6         : N              
-TESTPC[20]                   : T9        : output : 3.3-V LVTTL       :         : 6         : N              
-GND                          : T10       : gnd    :                   :         :           :                
-VCCINT                       : T11       : power  :                   : 1.2V    :           :                
-GND                          : T12       : gnd    :                   :         :           :                
-VCCINT                       : T13       : power  :                   : 1.2V    :           :                
-GND                          : T14       : gnd    :                   :         :           :                
-VCCINT                       : T15       : power  :                   : 1.2V    :           :                
-GND                          : T16       : gnd    :                   :         :           :                
-VCCINT                       : T17       : power  :                   : 1.2V    :           :                
-GND                          : T18       : gnd    :                   :         :           :                
-TESTEALUO[10]                : T19       : output : 3.3-V LVTTL       :         : 1         : N              
-TESTPC[31]                   : T20       : output : 3.3-V LVTTL       :         : 1         : N              
-TESTSELADDR[25]              : T21       : output : 3.3-V LVTTL       :         : 1         : N              
-TESTPC[29]                   : T22       : output : 3.3-V LVTTL       :         : 1         : N              
-VREFB1                       : T23       : power  :                   :         : 1         :                
-TESTINSTIF[15]               : T24       : output : 3.3-V LVTTL       :         : 1         : N              
-TESTINSTIF[13]               : T25       : output : 3.3-V LVTTL       :         : 1         : N              
-VCCIO1                       : T26       : power  :                   : 3.3V    : 1         :                
-TESTPC[24]                   : U1        : output : 3.3-V LVTTL       :         : 6         : N              
-TESTSELADDR[24]              : U2        : output : 3.3-V LVTTL       :         : 6         : N              
-TESTPC[1]                    : U3        : output : 3.3-V LVTTL       :         : 6         : N              
-TESTSELADDR[1]               : U4        : output : 3.3-V LVTTL       :         : 6         : N              
-TESTCACHEDATA[105]           : U5        : output : 3.3-V LVTTL       :         : 6         : N              
-TESTCACHEDATA[73]            : U6        : output : 3.3-V LVTTL       :         : 6         : N              
-GND*                         : U7        :        :                   :         : 6         :                
-GND*                         : U8        :        :                   :         : 6         :                
-GND                          : U9        : gnd    :                   :         :           :                
-VCCINT                       : U10       : power  :                   : 1.2V    :           :                
-GND                          : U11       : gnd    :                   :         :           :                
-VCCIO7                       : U12       : power  :                   : 3.3V    : 7         :                
-GND                          : U13       : gnd    :                   :         :           :                
-VCCIO8                       : U14       : power  :                   : 3.3V    : 8         :                
-GND                          : U15       : gnd    :                   :         :           :                
-VCCINT                       : U16       : power  :                   : 1.2V    :           :                
-GND                          : U17       : gnd    :                   :         :           :                
-VCCINT                       : U18       : power  :                   : 1.2V    :           :                
-TESTWALUO[24]                : U19       : output : 3.3-V LVTTL       :         : 1         : N              
-TESTPC[7]                    : U20       : output : 3.3-V LVTTL       :         : 1         : N              
-TESTSELADDR[11]              : U21       : output : 3.3-V LVTTL       :         : 1         : N              
-TESTPC[11]                   : U22       : output : 3.3-V LVTTL       :         : 1         : N              
-TESTINSTIF[6]                : U23       : output : 3.3-V LVTTL       :         : 1         : N              
-TESTINSTIF[4]                : U24       : output : 3.3-V LVTTL       :         : 1         : N              
-TESTMALUO[26]                : U25       : output : 3.3-V LVTTL       :         : 1         : N              
-TESTINSTIF[22]               : U26       : output : 3.3-V LVTTL       :         : 1         : N              
-TESTPC[14]                   : V1        : output : 3.3-V LVTTL       :         : 6         : N              
-TESTSELADDR[14]              : V2        : output : 3.3-V LVTTL       :         : 6         : N              
-GND*                         : V3        :        :                   :         : 6         :                
-GND*                         : V4        :        :                   :         : 6         :                
-GND*                         : V5        :        :                   :         : 6         :                
-GND*                         : V6        :        :                   :         : 6         :                
-GND*                         : V7        :        :                   :         : 6         :                
-GND*                         : V8        :        :                   :         : 6         :                
-VCCINT                       : V9        : power  :                   : 1.2V    :           :                
-GND*                         : V10       :        :                   :         : 7         :                
-VCCPD7                       : V11       : power  :                   : 3.3V    : 7         :                
-TESTCACHEDATA[104]           : V12       : output : 3.3-V LVTTL       :         : 7         : N              
-VCC_PLL6_OUT                 : V13       : power  :                   : 3.3V    : 10        :                
-TESTMALUO[4]                 : V14       : output : 3.3-V LVTTL       :         : 8         : N              
-VCCPD8                       : V15       : power  :                   : 3.3V    : 8         :                
-TESTWMO[9]                   : V16       : output : 3.3-V LVTTL       :         : 8         : N              
-TESTPC[30]                   : V17       : output : 3.3-V LVTTL       :         : 8         : N              
-TESTCACHEDATA[127]           : V18       : output : 3.3-V LVTTL       :         : 8         : N              
-TESTSELADDR[7]               : V19       : output : 3.3-V LVTTL       :         : 1         : N              
-GND*                         : V20       :        :                   :         : 1         :                
-TESTPC[6]                    : V21       : output : 3.3-V LVTTL       :         : 1         : N              
-TESTWRITEMEM                 : V22       : output : 3.3-V LVTTL       :         : 1         : N              
-TESTPC[8]                    : V23       : output : 3.3-V LVTTL       :         : 1         : N              
-TESTWALUO[30]                : V24       : output : 3.3-V LVTTL       :         : 1         : N              
-TESTINSTIF[8]                : V25       : output : 3.3-V LVTTL       :         : 1         : N              
-TESTINSTIF[20]               : V26       : output : 3.3-V LVTTL       :         : 1         : N              
-TESTCACHEDATA[55]            : W1        : output : 3.3-V LVTTL       :         : 6         : N              
-TESTCACHEDATA[101]           : W2        : output : 3.3-V LVTTL       :         : 6         : N              
-TESTCACHEDATA[115]           : W3        : output : 3.3-V LVTTL       :         : 6         : N              
-TESTCACHEDATA[35]            : W4        : output : 3.3-V LVTTL       :         : 6         : N              
-GND*                         : W5        :        :                   :         : 6         :                
-RIADDR[1]                    : W6        : output : 3.3-V LVTTL       :         : 6         : N              
-GND*                         : W7        :        :                   :         : 6         :                
-GND*                         : W8        :        :                   :         : 6         :                
-TESTCACHEDATA[65]            : W9        : output : 3.3-V LVTTL       :         : 7         : N              
-RIADDR[2]                    : W10       : output : 3.3-V LVTTL       :         : 7         : N              
-TESTCACHEDATA[113]           : W11       : output : 3.3-V LVTTL       :         : 7         : N              
-TESTSELADDR[28]              : W12       : output : 3.3-V LVTTL       :         : 7         : N              
-GNDA_PLL6                    : W13       : gnd    :                   :         :           :                
-GNDA_PLL6                    : W14       : gnd    :                   :         :           :                
-TESTEALUO[24]                : W15       : output : 3.3-V LVTTL       :         : 8         : N              
-TESTWALUO[17]                : W16       : output : 3.3-V LVTTL       :         : 8         : N              
-TESTSELADDR[30]              : W17       : output : 3.3-V LVTTL       :         : 8         : N              
-RIADDR[25]                   : W18       : output : 3.3-V LVTTL       :         : 8         : N              
-GND*                         : W19       :        :                   :         : 1         :                
-GND*                         : W20       :        :                   :         : 1         :                
-TESTWALUO[31]                : W21       : output : 3.3-V LVTTL       :         : 1         : N              
-TESTWMO[25]                  : W22       : output : 3.3-V LVTTL       :         : 1         : N              
-TESTPC[27]                   : W23       : output : 3.3-V LVTTL       :         : 1         : N              
-TESTSELADDR[27]              : W24       : output : 3.3-V LVTTL       :         : 1         : N              
-TESTWMO[28]                  : W25       : output : 3.3-V LVTTL       :         : 1         : N              
-TESTWMO[24]                  : W26       : output : 3.3-V LVTTL       :         : 1         : N              
-RIADDR[7]                    : Y1        : output : 3.3-V LVTTL       :         : 6         : N              
-GND*                         : Y2        :        :                   :         : 6         :                
-GND*                         : Y3        :        :                   :         : 6         :                
-GND*                         : Y4        :        :                   :         : 6         :                
-VREFB6                       : Y5        : power  :                   :         : 6         :                
-TESTCACHEDATA[114]           : Y6        : output : 3.3-V LVTTL       :         : 6         : N              
-GND*                         : Y7        :        :                   :         : 6         :                
-PORSEL                       : Y8        :        :                   :         : 7         :                
-GND*                         : Y9        :        :                   :         : 7         :                
-GND*                         : Y10       :        :                   :         : 7         :                
-GND*                         : Y11       :        :                   :         : 7         :                
-TESTCACHEDATA[23]            : Y12       : output : 3.3-V LVTTL       :         : 7         : N              
-VCCA_PLL6                    : Y13       : power  :                   : 1.2V    :           :                
-VCCD_PLL6                    : Y14       : power  :                   : 1.2V    :           :                
-TESTINSTIF[3]                : Y15       : output : 3.3-V LVTTL       :         : 8         : N              
-TESTMALUO[16]                : Y16       : output : 3.3-V LVTTL       :         : 8         : N              
-TESTWALUO[26]                : Y17       : output : 3.3-V LVTTL       :         : 8         : N              
-TESTCACHEDATA[42]            : Y18       : output : 3.3-V LVTTL       :         : 8         : N              
-VCCSEL                       : Y19       :        :                   :         : 8         :                
-TESTCACHEDATA[89]            : Y20       : output : 3.3-V LVTTL       :         : 1         : N              
-GND*                         : Y21       :        :                   :         : 1         :                
-VREFB1                       : Y22       : power  :                   :         : 1         :                
-TESTPC[25]                   : Y23       : output : 3.3-V LVTTL       :         : 1         : N              
-TESTSELADDR[29]              : Y24       : output : 3.3-V LVTTL       :         : 1         : N              
-TESTSELADDR[8]               : Y25       : output : 3.3-V LVTTL       :         : 1         : N              
-TESTSELADDR[6]               : Y26       : output : 3.3-V LVTTL       :         : 1         : N              
+GND                          : P13       : gnd    :                   :         :           :                
+VCCINT                       : P14       : power  :                   : 1.2V    :           :                
+GND                          : P15       : gnd    :                   :         :           :                
+VCCINT                       : P16       : power  :                   : 1.2V    :           :                
+GND                          : P17       : gnd    :                   :         :           :                
+VCCINT                       : P18       : power  :                   : 1.2V    :           :                
+GND                          : P19       : gnd    :                   :         :           :                
+VCCINT                       : P20       : power  :                   : 1.2V    :           :                
+GND                          : P21       : gnd    :                   :         :           :                
+NC                           : P22       :        :                   :         :           :                
+NC                           : P23       :        :                   :         :           :                
+TESTEALUO[7]                 : P24       : output : 3.3-V LVTTL       :         : 2         : N              
+TESTWALUO[11]                : P25       : output : 3.3-V LVTTL       :         : 2         : N              
+TESTEALUO[15]                : P26       : output : 3.3-V LVTTL       :         : 2         : N              
+TESTWMO[10]                  : P27       : output : 3.3-V LVTTL       :         : 2         : N              
+TESTWALUO[0]                 : P28       : output : 3.3-V LVTTL       :         : 2         : N              
+TESTPC[9]                    : P29       : output : 3.3-V LVTTL       :         : 2         : N              
+VREFB2                       : P30       : power  :                   :         : 2         :                
+TESTINSTIF[0]                : P31       : output : 3.3-V LVTTL       :         : 2         : N              
+TESTMALUO[10]                : P32       : output : 3.3-V LVTTL       :         : 2         : N              
+VCCIO5                       : R1        : power  :                   : 3.3V    : 5         :                
+TESTPC[13]                   : R2        : output : 3.3-V LVTTL       :         : 5         : N              
+TESTTAG1[1]                  : R3        : output : 3.3-V LVTTL       :         : 5         : N              
+TESTCACHEDATA[117]           : R4        : output : 3.3-V LVTTL       :         : 5         : N              
+TESTCACHEDATA[25]            : R5        : output : 3.3-V LVTTL       :         : 5         : N              
+TESTPC2[15]                  : R6        : input  : 3.3-V LVTTL       :         : 5         : N              
+RIADDR[29]                   : R7        : output : 3.3-V LVTTL       :         : 5         : N              
+GNDA_PLL4                    : R8        : gnd    :                   :         :           :                
+VCCA_PLL4                    : R9        : power  :                   : 1.2V    :           :                
+TESTIMEMOUT[86]              : R10       : output : 3.3-V LVTTL       :         : 5         : N              
+TESTIMEMOUT[85]              : R11       : output : 3.3-V LVTTL       :         : 5         : N              
+VCCPD5                       : R12       : power  :                   : 3.3V    : 5         :                
+VCCINT                       : R13       : power  :                   : 1.2V    :           :                
+GND                          : R14       : gnd    :                   :         :           :                
+VCCINT                       : R15       : power  :                   : 1.2V    :           :                
+GND                          : R16       : gnd    :                   :         :           :                
+VCCINT                       : R17       : power  :                   : 1.2V    :           :                
+GND                          : R18       : gnd    :                   :         :           :                
+VCCINT                       : R19       : power  :                   : 1.2V    :           :                
+GND                          : R20       : gnd    :                   :         :           :                
+VCCPD2                       : R21       : power  :                   : 3.3V    : 2         :                
+TESTWMO[19]                  : R22       : output : 3.3-V LVTTL       :         : 2         : N              
+TESTINSTIF[6]                : R23       : output : 3.3-V LVTTL       :         : 2         : N              
+TESTINSTIF[29]               : R24       : output : 3.3-V LVTTL       :         : 2         : N              
+TESTINSTIF[15]               : R25       : output : 3.3-V LVTTL       :         : 2         : N              
+TESTINSTIF[5]                : R26       : output : 3.3-V LVTTL       :         : 2         : N              
+TESTINSTIF[12]               : R27       : output : 3.3-V LVTTL       :         : 2         : N              
+TESTMALUO[5]                 : R28       : output : 3.3-V LVTTL       :         : 2         : N              
+TESTMWRITEMEM                : R29       : output : 3.3-V LVTTL       :         : 2         : N              
+TESTMALUO[9]                 : R30       : output : 3.3-V LVTTL       :         : 2         : N              
+TESTMALUO[2]                 : R31       : output : 3.3-V LVTTL       :         : 2         : N              
+VCCIO2                       : R32       : power  :                   : 3.3V    : 2         :                
+TESTPC2[25]                  : T1        : input  : 3.3-V LVTTL       :         : 5         : N              
+TESTPC2[30]                  : T2        : input  : 3.3-V LVTTL       :         : 5         : N              
+RESET                        : T3        : input  : 3.3-V LVTTL       :         : 5         : N              
+TESTPC2[22]                  : T4        : input  : 3.3-V LVTTL       :         : 5         : N              
+TESTWALUO[17]                : T5        : output : 3.3-V LVTTL       :         : 5         : N              
+TESTTAG1[24]                 : T6        : output : 3.3-V LVTTL       :         : 5         : N              
+GND                          : T7        : gnd    :                   :         :           :                
+GNDA_PLL4                    : T8        : gnd    :                   :         :           :                
+VCCD_PLL4                    : T9        : power  :                   : 1.2V    :           :                
+TESTIMEMOUT[90]              : T10       : output : 3.3-V LVTTL       :         : 5         : N              
+TESTTAG2[9]                  : T11       : output : 3.3-V LVTTL       :         : 5         : N              
+VCCIO5                       : T12       : power  :                   : 3.3V    : 5         :                
+GND                          : T13       : gnd    :                   :         :           :                
+VCCINT                       : T14       : power  :                   : 1.2V    :           :                
+GND                          : T15       : gnd    :                   :         :           :                
+VCCINT                       : T16       : power  :                   : 1.2V    :           :                
+GND                          : T17       : gnd    :                   :         :           :                
+VCCINT                       : T18       : power  :                   : 1.2V    :           :                
+GND                          : T19       : gnd    :                   :         :           :                
+VCCINT                       : T20       : power  :                   : 1.2V    :           :                
+VCCIO2                       : T21       : power  :                   : 3.3V    : 2         :                
+TESTMALUO[11]                : T22       : output : 3.3-V LVTTL       :         : 2         : N              
+TESTMALUO[8]                 : T23       : output : 3.3-V LVTTL       :         : 2         : N              
+VCCA_PLL1                    : T24       : power  :                   : 1.2V    :           :                
+GNDA_PLL1                    : T25       : gnd    :                   :         :           :                
+GNDA_PLL1                    : T26       : gnd    :                   :         :           :                
+TESTMALUO[4]                 : T27       : output : 3.3-V LVTTL       :         : 2         : N              
+TESTMALUO[6]                 : T28       : output : 3.3-V LVTTL       :         : 2         : N              
+INT                          : T29       : input  : 3.3-V LVTTL       :         : 2         : N              
+MEMCLK                       : T30       : input  : 3.3-V LVTTL       :         : 2         : N              
+TESTEALUO[1]                 : T31       : output : 3.3-V LVTTL       :         : 2         : N              
+TESTEALUO[29]                : T32       : output : 3.3-V LVTTL       :         : 2         : N              
+TESTPC2[11]                  : U1        : input  : 3.3-V LVTTL       :         : 6         : N              
+TESTPC2[2]                   : U2        : input  : 3.3-V LVTTL       :         : 6         : N              
+TESTPC2[5]                   : U3        : input  : 3.3-V LVTTL       :         : 6         : N              
+TESTPC2[26]                  : U4        : input  : 3.3-V LVTTL       :         : 6         : N              
+TESTTAG2[10]                 : U5        : output : 3.3-V LVTTL       :         : 6         : N              
+TESTTAG2[21]                 : U6        : output : 3.3-V LVTTL       :         : 6         : N              
+VCCD_PLL3                    : U7        : power  :                   : 1.2V    :           :                
+GNDA_PLL3                    : U8        : gnd    :                   :         :           :                
+VCCA_PLL3                    : U9        : power  :                   : 1.2V    :           :                
+TESTSELADDR[19]              : U10       : output : 3.3-V LVTTL       :         : 6         : N              
+TESTSELADDR[25]              : U11       : output : 3.3-V LVTTL       :         : 6         : N              
+VCCIO6                       : U12       : power  :                   : 3.3V    : 6         :                
+VCCINT                       : U13       : power  :                   : 1.2V    :           :                
+GND                          : U14       : gnd    :                   :         :           :                
+VCCINT                       : U15       : power  :                   : 1.2V    :           :                
+GND                          : U16       : gnd    :                   :         :           :                
+VCCINT                       : U17       : power  :                   : 1.2V    :           :                
+GND                          : U18       : gnd    :                   :         :           :                
+VCCINT                       : U19       : power  :                   : 1.2V    :           :                
+GND                          : U20       : gnd    :                   :         :           :                
+VCCIO1                       : U21       : power  :                   : 3.3V    : 1         :                
+TESTFORWARDB[1]              : U22       : output : 3.3-V LVTTL       :         : 1         : N              
+TESTEALUO[20]                : U23       : output : 3.3-V LVTTL       :         : 1         : N              
+VCCD_PLL1                    : U24       : power  :                   : 1.2V    :           :                
+GNDA_PLL2                    : U25       : gnd    :                   :         :           :                
+GNDA_PLL2                    : U26       : gnd    :                   :         :           :                
+TESTWALUO[10]                : U27       : output : 3.3-V LVTTL       :         : 1         : N              
+TESTINSTIF[16]               : U28       : output : 3.3-V LVTTL       :         : 1         : N              
+TESTPC2[3]                   : U29       : input  : 3.3-V LVTTL       :         : 1         : N              
+CLK                          : U30       : input  : 3.3-V LVTTL       :         : 1         : N              
+TESTFORWARDA[0]              : U31       : output : 3.3-V LVTTL       :         : 1         : N              
+TESTFORWARDA[1]              : U32       : output : 3.3-V LVTTL       :         : 1         : N              
+VCCIO6                       : V1        : power  :                   : 3.3V    : 6         :                
+TESTSELADDR[2]               : V2        : output : 3.3-V LVTTL       :         : 6         : N              
+TESTSELADDR[7]               : V3        : output : 3.3-V LVTTL       :         : 6         : N              
+TESTSELADDR[17]              : V4        : output : 3.3-V LVTTL       :         : 6         : N              
+TESTSELADDR[10]              : V5        : output : 3.3-V LVTTL       :         : 6         : N              
+TESTSELADDR[14]              : V6        : output : 3.3-V LVTTL       :         : 6         : N              
+TESTSELADDR[30]              : V7        : output : 3.3-V LVTTL       :         : 6         : N              
+GNDA_PLL3                    : V8        : gnd    :                   :         :           :                
+TESTSELADDR[4]               : V9        : output : 3.3-V LVTTL       :         : 6         : N              
+TESTSELADDR[11]              : V10       : output : 3.3-V LVTTL       :         : 6         : N              
+GND                          : V11       : gnd    :                   :         :           :                
+VCCPD6                       : V12       : power  :                   : 3.3V    : 6         :                
+GND                          : V13       : gnd    :                   :         :           :                
+VCCINT                       : V14       : power  :                   : 1.2V    :           :                
+GND                          : V15       : gnd    :                   :         :           :                
+VCCINT                       : V16       : power  :                   : 1.2V    :           :                
+GND                          : V17       : gnd    :                   :         :           :                
+VCCINT                       : V18       : power  :                   : 1.2V    :           :                
+GND                          : V19       : gnd    :                   :         :           :                
+VCCINT                       : V20       : power  :                   : 1.2V    :           :                
+VCCPD1                       : V21       : power  :                   : 3.3V    : 1         :                
+GND                          : V22       : gnd    :                   :         :           :                
+TESTCACHEDATA[26]            : V23       : output : 3.3-V LVTTL       :         : 1         : N              
+TESTWALUO[6]                 : V24       : output : 3.3-V LVTTL       :         : 1         : N              
+VCCD_PLL2                    : V25       : power  :                   : 1.2V    :           :                
+VCCA_PLL2                    : V26       : power  :                   : 1.2V    :           :                
+GND                          : V27       : gnd    :                   :         :           :                
+TESTINSTIF[21]               : V28       : output : 3.3-V LVTTL       :         : 1         : N              
+TESTINSTIF[23]               : V29       : output : 3.3-V LVTTL       :         : 1         : N              
+TESTFORWARDB[0]              : V30       : output : 3.3-V LVTTL       :         : 1         : N              
+TESTCACHEDATA[24]            : V31       : output : 3.3-V LVTTL       :         : 1         : N              
+VCCIO1                       : V32       : power  :                   : 3.3V    : 1         :                
+TESTSELADDR[31]              : W1        : output : 3.3-V LVTTL       :         : 6         : N              
+TESTPC2[23]                  : W2        : input  : 3.3-V LVTTL       :         : 6         : N              
+VREFB6                       : W3        : power  :                   :         : 6         :                
+TESTSELADDR[5]               : W4        : output : 3.3-V LVTTL       :         : 6         : N              
+TESTENTRYSEL[2]              : W5        : output : 3.3-V LVTTL       :         : 6         : N              
+TESTSELADDR[12]              : W6        : output : 3.3-V LVTTL       :         : 6         : N              
+TESTSELADDR[8]               : W7        : output : 3.3-V LVTTL       :         : 6         : N              
+TESTPC2[13]                  : W8        : input  : 3.3-V LVTTL       :         : 6         : N              
+TESTPC2[21]                  : W9        : input  : 3.3-V LVTTL       :         : 6         : N              
+NC                           : W10       :        :                   :         :           :                
+NC                           : W11       :        :                   :         :           :                
+GND                          : W12       : gnd    :                   :         :           :                
+VCCINT                       : W13       : power  :                   : 1.2V    :           :                
+GND                          : W14       : gnd    :                   :         :           :                
+VCCINT                       : W15       : power  :                   : 1.2V    :           :                
+GND                          : W16       : gnd    :                   :         :           :                
+VCCINT                       : W17       : power  :                   : 1.2V    :           :                
+GND                          : W18       : gnd    :                   :         :           :                
+VCCINT                       : W19       : power  :                   : 1.2V    :           :                
+GND                          : W20       : gnd    :                   :         :           :                
+VCCINT                       : W21       : power  :                   : 1.2V    :           :                
+NC                           : W22       :        :                   :         :           :                
+NC                           : W23       :        :                   :         :           :                
+TESTWALUO[4]                 : W24       : output : 3.3-V LVTTL       :         : 1         : N              
+TESTCACHEDATA[50]            : W25       : output : 3.3-V LVTTL       :         : 1         : N              
+TESTCACHEDATA[86]            : W26       : output : 3.3-V LVTTL       :         : 1         : N              
+TESTCACHEDATA[118]           : W27       : output : 3.3-V LVTTL       :         : 1         : N              
+TESTINSTIF[14]               : W28       : output : 3.3-V LVTTL       :         : 1         : N              
+TESTCACHEDATA[84]            : W29       : output : 3.3-V LVTTL       :         : 1         : N              
+VREFB1                       : W30       : power  :                   :         : 1         :                
+TESTINSTIF[19]               : W31       : output : 3.3-V LVTTL       :         : 1         : N              
+TESTINSTIF[22]               : W32       : output : 3.3-V LVTTL       :         : 1         : N              
+GND                          : Y1        : gnd    :                   :         :           :                
+TESTSELADDR[9]               : Y2        : output : 3.3-V LVTTL       :         : 6         : N              
+TESTSELADDR[28]              : Y3        : output : 3.3-V LVTTL       :         : 6         : N              
+TESTPC2[27]                  : Y4        : input  : 3.3-V LVTTL       :         : 6         : N              
+TESTPC2[31]                  : Y5        : input  : 3.3-V LVTTL       :         : 6         : N              
+TESTIMEMOUT[61]              : Y6        : output : 3.3-V LVTTL       :         : 6         : N              
+TESTPC2[19]                  : Y7        : input  : 3.3-V LVTTL       :         : 6         : N              
+TESTPC2[18]                  : Y8        : input  : 3.3-V LVTTL       :         : 6         : N              
+TESTSELADDR[6]               : Y9        : output : 3.3-V LVTTL       :         : 6         : N              
+TESTIMEMOUT[88]              : Y10       : output : 3.3-V LVTTL       :         : 6         : N              
+TESTIMEMOUT[2]               : Y11       : output : 3.3-V LVTTL       :         : 6         : N              
+VCCPD6                       : Y12       : power  :                   : 3.3V    : 6         :                
+GND                          : Y13       : gnd    :                   :         :           :                
+VCCINT                       : Y14       : power  :                   : 1.2V    :           :                
+GND                          : Y15       : gnd    :                   :         :           :                
+VCCINT                       : Y16       : power  :                   : 1.2V    :           :                
+GND                          : Y17       : gnd    :                   :         :           :                
+VCCINT                       : Y18       : power  :                   : 1.2V    :           :                
+GND                          : Y19       : gnd    :                   :         :           :                
+VCCINT                       : Y20       : power  :                   : 1.2V    :           :                
+VCCPD1                       : Y21       : power  :                   : 3.3V    : 1         :                
+TESTCACHEDATA[99]            : Y22       : output : 3.3-V LVTTL       :         : 1         : N              
+TESTCACHEDATA[104]           : Y23       : output : 3.3-V LVTTL       :         : 1         : N              
+TESTCACHEDATA[39]            : Y24       : output : 3.3-V LVTTL       :         : 1         : N              
+TESTIMEMOUT[72]              : Y25       : output : 3.3-V LVTTL       :         : 1         : N              
+TESTEALUO[25]                : Y26       : output : 3.3-V LVTTL       :         : 1         : N              
+TESTCACHEDATA[9]             : Y27       : output : 3.3-V LVTTL       :         : 1         : N              
+TESTWMO[31]                  : Y28       : output : 3.3-V LVTTL       :         : 1         : N              
+TESTCACHEDATA[112]           : Y29       : output : 3.3-V LVTTL       :         : 1         : N              
+TESTINSTIF[20]               : Y30       : output : 3.3-V LVTTL       :         : 1         : N              
+TESTINSTIF[17]               : Y31       : output : 3.3-V LVTTL       :         : 1         : N              
+GND                          : Y32       : gnd    :                   :         :           :                

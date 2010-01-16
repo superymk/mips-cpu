@@ -1,17 +1,17 @@
-Fitter Status : Successful - Fri Jan 15 14:30:09 2010
+Fitter Status : Successful - Sat Jan 16 17:27:10 2010
 Quartus II Version : 9.0 Build 132 02/25/2009 SJ Full Version
 Revision Name : PipelineUniProcessor
 Top-level Entity Name : MotherBoard
 Family : Stratix II
-Device : EP2S30F672C3
+Device : EP2S60F1020C3
 Timing Models : Final
-Logic utilization : 12 %
-    Combinational ALUTs : 2,050 / 27,104 ( 8 % )
-    Dedicated logic registers : 2,365 / 27,104 ( 9 % )
-Total registers : 2365
-Total pins : 402 / 501 ( 80 % )
+Logic utilization : 11 %
+    Combinational ALUTs : 2,177 / 48,352 ( 5 % )
+    Dedicated logic registers : 3,786 / 48,352 ( 8 % )
+Total registers : 3786
+Total pins : 619 / 719 ( 86 % )
 Total virtual pins : 0
-Total block memory bits : 65,792 / 1,369,728 ( 5 % )
-DSP block 9-bit elements : 0 / 128 ( 0 % )
-Total PLLs : 0 / 6 ( 0 % )
+Total block memory bits : 163,840 / 2,544,192 ( 6 % )
+DSP block 9-bit elements : 0 / 288 ( 0 % )
+Total PLLs : 0 / 12 ( 0 % )
 Total DLLs : 0 / 2 ( 0 % )
