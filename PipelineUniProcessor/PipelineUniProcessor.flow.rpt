@@ -1,5 +1,5 @@
 Flow report for PipelineUniProcessor
-Fri Jan 15 14:31:00 2010
+Sat Jan 16 17:27:52 2010
 Quartus II Version 9.0 Build 132 02/25/2009 SJ Full Version
 
 
@@ -38,23 +38,23 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------+
 ; Flow Summary                                                             ;
 +-------------------------------+------------------------------------------+
-; Flow Status                   ; Successful - Fri Jan 15 14:31:00 2010    ;
+; Flow Status                   ; Successful - Sat Jan 16 17:27:52 2010    ;
 ; Quartus II Version            ; 9.0 Build 132 02/25/2009 SJ Full Version ;
 ; Revision Name                 ; PipelineUniProcessor                     ;
 ; Top-level Entity Name         ; MotherBoard                              ;
 ; Family                        ; Stratix II                               ;
 ; Met timing requirements       ; Yes                                      ;
-; Logic utilization             ; 12 %                                     ;
-;     Combinational ALUTs       ; 2,050 / 27,104 ( 8 % )                   ;
-;     Dedicated logic registers ; 2,365 / 27,104 ( 9 % )                   ;
-; Total registers               ; 2365                                     ;
-; Total pins                    ; 402 / 501 ( 80 % )                       ;
+; Logic utilization             ; 11 %                                     ;
+;     Combinational ALUTs       ; 2,177 / 48,352 ( 5 % )                   ;
+;     Dedicated logic registers ; 3,786 / 48,352 ( 8 % )                   ;
+; Total registers               ; 3786                                     ;
+; Total pins                    ; 619 / 719 ( 86 % )                       ;
 ; Total virtual pins            ; 0                                        ;
-; Total block memory bits       ; 65,792 / 1,369,728 ( 5 % )               ;
-; DSP block 9-bit elements      ; 0 / 128 ( 0 % )                          ;
-; Total PLLs                    ; 0 / 6 ( 0 % )                            ;
+; Total block memory bits       ; 163,840 / 2,544,192 ( 6 % )              ;
+; DSP block 9-bit elements      ; 0 / 288 ( 0 % )                          ;
+; Total PLLs                    ; 0 / 12 ( 0 % )                           ;
 ; Total DLLs                    ; 0 / 2 ( 0 % )                            ;
-; Device                        ; EP2S30F672C3                             ;
+; Device                        ; EP2S60F1020C3                            ;
 ; Timing Models                 ; Final                                    ;
 +-------------------------------+------------------------------------------+
 
@@ -64,7 +64,7 @@ applicable agreement for further details.
 +-------------------+----------------------+
 ; Option            ; Setting              ;
 +-------------------+----------------------+
-; Start date & time ; 01/15/2010 14:26:23  ;
+; Start date & time ; 01/16/2010 17:23:47  ;
 ; Main task         ; Compilation          ;
 ; Revision Name     ; PipelineUniProcessor ;
 +-------------------+----------------------+
@@ -75,7 +75,7 @@ applicable agreement for further details.
 +------------------------------------+----------------------------------------------+------------------------------+-------------+----------------------+
 ; Assignment Name                    ; Value                                        ; Default Value                ; Entity Name ; Section Id           ;
 +------------------------------------+----------------------------------------------+------------------------------+-------------+----------------------+
-; COMPILER_SIGNATURE_ID              ; 94265003581.126353678302428                  ; --                           ; --          ; --                   ;
+; COMPILER_SIGNATURE_ID              ; 94265003581.126363382600692                  ; --                           ; --          ; --                   ;
 ; EDA_DESIGN_ENTRY_SYNTHESIS_TOOL    ; Design Compiler                              ; <None>                       ; --          ; --                   ;
 ; EDA_INPUT_DATA_FORMAT              ; Verilog Hdl                                  ; --                           ; --          ; eda_design_synthesis ;
 ; EDA_INPUT_VCC_NAME                 ; Vdd                                          ; --                           ; --          ; eda_design_synthesis ;
@@ -143,12 +143,12 @@ applicable agreement for further details.
 +-------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name             ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +-------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis    ; 00:01:47     ; 1.0                     ; 247 MB              ; 00:01:31                           ;
-; Fitter                  ; 00:01:57     ; 1.7                     ; 285 MB              ; 00:01:48                           ;
-; Assembler               ; 00:00:16     ; 1.0                     ; 243 MB              ; 00:00:13                           ;
-; Classic Timing Analyzer ; 00:00:04     ; 1.0                     ; 153 MB              ; 00:00:03                           ;
-; EDA Netlist Writer      ; 00:00:12     ; 1.0                     ; 155 MB              ; 00:00:10                           ;
-; Total                   ; 00:04:16     ; --                      ; --                  ; 00:03:45                           ;
+; Analysis & Synthesis    ; 00:01:31     ; 1.0                     ; 250 MB              ; 00:01:30                           ;
+; Fitter                  ; 00:01:51     ; 1.6                     ; 355 MB              ; 00:02:26                           ;
+; Assembler               ; 00:00:17     ; 1.0                     ; 316 MB              ; 00:00:17                           ;
+; Classic Timing Analyzer ; 00:00:04     ; 1.0                     ; 170 MB              ; 00:00:04                           ;
+; EDA Netlist Writer      ; 00:00:12     ; 1.0                     ; 174 MB              ; 00:00:11                           ;
+; Total                   ; 00:03:55     ; --                      ; --                  ; 00:04:28                           ;
 +-------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

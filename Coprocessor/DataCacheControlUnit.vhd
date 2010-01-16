@@ -73,7 +73,8 @@ begin
 				REPLACEENTRY <= '0';
 			else -- read miss
 				CACHEFREE <= '0';
-				if ( (VALID(nextToRep)='0') or (DIRTY(nextToRep)='0') ) then
+				MEMADDR <= ADDR;
+				if ( (VALID(nextToRep)='0') and (DIRTY(nextToRep)='0') ) then
 		            -- memaddr(4 downto 3) <= "00";
 		            -- memaddr(2 downto 0) <= addr(4 downto 2);
 		            -- ADDRIN <= ADDR;
@@ -86,6 +87,7 @@ begin
 		            
 		            nextToRep <= nextToRep + 1;
 		            
+		            current <= FREE;
 		            --count <= delay;
 	            else
 		            READLN <= '1';

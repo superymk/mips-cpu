@@ -128,4 +128,4 @@ set_global_assignment -name QIP_FILE ../Coprocessor/DataCacheEntryHitOr.qip
 set_global_assignment -name BDF_FILE ../Coprocessor/Coprocessor.bdf
 set_global_assignment -name QIP_FILE ../MotherBoard/InstROMWithCache.qip
 set_global_assignment -name VECTOR_WAVEFORM_FILE ../Coprocessor/TestCache.vwf
-set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE ../MotherBoard/Test/PipelineUniProcessor.vwf
+set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE ../Coprocessor/TestCache.vwf

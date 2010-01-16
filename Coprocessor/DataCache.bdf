@@ -276,6 +276,54 @@ applicable agreement for further details.
 		(line (pt 78 12)(pt 82 8)(line_width 1))
 	)
 )
+(pin
+	(output)
+	(rect 72 120 248 136)
+	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
+	(text "TESTHIT" (rect 90 0 133 12)(font "Arial" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8)(line_width 1))
+		(line (pt 52 4)(pt 78 4)(line_width 1))
+		(line (pt 52 12)(pt 78 12)(line_width 1))
+		(line (pt 52 12)(pt 52 4)(line_width 1))
+		(line (pt 78 4)(pt 82 8)(line_width 1))
+		(line (pt 82 8)(pt 78 12)(line_width 1))
+		(line (pt 78 12)(pt 82 8)(line_width 1))
+	)
+)
+(pin
+	(output)
+	(rect 824 24 1000 40)
+	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
+	(text "TESTTAG1[27..0]" (rect 90 0 174 12)(font "Arial" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8)(line_width 1))
+		(line (pt 52 4)(pt 78 4)(line_width 1))
+		(line (pt 52 12)(pt 78 12)(line_width 1))
+		(line (pt 52 12)(pt 52 4)(line_width 1))
+		(line (pt 78 4)(pt 82 8)(line_width 1))
+		(line (pt 82 8)(pt 78 12)(line_width 1))
+		(line (pt 78 12)(pt 82 8)(line_width 1))
+	)
+)
+(pin
+	(output)
+	(rect 824 40 1000 56)
+	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
+	(text "TESTTAG2[27..0]" (rect 90 0 174 12)(font "Arial" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8)(line_width 1))
+		(line (pt 52 4)(pt 78 4)(line_width 1))
+		(line (pt 52 12)(pt 78 12)(line_width 1))
+		(line (pt 52 12)(pt 52 4)(line_width 1))
+		(line (pt 78 4)(pt 82 8)(line_width 1))
+		(line (pt 82 8)(pt 78 12)(line_width 1))
+		(line (pt 78 12)(pt 82 8)(line_width 1))
+	)
+)
 (symbol
 	(rect 320 576 472 672)
 	(text "mux2x32bit" (rect 5 0 69 14)(font "Arial" (font_size 8)))
@@ -389,8 +437,8 @@ applicable agreement for further details.
 	(port
 		(pt 216 80)
 		(output)
-		(text "TAG[24..0]" (rect 0 0 53 12)(font "Arial" ))
-		(text "TAG[24..0]" (rect 142 75 195 87)(font "Arial" ))
+		(text "TAG[27..0]" (rect 0 0 53 12)(font "Arial" ))
+		(text "TAG[27..0]" (rect 142 75 195 87)(font "Arial" ))
 		(line (pt 216 80)(pt 200 80)(line_width 3))
 	)
 	(port
@@ -481,8 +529,8 @@ applicable agreement for further details.
 	(port
 		(pt 216 80)
 		(output)
-		(text "TAG[24..0]" (rect 0 0 53 12)(font "Arial" ))
-		(text "TAG[24..0]" (rect 142 75 195 87)(font "Arial" ))
+		(text "TAG[27..0]" (rect 0 0 53 12)(font "Arial" ))
+		(text "TAG[27..0]" (rect 142 75 195 87)(font "Arial" ))
 		(line (pt 216 80)(pt 200 80)(line_width 3))
 	)
 	(port
@@ -573,8 +621,8 @@ applicable agreement for further details.
 	(port
 		(pt 216 80)
 		(output)
-		(text "TAG[24..0]" (rect 0 0 53 12)(font "Arial" ))
-		(text "TAG[24..0]" (rect 142 75 195 87)(font "Arial" ))
+		(text "TAG[27..0]" (rect 0 0 53 12)(font "Arial" ))
+		(text "TAG[27..0]" (rect 142 75 195 87)(font "Arial" ))
 		(line (pt 216 80)(pt 200 80)(line_width 3))
 	)
 	(port
@@ -665,8 +713,8 @@ applicable agreement for further details.
 	(port
 		(pt 216 80)
 		(output)
-		(text "TAG[24..0]" (rect 0 0 53 12)(font "Arial" ))
-		(text "TAG[24..0]" (rect 142 75 195 87)(font "Arial" ))
+		(text "TAG[27..0]" (rect 0 0 53 12)(font "Arial" ))
+		(text "TAG[27..0]" (rect 142 75 195 87)(font "Arial" ))
 		(line (pt 216 80)(pt 200 80)(line_width 3))
 	)
 	(port
@@ -757,8 +805,8 @@ applicable agreement for further details.
 	(port
 		(pt 216 80)
 		(output)
-		(text "TAG[24..0]" (rect 0 0 53 12)(font "Arial" ))
-		(text "TAG[24..0]" (rect 142 75 195 87)(font "Arial" ))
+		(text "TAG[27..0]" (rect 0 0 53 12)(font "Arial" ))
+		(text "TAG[27..0]" (rect 142 75 195 87)(font "Arial" ))
 		(line (pt 216 80)(pt 200 80)(line_width 3))
 	)
 	(port
@@ -849,8 +897,8 @@ applicable agreement for further details.
 	(port
 		(pt 216 80)
 		(output)
-		(text "TAG[24..0]" (rect 0 0 53 12)(font "Arial" ))
-		(text "TAG[24..0]" (rect 142 75 195 87)(font "Arial" ))
+		(text "TAG[27..0]" (rect 0 0 53 12)(font "Arial" ))
+		(text "TAG[27..0]" (rect 142 75 195 87)(font "Arial" ))
 		(line (pt 216 80)(pt 200 80)(line_width 3))
 	)
 	(port
@@ -941,8 +989,8 @@ applicable agreement for further details.
 	(port
 		(pt 216 80)
 		(output)
-		(text "TAG[24..0]" (rect 0 0 53 12)(font "Arial" ))
-		(text "TAG[24..0]" (rect 142 75 195 87)(font "Arial" ))
+		(text "TAG[27..0]" (rect 0 0 53 12)(font "Arial" ))
+		(text "TAG[27..0]" (rect 142 75 195 87)(font "Arial" ))
 		(line (pt 216 80)(pt 200 80)(line_width 3))
 	)
 	(port
@@ -1033,8 +1081,8 @@ applicable agreement for further details.
 	(port
 		(pt 216 80)
 		(output)
-		(text "TAG[24..0]" (rect 0 0 53 12)(font "Arial" ))
-		(text "TAG[24..0]" (rect 142 75 195 87)(font "Arial" ))
+		(text "TAG[27..0]" (rect 0 0 53 12)(font "Arial" ))
+		(text "TAG[27..0]" (rect 142 75 195 87)(font "Arial" ))
 		(line (pt 216 80)(pt 200 80)(line_width 3))
 	)
 	(port
@@ -1571,10 +1619,6 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 48 232)
-	(pt 168 232)
-)
-(connector
 	(text "HIT1" (rect -160 160 -137 172)(font "Arial" ))
 	(pt -88 176)
 	(pt -168 176)
@@ -2007,18 +2051,6 @@ applicable agreement for further details.
 	(text "READLN8" (rect 1112 712 1162 724)(font "Arial" ))
 	(pt 1184 728)
 	(pt 1104 728)
-)
-(connector
-	(text "TAG1[24..0]" (rect 1016 152 1075 164)(font "Arial" ))
-	(pt 984 168)
-	(pt 1064 168)
-	(bus)
-)
-(connector
-	(text "TAG2[24..0]" (rect 1016 328 1075 340)(font "Arial" ))
-	(pt 984 344)
-	(pt 1064 344)
-	(bus)
 )
 (connector
 	(text "TAG3[24..0]" (rect 1016 504 1075 516)(font "Arial" ))
@@ -2461,6 +2493,46 @@ applicable agreement for further details.
 	(pt 672 608)
 	(bus)
 )
+(connector
+	(pt 72 128)
+	(pt 64 128)
+)
+(connector
+	(pt 64 128)
+	(pt 64 232)
+)
+(connector
+	(pt 48 232)
+	(pt 64 232)
+)
+(connector
+	(pt 64 232)
+	(pt 168 232)
+)
+(connector
+	(text "TAG1[27..0]" (rect 1016 152 1075 164)(font "Arial" ))
+	(pt 984 168)
+	(pt 1064 168)
+	(bus)
+)
+(connector
+	(text "TAG2[27..0]" (rect 1016 328 1075 340)(font "Arial" ))
+	(pt 984 344)
+	(pt 1064 344)
+	(bus)
+)
+(connector
+	(text "TAG1[27..0]" (rect 752 16 811 28)(font "Arial" ))
+	(pt 824 32)
+	(pt 744 32)
+	(bus)
+)
+(connector
+	(text "TAG2[27..0]" (rect 752 32 811 44)(font "Arial" ))
+	(pt 824 48)
+	(pt 744 48)
+	(bus)
+)
 (junction (pt 1080 504))
 (junction (pt 672 328))
 (junction (pt 672 504))
@@ -2468,5 +2540,6 @@ applicable agreement for further details.
 (junction (pt 1080 608))
 (junction (pt 1080 328))
 (junction (pt 480 608))
+(junction (pt 64 232))
 (text "Direct Mappiing Data Cache Implementation" (rect 480 40 721 54)(font "Arial" (font_size 8)))
 (text "Write-Though Strategy" (rect 480 56 608 70)(font "Arial" (font_size 8)))
